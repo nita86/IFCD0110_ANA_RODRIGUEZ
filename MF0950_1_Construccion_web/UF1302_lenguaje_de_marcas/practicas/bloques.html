@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <title>Etiquetas que dan formato al texto</title>
+    <meta charset="utf-8">
+
+<!-- etiquetas que dan informacion adicional para el buscador -->
+    <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+    <meta name="title" content="Confección y publicación de páginas web">
+    <meta name="keywords" content="Diseño de páginas web con HTML, CSS, JavaScript">
+    <meta name="author" content="Ana Rodríguez">
+    
+    <link rel="icon" type="image/png" href="../../../favicon/harry potter imagens (7)_opt.png">
+<!-- otros formatos para favicon 
+   <link rel="icon" type="image/gif" href="imagen.gif">
+   <link rel="icon" type="image/vnd.microsoft.icon" href="imagen.ico">
+-->
+  
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 80%;
+            margin: 0 auto;
+            }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Arial, Helvetica, sans-serif;
+            }
+        .nota {
+            background-color: #FFFFCC;
+            border-left: 6px solid #ffeb3b;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            }
+        hr {
+            border: 1px solid grey; 
+            }
+        code {
+            color: red;
+            background-color: #f1f1f1;
+            padding-left: 4px;
+            padding-right: 4px;
+            font-size: 110%;
+            }
+        .etiquetasHTML {
+            background-color: #f1f1f1;
+            border: 1px solid #cccccc;
+            font-size: 24px;
+            padding: 16px;
+            }
+        code span {
+            color: mediumblue;
+            }
+        code span span {
+            color: brown;
+            }
+        code span span span {
+            color:crimson;
+            }
+        .ejemplo {
+            background-color: #f1f1f1;
+            padding: 8px 16 px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px 0 rgba (0, 0, 0, 16),0 2px 10px 0 rgba(0, 0, 0, 16);
+            }
+        .code {
+            margin-top: 16px;
+            margin-bottom: 16 px;
+            background-color:#FFFFFF;
+            padding: 8px 12px;
+            border-left: 4px solid chartreuse;
+            }
+        table h1,h2,h3,h4,h5,h6 {
+            margin: 0px;
+            }
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+        td, th {
+            border: 1px solid #DDDDDD;
+            }
+       tr:nth-child(even) { /* hace que una linea si, una no, salga en gris*/ 
+            background-color: #DDFFDD;
+            }
+            
+    </style>
+    <link href="css/estilos.css" rel="stylesheet">
+    <script src="js/funciones.js" type="text/javascript"></script>
+
+<!-- utilizar una URL absoluta (de nuestra propia pág) para referenciar todas las imagenes. Es util a la hora de insertar imagenes sin tener que poner la ruta completa. Significa que todas las imagenes de nuestra pag se van a abrir en una ventana nueva (targets="_blank)
+    <base href="https://www.mipagina.com/img/" target="_blank">
+-->
+
+
+</head>
+<body>
+    <h1>Bloques HTML</h1>
+    <hr>
+    <h2>Etiquetas que citan el texto</h2>
+    	<p>Las abreviaturas de marcado <code>&lt;abbr&gt;</code> pueden proporcionar información útil a los navegadores, sistemas de traducción y motores de búsqueda. Utiliza el atributo <code>title</code> para definir el significado de la abreviación.</p>
+    	<p>La etiqueta de marcado <code>&lt;cite&gt;</code> hace referencia a un trabajo creatico como un libro, una película, un programa de TV o una canción, no al nombre de una persona.</p>
+    	<p>La etiqueta de marcado <code>&lt;blockquote&gt;</code> define una cita larga que e representa como un elemento de bloque. No genera automáticamente comillas alrededor del contenido.</p>
+    	<p>La etiqueta de marcado <code>&lt;q&gt;</code> define una cita corta en línea. Marca las citas a otros autores o documentos. Genera automáticamente comillas alrededor del contenido.</p>
+    	<p>La etiqueta de marcado <code>&lt;dfn&gt;</code> define un término y debe contener el atributo &lt;title&gt; para la definición/explicación del término que contiene.</p>
+    <hr>
+    	<table>
+    		<tr>
+    			<th>Etiqueta</th>
+    			<th>Descripción</th>
+    			<th>Ejemplo</th>
+    			<th>Utilización</th>
+    		</tr>
+    		<tr>
+    			<td><code>&lt;abbr&gt;</code></td>
+    			<td>Define una abreviatura</td>
+    			<td>Esto es un texto abreviado <abbr title="HyperText Markup Languaje">HTML</abbr></td>
+    			<td><code>&lt;abbr title="HyperText Markup Languaje"&gt;HTML&lt;/abbr&gt;</code></td>
+    		</tr>
+    		<tr>
+    			<td><code>&lt;q&gt;</code></td>
+    			<td>Define una cita breve</td>
+    			<td><q>Esto es una cita breve</q></td>
+    			<td><code>&lt;q&gt;Esto es una cita breve&lt;/q&gt;</code></td>    			
+    		</tr>
+    		<tr>
+    			<td><code>&lt;blockquote&gt;</code></td>
+    			<td>Define una cita de otra fuente</td>
+    			<td><blockquote style="margin-top: 0;margin-bottom: 0px;">Esto es una cita de otra fuente</blockquote></td>
+    			<td><code>&lt;blockquote&gt;Esto es una cita de otra fuente&lt;/blockquote&gt;</code></td>    			
+    		</tr>
+    		<tr>
+    			<td><code>&lt;cite&gt;</code></td>
+    			<td>Define el título de una obra</td>
+    			<td><cite>Esto es un título</cite></td>
+    			<td><code>&lt;cite&gt;Esto es una título&lt;/cite&gt;</code></td>    	
+    		</tr>
+    		<tr>
+     			<td><code>&lt;dfn&gt;</code></td>
+    			<td>Define un término</td>
+    			<td>Esto es un término <dfn>HTML</dfn></td>
+    			<td>Esto es un término<code>&lt;dfn title="HyperText Markup Languaje"&gt;HTML&lt;/dfn&gt;</code></td>	
+    		</tr>
+    	</table>
+    <br>
+    	<div>
+    	<h3>Ejemplo de uso</h3>
+    		<div>
+    			<p><strong>EL LENGUAJE <abbr title="HyperText Markup Languaje">HTML</abbr></strong></p>
+    			<blockquote></blockquote>
+    		</div>
+    		<div>
+    			
+    		</div>
+    	</div>
+    
+    
+    
+    
+</body>
+</html>
