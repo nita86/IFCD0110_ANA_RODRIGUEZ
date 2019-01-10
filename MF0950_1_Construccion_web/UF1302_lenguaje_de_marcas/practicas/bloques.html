@@ -71,6 +71,13 @@
             padding: 8px 12px;
             border-left: 4px solid chartreuse;
             }
+		.cite {
+            margin-top: 16px;
+            margin-bottom: 16 px;
+            background-color:#FFFFFF;
+            padding: 8px 12px;
+            border-left: 4px solid #72A3E5;
+            }
         table h1,h2,h3,h4,h5,h6 {
             margin: 0px;
             }
@@ -145,17 +152,33 @@
     		</tr>
     	</table>
     <br>
-    	<div>
+    	<div style="background-color: bisque; padding: 25px;">
     	<h3>Ejemplo de uso</h3>
-    		<div>
-    			<p><strong>EL LENGUAJE <abbr title="HyperText Markup Languaje">HTML</abbr></strong></p>
-    			<blockquote></blockquote>
+    		<div class="cite">
+   			  <p><strong>EL LENGUAJE <dfn><abbr title="HyperText Markup Languaje">HTML</abbr></dfn></strong></p>
+   			  <blockquote>
+    				<p>Como <strong>Tim Barners-Lee</strong>, el padre de la Web, escribió en <cite>Tejiendo la Web</cite>: <q>Yo llegué en el momento justo, interesado, cuando el hipertexto e Internet habian visto la luz. La tarea que me correspondía era hacer que casaran</q></p>
+   			  </blockquote>
     		</div>
-    		<div>
-    			
+    		<div class="code">
+    			<p><strong>EL CÓDIGO <dfn><abbr title="HyperText Markup Languaje">HTML</abbr></dfn></strong></p> 
+    			<blocquote><small><!--lo ponermos para hacer el sangrado del texto y se quede en dos lineas para que tenga el mismo aspecto que la div anterior-->	
+    			<p style="line-height: 20pz;">&lt;p&gt;&lt;strong&gt;EL LENGUAJE &lt;dfn&gt;&lt;abbr title=&quot;HyperText Markup Languaje&quot;&gt;HTML&lt;/abbr&gt;&lt;/dfn&gt;&lt;/strong&gt;&lt;/p&gt;
+				&lt;blockquote&gt;
+				&lt;p&gt;Como &lt;strong&gt;Tim Barners-Lee&lt;/strong&gt;, el padre de la Web, escribió en &lt;cite&gt;Tejiendo la Web&lt;/cite&gt;: &lt;q&gt;Yo llegué en el momento justo, interesado, cuando el hipertexto e Internet habian visto la luz. La tarea que me correspondía era hacer que casaran&lt;/q&gt;&lt;/p&gt;
+				&lt;/blockquote&gt;</p>
+   				</small></blocquote>
+    			</div>
     		</div>
-    	</div>
-    
+	<br>
+    		<div class="nota">
+    			<p><b>Nota:</b> Por defecto, <code>&lt;blockquote&gt;</code> incluye un margen izquierdo cuando se visualiza. Esta característica se usó de forma incorrecta en el pasado para lograr una sangría en el texto. Sin embargo, para ello se debe emplear la propiedad magrin-left de CSS</p>
+    		</div>
+    <hr>
+    	
+    <h2>Elementos que agrupan el texto</h2>
+    <p>Elelemento <code>&lt;div&gt;</code>se utiliza como un contenedor para otros elementos HTML. Tiene atributos, aunque no son necesarios. Los más comunes son style, class e id para dar estilos CSS al bloque de contenido.</p>
+    <p>El elemento <code>&lt;span&gt;</code> se utiliza como un contenedor para agrupar un texto en línea. Esta etiquta también tiene atributos, aunque , como en el caso anterior, son innecesarios.</p>
     
     
     
