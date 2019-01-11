@@ -92,6 +92,14 @@
        tr:nth-child(even) { /* hace que una linea si, una no, salga en gris*/ 
             background-color: #DDFFDD;
             }
+		span {
+			padding: 2px 5px;
+			margin: 2px;
+			font-size: 87.5%;
+			color: #212579;
+			border-radius: 4px; /* borde redondeado*/ 
+			background-color: aliceblue;
+			}
             
     </style>
     <link href="css/estilos.css" rel="stylesheet">
@@ -195,19 +203,46 @@
     		<tr>
     			<td><code>&lt;span&gt;</code></td>
     			<td>Define una cseción de un documento en línea</td>
-    			<td>El elemento &lt;span&gt; es un <div style="border: 1px solid blue;"> elemento en bloque.</div></td> 
+    			<td>El elemento <span style="border: 1px solid blue; border-radius: 0px; font-size: 100%;">es un elemento en bloque.</span></td> 
     			<td>Esto es un &lt;span&gt;elemento en bloque &lt;/span&gt;</td>     		
     		</tr>
     	</table>
     	<br>
-    	<div class="nota">
-    		<p><b>Nota:</b>Un elemento en bloque siempre empieza en una nueva linea y ocupa todo el acho disponible</p>
+    	<div style="background-color: lightgray; padding: 25px;">
+    		<h3>Ejemplo de uso</h3>
+   		  <div class="cite">
+    			<p><strong>Elementos DIV-SPAN</strong></p>
+   			<div style="border: 1px solid black; margin: 10px 15px 10 px 15px;">
+    				<div style="background-color: lightgreen; padding: 5px;">
+    					<span>HTML</span> <span>lenguaje de marcas de hipertexto</span> <span>se utiliza para el desarrollo de páginas web.</span>
+    				</div>
+    				<div style="background-color: lightcoral; padding: 5px;">
+    					<span>CSS</span> <span>hojas de estilo en cascada</span> <span>se utiliza para definir y crear la presencación HTML.</span>
+    				</div>
+    				<div style="background-color: lightblue; padding: 5px;">
+     					<span>JavaScript</span> <span>lenguaje de programación</span> <span>se utiliza para dar dinamismo a las páginas web.</span>   			
+    				</div>
+    			</div>
+   		  </div>
+    		<div class="code">
+    			<p><strong>Código HTML</strong></p>
+    		<blockquote> 
+    		<small>&lt;p&gt;&lt;strong&gt;Código&lt;/strong&gt;&lt;/p&gt; &lt;div&gt; &lt;div&gt;&lt;span&gt;HTML&lt;/span&gt; &lt;span&gt;lenguaje de marcas de hipertexto&lt;/span&gt; &lt;span&gt;se utiliza para el desarrollo de páginas web.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;CSS&lt;/span&gt; &lt;span&gt;hojas de estilo en cascada&lt;/span&gt; &lt;span&gt;se utiliza para definir y crear la presencación HTML.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;JavaScript&lt;/span&gt; &lt;span&gt;lenguaje de programación&lt;/span&gt; &lt;span&gt;se utiliza para dar dinamismo a las páginas web.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt </small>
+    		</blockquote>	
+    		</div>
     	</div>
     	<br>
-    	<div style="border: 1px solid green; overflow: hidden; margin: auto 0;width: 80%">
-    		<div style="float:left; width: 25%; border: solid blue; margin: 10px;padding: 10px;">Lorem ipsum dolor sit amet consectetur adipiscing elit torquent pharetra pellentesque, consequat facilisis hac morbi montes litora blandit pretium egestas condimentum, turpis curabitur cum per interdum porttitor magnis libero risus. Lacinia fermentum tellus fringilla etiam consequat aliquam sollicitudin, quisque suscipit per sociis ultricies cum fusce, varius litora urna blandit nostra euismod. Pulvinar non nibh et ante consequat convallis curabitur, accumsan nullam lectus lacinia eros cras, purus venenatis diam senectus fermentum fringilla.</div>
-    		<div style="float:left; width: 25%; border: solid blue; margin: 10px;padding: 10px;"> Proin nec lacinia suscipit nullam eget lectus nam condimentum eros, venenatis dictum fermentum quis urna nulla tincidunt dignissim himenaeos ligula, tempor sed ac velit hendrerit facilisis parturient tristique. Pellentesque class lobortis orci lacinia eget viverra iaculis diam dictum massa, neque nullam mus ut cras tempor montes augue aliquet fringilla ante, hac nam enim purus est vel cursus taciti senectus. Class tincidunt risus turpis ullamcorper facilisis natoque curabitur, tellus quam interdum sollicitudin elementum fusce dignissim proin, ultricies tortor cras ante dis ultrices. Leo eros lectus ante nisi gravida laoreet non aptent id, platea tristique etiam cursus tellus donec blandit ridiculus, mauris dapibus tortor facilisi condimentum vehicula nibh maecenas.</div>
-    		<div style="float:left; width: 25%; border: solid blue; margin: 10px;padding: 10px;">Gravida tortor feugiat erat tellus eros justo ante, parturient himenaeos est malesuada cubilia orci aliquam, montes fusce maecenas ornare litora urna. Dis orci tortor tristique platea turpis montes nullam placerat ad aliquet, integer lacus nisi curae nunc risus dictum feugiat eget, nibh elementum fermentum pretium magnis sagittis dictumst litora senectus. Accumsan ligula suspendisse risus natoque commodo gravida placerat viverra nulla, dictum elementum tellus sagittis porttitor vel purus potenti.</div>
+    	<div class="nota">
+    		<p><b>Nota:</b>Un elemento en bloque siempre empieza en una nueva linea y ocupa todo el acho disponible. Un elemento en línea no se inicia en una nueva línea unicamente ocupa el ancho que sea necesario</p>
+    	</div>
+    	<hr>
+    	
+    	
+    <!--cuadros flotantes-->
+    	<div style="border: solid green; overflow: hidden; margin: auto 0;width: 100%; padding-left: 10px;">
+    		<div style="float:left; width: 25%; border: solid blue; margin: 10px;padding: 10px;">Lorem ipsum dolor sit amet consectetur adipiscing elit torquent pharetra pellentesque, consequat facilisis hac morbi montes litora blandit pretium egestas condimentum, turpis curabitur cum per interdum porttitor magnis libero risus. </div>
+    		<div style="float:left; width: 25%; border: solid blue; margin: 10px;padding: 10px;"> Proin nec lacinia suscipit nullam eget lectus nam condimentum eros, venenatis dictum fermentum quis urna nulla tincidunt dignissim himenaeos ligula, tempor sed ac velit hendrerit facilisis parturient tristique.</div>
+    		<div style="float:left; width: 25%; border: solid blue; margin: 10px;padding: 10px;">Gravida tortor feugiat erat tellus eros justo ante, parturient himenaeos est malesuada cubilia orci aliquam, montes fusce maecenas ornare litora urna. </div>
     	</div>
     
     
