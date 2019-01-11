@@ -95,7 +95,7 @@
 		span {
 			padding: 2px 5px;
 			margin: 2px;
-			font-size: 87.5%;
+			/*font-size: 87.5%; no queremos que se reduzca el tamaño de la letra*/
 			color: #212579;
 			border-radius: 4px; /* borde redondeado*/ 
 			background-color: aliceblue;
@@ -170,12 +170,9 @@
     		</div>
     		<div class="code">
     			<p><strong>EL CÓDIGO <dfn><abbr title="HyperText Markup Languaje">HTML</abbr></dfn></strong></p> 
-    			<blocquote><small><!--lo ponermos para hacer el sangrado del texto y se quede en dos lineas para que tenga el mismo aspecto que la div anterior-->	
-    			<p style="line-height: 20pz;">&lt;p&gt;&lt;strong&gt;EL LENGUAJE &lt;dfn&gt;&lt;abbr title=&quot;HyperText Markup Languaje&quot;&gt;HTML&lt;/abbr&gt;&lt;/dfn&gt;&lt;/strong&gt;&lt;/p&gt;
-				&lt;blockquote&gt;
-				&lt;p&gt;Como &lt;strong&gt;Tim Barners-Lee&lt;/strong&gt;, el padre de la Web, escribió en &lt;cite&gt;Tejiendo la Web&lt;/cite&gt;: &lt;q&gt;Yo llegué en el momento justo, interesado, cuando el hipertexto e Internet habian visto la luz. La tarea que me correspondía era hacer que casaran&lt;/q&gt;&lt;/p&gt;
-				&lt;/blockquote&gt;</p>
-   				</small></blocquote>
+    			<blockquote><small><p style="line-height: 20px;">&lt;p&gt;&lt;strong&gt;EL LENGUAJE &lt;dfn&gt;&lt;abbr title=&quot;HyperText Markup Languaje&quot;&gt;HTML&lt;/abbr&gt;&lt;/dfn&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;blockquote&gt;&lt;p&gt;Como &lt;strong&gt;Tim Barners-Lee&lt;/strong&gt;, el padre de la Web, escribió en &lt;cite&gt;Tejiendo la Web&lt;/cite&gt;: &lt;q&gt;Yo llegué en el momento justo, interesado, cuando el hipertexto e Internet habian visto la luz. La tarea que me correspondía era hacer que casaran&lt;/q&gt;&lt;/p&gt;
+					&lt;/blockquote&gt;</p></blockquote></small>   				  			
     			</div>
     		</div>
 	<br>
@@ -203,7 +200,7 @@
     		<tr>
     			<td><code>&lt;span&gt;</code></td>
     			<td>Define una cseción de un documento en línea</td>
-    			<td>El elemento <span style="border: 1px solid blue; border-radius: 0px; font-size: 100%;">es un elemento en bloque.</span></td> 
+    			<td>El elemento <span style="border: 1px solid blue; border-radius: 0px;">es un elemento en bloque.</span></td> 
     			<td>Esto es un &lt;span&gt;elemento en bloque &lt;/span&gt;</td>     		
     		</tr>
     	</table>
@@ -227,7 +224,7 @@
     		<div class="code">
     			<p><strong>Código HTML</strong></p>
     		<blockquote> 
-    		<small>&lt;p&gt;&lt;strong&gt;Código&lt;/strong&gt;&lt;/p&gt; &lt;div&gt; &lt;div&gt;&lt;span&gt;HTML&lt;/span&gt; &lt;span&gt;lenguaje de marcas de hipertexto&lt;/span&gt; &lt;span&gt;se utiliza para el desarrollo de páginas web.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;CSS&lt;/span&gt; &lt;span&gt;hojas de estilo en cascada&lt;/span&gt; &lt;span&gt;se utiliza para definir y crear la presencación HTML.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;JavaScript&lt;/span&gt; &lt;span&gt;lenguaje de programación&lt;/span&gt; &lt;span&gt;se utiliza para dar dinamismo a las páginas web.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt </small>
+    		<p style="line-height: 20px;"><small>&lt;p&gt;&lt;strong&gt;Código&lt;/strong&gt;&lt;/p&gt; &lt;div&gt; &lt;div&gt;&lt;span&gt;HTML&lt;/span&gt; &lt;span&gt;lenguaje de marcas de hipertexto&lt;/span&gt; &lt;span&gt;se utiliza para el desarrollo de páginas web.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;CSS&lt;/span&gt; &lt;span&gt;hojas de estilo en cascada&lt;/span&gt; &lt;span&gt;se utiliza para definir y crear la presencación HTML.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;JavaScript&lt;/span&gt; &lt;span&gt;lenguaje de programación&lt;/span&gt; &lt;span&gt;se utiliza para dar dinamismo a las páginas web.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt </small></p>
     		</blockquote>	
     		</div>
     	</div>
@@ -237,13 +234,58 @@
     	</div>
     	<hr>
     	
-    	
-    <!--cuadros flotantes-->
-    	<div style="border: solid green; overflow: hidden; margin: auto 0;width: 100%; padding-left: 10px;">
-    		<div style="float:left; width: 25%; border: solid blue; margin: 10px;padding: 10px;">Lorem ipsum dolor sit amet consectetur adipiscing elit torquent pharetra pellentesque, consequat facilisis hac morbi montes litora blandit pretium egestas condimentum, turpis curabitur cum per interdum porttitor magnis libero risus. </div>
-    		<div style="float:left; width: 25%; border: solid blue; margin: 10px;padding: 10px;"> Proin nec lacinia suscipit nullam eget lectus nam condimentum eros, venenatis dictum fermentum quis urna nulla tincidunt dignissim himenaeos ligula, tempor sed ac velit hendrerit facilisis parturient tristique.</div>
-    		<div style="float:left; width: 25%; border: solid blue; margin: 10px;padding: 10px;">Gravida tortor feugiat erat tellus eros justo ante, parturient himenaeos est malesuada cubilia orci aliquam, montes fusce maecenas ornare litora urna. </div>
+    <h2>Etiquetas de código de computadora.</h2>
+    	<ul>
+    		<li>La etiqueta <code>&lt;code&gt;</code> define un fragmento de código de ordenador</li>
+    		<li>La etiqueta <code>&lt;kbd&gt;</code> representa comandos de entrada de usuario.</li>
+    		<li>La etiqueta <code>&lt;samp&gt;</code> representa la salida de un programa o sistema informático.</li>
+    		<li>La etiqueta <code>&lt;var&gt;</code> se utiliza como expresión matemática o variable de la programación.</li>
+    	</ul>
+    	<br>
+    	<table>
+    		<tr>
+    			<th>Etiqueta</th>
+    			<th>Descripción</th>
+    			<th>Visualización</th>
+    			<th>Utilización</th>
+    		</tr>
+    		<tr>
+    			<td>&lt;code&gt;</td>
+    			<td>Define un código de programación</td>
+    			<td>Usar este código <code>function(maim)</code></td>
+    			<td>Usar este código &lt;code&gt;function(maim)&lt;/code&gt;</td>
+    		</tr>
+    		<tr>
+    		   	<td>&lt;kbd&gt;</td>
+    			<td>Define una entrada de teclado</td>
+    			<td>Para guardar <span style="background-color: black; color: white;"><kbd>Ctrl</kbd></span> + <span style="background-color: black; color: white;"><kbd>S</kbd></span></td>
+    			<td>Para guardar &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;S&lt;/kbd&gt;</td>
+    		</tr>
+    		<tr>
+    			<td>&lt;samp&gt;</td>
+    			<td>Define una salida de la computadora</td>
+    			<td><samp>Error:página no encontrada</samp></td>
+    			<td>&lt;samp&gt;Error:página no encontrada&lt;/samp&gt;</td>
+    		</tr>
+    		<tr>
+    			<td>&lt;var&gt;</td>
+    			<td>Define una variable aritmética</td>
+    			<td>Einstein escribió: <var>E=mc<sup>2</sup></var></td>
+    			<td>Einstein escribió: &lt;var&gt;E=mc&lt;sup&gt;2&lt;/sup&gt;&lt;/var&gt;</td>
+    		</tr>
+    	</table>
+    	<br>
+    	<div class="nota">
+    		<p><b>Nota:</b>Las etiquetas de código de computadora cambian el tipo de letra simulando código informático</p>
     	</div>
+  <hr>
+       <!--cuadros flotantes-->
+    	<div style="border: solid green; overflow: hidden; margin: auto 0;width: 100%; padding-left: 40px;">
+    		<div style="float:left; width: 33%; border: solid blue; margin: 10px;padding: 10px;">Lorem ipsum dolor sit amet consectetur adipiscing elit torquent pharetra pellentesque, consequat facilisis hac morbi montes litora blandit pretium egestas condimentum, turpis curabitur cum per interdum porttitor magnis libero risus. </div>
+    		<div style="float:left; width: 33%; border: solid blue; margin: 10px;padding: 10px;"> Proin nec lacinia suscipit nullam eget lectus nam condimentum eros, venenatis dictum fermentum quis urna nulla tincidunt dignissim himenaeos ligula, tempor sed ac velit hendrerit facilisis parturient tristique.</div>
+    		<div style="float:left; width: 33%; border: solid blue; margin: 10px;padding: 10px;">Gravida tortor feugiat erat tellus eros justo ante, parturient himenaeos est malesuada cubilia orci aliquam, montes fusce maecenas ornare litora urna. </div>
+    	</div>
+    <hr>
     
     
 </body>
