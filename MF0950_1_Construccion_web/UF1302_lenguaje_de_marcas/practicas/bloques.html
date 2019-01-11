@@ -11,10 +11,10 @@
     <meta name="author" content="Ana Rodríguez">
     
     <link rel="icon" type="image/png" href="../../../favicon/harry potter imagens (7)_opt.png">
-<!-- otros formatos para favicon 
-   <link rel="icon" type="image/gif" href="imagen.gif">
-   <link rel="icon" type="image/vnd.microsoft.icon" href="imagen.ico">
--->
+<!-- otros formatos para favicon para que se vea en tiodos los navegadores--> 
+   <link rel="icon" type="image/gif" href="../../../favicon/harry potter imagens (7)_opt - copia - copia.gif">
+   <link rel="icon" type="image/vnd.microsoft.icon" href="../../../favicon/harry potter imagens (7)_opt - copia.ico">
+
   
     <style>
         body {
@@ -41,7 +41,7 @@
             background-color: #f1f1f1;
             padding-left: 4px;
             padding-right: 4px;
-            font-size: 110%;
+            font-size: 125%;
             }
         .etiquetasHTML {
             background-color: #f1f1f1;
@@ -99,6 +99,27 @@
 			color: #212579;
 			border-radius: 4px; /* borde redondeado*/ 
 			background-color: aliceblue;
+			}
+		#div_padre {
+			border: 1px solid green; 
+			overflow: hidden; 
+			margin: 0 auto;
+			width: 80%;
+			}
+		#div_hijo1 {
+			float:left; 
+			width: 33.33%; 
+			background-color: lightblue;
+			}
+		#div_hijo2 {
+			float:left; 
+			width: 33.33%; 
+			background-color: lightgreen;
+			}
+		#div_hijo3 {
+			float:left; 
+			width: 33.33%; 
+			background-color: lightcoral;
 			}
             
     </style>
@@ -280,12 +301,15 @@
     	</div>
   <hr>
        <!--cuadros flotantes-->
-    	<div style="border: solid green; overflow: hidden; margin: auto 0;width: 100%; padding-left: 40px;">
-    		<div style="float:left; width: 33%; border: solid blue; margin: 10px;padding: 10px;">Lorem ipsum dolor sit amet consectetur adipiscing elit torquent pharetra pellentesque, consequat facilisis hac morbi montes litora blandit pretium egestas condimentum, turpis curabitur cum per interdum porttitor magnis libero risus. </div>
-    		<div style="float:left; width: 33%; border: solid blue; margin: 10px;padding: 10px;"> Proin nec lacinia suscipit nullam eget lectus nam condimentum eros, venenatis dictum fermentum quis urna nulla tincidunt dignissim himenaeos ligula, tempor sed ac velit hendrerit facilisis parturient tristique.</div>
-    		<div style="float:left; width: 33%; border: solid blue; margin: 10px;padding: 10px;">Gravida tortor feugiat erat tellus eros justo ante, parturient himenaeos est malesuada cubilia orci aliquam, montes fusce maecenas ornare litora urna. </div>
-    	</div>
-    <hr>
+  <div id="div_padre">		
+   		<div id="div_hijo1">Lorem ipsum dolor sit amet consectetur adipiscing elit torquent pharetra pellentesque, consequat facilisis hac morbi montes litora blandit pretium egestas condimentum, turpis curabitur cum per interdum porttitor magnis libero risus.</div>
+    	
+    	<div id="div_hijo2"> Proin nec lacinia suscipit nullam eget lectus nam condimentum eros, venenatis dictum fermentum quis urna nulla tincidunt dignissim himenaeos ligula, tempor sed ac velit hendrerit facilisis parturient tristique.</div>
+    	
+    	<div id="div_hijo3">Gravida tortor feugiat erat tellus eros justo ante, parturient himenaeos est malesuada cubilia orci aliquam, montes fusce maecenas ornare litora urna.</div>
+   </div>
+  
+   <hr>
     
     
 </body>
