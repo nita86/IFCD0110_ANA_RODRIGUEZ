@@ -193,9 +193,9 @@
     			<td>Agrupa el contenido del pie</td>
     		</tr>
     	</table>
-    <br>
+    <hr>
     	<h2>El atributo Scope</h2>
-    	<p>El atributo <code>&lt;scope&gt;</code> provee un mecanismo para indicar explicitamente a qué celdas afecta una celda de encabezado</p>
+    	<p>El atributo scope especifica si una celda de encabezado es una cabecera de una columna, fila o grupo de columnas o filas. No tiene ningún efecto visual en los navegadores web normales, pero puede ser utilizado por los lectores de pantalla.</p>
     	
     	<table style="width: 95%; border: 0; text-align: center;">
     		<tr>
@@ -203,9 +203,9 @@
     				<table>
     				<caption>Sin encabezado.</caption>
     					<tr>
-    						<td style="33.3%;"> &nbsp;</td><!--Es una entidad html que sirve para escribir un espacio en blanco &an blanc space-->
+    						<td style="33.3%;">&nbsp;</td><!--Es una entidad html que sirve para escribir un espacio en blanco &an blanc space-->
     						<td style="33.3%";>&nbsp;</td>
-    						<td style="33.3%;">nbsp;</td> 
+    						<td style="33.3%;">&nbsp;;</td> 
     					</tr>
     					<tr>
     						<td>&nbsp;</td>
@@ -223,9 +223,9 @@
     				<table>
     					<caption>Encabezado superior.</caption>
     					<tr>
-    						<th style="33.3%;">Título</th>
-    						<th style="33.3%;">Título</th>
-    						<th style="33.3%;">Título</th>
+    						<th scope="col" style="33.3%;">Título</th>
+    						<th scope="col" style="33.3%;">Título</th>
+    						<th scope="col" style="33.3%;">Título</th>
     					</tr>
     					<tr>
     						<td>&nbsp;</td>
@@ -243,12 +243,12 @@
   					<table>
     				<caption>Encabezado izq.</caption>
     					<tr>
-    						<th style="33.3%;">Título</th>
+    						<th scope="col" style="33.3%;">Título</th>
     						<td style="33.3%;">&nbsp;</td><!--Es una entidad que sirve para escribir un espacio en blanco &an blanc space-->
     						<td style="33.3%;">&nbsp;</td>
     					</tr>
     					<tr>
-    						<th>Título</th>
+    						<th scope="col">Título</th>
     						<td>&nbsp;</td>
     						<td>&nbsp;</td>
     					</tr>
@@ -301,7 +301,384 @@
     			</td>
     		</tr>
     	</table>
-    
-    
-</body>
-</html>
+<hr>
+   <h2>El atributo Colspan y Rowspan</h2>
+   <p>El atributo colspan define el número de columnas de una célula debe ocupar. El atributo rowspan especifica el número de filas de una célula debe ocupar.</p>
+  
+       	
+ <!--Ejercicio a completar     	
+
+PACO
+<table>
+  <caption>
+    Sin encabezado
+  </caption>
+  <tbody><tr>
+    <th style="width:33%" rowspan="3">&nbsp;</th>
+    <th style="width:33%" colspan="2">&nbsp;</th>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+</tbody></table>
+<table>
+  <caption>
+    Encabezado izq - superior
+  </caption>
+  <tbody><tr>
+    <th style="width:33%">Título</th>
+    <th style="width:33%" colspan="2">Título</th>
+  </tr>
+  <tr>
+    <th rowspan="2">Título</th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</tbody></table>
+<table>
+  <caption>
+    Encabezado izquierda
+  </caption>
+  <tbody><tr>
+    <th style="width:33%">Título</th>
+    <td rowspan="3">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="width:33%">Título</th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="width:33%">Título</th>
+    <td>&nbsp;</td>
+  </tr>
+</tbody></table>
+<table>
+  <caption>
+    Encabezado izquierda
+  </caption>
+  <tbody><tr>
+    <th style="width:33%">Título</th>
+    <td rowspan="3">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="width:33%">Título</th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="width:33%">Título</th>
+    <td>&nbsp;</td>
+  </tr>
+</tbody></table>
+<table>
+  <caption>
+    Encabezado izquierda
+  </caption>
+  <tbody><tr>
+    <th style="width:33%">Título</th>
+    <td rowspan="3">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="width:33%">Título</th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="width:33%">Título</th>
+    <td>&nbsp;</td>
+  </tr>
+</tbody></table>
+<table style="width:95%;border:0;text-align: center">
+  <tbody><tr>
+    <td style="width:25%"><table>
+      <caption>
+        Encabezado Superior
+        </caption>
+      <tbody><tr>
+        <th style="width:33%" scope="col">Título</th>
+        <th style="width:33%" scope="col">Título</th>
+        <th style="width:33%" scope="col">Título</th>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody></table></td>
+    <td style="width:25%"><table>
+      <caption>
+        Encabezado izquierda
+        </caption>
+      <tbody><tr>
+        <th style="width:33%">Título</th>
+        <td rowspan="3">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th style="width:33%">Título</th>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th style="width:33%">Título</th>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody></table></td>
+    <td style="width:25%"><table>
+      <caption>
+        Encabezado izq - superior
+        </caption>
+      <tbody><tr>
+        <th style="width:33%">Título</th>
+        <th style="width:33%" colspan="2">Título</th>
+      </tr>
+      <tr>
+        <th rowspan="2">Título</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody></table></td>
+    <td style="width:25%"><table>
+      <caption>
+        Sin encabezado
+        </caption>
+      <tbody><tr>
+        <th style="width:33%" rowspan="3">&nbsp;</th>
+        <th style="width:33%" colspan="2">&nbsp;</th>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2">&nbsp;</td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+</tbody></table>
+
+YO 
+<table style="width: 95%; border: 0; text-align: center;">
+    		<tr>
+    			<td style="20%;">
+    				<table>
+    				<caption>Sin encabezado.</caption>
+    					<tr>
+    						<td style="33.3%;">&nbsp;</td>
+    						<td style="33.3%";>&nbsp;</td>
+    						<td style="33.3%;">&nbsp;;</td> 
+    					</tr>
+    					<tr>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    					</tr>
+    					<tr>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    					</tr>
+    				</table> 
+				</td>
+    			<td style="20%;">
+    				<table>
+    					<caption>Encabezado superior.</caption>
+    					<tr>
+    						<th scope="col" style="33.3%;">Título</th>
+    						<th scope="col" style="33.3%;">Título</th>
+    						<th scope="col" style="33.3%;">Título</th>
+    					</tr>
+    					<tr>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    					</tr>
+    					<tr>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    					</tr>
+    				</table>    
+    			</td>
+    			<td style="20%;">
+  					<table>
+    				<caption>Encabezado izq.</caption>
+    					<tr>
+    						<th scope="col" style="33.3%;">Título</th>
+    						<td style="33.3%;">&nbsp;</td>
+    						<td style="33.3%;">&nbsp;</td>
+    					</tr>
+    					<tr>
+    						<th scope="col">Título</th>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    					</tr>
+    					<tr>
+    						<th>Título</th>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    					</tr>
+    				</table>
+    			</td>
+    			<td style="20%;">
+    				<table>
+    				<caption>Encabezado sup+izqu.</caption>
+    					<tr>
+    						<th style="33.3%;">Título</th>
+    						<th style="33.3%;">Título</th>
+    						<th style="33.3%;">Título</th>
+    					</tr>
+    					<tr>
+    						<th>Título</th>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    					</tr>
+    					<tr>
+    						<th>Título</th>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    					</tr>
+    				</table> 
+				</td>
+    			<td style="20%">
+    				<table>
+    				<caption>Encabezado sup+der.</caption>
+    					<tr>
+    						<th style="33.3%;">Título</th>
+    						<th style="33.3%;">Título</th>
+    						<th style="33.3%;">Título</th>
+    					</tr>
+    					<tr>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    						<th>Título</th>
+    					</tr>
+    					<tr>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    						<th>Título</th>
+    					</tr>
+    				</table> 
+    			</td>
+    		</tr>
+    	</table>
+--> 
+
+<hr>
+<h2>El atributo Colgroup y Col</h2>
+<p>La etiqueta &lt;colgroup&gt; especifica un grupo de una o más columnas en una tabla para el formato. Es útil para la aplicación de estilos para columnas completas, en lugar de repetir los estilos para cada célula, para cada fila.</p>
+<table style="width: 95%; border: 0; text-align: center;">
+    		<tr>
+    			<td style="25%;">
+    				<table>
+    					<caption>Encabezado superior.</caption>
+    					<colgroup>
+    						<col span="2" style="background-color: red">
+    						<col style="background-color: yellow">
+    					</colgroup>
+    					<tr>
+    						<th scope="col" style="33.3%;">Título</th>
+    						<th scope="col" style="33.3%;">Título</th>
+    						<th scope="col" style="33.3%;">Título</th>
+    					</tr>
+    					<tr>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    					</tr>
+    					<tr>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    					</tr>
+    				</table>    
+    			</td>
+    			<td style="25%;">
+  					<table>
+    				<caption>Encabezado izq.</caption>
+    				<colgroup>
+    						<col style="background-color: blue"; width="33.3%;">
+    						<col style="background-color: mediumvioletred"; width="33.3%;">
+    						<col style="background-color: green"; width="33.3%;">
+    				</colgroup>
+    					<tr>
+    						<th scope="col" style="33.3%;">Título</th>
+    						<td style="33.3%;">&nbsp;</td>
+    						<td style="33.3%;">&nbsp;</td>
+    					</tr>
+    					<tr>
+    						<th scope="col">Título</th>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    					</tr>
+    					<tr>
+    						<th>Título</th>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    					</tr>
+    				</table>
+    			</td>
+    			<td style="25%;">
+    				<table>
+    				<caption>Encabezado sup+izqu.</caption>
+    					<tr>
+    						<th style="33.3%;">Título</th>
+    						<th style="33.3%;">Título</th>
+    						<th style="33.3%;">Título</th>
+    					</tr>
+    					<tr>
+    						<th>Título</th>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    					</tr>
+    					<tr>
+    						<th>Título</th>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    					</tr>
+    				</table> 
+				</td>
+    			<td style="25%">
+    				<table>
+    				<caption>Encabezado sup+der.</caption>
+    					<tr>
+    						<th style="33.3%;">Título</th>
+    						<th style="33.3%;">Título</th>
+    						<th style="33.3%;">Título</th>
+    					</tr>
+    					<tr>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    						<th>Título</th>
+    					</tr>
+    					<tr>
+    						<td>&nbsp;</td>
+    						<td>&nbsp;</td>
+    						<th>Título</th>
+    					</tr>
+    				</table> 
+    			</td>
+    		</tr>
+    	</table>
+    	
+    	
+    	
+    	
+    	
+	
+	</body>
