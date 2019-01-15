@@ -81,17 +81,46 @@
         table h1,h2,h3,h4,h5,h6 {
             margin: 0px;
             }
-        table {
+        #tabla1 {
             font-family: Arial, Helvetica, sans-serif;
             border-collapse: collapse;
             width: 100%;
             }
-        td, th {
+        #tabla1 td, #tabla1 th {
             border: 1px solid #DDDDDD;
             }
-        tr:nth-child(even) { /* hace que una linea si, una no, salga en gris*/ 
+        #tabla1 tr:nth-child(even) { /* hace que una linea si, una no, salga en gris*/ 
             background-color: #DDFFDD;
             }
+		.tablaDemo table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+        .tablaDemo td, th {
+            border: 1px solid #DDDDDD;
+            }
+		.tablaScope table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+        .tablaScope td, th {
+            border: 1px solid #DDDDDD;
+            }
+		.tablaFilas {
+			width: 100%;
+			}
+		.tablaFilas thead {
+			background-color: tomato;
+			}
+		.tablaFilas tbody {
+			background-color: aqua;
+			}
+		.tablaFilas tfoot {
+			background-color: yellowgreen;
+			}
+		
 		span {
 			padding: 2px 5px;
 			margin: 2px;
@@ -144,7 +173,7 @@
     	<p>Una tabla HTML se define con la <code>&lt;table&gt;</code> etiqueta.</p>
     	<p>Cada fila de la tabla se define con la etiqueta <code>&lt;tr&gt;</code>. Un encabezado de la tabla se define con la etiqueta <code>&lt;th&gt;</code>. Por defecto, encabezados de la tabla están en negrita y centrado. A los datos / celda de la tabla se define con la etiqueta <code>&lt;td&gt;</code>.</p>
     <hr>
-    	<table>
+    	<table id="tabla1">
     		<tr>
     			<th>Etiqueta</th>
     			<th>Descripción</th>
@@ -197,7 +226,7 @@
     	<h2>El atributo Scope</h2>
     	<p>El atributo scope especifica si una celda de encabezado es una cabecera de una columna, fila o grupo de columnas o filas. No tiene ningún efecto visual en los navegadores web normales, pero puede ser utilizado por los lectores de pantalla.</p>
     	
-    	<table style="width: 95%; border: 0; text-align: center;">
+    	<table class="tablaScope" style="width: 95%; border: 0; text-align: center;">
     		<tr>
     			<td style="width:25%;">
     				<table>
@@ -284,14 +313,14 @@
 <hr>
    <h2>El atributo Colspan y Rowspan</h2>
 	 <p>El atributo colspan define el número de columnas de una celda debe ocupar. El atributo rowspan especifica el número de filas de una celda debe ocupar.</p>
-		<table style="width: 95%; border: 0; text-align: center;">
+		<table class="tablaDemo" style="width: 95%; border: 0; text-align: center;">
 			<tr>
 				<td style="width:25%;">
 					<table>
 						<caption>Sin encabezado</caption>
 						<tr>
 							<th style="background-color: red; width: 33.3%;" rowspan="3">&nbsp;</th>
-							<th style="background-color: green; width: 33.3%"colspan="2">&nbsp;</th>
+							<th style="background-color: green; width: 33.3%;" colspan="2">&nbsp;</th>
 						</tr>
 						<tr>
 							<td style="background-color:aquamarine">&nbsp;</td>
@@ -338,7 +367,7 @@
 							</tr>
 					</table>
 				</td><!--fin encabezado izq-->
-				<td style="25%;">
+				<td style="width:25%;">
 					<table>
 						<caption>Encabezado sup+izq.</caption>
 							<tr>
@@ -364,103 +393,281 @@
 <h2>El atributo Colgroup y Col</h2>
 <p>La etiqueta <code>&lt;colgroup&gt;</code> especifica un grupo de una o más columnas en una tabla para el formato. La etiqueta <code>&lt;colgroup&gt;</code> es útil para la aplicación de estilos para columnas completas en lugar de repetir los estilos para cada celda, para cada fila.</p>
 <p>La etiqueta <code>&lt;col&gt;</code> especifica las propiedades de columna para cada columna dentro de un  <code>&lt;colgroup&gt;</code>. La etiqueta <code>&lt;col&gt;</code> es útil para la aplicación de estilos para columnas completas, en lugar de repetir los estilos para cada celda, para cada fila.</p>
+<table  class="tablaDemo" style="width: 95%; border: 0; text-align: center;">
+  <tr style="width:33.3%;">
+    <td >
+     <table>
+      <caption>Sin encabezado.</caption>
+      <colgroup>
+        <col span="2" style="background-color:lightgreen">
+        <col span="2" style="background-color:lightblue">
+      </colgroup>
+      <tr>
+        <td style="width:25%;">&nbsp;</td>
+        <!--Es una entidad html que sirve para escribir un espacio en blanco &an blanc space-->
+        <td style="width:25%;">&nbsp;</td>
+        <td style="width:25%;">&nbsp;</td>
+        <td style="width:25%;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+    </td><!--fin sin encabezado-->
+    <td style="width:33.3%;">
+     <table>
+      <caption>Encabezado superior.</caption>
+      <colgroup>
+      	<col span="1" style="background-color: lightblue;">
+      	<col span="2" style="background-color: green;">
+      	<col span="1" style="background-color: red">
+      </colgroup>
+      <tr>
+        <th scope="col" style="width:25%;">Título</th>
+        <th scope="col" style="width:25%;">Título</th>
+        <th scope="col" style="width:25%;">Título;</th>
+        <th scope="col" style="width:25%;">Título</th>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+    </td><!--fin encabezado superior-->
+    <td style="width:33.3%;">
+     <table>
+      <caption>Encabezado izq.</caption>  
+      <colgroup>
+        <col span="1" style="background-color:lightcoral">
+        <col span="1" style="background-color:lightgreen">
+        <col span="2" style="background-color:lightblue">
+      </colgroup> 
+      <tr>
+        <th scope="col" style="width:25%;">Título</th>
+        <td style="width:25%;">&nbsp;</td>
+        <td style="width:25%;">&nbsp;</td>
+        <!--Es una entidad que sirve para escribir un espacio en blanco &an blanc space-->
+        <td style="width:25%;">&nbsp;</td>
+        </tr>
+      <tr>
+        <th scope="col">Título</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        </tr>
+      <tr>
+        <th>Título</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        </tr>
+    </table>
+    </td><!--fin encabezado izq-->
+  </tr>
+</table>
+
+<hr>
+
+<h2>Agruapación por filas</h2>  
+<p>HTML provee tres elementos que pueden ayudar a los autores a agrupar la información presentada en una tabla. Éstos son thead, para agrupar las filas que presentan cinformación del encabezado; tbody, para representar un bloque de filas que contiene el cuerpo de los datos; y tfoot, para contener las filas que representan un pie o resumen.</p>  
 <table style="width: 95%; border: 0; text-align: center;">
-    		<tr>
-    			<td style="width:25%;">
-    				<table>
-    					<caption>Encabezado superior.</caption>
-    					<colgroup>
-    						<col span="2" style="background-color: red">
-    						<col style="background-color: yellow">
-    					</colgroup>
-    					<tr>
-    						<th scope="col" style="width:33.3%;">Título</th>
-    						<th scope="col" style="width:33.3%;">Título</th>
-    						<th scope="col" style="width:33.3%;">Título</th>
-    					</tr>
-    					<tr>
-    						<td>&nbsp;</td>
-    						<td>&nbsp;</td>
-    						<td>&nbsp;</td>
-    					</tr>
-    					<tr>
-    						<td>&nbsp;</td>
-    						<td>&nbsp;</td>
-    						<td>&nbsp;</td>
-    					</tr>
-    				</table>    
-    			</td>
-    			<td style="width:25%;">
-  					<table>
-    				<caption>Encabezado izq.</caption>
-    				<colgroup>
-    						<col style="background-color: blue"; width="33.3%;">
-    						<col style="background-color: mediumvioletred"; width="33.3%;">
-    						<col style="background-color: green"; width="33.3%;">
-    				</colgroup>
-    					<tr>
-    						<th scope="col" style="width:33.3%;">Título</th>
-    						<td style="width:33.3%;">&nbsp;</td>
-    						<td style="width:33.3%;">&nbsp;</td>
-    					</tr>
-    					<tr>
-    						<th scope="col">Título</th>
-    						<td>&nbsp;</td>
-    						<td>&nbsp;</td>
-    					</tr>
-    					<tr>
-    						<th>Título</th>
-    						<td>&nbsp;</td>
-    						<td>&nbsp;</td>
-    					</tr>
-    				</table>
-    			</td>
-    			<td style="width:25%;">
-    				<table>
-    				<caption>Encabezado sup+izqu.</caption>
-    					<tr>
-    						<th style="width:33.3%;">Título</th>
-    						<th style="width:33.3%;">Título</th>
-    						<th style="width:33.3%;">Título</th>
-    					</tr>
-    					<tr>
-    						<th>Título</th>
-    						<td>&nbsp;</td>
-    						<td>&nbsp;</td>
-    					</tr>
-    					<tr>
-    						<th>Título</th>
-    						<td>&nbsp;</td>
-    						<td>&nbsp;</td>
-    					</tr>
-    				</table> 
-				</td>
-    			<td style="width:25%">
-    				<table>
-    				<caption>Encabezado sup+der.</caption>
-    					<tr>
-    						<th style="width:33.3%;">Título</th>
-    						<th style="width:33.3%;">Título</th>
-    						<th style="width:33.3%;">Título</th>
-    					</tr>
-    					<tr>
-    						<td>&nbsp;</td>
-    						<td>&nbsp;</td>
-    						<th>Título</th>
-    					</tr>
-    					<tr>
-    						<td>&nbsp;</td>
-    						<td>&nbsp;</td>
-    						<th>Título</th>
-    					</tr>
-    				</table> 
-    			</td>
-    		</tr>
-    	</table>
+  <tr style="width: 33.3%;">
+    <td>
+     <table class="tablaFilas">
+      <caption>Sin encabezado.</caption>
+      <colgroup>
+        <col span="2" style="background-color:lightgreen">
+        <col span="2" style="background-color:lightblue">
+      </colgroup>
+      <thead>
+      <tr>
+        <td style="width:25%;">&nbsp;</td>
+        <!--Es una entidad html que sirve para escribir un espacio en blanco &an blanc space-->
+        <td style="width:25%;">&nbsp;</td>
+        <td style="width:25%;">&nbsp;</td>
+        <td style="width:25%;">&nbsp;</td>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      </tbody>
+      <tfoot>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      </tfoot>
+    </table>
+    </td><!--fin sin encabezado-->
+   <td style="width:33.3%;">
+     	<table class="tablaFilas">
+      	<caption>Encabezado superior.</caption>
+      	<colgroup>
+      	<col span="1" style="background-color: lightblue;">
+      	<col span="2" style="background-color: green;">
+      	<col span="1" style="background-color: red">
+      </colgroup>
+      	<tr>
+      	<thead>
+        <th scope="col" style="width:25%;">Título</th>
+        <th scope="col" style="width:25%;">Título</th>
+        <th scope="col" style="width:25%;">Título;</th>
+        <th scope="col" style="width:25%;">Título</th>
+      	</thead>
+      	</tr>
+      <tbody>	
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      </tbody>
+    </table>
+    </td><!--fin encabezado superior-->
+    <td style="width:33.3%;">
+     <table class="tablaFilas">
+      <caption>Encabezado izq.</caption> 
+      <colgroup>
+        <col span="1" style="background-color:lightcoral">
+        <col span="1" style="background-color:lightgreen">
+        <col span="2" style="background-color:lightblue">
+      </colgroup>   
+      <tr>
+       <thead>
+        <th scope="col" style="width:25%;">Título</th>
+        <td style="width:25%;">&nbsp;</td>
+        <td style="width:25%;">&nbsp;</td>
+        <!--Es una entidad que sirve para escribir un espacio en blanco &an blanc space-->
+        <td style="width:25%;">&nbsp;</td>
+        </thead>
+        </tr>
+        <tbody>
+      <tr>
+        <th scope="col">Título</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      </tbody>
+      <tfoot>
+      <tr>
+        <th>Título</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      </tfoot>
+    </table>
+   	</td><!--fin encabezado izq-->
+  </tr>
+</table>  
+
+<hr> 
+<h2>Ejercicio</h2>     
+   <table>
+   <thead>
+   	<tr>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   	</tr>
+   	</thead>
+   	<tbody>
+   	<tr>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		
+   	</tr>
+   	<tr>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		
+   	</tr>
+   	<tr>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   	</tr>
+   	<tr>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   	</tr>
+   	</tbody>
+   	<tfoot>
+   	<tr>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   		<td>&nbsp;</td>
+   	</tr>
+   	</tfoot>
+   </table>                             
     	
     	
     	
     	
     	
 	
-	</body>
+
+
+
+
+
+
+
+
+
+
+
+</body>
