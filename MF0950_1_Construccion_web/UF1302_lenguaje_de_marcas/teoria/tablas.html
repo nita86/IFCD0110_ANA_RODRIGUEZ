@@ -75,17 +75,17 @@ box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 table h1,h2,h3,h4,h5,h6 {
 margin:0;
 }
-table {
+#table {
 font-family: arial, sans-serif;
 border-collapse: collapse;
 width: 100%;
 }
-td, th {
+#table td, #table th {
 border: 1px solid #cccccc;
 text-align: left;
 padding: 8px;
 }
-tr:nth-child(even) {
+#table tr:nth-child(even) {
 background-color: #dddddd;
 }
 kbd {
@@ -110,7 +110,16 @@ color: black;
   margin-top: 0;
   margin-bottom: 0;
 }
-
+divDoble{
+	display:block;
+	overflow: hidden;
+	float: none;
+	}
+	.float2div{
+		float:left;
+		width: 50%;
+		
+	}
 	#divPadre{
 		overflow:hidden;
 		/*border:1px solid red;*/
@@ -157,424 +166,544 @@ color: black;
 <body>
 <h1>HTML Tablas</h1>
 <hr>
-<h2>Etiquetas que definen una tabla</h2>
+<h2>Etiquetas de estructura de datos  en filas y columnas</h2>
+<p>Una tabla HTML se define con la <code>&lt;table&gt;</code>etiqueta. Cada fila de la tabla se define con la <code>&lt;tr&gt;</code>etiqueta. Un encabezado de la tabla se define con la <code>&lt;th&gt;</code>etiqueta. Por defecto, encabezados de la tabla están en negrita y centrado. A los datos / celda de la tabla se define con la <code>&lt;td&gt;</code> etiqueta y pueden contener todo tipo de elementos HTML; texto, imágenes, listas, otras tablas, etc...</p>
 
-<p>Una tabla HTML se define con la <code>&lt;table&gt;</code>etiqueta.</p>
-
-<p>Cada fila de la tabla se define con la <code>&lt;tr&gt;</code> etiqueta. Un encabezado de la tabla se define con la <code>&lt;th&gt;</code> etiqueta. Por defecto, encabezados de la tabla están en negrita y centrado. A los datos / celda de la tabla se define con la <code>&lt;td&gt;</code> etiqueta.</p>
-
-<table>
-<tr>
+<table id="table">
+  <tr>
 <th>Etiqueta</th>
 <th>Descripción</th>
 </tr>
 
 <tr>
-  <td><strong>&lt;table&gt;</strong></td>
-  <td>Define  la estructura de una tabla</td>
-</tr>
-
-<tr>
-  <td><strong>&lt;tr&gt;</strong></td>
-  <td>Define una fila en una tabla</td>
-</tr>
-
-<tr>
-  <td><strong>&lt;th&gt;</strong></td>
-  <td>Define una celda de cabecera en una tabla</td>
+<td>&lt;table&gt;</td>
+<td>Define una tabla</td>
 </tr>
 <tr>
-  <td><strong>&lt;td&gt;</strong></td>
-  <td>Define una celda dentro de una fila en una tabla</td>
+<td>&lt;th&gt;</td>
+<td>Define una celda de encabezado en una tabla</td>
 </tr>
-
 <tr>
-  <td><strong>&lt;caption&gt;</strong></td>
-  <td>Define el título o leyenda de una tabla</td>
+<td>&lt;tr&gt;</td>
+<td>Define fila en una tabla</td>
+</tr>
+<tr>
+<td>&lt;td&gt;</td>
+<td>Define una celda en una tabla</td>
+</tr>
+<tr>
+  <td>&lt;caption&gt;</td>
+  <td>Define un título de tabla</td>
   </tr>
 <tr>
-  <td><strong>&lt;colgroup&gt;</strong></td>
-  <td>Especifica en un tabla un grupo de una o más columnas  para darle formato</td>
+  <td>&lt;colgroup&gt;</td>
+  <td>Especifica un grupo de una o más columnas en una tabla para formatear</td>
   </tr>
 <tr>
-  <td><strong>&lt;col&gt;</strong></td>
-  <td> Especifica propiedades de columna para cada columna dentro de un elemento &lt;colgroup&gt;</td>
+  <td>&lt;col&gt;</td>
+  <td> Especifica las propiedades de columna para cada columna dentro de un elemento <code>&lt;colgroup&gt;</code></td>
   </tr>
 <tr>
-  <td><strong>&lt;thead&gt;</strong></td>
-  <td>Agrupa el contenido del encabezado en una tabla</td>
+  <td>&lt;thead&gt;</td>
+  <td> Agrupa el contenido del encabezado en una tabla.</td>
   </tr>
 <tr>
-  <td><strong>&lt;tbody&gt;</strong></td>
-  <td> Agrupa el contenido del cuerpo en una tabla</td>
+  <td>&lt;tbody&gt;</td>
+  <td>  Agrupa el contenido del cuerpo en una tabla.</td>
   </tr>
 <tr>
-  <td><strong>&lt;tfoot&gt;</strong></td>
-  <td> Agrupa el contenido del pie de página en una tabla</td>
+  <td>&lt;tfoot&gt;</td>
+  <td> Agrupa el contenido del pie de página en una tabla.</td>
   </tr>
-
 </table>
 <br>
+<div class="nota">
+  <p><b>Nota: </b>La etiqueta <code>&lt;caption&gt;</code> define un título de la tabla y  debe insertarse inmediatamente después de la <code>&lt;table&gt;</code> etiqueta. Sólo se puede especificar una leyenda (título) por tabla.</p>
+</div>
+<br>
 <hr>
-<h2>El atributo Scope</h2>
-<p>El atributo scope provee un mecanismo para indicar explícitamente a qué celdas afecta una celda de encabezado. El atributo scope no tiene ningún efecto visual en los navegadores web normales, pero puede ser utilizado por los lectores de pantalla.</p>
 
-
-<table style="width:95%;border:0;text-align: center">
-	<tr>
-		<td style="width:25%">
-<table>
-<caption>Encabezado Superior</caption>
-	<tr>
-	  <th scope="col" style="width:33%">Título</th>
-	  <th scope="col" style="width:33%">Título</th>
-	  <th scope="col" style="width:33%">Título</th>
-	</tr>
-	<tr>
-	  <td>&nbsp;</td>
-	  <td>&nbsp;</td>
-	  <td>&nbsp;</td>
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-	</tr>
+<h2>El atributo scope</h2>
+<p>El atributo <strong>scope</strong> especifica si una celda de encabezado es una cabecera de una columna, fila o grupo de columnas o filas. El atributo scope no tiene ningún efecto visual en los navegadores web normales, pero puede ser utilizado por los lectores de pantalla.</p>
+<table style="width: 100%" class="tableDemo">
+  <tr>
+    <td style="width: 25%">
+     <table>
+      <caption>
+        Encabezado Superior
+        </caption>
+      <tr>
+        <th style="width: 33%" scope="col">Título</th>
+        <th style="width: 33%" scope="col">Título</th>
+        <th style="width: 33%" scope="col">Título</th>
+      </tr>
+      <tr>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+      </tr>
+      <tr>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+      </tr>
+    </table></td>
+    <td style="width: 25%">
+     <table>
+      <caption>
+        Encabezado Izquierda
+        </caption>
+      <tr>
+        <th style="width: 33%" scope="row">Título</th>
+        <td style="width: 33%">texto</td>
+        <td style="width: 33%">texto</td>
+      </tr>
+      <tr>
+        <th scope="row">Título</th>
+        <td>texto</td>
+        <td>texto</td>
+      </tr>
+      <tr>
+        <th scope="row">Título</th>
+        <td>texto</td>
+        <td>texto</td>
+      </tr>
+    </table></td>
+    <td style="width: 25%">
+     <table>
+      <caption>
+        Encabezado Ambos
+        </caption>
+      <tr>
+        <th style="width: 33%" scope="col">Título</th>
+        <th style="width: 33%" scope="col">Título</th>
+        <th style="width: 33%" scope="col">Título</th>
+      </tr>
+      <tr>
+        <th scope="row">Título</th>
+        <td>texto</td>
+        <td>texto</td>
+      </tr>
+      <tr>
+        <th scope="row">Título</th>
+        <td>texto</td>
+        <td>texto</td>
+      </tr>
+    </table></td>
+    <td style="width: 25%">
+     <table>
+      <caption>
+        Sin Encabezado
+        </caption>
+      <tr>
+        <td style="width: 33%">texto</td>
+        <td style="width: 33%">texto</td>
+        <td style="width: 33%">texto</td>
+      </tr>
+      <tr>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+      </tr>
+      <tr>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+      </tr>
+    </table></td>
+  </tr>
 </table>
-		</td>
-		<td style="width:25%">
-<table>
-<caption>Encabezado izquierda</caption>
-	<tr>
-		<th style="width:33%">Título</th>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr>
-		<th style="width:33%">Título</th>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr>
-		<th style="width:33%">Título</th>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-	</tr>
-</table>	
-		</td>
-		<td style="width:25%">
-<table>
-<caption>Encabezado izq - superior</caption>
-	<tr>
-		<th style="width:33%">Título</th>
-		<th style="width:33%">Título</th>
-		<th style="width:33%">Título</th>
-	</tr>
-	<tr>
-		<th>Título</th>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr>
-		<th>Título</th>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-	</tr>
-</table>
-	  </td>
-		<td style="width:25%">
-<table>
-<caption>Sin encabezado</caption>
-	<tr>
-		<th style="width:33%">&nbsp;</th>
-		<th style="width:33%">&nbsp;</th>
-		<th style="width:33%">&nbsp;</th>
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-	</tr>
-</table>
-		</td>
-	</tr>
-</table>
+<br>
 <hr>
 <h2>El atributo colspan y rowspan</h2>
-<p>El atributo colspan define el número de columnas de una celda debe ocupar. El atributo rowspan especifica el número de filas de una célula debe ocupar.</p>
-<table style="width:95%;border:0;text-align: center">
+<p>El atributo <strong>colspan</strong> define el número de columnas de una celda que debe ocupar al espandirse las celdas y el atributo <strong>rowspan</strong> especifica el número de filas de una celda que debe ocupar. Sólo se escifica el atributo en las etiquetas <code>&lt;th&gt;</code> y <code>&lt;td&gt;</code>.</p>
+<table style="width: 100%" class="tableDemo">
   <tr>
-    <td style="width:25%"><table>
+    <td style="width: 25%"><table>
       <caption>
         Encabezado Superior
         </caption>
       <tr>
-        <th scope="col" style="width:33%">Título</th>
-        <th scope="col" style="width:33%">Título</th>
-        <th scope="col" style="width:33%">Título</th>
+        <th style="width: 33%" scope="col">Título</th>
+        <th style="width: 33%" scope="col">Título</th>
+        <th style="width: 33%" scope="col">Título</th>
       </tr>
       <tr>
-        <td colspan="3">&nbsp;</td>
+        <td colspan="3">texto</td>
       </tr>
       <tr>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-    </table></td>
-    <td style="width:25%"><table>
-      <caption>
-        Encabezado izquierda
-        </caption>
-      <tr>
-        <th style="width:33%">Título</th>
-        <td rowspan="3">&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th style="width:33%">Título</th>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th style="width:33%">Título</th>
-        <td>&nbsp;</td>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
       </tr>
     </table></td>
-    <td style="width:25%"><table>
+    <td style="width: 25%"><table>
       <caption>
-        Encabezado izq - superior
+        Encabezado Izquierda
         </caption>
       <tr>
-        <th style="width:33%">Título</th>
-        <th colspan="2" style="width:33%">Título</th>
+        <th style="width: 33%" scope="row">Título</th>
+        <td style="width: 33%" rowspan="3" >texto</td>
+        <td style="width: 33%">texto</td>
       </tr>
       <tr>
-        <th rowspan="2">Título</th>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
+        <th style="width: 33%" scope="row">Título</th>
+        <td>texto</td>
       </tr>
       <tr>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
+        <th scope="row">Título</th>
+        <td>texto</td>
       </tr>
     </table></td>
-    <td style="width:25%"><table>
+    <td style="width: 25%"><table>
       <caption>
-        Sin encabezado
+        Encabezado Ambos
         </caption>
       <tr>
-        <th rowspan="3" style="width:33%">&nbsp;</th>
-        <th colspan="2" style="width:33%">&nbsp;</th>
+        <th style="width: 33%" scope="col">Título</th>
+        <th colspan="2" style="width: 33%" scope="col">Título</th>
       </tr>
       <tr>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
+        <th rowspan="2" scope="row">Título</th>
+        <td style="width: 33%">texto</td>
+        <td style="width: 33%">texto</td>
       </tr>
       <tr>
-        <td colspan="2">&nbsp;</td>
+        <td>texto</td>
+        <td>texto</td>
+      </tr>
+    </table></td>
+    <td style="width: 25%"><table>
+      <caption>
+        Sin Encabezado
+        </caption>
+      <tr>
+        <td colspan="3">texto</td>
+      </tr>
+      <tr>
+        <td  style="width: 33%" rowspan="2">texto</td>
+        <td  style="width: 33%">texto</td>
+        <td  style="width: 33%">texto</td>
+      </tr>
+      <tr>
+        <td colspan="2">texto</td>
       </tr>
     </table></td>
   </tr>
 </table>
+<br>
 <hr>
-<h2>El atributo colgroup y col</h2>
-<p>La etiqueta <code>&lt;colgroup&gt;</code> especifica un grupo de una o más columnas en una tabla para el formato. La etiqueta <code>&lt;colgroup&gt;</code> es útil para la aplicación de estilos para columnas completas, en lugar de repetir los estilos para cada célula, para cada fila.</p>
-<p>La etiqueta <code>&lt;col&gt;</code> especifica las propiedades de columna para cada columna dentro de un <code>&lt;colgroup&gt;</code> elemento. La etiqueta <code>&lt;col&gt;</code> es útil para la aplicación de estilos para columnas completas, en lugar de repetir los estilos para cada célula, para cada fila.</p>
-<table>
-  <caption>
-    Encabezado Superior
-  </caption>
-	<colgroup>
-	<col span="1" style="background-color:tomato">
-	<col span="1" style="background-color:lightskyblue">
-	<col span="1" style="background-color:yellow">
-	</colgroup>
+<h2>La etiqueta colgroup y col</h2>
+<p>La etiqueta <code>&lt;colgroup&gt;</code> especifica un grupo de una o más columnas en una tabla para  la aplicación de estilos CSS para columnas completas, en lugar de repetir los estilos para cada celda, y para cada fila. Para definir propiedades diferentes a una columna dentro de un &lt;colgroup&gt;, utilice la etiqueta &lt;col&gt;  dentro de la etiqueta &lt;colgroup&gt; junto con el atributo span para nombrar cuantas columnas se deben agrupar.</p>
+<style>
+.tableDemo table{
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+.tableDemo td, th{
+border: 1px solid #cccccc;
+text-align: left;
+padding: 8px;
+	}
+
+	
+
+</style>
+<table style="width: 100%" class="tableDemo">
   <tr>
-    <th scope="col" style="width:33%">Título</th>
-    <th scope="col" style="width:33%">Título</th>
-    <th scope="col" style="width:33%">Título</th>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-</table>
-<br>
-<table>
-  <caption>
-    Encabezado izquierda
-  </caption>
-  	<colgroup>
-	<col style="background-color:tomato">
-	<col span="2" style="background-color:lightskyblue">
-	</colgroup>
-  <tr>
-    <th style="width:33%">Título</th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th style="width:33%">Título</th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th style="width:33%">Título</th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-</table>
-<br>
-<table>
-  <caption>
-    Encabezado izq - superior
-  </caption>
-	<colgroup>
-		<col style="background-color:tomato">
-		<col span="2" style="background-color:lightskyblue">
-	</colgroup>
-  <tr>
-    <th style="width:33%;">Título</th>
-    <th style="width:33%; background-color: yellow">Título</th>
-    <th style="width:33%; background-color: yellow">Título</th>
-  </tr>
-  <tr>
-    <th>Título</th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th>Título</th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-</table>
-<br>
-<table>
-  <caption>
-    Sin encabezado
-  </caption>
-  	<colgroup>
-		<col span="2" style="background-color:tomato">
-		<col style="background-color:lightskyblue">
-	</colgroup>
-  <tr>
-    <th style="width:33%">&nbsp;</th>
-    <th style="width:33%">&nbsp;</th>
-    <th style="width:33%">&nbsp;</th>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-</table>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<table style="width:95%;border:0;text-align: center">
-  <tr>
-    <td style="width:25%"><table>
+    <td style="width: 25%">
+     <table>
       <caption>
         Encabezado Superior
         </caption>
+        <colgroup>
+        	<col span="1" style="background-color:lightcoral">
+        	<col span="2" style="background-color:lightgreen">
+        	<col span="1" style="background-color:lightblue">
+        </colgroup>
       <tr>
-        <th scope="col" style="width:33%">Título</th>
-        <th scope="col" style="width:33%">Título</th>
-        <th scope="col" style="width:33%">Título</th>
+        <th style="width: 25%" scope="col">Título</th>
+        <th style="width: 25%" scope="col">Título</th>
+        <th style="width: 25%" scope="col">Título</th>
+        <th style="width: 25%" scope="col">Título</th>
       </tr>
       <tr>
-        <td colspan="3">&nbsp;</td>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
       </tr>
       <tr>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-    </table></td>
-    <td style="width:25%"><table>
-      <caption>
-        Encabezado izquierda
-        </caption>
-      <tr>
-        <th style="width:33%">Título</th>
-        <td rowspan="3">&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th style="width:33%">Título</th>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th style="width:33%">Título</th>
-        <td>&nbsp;</td>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
       </tr>
     </table></td>
-    <td style="width:25%"><table>
-      <caption>
-        Encabezado izq - superior
+    <td style="width: 25%">
+      <table>
+        <caption>
+        Encabezado Izquierda
         </caption>
-      <tr>
-        <th style="width:33%">Título</th>
-        <th colspan="2" style="width:33%">Título</th>
-      </tr>
-      <tr>
-        <th rowspan="2">Título</th>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
+        <colgroup>
+          <col span="1" style="background-color:lightcoral">
+          <col span="1" style="background-color:lightgreen">
+          <col span="2" style="background-color:lightblue">
+        </colgroup>
+        <tr>
+          <th style="width: 25%" scope="row">Título</th>
+          <td style="width: 25%">texto</td>
+          <td style="width: 25%">texto</td>
+          <td style="width: 25%">texto</td>
+        </tr>
+        <tr>
+          <th scope="row">Título</th>
+          <td>texto</td>
+          <td>texto</td>
+          <td>texto</td>
+        </tr>
+        <tr>
+          <th scope="row">Título</th>
+          <td>texto</td>
+          <td>texto</td>
+          <td>texto</td>
+        </tr>
     </table></td>
-    <td style="width:25%"><table>
+    <td style="width: 25%"><table>
       <caption>
-        Sin encabezado
+        Sin Encabezado
         </caption>
+        <colgroup>
+        <col span="2" style="background-color:lightgreen">
+        <col span="2" style="background-color:lightblue">
+        </colgroup>
       <tr>
-        <th rowspan="3" style="width:33%">&nbsp;</th>
-        <th colspan="2" style="width:33%">&nbsp;</th>
-      </tr>
+        <td style="width: 25%">texto</td>
+        <td style="width: 25%">texto</td>
+        <td style="width: 25%">texto</td>
+        <td style="width: 25%">texto</td>
+        </tr>
       <tr>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+        </tr>
       <tr>
-        <td colspan="2">&nbsp;</td>
-      </tr>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+        </tr>
     </table></td>
   </tr>
 </table>
+<br>
+<hr>
+<h2>Agrupación por filas</h2>
+<p>HTML provee tres elementos que pueden ayudar a los autores a organizar la información presentada en una tabla. Éstos son: thead, para agrupar las filas que presentan información de encabezado; tfoot para contener a las filas que representan un pie o resumen; y tbody, para representar un bloque de filas que consiste en un cuerpo de datos.</p>
+<table style="width: 100%" class="tableDemo">
+  <tr>
+    <td style="width: 25%">
+     <table>
+      <caption>
+        Encabezado Superior
+        </caption>
+      <colgroup>
+        <col span="1" style="background-color:lightcoral">
+        <col span="2" style="background-color:lightgreen">
+        <col span="1" style="background-color:lightblue">
+        </colgroup>
+        <thead style="background-color: lightcoral">
+      <tr>
+        <th style="width: 25%" scope="col">Título</th>
+        <th style="width: 25%" scope="col">Título</th>
+        <th style="width: 25%" scope="col">Título</th>
+        <th style="width: 25%" scope="col">Título</th>
+      </tr>
+      </thead>
+      <tbody style="background-color: lightblue">
+      <tr>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+      </tr>
+      <tr>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+      </tr>
+      <tr>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+      </tr>
+      </tbody>
+    </table>
+    </td>
+    <td style="width: 25%">
+     <table>
+      <caption>
+        Encabezado Izquierda
+        </caption>
+      <colgroup>
+        <col span="1" style="background-color:lightcoral">
+        <col span="1" style="background-color:lightgreen">
+        <col span="2" style="background-color:lightblue">
+        </colgroup>
+        <thead style="background-color: lightcoral">
+      <tr>
+        <th style="width: 25%" scope="row">Título</th>
+        <td style="width: 25%">texto</td>
+        <td style="width: 25%">texto</td>
+        <td style="width: 25%">texto</td>
+      </tr>
+      </thead>
+      <tbody style="background-color:lightblue">
+      <tr>
+        <th scope="row">Título</th>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+      </tr>
+       <tr>
+        <th scope="row">Título</th>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+      </tr>
+      </tbody>
+      <tfoot  style="background-color:lightgreen">
+      <tr>
+        <th scope="row">Título</th>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+      </tr>
+      </tfoot>
+    </table>
+   
+    </td>
+    <td style="width: 25%">
+     <table>
+      <caption>
+        Sin Encabezado
+        </caption>
+      <colgroup>
+        <col span="2" style="background-color:lightgreen">
+        <col span="2" style="background-color:lightblue">
+        </colgroup>
+
+      <tr>
+        <td style="width: 25%">texto</td>
+        <td style="width: 25%">texto</td>
+        <td style="width: 25%">texto</td>
+        <td style="width: 25%">texto</td>
+      </tr>
+      <tbody style="background-color: bisque">
+      <tr>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+      </tr>
+      <tr>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+      </tr>
+      </tbody>
+      <tr>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+      </tr>
+
+    </table>
+    </td>
+  </tr>
+</table>
 <p>&nbsp;</p>
-<p></p>
+<div class="nota">
+  <p><b>Nota: </b>Las etiquetas <code>&lt;thead&gt;</code>  <code>&lt;tbody&gt;</code>  <code>&lt;tfoot&gt;</code> debe ser utilizado en el siguiente contexto: Como un hijo de un elemento <code>&lt;table&gt;</code>, después de cualquier <code>&lt;caption&gt;</code>, y <code>&lt;colgroup&gt;</code>, abarcando los elemetos   <code>&lt;tr&gt;</code>.</p>
+</div>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<table style="width: 100%" class="tableDemo">
+  <tr>
+    <td><strong>&lt;table&gt;</strong>
+<table>
+  <caption style="background-color: lightgrey">
+        &lt;caption&gt;
+        Leyenda de tabla
+      &lt;/caption&gt;
+  </caption>
+      <colgroup>
+      	<col span="2" style="background-color: lightcoral">
+      	<col span="6" style="background-color:lightpink">
+      </colgroup>
+      <thead style="background-color:lightblue">
+      <tr>
+        <th rowspan="2" scope="col" style="background-color: lightyellow">&lt;thead&gt;</th>
+        <th rowspan="2" scope="col" style="background-color:lightgreen">&lt;tr rowspan=&quot;2&quot;&gt;</th>
+        <th colspan="3" scope="col" style="background-color: lightcoral">&lt;th scope=&quot;col&quot; colspan=&quot;3&quot;&gt;</th>
+        <th colspan="2" scope="col" style="background-color:lightgreen">&lt;th scope=&quot;col&quot; colspan=&quot;2&quot;&gt;</th>
+        </tr>
+      <tr>
+        <th scope="col">&lt;th&gt; Título</th>
+        <th scope="col">&lt;th&gt; Título</th>
+        <th scope="col">&lt;th&gt; Título</th>
+        <th scope="col">&lt;th&gt; Título</th>
+        <th scope="col">&lt;th&gt; Título</th>
+        </tr>
+      </thead>
+      <tbody style="background-color:lightgoldenrodyellow">
+      <tr>
+        <th rowspan="3" scope="row" style="background-color: lightcoral">&lt;tbody&gt;</th>
+        <th scope="row">&lt;tr&gt;</th>
+        <td>&lt;td&gt; texto</td>
+        <td>&lt;td&gt; texto</td>
+        <td>&lt;td&gt; texto</td>
+        <td>&lt;td&gt; texto</td>
+        <td>&lt;td&gt; texto</td>
+        </tr>
+      <tr>
+        <th scope="row">&lt;tr&gt;</th>
+        <td>&lt;td&gt; texto</td>
+        <td>&lt;td&gt; texto</td>
+        <td>&lt;td&gt; texto</td>
+        <td>&lt;td&gt; texto</td>
+        <td>&lt;td&gt; texto</td>
+        </tr>
+      <tr>
+        <th scope="row">&lt;tr&gt;</th>
+        <td>&lt;td&gt; texto</td>
+        <td>&lt;td&gt; texto</td>
+        <td>&lt;td&gt; texto</td>
+        <td>&lt;td&gt; texto</td>
+        <td>&lt;td&gt; texto</td>
+        </tr>
+        </tbody>
+        <tfoot style="background-color:lightgreen">
+      <tr>
+        <th scope="row" style="background-color: lightskyblue">&lt;footer&gt;</th>
+        <th scope="row" style="background-color:lightcoral">&lt;tr&gt;</th>
+        <td><strong>&lt;td&gt; texto</strong></td>
+        <td><strong>&lt;td&gt; texto</strong></td>
+        <td><strong>&lt;td&gt; texto</strong></td>
+        <td><strong>&lt;td&gt; texto</strong></td>
+        <td><strong>&lt;td&gt; texto</strong></td>
+      </tr>
+      </tfoot>
+  </table>
+  </td>
+  </tr>
+</table>
 <p>&nbsp;</p>
 </body>
 </html>

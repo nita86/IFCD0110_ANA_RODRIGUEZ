@@ -140,7 +140,18 @@
 <body>
     <h1>Bloques HTML</h1>
     <hr>
-    <h2>Etiquetas que citan el texto</h2>
+    navegacion
+    <a href="index _html.html">índice</a> | <a href="introduccion.html">introducción</a> | <a href="formato.html">formato</a> | <a href="bloques.html">bloques</a> | <a href="tablas.html">tablas</a> | <a href="listas.html">listas</a>  
+    <hr>  
+    <hr>
+    <ul id="indice">
+    	<li><a href="#etiquetascitan">Etiquetas que citan el texto</a></li><!--# indica que es un enlace dentro de la misma pag-->
+		<li><a href="#ejemplouso">Ejemplo de uso</a></li>
+    	<li><a href="#elementosagrupan">Elementos que agrupan el texto</a></li>
+    	<li><a href="#etiquetascomputadora">Etiquetas de código de computadora</a></li>
+    </ul>
+    <hr>
+    <h2 id="etiquetascitan">Etiquetas que citan el texto</h2>
     	<p>Las abreviaturas de marcado <code>&lt;abbr&gt;</code> pueden proporcionar información útil a los navegadores, sistemas de traducción y motores de búsqueda. Utiliza el atributo <code>title</code> para definir el significado de la abreviación.</p>
     	<p>La etiqueta de marcado <code>&lt;cite&gt;</code> hace referencia a un trabajo creatico como un libro, una película, un programa de TV o una canción, no al nombre de una persona.</p>
     	<p>La etiqueta de marcado <code>&lt;blockquote&gt;</code> define una cita larga que e representa como un elemento de bloque. No genera automáticamente comillas alrededor del contenido.</p>
@@ -187,7 +198,8 @@
     	</table>
     <br>
     	<div style="background-color: bisque; padding: 25px;">
-    	<h3>Ejemplo de uso</h3>
+    	<a href="#indice">subir</a>
+    	<h3 id="ejemplouso">Ejemplo de uso</h3>
     		<div class="cite">
    			  <p><strong>EL LENGUAJE <dfn><abbr title="HyperText Markup Languaje">HTML</abbr></dfn></strong></p>
    			  <blockquote>
@@ -206,8 +218,8 @@
     			<p><b>Nota:</b> Por defecto, <code>&lt;blockquote&gt;</code> incluye un margen izquierdo cuando se visualiza. Esta característica se usó de forma incorrecta en el pasado para lograr una sangría en el texto. Sin embargo, para ello se debe emplear la propiedad magrin-left de CSS</p>
     		</div>
     <hr>
-    	
-    <h2>Elementos que agrupan el texto</h2>
+    <a href="#indice">subir</a>
+    <h2 id="elementosagrupan">Elementos que agrupan el texto</h2>
     	<p>Elelemento <code>&lt;div&gt;</code>se utiliza como un contenedor para otros elementos HTML. Tiene atributos, aunque no son necesarios. Los más comunes son style, class e id para dar estilos CSS al bloque de contenido.</p>
     	<p>El elemento <code>&lt;span&gt;</code> se utiliza como un contenedor para agrupar un texto en línea. Esta etiquta también tiene atributos, aunque , como en el caso anterior, son innecesarios.</p>
     	<table>
@@ -259,8 +271,8 @@
     		<p><b>Nota:</b>Un elemento en bloque siempre empieza en una nueva linea y ocupa todo el acho disponible. Un elemento en línea no se inicia en una nueva línea unicamente ocupa el ancho que sea necesario</p>
     	</div>
     	<hr>
-    	
-    <h2>Etiquetas de código de computadora.</h2>
+  <a href="#indice">subir</a> 	
+    <h2 id="etiquetascomputadora">Etiquetas de código de computadora.</h2>
     	<ul>
     		<li>La etiqueta <code>&lt;code&gt;</code> define un fragmento de código de ordenador</li>
     		<li>La etiqueta <code>&lt;kbd&gt;</code> representa comandos de entrada de usuario.</li>
@@ -333,6 +345,7 @@
    </div>
   
    <hr>
+   <a href="#indice">subir</a>
     
     
 </body>

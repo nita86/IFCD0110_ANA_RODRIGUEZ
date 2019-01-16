@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es-ES"><head>
+<title>Etiquetas que an formato al texto</title>
+<meta charset="utf-8">
+
+<meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="title" content="Confección y publicación de páginas web">
+<meta name="author" content="Francisco">
+
+<link rel="icon" type="image/png" href="img/html5.png">
+<link rel="icon" type="image/gif" href="img/html5.gif">
+<link rel="icon" type="image/vnd.microsoft.icon" href="img/html5.ico">
+
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="img/favicon.ico" type="image/ico">
+ 
+<style>
+	
+body {
+font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+width:90%;
+margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6 {
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.nota {
+background-color: #ffffcc;
+border-left: 6px solid #ffeb3b;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:20px;
+padding-right:5px;
+	 }
+hr {
+border: 1px solid #eeeeee;
+}
+code {
+color: crimson;
+background-color: #f1f1f1;
+padding-left: 4px;
+padding-right: 4px;
+font-size: 110%;
+}
+.etiquetasHTML {
+border: 1px solid #cccccc;
+background-color: #f1f1f1;
+font-size: 22px;
+padding: 12px;
+}
+code span {
+color: mediumblue;
+}
+code span span {
+color: brown;
+}
+code span span span {
+color: crimson;
+}
+.code {
+margin-top: 16px;
+margin-bottom: 16px;
+background-color: #ffffff;
+padding: 8px 12px;
+border-left: 4px solid #4CAF50;
+color: black;
+}
+.ejemplo {
+background-color: #f1f1f1;
+padding: 8px 16px;
+margin: 20px 0;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+table h1,h2,h3,h4,h5,h6 {
+margin:0;
+}
+#table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+#table td, #table th {
+border: 1px solid #cccccc;
+text-align: left;
+padding: 8px;
+}
+#table tr:nth-child(even) {
+background-color: #dddddd;
+}
+kbd {
+  padding: 0.2rem 0.4rem;
+  font-size: 87.5%;
+  color: #fff;
+  background-color: #212529;
+  border-radius: 0.2rem;
+}
+samp {
+  font-size: 130%;
+}
+.cite {
+margin-top: 16px;
+margin-bottom: 16px;
+background-color: #FFFFFF;
+padding: 8px 12px;
+border-left: 4px solid #2196F3;
+color: black;
+}
+.blockquote {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+divDoble{
+	display:block;
+	overflow: hidden;
+	float: none;
+	}
+	.float2div{
+		float:left;
+		width: 50%;
+		
+	}
+	#divPadre{
+		overflow:hidden;
+		/*border:1px solid red;*/
+		margin: 0 auto; 
+		width:95%;
+	}
+	#divHijo1{
+		float: left;
+		width: 33.33%;
+		/*border:1px solid blue;*/
+		/*padding: 10px;*/
+	}
+		#divHijo2{
+		float: left;
+		width: 33.33%;
+		/*border:1px solid blue;*/
+			/*padding: 10px;*/
+	}
+		#divHijo3{
+		float: left;
+		width: 33.33%;
+		/*border:1px solid blue;*/
+		/*padding: 10px;*/
+		clear: right;
+	}
+		span{ 
+		padding: 2px 5px;
+		margin: 2px;
+		font-size: 87.5%;
+		color:  #212529;
+		background-color: #ffffff;
+		border-radius: 0.2rem;
+	}
+</style>
+
+<script>   </script>
+ 
+ <link href="css/estilos.css" rel="stylesheet" type="text/css">
+ <script src="js/funciones.js" type="text/javascript"></script>
+<!-- <base href="https://www.mipagina.com/img/" target="_blank"> -->
+
+</head>
+
+<body>
+<h1>HTML Listas</h1>
+<hr>
+<h2>Etiquetas de lista de datos</h2>
+<p>Una tabla HTML se define con la <code>&lt;table&gt;</code>etiqueta. Cada fila de la tabla se define con la <code>&lt;tr&gt;</code>etiqueta. Un encabezado de la tabla se define con la <code>&lt;th&gt;</code>etiqueta. Por defecto, encabezados de la tabla están en negrita y centrado. A los datos / celda de la tabla se define con la <code>&lt;td&gt;</code> etiqueta y pueden contener todo tipo de elementos HTML; texto, imágenes, listas, otras tablas, etc...</p>
+<p>HTML ofrece  varios mecanismos para especificar listas de información. Todas las listas deben contener uno o más objetos de lista. Las listas pueden contener: información no ordenada, información ordenada, y lista de descripciones.</p>
+<table id="table">
+  <tr>
+  <th>Etiqueta</th>
+  <th>Descripción</th>
+</tr>
+
+  <tr>
+    <td align="center"><strong>&lt;ul&gt;</strong></td>
+    <td align="left">Define una lista desordenada</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>&lt;ol&gt;</strong></td>
+    <td align="left">Define una lista ordenada</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>&lt;li&gt;</strong></td>
+    <td align="left">Define un elemento de una lista</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>&lt;dl&gt;</strong></td>
+    <td align="left">Define una lista de definiciones</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>&lt;dt&gt;</strong></td>
+    <td align="left">Define un término en una lista de definiciones</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>&lt;dd&gt;</strong></td>
+    <td align="left">Define una descripción en una lista de definición</td>
+  </tr>
+</table>
+<br>
+<div class="nota">
+  <p><b>Nota: </b>La etiqueta <code>&lt;caption&gt;</code> define un título de la tabla y  debe insertarse inmediatamente después de la <code>&lt;table&gt;</code> etiqueta. Sólo se puede especificar una leyenda (título) por tabla.</p>
+</div>
+<br>
+<hr>
+
+<h2>Tipos de listas</h2>
+<p>HTML ofrece  varios mecanismos para especificar listas de información. Todas las listas deben contener uno o más objetos de lista. Las listas pueden contener: información no ordenada, información ordenada, información sobre definiciones.</p>
+<p>Los tippos de listas en HTML son los siguientes:</p>
+<table style="width: 100%" class="tableDemo">
+  <tr>
+    <td style="width: 25%; border: 1px solid black; padding-left: 20px">
+    <p><strong>Lista desordenada</strong></p>
+     <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemneto 4</li>
+    </ul>
+    </td>
+    <td style="width: 25%; border: 1px solid black; padding-left: 20px">
+		<p><strong>Lista ordenada</strong></p>
+     <ol>
+      <li>Elemento</li>
+      <li>Elemento</li>
+      <li>Elemento</li>
+      <li>Elemento</li>
+    </ol></td>
+    <td style="width: 25%; border: 1px solid black; padding-left: 20px">
+    <p><strong>Lista descripción</strong></p>
+     <dl>
+      <dt>Titulo 1</dt>
+      <dd>Elemento 1</dd>
+      <dt>Título 2</dt>
+      <dd>Elemento 2</dd>
+    </dl>
+    </td>
+    <td style="width: 25%; border: 1px solid black; padding-left: 20px">
+     <p><strong>Lista anidada</strong></p>
+      <ol>
+        <li>Elemento
+        <ul>
+			<li>Elemento 1</li>
+       		<li>Elemento 1</li>
+        </ul>
+        </li>
+        <li>Elemneto</li>
+    </ol>
+    </td>
+  </tr>
+</table>
+<br>
+<hr>
+<h2>Listas desordenadas</h2>
+<p>Una lista no ordenada es un conjunto de elementos relacionados entre sí pero para los que no se indica un orden o secuencia determinados. La etiqueta <strong>&lt;ul&gt;</strong> encierra todos los elementos de la lista y la etiqueta <strong>&lt;li&gt;</strong> cada uno de sus elementos. Se puede utilizar el estilos CSS list-style-type para especificar el tipo de viñeta. El atributo type en la entiqueta &lt;ul&gt; no se admite en HTML5.</p>
+<br>
+<table style="width: 100%" class="tableDemo">
+  <tr>
+    <td style="width: 25%; border: 1px solid black; padding-left: 20px"><p><strong>Lista type disc</strong></p>
+      <ul style="list-style-type: disc">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemneto 4</li>
+      </ul></td>
+    <td style="width: 25%; border: 1px solid black; padding-left: 20px"><p><strong>Lista type circle</strong></p>
+      <ul style="list-style-type: square">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemneto 4</li>
+      </ul></td>
+    <td style="width: 25%; border: 1px solid black; padding-left: 20px"><p><strong>Lista type square</strong></p>
+      <ul style="list-style-type: circle">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemneto 4</li>
+      </ul>
+    </td>
+    <td style="width: 25%; border: 1px solid black; padding-left: 20px"><p><strong>Lista type none</strong></p>
+      <ul style="list-style-type: none">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemneto 4</li>
+      </ul></td>
+  </tr>
+</table>
+<br>
+<hr>
+<h2>Listas Ordenadas</h2>
+<p>Las listas ordenadas son casi idénticas a las listas no ordenadas, salvo que en este caso los elementos relacionados se muestran siguiendo un orden determinado. La lista  ordenada se define mediante la etiqueta &lt;ol&gt;. Los elementos de la lista se definen mediante la etiqueta &lt;li&gt;, la misma que se utiliza en las listas no ordenadas. Se puede utilizar el estilos CSS list-style-type para especificar el tipo de numeración. El atributo type en la entiqueta &lt;ol&gt; si se admite en HTML5.</p>
+<table style="width: 100%" class="tableDemo">
+  <tr>
+    <td style="width: 25%; border: 1px solid black; padding-left: 20px"><p><strong>Lista type=&quot;1&quot;</strong></p>
+      <ol type="1">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemneto 4</li>
+      </ol></td>
+    <td style="width: 25%; border: 1px solid black; padding-left: 20px"><p><strong>Lista type=&quot;A&quot;</strong></p>
+      <ol type="A">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemneto 4</li>
+      </ol></td>
+    <td style="width: 25%; border: 1px solid black; padding-left: 20px"><p><strong>Lista type=&quot;I&quot; </strong></p>
+      <ol type="I">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemneto 4</li>
+    </ol></td>
+    <td style="width: 25%; border: 1px solid black; padding-left: 20px"><p><strong>Lista start=&quot;10&quot; reversed</strong></p>
+      <ol start="10" reversed>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemneto 4</li>
+      </ol></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<hr>
+<h2>Listas de Descripción</h2>
+<p>HTML también soporta listas de descripción. Una lista de descripción es una lista de términos, con una descripción de cada término. La etiqueta &lt;dl&gt; define una lista de descripción, la etiqueta &lt;dt&gt; define el término (nombre), y la etiqueta &lt;dd&gt; describe cada término.</p>
+<table style="width: 100%" class="tableDemo">
+  <tr>
+    <td style="width: 25%; border: 1px solid black; padding-left: 20px"><p><strong>Lista type disc</strong></p>
+      <dl>
+        <dt>Titulo 1</dt>
+        <dd>Elemento 1</dd>
+        <dt>Título 2</dt>
+        <dd>Elemento 2</dd>
+      </dl></td>
+    <td style="width: 25%; border: 1px solid black; padding-left: 20px"><p><strong>Lista type circle</strong></p>
+      <dl>
+        <dt>Titulo 1</dt>
+        <dd>Elemento 1</dd>
+        <dt>Título 2</dt>
+        <dd>Elemento 2</dd>
+      </dl></td>
+    <td style="width: 25%; border: 1px solid black; padding-left: 20px"><p><strong>Lista type square</strong></p>
+      <dl>
+        <dt>Titulo 1</dt>
+        <dd>Elemento 1</dd>
+        <dt>Título 2</dt>
+        <dd>Elemento 2</dd>
+      </dl></td>
+    <td style="width: 25%; border: 1px solid black; padding-left: 20px"><p><strong>Lista type none</strong></p>
+      <dl>
+        <dt>Titulo 1</dt>
+        <dd>Elemento 1</dd>
+        <dt>Título 2</dt>
+        <dd>Elemento 2</dd>
+      </dl></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>En HTML 4.01, la etiqueta &lt;dl&gt; se define como una lista de definiciones, y en HTML 5, la etiqueta &lt;dl&gt; se define como una lista de descripciones.</p>
+<p>Las listas de definiciones o descripciones son similares a las de un diccionario. Cada elemento de la lista está formado por un termino y una definición. La etiqueta <strong>&lt;dl&gt;</strong> crea la lista de definición, y las etiquetas <strong>&lt;dt&gt;</strong> y <strong>&lt;dd&gt;</strong> definen respectivamente el término y la descripción de cada elemento de la lista.</p>
+<h3>Ejemplo de Lista de Descripción</h3>
+<dl>
+  <dt><strong>HTML</strong></dt>
+  <dd>HyperText Markup Language (<em>Lenguaje de Marcas de HiperTexto</em>)</dd>
+  <dt><strong>XML</strong></dt>
+  <dd>eXtensible Markup Language <em>(Lenguaje de Marcas eXtensible</em>) </dd>
+  <dt><strong>XHTML</strong></dt>
+  <dd>eXtensible HyperText Markup Language (<em>Lenguaje de Marcas de HiperTexto eXtensible</em>) </dd>
+</dl>
+<h2>Etiquetas de lista de datos</h2>
+<p>Una tabla HTML se define con la <code>&lt;table&gt;</code>etiqueta. Cada fila de la tabla se define con la <code>&lt;tr&gt;</code>etiqueta. Un encabezado de la tabla se define con la <code>&lt;th&gt;</code>etiqueta. Por defecto, encabezados de la tabla están en negrita y centrado. A los datos / celda de la tabla se define con la <code>&lt;td&gt;</code> etiqueta y pueden contener todo tipo de elementos HTML; texto, imágenes, listas, otras tablas, etc...</p>
+<p>HTML ofrece  varios mecanismos para especificar listas de información. Todas las listas deben contener uno o más objetos de lista. Las listas pueden contener: información no ordenada, información ordenada, y lista de descripciones.</p>
+<table id="table2">
+  <tr>
+    <th>Etiqueta</th>
+    <th>Descripción</th>
+  </tr>
+  <tr>
+    <td align="center"><strong>&lt;ul&gt;</strong></td>
+    <td align="left">Define una lista desordenada</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>&lt;ol&gt;</strong></td>
+    <td align="left">Define una lista ordenada</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>&lt;li&gt;</strong></td>
+    <td align="left">Define un elemento de una lista</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>&lt;dl&gt;</strong></td>
+    <td align="left">Define una lista de definiciones</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>&lt;dt&gt;</strong></td>
+    <td align="left">Define un término en una lista de definiciones</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>&lt;dd&gt;</strong></td>
+    <td align="left">Define una descripción en una lista de definición</td>
+  </tr>
+</table>
+<br>
+<div class="nota">
+  <p><b>Nota: </b>La etiqueta <code>&lt;caption&gt;</code> define un título de la tabla y  debe insertarse inmediatamente después de la <code>&lt;table&gt;</code> etiqueta. Sólo se puede especificar una leyenda (título) por tabla.</p>
+</div>
+<br>
+</body>
+</html>
+
+
+
+
+
+
