@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es-ES">
 <head>
-    <title>Listas</title>
+    <title>Multimedia</title>
     <meta charset="utf-8">
 
 <!-- etiquetas que dan informacion adicional para el buscador -->
@@ -187,187 +187,84 @@
 	</div>
 </div>
    
-    <h1>Listas</h1>
+    
     <hr>
     navegacion
     <a href="index _html.html">índice</a> | <a href="introduccion.html">introducción</a> | <a href="formato.html">formato</a> | <a href="bloques.html">bloques</a> | <a href="tablas.html">tablas</a> | <a href="listas.html">listas</a>  
     <hr>  
+    <h1>Multimedia</h1>
     <hr>
-    <ul id="indice">
-    	<li><a href="#etiquetaslista">Etiquetas que definen una lista</a></li><!--# indica que es un enlace dentro de la misma pag-->
-		<li><a href="#ul">Listas desordenadas (ul)</a></li>
-    	<li><a href="#ol">Listas ordenadas (ol)</a></li>
-    	<li><a href="#dl">Listas de definición (dl)</a></li>
-    	<li><a href="#resumen">Resumen</a></li>
-    	
-    </ul>
-    <hr>
-    <hr>
-    <h2 id="etiquetaslista">Etiquetas que definen una Lista</h2>
-    	<table class="tabla1">
-    		<tr>
-    			<th>Etiqueta</th>
-    			<th>Descripción</th>
-    		</tr>
-    		<tr>
-    			<td><code>&lt;ul&gt;</code></td>
-    			<td>Define una lista desordenada</td>
-    		</tr>
-    		<tr>
-    		  <td><code>&lt;ol&gt;</code></td>
-    		  <td>Define una lista ordenada</td>
-  		  </tr>
-    		<tr>
-    		  <td><code>&lt;li&gt;</code></td>
-    		  <td>Define los items de la lista</td>
-  		  </tr>
-    		<tr>
-    			<td><code>&lt;dl&gt;</code></td>
-    			<td>Define una lista de definición</td>
-    		</tr>
-    		<tr>
-     			<td><code>&lt;dt&gt;</code></td>
-    			<td>Define un item de la lista de definición</td>
+    <h2>HTML video.</h2>
+    <p>Descipción</p>
+    <table width="100%" border="1">
+  <thead>
+    <tr>
+      <th>Etiqueta</th>
+      <th>Descripción</th>
+    </tr>
+    </thead>
+  <tbody>
+    <tr>
+      <td>&lt;video&gt;</td>
+      <td>Define el video</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
 
-    		</tr>
-    		<tr>
-    			<td><code>&lt;dd&gt;</code></td>
-    			<td>Define un término de la lista de definición</td>  		
-    		</tr>
-    	</table>
-    	<p class="nota"><b>Nota:</b> Los elementos de lista pueden contener nueva lista, y otros elementos HTML, como imágenes y enlaces, etc.</p>
-   <hr>
-   <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
-    <h2 id="ul">Listas desordenadas (ul)</h2>
-    <p>La etiqueta <code>&lt;ul&gt;</code> define una lista desordenada (viñetas). Utilice la etiqueta <code>&lt;ul&gt;</code> junto con <code>&lt;li&gt;</code> para crear listas desordenadas.</p>
-    <table class="tabla1">
-    	<tr>
-    		<th scope="col">Atributo</th>
-    		<th scope="col">Valor</th>
-    		<th scope="col">Descripción</th>
-    	</tr>
-    	<tr>
-    		<td>compact</td>
-    		<td>compact</td>
-    		<td>No soportado por HTML5</td>
-    	</tr>
-    	<tr>
-    		<td>type</td>
-    		<td>
-    			<ol type="a">
-    				<li>disc</li>
-    				<li>square</li>
-    				<li>circle</li>
-    			</ol>
-    		</td>
-    		<td>No soportado por HTML5</td>
-    	</tr>
-    </table>
+<hr>
+   
+<div style="background-color: lightgray; padding: 10px; overflow: hidden;"><!--divgrande-->
+   <p><b>Ejemplo de uso</b></p>
+    <div style="background-color: white; width: 95%; padding: 10px; overflow: hidden;"><!--divblanco-->
+    	<div style="float: left; width: 50%;"><!--divvideo-->
+    		<p><b>Big Buck Bunny</b></p>
+    		<video width="320" height="240" controls autoplay preload="auto" loop poster="./img/conejo_multimedia.jpg">
+    			<source src="video/mov_bbb.mp4" type="video/mp4">
+    			<source src="video/mov_bbb.ogg" type="video/ogg">  	
+    		</video>
+    	</div><!--findivvideo-->
+    	<div style="float: left; width: 50%;"><!--divcodigo-->
+    		<p><b>Código</b></p>
+    		<code>
+    			&emsp;&emsp;&lt;video width="320" height="240" controls autoplay preload="auto" loop poster="./img/conejo_multimedia.jpg"&gt;<br>
+    				&emsp;&emsp;&emsp;&emsp;&lt;source src="video/mov_bbb.mp4" type="video/mp4"&gt;<br>
+    				&emsp;&emsp;&emsp;&emsp;&lt;source src="video/mov_bbb.ogg" type="video/ogg"&gt;<br>  	
+    			&emsp;&emsp;&lt;/video&gt;
+    		</code>
+    		</div><!--findivcodigo-->
+    	</div><!--findivblanco-->
+   </div><!--findivgrande-->
     
-   <hr>
-   <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
-   	<h2 id="ol">Listas ordenadas (ol)</h2>
-   	<p>La etiqueta <code>&lt;ol&gt;</code> define una lista ordenada. Una lista ordenada puede ser numérico o alfabético. Utilice <code>&lt;li&gt;</code> para definir elementos de la lista.</p>
-   	<div style="width: 100%;">
-   	<div style="overflow: hidden; float: left; width: 33.3%">
-   		<ol>
-  			<li type="1">Coffee</li>
-  			<li type="1">Tea</li>
-  			<li type="1">Milk</li>
-		</ol>
-  	</div>
-  	<div style="overflow: hidden; float: left; width: 33.3%">
-   		<ol>
-  			<li type="A">Coffee</li>
-  			<li type="A">Tea</li>
-  			<li type="A">Milk</li>
-		</ol>
-  	</div>
-  	<div style="overflow: hidden; float: left; width: 33.3%">
-   		<ol>
-  			<li type="a">Coffee</li>
-  			<li type="a">Tea</li>
-  			<li type="a">Milk</li>
-		</ol>
-	</div><!--fin tercer div peq-->
-    </div>	
-  
-  <hr>
-  <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
-  <h2 id="dl">Listas de definición (dl)</h2>
-  <p>La <code>&lt;dl&gt;</code> etiqueta define una lista de definición. La etiqueta <code>&lt;dl&gt;</code> se utiliza en conjunción con <code>&lt;dt&gt;</code> (define términos / nombres) y <code>&lt;dd&gt;</code> (describe cada término / nombre).</p>
-  <dl style="margin-left: 50px;">
-  	<dt>Coffee</dt>
-  	<dd>Black hot drink</dd>
-  	<dd>Vegetal origin</dd>
-  	<dt>Milk</dt>
-  	<dd>White cold drink</dd>
-  	<dd>Animal origin</dd>
-  </dl>
-  
-  <hr>
-  <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
-  <h2 id="resumen">Resumen</h2>
-  <table class="tabla1">
-  	<tr>
-  		<th style="width: 10%;"><code>&lt;ul&gt;</code></th>
-  		<td style="width: 90%;">	
-  			<code>&lt;ul&gt;<br>
-  				&emsp;&emsp;&lt;li&gt;Coffee&lt;/li&gt;<br>
-  				&emsp;&emsp;&lt;li&gt;Tea&lt;/li&gt;<br>
-  				&emsp;&emsp;&lt;Milk&lt;/li&gt;<br>
-			&lt;/ul&gt;</code>
-		</td>
-  	</tr><!--fin ul-->
-  	<tr>
-  		<th><code>&lt;ol&gt;</code></th>
-  		<td>
-  			<table>
-  				<tr>
-  					<td>
-  						<code>&lt;ol&gt;<br>
-<!--&emsp; crea tabulador-->&emsp;&emsp;&lt;li type="1"&gt;Coffee&lt;/li&gt;<br>
-							&emsp;&emsp;&lt;li type="1"&gt;Tea&lt;/li&gt;<br>
-							&emsp;&emsp;&lt;li type="1"&gt;Milk&lt;/li&gt;<br>
-						&lt;/ol&gt;</code>
-					</td>
-  					<td>
-  						<code>&lt;ol&gt;<br>
-							&emsp;&emsp;&lt;li type="A"&gt;Coffee&lt;/li&gt;<br>
-							&emsp;&emsp;&lt;li type="A"&gt;Tea&lt;/li&gt;<br>
-							&emsp;&emsp;&lt;li type="A"&gt;Milk&lt;/li&gt;<br>
-						&lt;/ol&gt;</code>
-  					</td>
-  					<td>
-  						<code>&lt;ol&gt;<br>
-							&emsp;&emsp;&lt;li type="a"&gt;Coffee&lt;/li&gt;<br>
-							&emsp;&emsp;&lt;li type="a"&gt;Tea&lt;/li&gt;<br>
-							&emsp;&emsp;&lt;li type="a"&gt;Milk&lt;/li&gt;<br>
-						&lt;/ol&gt;</code>
-  					</td>
-  				</tr>
-  			</table>
-  		</td>
-  	</tr><!--fin ol-->
-  	<tr>
-  		<th><code>&lt;dl&gt;</code></th>
-  		<td>
-  			<code>&lt;dl&gt;<br>
-				&emsp;&emsp;&lt;dt&gt;Coffee&lt;/dt&gt;<br>
-					&emsp;&emsp;&emsp;&emsp;&lt;dd&gt;Black hot drink&lt;/dd&gt;<br>
-					&emsp;&emsp;&emsp;&emsp;&lt;dd&gt;Vegetal origin&lt;/dd&gt;<br>
-				&emsp;&emsp;&lt;dt&gt;Tea&lt;/dt&gt;<br>
-					&emsp;&emsp;&emsp;&emsp;&lt;dd&gt;Green hot drink&lt;/dd&gt;<br>
-					&emsp;&emsp;&emsp;&emsp;&lt;dd&gt;Vegetal origin&lt;/dd&gt;<br>
-				&emsp;&emsp;&lt;dt&gt;Milk&lt;/dt&gt;<br>
-					&emsp;&emsp;&emsp;&emsp;&lt;dd&gt;White cold drink&lt;/dd&gt;<br>
-					&emsp;&emsp;&emsp;&emsp;&lt;dd&gt;Animal origin&lt;/dd&gt;<br>
-  			&lt;/dl&gt;</code>
-  		</td><!--fin dl-->
-  	</tr>
-  </table>
 
-  <hr>
+  
+   
+<hr> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
 
