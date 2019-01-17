@@ -188,14 +188,14 @@
 </div>
    
     
-    <hr>
-    navegacion
-    <a href="index _html.html">índice</a> | <a href="introduccion.html">introducción</a> | <a href="formato.html">formato</a> | <a href="bloques.html">bloques</a> | <a href="tablas.html">tablas</a> | <a href="listas.html">listas</a>  
-    <hr>  
+  <hr>
+    <!--navegacion-->
+    <a href="index _html.html">índice</a> | <a href="introduccion.html">introducción</a> | <a href="formato.html">formato</a> | <a href="bloques.html">bloques</a> | <a href="tablas.html">tablas</a> | <a href="listas.html">listas</a> | <a href="multimedia.html">multimedia</a>   
+    <hr>    
 <h1>Multimedia</h1>
     <hr>
     <h2>HTML video.</h2>
-<p>Descipción</p>
+<p>Antes de HTML5, un vídeo sólo se podía jugar en un navegador con un plug-in (como Flash). El HTML5 la etiqueta &lt;video&gt; especifica una forma estándar para incrustar un vídeo en una página web. <br> En HTML5, hay 3 formatos de vídeo: MP4, WebM, y Ogg.</p>
     <table width="100%" border="1">
   <thead>
     <tr>
@@ -210,47 +210,47 @@
     </tr>
     <tr>
       <td>&lt;source&gt;</td>
-      <td>Defines multiple media resources for media elements, such as &lt;video&gt; and &lt;audio&gt;</td>
+      <td>Especifica recursos de medios múltiples para los elementos &lt;picture&gt;, &lt;audio&gt;, o &lt;video&gt;</td>
     </tr>
     <tr>
       <td>&lt;track&gt;</td>
-      <td>Defines text tracks in media players</td>
+      <td>Define los subtítulos</td>
     </tr>
     <tr>
       <td>autoplay</td>
-      <td>Specifies that the video will start playing as soon as it is ready</td>
+      <td>El video comenzará a reproducirse automáticamente tan pronto como sea posible, sin detenerse para terminar de cargar los datos.</td>
     </tr>
     <tr>
       <td>controls</td>
-      <td>Specifies that video controls should be displayed (such as a play/pause button etc).</td>
+      <td>Permite que el usuario controle la reproducción de video, incluyendo volumen, búsqueda y pausar/reanudar reproducción.</td>
     </tr>
     <tr>
       <td>heigh</td>
-      <td>Sets the height of the video player</td>
+      <td>La altura del área de visualización del vídeo en píxeles</td>
     </tr>
     <tr>
       <td>loop</td>
-      <td>Specifies that the video will start over again, every time it is finished</td>
+      <td>Al alcanzar el final del video, volverá automáticamente hasta el principio.</td>
     </tr>
     <tr>
       <td>muted</td>
-      <td>Specifies that the audio output of the video should be muted</td>
+      <td>Especifica que el video está silenciado</td>
     </tr>
     <tr>
       <td>poster</td>
-      <td>Specifies an image to be shown while the video is downloading, or until the user hits the play button</td>
+      <td>Una URL que indica una imagen para mostrar hasta que el usuario reproduzca el video. </td>
     </tr>
     <tr>
       <td>preload</td>
-      <td>Specifies if and how the author thinks the video should be loaded when the page loads</td>
+      <td>Especifica si el video va, o no, a cargarse al iniciar la página. </td>
     </tr>
     <tr>
       <td>src</td>
-      <td>Specifies the URL of the video file</td>
+      <td>La URL del vídeo que se va a insertar.</td>
     </tr>
     <tr>
       <td>width</td>
-      <td>Sets the width of the video player</td>
+      <td>La anchura del área de visualización del vídeo en píxeles</td>
     </tr>
   </tbody>
 </table>
@@ -280,46 +280,53 @@
    </div><!--findivgrande-->
    
  <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
- 
-   
-    
-      <hr>
+
+    <hr>
     
 <h2>HTML audio.</h2>
-    <p>Descipción</p>
-    <table width="100%" border="1">
+    <p>La etiqueta &lt;audio&gt; define sonido, como la música u otros flujos de audio. Actualmente, hay 3 formatos de archivo admitidos: MP3, WAV y OGG. <br> Se trata de una etiqueta nueva de HTML5</p>
+<table width="100%" border="1">
   <thead>
     <tr>
-      <th>Etiqueta</th>
+      <th>Etiqueta y atributos</th>
       <th>Descripción</th>
     </tr>
     </thead>
   <tbody>
     <tr>
-      <td>&lt;video&gt;</td>
-      <td>Define el video</td>
+      <td>&lt;audio&gt;</td>
+      <td>Define el audio</td>
     </tr>
     <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td>&lt;source&gt;</td>
+      <td>Especifica recursos de medios múltiples para los elementos &lt;picture&gt;, &lt;audio&gt;, o &lt;video&gt;</td>
     </tr>
     <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td>autoplay</td>
+      <td>El audio comenzará a reproducirse automáticamente tan pronto como sea posible, sin detenerse para terminar de cargar los datos.</td>
     </tr>
     <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td>controls</td>
+      <td>Permite que el usuario controle la reproducción de audio, incluyendo volumen, búsqueda y pausar/reanudar reproducción.</td>
     </tr>
     <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td>loop</td>
+      <td>Al alcanzar el final del audio, volverá automáticamente hasta el principio.</td>
     </tr>
+    <tr>
+      <td>muted</td>
+      <td>Especifica que el audio está silenciado</td>
+    </tr>
+    <tr>
+      <td>preload</td>
+      <td>Especifica si el audio va, o no, a cargarse al iniciar la página. </td>
+    </tr>
+    <tr>
+      <td>src</td>
+      <td>La URL del audio que se va a insertar.</td>
+    </tr> 
   </tbody>
-</table>
-
-
-
+</table>    
 
 <hr>
    
@@ -352,39 +359,7 @@
 
 <hr>
  <h2>Elemento Object</h2>
-    <p>Descipción</p>
-    <table width="100%" border="1">
-  <thead>
-    <tr>
-      <th>Etiqueta</th>
-      <th>Descripción</th>
-    </tr>
-    </thead>
-  <tbody>
-    <tr>
-      <td>&lt;video&gt;</td>
-      <td>Define el video</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-  </tbody>
-</table>
-  
-  <hr>
+    <p>Define un objeto incrustado dentro de un documento HTML. Se utiliza para insertar plug-ins (como applets de Java, los lectores de PDF, Flash Players) en las páginas web.<br> Es soportado por todos los navegadores</p>
    
 <div style="background-color: lightgray; padding: 10px; overflow: hidden;"><!--divgrande-->
    <p><b>Ejemplo de uso</b></p>
@@ -405,43 +380,8 @@
 <hr> 
 
  <h2>Elemento iFrame</h2>
-    <p>Descipción</p>
-    <table width="100%" border="1">
-  <thead>
-    <tr>
-      <th>Etiqueta</th>
-      <th>Descripción</th>
-    </tr>
-    </thead>
-  <tbody>
-    <tr>
-      <td>&lt;video&gt;</td>
-      <td>Define el video</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-  
-  <hr>
-   
+    <p>La etiqueta &lt;iframe&gt; especifica un marco en línea. Un marco en línea se utiliza para insertar otro documento dentro del documento HTML actual. <br> Para hacer frente a los navegadores que no soportan &lt;iframe&gt;, se añade un texto entre la etiqueta de apertura y el cierre.</p>
+    
 <div style="background-color: lightgray; padding: 10px; overflow: hidden;"><!--divgrande-->
    <p><b>Ejemplo de uso</b></p>
     <div style="background-color: white; width: 95%; padding: 10px; overflow: hidden;"><!--divblanco-->
@@ -477,17 +417,11 @@
 <iframe name="mi_iframe1" width="100%" frameborder="1" height="150px"></iframe>
 <iframe name="mi_iframe2" width="100%" frameborder="1" height="150px"></iframe>
 <iframe name="mi_iframe3" width="100%" frameborder="1" height="150px"></iframe>
- <!--contenido de terceros-->
+ <!--contenido de terceros twitter-->
 <blockquote class="twitter-tweet" data-lang="es"><p lang="en" dir="ltr">Mapping an asteroid requires views from all directions. During Preliminary Survey, I used MapCam to snap this image of Bennu from a distance of about 8 miles (13 km) as I flew toward the asteroid during a pass over its equator. <a href="https://t.co/Hw1Qmc4UyP">https://t.co/Hw1Qmc4UyP</a> <a href="https://t.co/UodU5gcVCJ">pic.twitter.com/UodU5gcVCJ</a></p>&mdash; NASA&#39;s OSIRIS-REx (@OSIRISREx) <a href="https://twitter.com/OSIRISREx/status/1085620739611348992?ref_src=twsrc%5Etfw">16 de enero de 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-<hr> 
-
-
-<a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
-
-  
 <hr> 
 
 <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
