@@ -80,6 +80,7 @@
 
 </head>
 <body>
+<header>
 <!--logo-->
   <div style="overflow: hidden; margin-top: 10px;">
 	<div style="border: #020202 solid 1px; float: left;">
@@ -107,7 +108,9 @@
     	<li><a href="#estructurapagina">Estructura de una página web</a></li>
     </ul>   
     <hr>
-    <hr>
+</header>
+<main>
+  <section>
     <h2>¿Qué es HTML?</h2> 
     <p>HTML es el lenguaje de marcado estándar para la creación de páginas Web.</p>
         <ul><!--lista desordenada-->
@@ -121,6 +124,8 @@
     <hr>
     
     <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
+    </section>
+    <section>
     <h2>Estructura básica de un documento HTML</h2>
         <div class="ejemplo"><!--cuadro gris grande-->
             <h3>Ejemplo</h3>
@@ -143,7 +148,10 @@
             </div>      
         </div>
         <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
-        <h3>Explicación de las etiquetas básicas.</h3> 
+<hr>
+</section>
+<section>
+        <h2>Explicación de las etiquetas básicas.</h2> 
             <ol><!--lista ordenada-->
                 <li>La etiqueta <code>&lt;!DOCTYPE html&gt;</code> define el tipo de documento.</li>
                 <li>La etiqueta <code>&lt;html lang="es-ES&gt;</code> define el elemento raíz de una página HTML.</li>
@@ -154,15 +162,18 @@
                 <li>La etiqueta <code>&lt;h1&gt;</code> define el encabezado principal. Sólo puede haber una en todo el documento.</li>
                 <li>La etiqueta <code>&lt;p&gt;</code> define cada párrafo.</li>
             </ol>
-        <hr>
+       
         <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
-        <h4>Etiquetas HTML.</h4>
+   <hr> 
+   </section>
+   <section>
+        <h2>Etiquetas HTML.</h2>
             <p>Las etiquetas HTML son los nombres de elementos entre paréntesis angulares:</p>
             <div class="etiquetasHTML"><!--contenerdor gris que aparece en w3schools-->
                 <p><code><b>&lt;Nombre de etiqueta&gt;</b>contenido ...<b>&lt;/nombre de la etiqueta&gt;</b></code></p>
             </div>
             <dl><!--lista de descripción-->
-                <dt>Etiquetas HTML</dt> <!--titulo-->
+                <dt><b>Etiquetas HTML</b></dt> <!--titulo-->
                 <dd>Normalmente  vienen en pares como <code>&lt;p&gt;</code> y <code>&lt;/p&gt;</code></dd> <!--definición-->  
                 <dd>La primera etiqueta en un par es la <b>etiqueta de inicio</b>, la segunda etiqueta es la <b>etiqueta de fin</b></dd>.
                 <dd>La <b>etiqueta de fin</b> se escribe igual que la etiqueta de inicio, pero con una barra inclinada (/) insertada antes de que el nombre de la etiqueta</dd>          
@@ -172,7 +183,10 @@
             </div>
             <div>
               <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
-                <h5>Navegadores web.</h5>
+   <hr>
+  </section> 
+  <section>
+                <h2>Navegadores web.</h2>
                 <p>El propósito de un navegador web (Chrome, IE, Firefox, Safari) es leer los documentos HTML y mostrarlos.<br>
                 El navegador no muestra las etiquetas HTML, pero los utiliza para determinar cómo mostrar el documento:</p>
                 <img src="./img/img_chrome.png" alt="imagen navegador chrome" width="635" height="361">
@@ -211,8 +225,11 @@
                 </tr>
             </table>
         </div>
-        <hr>
+        
         <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
+<hr>
+</section>
+<section>
         <h2>Estructura de una página web</h2>
         <p>A continuación se muestra una visualización de una estructura de la página HTML:</p>
         <div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#ddd">&lt;html&gt;
@@ -235,14 +252,20 @@
             <p><b>Nota:</b>Sólo el contenido dentro de la sección <code>&lt;body&gt;</code> (el área blanca arriba) se muestra en un navegador.</p>
         </div>
        <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
+</section>
+</main>
+<footer>
+<nav><ul>
+	<li>Autor:nita86</li>
+	<li>Contacto:<a href="#">ejemplo@ejemplo.com</a></li>
+	<li><a href="z">Venta de contenidos</a></li>
+	<li><a href="z">Publicidad</a></li>
+	<li><a href="z">Aviso legal</a></li>
+	<li><a href="z">Politica de cookies</a></li>
+	<li><a href="z">Mapa</a></li>
+	<li><a href="z">RSS</a></li>
+</ul></nav>
 
-
-
-
-
-
-
-
-
+</footer>
 </body>
 </html>
