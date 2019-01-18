@@ -158,6 +158,27 @@
 			width: 33.33%; 
 			background-color: lightcoral;
 			}
+		a:link {
+  			color: green; 
+  			background-color: transparent; 
+  			text-decoration: none;
+			}
+		a:visited {
+  			color: blueviolet;
+  			background-color: transparent;
+  			text-decoration: none;
+			}
+		a:hover {
+  			color: red;
+  			background-color: transparent;
+  			text-decoration: underline;
+			}
+		a:active {
+  			color: yellow;
+  			background-color: transparent;
+  			text-decoration: underline;
+			}
+
 		
             
     </style>
@@ -176,7 +197,7 @@
 
 </head>
 <body>
-   
+<header>   
    <!--logo-->
   <div style="overflow: hidden; margin-top: 10px;">
 	<div style="border: #020202 solid 1px; float: left;">
@@ -189,14 +210,31 @@
    
     
   <hr>
-    <!--navegacion-->
-    <a href="index _html.html">índice</a> | <a href="introduccion.html">introducción</a> | <a href="formato.html">formato</a> | <a href="bloques.html">bloques</a> | <a href="tablas.html">tablas</a> | <a href="listas.html">listas</a> | <a href="multimedia.html">multimedia</a>   
+    <nav><!--navegacion-->
+    <a href="index _html.html">índice</a> | <a href="introduccion.html">introducción</a> | <a href="formato.html">formato</a> | <a href="bloques.html">bloques</a> | <a href="tablas.html">tablas</a> | <a href="listas.html">listas</a> | <a href="multimedia.html">multimedia</a></nav>   
+    
     <hr>    
-<h1>Multimedia</h1>
-    <hr>
-    <h2>HTML video.</h2>
+	<h1>Multimedia</h1>
+	
+<hr>
+	<nav><ul id="indice">
+  		<li><a href="#multimedia">¿Qué es multimedia?</a></li>
+   		<li><a href="#video">HTML video.</a></li>
+   		<li><a href="#audio">HTML audio</a></li>
+   		<li><a href="#object">Elemento object</a></li>
+   		<li><a href="#iframe">Elemento iFrame</a></li>
+   </ul></nav>
+ <hr>
+ </header>
+<h2 id="multimedia">¿Qué es multimedia?</h2>
+	<p>Multimedia viene en muchos formatos diferentes y puede ser casi cualquier cosa que se pueda escuchar o ver (imágenes, música, sonido, vídeos, discos, películas, animaciones, etc.)</p>
+
+  <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
+  
+<hr> 
+<h2 id="video">HTML video.</h2>
 <p>Antes de HTML5, un vídeo sólo se podía jugar en un navegador con un plug-in (como Flash). El HTML5 la etiqueta &lt;video&gt; especifica una forma estándar para incrustar un vídeo en una página web. <br> En HTML5, hay 3 formatos de vídeo: MP4, WebM, y Ogg.</p>
-    <table width="100%" border="1">
+    <table class="tabla1" width="100%" border="1">
   <thead>
     <tr>
       <th>Etiqueta y atributos</th>
@@ -283,9 +321,9 @@
 
     <hr>
     
-<h2>HTML audio.</h2>
+<h2 id="audio">HTML audio.</h2>
     <p>La etiqueta &lt;audio&gt; define sonido, como la música u otros flujos de audio. Actualmente, hay 3 formatos de archivo admitidos: MP3, WAV y OGG. <br> Se trata de una etiqueta nueva de HTML5</p>
-<table width="100%" border="1">
+<table class="tabla1" width="100%" border="1">
   <thead>
     <tr>
       <th>Etiqueta y atributos</th>
@@ -358,7 +396,7 @@
 
 
 <hr>
- <h2>Elemento Object</h2>
+ <h2 id="object">Elemento Object</h2>
     <p>Define un objeto incrustado dentro de un documento HTML. Se utiliza para insertar plug-ins (como applets de Java, los lectores de PDF, Flash Players) en las páginas web.<br> Es soportado por todos los navegadores</p>
    
 <div style="background-color: lightgray; padding: 10px; overflow: hidden;"><!--divgrande-->
@@ -376,10 +414,12 @@
 	  </div><!--findivcodigo-->
   </div><!--findivblanco-->
 </div><!--findivgrande-->
+ 
+ <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
   
 <hr> 
 
- <h2>Elemento iFrame</h2>
+ <h2 id="iframe">Elemento iFrame</h2>
     <p>La etiqueta &lt;iframe&gt; especifica un marco en línea. Un marco en línea se utiliza para insertar otro documento dentro del documento HTML actual. <br> Para hacer frente a los navegadores que no soportan &lt;iframe&gt;, se añade un texto entre la etiqueta de apertura y el cierre.</p>
     
 <div style="background-color: lightgray; padding: 10px; overflow: hidden;"><!--divgrande-->
