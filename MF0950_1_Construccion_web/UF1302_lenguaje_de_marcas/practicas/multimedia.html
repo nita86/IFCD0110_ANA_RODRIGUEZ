@@ -9,6 +9,7 @@
     <meta name="title" content="Confección y publicación de páginas web">
     <meta name="keywords" content="Diseño de páginas web con HTML, CSS, JavaScript">
     <meta name="author" content="Ana Rodríguez">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
   <!--formatos para favicon para que se vea en todos los navegadores-->   
    <link rel="icon" type="image/png" href="img/harry potter imagens (7)_opt.png" sizes="16x16">
@@ -178,6 +179,26 @@
   			background-color: transparent;
   			text-decoration: underline;
 			}
+		header {
+			width: 100%;
+			background-color: lightcyan;
+			}
+		main {
+			width: 100%;
+			}
+		footer {
+			width: 100%;
+			background-color:lightgreen;
+			}
+		article {
+			border-radius: 25px; 
+			border:#C48EF9 2px solid; 
+			padding: 10px; 
+			width: 50%; 
+			height: auto;
+			font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+			color: cornflowerblue; 
+			}
 
 		
             
@@ -226,12 +247,30 @@
    </ul></nav>
  <hr>
  </header>
+ <main>
+ <section>
 <h2 id="multimedia">¿Qué es multimedia?</h2>
-	<p>Multimedia viene en muchos formatos diferentes y puede ser casi cualquier cosa que se pueda escuchar o ver (imágenes, música, sonido, vídeos, discos, películas, animaciones, etc.)</p>
+<div style="overflow: hidden; width: 100%;align-items: center"><!--divgrande-->
+	<div style="float: left; width: 60%; height: auto"><!--parrafo-->
+		<p>El término multimedia se utiliza para referirse a cualquier objeto o sistema que utiliza múltiples medios de expresión (físicos o digitales) para presentar o comunicar información. De allí la expresión multimedios. Los medios pueden ser variados, desde texto e imágenes, hasta animación, sonido, video, etc.</p>
+	</div><!--finparrafo-->
+	<div style="width: 40%; height: auto; float: left;"><!--figura-->
+  		<figure>
+  			<img src="img/html-multimedia.png" alt="multimedia" width="240px" height="auto">
+  			<figcaption><small>Fig.1-Elementos multimedia</small></figcaption>
+  		</figure>
+  	</div><!--finfigura-->
+ </div><!--findivgrande-->
+ 
+ <article><i class="fas fa-fast-forward"></i><i> Los primeros navegadores web tenían apoyo  sólo para texto, limitado a una sola fuente en un solo color.<br>Más tarde llegaron los navegadores con soporte para los colores, tipos de letra y las imágenes. Elaudio, video y animacines y se han manejado de manera diferente por los principales navegadores. Diferentes formatos han sido apoyados, y algunos formatos requieren programas de ayuda adicionales (plug-ins) para trabajar.<br>Esperemos que esto se convierta por fin en historia, ya que HTML5  promete un futuro más fácil para estos elementos</i> <i class="fas fa-fast-backward"></i></article>
 
+
+
+
+ <hr>  
   <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
-  
-<hr> 
+</section>  
+<section>
 <h2 id="video">HTML video.</h2>
 <p>Antes de HTML5, un vídeo sólo se podía jugar en un navegador con un plug-in (como Flash). El HTML5 la etiqueta &lt;video&gt; especifica una forma estándar para incrustar un vídeo en una página web. <br> En HTML5, hay 3 formatos de vídeo: MP4, WebM, y Ogg.</p>
     <table class="tabla1" width="100%" border="1">
@@ -318,9 +357,9 @@
    </div><!--findivgrande-->
    
  <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
-
-    <hr>
-    
+<hr>
+</section>    
+<section>  
 <h2 id="audio">HTML audio.</h2>
     <p>La etiqueta &lt;audio&gt; define sonido, como la música u otros flujos de audio. Actualmente, hay 3 formatos de archivo admitidos: MP3, WAV y OGG. <br> Se trata de una etiqueta nueva de HTML5</p>
 <table class="tabla1" width="100%" border="1">
@@ -393,9 +432,9 @@
 </div><!--findivgrande-->
     
 <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
-
-
 <hr>
+</section>
+<section>
  <h2 id="object">Elemento Object</h2>
     <p>Define un objeto incrustado dentro de un documento HTML. Se utiliza para insertar plug-ins (como applets de Java, los lectores de PDF, Flash Players) en las páginas web.<br> Es soportado por todos los navegadores</p>
    
@@ -416,9 +455,9 @@
 </div><!--findivgrande-->
  
  <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
-  
-<hr> 
-
+<hr>  
+</section> 
+<section>
  <h2 id="iframe">Elemento iFrame</h2>
     <p>La etiqueta &lt;iframe&gt; especifica un marco en línea. Un marco en línea se utiliza para insertar otro documento dentro del documento HTML actual. <br> Para hacer frente a los navegadores que no soportan &lt;iframe&gt;, se añade un texto entre la etiqueta de apertura y el cierre.</p>
     
@@ -460,13 +499,26 @@
  <!--contenido de terceros twitter-->
 <blockquote class="twitter-tweet" data-lang="es"><p lang="en" dir="ltr">Mapping an asteroid requires views from all directions. During Preliminary Survey, I used MapCam to snap this image of Bennu from a distance of about 8 miles (13 km) as I flew toward the asteroid during a pass over its equator. <a href="https://t.co/Hw1Qmc4UyP">https://t.co/Hw1Qmc4UyP</a> <a href="https://t.co/UodU5gcVCJ">pic.twitter.com/UodU5gcVCJ</a></p>&mdash; NASA&#39;s OSIRIS-REx (@OSIRISREx) <a href="https://twitter.com/OSIRISREx/status/1085620739611348992?ref_src=twsrc%5Etfw">16 de enero de 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<hr> 
-
+<hr>
 <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
 <hr>
+</section>
+</main>
+<footer>
+<nav><ul>
+	<li>Autor:nita86</li>
+	<li>Contacto:<a href="#">ejemplo@ejemplo.com</a></li>
+	<li><a href="z">Venta de contenidos</a></li>
+	<li><a href="z">Publicidad</a></li>
+	<li><a href="z">Aviso legal</a></li>
+	<li><a href="z">Politica de cookies</a></li>
+	<li><a href="z">Mapa</a></li>
+	<li><a href="z">RSS</a></li>
+</ul></nav>
+	
+	
 
+</footer>
 
 
 
