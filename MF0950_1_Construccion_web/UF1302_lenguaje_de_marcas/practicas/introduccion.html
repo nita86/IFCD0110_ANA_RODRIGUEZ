@@ -82,7 +82,7 @@
 <body>
 <header>
 <!--logo-->
-  <div style="overflow: hidden; margin-top: 10px;">
+<div style="overflow: hidden; margin-top: 10px;">
 	<div style="border: #020202 solid 1px; float: left;">
 		<a href="index _html.html" style="text-align: left"><img src="img/HTML5_Logo_64.png" alt="logo html5" width="64" height="64" title="inicio de página"></a>
 	</div>
@@ -91,14 +91,12 @@
 	</div>
 </div>
  
-     <hr>
-    <!--navegacion-->
+
+<!--navegacion-->
     <a href="index _html.html">índice</a> | <a href="introduccion.html">introducción</a> | <a href="formato.html">formato</a> | <a href="bloques.html">bloques</a> | <a href="tablas.html">tablas</a> | <a href="listas.html">listas</a> | <a href="multimedia.html">multimedia</a>   
-    <hr>     
-    
-    <h1>HTML Introducción</h1><!--solo puede haber un h1 por pagina-->
-   
-    <hr>
+<hr>     
+<h1>HTML Introducción</h1><!--solo puede haber un h1 por pagina-->
+<hr>
     <ul id="indice">
     	<li><a href="#queeshtml">¿Qué es HTML?</a></li><!--# indica que es un enlace dentro de la misma pag-->
 		<li><a href="#estructurabasica">Estructura básica de un documento HTML</a></li>
@@ -107,151 +105,149 @@
     	<li><a href="#navegadoresweb">Navegadores web</a></li>
     	<li><a href="#estructurapagina">Estructura de una página web</a></li>
     </ul>   
-    <hr>
+<hr>
 </header>
 <main>
-  <section>
-    <h2>¿Qué es HTML?</h2> 
+<section>
+<h2>¿Qué es HTML?</h2> 
     <p>HTML es el lenguaje de marcado estándar para la creación de páginas Web.</p>
-        <ul><!--lista desordenada-->
-            <li>HTML significa Hyper Text Markup Language.</li>
-            <li>HTML describe la estructura de las páginas Web usando marcado.</li>
-            <li>Los elementos HTML son los bloques de construcción de páginas HTML.</li>
-            <li>Los elementos HTML están representados por etiquetas.</li>
-            <li>Las etiquetas HTML están ordenadas en niveles como &lt;head&gt;, &lt;p&gt;, &lt;table&gt; y así sucesivamente.</li>
-            <li>Los navegadores no muestran las etiquetas HTML, pero las usan para representar el contenido de la página.</li>  
-        </ul>
-    <hr>
-    
+    <ul><!--lista desordenada-->
+        <li>HTML significa Hyper Text Markup Language.</li>
+        <li>HTML describe la estructura de las páginas Web usando marcado.</li>
+        <li>Los elementos HTML son los bloques de construcción de páginas HTML.</li>
+        <li>Los elementos HTML están representados por etiquetas.</li>
+        <li>Las etiquetas HTML están ordenadas en niveles como &lt;head&gt;, &lt;p&gt;, &lt;table&gt; y así sucesivamente.</li>
+        <li>Los navegadores no muestran las etiquetas HTML, pero las usan para representar el contenido de la página.</li>  
+    </ul>
+<hr>
     <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
-    </section>
-    <section>
-    <h2>Estructura básica de un documento HTML</h2>
-        <div class="ejemplo"><!--cuadro gris grande-->
-            <h3>Ejemplo</h3>
-            <div class="code"><!--cuadro blanco que encierra el codigo-->
-                <code> <!--indicar que lo que vamos a escribir se tiene que ver como codigo, no interpretar los simbolos.También hace que el tipo de letra sea similar a la que se ve en el editor-->
-                    <span>&lt;<span>!DOCTYPE <span>html</span></span>&gt;</span><br>
-                    <span>&lt;<span>html <span>lang="es-ES"</span></span>&gt;</span><br><!--salto de linea para que no salga todo el bloque-->
-                    <span>&lt;<span>head</span>&gt;</span><br>
-                    <span>&lt;<span>meta <span>charset="utf-8"</span></span>&gt;</span><br>
-                    <span>&lt;<span>title</span>&gt;<span style="color:black;">Título de la página</span>&gt;&lt;<span>/title</span>&gt;</span><br>
-                    <span>&lt;<span>/head</span>&gt;</span><br>
-                    <span>&lt;<span>body</span>&gt;</span><br>
-            
-                    <span>&lt;<span>h1</span>&gt;<span style="color:black"> Mi primer encabezado.</span>&lt;<span>/h1</span>&gt;</span><br>
-                    <span>&lt;<span>p</span>&gt;<span style="color:black"> Mi primer párrafo.</span>&lt;<span>/p</span>&gt;</span><br>
-            
-                    <span>&lt;<span>/body</span>&gt;</span><br>
-                    <span>&lt;<span>/html</span>&gt;</span><br>
-                </code>
-            </div>      
-        </div>
-        <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
-<hr>
 </section>
 <section>
-        <h2>Explicación de las etiquetas básicas.</h2> 
-            <ol><!--lista ordenada-->
-                <li>La etiqueta <code>&lt;!DOCTYPE html&gt;</code> define el tipo de documento.</li>
-                <li>La etiqueta <code>&lt;html lang="es-ES&gt;</code> define el elemento raíz de una página HTML.</li>
-                <li>La etiqueta <code> &lt;head&gt;</code> define los metadatos del documento.</li>
-                <li>La etiqueta <code>&lt;meta charset="utf-8"&gt</code> define el juego de caracteres del documento.</li>
-                <li>La etiqueta <code>&lt;title&gt;</code> especifica un título del documento.</li>
-                <li>La etiqueta <code>&lt;body&gt;</code> contiene el contenido visible de la página.</li>
-                <li>La etiqueta <code>&lt;h1&gt;</code> define el encabezado principal. Sólo puede haber una en todo el documento.</li>
-                <li>La etiqueta <code>&lt;p&gt;</code> define cada párrafo.</li>
-            </ol>
-       
-        <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
-   <hr> 
-   </section>
-   <section>
-        <h2>Etiquetas HTML.</h2>
-            <p>Las etiquetas HTML son los nombres de elementos entre paréntesis angulares:</p>
-            <div class="etiquetasHTML"><!--contenerdor gris que aparece en w3schools-->
-                <p><code><b>&lt;Nombre de etiqueta&gt;</b>contenido ...<b>&lt;/nombre de la etiqueta&gt;</b></code></p>
-            </div>
-            <dl><!--lista de descripción-->
-                <dt><b>Etiquetas HTML</b></dt> <!--titulo-->
-                <dd>Normalmente  vienen en pares como <code>&lt;p&gt;</code> y <code>&lt;/p&gt;</code></dd> <!--definición-->  
-                <dd>La primera etiqueta en un par es la <b>etiqueta de inicio</b>, la segunda etiqueta es la <b>etiqueta de fin</b></dd>.
-                <dd>La <b>etiqueta de fin</b> se escribe igual que la etiqueta de inicio, pero con una barra inclinada (/) insertada antes de que el nombre de la etiqueta</dd>          
-            </dl>
-            <div class="nota">
-                    <p><b>Nota:</b>La etiqueta de inicio también se llama la <b>etiqueta de apertura</b> y la etiqueta final de la <b>etiqueta de cierre</b></p>
-            </div>
-            <div>
-              <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
-   <hr>
-  </section> 
-  <section>
-                <h2>Navegadores web.</h2>
-                <p>El propósito de un navegador web (Chrome, IE, Firefox, Safari) es leer los documentos HTML y mostrarlos.<br>
-                El navegador no muestra las etiquetas HTML, pero los utiliza para determinar cómo mostrar el documento:</p>
-                <img src="./img/img_chrome.png" alt="imagen navegador chrome" width="635" height="361">
-                <hr>
-            </div>
-        
-        <div><!--tabla-->
-            <table><!--nuestra tabla solo tiene dos columnas por fila, si necesitaramos más pondriamos más th o td dentro de cada tr-->
-                <tr><!--fila de la tabla-->
-                    <th>Versión</th><!--encabezado-->
-                    <th>Año</th>
-                </tr>
-                <tr>
-                    <td>HTML</td><!--contenido de la tabla-->
-                    <td>1991</td>
-                </tr>
-                <tr>
-                    <td>HTML 2.0</td>
-                    <td>1995</td>
-                </tr>
-                <tr>
-                    <td>HTML 3.2</td>
-                    <td>1997</td>
-                </tr>
-                <tr>
-                    <td>HTML 4.01</td>
-                    <td>1999</td>
-                </tr>
-                <tr>
-                    <td>XHTML</td>
-                    <td>2000</td>
-                </tr>
-                <tr>
-                    <td>HTML5</td>
-                    <td>2014</td>
-                </tr>
-            </table>
-        </div>
-        
-        <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
-<hr>
+<h2>Estructura básica de un documento HTML</h2>
+    <div class="ejemplo"><!--cuadro gris grande-->
+        <h3>Ejemplo</h3>
+        <div class="code"><!--cuadro blanco que encierra el codigo-->
+            <code> <!--indicar que lo que vamos a escribir se tiene que ver como codigo, no interpretar los simbolos.También hace que el tipo de letra sea similar a la que se ve en el editor-->
+                <span>&lt;<span>!DOCTYPE <span>html</span></span>&gt;</span><br>
+                <span>&lt;<span>html <span>lang="es-ES"</span></span>&gt;</span><br><!--salto de linea para que no salga todo el bloque-->
+                <span>&lt;<span>head</span>&gt;</span><br>
+                <span>&lt;<span>meta <span>charset="utf-8"</span></span>&gt;</span><br>
+                <span>&lt;<span>title</span>&gt;<span style="color:black;">Título de la página</span>&gt;&lt;<span>/title</span>&gt;</span><br>
+                <span>&lt;<span>/head</span>&gt;</span><br>
+                <span>&lt;<span>body</span>&gt;</span><br>
+            
+                <span>&lt;<span>h1</span>&gt;<span style="color:black"> Mi primer encabezado.</span>&lt;<span>/h1</span>&gt;</span><br>
+                <span>&lt;<span>p</span>&gt;<span style="color:black"> Mi primer párrafo.</span>&lt;<span>/p</span>&gt;</span><br>
+            
+                <span>&lt;<span>/body</span>&gt;</span><br>
+                <span>&lt;<span>/html</span>&gt;</span><br>
+            </code>
+        </div>      
+    </div>
+<hr>        
+    <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
 </section>
 <section>
-        <h2>Estructura de una página web</h2>
-        <p>A continuación se muestra una visualización de una estructura de la página HTML:</p>
-        <div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#ddd">&lt;html&gt;
+<h2>Explicación de las etiquetas básicas.</h2> 
+    <ol><!--lista ordenada-->
+        <li>La etiqueta <code>&lt;!DOCTYPE html&gt;</code> define el tipo de documento.</li>
+        <li>La etiqueta <code>&lt;html lang="es-ES&gt;</code> define el elemento raíz de una página HTML.</li>
+        <li>La etiqueta <code> &lt;head&gt;</code> define los metadatos del documento.</li>
+        <li>La etiqueta <code>&lt;meta charset="utf-8"&gt</code> define el juego de caracteres del documento.</li>
+        <li>La etiqueta <code>&lt;title&gt;</code> especifica un título del documento.</li>
+        <li>La etiqueta <code>&lt;body&gt;</code> contiene el contenido visible de la página.</li>
+        <li>La etiqueta <code>&lt;h1&gt;</code> define el encabezado principal. Sólo puede haber una en todo el documento.</li>
+        <li>La etiqueta <code>&lt;p&gt;</code> define cada párrafo.</li>
+    </ol>
+<hr>       
+    <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
+</section>
+<section>
+<h2>Etiquetas HTML.</h2>
+    <p>Las etiquetas HTML son los nombres de elementos entre paréntesis angulares:</p>
+    
+    <div class="etiquetasHTML"><!--contenerdor gris que aparece en w3schools-->
+        <p><code><b>&lt;Nombre de etiqueta&gt;</b>contenido ...<b>&lt;/nombre de la etiqueta&gt;</b></code></p>
+    </div>
+    <dl><!--lista de descripción-->
+        <dt><b>Etiquetas HTML</b></dt> <!--titulo-->
+            <dd>Normalmente  vienen en pares como <code>&lt;p&gt;</code> y <code>&lt;/p&gt;</code></dd> <!--definición-->  
+            <dd>La primera etiqueta en un par es la <b>etiqueta de inicio</b>, la segunda etiqueta es la <b>etiqueta de fin</b></dd>.
+            <dd>La <b>etiqueta de fin</b> se escribe igual que la etiqueta de inicio, pero con una barra inclinada (/) insertada antes de que el nombre de la etiqueta</dd>          
+    </dl>
+            
+<div class="nota">
+    <p><b>Nota:</b>La etiqueta de inicio también se llama la <b>etiqueta de apertura</b> y la etiqueta final de la <b>etiqueta de cierre</b></p>
+</div>
+<hr>
+<a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
+</section> 
+<section>
+<h2>Navegadores web.</h2>
+    <p>El propósito de un navegador web (Chrome, IE, Firefox, Safari) es leer los documentos HTML y mostrarlos.<br>
+    El navegador no muestra las etiquetas HTML, pero los utiliza para determinar cómo mostrar el documento:</p>
+    <img src="./img/img_chrome.png" alt="imagen navegador chrome" width="635" height="361">
+<br>
+        
+    <div><!--tabla-->
+        <table><!--nuestra tabla solo tiene dos columnas por fila, si necesitaramos más pondriamos más th o td dentro de cada tr-->
+            <tr><!--fila de la tabla-->
+                <th>Versión</th><!--encabezado-->
+                <th>Año</th>
+            </tr>
+            <tr>
+                <td>HTML</td><!--contenido de la tabla-->
+                <td>1991</td>
+            </tr>
+            <tr>
+                <td>HTML 2.0</td>
+                <td>1995</td>
+            </tr>
+            <tr>
+                <td>HTML 3.2</td>
+                <td>1997</td>
+            </tr>
+            <tr>
+                <td>HTML 4.01</td>
+                <td>1999</td>
+            </tr>
+            <tr>
+                <td>XHTML</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>HTML5</td>
+                <td>2014</td>
+            </tr>
+        </table>
+    </div>
+<hr>        
+    <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
+</section>
+<section>
+<h2>Estructura de una página web</h2>
+    <p>A continuación se muestra una visualización de una estructura de la página HTML:</p>
+
+    <div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#ddd">&lt;html&gt;
         <div style="width:90%;border:1px solid grey;padding:3px;margin:20px">&lt;head&gt;
-        <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;title&gt;Título de la página&lt;/title&gt;
-        </div>
-        &lt;/head&gt;
+            <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;title&gt;Título de la página&lt;/title&gt;</div>
+            &lt;/head&gt;
         </div>
         <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#ddd">&lt;body&gt;
-        <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#fff">
-        <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;h1&gt;Ésto es un encabezado.&lt;/h1&gt;</div>
-        <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;Ésto es un párrafo.&lt;/p&gt;</div>
-        <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;Ésto es otro párrafo.&lt;/p&gt;</div>
+            <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#fff">
+                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;h1&gt;Ésto es un encabezado.&lt;/h1&gt;</div>
+                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;Ésto es un párrafo.&lt;/p&gt;</div>
+                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;Ésto es otro párrafo.&lt;/p&gt;</div>
+            </div>
+            &lt;/body&gt;
         </div>
-        &lt;/body&gt;
-        </div>
-		</div>
-        
-        <div class="nota">
-            <p><b>Nota:</b>Sólo el contenido dentro de la sección <code>&lt;body&gt;</code> (el área blanca arriba) se muestra en un navegador.</p>
-        </div>
-       <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
+	</div>
+<br>        
+<div class="nota">
+    <p><b>Nota:</b>Sólo el contenido dentro de la sección <code>&lt;body&gt;</code> (el área blanca arriba) se muestra en un navegador.</p>
+</div>
+<hr>
+    <a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
 </section>
 </main>
 <footer>
