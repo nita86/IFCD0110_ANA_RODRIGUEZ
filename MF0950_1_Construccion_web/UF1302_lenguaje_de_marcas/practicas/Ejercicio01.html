@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 01</title>
+	
+   	<meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+    <meta name="title" content="Confección y publicación de páginas web">
+    <meta name="keywords" content="Diseño de páginas web con HTML, CSS, JavaScript">
+    <meta name="author" content="Ana Rodríguez">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="icon" type="image/png" href="./img/harry_potter_imagens_(7)_opt.png" sizes="16x16">
+    <link rel="icon" type="image/gif" href="img/harry_potter_imagens_(7)_opt.gif" sizes="16x16">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./img/harry_potter_imagens_(7)_opt.ico" sizes="16x16">
+    
+    <link href="css/estilos.css" rel="stylesheet">
+    <script src="js/funciones.js" type="text/javascript"></script>
+    
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 80%;
+            margin: 0 auto;
+            }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Arial, Helvetica, sans-serif;
+            }
+		hr {
+            border: 1px solid grey; 
+            }
+		#footer {
+			width: 100%;
+			overflow: hidden;
+			text-align: justify;
+			}
+		#datos1 {
+			width: 75%;
+			float: left;
+			}
+		#datos2 {
+			width: 25%;
+			float: left;
+			}
+		
+/*comentar todo el style 
+        .nota {
+            background-color: #FFFFCC;
+            border-left: 6px solid #ffeb3b;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            }
+        code {
+            color: red;
+            background-color: #f1f1f1;
+            padding-left: 4px;
+            padding-right: 4px;
+            font-size: 125%;
+            }
+        .etiquetasHTML {
+            background-color: #f1f1f1;
+            border: 1px solid #cccccc;
+            font-size: 24px;
+            padding: 16px;
+            }
+        code span {
+            color: mediumblue;
+            }
+        code span span {
+            color: brown;
+            }
+        code span span span {
+            color:crimson;
+            }
+        .ejemplo {
+            background-color: #f1f1f1;
+            padding: 8px 16 px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px 0 rgba (0, 0, 0, 16),0 2px 10px 0 rgba(0, 0, 0, 16);
+            }
+        .code {
+            margin-top: 16px;
+            margin-bottom: 16 px;
+            background-color:#FFFFFF;
+            padding: 8px 12px;
+            border-left: 4px solid chartreuse;
+            }
+		.cite {
+            margin-top: 16px;
+            margin-bottom: 16 px;
+            background-color:#FFFFFF;
+            padding: 8px 12px;
+            border-left: 4px solid #72A3E5;
+            }
+        table h1,h2,h3,h4,h5,h6 {
+            margin: 0px;
+            }
+        .tabla1 {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+        .tabla1 td, .tabla1 th {
+            border: 1px solid #DDDDDD;
+            }
+        .tabla1 tr:nth-child(even) hace que una linea si, una no, salga en gris { 
+            background-color: #DDFFDD;
+            }
+		.tabla1 code {
+			color: black;
+			font-size: 130%;
+			}
+		.tablaDemo table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+        .tablaDemo td, th {
+            border: 1px solid #DDDDDD;
+            }
+		.tablaScope table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+        .tablaScope td, th {
+            border: 1px solid #DDDDDD;
+            }
+		.tablaFilas {
+			width: 100%;
+			}
+		.tablaFilas thead {
+			background-color: tomato;
+			}
+		.tablaFilas tbody {
+			background-color: aqua;
+			}
+		.tablaFilas tfoot {
+			background-color: yellowgreen;
+			}
+		span {
+			padding: 2px 5px;
+			margin: 2px;
+			color: #212579;
+			border-radius: 4px;borde redondeado
+			background-color: aliceblue;
+			}
+		#div_padre {
+			border: 1px solid green; 
+			overflow: hidden; 
+			margin: 0 auto;
+			width: 80%;
+			}
+		#div_hijo1 {
+			float:left; 
+			width: 33.33%; 
+			background-color: lightblue;
+			}
+		#div_hijo2 {
+			float:left; 
+			width: 33.33%; 
+			background-color: lightgreen;
+			}
+		#div_hijo2 span {
+			background-color: black; 
+			color: white;
+			}
+		#div_hijo3 {
+			float:left; 
+			width: 33.33%; 
+			background-color: lightcoral;
+			}
+		a:link {
+  			color: green; 
+  			background-color: transparent; 
+  			text-decoration: none;
+			}
+		a:visited {
+  			color: blueviolet;
+  			background-color: transparent;
+  			text-decoration: none;
+			}
+		a:hover {
+  			color: red;
+  			background-color: transparent;
+  			text-decoration: underline;
+			}
+		a:active {
+  			color: yellow;
+  			background-color: transparent;
+  			text-decoration: underline;
+			}
+		article {
+			border-radius: 25px; 
+			border:#C48EF9 2px solid; 
+			padding: 10px; 
+			width: 50%; 
+			height: auto;
+			font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+			color: cornflowerblue; 
+			}
+*/
+ 
+	</style>
+
+</head>
+
+<body>
+<header>
+<img src="img/logo_ejercicio01.PNG" alt="Logos Organismos oficiales" width="100%" height="auto">
+<img src="img/encabezado_ejercicio01.PNG" alt="Encabezado ejercicio" width="100%" height="auto">
+
+<h1><mark>Lenguaje <abbr title="HyperText Markup Language (lenguaje de marcas de hipertexto)">HTML</abbr></mark></h1>
+<hr>
+</header>
+<main>
+<section>
+	<h2><mark>Definición <abbr title="HyperText Markup Language (lenguaje de marcas de hipertexto)"><b>HTML</b></abbr></mark></h2>
+	<p><abbr title="HyperText Markup Language (lenguaje de marcas de hipertexto)">HTML</abbr>, siglas en inglés de <i><b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage</i> (<u>lenguaje de marcas de hipertexto</u>), hace referencia al lenguaje de marcado para la elaboración de páginas web. Es un <em>estándar que sirve de referencia</em> del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado <strong><u>código HTML</u></strong>) para la definición de contenido de una página web, como texto, imágenes, videos, audios, <del>juegos</del>, entre otros.</p>
+	<p><abbr title="HyperText Markup Language (lenguaje de marcas de hipertexto)">HTML</abbr>, <em>es un estándar</em> a cargo del <i><b>W</b>orld <b>W</b>ide <b>W</b>eb <b>C</b>onsortium</i> (W3C<sup>®</sup>) o <u>Consorcio WWW</u>, organización dedicada a la estandarización de casi todas las tecnologías ligadas a la web, sobre todo en lo referente a su escritura e interpretación. <strong>Se considera el lenguaje web más importante</strong> siendo su invención crucial en la aparición, desarrollo y expansión de la <b>W</b>orld <b>W</b>ide <b>W</b>eb (<s>WWW</s> <u>Red Mundial Web</u>).<em>Es el estándar que se ha impuesto en la visualización de páginas web.</em></p>
+</section>
+<hr>
+<section>
+	<h3><mark>Estándar <abbr title="HyperText Markup Language (lenguaje de marcas de hipertexto)">HTML</abbr></mark></h3>
+	<p><q>El lenguaje <abbr title="HyperText Markup Language (lenguaje de marcas de hipertexto)">HTML</abbr> basa su filosofía de desarrollo en la diferenciación.</q></p>
+	
+	<blockquote>
+		<p>Al añadir un elemento externo a la página web (imagen, vídeo, audio, entre otros.), este no se incrusta directamente en el código de la página, sino que se hace una referencia a la ubicación de dicho elemento mediante etiquetas de texto. De este modo, la página web contiene solamente texto mientras que recae en el navegador web (interpretador del código) la tarea de unir todos los elementos y visualizar la página final.</p>
+		<p>Al ser un estándar, <abbr title="HyperText Markup Language (lenguaje de marcas de hipertexto)">HTML</abbr> busca ser un lenguaje que permita que cualquier página web escrita en una determinada versión, pueda ser interpretada de la misma forma (estándar) por cualquier navegador web.</p>
+	</blockquote>
+	
+	<p><cite>Sólo tuve que tomar la idea de hipertexto y conectarlo con las ideas de <abbr title="Protocolo de Control de Transmisión">TCP</abbr> y <abbr title="Domain Name System o Sistema de Nombres de Dominio">DNS</abbr> y —¡Et voilà!— la World Wide Web.</cite><em><strong>Tim Berners-Lee</strong></em>, creador de la Web y autor del libro <cite>"Tejiendo la red"</cite>.</p>
+</section>
+<hr>
+<section>
+	<h3><mark>Navegadores <abbr title="HyperText Markup Language (lenguaje de marcas de hipertexto)">HTML</abbr></mark></h3>
+	<p>Un <strong>navegador web</strong> (en inglés, <b>web browser</b>) es un software, aplicación o programa que permite el acceso a la Web, interpretando la información de distintos tipos de archivos y sitios web para que estos puedan ser visualizados.</p>
+	<ul>
+		<li><strong>La funcionalidad básica de un navegador web</strong> es permitir la visualización de documentos de texto, posiblemente con recursos multimedia incrustados. Además, permite visitar páginas web y hacer actividades en ella, es decir, enlazar un sitio con otro, imprimir, enviar y recibir correo, entre otras funcionalidades más.</li><br>
+		<li><strong>Los documentos que se muestran en un navegador web</strong> pueden estar ubicados en la computadora donde está el usuario y también pueden estar en cualquier otro dispositivo conectado en la computadora del usuario o a través de Internet, y que tenga los recursos necesarios para la transmisión de los documentos (un <dfn>software</dfn> servidor web).</li><br>
+		<li><strong>Tales documentos de texto, comúnmente denominados páginas web</strong>, poseen hiperenlaces o hipervínculos que enlazan una porción de texto o una imagen a otro documento. El seguimiento de enlaces de una página a otra, ubicada en cualquier computadora conectada a Internet, se llama <dfn>navegación</dfn>, de donde se origina el nombre navegador.</li>
+	</ul>
+
+</section>
+<hr>
+</main>
+<footer>
+<div id="footer">
+	<p id="datos1">Profesor: Francisco Oropesiano Carrizosa</p>
+	<p id="datos2">Módulo 1 UF 1</p>
+</div>
+</footer>
+</body>
+</html>
