@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 02</title>
+	
+   	<meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+    <meta name="title" content="Confección y publicación de páginas web">
+    <meta name="keywords" content="Diseño de páginas web con HTML, CSS, JavaScript">
+    <meta name="author" content="Ana Rodríguez">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="icon" type="image/png" href="./img/harry_potter_imagens_(7)_opt.png" sizes="16x16">
+    <link rel="icon" type="image/gif" href="img/harry_potter_imagens_(7)_opt.gif" sizes="16x16">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./img/harry_potter_imagens_(7)_opt.ico" sizes="16x16">
+    
+    <link href="css/estilos.css" rel="stylesheet">
+   
+    
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 80%;
+            margin: 0 auto;
+            }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Arial, Helvetica, sans-serif;
+            }
+		hr {
+            border: 1px solid grey; 
+            }
+		#footer {
+			width: 100%;
+			overflow: hidden;
+			text-align: justify;
+			}
+		#datos1 {
+			width: 75%;
+			float: left;
+			}
+		#datos2 {
+			width: 25%;
+			float: left;
+			}
+		.cuadromarco {
+			border: solid 0.5px grey;
+			padding: 10px;
+			text-align: justify;
+			}
+		
+/*comentar todo el style 
+        .nota {
+            background-color: #FFFFCC;
+            border-left: 6px solid #ffeb3b;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            }
+        code {
+            color: red;
+            background-color: #f1f1f1;
+            padding-left: 4px;
+            padding-right: 4px;
+            font-size: 125%;
+            }
+        .etiquetasHTML {
+            background-color: #f1f1f1;
+            border: 1px solid #cccccc;
+            font-size: 24px;
+            padding: 16px;
+            }
+        code span {
+            color: mediumblue;
+            }
+        code span span {
+            color: brown;
+            }
+        code span span span {
+            color:crimson;
+            }
+        .ejemplo {
+            background-color: #f1f1f1;
+            padding: 8px 16 px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px 0 rgba (0, 0, 0, 16),0 2px 10px 0 rgba(0, 0, 0, 16);
+            }
+        .code {
+            margin-top: 16px;
+            margin-bottom: 16 px;
+            background-color:#FFFFFF;
+            padding: 8px 12px;
+            border-left: 4px solid chartreuse;
+            }
+		.cite {
+            margin-top: 16px;
+            margin-bottom: 16 px;
+            background-color:#FFFFFF;
+            padding: 8px 12px;
+            border-left: 4px solid #72A3E5;
+            }
+        table h1,h2,h3,h4,h5,h6 {
+            margin: 0px;
+            }
+        .tabla1 {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+        .tabla1 td, .tabla1 th {
+            border: 1px solid #DDDDDD;
+            }
+        .tabla1 tr:nth-child(even) hace que una linea si, una no, salga en gris { 
+            background-color: #DDFFDD;
+            }
+		.tabla1 code {
+			color: black;
+			font-size: 130%;
+			}
+		.tablaDemo table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+        .tablaDemo td, th {
+            border: 1px solid #DDDDDD;
+            }
+		.tablaScope table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+        .tablaScope td, th {
+            border: 1px solid #DDDDDD;
+            }
+		.tablaFilas {
+			width: 100%;
+			}
+		.tablaFilas thead {
+			background-color: tomato;
+			}
+		.tablaFilas tbody {
+			background-color: aqua;
+			}
+		.tablaFilas tfoot {
+			background-color: yellowgreen;
+			}
+		span {
+			padding: 2px 5px;
+			margin: 2px;
+			color: #212579;
+			border-radius: 4px;borde redondeado
+			background-color: aliceblue;
+			}
+		#div_padre {
+			border: 1px solid green; 
+			overflow: hidden; 
+			margin: 0 auto;
+			width: 80%;
+			}
+		#div_hijo1 {
+			float:left; 
+			width: 33.33%; 
+			background-color: lightblue;
+			}
+		#div_hijo2 {
+			float:left; 
+			width: 33.33%; 
+			background-color: lightgreen;
+			}
+		#div_hijo2 span {
+			background-color: black; 
+			color: white;
+			}
+		#div_hijo3 {
+			float:left; 
+			width: 33.33%; 
+			background-color: lightcoral;
+			}
+		a:link {
+  			color: green; 
+  			background-color: transparent; 
+  			text-decoration: none;
+			}
+		a:visited {
+  			color: blueviolet;
+  			background-color: transparent;
+  			text-decoration: none;
+			}
+		a:hover {
+  			color: red;
+  			background-color: transparent;
+  			text-decoration: underline;
+			}
+		a:active {
+  			color: yellow;
+  			background-color: transparent;
+  			text-decoration: underline;
+			}
+		article {
+			border-radius: 25px; 
+			border:#C48EF9 2px solid; 
+			padding: 10px; 
+			width: 50%; 
+			height: auto;
+			font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+			color: cornflowerblue; 
+			}
+*/
+ 
+	</style>
+
+</head>
+
+<body>
+<header>
+<img src="img/logo_ejercicio01.PNG" alt="Logos Organismos oficiales" width="1856px" height="auto">
+<img src="img/encabezado_ejercicio01.PNG" alt="Encabezado ejercicio" width="856px" height="auto">
+
+<h1>Aviso Legal</h1>
+<hr>
+<nav><ul id="indice">
+	<li><a href="#datos">Datos generales</a></li>
+	<li><a href="#privacidad">Política de privacidad</a></li>
+	<li><a href="#condiciones">Condiciones de uso</a></li>
+	<li><a href="#responsabilidades">Responsabilidades</a></li>
+	<li><a href="#propiedad">Propiedad intelectual e industrial</a></li>
+	<li><a href="#ley">Ley Aplicable y Jurisdicción</a></li>
+	<li><a href="#cookies">Politica de cookies</a></li>
+</ul></nav>
+<hr>
+</header>
+<main>
+<section>
+<div class="cuadromarco">
+	<h2 id="datos">DATOS GENERALES</h2>
+	<p>De acuerdo con el <a href="Practicas_a_entregar/02 Etiquetas de división y enelaces/BOE-A-2018-16673.pdf">artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico</a> ponemos a su disposición los siguientes datos:</p>
+	<p><i>(Nombre de la empresa)</i> está domiciliada en la calle <i>(dirección fiscal de la empresa)</i>, con CIF <i>(número correspondiente)</i>. Inscrita en el Registro Mercantil de <i>(ciudad en la que se encuentre dicho registro)</i>, Vol. <i>(número correspondiente)</i>, Folio <i>(número correspondiente)</i>, Hoja <i>(número correspondiente)</i>, Inscripción <i>(número correspondiente)</i>.</p>
+	<p>En la web <i>(página web de la empresa)</i> hay una serie de contenidos de carácter informativo sobre <i>(contenido de la web o explicación de su actividad)</i>.</p>
+	<p><strong>Su principal objetivo</strong> es facilitar a los clientes y al público en general, la información relativa a la empresa, a los productos y servicios que se ofrecen (esto se puede modificar según la actividad a la que se dedique la empresa).</p>
+</div>
+<hr>
+<a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
+</section>
+
+<section>
+<div class="cuadromarco">
+	<h2 id="privacidad">POLITICA DE PRIVACIDAD</h2>
+	<p>Ejemplo aviso legal: En cumplimiento de lo dispuesto en la <a href="https://es.wikipedia.org/wiki/Ley_Org%C3%A1nica_de_Protecci%C3%B3n_de_Datos_de_Car%C3%A1cter_Personal_(Espa%C3%B1a)">Ley Orgánica 15/1999, de 13 de Diciembre, de Protección de Datos de Carácter Personal (LOPD)</a> se informa al usuario que todos los datos que nos proporcione serán incorporados a un fichero, creado y mantenido bajo la responsabilidad de (nombre de la empresa)</p>
+	<p><em>Siempre se va a respetar la confidencialidad de sus datos personales</em> que sólo serán utilizados con la finalidad de gestionar los servicios ofrecidos, atender a las solicitudes que nos plantee, realizar tareas administrativas, así como remitir información técnica, comercial o publicitaria por vía ordinaria o electrónica.</p>
+	<p>Para ejercer sus <e>derechos de oposición, rectificación o cancelación</e> deberá dirigirse a la sede de la empresa <i>(dirección de la empresa)</i>, escribirnos al siguiente correo <a href="z">(email de contacto de la empresa)</a> o llámanos al <a href="z">(número de teléfono)</a>.</p>
+</div>
+<hr>
+<a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
+</section>
+
+<section>
+<div class="cuadromarco">
+	<h2 id="condiciones">CONDICIONES DE USO</h2>
+	<p>Las condiciones de acceso y uso del presente sitio web se rigen por la legalidad vigente y por el principio de buena fe comprometiéndose el usuario a realizar un buen uso de la web. No se permiten conductas que vayan contra la ley, los derechos o intereses de terceros.</p>
+	<p>Ser usuario de la web de <i>(página web de la empresa)</i> implica que reconoce haber leído y aceptado las presentes condiciones y lo que las extienda la normativa legal aplicable en esta materia. Si por el motivo que fuere no está de acuerdo con estas condiciones no continúe usando esta web.</p>
+	<p>Cualquier tipo de notificación y/o reclamación solamente será válida por notificación escrita y/o correo certificado.</p>
+</div>
+<hr>
+<a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
+</section>
+
+<section>
+<div class="cuadromarco">
+	<h2 id="responsabilidades">RESPONSABILIDADES</h2>
+	<p><i>(Nombre de la empresa)</i> no se hace responsable de la información y contenidos almacenados en foros, redes sociales o cualesquier otro medio que permita a terceros publicar contenidos de forma independiente en la página web del prestador.</p>
+	<p>Sin embargo, teniendo en cuenta los <a href="Practicas_a_entregar/02 Etiquetas de división y enelaces/BOE-A-2002-13758-consolidado.pdf">art. 11 y 16 de la LSSI-CE</a>, <i>(nombre de la empresa)</i> se compromete a la retirada o en su caso bloqueo de aquellos contenidos que pudieran afectar o contravenir la legislación nacional o internacional, derechos de terceros o la moral y el orden público.</p>
+	<p>Tampoco la empresa se responsabilizará de los daños y perjuicios que se produzcan por fallos o malas configuraciones del software instalado en el ordenador del internauta. Se excluye toda responsabilidad por alguna incidencia técnica o fallo que se produzca cuando el usuario se conecte a internet. Igualmente no se garantiza la inexistencia de interrupciones o errores en el acceso al sitio web.</p>
+	<p>Así mismo, <i>(nombre de la empresa)</i> se reserva el derecho a actualizar, modificar o eliminar la información contenida en su página web, así como la configuración o presentación del mismo, en cualquier momento sin asumir alguna responsabilidad por ello.</p>
+	<p>Le comunicamos que cualquier precio que pueda ver en nuestra web será solamente orientativo. Si el usuario desea saber con exactitud el precio o si el producto en el momento actual cuenta con alguna oferta de la cual se puede beneficiar ha de acudir a alguna de las tiendas físicas con las que cuenta <i>(nombre de la empresa)</i></p>
+</div>
+<hr>
+<a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
+</section>	
+
+<section>
+<div class="cuadromarco">
+	<h2 id="propiedad">PROPIEDAD INTELECTUAL E INDUSTRIAL</h2>
+	<p><i>(Nombre de la empresa)</i> es titular de todos los derechos sobre el software de la publicación digital así como de los derechos de propiedad industrial e intelectual referidos a los contenidos que se incluyan, a excepción de los derechos sobre productos y servicios de carácter público que no son propiedad de esta empresa.</p>
+	<p>Ningún material publicado en esta web podrá ser reproducido, copiado o publicado sin el consentimiento por escrito de <i>(nombre de la empresa)</i></p>
+	<p>Toda la información que se reciba en la web, como comentarios, sugerencias o ideas, se considerará cedida a <i>(nombre de la empresa)</i> de manera gratuita. No debe enviarse información que NO pueda ser tratada de este modo.</p>
+	<p>Todos los productos y servicios de estas páginas que NO son propiedad de <i>nombre de la empresa)</i> son marcas registradas de sus respectivos propietarios y son reconocidas como tales por nuestra empresa. Solamente aparecen en la web de <i>(nombre de la empresa)</i> a efectos de promoción y de recopilación de información. Estos propietarios pueden solicitar la modificación o eliminación de la información que les pertenece.</p>
+</div>
+<hr>
+<a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
+</section>
+<section>
+<div class="cuadromarco">
+	<h2 id="ley">LEY APLICABLE Y JURISDICCIÓN</h2>
+	<p>Las presentes condiciones generales se rigen por la legislación española. Para cualquier litigio que pudiera surgir relacionado con el sitio web o la actividad que en él se desarrolla serán competentes Juzgados de (lugar en el que le sea más fácil a la empresa llegar, normalmente es la ciudad en la que se encuentra ubicada), renunciando expresamente el usuario a cualquier otro fuero que pudiera corresponderle.</p>
+</div>
+<hr>
+<a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
+</section>
+
+
+<section>
+<div class="cuadromarco">
+	<h2 id="cookies">POLÍTICA DE COOKIES</h2>
+	<p>Las cookies utilizadas se asocian únicamente con un usuario anónimo y su ordenador, y no proporcionan por sí mismas los datos personales del usuario.</p>
+	<p><i>(Nombre de la empresa)</i> por su propia cuenta o la de un tercero contratado para prestación de servicios de medición, pueden utilizar cookies cuando el usuario navega por el sitio web. Las cookies son ficheros enviados al navegador por medio de un servicio web con la finalidad de registrar las actividades del usuario durante su tiempo de navegación.</p>
+	<p>Mediante el uso de las cookies resulta posible que el servidor donde se encuentra la web reconozca el navegador web utilizado por el usuario con la finalidad de que la navegación sea más sencilla. Se utilizan también para medir la audiencia y parámetros del tráfico, controlar el proceso y número de entradas.</p>
+	<p>El usuario tiene la posibilidad de configurar su navegador para ser avisado de la recepción de cookies y para impedir su instalación en su equipo. Por favor consulte las instrucciones y manuales de su navegador para ampliar esta información.</p>
+	<p>Para utilizar el sitio web no es necesario que el usuario permita la instalación de las cookies enviadas al sitio web, o el tercero que actúe en su nombre, sin perjuicio de que sea necesario que el usuario inicie una sesión tal en cada uno de los servicios cuya prestación requiera el previo registro.</p>
+	<p>En todo caso las cookies tienen un carácter temporal con la única finalidad de hacer más eficaz su transmisión ulterior. En ningún caso se utilizará cookies para recoger información de carácter personal.</p>
+</div>
+<hr>
+<a href="#indice"><img src="img/flechaarriba.jpg" alt="flecha" width="40" height="40" title="flecha"></a>
+</section>
+
+</main>
+<footer>
+<p><small>Descargar en formato pdf <a href="./Practicas_a_entregar/02 Etiquetas de división y enelaces/BOE-A-2018-16673.pdf">Ley Orgánica 34/2002</a> | <a href="./Practicas_a_entregar/02 Etiquetas de división y enelaces/BOE-A-2002-13758-consolidado.pdf">Ley Orgánica 15/1999</a></small></p>
+<div id="footer">
+	<p id="datos1">Profesor: Francisco Oropesiano Carrizosa</p>
+	<p id="datos2">Módulo 1 UF 1</p>
+</div>
+</footer>
+</body>
+</html>
