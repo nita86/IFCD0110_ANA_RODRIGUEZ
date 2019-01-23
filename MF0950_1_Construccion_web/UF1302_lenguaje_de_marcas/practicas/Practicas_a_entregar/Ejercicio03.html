@@ -24,7 +24,6 @@
             width: 80%;
             margin: 0 auto;
 			color: blue;
-			font-size: 10 vw;
             }
         h1, h2, h3, h4, h5, h6 {
             font-family: Arial, Helvetica, sans-serif;
@@ -32,7 +31,7 @@
 			font-weight: bold;
             }
 		hr {
-            border: 1px solid grey; 
+            border: 1px solid lightgrey; 
             }
 		#footer {
 			width: 100%;
@@ -60,8 +59,32 @@
 			border: dotted 1px #000000;
 			width: 90%;
 			background-color: #F1F3F5;
-			padding: 10px 5px;
+			padding: 30px 20px;
 			margin-left: 30px;
+			}
+		#cuadrolista {
+			border: dotted 1px #000000;
+			width: 55%;
+			background-color: #F1F3F5;
+			padding:20px;
+			margin-left: 200px;
+			}
+		dl dt {
+			color: darkslateblue;
+			font-weight: bold;
+			text-decoration: underline;
+			}
+		dt img {
+			width: 35px;
+			height: auto;
+			}
+		a {
+			color: darkslateblue;
+			font-weight: bold;
+			}
+		u {
+			color:darkslateblue;
+			font-weight: bold;
 			}
 		
 /*comentar todo el style 
@@ -230,8 +253,8 @@
 
 <body>
 <header>
-<img src="../img/logo_ejercicio01.PNG" alt="Logos Organismos oficiales" width="850px" height="auto">
-<img src="../img/encabezado_ejercicio03.PNG" alt="Encabezado ejercicio" width="850px" height="auto">
+<img src="../img/logo_ejercicio01.PNG" alt="Logos Organismos oficiales">
+<img src="../img/encabezado_ejercicio03.PNG" alt="Encabezado ejercicio">
 </header>
 <main>
 <section>
@@ -281,17 +304,17 @@
 		<li>Evita el uso de tecnologías propietarias.</li>
 		<li>Proporciona alternativas al contenido que puede presentar problemas de accesibilidad.</li>
 	</ul>
-	<div class="cuadropunteado"><!--cuadrolista-->
-		<p>Importante</p>
+	<div id="cuadrolista"><!--cuadrolista-->
+		<p><b>Importante</b></p>
 		<dl>
-			<dt>Visual</dt>
+			<dt><img alt="ojo" src="03_Listas_de_información/icon_eye.gif">Visual</dt>
 				<dd>La ceguera, la baja visión y la ceguera al color.</dd>
-			<dt>Audición</dt>
+			<dt><img alt="oido" src="03_Listas_de_información/icon_ear.gif">Audición</dt>
 				<dd>La sordera.</dd>
-			<dt>Motor</dt>
+			<dt><img alt="mano" src="03_Listas_de_información/icon_hand.gif">Motor</dt>
 				<dd>La incapacidad para utilizar un ratón, el tiempo de respuesta lento, el control motor delicado.</dd>
-			<dt>Cognitivo</dt>
-				<dd>Dificultades de aprendizaje, distracción, incapacidad para recordar o concentrarse en grandes cantidades de información.	</dd>
+			<dt><img alt="cerebro" src="03_Listas_de_información/icon_brain.gif">Cognitivo</dt>
+				<dd>Dificultades de aprendizaje, distracción, incapacidad para recordar o concentrarse en grandes cantidades de información.</dd>
 		</dl>
 	</div><!--fincuadrolista-->
 </section>
