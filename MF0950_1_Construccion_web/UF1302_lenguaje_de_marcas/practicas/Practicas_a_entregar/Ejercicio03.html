@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 03</title>
+	
+   	<meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+    <meta name="title" content="Confección y publicación de páginas web">
+    <meta name="keywords" content="Diseño de páginas web con HTML, CSS, JavaScript">
+    <meta name="author" content="Ana Rodríguez">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="icon" type="image/png" href="../img/harry_potter_imagens_(7)_opt.png" sizes="16x16">
+    <link rel="icon" type="image/gif" href="../img/harry_potter_imagens_(7)_opt.gif" sizes="16x16">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../img/harry_potter_imagens_(7)_opt.ico" sizes="16x16">
+    
+    <link href="css/estilos.css" rel="stylesheet">
+   
+    
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 80%;
+            margin: 0 auto;
+			color: blue;
+			font-size: 10 vw;
+            }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Arial, Helvetica, sans-serif;
+			background-color: lightgray;
+			font-weight: bold;
+            }
+		hr {
+            border: 1px solid grey; 
+            }
+		#footer {
+			width: 100%;
+			overflow: hidden;
+			text-align: justify;
+			}
+		#datos1 {
+			width: 75%;
+			float: left;
+			}
+		#datos2 {
+			width: 25%;
+			float: left;
+			}
+		.cuadromarco {
+			border: solid 0.5px grey;
+			padding: 10px;
+			text-align: justify;
+			}
+		.fas fa-angle-right {
+			width: 40px;
+			height: auto;
+			}
+		.cuadropunteado {
+			border: dotted 1px #000000;
+			width: 90%;
+			background-color: #F1F3F5;
+			padding: 10px 5px;
+			margin-left: 30px;
+			}
+		
+/*comentar todo el style 
+        .nota {
+            background-color: #FFFFCC;
+            border-left: 6px solid #ffeb3b;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            }
+        code {
+            color: red;
+            background-color: #f1f1f1;
+            padding-left: 4px;
+            padding-right: 4px;
+            font-size: 125%;
+            }
+        .etiquetasHTML {
+            background-color: #f1f1f1;
+            border: 1px solid #cccccc;
+            font-size: 24px;
+            padding: 16px;
+            }
+        code span {
+            color: mediumblue;
+            }
+        code span span {
+            color: brown;
+            }
+        code span span span {
+            color:crimson;
+            }
+        .ejemplo {
+            background-color: #f1f1f1;
+            padding: 8px 16 px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px 0 rgba (0, 0, 0, 16),0 2px 10px 0 rgba(0, 0, 0, 16);
+            }
+        .code {
+            margin-top: 16px;
+            margin-bottom: 16 px;
+            background-color:#FFFFFF;
+            padding: 8px 12px;
+            border-left: 4px solid chartreuse;
+            }
+		.cite {
+            margin-top: 16px;
+            margin-bottom: 16 px;
+            background-color:#FFFFFF;
+            padding: 8px 12px;
+            border-left: 4px solid #72A3E5;
+            }
+        table h1,h2,h3,h4,h5,h6 {
+            margin: 0px;
+            }
+        .tabla1 {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+        .tabla1 td, .tabla1 th {
+            border: 1px solid #DDDDDD;
+            }
+        .tabla1 tr:nth-child(even) hace que una linea si, una no, salga en gris { 
+            background-color: #DDFFDD;
+            }
+		.tabla1 code {
+			color: black;
+			font-size: 130%;
+			}
+		.tablaDemo table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+        .tablaDemo td, th {
+            border: 1px solid #DDDDDD;
+            }
+		.tablaScope table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+        .tablaScope td, th {
+            border: 1px solid #DDDDDD;
+            }
+		.tablaFilas {
+			width: 100%;
+			}
+		.tablaFilas thead {
+			background-color: tomato;
+			}
+		.tablaFilas tbody {
+			background-color: aqua;
+			}
+		.tablaFilas tfoot {
+			background-color: yellowgreen;
+			}
+		span {
+			padding: 2px 5px;
+			margin: 2px;
+			color: #212579;
+			border-radius: 4px;borde redondeado
+			background-color: aliceblue;
+			}
+		#div_padre {
+			border: 1px solid green; 
+			overflow: hidden; 
+			margin: 0 auto;
+			width: 80%;
+			}
+		#div_hijo1 {
+			float:left; 
+			width: 33.33%; 
+			background-color: lightblue;
+			}
+		#div_hijo2 {
+			float:left; 
+			width: 33.33%; 
+			background-color: lightgreen;
+			}
+		#div_hijo2 span {
+			background-color: black; 
+			color: white;
+			}
+		#div_hijo3 {
+			float:left; 
+			width: 33.33%; 
+			background-color: lightcoral;
+			}
+		a:link {
+  			color: green; 
+  			background-color: transparent; 
+  			text-decoration: none;
+			}
+		a:visited {
+  			color: blueviolet;
+  			background-color: transparent;
+  			text-decoration: none;
+			}
+		a:hover {
+  			color: red;
+  			background-color: transparent;
+  			text-decoration: underline;
+			}
+		a:active {
+  			color: yellow;
+  			background-color: transparent;
+  			text-decoration: underline;
+			}
+		article {
+			border-radius: 25px; 
+			border:#C48EF9 2px solid; 
+			padding: 10px; 
+			width: 50%; 
+			height: auto;
+			font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+			color: cornflowerblue; 
+			}
+*/
+ 
+	</style>
+
+</head>
+
+<body>
+<header>
+<img src="../img/logo_ejercicio01.PNG" alt="Logos Organismos oficiales" width="850px" height="auto">
+<img src="../img/encabezado_ejercicio03.PNG" alt="Encabezado ejercicio" width="850px" height="auto">
+</header>
+<main>
+<section>
+	<h2><i class="fas fa-angle-right"></i> Definición de accesibilidad web</h2>
+	<p>Normalmente la <strong>accesibilidad web</strong> se asocia con la idea de desarrollar páginas web que puedan ser utilizadas por las personas con discapacidad, tal como podemos leer en las siguientes definiciones:</p>
+	<div class="cuadropunteado"><!--cuadro1-->
+		<p>La accesibilidad Web significa que personas con algún tipo de discapacidad van a poder hacer uso de la Web. En concreto, al hablar de accesibilidad Web se está haciendo referencia a un diseño Web que va a permitir que estas personas puedan percibir, entender, navegar e interactuar con la Web, aportando a su vez contenidos. La accesibilidad Web también beneficia a otras personas, incluyendo personas de edad avanzada que han visto mermadas sus habilidad a consecuencia de la edad.</p>
+		<p>Fuente: <a href="https://www.w3c.es/Divulgacion/accesibilidad">Introducción a la Accesibilidad Web</a>, <a href="https://www.w3c.es/">W3C</a>.</p>
+	</div><!--fincuadro1-->
+	<br>
+	<div class="cuadropunteado"><!--cuadro2-->
+		<p>La <a href="https://es.wikipedia.org/wiki/Accesibilidad">accesibilidad</a> web o de la interfaz, indica la capacidad de acceso a la <abbr title=" World Wide Web (WWW) o red informática mundia">Web</abbr> y a sus contenidos por todas las personas, independientemente de la <u>discapacidad</u> (física, intelectual o técnica) que presenten o de las que se deriven del contexto de uso (tecnológicas o ambientales). Esta cualidad está íntimamente relacionada con la <u>usabilidad</u>.</p>
+		<p>El máximo organismo dentro de la jerarquía de <u>Internet</u> que se encarga de promover la accesibilidad es el <abbr title="World Wide Web Consortium (W3C)"><a href="https://www.w3c.es/">W3C</a></abbr>, en especial su grupo de trabajo <abbr title="W3C Web Accessibility Initiative (WAI)"><a href="https://www.w3.org/WAI/">WAI</a></abbr>.</p>
+		<p>En <u>España</u> una de las asociaciones que trabaja en este campo es el <abbr title="Fundación y del Seminario Iberoamericano sobre Discapacidad y Accesibilidad en la Red"><a href="http://www.sidar.org/presen/index.php">SIDAR</a></abbr>. En enero de 2007 el <a href="http://sid.usal.es/centrosyservicios/discapacidad/14518/2-1-3/inteco-instituto-nacional-de-tecnologias-de-la-comunicacion.aspx">Instituto Nacional de Tecnologías de la Comunicación (INTECO)</a> creó el Centro de Referencia en Accesibilidad y Estándares Web con el objetivo de fomentar la accesibilidad y crear un foco de conocimiento al respecto.</p>
+		<p>Fuente: <a href="https://es.wikipedia.org/wiki/Accesibilidad">Accesibilidad web</a>, <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a>.</p>
+	</div><!--fincuadro2-->
+	<br>
+	<div class="cuadropunteado"><!--cuadro3-->
+		<p><cite>A web site is accessible if people with specific disabilities can use it with the same effectiveness, safety and security as non-disabled people.</cite></p>
+		<hr>
+		<p>Un sitio web es accesible si las personas con discapacidad lo pueden utilizar con la misma efectividad, seguridad y protección que las personas sin discapacidad.</p>
+		<p>Fuente: <a href="03_Listas_de_información/assets09-wcag.pdf">Validity and Reliability of Accessibility Evaluation Methods</a>, Giorgio Brajnik.</p>
+	</div><!--fincuadro3-->
+</section>
+<section>
+	<h2><i class="fas fa-angle-right"></i> Guía breve para crear sitios web accesibles</h2>
+	<p>El <a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a> publica la guía <u>Quick Tips to Make Accessible Web Sites</u> (traducción al español disponible en <a href="https://accesibilidadenlaweb.blogspot.com/2008/10/gua-breve-para-crear-sitios-web.html">Guía breve para crear sitios web accesibles</a>). Los 10 consejos que proporcionan son:</p>
+	<div class="cuadropunteado">
+		<ol>
+			<li><u>Imágenes y animaciones:</u> Use el atributo <strong>alt</strong> para describir la función de cada elemento visual.</li>
+			<li><u>Mapas de imagen:</u> Use el elemento <strong>map</strong> y texto para las zonas activas.</li>
+			<li>Multimedia: Proporcione subtítulos y transcripción del sonido, y descripción del vídeo.</li>
+			<li><u>Enlaces de hipertexto:</u> Use texto que tenga sentido leído fuera de contexto. Por ejemplo, evite "pincha aquí".</li>
+			<li><u>Organización de las páginas:</u> Use encabezados, listas y estructura consistente. Use <strong>CSS</strong> para la maquetación donde sea posible.</li>
+			<li><u>Figuras y diagramas:</u> Descríbalos brevemente en la pagina o use el atributo <strong>longdesc</strong>.</li>
+			<li><u>Scripts, applets y plug-ins:</u> Ofrezca contenido alternativo si las funciones nuevas no son accesibles.</li>
+			<li><u>Marcos:</u> Use el elemento <strong>noframes</strong> y títulos con sentido.</li>
+			<li><u>Tablas:</u> Facilite la lectura línea a línea. Resuma.</li>
+			<li><u>Revise su trabajo:</u> Verifique. Use las herramientas, puntos de comprobación y pautas de <a href="http://www.w3.org/TR/WCAG/">http://www.w3.org/TR/WCAG/</a>.</li>
+		</ol>
+	</div><!--fincuadropunteado-->
+	<p>Esta guía son únicamente consejos que ayudan cuando se tiene un "primer contacto" con la accesibilidad web, pero en ningún caso implican que su cumplimiento garantice que se alcance algún <a href="https://www.w3.org/blog/2018/06/wcag21-rec/">nivel de adecuación</a> (A, AA o AAA).</p>
+	<p>Los consejos proporcionados en esta guía breve se pueden resumir en los siguientes puntos:</p>
+	<ul>
+		<li>Utiliza estándares abiertos.</li>
+		<li>Utiliza los estándares correctamente: comprueba que el sitio web se valida correctamente.</li>
+		<li>Evita el uso de tecnologías propietarias.</li>
+		<li>Proporciona alternativas al contenido que puede presentar problemas de accesibilidad.</li>
+	</ul>
+	<div class="cuadropunteado"><!--cuadrolista-->
+		<p>Importante</p>
+		<dl>
+			<dt>Visual</dt>
+				<dd>La ceguera, la baja visión y la ceguera al color.</dd>
+			<dt>Audición</dt>
+				<dd>La sordera.</dd>
+			<dt>Motor</dt>
+				<dd>La incapacidad para utilizar un ratón, el tiempo de respuesta lento, el control motor delicado.</dd>
+			<dt>Cognitivo</dt>
+				<dd>Dificultades de aprendizaje, distracción, incapacidad para recordar o concentrarse en grandes cantidades de información.	</dd>
+		</dl>
+	</div><!--fincuadrolista-->
+</section>
+</main>
+<footer>
+<div id="footer">
+	<p id="datos1">Profesor: Francisco Oropesiano Carrizosa</p>
+	<p id="datos2">Módulo 1 UF 1</p>
+</div>
+</footer>
+</body>
+</html>
