@@ -19,6 +19,36 @@
         h1, h2, h3, h4, h5, h6 {
             font-family: Arial, Helvetica, sans-serif;
             }
+		hr {
+            border: 0.5px solid grey; 
+            }
+		#cuadrologo {
+			width: 100%;
+			height: auto;
+			margin-top: 20px;
+			overflow: hidden;
+			}
+		#logo {
+			width: 100%;
+			height: auto;
+			float: left;
+			font-weight: bold;
+			font-size: 25px;
+			}
+		#imglogo {
+			width: 100px;
+			}
+		#enlacelogo {
+			text-decoration: none; 
+			}
+		#navegacion {
+			font-weight: bold;
+			font-size: 20px;
+			background-color: lightblue;
+			width: 89%;
+			padding:10px 60px;
+			text-align: center;
+			}
         .nota {
             background-color: #FFFFCC;
             border-left: 6px solid #ffeb3b;
@@ -27,9 +57,7 @@
             padding-left: 5px;
             padding-right: 5px;
             }
-        hr {
-            border: 1px solid grey; 
-            }
+        
         code {
             color: red;
             background-color: #f1f1f1;
@@ -82,18 +110,17 @@
 <body>
 <header>
 <!--logo-->
-<div style="overflow: hidden; margin-top: 10px;">
-	<div style="border: #020202 solid 1px; float: left;">
-		<a href="index _html.html" style="text-align: left"><img src="img/HTML5_Logo_64.png" alt="logo html5" width="64" height="64" title="inicio de página"></a>
-	</div>
-	<div style="border: #020202 solid 1px; float: left; margin-top: 30px;">
-		<a href="index _html.html" style="text-align: left">Lenguaje de marcas</a>
+<div id="cuadrologo">
+	<div id="logo">
+		<a id="enlacelogo" href="index _html.html"><img id="imglogo" src="img/HTML5_Logo_64.png" alt="logo html5" title="inicio de página">Lenguaje de marcas</a>
 	</div>
 </div>
  
-
+<br>
 <!--navegacion-->
+<div id="navegacion">
     <a href="index _html.html">índice</a> | <a href="introduccion.html">introducción</a> | <a href="formato.html">formato</a> | <a href="bloques.html">bloques</a> | <a href="tablas.html">tablas</a> | <a href="listas.html">listas</a> | <a href="multimedia.html">multimedia</a>   
+</div>
 <hr>     
 <h1>HTML Introducción</h1><!--solo puede haber un h1 por pagina-->
 <hr>
