@@ -24,59 +24,64 @@
             width: 100%;
             margin: 0 auto;
 			background-color: lightgrey;
+			text-align: center;
             }
+		header {
+			width: 95%;
+			margin: 0 auto;
+			background-color: white;
+			padding: 0.5px;
+		}		
         main {
-            width: 80%;
+            width: 95%;
             background-color: white;
-            padding: 5px;
-            margin: auto;
-            }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: Arial, Helvetica, sans-serif;
+            padding: 0.5px;
+            margin:0 auto;
             }
 		hr {
             border: 1px solid lightgrey; 
             }
-		#footer {
-			width: 100%;
-			overflow: hidden;
-			text-align: justify;
-			}
-		#datos1 {
-			width: 75%;
-			float: left;
-			}
-		#datos2 {
-			width: 25%;
-			float: left;
-			}	
-        #cabeceraperiodico {
+		#cabeceraperiodico {
             background-color: blue;
             color: white;
             text-align: center;
             padding: 10px;
-            margin:10px auto;
-            width: 90%;
+            margin:5px auto; 
+            width: 95%;
             }
         #navcabecera {
             text-align: center;
-            width: 80%;
-            margin: auto;
+            width: 95%;
+            margin:0 auto;
             }
-        #navcabecera, a {
-            background-color: blue;
-            color: white;
-            margin: auto;
-            text-decoration: none;
-            }
+		#navcabecera span {
+			border: solid 0.5px blue;
+			background-color: blue;
+			}
+		#navcabecera span a {
+			color: white;
+			text-decoration: none;
+			padding: 10px;
+			}
         #tecnologia {
             text-align: center;
-            margin: auto;
-            width: 90%;
+            margin: 0 auto;
+            width: 95%;
             color: white;
             background-color: orchid;
-        }
-
+        	}
+		footer {
+			width: 95%;
+			overflow: hidden;
+			text-align: center;
+			background-color: blue;
+			margin: 0 auto;
+			color: white;
+			}
+		footer a {
+			color: white;
+			text-decoration: none;
+			}
 /*comentar todo el style 
         .nota {
             background-color: #FFFFCC;
@@ -376,24 +381,18 @@
 
 <body>
 <header>
-<img src="../img/logo_ejercicio01.PNG" alt="Logos Organismos oficiales">
-<img src="../img/encabezado_ejercicio05.PNG" alt="Encabezado ejercicio">
-<br>
-</header>
-<hr>
-<main>
-<section>
 <div id="cabeceraperiodico"><!--cabeceraperiodico-->
 <h1>NitaNews</h1>
 <h2>El mayor magazine digital de España</h2>
 </div><!--fin cabeceraperiodico-->
 
 <div id="navcabecera"><!-- navcabecera-->
-    <nav> 
-        <a href="#">Internacional</a> | <a href="#">Opinión</a> | <a href="#">Sociedad</a> | <a href="#">Economía</a> | <a href="#">Ciencia</a> | <a href="#">Tecnología</a> | <a href="#">Cultura</a> | <a href="#">Gente</a> | <a href="#">Deportes</a> | <a href="#">Televisión</a> | <a href="#">Vídeo</a> |
-    </nav>
+    <nav>
+        <span><a href="#">Internacional</a></span> <span><a href="#">Opinión</a></span> <span><a href="#">Sociedad</a></span> <span><a href="#">Economía</a></span> <span><a href="#">Ciencia</a></span> <span><a href="#">Tecnología</a></span> <span><a href="#">Cultura</a></span> <span><a href="#">Gente</a></span> <span><a href="#">Deportes</a></span> <span><a href="#">Televisión</a></span> <span><a href="#">Vídeo</a></span>
+    </nav> 	
 </div><!--fin navcabecera-->
-</section>
+</header>
+<main>
 <section>
 <div id="tecnologia"><!--tecnologia-->
 <h2>Tecnología</h2>
@@ -479,35 +478,15 @@
     </div><!--fin contenido4-->
 </div><!--fin contenido-->
 </section>
-<section>
-    <nav> 
-        <a href="#">Aviso Legal</a> | <a href="#">Política de privacidad</a> | <a href="#">Política de protección de datos</a> | <a href="#">Política de Cookies</a> |
-    </nav> 
-
-</section>
-
-
-         
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
 </main>
 <footer>
-<div id="footer">
-	<p id="datos1">Profesor: Francisco Oropesiano Carrizosa</p>
-	<p id="datos2">Módulo 1 UF 1</p>
-</div>
+<nav> 
+	<a href="#">Aviso Legal</a> | <a href="#">Política de privacidad</a> | <a href="#">Política de protección de datos</a> | <a href="#">Política de Cookies</a> |
+</nav>
+<details> 
+	<summary>©2004-2018.</summary>
+	<p>WebMaster™. Todos los derechos reservados.</p>
+	<p>Todo el contenido y gráficos de esta web son propiedad de WebMaster™</p>
 </footer>
 </body>
 </html>
