@@ -70,23 +70,54 @@
 			}
 		#caracteristicas {
 			background-color: #F1F1F1;
-			width: 95%;
 			text-align: left;
+			width: 80%;
 			}
-		#img_caracteristicas {
+		#caracteristicas img {
 			width: 95%;
 			height: auto;
 			}
-		#td_caracteristicas {
+		#caracteristicas td{
 			text-align: left;
+			width: 80%;
 			}
 		#mercado {
 			width: 70%;
+			text-align: center;
 			}
-		.img_mercado {
-			width: 95%;
+		#mercado tr {
+			width: 20%;
+			}
+		#mercado th img {
+			width: 77%;
 			height: auto;
 			}
+		.verde {
+			background-color: rgba(139, 225, 165, 0.178);
+			}
+		.rosa {
+			background-color: rgba(218, 120, 236, 0.26);
+			}
+		#funcionalidad{
+			width: 75%;
+			text-align: center;
+			font-size-adjust: inherit;
+			background-color: rgba(211, 211, 211, 0.3);
+			}
+		#funcionalidad th img {
+			width: 105px;
+			height: auto;
+			}
+		#funcionalidad td img {
+			width: 25px;
+			height: auto;
+			}
+		.amarillo {
+			background-color: rgba(255, 228, 196, 0.6);
+			}
+
+		
+
 		
 
 		
@@ -312,8 +343,8 @@
 <div class="cuadroblanco"><!--caracteristicas blanco-->
 	<table id="caracteristicas"><!--tabla caracteristicas gris-->
 		<tr>
-			<th><img id="img_caracteristicas" src="04_Tablas_de_datos/navegadores.png" alt="imagen navegadores"></th>
-			<td id="td_caracteristicas"><p style="color: green"><b>Principales características.</b></p>
+			<th><img src="04_Tablas_de_datos/navegadores.png" alt="imagen navegadores"></th>
+			<td><p style="color: green"><b>Principales características.</b></p>
 				<ul>
 					<li><b>Seguridad y provacidad:</b> Ofrecen seguridad contra software malicioso.</li>
 					<li><b>Velocidad:</b> Cargan rápidametne páginas y aplicaciones web.</li>
@@ -334,37 +365,37 @@
 	<table id="mercado"><!--tablamercado-->
 	<caption>Cuota de mercado 2018</caption>
 	<colgroup>
-		<col span="3" style="background-color: rgba(194, 243, 194, 0.884)">
-		<col span="3" style="background-color: rgba(243, 213, 217, 0.884)">
-	</colgroup>3
+		<col span="3" style="background-color: rgba(139,225,165,0.32);">
+		<col span="3" style="background-color: rgba(218,120,236,0.35);">
+	<colgroup>
 	<thead>
 		<tr>
-			<th scope="col"><img class="img_mercado" alt="chrome" src="04_Tablas_de_datos/chrome.png">Chrome</th>
-			<th scope="col"><img class="img_mercado" alt="safari" src="04_Tablas_de_datos/safari.png">Safari</th>
-			<th scope="col"><img class="img_mercado" alt="firefox" src="04_Tablas_de_datos/firefox.png">Firefox</th>
-			<th scope="col"><img class="img_mercado" alt="internet explorer" src="04_Tablas_de_datos/explorer.png">Explorer</th>
-			<th scope="col"><img class="img_mercado" alt="microsoft edge" src="04_Tablas_de_datos/edge.png">Edge</th>
-			<th scope="col"><img class="img_mercado" alt="opera" src="04_Tablas_de_datos/opera.png">Opera</th>
+			<th scope="col"><img alt="chrome" src="04_Tablas_de_datos/chrome.png">Chrome</th>
+			<th scope="col"><img alt="safari" src="04_Tablas_de_datos/safari.png">Safari</th>
+			<th scope="col"><img alt="firefox" src="04_Tablas_de_datos/firefox.png">Firefox</th>
+			<th scope="col"><img alt="internet explorer" src="04_Tablas_de_datos/explorer.png">Explorer</th>
+			<th scope="col"><img alt="microsoft edge" src="04_Tablas_de_datos/edge.png">Edge</th>
+			<th scope="col"><img alt="opera" src="04_Tablas_de_datos/opera.png">Opera</th>
 		</tr>
-		</thead>
-		<tbody>
+	</thead>
+	<tbody>
 		<tr>
-			<td>58,4%</td>
-			<td>15,3%</td>
-			<td>10,1%</td>
-			<td>9,2%</td>
-			<td>4,9%</td>
-			<td>2,1%</td>
+			<td class="verde">58,4%</td>
+			<td class="verde">15,3%</td>
+			<td class="verde">10,1%</td>
+			<td class="rosa">9,2%</td>
+			<td class="rosa">4,9%</td>
+			<td class="rosa">2,1%</td>
 		</tr>
-		</tbody>
-		<tfoot></tfoot>
+	</tbody>
+	<tfoot>
 		<tr>
-			<td><a href="../Navegadores/ChromeSetup.exe" alt="chrome">Descargar</a></td>
-			<td><a href="../Navegadores/SafariSetup.exe" alt="safari">Descargar</a></td>
-			<td><a href="../Navegadores/Firefox_Installer.exe" alt="firefox">Descargar</a></td>
-			<td><a href="../Navegadores/ExtExport.exe" alt="explorer">Descargar</a></td>
-			<td><a href="../Navegadores/EIE11_ES-XL_WOL_WIN764.EXE" alt="edge">Descargar</a></td>
-			<td><a href="../Navegadores/OperaSetup.exe" alt="opera">Descargar</a></td>
+			<td class="verde"><a href="../Navegadores/ChromeSetup.exe" alt="chrome">Descargar</a></td>
+			<td class="verde"><a href="../Navegadores/SafariSetup.exe" alt="safari">Descargar</a></td>
+			<td class="verde"><a href="../Navegadores/Firefox_Installer.exe" alt="firefox">Descargar</a></td>
+			<td class="rosa"><a href="../Navegadores/ExtExport.exe" alt="explorer">Descargar</a></td>
+			<td class="rosa"><a href="../Navegadores/EIE11_ES-XL_WOL_WIN764.EXE" alt="edge">Descargar</a></td>
+			<td class="rosa"><a href="../Navegadores/OperaSetup.exe" alt="opera">Descargar</a></td>
 		</tr>
 	</tfoot>	
 	</table><!--fin tablamercado-->
@@ -375,19 +406,19 @@
 <div class="cuadroblanco"><!--funcionalidad blanco-->
 	<h2>Funcionalidad de los navegadores web</h2>
 	<p>Todos los navegadores incluyen la mayoría de las siguientes características: navegación por pestañas, bloqueador de ventanas emergentes, soporte para motores de búsqueda, gestor de descargas, marcadores, corrector ortográfico, y atajos del teclado. Para mantener la privacidad casi todos los navegadores ofrecen maneras sencillas de borrar cookies, cachés web y el historial.</p>
-	<table><!--tablafuncionalidad-->
+	<table id="funcionalidad"><!--tablafuncionalidad-->
 	<caption>Funcionalidades de los navegadores web</caption>
 		<tr>
 			<th scope="col">FUNCIONES</th>
-			<th scope="col"><img alt="chrome" src="04_Tablas_de_datos/chrome.png">Chrome</th>
-			<th scope="col"><img alt="safari" src="04_Tablas_de_datos/safari.png">Safari</th>
-			<th scope="col"><img alt="firefox" src="04_Tablas_de_datos/firefox.png">Firefox</th>
-			<th scope="col"><img alt="internet explorer" src="04_Tablas_de_datos/explorer.png">Explorer</th>
-			<th scope="col"><img alt="microsoft edge" src="04_Tablas_de_datos/edge.png">Edge</th>
-			<th scope="col"><img alt="opera" src="04_Tablas_de_datos/opera.png">Opera</th>
+			<th class="amarillo" scope="col"><img alt="chrome" src="04_Tablas_de_datos/chrome.png">Chrome</th>
+			<th class="amarillo" scope="col"><img alt="safari" src="04_Tablas_de_datos/safari.png">Safari</th>
+			<th class="amarillo" scope="col"><img alt="firefox" src="04_Tablas_de_datos/firefox.png">Firefox</th>
+			<th class="amarillo" scope="col"><img alt="internet explorer" src="04_Tablas_de_datos/explorer.png">Explorer</th>
+			<th class="amarillo" scope="col"><img alt="microsoft edge" src="04_Tablas_de_datos/edge.png">Edge</th>
+			<th class="amarillo" scope="col"><img alt="opera" src="04_Tablas_de_datos/opera.png">Opera</th>
 		</tr>
 		<tr>
-			<th scope="row">Sincronización en la nube</th>
+			<th class="rosa" scope="row">Sincronización en la nube</th>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Sí</td>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Sí</td>
@@ -397,7 +428,7 @@
 				 	
 		</tr>
 		<tr>
-			<th scope="row">Gestor de descargas</th>
+			<th class="rosa"scope="row">Gestor de descargas</th>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
@@ -406,7 +437,7 @@
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 		</tr>
 		<tr>
-			<th scope="row">Navegación privada</th>
+			<th class="rosa"scope="row">Navegación privada</th>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
@@ -415,7 +446,7 @@
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 		</tr>
 		<tr>
-			<th scope="row">Modo de pantalla completaq</th>
+			<th class="rosa"scope="row">Modo de pantalla completaq</th>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 			<td><img alt="no válido" src="04_Tablas_de_datos/icon_delete.png">No</td>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
@@ -424,7 +455,7 @@
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 		</tr>
 		<tr>
-			<th scope="row">Pestañas verticales</th>
+			<th class="rosa"scope="row">Pestañas verticales</th>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 			<td><img alt="no válido" src="04_Tablas_de_datos/icon_delete.png">No</td>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
@@ -433,7 +464,7 @@
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 		</tr>
 		<tr>
-			<th scope="row">Extensiones personalizadas</th>
+			<th class="rosa"scope="row">Extensiones personalizadas</th>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 			<td><img alt="no válido" src="04_Tablas_de_datos/icon_delete.png">No</td>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
@@ -442,7 +473,7 @@
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 		</tr>
 		<tr>
-			<th scope="row">Valoración</th>
+			<th class="rosa"scope="row">Valoración</th>
 			<td><img alt="valoración" src="04_Tablas_de_datos/estrella_32x32.png">6</td>
 			<td><img alt="valoración" src="04_Tablas_de_datos/estrella_32x32.png">3</td>
 			<td><img alt="valoración" src="04_Tablas_de_datos/estrella_32x32.png">6</td>
