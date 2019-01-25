@@ -25,51 +25,103 @@
             margin: 0 auto;
 			background-color: lightgrey;
 			text-align: center;
-            }
-		header {
-			width: 95%;
-			margin: 0 auto;
-			background-color: white;
-			padding: 0.5px;
-		}		
-        main {
+			padding: 10px;
+            }        
+			main {
             width: 95%;
             background-color: white;
             padding: 0.5px;
             margin:0 auto;
             }
+		header {
+			width: 100%;
+			margin: 0 auto;
+			background-color:blue;
+			color: white;
+			padding: 0.5px;
+			}		
 		hr {
             border: 1px solid lightgrey; 
             }
-		#cabeceraperiodico {
-            background-color: blue;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin:5px auto; 
-            width: 95%;
-            }
         #navcabecera {
             text-align: center;
-            width: 95%;
+            width: 100%;
             margin:0 auto;
             }
-		#navcabecera span {
-			border: solid 0.5px blue;
-			background-color: blue;
-			}
 		#navcabecera span a {
 			color: white;
 			text-decoration: none;
 			padding: 10px;
+			border: solid 0.5px blue;
+			background-color: blue;
+			width: 60px;
 			}
         #tecnologia {
             text-align: center;
             margin: 0 auto;
-            width: 95%;
+            width: 100%;
             color: white;
             background-color: orchid;
         	}
+		section {
+			display: block;
+			margin: 0px;
+			padding: 0px;
+			width: 100%;
+			overflow: hidden;
+			}
+		#telefonos {
+			overflow: hidden;
+			width: 95%;
+			padding: 1%;
+			margin: auto;
+			}
+		#telefono1 {
+			float: left;
+			width: 30%;
+			text-align: left;
+			}
+		#telefono2 {
+			float: right;
+			width: 30%;
+			text-align: left;
+			}
+		#telefono3 {
+			width: 30%;
+			margin: auto;
+			text-align: left;
+			}
+		h3 {
+			color: blue;
+			font-size: x-large;
+			}
+		.telefonos {
+			width: 100%;
+			height: auto;
+			}
+		.estrella {
+			width: 20px;
+			height: auto;
+			}
+		#menuvodafone {
+			overflow: hidden;
+			width: 95%;
+			padding: 1%;
+			margin: auto;
+			}
+		#menuvodafone nav {
+			float: left;
+			width: 30%;
+			text-align: left;
+			color: green;
+			}
+		#menuvodafone article {
+			width: 35%;
+			float: left;
+			}
+		ul {
+			list-style-image: url('05_Etiquetas_Semanticas/lista-icono.png');
+			}
 		footer {
 			width: 95%;
 			overflow: hidden;
@@ -380,66 +432,72 @@
 </head>
 
 <body>
+<main>
+
 <header>
-<div id="cabeceraperiodico"><!--cabeceraperiodico-->
 <h1>NitaNews</h1>
 <h2>El mayor magazine digital de España</h2>
-</div><!--fin cabeceraperiodico-->
+</header>
+<br>
 
 <div id="navcabecera"><!-- navcabecera-->
     <nav>
         <span><a href="#">Internacional</a></span> <span><a href="#">Opinión</a></span> <span><a href="#">Sociedad</a></span> <span><a href="#">Economía</a></span> <span><a href="#">Ciencia</a></span> <span><a href="#">Tecnología</a></span> <span><a href="#">Cultura</a></span> <span><a href="#">Gente</a></span> <span><a href="#">Deportes</a></span> <span><a href="#">Televisión</a></span> <span><a href="#">Vídeo</a></span>
     </nav> 	
 </div><!--fin navcabecera-->
-</header>
-<main>
-<section>
+
 <div id="tecnologia"><!--tecnologia-->
 <h2>Tecnología</h2>
 </div><!--fin tecnologia-->
-<div id="telefonos"><!--telefonos-->
-    <div id="telefono1"><!--telefono1-->
-        <img alt="telefono1" src="05_Etiquetas_Semanticas/galaxy-note_9.jpg">
-        <p>Análisis | Un mes con el Samsung Galaxy Note 9</p>
-        <p>LAURA PÉREZ</p> <img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella">
-        <p>Probamos el último modelo de la firma coreana, un terminal de gama alta que brilla por su pantalla, su característico lápiz digital S Pen y su funcionamiento con el uso de Inteligencia Artificial.</p>
-    </div><!--fin telefono1-->
-    <div id="telefono2"><!--telefono2-->
-        <img alt="telefono2" src="05_Etiquetas_Semanticas/honor-view20.jpg">
-        <p>Honor View20, un móvil con más píxeles que ninguno</p>
-        <p>ANA GÓMEZ</p> <img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella">
-        <p>La segunda marca de Huawei lanza un teléfono inteligente con la cámara frontal oculta y la trasera de 48 megapíxeles. Se maneja por inteligencia artificial y por un superprocesador, el más potente.</p>
-    </div><!--fin telefono2-->
-    <div id="telefono3"><!--telefono3-->
-        <img alt="telefono3" src="05_Etiquetas_Semanticas/pocophone-f1.jpg">
-        <p>Pocophone F1, ¿el mejor móvil en relación calidad-precio?</p>
-        <p>ANTONIO SÄNCHEZ</p> <img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella">
-        <p>La segunda marca de la china Xiaomi se lanza al mercado con un terminal caracterizado por especificaciones de gama alta y un precio de gama media que logra eliminando lo superfluo.</p>
-    </div><!--fin telefono3-->
-</div><!--fin telefonos-->
 
+<section>
+<div id="telefonos"><!--telefonos-->
+    <article id="telefono1"><!--telefono1-->
+        <img class="telefonos" alt="galaxy-note_9" src="05_Etiquetas_Semanticas/galaxy-note_9.jpg">
+        <h3>Análisis | Un mes con el Samsung Galaxy Note 9</h3>
+        <p>LAURA PÉREZ <img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"></p>
+        <p>Probamos el último modelo de la firma coreana, un terminal de gama alta que brilla por su pantalla, su característico lápiz digital S Pen y su funcionamiento con el uso de Inteligencia Artificial.</p>
+    </article><!--fin telefono1-->
+    <article id="telefono2"><!--telefono2-->
+        <img class="telefonos" alt="honor-view20" src="05_Etiquetas_Semanticas/honor-view20.jpg">
+        <h3>Honor View20, un móvil con más píxeles que ninguno</h3>
+        <p>ANA GÓMEZ <img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"></p>
+        <p>La segunda marca de Huawei lanza un teléfono inteligente con la cámara frontal oculta y la trasera de 48 megapíxeles. Se maneja por inteligencia artificial y por un superprocesador, el más potente.</p>
+    </article><!--fin telefono2-->
+    <article id="telefono3"><!--telefono3-->
+        <img class="telefonos" alt="pocophone-f1" src="05_Etiquetas_Semanticas/pocophone-f1.jpg">
+        <h3>Pocophone F1, ¿el mejor móvil en relación calidad-precio?</h3>
+        <p>ANTONIO SÄNCHEZ <img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"></p>
+        <p>La segunda marca de la china Xiaomi se lanza al mercado con un terminal caracterizado por especificaciones de gama alta y un precio de gama media que logra eliminando lo superfluo.</p>
+    </article><!--fin telefono3-->
+</div><!--fin telefonos-->
+</section>
+
+<section>
 <div id="menuvodafone"><!--menuvodafone-->
-    <img src="05_Etiquetas_Semanticas/logo-vodafone.png" alt="logo-vodafone">
-    <ul>
-        <li>Más populares</li>
-        <li>Redes sociales</li>
-        <li>Ordenadores</li>
-        <li>Gadgets</li>
-        <li>Videoconsolas</li>
-        <li>Teléfonos Móviles</li>
-        <li>WhatsApp</li>
-        <li>Tablets</li>
-        <li>Smartphones</li>
-    </ul>
+	<nav>
+    	<img src="05_Etiquetas_Semanticas/logo-vodafone.png" alt="logo-vodafone">
+    	<ul>
+        	<li>Más populares</li>
+        	<li>Redes sociales</li>
+        	<li>Ordenadores</li>
+        	<li>Gadgets</li>
+        	<li>Videoconsolas</li>
+        	<li>Teléfonos Móviles</li>
+        	<li>WhatsApp</li>
+        	<li>Tablets</li>
+        	<li>Smartphones</li>
+		</ul>
+	</nav>
+	<article id="video1"><!--video1-->
+    	<iframe src="https://www.youtube.com/embed/IP3rOxqQQAw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    	<p>El superordenador que fabrica humanos virtuales para probar medicinas</p>
+	</article><!--fin video1-->
+	<article id="video2"><!--video2-->
+    	<iframe src="https://www.youtube.com/embed/6_YopNlxcYU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    	<p>Una retina de grafeno para devolver la vista a 230 millones de personas</p>
+	</article><!--fin video2-->
 </div><!--fin menuvodafone-->
-<div id="video1"><!--video1-->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/IP3rOxqQQAw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p>El superordenador que fabrica humanos virtuales para probar medicinas</p>
-</div><!--fin video1-->
-<div id="video2"><!--video2-->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/6_YopNlxcYU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p>Una retina de grafeno para devolver la vista a 230 millones de personas</p>
-</div><!--fin video2-->
 </section>
 
 <section>
@@ -448,33 +506,33 @@
 </div><!--fin videojuegos-->
 <div id="juego1"><!--juego1-->
     <img alt="juego1" src="05_Etiquetas_Semanticas/fornite.jpg">
-    <p>Cómo completar los desafíos de Fortnite de la Semana 8 de la Temporada 7</p>
-    <p>JOSÉ ORTÍZ</p> <img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella">
+    <h3>Cómo completar los desafíos de Fortnite de la Semana 8 de la Temporada 7</h3>
+    <p>JOSÉ ORTÍZ</p> <img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella">
     <p>Ya están disponibles los desafíos correspondientes a la Semana 8 de la Temporada 7 del Pase de Batalla de Fortnite Battle Royale. Completadlos con nuestra guía.</p>
 </div><!--fin juego1-->
 <div id="juego2"><!--juego2-->
     <img alt="juego2" src="05_Etiquetas_Semanticas/gta5.jpg">
-    <p>Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s</p>
-    <p>PEDRO ZAMBRANO</p> <img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella">
+    <h3>Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s</h3>
+    <p>PEDRO ZAMBRANO</p> <img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img class="estrella" src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella">
     <p>Ganar dinero infinito, coches de lujo, salud, munición, armas, tanques, eliminar estrellas… Recopilamos todos los trucos y claves de GTA 5 (Grand Theft Auto V) para todas las plataformas</p>
 </div><!--fin juego2-->
 <div id="contenido"><!--contenido-->
-    <h3>Contenido relacionado</h3>
+    <p>Contenido relacionado</p>
     <div id="contenido1"><!--contenido1-->
         <img alt="red_dead_redemption3" src="05_Etiquetas_Semanticas/red_dead_redemption3.jpg">
-        <p>Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s</p>
+        <h3>Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s</h3>
     </div><!--fin contenido1-->
     <div id="contenido2"><!--contenido2-->
         <img alt="red_dead_redemption2" src="05_Etiquetas_Semanticas/red_dead_redemption2.jpg">
-        <p>Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s</p>
+        <h3>Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s</h3>
     </div><!--fin contenido2-->
     <div id="contenido3"><!--contenido3-->
         <img alt="assassins-creed-odyssey" src="05_Etiquetas_Semanticas/assassins-creed-odyssey.jpg">
-        <p>Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s</p>
+        <h3>Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s</h3>
     </div><!--fin contenido3-->
     <div id="contenido4"><!--contenido4-->
         <img alt="call-of-duty" src="05_Etiquetas_Semanticas/call-of-duty.jpg">
-        <p>Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s</p>
+        <h3>Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s</h3>
     </div><!--fin contenido4-->
 </div><!--fin contenido-->
 </section>
