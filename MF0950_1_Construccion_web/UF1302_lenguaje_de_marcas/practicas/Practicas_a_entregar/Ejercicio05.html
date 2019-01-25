@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 05</title>
+	
+   	<meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+    <meta name="title" content="Confección y publicación de páginas web">
+    <meta name="keywords" content="Diseño de páginas web con HTML, CSS, JavaScript">
+    <meta name="author" content="Ana Rodríguez">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="icon" type="image/png" href="../img/harry_potter_imagens_(7)_opt.png" sizes="16x16">
+    <link rel="icon" type="image/gif" href="../img/harry_potter_imagens_(7)_opt.gif" sizes="16x16">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../img/harry_potter_imagens_(7)_opt.ico" sizes="16x16">
+    
+    <link href="css/estilos.css" rel="stylesheet">
+   
+    
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 100%;
+            margin: 0 auto;
+			background-color: lightgrey;
+            }
+        main {
+            width: 80%;
+            background-color: white;
+            padding: 5px;
+            margin: auto;
+            }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Arial, Helvetica, sans-serif;
+            }
+		hr {
+            border: 1px solid lightgrey; 
+            }
+		#footer {
+			width: 100%;
+			overflow: hidden;
+			text-align: justify;
+			}
+		#datos1 {
+			width: 75%;
+			float: left;
+			}
+		#datos2 {
+			width: 25%;
+			float: left;
+			}	
+        #cabeceraperiodico {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin:10px auto;
+            width: 90%;
+            }
+        #navcabecera {
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            }
+        #navcabecera, a {
+            background-color: blue;
+            color: white;
+            margin: auto;
+            text-decoration: none;
+            }
+        #tecnologia {
+            text-align: center;
+            margin: auto;
+            width: 90%;
+            color: white;
+            background-color: orchid;
+        }
+
+/*comentar todo el style 
+        .nota {
+            background-color: #FFFFCC;
+            border-left: 6px solid #ffeb3b;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            }
+        code {
+            color: red;
+            background-color: #f1f1f1;
+            padding-left: 4px;
+            padding-right: 4px;
+            font-size: 125%;
+            }
+        .etiquetasHTML {
+            background-color: #f1f1f1;
+            border: 1px solid #cccccc;
+            font-size: 24px;
+            padding: 16px;
+            }
+        code span {
+            color: mediumblue;
+            }
+        code span span {
+            color: brown;
+            }
+        code span span span {
+            color:crimson;
+            }
+        .ejemplo {
+            background-color: #f1f1f1;
+            padding: 8px 16 px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px 0 rgba (0, 0, 0, 16),0 2px 10px 0 rgba(0, 0, 0, 16);
+            }
+        .code {
+            margin-top: 16px;
+            margin-bottom: 16 px;
+            background-color:#FFFFFF;
+            padding: 8px 12px;
+            border-left: 4px solid chartreuse;
+            }
+		.cite {
+            margin-top: 16px;
+            margin-bottom: 16 px;
+            background-color:#FFFFFF;
+            padding: 8px 12px;
+            border-left: 4px solid #72A3E5;
+            }
+        table h1,h2,h3,h4,h5,h6 {
+            margin: 0px;
+            }
+        .tabla1 {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+        .tabla1 td, .tabla1 th {
+            border: 1px solid #DDDDDD;
+            }
+        .tabla1 tr:nth-child(even) hace que una linea si, una no, salga en gris { 
+            background-color: #DDFFDD;
+            }
+		.tabla1 code {
+			color: black;
+			font-size: 130%;
+			}
+		.tablaDemo table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+        .tablaDemo td, th {
+            border: 1px solid #DDDDDD;
+            }
+		.tablaScope table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+        .tablaScope td, th {
+            border: 1px solid #DDDDDD;
+            }
+		.tablaFilas {
+			width: 100%;
+			}
+		.tablaFilas thead {
+			background-color: tomato;
+			}
+		.tablaFilas tbody {
+			background-color: aqua;
+			}
+		.tablaFilas tfoot {
+			background-color: yellowgreen;
+			}
+		span {
+			padding: 2px 5px;
+			margin: 2px;
+			color: #212579;
+			border-radius: 4px;borde redondeado
+			background-color: aliceblue;
+			}
+		#div_padre {
+			border: 1px solid green; 
+			overflow: hidden; 
+			margin: 0 auto;
+			width: 80%;
+			}
+		#div_hijo1 {
+			float:left; 
+			width: 33.33%; 
+			background-color: lightblue;
+			}
+		#div_hijo2 {
+			float:left; 
+			width: 33.33%; 
+			background-color: lightgreen;
+			}
+		#div_hijo2 span {
+			background-color: black; 
+			color: white;
+			}
+		#div_hijo3 {
+			float:left; 
+			width: 33.33%; 
+			background-color: lightcoral;
+			}
+		a:link {
+  			color: green; 
+  			background-color: transparent; 
+  			text-decoration: none;
+			}
+		a:visited {
+  			color: blueviolet;
+  			background-color: transparent;
+  			text-decoration: none;
+			}
+		a:hover {
+  			color: red;
+  			background-color: transparent;
+  			text-decoration: underline;
+			}
+		a:active {
+  			color: yellow;
+  			background-color: transparent;
+  			text-decoration: underline;
+			}
+		article {
+			border-radius: 25px; 
+			border:#C48EF9 2px solid; 
+			padding: 10px; 
+			width: 50%; 
+			height: auto;
+			font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+			color: cornflowerblue; 
+			}
+				.cuadromarco {
+			border: solid 0.5px grey;
+			padding: 10px;
+			text-align: justify;
+			}
+		.fas fa-angle-right {
+			width: 40px;
+			height: auto;
+			}
+		.cuadropunteado {
+			border: dotted 1px #000000;
+			width: 90%;
+			background-color: #F1F3F5;
+			padding: 30px 20px;
+			margin-left: 30px;
+			}
+		#cuadrolista {
+			border: dotted 1px #000000;
+			width: 55%;
+			background-color: #F1F3F5;
+			padding:20px;
+			margin-left: 200px;
+			}
+		dl dt {
+			color: darkslateblue;
+			font-weight: bold;
+			text-decoration: underline;
+			}
+		dt img {
+			width: 35px;
+			height: auto;
+			}
+		a {
+			color: darkslateblue;
+			font-weight: bold;
+			}
+		u {
+			color:darkslateblue;
+			font-weight: bold;
+			}
+        .cuadroblanco {
+			background-color: white;
+			padding: 10px;
+			text-align: center;
+			border: lightgrey solid 0.5px;
+			}
+		table {
+			border-collapse: collapse;
+			margin: auto;
+			}
+		td, th {
+			border: 1px solid #CDC0C0;
+			padding: 10px;
+			text-align: center;
+			}
+		#caracteristicas {
+			background-color: #F1F1F1;
+			text-align: left;
+			width: 80%;
+			}
+		#caracteristicas img {
+			width: 95%;
+			height: auto;
+			}
+		#caracteristicas td{
+			text-align: left;
+			width: 80%;
+			}
+		#mercado {
+			width: 70%;
+			text-align: center;
+			}
+		#mercado tr {
+			width: 20%;
+			}
+		#mercado th img {
+			width: 77%;
+			height: auto;
+			}
+		.verde {
+			background-color: rgba(139, 225, 165, 0.178);
+			}
+		.rosa {
+			background-color: rgba(218, 120, 236, 0.26);
+			}
+		#funcionalidad{
+			width: 75%;
+			text-align: center;
+			font-size-adjust: inherit;
+			background-color: rgba(211, 211, 211, 0.3);
+			}
+		#funcionalidad th img {
+			width: 105px;
+			height: auto;
+			}
+		#funcionalidad td img {
+			width: 25px;
+			height: auto;
+			}
+		.amarillo {
+			background-color: rgba(255, 228, 196, 0.6);
+			}
+		#compatibilidad{
+			width: 60%;
+			text-align: center;
+			font-size-adjust: inherit;
+			background-color: rgba(211, 211, 211, 0.3);
+			}
+		#compatibilidad th img {
+			width: 105px;
+			height: auto;
+			}
+		#compatibilidad td img {
+			width: 25px;
+			height: auto;
+			}
+		#software{
+			width: 70%;
+			text-align: center;
+			font-size-adjust: inherit;
+			background-color: rgba(211, 211, 211, 0.3);
+			}
+		#software th img {
+			width: 105px;
+			height: auto;
+			}
+		#software td img {
+			width: 25px;
+			height: auto;
+			}
+		.morado {
+			background-color: rgba(248, 149, 248, 0.3);
+			}
+*/
+ 
+</style>
+
+</head>
+
+<body>
+<header>
+<img src="../img/logo_ejercicio01.PNG" alt="Logos Organismos oficiales">
+<img src="../img/encabezado_ejercicio05.PNG" alt="Encabezado ejercicio">
+<br>
+</header>
+<hr>
+<main>
+<section>
+<div id="cabeceraperiodico"><!--cabeceraperiodico-->
+<h1>NitaNews</h1>
+<h2>El mayor magazine digital de España</h2>
+</div><!--fin cabeceraperiodico-->
+
+<div id="navcabecera"><!-- navcabecera-->
+    <nav> 
+        <a href="#">Internacional</a> | <a href="#">Opinión</a> | <a href="#">Sociedad</a> | <a href="#">Economía</a> | <a href="#">Ciencia</a> | <a href="#">Tecnología</a> | <a href="#">Cultura</a> | <a href="#">Gente</a> | <a href="#">Deportes</a> | <a href="#">Televisión</a> | <a href="#">Vídeo</a> |
+    </nav>
+</div><!--fin navcabecera-->
+</section>
+<section>
+<div id="tecnologia"><!--tecnologia-->
+<h2>Tecnología</h2>
+</div><!--fin tecnologia-->
+<div id="telefonos"><!--telefonos-->
+    <div id="telefono1"><!--telefono1-->
+        <img alt="telefono1" src="05_Etiquetas_Semanticas/galaxy-note_9.jpg">
+        <p>Análisis | Un mes con el Samsung Galaxy Note 9</p>
+        <p>LAURA PÉREZ</p> <img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella">
+        <p>Probamos el último modelo de la firma coreana, un terminal de gama alta que brilla por su pantalla, su característico lápiz digital S Pen y su funcionamiento con el uso de Inteligencia Artificial.</p>
+    </div><!--fin telefono1-->
+    <div id="telefono2"><!--telefono2-->
+        <img alt="telefono2" src="05_Etiquetas_Semanticas/honor-view20.jpg">
+        <p>Honor View20, un móvil con más píxeles que ninguno</p>
+        <p>ANA GÓMEZ</p> <img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella">
+        <p>La segunda marca de Huawei lanza un teléfono inteligente con la cámara frontal oculta y la trasera de 48 megapíxeles. Se maneja por inteligencia artificial y por un superprocesador, el más potente.</p>
+    </div><!--fin telefono2-->
+    <div id="telefono3"><!--telefono3-->
+        <img alt="telefono3" src="05_Etiquetas_Semanticas/pocophone-f1.jpg">
+        <p>Pocophone F1, ¿el mejor móvil en relación calidad-precio?</p>
+        <p>ANTONIO SÄNCHEZ</p> <img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella">
+        <p>La segunda marca de la china Xiaomi se lanza al mercado con un terminal caracterizado por especificaciones de gama alta y un precio de gama media que logra eliminando lo superfluo.</p>
+    </div><!--fin telefono3-->
+</div><!--fin telefonos-->
+
+<div id="menuvodafone"><!--menuvodafone-->
+    <img src="05_Etiquetas_Semanticas/logo-vodafone.png" alt="logo-vodafone">
+    <ul>
+        <li>Más populares</li>
+        <li>Redes sociales</li>
+        <li>Ordenadores</li>
+        <li>Gadgets</li>
+        <li>Videoconsolas</li>
+        <li>Teléfonos Móviles</li>
+        <li>WhatsApp</li>
+        <li>Tablets</li>
+        <li>Smartphones</li>
+    </ul>
+</div><!--fin menuvodafone-->
+<div id="video1"><!--video1-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IP3rOxqQQAw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>El superordenador que fabrica humanos virtuales para probar medicinas</p>
+</div><!--fin video1-->
+<div id="video2"><!--video2-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6_YopNlxcYU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>Una retina de grafeno para devolver la vista a 230 millones de personas</p>
+</div><!--fin video2-->
+</section>
+
+<section>
+<div id="videojuegos"><!--videojuegos-->
+<h2>Videojuegos</h2>
+</div><!--fin videojuegos-->
+<div id="juego1"><!--juego1-->
+    <img alt="juego1" src="05_Etiquetas_Semanticas/fornite.jpg">
+    <p>Cómo completar los desafíos de Fortnite de la Semana 8 de la Temporada 7</p>
+    <p>JOSÉ ORTÍZ</p> <img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella">
+    <p>Ya están disponibles los desafíos correspondientes a la Semana 8 de la Temporada 7 del Pase de Batalla de Fortnite Battle Royale. Completadlos con nuestra guía.</p>
+</div><!--fin juego1-->
+<div id="juego2"><!--juego2-->
+    <img alt="juego2" src="05_Etiquetas_Semanticas/gta5.jpg">
+    <p>Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s</p>
+    <p>PEDRO ZAMBRANO</p> <img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella"><img src="05_Etiquetas_Semanticas/estrella_32x32.png" alt="estrella">
+    <p>Ganar dinero infinito, coches de lujo, salud, munición, armas, tanques, eliminar estrellas… Recopilamos todos los trucos y claves de GTA 5 (Grand Theft Auto V) para todas las plataformas</p>
+</div><!--fin juego2-->
+<div id="contenido"><!--contenido-->
+    <h3>Contenido relacionado</h3>
+    <div id="contenido1"><!--contenido1-->
+        <img alt="red_dead_redemption3" src="05_Etiquetas_Semanticas/red_dead_redemption3.jpg">
+        <p>Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s</p>
+    </div><!--fin contenido1-->
+    <div id="contenido2"><!--contenido2-->
+        <img alt="red_dead_redemption2" src="05_Etiquetas_Semanticas/red_dead_redemption2.jpg">
+        <p>Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s</p>
+    </div><!--fin contenido2-->
+    <div id="contenido3"><!--contenido3-->
+        <img alt="assassins-creed-odyssey" src="05_Etiquetas_Semanticas/assassins-creed-odyssey.jpg">
+        <p>Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s</p>
+    </div><!--fin contenido3-->
+    <div id="contenido4"><!--contenido4-->
+        <img alt="call-of-duty" src="05_Etiquetas_Semanticas/call-of-duty.jpg">
+        <p>Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s</p>
+    </div><!--fin contenido4-->
+</div><!--fin contenido-->
+</section>
+<section>
+    <nav> 
+        <a href="#">Aviso Legal</a> | <a href="#">Política de privacidad</a> | <a href="#">Política de protección de datos</a> | <a href="#">Política de Cookies</a> |
+    </nav> 
+
+</section>
+
+
+         
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+<footer>
+<div id="footer">
+	<p id="datos1">Profesor: Francisco Oropesiano Carrizosa</p>
+	<p id="datos2">Módulo 1 UF 1</p>
+</div>
+</footer>
+</body>
+</html>
