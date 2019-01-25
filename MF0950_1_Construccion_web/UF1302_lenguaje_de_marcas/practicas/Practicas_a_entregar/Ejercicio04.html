@@ -115,16 +115,37 @@
 		.amarillo {
 			background-color: rgba(255, 228, 196, 0.6);
 			}
-
-		
-
-		
-
-		
-
-		
-
-
+		#compatibilidad{
+			width: 60%;
+			text-align: center;
+			font-size-adjust: inherit;
+			background-color: rgba(211, 211, 211, 0.3);
+			}
+		#compatibilidad th img {
+			width: 105px;
+			height: auto;
+			}
+		#compatibilidad td img {
+			width: 25px;
+			height: auto;
+			}
+		#software{
+			width: 70%;
+			text-align: center;
+			font-size-adjust: inherit;
+			background-color: rgba(211, 211, 211, 0.3);
+			}
+		#software th img {
+			width: 105px;
+			height: auto;
+			}
+		#software td img {
+			width: 25px;
+			height: auto;
+			}
+		.morado {
+			background-color: rgba(248, 149, 248, 0.3);
+			}
 		
 /*comentar todo el style 
         .nota {
@@ -425,7 +446,6 @@
 			<td><img alt="no válido" src="04_Tablas_de_datos/icon_delete.png">No</td>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Sí</td>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Sí</td>
-				 	
 		</tr>
 		<tr>
 			<th class="rosa"scope="row">Gestor de descargas</th>
@@ -489,19 +509,19 @@
 <div class="cuadroblanco"><!--compatibilidad blanco-->
 	<h2>Compatibidad de los navegadores web</h2>
 	<p>La compatibilidad entre navegadores se refiere a que una página web se muestre de forma muy similar en todos los navegadores y en todos los sistemas operativos. Aunque los navegadores cada vez cumplen más los estándares que marca la W3C, entre ellos hay diferencias: reglas que no son soportadas, diferentes interpretaciones de una especificación, lo cual se traduce en que las páginas web no siempre se ven igual entre ellos.</p>
-	<table><!--tablacompatibilidad-->
+	<table id="compatibilidad"><!--tablacompatibilidad-->
 	<caption>Compatibilidad entre sitemas operativos</caption>
 		<tr>
 			<th scope="col">COMPATIBILIDAD	</th>
-			<th scope="col"><img alt="chrome" src="04_Tablas_de_datos/chrome.png">Chrome</th>
-			<th scope="col"><img alt="safari" src="04_Tablas_de_datos/safari.png">Safari</th>
-			<th scope="col"><img alt="firefox" src="04_Tablas_de_datos/firefox.png">Firefox</th>
-			<th scope="col"><img alt="internet explorer" src="04_Tablas_de_datos/explorer.png">Explorer</th>
-			<th scope="col"><img alt="microsoft edge" src="04_Tablas_de_datos/edge.png">Edge</th>
-			<th scope="col"><img alt="opera" src="04_Tablas_de_datos/opera.png">Opera</th>
+			<th class="amarillo" scope="col"><img alt="chrome" src="04_Tablas_de_datos/chrome.png">Chrome</th>
+			<th class="amarillo" scope="col"><img alt="safari" src="04_Tablas_de_datos/safari.png">Safari</th>
+			<th class="amarillo" scope="col"><img alt="firefox" src="04_Tablas_de_datos/firefox.png">Firefox</th>
+			<th class="amarillo" scope="col"><img alt="internet explorer" src="04_Tablas_de_datos/explorer.png">Explorer</th>
+			<th class="amarillo" scope="col"><img alt="microsoft edge" src="04_Tablas_de_datos/edge.png">Edge</th>
+			<th class="amarillo" scope="col"><img alt="opera" src="04_Tablas_de_datos/opera.png">Opera</th>
 		</tr>
 		<tr>
-			<th scope="row">Windows</th>
+			<th class="verde"scope="row">Windows</th>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Sí</td>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Sí</td>
@@ -511,7 +531,7 @@
 				 	
 		</tr>
 		<tr>
-			<th scope="row">macOS</th>
+			<th class="verde"scope="row">macOS</th>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
@@ -520,7 +540,7 @@
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 		</tr>
 		<tr>
-			<th scope="row">Linux</th>
+			<th class="verde"scope="row">Linux</th>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 			<td><img alt="no válido" src="04_Tablas_de_datos/icon_delete.png">No</td>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
@@ -529,7 +549,7 @@
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 		</tr>
 		<tr>
-			<th scope="row">Modo de pantalla completaq</th>
+			<th class="verde"scope="row">Modo de pantalla completaq</th>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 			<td><img alt="no válido" src="04_Tablas_de_datos/icon_delete.png">No</td>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
@@ -538,7 +558,7 @@
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 		</tr>
 		<tr>
-			<th scope="row">Android</th>
+			<th class="verde"scope="row">Android</th>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 			<td><img alt="no válido" src="04_Tablas_de_datos/icon_delete.png">No</td>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
@@ -547,7 +567,7 @@
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 		</tr>
 		<tr>
-			<th scope="row">IOS</th>
+			<th class="verde"scope="row">IOS</th>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
@@ -556,7 +576,7 @@
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 		</tr>
 		<tr>
-			<th scope="row">Windows Phone</th>
+			<th class="verde"scope="row">Windows Phone</th>
 			<td><img alt="no válido" src="04_Tablas_de_datos/icon_delete.png">No</td>
 			<td><img alt="no válido" src="04_Tablas_de_datos/icon_delete.png">No</td>
 			<td><img alt="no válido" src="04_Tablas_de_datos/icon_delete.png">No</td>
@@ -565,7 +585,7 @@
 			<td><img alt="válido" src="04_Tablas_de_datos/icon_check.png">Si</td>
 		</tr>
 		<tr>
-			<th scope="row">Valoración</th>
+			<th class="verde"scope="row">Valoración</th>
 			<td><img alt="valoración" src="04_Tablas_de_datos/estrella_32x32.png">5</td>
 			<td><img alt="valoración" src="04_Tablas_de_datos/estrella_32x32.png">3</td>
 			<td><img alt="valoración" src="04_Tablas_de_datos/estrella_32x32.png">5</td>
@@ -581,19 +601,19 @@
 <div class="cuadroblanco"><!--software blanco-->
 	<h2>Detalles del software de los navegadores web</h2>
 	<p>Los navegadores de Internet siempre cumplen con el solo objetivo de permitirnos acceder a Internet desde cualquier lugar en que nos encontremos, e independientemente de la plataforma desde la cual los estemos usando. Sin embargo, cada plataforma exige que los navegadores web se comporten o estén desarrollados de una determinada manera.</p>
-	<table><!--tablasoftware-->
+	<table id="software"><!--tablasoftware-->
 	<caption>Detalles del Navegador</caption>
 		<tr>
 			<th scope="col">DETALLES DEL SOFTWARE</th>
-			<th scope="col"><img alt="chrome" src="04_Tablas_de_datos/chrome.png">Chrome</th>
-			<th scope="col"><img alt="safari" src="04_Tablas_de_datos/safari.png">Safari</th>
-			<th scope="col"><img alt="firefox" src="04_Tablas_de_datos/firefox.png">Firefox</th>
-			<th scope="col"><img alt="internet explorer" src="04_Tablas_de_datos/explorer.png">Explorer</th>
-			<th scope="col"><img alt="microsoft edge" src="04_Tablas_de_datos/edge.png">Edge</th>
-			<th scope="col"><img alt="opera" src="04_Tablas_de_datos/opera.png">Opera</th>
+			<th class="amarillo" scope="col"><img alt="chrome" src="04_Tablas_de_datos/chrome.png">Chrome</th>
+			<th class="amarillo" scope="col"><img alt="safari" src="04_Tablas_de_datos/safari.png">Safari</th>
+			<th class="amarillo" scope="col"><img alt="firefox" src="04_Tablas_de_datos/firefox.png">Firefox</th>
+			<th class="amarillo" scope="col"><img alt="internet explorer" src="04_Tablas_de_datos/explorer.png">Explorer</th>
+			<th class="amarillo" scope="col"><img alt="microsoft edge" src="04_Tablas_de_datos/edge.png">Edge</th>
+			<th class="amarillo" scope="col"><img alt="opera" src="04_Tablas_de_datos/opera.png">Opera</th>
 		</tr>
 		<tr>
-			<th scope="row">Plataforma</th>
+			<th class="morado"scope="row">Plataforma</th>
 			<td>WebKit</td>
 			<td>WebKit</td>
 			<td>Gecko</td>
@@ -602,7 +622,7 @@
 			<td>WebKit</td>
 		</tr>	 	 	 	 	 	 
 		<tr>
-			<th scope="row">Motor de JavaScript</th>
+			<th class="morado"scope="row">Motor de JavaScript</th>
 			<td>V8</td>
 			<td>Nitro</td>
 			<td>TraceMonkey</td>
@@ -611,7 +631,7 @@
 			<td>Carakan</td>
 		</tr> 	 	 	 	 	 	 
 		<tr>
-			<th scope="row">Código abierto</th>
+			<th class="morado"scope="row">Código abierto</th>
 			<td>Sí</td>
 			<td>No</td>
 			<td>Sí</td>
@@ -620,7 +640,7 @@
 			<td>No</td>
 		</tr> 	 	 	 	 	 	 
 		<tr>
-			<th scope="row">Página web</th>
+			<th class="morado"scope="row">Página web</th>
 			<td><a href="https://www.google.com.mx/chrome/?brand=CHBD&gclid=EAIaIQobChMIieHe3IeG4AIVxUPTCh3WuAMQEAAYASAAEgJxFfD_BwE&gclsrc=aw.ds">Chrome</a></td>
 			<td><a href="https://support.apple.com/downloads/safari-for-windows">Safari</a></td>
 			<td><a href="https://www.mozilla.org/es-ES/firefox/new/">Firefox</a></td>
