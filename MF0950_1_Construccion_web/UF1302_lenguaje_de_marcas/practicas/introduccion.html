@@ -13,9 +13,22 @@
     <style>
         body {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            width: 80%;
-            margin: 0 auto;
+            width: 100%;
+            margin: auto;
+            background-color: aquamarine;
             }
+        main {
+            width: 95%;
+            background-color: azure;
+            padding: 10px;
+            margin:5px auto;
+            }
+        header {
+			width: 100%;
+			margin: 0 auto;
+            padding: 5px;
+            text-align: center;
+			}		
         h1, h2, h3, h4, h5, h6 {
             font-family: Arial, Helvetica, sans-serif;
             }
@@ -27,6 +40,7 @@
 			height: auto;
 			margin-top: 20px;
 			overflow: hidden;
+            text-align: left;
 			}
 		#logo {
 			width: 100%;
@@ -42,13 +56,32 @@
 			text-decoration: none; 
 			}
 		#navegacion {
-			font-weight: bold;
-			font-size: 20px;
-			background-color: lightblue;
-			width: 89%;
-			padding:10px 60px;
 			text-align: center;
+            width: 100%;
+            margin:0 auto;
 			}
+        #navegacion span a {
+            color: rgb(30, 16, 153);
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 10px;
+            background-color: rgb(140, 216, 240);
+            font-size:large;
+            border-radius: 5px;
+            }
+        #indice {
+            text-align: left;
+            font-size: larger;
+            }
+        header ol { 
+            counter-reset: item;
+            }
+        header ol li  { display: block; }
+        header ol li:before  {
+            content: counter(item) ". ";
+            counter-increment: item;
+            color: blue;
+            margin-left: 0px;
         .nota {
             background-color: #FFFFCC;
             border-left: 6px solid #ffeb3b;
@@ -57,7 +90,6 @@
             padding-left: 5px;
             padding-right: 5px;
             }
-        
         code {
             color: red;
             background-color: #f1f1f1;
@@ -108,6 +140,7 @@
 
 </head>
 <body>
+<main>
 <header>
 <!--logo-->
 <div id="cuadrologo">
@@ -118,23 +151,25 @@
  
 <br>
 <!--navegacion-->
-<nav><div id="navegacion">
-    <a href="index _html.html">índice</a> | <a href="introduccion.html">introducción</a> | <a href="formato.html">formato</a> | <a href="bloques.html">bloques</a> | <a href="tablas.html">tablas</a> | <a href="listas.html">listas</a> | <a href="multimedia.html">multimedia</a>   
-</div></nav>
+<div id="navegacion"><nav>
+    <span><a href="index _html.html">índice</a></span> <span><a href="introduccion.html">introducción</a></span> <span><a href="formato.html">formato</a></span> <span><a href="bloques.html">bloques</a></span> <span><a href="tablas.html">tablas</a></span> <span><a href="listas.html">listas</a></span> <span><a href="multimedia.html">multimedia</a></span>    
+</nav></div>
+<br>
 <hr>     
 <h1>HTML Introducción</h1><!--solo puede haber un h1 por pagina-->
 <hr>
-    <nav><ul id="indice">
+<section>   
+    <nav id="indice"><ol>
     	<li><a href="#queeshtml">¿Qué es HTML?</a></li><!--# indica que es un enlace dentro de la misma pag-->
 		<li><a href="#estructurabasica">Estructura básica de un documento HTML</a></li>
     	<li><a href="#explicacionetiquetas">Explicación de las etiquetas básicas</a></li>
     	<li><a href="#etiquetashtml">Etiquetas HTML</a></li>
     	<li><a href="#navegadoresweb">Navegadores web</a></li>
     	<li><a href="#estructurapagina">Estructura de una página web</a></li>
-    </ul></nav>   
+    </ol></nav>   
+</section>
 <hr>
 </header>
-<main>
 <section>
 <h2>¿Qué es HTML?</h2> 
     <p>HTML es el lenguaje de marcado estándar para la creación de páginas Web.</p>
@@ -290,5 +325,6 @@
 </ul></nav>
 
 </footer>
+</main>
 </body>
 </html>
