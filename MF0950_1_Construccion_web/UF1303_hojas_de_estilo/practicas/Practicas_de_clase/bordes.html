@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Estilos CSS de Bordes</title>
+
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+</head>
+
+<body>
+<h1>Bordes CSS</h1>
+<hr>
+
+<h2>Estilos de borde.</h2>
+<p>La border-stylepropiedad especifica qué tipo de frontera que se vea.</p>
+<p>Se permiten los siguientes valores:</p>
+<ul>
+  <li><span class="spannegrita">dotted</span> - Define un borde de puntos</li>
+  <li><span class="spannegrita">dashed</span> - Define un borde punteado</li>
+  <li><span class="spannegrita">solid</span> - Define una frontera sólida</li>
+  <li><span class="spannegrita">double</span> - Define un borde doble</li>
+  <li><span class="spannegrita">groove</span>- Define un borde acanalado 3D. El efecto depende del valor de border-color</li>
+  <li><span class="spannegrita">ridge</span>- Define un borde estriado 3D. El efecto depende del valor de border-color</li>
+  <li><span class="spannegrita">inset</span>- Define una frontera inserción 3D. El efecto depende del valor de border-color</li>
+  <li><span class="spannegrita">outset</span>- Define una frontera principio 3D. El efecto depende del valor de border-color</li>
+  <li><span class="spannegrita">none</span> - Define ninguna frontera</li>
+  <li><span class="spannegrita">hidden</span> - Define una frontera oculto</li>
+</ul>
+<p>La border-stylepropiedad puede tener de uno a cuatro valores (por el borde superior, borde derecho, borde inferior y el borde izquierdo).</p>
+<div id="cuadroejemplo"><!--cuadroejemplo-->
+<h3>Ejemplo</h3>
+<div id="cuadrocodigo"><!--cuadrocodigo-->
+<p>Código</p>
+<p>&lt;p class=&quot;dotted&quot;&gt;Borde punteado.&lt;/p&gt;<br>
+  &lt;p class=&quot;dashed&quot;&gt;Borde con guiones.&lt;/p&gt;<br>
+  &lt;p class=&quot;solid&quot;&gt;Línea sólida.&lt;/p&gt;<br>
+  &lt;p class=&quot;double&quot;&gt;Doble línea.&lt;/p&gt;<br>
+  &lt;p class=&quot;groove&quot;&gt;Surco.&lt;/p&gt;<br>
+  &lt;p class=&quot;ridge&quot;&gt;Rugoso.&lt;/p&gt;<br>
+  &lt;p class=&quot;inset&quot;&gt;Borde añadido izquierda-superior.&lt;/p&gt;<br>
+  &lt;p class=&quot;outset&quot;&gt;Borde añadido derecha-inferior.&lt;/p&gt;<br>
+  &lt;p class=&quot;none&quot;&gt;Sin borde.&lt;/p&gt;<br>
+  &lt;p class=&quot;hidden&quot;&gt;Borde oculto.&lt;/p&gt;<br>
+  &lt;p class=&quot;mix&quot;&gt;Borde mixto.&lt;/p&gt;<br>
+</p>
+</div><!--cuadrocodigo-->
+<div id="cuadroresultado"><!--cuadroresultado-->
+<p>Resultado</p>
+<p class="dotted">Borde punteado..</p>
+<p class="dashed">Borde con guiones.</p>
+<p class="solid">Línea sólida.</p>
+<p class="double">Doble línea.</p>
+<p class="groove">Surco.</p>
+<p class="ridge">Rugoso.</p>
+<p class="inset">Borde añadido izquierda-superior.</p>
+<p class="outset">Borde añadido derecha-inferior.</p>
+<p class="none">Sin borde.</p>
+<p class="hidden">Borde oculto.</p>
+<p class="mix">Borde mixto.</p>	
+</div><!--fin cuadroresultado-->
+</div><!--fin cuadroejemplo-->
+
+<br>
+<h2>Ancho del borde</h2>
+<p>La border-widthpropiedad especifica la anchura de los cuatro bordes.</p>
+<p>La anchura se puede establecer como un tamaño específico (en px, pt, cm, em, etc) o mediante el uso de uno de los tres valores predefinidos: fino, medio o grueso.</p>
+<p>La border-widthpropiedad puede tener de uno a cuatro valores (por el borde superior, borde derecho, borde inferior y el borde izquierdo).</p>
+<h3>Ejemplo</h3>
+<p class="one">Texto</p>
+<p class="two">Texto</p>
+<p class="three">Texto</p>
+<p class="four">Texto</p>
+<p class="five">Texto</p>
+<p class="six">Texto</p>
+<p class="seven">Texto</p>
+
+<h2>Color del borde</h2>
+<p>La border-colorpropiedad se utiliza para establecer el color de los cuatro bordes.</p>
+<p>El color se puede ajustar por:</p>
+<ul>
+  <li><span class="spannegrita">Nombre</span> - indique un nombre de color, como "rojo"</li>
+  <li><span class="spannegrita">Hex</span> - especificar un valor hexadecimal, como "# FF0000"</li>
+  <li><span class="spannegrita">RGB</span> - especificar un valor RGB, así como "rgb (255,0,0)"</li>
+  <li><span class="spannegrita">transparente</span></li>
+</ul>
+<p>La border-colorpropiedad puede tener de uno a cuatro valores (por el borde superior, borde derecho, borde inferior y el borde izquierdo). </p>
+<p>Si border-colorno se establece, se hereda el color del elemento.</p>
+<h3>Ejemplo</h3>
+<p class="a">Borde sólido rojo</p>
+<p class="b">Borde sólido verde</p>
+<p class="c">Borde multicolor</p>
+
+<br>
+<h2>Border - Lados individuales</h2>
+<p>De los ejemplos anteriores se han visto que es posible especificar una frontera diferente para cada lado.</p>
+<p>En CSS, también hay propiedades para especificar cada uno de los bordes (superior, derecho, inferior e izquierda):</p>
+<p>Si la border-stylepropiedad tiene cuatro valores:</p>
+<ul>
+  <li><strong>-Estilo de borde: punteada doble sólida discontinua;</strong>
+    <ul>
+      <li>el borde superior está salpicado</li>
+      <li>borde derecho es sólida</li>
+      <li>borde inferior es el doble</li>
+      <li>borde izquierdo es discontinua</li>
+    </ul>
+  </li>
+</ul>
+<p>Si la border-stylepropiedad tiene tres valores:</p>
+<ul>
+  <li><strong>frontera de estilo: punteada doble sólido;</strong>
+    <ul>
+      <li>el borde superior está salpicado</li>
+      <li>fronteras derecha e izquierda son sólidos</li>
+      <li>borde inferior es el doble</li>
+    </ul>
+  </li>
+</ul>
+<p>Si la border-stylepropiedad tiene dos valores:</p>
+<ul>
+  <li><strong>frontera de estilo: punteado sólido;</strong>
+    <ul>
+      <li>bordes superior e inferior son de puntos</li>
+      <li>fronteras derecha e izquierda son sólidos</li>
+    </ul>
+  </li>
+</ul>
+<p>Si la border-stylepropiedad tiene un valor:</p>
+<ul>
+  <li><strong>frontera de estilo: de puntos;</strong>
+    <ul>
+      <li>los cuatro bordes son de puntos</li>
+    </ul>
+  </li>
+</ul>
+<p>La border-stylepropiedad se utiliza en el ejemplo anterior. Sin embargo, también trabaja conborder-width y border-color.</p>
+<h2>Border - Abreviación de las propiedades</h2>
+<p>Como se puede ver en los ejemplos anteriores, hay muchas propiedades a tener en cuenta cuando se trata de fronteras.</p>
+<p>Para acortar el código, también es posible especificar todas las propiedades de borde individuales en una sola propiedad.</p>
+<p>La borderpropiedad es una propiedad abreviada para las siguientes propiedades de borde individuales:</p>
+<ul>
+  <li>border-width</li>
+  <li>border-style (necesario)</li>
+  <li>border-color</li>
+</ul>
+<h2>Bordes redondeados</h2>
+<p>La border-radiuspropiedad se utiliza para añadir bordes redondeados a un elemento:</p>
+<h3>Ejemplo</h3>
+<p>&lt;p class=&quot;normal&quot;&gt;Borde normal&lt;/p&gt;<br>
+  &lt;p class=&quot;round1&quot;&gt;Redondeado1&lt;/p&gt;<br>
+  &lt;p class=&quot;round2&quot;&gt;Redondeado2&lt;/p&gt;<br>
+&lt;p class=&quot;round3&quot;&gt;Redondeado3&lt;/p&gt;</p>
+<p>&lt;p&gt;&lt;b&gt;Nota:&lt;/b&gt; La propiedad &quot;border-radius&quot; no está soportada por IE8 ni versiones anteriores.&lt;/p&gt;</p>
+<h2>Todas las propiedades de borde CSS</h2>
+<table>
+  <tbody>
+    <tr>
+      <th>Propiedad</th>
+      <th>Descripción</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/pr_border.asp">border</a></td>
+      <td>Cambia todos los bordes de una declaración</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/pr_border-bottom.asp">border-bottom</a></td>
+      <td>Cambia todas las propiedades del borde inferior</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/pr_border-bottom_color.asp">border-bottom-color</a></td>
+      <td>Cambia el color del borde inferior</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/pr_border-bottom_style.asp">border-bottom-style</a></td>
+      <td>Cambia el estilo del borde inferior</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/pr_border-bottom_width.asp">border-bottom-width</a></td>
+      <td>Cambia el ancho del borde inferior</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/pr_border-color.asp">border-color</a></td>
+      <td>Cambia el color de los cuatro bordes</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/pr_border-left.asp">border-left</a></td>
+      <td>Cambia todas las propiedades de los bordes izquierdos de una declaración</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/pr_border-left_color.asp">border-left-color</a></td>
+      <td>Cambia el color del borde izquierdo</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/pr_border-left_style.asp">border-left-style</a></td>
+      <td>Cambia el estilo del borde izquierdo</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/pr_border-left_width.asp">border-left-width</a></td>
+      <td>Cambia el ancho del borde izquierdo</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/css3_pr_border-radius.asp">border-radius</a></td>
+      <td>Aplica contorno redondeado a las esquinas</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/pr_border-right.asp">border-right</a></td>
+      <td>Cambia todas las propiedades de los bordes derechos de una declaración</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/pr_border-right_color.asp">border-right-color</a></td>
+      <td>Cambia el color del borde derecho</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/pr_border-right_style.asp">border-right-style</a></td>
+      <td>Cambia el estilo del borde derecho</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/pr_border-right_width.asp">border-right-width</a></td>
+      <td>Cambia el ancho del borde derecho</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/pr_border-style.asp">border-style</a></td>
+      <td>Cambia el estilo de los cuatro bordes</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/pr_border-top.asp">border-top</a></td>
+      <td>Cambia todas las propiedades de los bordes superiores de una declaración</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/pr_border-top_color.asp">border-top-color</a></td>
+      <td>Cambia el color del borde superior</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/pr_border-top_style.asp">border-top-style</a></td>
+      <td>Cambia el estilo del borde superior</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/pr_border-top_width.asp">border-top-width</a></td>
+      <td>Cambia el ancho del borde superior</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/cssref/pr_border-width.asp">border-width</a></td>
+      <td>Cambia el ancho de todos los bordes</td>
+    </tr>
+  </tbody>
+</table>
+<p>&nbsp;</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
