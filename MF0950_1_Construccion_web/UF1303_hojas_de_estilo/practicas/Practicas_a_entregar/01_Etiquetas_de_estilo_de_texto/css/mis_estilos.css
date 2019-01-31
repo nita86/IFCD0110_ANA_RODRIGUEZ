@@ -43,7 +43,7 @@ mark {
     padding: 10px;
     text-shadow: 1px 1px;
     }
-.caja p  {
+.caja {
     border-radius: 15px;
     box-shadow: 5px 5px 5px grey;
     border-style: solid;
@@ -53,6 +53,7 @@ mark {
     margin: 20px auto;
     padding: 10px;
     line-height: 1.5;
+    background-color: rgb(230, 210, 203);
     }
 .caja abbr {
     border-color: saddlebrown;
@@ -63,15 +64,15 @@ mark {
     padding: 5px;
     font-weight: bold;
     }
-#definicion .caja p{
+#definicion .caja {
     text-align: left;
     font-size: 1.1em;
     }
-#estandar .caja p{
+#estandar .caja {
     text-align: center;
     font-size: 1.1em;
     }
-#cita p  {
+#cita {
     border-radius: 15px;
     box-shadow: 5px 5px 5px grey;
     border-style: solid;
@@ -81,6 +82,8 @@ mark {
     margin: 20px auto;
     padding: 10px;
     line-height: 1.5;
+    font-size: 1.1em;
+    background-color: rgb(230, 210, 203);
     }
 #cita abbr {
     border-color: saddlebrown;
@@ -90,8 +93,29 @@ mark {
     border-width: 0.5px;
     padding: 5px;
     }
+.u {text-decoration: underline;}
+.i {font-style: italic;}
+b {color: blue; }
+strong {color: saddlebrown;}
+del {text-decoration: line-through;}
+s {text-decoration: line-through;}
+em {font-style: italic;}
+q {quotes: "«" "»";}/*cambiar " " por << >>*/
+  q:before { content: open-quote; }
+  q:after  { content: close-quote; }
+cite {quotes: " ";}/*poner " " a cite*/
+  cite:before { content: open-quote; }
+  cite:after  { content: close-quote; }
+cite {
+    color: blue;
+    font-weight: bold;  
+    }
+#estandar .sangria {
+    text-indent: 2em;
+    text-align: justify;
+    }
 #footer {
-    width: 100%;
+    width: 100%;#
     overflow: hidden;
     text-align: justify;
     }
