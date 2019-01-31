@@ -100,7 +100,7 @@ strong {color: saddlebrown;}
 del {text-decoration: line-through;}
 s {text-decoration: line-through;}
 em {font-style: italic;}
-q {quotes: "«" "»";}/*cambiar " " por << >>*/
+q {quotes: "«" "»";}/*cambiar " " por << >> fuente https://uniwebsidad.com/libros/css-avanzado/capitulo-4/propiedad-quotes*/
   q:before { content: open-quote; }
   q:after  { content: close-quote; }
 cite {quotes: " ";}/*poner " " a cite*/
