@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	box-sizing: border-box;
+}
+body {
+	background-image: url("file:///C:/Users/ma%C3%B1anas.GET23-02/Documents/IFCD0110%20(DAVID)/MF0950_2/UF1303/Practicas%20a%20entregar/02%20Formato%20de%20texto/textura.jpg");
+	
+}
+.divfolio{
+	background-color: white;
+	margin: 20%;
+	}
+.divhoja{
+	background-color: lightgoldenrodyellow;
+	margin: 30%;
+	padding: 2%;
+}
+.h1{
+	text-align: center;
+	margin: 5%;
+	padding: 1%;
+	background-color: lightgoldenrodyellow;	
+	text-decoration: gunderline solid red; 
+}
+hr {
+	width: 200px;
+	color: black;
+	border: 1px solid;
+}
+.nav{
+	background-color: lightgoldenrodyellow; /*menu de navegación*/
+	margin: 0px;
+	padding: 0px;
+	width: 100px;
+	list-style-type: none;
+	overflow: hidden;
+	color: white;
+	text-align: center;
+}
+.navli{
+	list-style-type: none;
+	display: block;
+	border: 1px solid yellow;
+	overflow: auto;
+	float: left;
+	padding: 5%;
+	width: 33,33%;
+	text-align: center;
+	}
+a{
+	text-decoration: none;
+	color:red;
+	padding: 10px 20px;
+}
