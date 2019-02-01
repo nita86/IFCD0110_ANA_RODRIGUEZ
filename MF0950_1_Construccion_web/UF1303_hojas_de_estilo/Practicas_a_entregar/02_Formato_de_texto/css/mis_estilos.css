@@ -8,16 +8,20 @@ main {
     width: 90%;
     margin: 10px auto;
     background-image: url(../libreta-espiral.gif);
+	background-position: left top;
+	background-size: 100%;
+	background-repeat: repeat;
     text-align: center;
     box-shadow: 10px 10px gray;
     }
 h1, h2, h3, h4, h5, h6 {
     font-family: Arial, Helvetica, sans-serif;
     }
+section {margin-bottom: 50px;}
 #header {
     width: 90%;
     margin: 0 auto;
-    padding: 20px;
+    padding-top: 20px;
     }
 #h1 {
     text-transform: uppercase;
@@ -27,29 +31,64 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom-width: 20px;
     width: 90%;
     margin: 0 auto;
-    background-color: rgb(250, 224, 214);
+    background-color: khaki;
     padding-top: 10px;
-    margin-bottom: 20px;
     }
-nav {
-    overflow: hidden;
-    width: 90%;
-    background-color: rgb(250, 224, 214);
-    border: solid 0.5px lightgray;
-    margin: 0px auto;
-    }
+#indice {
+	overflow: hidden;
+    margin: 0 auto;
+    width: 80%;
+    background-color: khaki;
+    padding: 10px 10px;
+	}
+#indice nav {
+    width: 100%;
+    margin: 0 auto;
+	}
 #indice span {
-    text-align: center;
-    color: white;
-    background-color: coral;
-    padding: 5px;
-    float: left;
-    margin: 10px 5px;
+	background-color: saddlebrown;
+    padding: 5px 34.5px;
     }
 #indice span a {
     text-decoration: none;
     color: white;
-    }
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+	}
+#cuadrogrande {
+	width: 75%;
+	margin: 0 auto;
+	box-shadow: 10px 10px gray;
+	background-color: khaki;
+	border: solid 1px black;
+	padding: 10px;
+	background-image: url(../chincheta-roja.png);
+	background-position: right top;
+	background-size: 64px 64px;
+	background-repeat: no-repeat;
+	}
+#datos {
+	text-aling: left;
+	}
+
+.letraMuyGrande {font-size: 1.1em;}
+.letraGrande {font-size: 1em;}
+.LetraMediana {font-size: 0.9em;}
+.letraPequeña {font-size: 0.8em;}
+
+.ajusteTextro {word-spacing: -0.1em; letter-spacing: -0.01em;}
+
+.colorRojo {color: darkred;}
+.colorVerde {color: darkgreen;}
+.colorAzul {color: darkblue;}
+.colorAmarillo {color: khaki;}
+
+.fondoRojo {background-color: rgba(255,157,158,1.00); padding: 10px; border-left: 4px solid darkred;}
+.fondoVerde {background-color: #cfc; padding: 10px; border-left: 4px solid darkgreen;}
+.fondoAzul {background-color: lightblue; padding: 10px; border-left: 4px solid darkblue;}
+.fondoAmarillo {background-color: palegoldenrod; padding: 10px; border-left: 4px solid rgba(181,160,16,1.00);}
+
 #footer {
     width: 100%;
     overflow: hidden;
