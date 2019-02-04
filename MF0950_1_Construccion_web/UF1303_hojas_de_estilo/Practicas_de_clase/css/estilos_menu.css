@@ -1,6 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 
+*{box-sizing: border-box content-box;}
+
+/*------Estilo1--------*/
 #menu1 { 
 	width: 80%;
 	margin: auto;
@@ -16,16 +19,52 @@
 	}
 #menu1 ul li {
 	border: solid 1px red;
-	display: inline-block;/*lo ponemos así para que se comporten como un bloque y nos de margen arriba y abajo*/
+	display: inline-block;/*lo ponemos así para que se comporten como un bloque y de margen arriba y abajo*/
 	}
 #menu1 ul li a {
 	text-decoration: none;
-	/*border: solid 1px green;*/
+	border: solid 1px green;
 	color: green;
 	padding: 10px;
 	width: 100px;
 	}
 #menu1 ul li a:hover {
+	text-decoration: underline;
+	color: blue;
+	background-color: ghostwhite;
+	}
+
+/*------Estilo2--------*/
+#menu2 { 
+	width: 80%;
+	margin: auto;
+	padding: 10px;
+	border: solid 1px black;
+	}
+#menu2 ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 auto;
+	background-color: antiquewhite;
+	overflow: hidden;
+	}
+#menu2 ul li {
+	border: solid 1px red;
+	background-color: aqua;
+	float: left;
+	padding: 10px 0;
+	width: auto;/*para que se ajuste al texto*/
+	margin-left: 60px;
+	}
+#menu2 ul li a {
+	text-decoration: none;
+	border: solid 1px green;
+	color: green;
+	background-color: white;
+	padding: 10px;
+	
+	}
+#menu2 ul li a:hover {
 	text-decoration: underline;
 	color: blue;
 	background-color: ghostwhite;
