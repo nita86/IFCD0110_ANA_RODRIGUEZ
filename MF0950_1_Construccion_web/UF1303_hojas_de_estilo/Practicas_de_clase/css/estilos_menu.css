@@ -31,7 +31,7 @@
 #menu1 ul li a:hover {
 	text-decoration: underline;
 	color: blue;
-	background-color: ghostwhite;
+	background-color: green;
 	}
 
 /*------Estilo2--------*/
@@ -40,6 +40,10 @@
 	margin: auto;
 	padding: 10px;
 	border: solid 1px black;
+	}
+#alineacion {
+	width: 90%;
+	margin-left: 50px;
 	}
 #menu2 ul {
 	list-style-type: none;
@@ -54,7 +58,7 @@
 	float: left;
 	padding: 10px 0;
 	width: auto;/*para que se ajuste al texto*/
-	margin-left: 60px;
+	margin: 10px;
 	}
 #menu2 ul li a {
 	text-decoration: none;
@@ -67,5 +71,5 @@
 #menu2 ul li a:hover {
 	text-decoration: underline;
 	color: blue;
-	background-color: ghostwhite;
+	background-color: green;
 	}
