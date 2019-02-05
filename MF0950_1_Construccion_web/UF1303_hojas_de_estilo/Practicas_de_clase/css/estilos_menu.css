@@ -40,33 +40,33 @@
 	margin: auto;
 	padding: 10px;
 	border: solid 1px black;
-	}
-#alineacion {
-	width: 90%;
-	margin-left: 50px;
+	overflow: hidden;
+	height: auto;
 	}
 #menu2 ul {
 	list-style-type: none;
-	padding: 0;
-	margin: 0 auto;
+	margin: 0px;
+	padding: 0px;
+	/*overflow: hidden;*/
 	background-color: antiquewhite;
-	overflow: hidden;
+	position: relative;
+	left: 25%;
+	float: left;
 	}
 #menu2 ul li {
-	border: solid 1px red;
-	background-color: aqua;
 	float: left;
-	padding: 10px 0;
-	width: auto;/*para que se ajuste al texto*/
-	margin: 10px;
+	border: solid 1px red;
+	width: 100px;
+	text-align: center;
+	position: relative;
+	right: 0%;
 	}
 #menu2 ul li a {
 	text-decoration: none;
 	border: solid 1px green;
 	color: green;
-	background-color: white;
 	padding: 10px;
-	
+	width: 100px;
 	}
 #menu2 ul li a:hover {
 	text-decoration: underline;
