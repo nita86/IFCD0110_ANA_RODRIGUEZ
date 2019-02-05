@@ -1,7 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
-*{box-sizing: border-box content-box;}
+	*{
+	box-sizing: border-box;
+	font-family: Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+	font-size: 1em;
+	}
 
 /*------Estilo1--------*/
 #menu1 { 
@@ -38,7 +42,6 @@
 #menu2 { 
 	width: 80%;
 	margin: auto;
-	padding: 10px;
 	border: solid 1px black;
 	overflow: hidden;
 	height: auto;
@@ -47,7 +50,6 @@
 	list-style-type: none;
 	margin: 0px;
 	padding: 0px;
-	/*overflow: hidden;*/
 	background-color: antiquewhite;
 	position: relative;
 	left: 25%;
@@ -55,20 +57,169 @@
 	}
 #menu2 ul li {
 	float: left;
-	border: solid 1px red;
-	width: 100px;
-	text-align: center;
-	position: relative;
-	right: 0%;
+	width: auto;
+	/*position: relative;LO PONEMOS PORQUE LE SALE DE LOS PELENDREQUES PERO NO HACE NADA
+	right: 0%;*/
+	padding: 10px;
 	}
 #menu2 ul li a {
 	text-decoration: none;
-	border: solid 1px green;
 	color: green;
-	padding: 10px;
-	width: 100px;
+	padding: 20px;
+	width: auto;
+	background-color: lightblue;
+	border: solid 1px blue;
 	}
 #menu2 ul li a:hover {
+	text-decoration: underline;
+	color: blue;
+	background-color: green;
+	}
+
+/*------Estilo3--------*/
+#menu3 { 
+	width: 80%;
+	margin: auto;
+	border: solid 1px black;
+	height: auto;
+	padding: 10px;
+	}
+#menu3 ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: antiquewhite;
+	text-align: center;
+	}
+#menu3 ul li {
+	display: inline;
+	/*width: 100px; al poner display el ancho no funciona y se ajusta él solo al texto*/
+	}
+#menu3 ul li a {
+	text-decoration: none;
+	display: inline;
+	padding: 10px 15px;
+	}
+.rojo {
+	background-color: darkred;
+	color: white;
+	}
+.rojo:hover {opacity: 0.8;}
+.verde {
+	background-color: darkgreen;
+	color: white;
+	}
+.verde:hover {opacity: 0.8;}
+.azul {
+	background-color: darkblue;
+	color: white;
+	}
+.azul:hover {opacity: 0.8;}
+.naranja {
+	background-color: darkorange;
+	color: white;
+	}
+.naranja:hover {opacity: 0.8;}
+.violeta {
+	background-color: darkviolet;
+	color: white;
+	}
+.violeta:hover {opacity: 0.8;}
+
+
+/*------Estilo4--------*/
+#menu4 { 
+	width: 80%;
+	margin: auto;
+	padding: 10px;
+	border: solid 1px black;
+	}
+#menu4 ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background-color: antiquewhite;
+	}
+#menu4 ul li {
+padding: 10px;
+	border: solid 1px black;
+	}
+#menu4 ul li a {	
+	display:block;
+	text-decoration: none;
+	border: solid 1px green;
+	color: green;
+	width: auto;
+	padding: 5px;
+	background-color: lightgoldenrodyellow;
+	}
+#menu4 ul li a:hover {
+	text-decoration: underline;
+	color: blue;
+	background-color: green;
+	}
+
+/*------Estilo5--------*/
+#padre {
+	overflow: hidden;
+	width: 80%;
+	margin: auto;
+	border: solid 1px black;
+	}
+#hijo1 {
+	float: left; 
+	width: 33.33%;
+	height: auto;
+	background-color: lightgray;
+	border: solid 1px black;
+	overflow: hidden;
+	}
+#hijo2 {
+	float: right; 
+	width: 33.33%;
+	height: auto;
+	background-color: lightgray;
+	border: solid 1px black;
+	overflow: hidden;
+	}
+#hijo3 {
+	margin: auto;
+	width: 33.33%;
+	height: auto;
+	background-color: lightgray;
+	border: solid 1px black;
+	overflow: hidden;
+	}
+.menu4 { 
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+	border: solid 1px black;
+	overflow: hidden;
+	background-color: aquamarine;
+	}
+.menu4 ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background-color: antiquewhite;
+	}
+.menu4 ul li {
+	padding: 10px;
+	border: solid 1px black;
+	}
+.menu4 ul li a {	
+	display:block;
+	text-decoration: none;
+	border: solid 1px green;
+	color: green;
+	width: auto;
+	padding: 5px;
+	background-color: lightgoldenrodyellow;
+	}
+.menu4 ul li a:hover {
 	text-decoration: underline;
 	color: blue;
 	background-color: green;
