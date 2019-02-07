@@ -297,3 +297,65 @@ padding: 10px;
 	background-color: green;
 	}
 
+
+/*------Estilo6--------*/
+#menu6 { 
+	width: 80%;
+	margin: auto;
+	padding: 10px;
+	border: solid 1px black;
+	}
+#menu6 ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	}
+#menu6 ul li {
+	display: inline-block;/*lo ponemos así para que se comporten como un bloque y de margen arriba y abajo*/
+	}
+#menu6 ul li {
+	background-color: lightgrey;
+	}
+#menu6 ul li a {
+	text-decoration: none;
+	width: auto;
+	}
+#menu6 ul li a:hover {
+	opacity: 0.5;
+	}
+
+
+/*------Estilo7--------*/
+#menu7 { 
+	width:auto;
+	border: solid 1px black;
+	position: fixed;
+	top:20%;
+	right:10px;
+	text-align: right;
+	}
+#menu7 ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	}
+#menu7 ul li {
+	background-color: lightgrey;
+	margin: 5px;
+	}
+#menu7 ul li a {
+	text-decoration: none;
+	width: auto;
+	}
+#menu7 ul li a:hover {
+	opacity: 0.5;
+	}
+.barra {
+	width: 30px;
+	height: 30px;
+	
+	}
+
+
