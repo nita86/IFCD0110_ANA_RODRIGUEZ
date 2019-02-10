@@ -1,0 +1,469 @@
+@charset "utf-8";
+/* CSS Document */
+
+	*{
+	box-sizing: border-box;
+	font-family: Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+	font-size: 1em;
+	}
+
+/*------Estilo1--------*/
+#menu1 { 
+	width: 80%;
+	margin: auto;
+	padding: 10px;
+	border: solid 1px black;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	}
+#menu1 ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background-color: antiquewhite;
+	}
+#menu1 ul li {
+	border: solid 1px red;
+	display: inline-block;/*lo ponemos así para que se comporten como un bloque y de margen arriba y abajo*/
+	}
+#menu1 ul li a {
+	text-decoration: none;
+	border: solid 1px green;
+	color: green;
+	padding: 10px;
+	width: 100px;
+	}
+#menu1 ul li a:hover {
+	text-decoration: underline;
+	color: blue;
+	background-color: green;
+	}
+
+/*------Estilo2--------*/
+#menu2 { 
+	width: 80%;
+	margin: auto;
+	border: solid 1px black;
+	overflow: hidden;
+	height: auto;
+	}
+#menu2 ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: antiquewhite;
+	position: relative;
+	left: 25%;
+	float: left;
+	}
+#menu2 ul li {
+	float: left;
+	width: auto;
+	/*position: relative;LO PONEMOS PORQUE LE SALE DE LOS PELENDREQUES PERO NO HACE NADA
+	right: 0%;*/
+	padding: 10px;
+	}
+#menu2 ul li a {
+	text-decoration: none;
+	color: green;
+	padding: 20px;
+	width: auto;
+	background-color: lightblue;
+	border: solid 1px blue;
+	}
+#menu2 ul li a:hover {
+	text-decoration: underline;
+	color: blue;
+	background-color: green;
+	}
+
+/*------Estilo3--------*/
+#menu3 { 
+	width: 80%;
+	margin: auto;
+	border: solid 1px black;
+	height: auto;
+	padding: 10px;
+	}
+#menu3 ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: antiquewhite;
+	text-align: center;
+	}
+#menu3 ul li {
+	display: inline;
+	/*width: 100px; al poner display el ancho no funciona y se ajusta él solo al texto*/
+	}
+#menu3 ul li a {
+	text-decoration: none;
+	display: inline;
+	padding: 10px 15px;
+	}
+.rojo {
+	background-color: darkred;
+	color: white;
+	}
+.rojo:hover {opacity: 0.8;}
+.verde {
+	background-color: darkgreen;
+	color: white;
+	}
+.verde:hover {opacity: 0.8;}
+.azul {
+	background-color: darkblue;
+	color: white;
+	}
+.azul:hover {opacity: 0.8;}
+.naranja {
+	background-color: darkorange;
+	color: white;
+	}
+.naranja:hover {opacity: 0.8;}
+.violeta {
+	background-color: darkviolet;
+	color: white;
+	}
+.violeta:hover {opacity: 0.8;}
+
+
+/*------Estilo4--------*/
+#menu4 { 
+	width: 80%;
+	margin: auto;
+	padding: 10px;
+	border: solid 1px black;
+	}
+#menu4 ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background-color: antiquewhite;
+	}
+#menu4 ul li {
+padding: 10px;
+	border: solid 1px black;
+	}
+#menu4 ul li a {	
+	display:block;
+	text-decoration: none;
+	border: solid 1px green;
+	color: green;
+	width: auto;
+	padding: 5px;
+	background-color: lightgoldenrodyellow;
+	}
+#menu4 ul li a:hover {
+	text-decoration: underline;
+	color: blue;
+	background-color: green;
+	}
+
+/*------Estilo5--------*/
+#padre {
+	overflow: hidden;
+	width: 80%;
+	margin: auto;
+	border: solid 1px black;
+	}
+#hijo1 {
+	float: left; 
+	width: 33.33%;
+	height: auto;
+	background-color: lightgray;
+	border: solid 1px black;
+	overflow: hidden;
+	}
+#hijo2 {
+	float: right; 
+	width: 33.33%;
+	height: auto;
+	background-color: lightgray;
+	border: solid 1px black;
+	overflow: hidden;
+	}
+#hijo3 {
+	margin: auto;
+	width: 33.33%;
+	height: auto;
+	background-color: lightgray;
+	border: solid 1px black;
+	overflow: hidden;
+	}
+.menu4 { 
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+	border: solid 1px black;
+	overflow: hidden;
+	background-color: aquamarine;
+	}
+.menu4 ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background-color: antiquewhite;
+	}
+#menu4 ul li {
+	padding: 10px;
+	border: solid 1px black;
+	}
+.menu4 ul li a {	
+	display:block;
+	text-decoration: none;
+	border: solid 1px green;
+	color: green;
+	width: auto;
+	padding: 5px;
+	background-color: lightgoldenrodyellow;
+	}
+.menu4 ul li a:hover {
+	text-decoration: underline;
+	color: blue;
+	background-color: green;
+	}
+.iconos {
+	width: 25px;
+	height: 25px;
+	vertical-align: -0.5em;
+	margin: 4px;
+	}
+#menu5 { 
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+	border: solid 1px black;
+	overflow: hidden;
+	background-color: aquamarine;
+	}
+#menu5 ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	background-color: antiquewhite;
+	}
+#menu5 ul li {
+	padding: 10px;
+	border: solid 1px black;
+	}
+#menu5 ul li a {	
+	display:block;
+	text-decoration: none;
+	border: solid 1px green;
+	color: green;
+	width: auto;
+	padding: 5px;
+	background-color: lightgoldenrodyellow;
+	}
+#menu5 ul li a:hover {
+	text-decoration: underline;
+	color: blue;
+	background-color: green;
+	}
+#menu5der { 
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+	border: solid 1px black;
+	overflow: hidden;
+	background-color: aquamarine;
+	}
+#menu5der ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: right;
+	background-color: antiquewhite;
+	}
+#menu5der ul li {
+	padding: 10px;
+	border: solid 1px black;
+	}
+#menu5der ul li a {	
+	display:block;
+	text-decoration: none;
+	border: solid 1px green;
+	color: green;
+	width: auto;
+	padding: 5px;
+	background-color: lightgoldenrodyellow;
+	}
+#menu5der ul li a:hover {
+	text-decoration: underline;
+	color: blue;
+	background-color: green;
+	}
+
+
+/*------Estilo6--------*/
+#menu6 { 
+	width: 80%;
+	margin: auto;
+	padding: 10px;
+	border: solid 1px black;
+	}
+#menu6 ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	}
+#menu6 ul li {
+	display: inline-block;/*lo ponemos así para que se comporten como un bloque y de margen arriba y abajo*/
+	}
+#menu6 ul li {
+	background-color: lightgrey;
+	}
+#menu6 ul li a {
+	text-decoration: none;
+	width: auto;
+	}
+#menu6 ul li a:hover {
+	opacity: 0.5;
+	}
+
+
+/*------Estilo7--------*/
+#menu7 { 
+	width:auto;
+	border: solid 1px black;
+	position: fixed;
+	top:10%;
+	right:10px;
+	text-align: right;
+	}
+#menu7 ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	}
+#menu7 ul li {
+	background-color: lightgrey;
+	margin: 5px;
+	}
+#menu7 ul li a {
+	text-decoration: none;
+	width: auto;
+	}
+#menu7 ul li a:hover {
+	opacity: 0.5;
+	}
+.barra {
+	width: 30px;
+	height: 30px;
+	}
+
+/*------Estilo8--------*/
+#menu8 { 
+	width:auto;
+	border: solid 1px black;
+	padding: 10px;
+	}
+#menu8 ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 auto;
+	/*text-align: center;*/
+	overflow: hidden;
+	background-color: #666666;
+	}
+#menu8 ul li {
+	float: left;
+	border: white 1px dotted;
+	}
+#menu8 ul li a {
+	text-decoration: none;
+	width: auto;
+	color: white;
+	display: block;
+	padding: 14px 16px;
+	}
+#menu8 ul li a:hover {
+	background-color: red;
+	}
+#menu8 ul li ul {
+	display: none;/*los oculta hasta que pasamos el ratón por encima*/
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	position: absolute;/*queda por encima del div padre, no dentro*/
+	z-index: 1;
+	}
+#menu8 ul li:hover ul { /*al pasar el ratón por los li del padre salen los ul hijos*/
+	display: block;
+	}
+#menu8 ul li ul li{
+	float: none; /*vienen flotando desde #menu8 ul li*/
+	}
+#menu8 ul li ul li a {
+	text-decoration: none;
+	color: black;
+	text-align: left;
+	}
+#menu8 ul li ul li a:hover {
+	text-decoration: none;
+	color: white;
+	background-color: blue;
+	}
+
+/*------Estilo9--------*/
+#menu9 { 
+	width:auto;
+	/*border: solid 1px black;*/
+	padding: 10px;
+	height: auto;
+	}
+#menu9 ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	background-color: #666666;
+	width: 150px;
+	position: absolute;
+	}
+#menu9 ul li {
+	border: white 1px dotted;
+	position: relative;
+	float: none;
+	}
+#menu9 ul li a {
+	text-decoration: none;
+	width: auto;
+	color: white;
+	display: block;
+	padding: 14px 16px;
+	}
+#menu9 ul li a:hover {
+	background-color: red;
+	}
+#menu9 ul li ul {
+	display: none;/*los oculta hasta que pasamos el ratón por encima*/
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	position: absolute;
+	left: 150px;
+	top: 0;
+	}
+#menu9 ul li:hover>ul { /*al pasar el ratón por los li del padre salen los ul hijos. Así señalamoa todos los hijos ul directos de li de una vez*/
+	display: block;
+	}
+#menu9 ul li ul li{
+	position: relative;
+	float: none;
+	}
+#menu9 ul li ul li a {
+	text-decoration: none;
+	color: black;
+	text-align: left;
+	}
+#menu9 ul li ul li a:hover {
+	text-decoration: none;
+	color: white;
+	background-color: blue;
+	}
