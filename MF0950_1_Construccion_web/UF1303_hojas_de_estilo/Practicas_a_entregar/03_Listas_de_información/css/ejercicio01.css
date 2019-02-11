@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+body {
+	background-color: lightblue;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	}
+#cabecera {
+	background-color: blue;
+	overflow: hidden;
+	color: white;
+	}
+#cabecera img {
+	width: 150px;
+	height: 150px;
+	float: left;
+	}
+#pie {
+	background-color: blue;
+	overflow: hidden;
+	color: white;
+	text-align: center;
+	}
+h2 {font-size: 1em;}
+#navegación {
+	width: 90%;
+	margin: 0 auto;
+	height: auto;
+	padding: 10px;
+	}
+#navegacion ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	}
+#navegacion ul li {
+	width: auto;
+	display: inline-block;
+	}
+#navegacion ul li a {
+	text-decoration: none;
+	background-color: antiquewhite;
+	border: solid 1px blue;
+	padding: 5px;
+	border-radius: 10px;
+	color: blue;
+	font-weight: bold;
+	}
+#section {
+	width: 95%;
+	overflow: hidden;
+	height: auto;
+	margin: 0 auto;
+	}
+#section li {
+	border: solid 1px black;
+	background-color: lightgoldenrodyellow;
+	display: inline-block;
+	text-align: left;
+	padding: 10px;
+	width: 40%;
+	margin: 10px;
+	line-height: 1.5;
+	}
+#section figure {margin: 0;}
+#section figure img {
+	width: 390px;
+	height: auto;
+	}
+#section figcaption {
+	text-transform: uppercase;
+	font-style: italic;
+	font-size: 0.8em;
+	}
+#section a {
+	background-color: blue;
+	color: white;
+	text-decoration: none;
+	padding: 5px;
+	}
+#section a:hover{
+	opacity: 0.7;
+	}
+#lista1 {
+	width: 90%;
+	overflow: hidden;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+	}
+#lista1 li {
+	border: solid 1px black;
+	background-color: lightgoldenrodyellow;
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	height: auto;
+	padding: 5px 0px;
+	}
+#lista1 figure {margin: 0;}
+#lista1 figure img {
+	width: 250px;
+	height: auto;
+	}
+#lista1 figcaption {
+	font-weight: bold;
+	width: 250px;
+	margin: 0 auto;
+	}
+#lista2 {
+	width: 90%;
+	overflow: hidden;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+	}
+#lista2 li {
+	border: solid 1px black;
+	background-color: lightgoldenrodyellow;
+	display: inline-block;
+	text-align: center;
+	width: 23%;
+	height: auto;
+	padding: 5px 0px;
+	}
+#lista2 figure {margin: 0;}
+#lista2 figure img {
+	width: 150px;
+	height: auto;
+	}
+#lista2 figcaption {
+	font-weight: bold;
+	width: 150px;
+	margin: 0 auto;
+	}
+	

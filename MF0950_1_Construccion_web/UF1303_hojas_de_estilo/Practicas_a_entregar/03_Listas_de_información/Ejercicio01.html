@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="css/ejercicio01.css">
+</head>
+
+<body>
+<header>
+<div id="cabecera">
+	<img src="img/HTML5_png.png" alt="logohtml5">
+		<h1>La Web Semántica</h1>
+		<h2>Donde las etiquetas identifican el contnido</h2>	
+</div>
+</header>
+
+<main>
+<h2>&lt;nav&gt;Barra de navegación&lt;/nav&gt;</h2>
+<nav id="navegacion">
+<ul>
+	<li><a href="section">Encabezado</a></li>
+	<li><a href="navegacion">Navegación</a></li>
+	<li><a href="main">Main</a></li>
+	<li><a href="section">Section</a></li>
+	<li><a href="articulo">Articulo</a></li>
+	<li><a href="figura">Figura</a></li>
+	<li><a href="aside">Aside</a></li>
+	<li><a href="footer">Footer</a></li>
+</ul>
+</nav>
+
+<h2>&lt;main&gt;Contenido principal&lt;/main&gt;</h2>
+
+<section>
+<h2>&lt;section&gt;Sección de la página web&lt;/section&gt;</h2>
+<ul id="section">
+	<li><!--articulo1-->
+		<article>&lt;article&gt;Articulo web&lt;/article&gt;
+			<figure>
+				<img src="img/01-albarracin.jpg" alt="foto Albarracin">
+				<figcaption>Foto paisaje</figcaption>
+			</figure>
+			<h3>Título del artículo</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id ipsa esse porro perspiciatis sint beatae maiores corporis necessitatibus, vero eveniet tempore repellendus rem, eaque labore, harum recusandae voluptatem voluptate.</p>
+			<a href="#">leer más</a><br>
+			<p>Pedro | Comentario 2 |09/05/2019</p>
+		</article>
+	</li><!--fin articulo1-->
+	<li><!--articulo2-->
+		<article>&lt;article&gt;Articulo web&lt;/article&gt;
+			<figure>
+				<img src="img/02-huesca.jpg" alt="foto Huesca">
+				<figcaption>Foto paisaje</figcaption>
+			</figure>
+			<h3>Título del artículo</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id ipsa esse porro perspiciatis sint beatae maiores corporis necessitatibus, vero eveniet tempore repellendus rem, eaque labore, harum recusandae voluptatem voluptate.</p>
+			<a href="#">leer más</a><br>
+			<p>Pedro | Comentario 2 | 09/05/2019</p>
+		</article>
+</li><!--articulo2-->
+</ul>
+</section>
+
+<aside>
+<h2>&lt;aside&gt;Contenido relacionadon&lt;/aside&gt;</h2>
+<ul id="lista1"><!--lista grande-->
+	<li><!--figura1-->
+		<figure>
+			<img src="img/img_5terre.jpg" alt="pueblos">
+			<figcaption>Los 10 publos costeros más bonitos de España</figcaption>
+		</figure>
+	</li><!--fin figura1-->
+	<li><!--figura2-->
+		<figure>
+			<img src="img/img_lights.jpg" alt="aurora">
+			<figcaption>Las 10 imagenes más increibles de la aurora boreal</figcaption>
+		</figure>
+	</li><!--fin figura2-->
+	<li><!--figura3-->
+		<figure>
+			<img src="img/img_mountains.jpg" alt="lagos">
+			<figcaption>Los 10 grandes lagos ubicados entre montañas</figcaption>
+		</figure>
+	</li><!--fin figura3-->
+</ul><!--fin lista grande-->
+
+<br>
+
+<ul id="lista2"><!--lista pequeña-->
+	<li><!--figura1-->
+		<figure>
+			<img src="img/01.png" alt="desiertos">
+			<figcaption>Los lugares más áridos</figcaption>
+		</figure>
+	</li><!--fin figura1-->
+	<li><!--figura2-->
+		<figure>
+			<img src="img/02.jpg" alt="rios">
+			<figcaption>Los rios más grandes</figcaption>
+		</figure>
+	</li><!--fin figura2-->
+	<li><!--figura3-->
+		<figure>
+			<img src="img/03.jpg" alt="carreteras">
+			<figcaption>Las carreteras más rectas</figcaption>
+		</figure>
+	</li><!--fin figura3-->
+	<li><!--figura4-->
+		<figure>
+			<img src="img/04.jpg" alt="casas">
+			<figcaption>Las casas más remotas</figcaption>
+		</figure>
+	</li><!--fin figura4-->
+</ul><!--fin lista pequeña-->
+</aside>
+</main>
+
+<br>
+
+<footer id="pie">
+<h2>&lt;footer&gt;Sección de pie de página del documento&lt;/footer&gt;</h2>
+	<p>Siguenos en...</p>
+	<ul><!--lista seguidores-->
+		<li><a href="https://es-es.facebook.com/"><img alt="Facebook" src="img/iconos/facebook.png">Facebook</a></li>
+		<li><a href="https://twitter.com/?lang=es"><img alt="Twitter" src="img/iconos/twitter.png">Twitter</a></li>
+		<li><a href="https://plus.google.com/discover"><img alt="Google+" src="img/iconos/googleplus.png">Google+</a></li>
+		<li><a href="https://es.linkedin.com/"><img alt="Linkedin" src="img/iconos/linkdin.png">Linkedin</a></li>
+		<li><a href="https://www.youtube.com/?gl=ES&hl=es"><img alt="Youtube" src="img/iconos/youtube.png">Youtube</a></li>
+	</ul><!--fin lista seguidores-->
+	
+	<p>Contactos...</p>
+	<ul><!--lista contactos-->
+		<li><a href="https://cftic.centrosdeformacion.empleo.madrid.org/"><img alt="CFTIC" src="img/iconos/home.png">CFTIC. Centro de formación</a></li>
+		<li><a href="https://www.google.es/maps/place/CFTIC/@40.2938899,-3.7454672,15z/data=!4m5!3m4!1s0x0:0xf67f8737cfaa00e9!8m2!3d40.2938899!4d-3.7454672"><img alt="map" src="img/iconos/placeholder.png">Avd. Arcas del Agua 2</a></li>
+		<li><a href="https://cftic.centrosdeformacion.empleo.madrid.org/contactar1"><img alt="codigo postal" src="img/iconos/postcard.png">28905, Madrid</a></li>
+		<li><a href="https://cftic.centrosdeformacion.empleo.madrid.org/contactar1"><img alt="Telefono" src="img/iconos/phone.png">91 683 81 60.</a></li>
+		<li><a href="https://cftic.centrosdeformacion.empleo.madrid.org/contactar1"><img alt="mail" src="img/iconos/youtube.png">centrof.madridsur@madrid.org</a></li>
+	</ul><!--fin lista contactos-->
+	
+	<p>Documentación...</p>
+	<ul><!--lista documentacion-->
+		<li><a href="#"><img alt="aviso legal" src="img/iconos/aviso-legal.png">Aviso Legal</a></li>
+		<li><a href="#"><img alt="privacidad" src="img/iconos/privacidad.png">Politica de Privacidad</a></li>
+		<li><a href="#"><img alt="uso" src="img/iconos/politicadeuso.png">Condiciones de uso</a></li>
+		<li><a href="#"><img alt="cookies" src="img/iconos/cookies.png">Politica de cookies</a></li>
+		<li><a href="accesibilidad"><img alt="accesibilidad" src="img/iconos/contacto.png">Accesibilidad web</a></li>
+	</ul><!--fin lista documentacion-->
+	
+<details>
+	<summary>&copy;2018-2019</summary>
+	<p>Autor: nita86</p>	
+</details>
+</footer>
+</body>
+</html>

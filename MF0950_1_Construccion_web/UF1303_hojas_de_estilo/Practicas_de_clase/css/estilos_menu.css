@@ -413,19 +413,18 @@ padding: 10px;
 	}
 
 /*------Estilo9--------*/
-#menu9 { 
-	width:auto;
-	/*border: solid 1px black;*/
-	padding: 10px;
-	height: auto;
+#menu9 {
+	position: absolute;
+	overflow: hidden;
 	}
 #menu9 ul {
 	list-style-type: none;
 	padding: 0;
-	margin: 0;
+	margin: 10px;
 	background-color: #666666;
 	width: 150px;
 	position: absolute;
+	overflow: hidden;
 	}
 #menu9 ul li {
 	border: white 1px dotted;
@@ -467,3 +466,58 @@ padding: 10px;
 	color: white;
 	background-color: blue;
 	}
+
+/*------Estilo10--------*/
+#menu10 {
+	position: absolute;
+	overflow: hidden;
+	}
+#menu10 ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 10px;
+	background-color: #666666;
+	width: 150px;
+	position: relative;
+	}
+#menu10 ul li {
+	border: white 1px dotted;
+	position: relative;
+	float: none;
+	}
+#menu10 ul li a {
+	text-decoration: none;
+	width: auto;
+	color: white;
+	display: block;
+	padding: 14px 16px;
+	}
+#menu9 ul li a:hover {
+	background-color: red;
+	}
+#menu10 ul li ul {
+	display: none;/*los oculta hasta que pasamos el ratón por encima*/
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	position: absolute;
+	left: 150px;
+	top: 0;
+	}
+#menu10 ul li:hover>ul { /*al pasar el ratón por los li del padre salen los ul hijos. Así señalamoa todos los hijos ul directos de li de una vez*/
+	display: block;
+	}
+#menu10 ul li ul li{
+	position: relative;
+	float: none;
+	}
+#menu10 ul li ul li a {
+	text-decoration: none;
+	color: black;
+	text-align: left;
+	}
+#menu10 ul li ul li a:hover {
+	text-decoration: none;
+	color: white;
+	background-color: blue;
+	}
+
