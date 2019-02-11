@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+#cabecera {
+	background-color: blue;
+	overflow: hidden;
+	color: white;
+	}
+#cabecera img {
+	width: 150px;
+	height: 150px;
+	float: left;
+	}
