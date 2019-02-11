@@ -14,7 +14,9 @@
 		<h1>La Web Semántica</h1>
 		<h2>Donde las etiquetas identifican el contnido</h2>	
 </div>
+</header>
 
+<main>
 <h2>&lt;nav&gt;Barra de navegación&lt;/nav&gt;</h2>
 <nav id="navegacion">
 <ul>
@@ -28,13 +30,12 @@
 	<li><a href="footer">Footer</a></li>
 </ul>
 </nav>
-</header>
-<main>
+
 <h2>&lt;main&gt;Contenido principal&lt;/main&gt;</h2>
 
 <section>
 <h2>&lt;section&gt;Sección de la página web&lt;/section&gt;</h2>
-<ul>
+<ul id="section">
 	<li><!--articulo1-->
 		<article>&lt;article&gt;Articulo web&lt;/article&gt;
 			<figure>
@@ -43,8 +44,8 @@
 			</figure>
 			<h3>Título del artículo</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id ipsa esse porro perspiciatis sint beatae maiores corporis necessitatibus, vero eveniet tempore repellendus rem, eaque labore, harum recusandae voluptatem voluptate.</p>
-			<a href="#">Leer más</a><br>
-			<a href="#">Pedro</a>|<a href="#">Comentario 2</a>|<a href="#">09/05/2019</a>
+			<a href="#">leer más</a><br>
+			<p>Pedro | Comentario 2 |09/05/2019</p>
 		</article>
 	</li><!--fin articulo1-->
 	<li><!--articulo2-->
@@ -55,16 +56,16 @@
 			</figure>
 			<h3>Título del artículo</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id ipsa esse porro perspiciatis sint beatae maiores corporis necessitatibus, vero eveniet tempore repellendus rem, eaque labore, harum recusandae voluptatem voluptate.</p>
-			<a href="#">Leer más</a><br>
-			<a href="#">Pedro</a>|<a href="#">Comentario 2</a>|<a href="#">09/05/2019</a>
+			<a href="#">leer más</a><br>
+			<p>Pedro | Comentario 2 | 09/05/2019</p>
 		</article>
 </li><!--articulo2-->
 </ul>
 </section>
 
 <aside>
-<h2>&lt;aside&gt;Contenidko relacionadon&lt;/aside&gt;</h2>
-<ul><!--lista grande-->
+<h2>&lt;aside&gt;Contenido relacionadon&lt;/aside&gt;</h2>
+<ul id="lista1"><!--lista grande-->
 	<li><!--figura1-->
 		<figure>
 			<img src="img/img_5terre.jpg" alt="pueblos">
@@ -85,7 +86,9 @@
 	</li><!--fin figura3-->
 </ul><!--fin lista grande-->
 
-<ul><!--lista pequeña-->
+<br>
+
+<ul id="lista2"><!--lista pequeña-->
 	<li><!--figura1-->
 		<figure>
 			<img src="img/01.png" alt="desiertos">
@@ -114,7 +117,9 @@
 </aside>
 </main>
 
-<footer>
+<br>
+
+<footer id="pie">
 <h2>&lt;footer&gt;Sección de pie de página del documento&lt;/footer&gt;</h2>
 	<p>Siguenos en...</p>
 	<ul><!--lista seguidores-->
@@ -144,8 +149,8 @@
 	</ul><!--fin lista documentacion-->
 	
 <details>
-	<summary>2018-2019</summary>
-	
+	<summary>&copy;2018-2019</summary>
+	<p>Autor: nita86</p>	
 </details>
 </footer>
 </body>
