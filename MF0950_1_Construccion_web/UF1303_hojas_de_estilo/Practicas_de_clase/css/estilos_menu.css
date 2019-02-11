@@ -413,111 +413,182 @@ padding: 10px;
 	}
 
 /*------Estilo9--------*/
+/*MENU 9*/
+
 #menu9 {
-	position: absolute;
-	overflow: hidden;
-	}
-#menu9 ul {
-	list-style-type: none;
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid black;
+	padding: 10px;
+	
+}
+#menu9 ul{
+	list-style-type: none; /*quitar puntos lista*/
+	margin: 0;
 	padding: 0;
-	margin: 10px;
-	background-color: #666666;
-	width: 150px;
+	background-color: #333333;
+	/*overflow: hidden; /*para que flote*/
+	/*text-align:left;*/
+	width: 200px;
 	position: absolute;
-	overflow: hidden;
-	}
-#menu9 ul li {
-	border: white 1px dotted;
-	position: relative;
-	float: none;
-	}
-#menu9 ul li a {
-	text-decoration: none;
-	width: auto;
+}
+#menu9 ul li{
+	border-right: 1px solid #bbb;
+	float: none; /*solo menu horizontal, si fuera menu vertical si queremos que flote*/
+	position: relative; /* se desplega */
+}
+#menu9 ul li a{
 	color: white;
+	/*display: ;*/
 	display: block;
-	padding: 14px 16px;
-	}
-#menu9 ul li a:hover {
+	text-align: left;
+	padding: 5px;
+	text-decoration: none;
+	font-size: 20px;
+	
+}
+#menu9 ul li a:hover{
 	background-color: red;
-	}
-#menu9 ul li ul {
-	display: none;/*los oculta hasta que pasamos el ratón por encima*/
-	background-color: #f9f9f9;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#menu9 ul li ul{
+	display: none;
 	position: absolute;
-	left: 150px;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgb(0,0,0,2);
+	z-index: 1;
 	top: 0;
-	}
-#menu9 ul li:hover>ul { /*al pasar el ratón por los li del padre salen los ul hijos. Así señalamoa todos los hijos ul directos de li de una vez*/
+	right: -150px; /* para desplazar el submenu a la derecha x ejemplo, tiene que llevar px o % */
+}
+#menu9 ul li:hover > ul{ /* con el signo ">" vale para decirle que todos los hijos hagan esto*/
 	display: block;
-	}
+}
 #menu9 ul li ul li{
 	position: relative;
-	float: none;
-	}
+}
 #menu9 ul li ul li a {
-	text-decoration: none;
 	color: black;
-	text-align: left;
-	}
-#menu9 ul li ul li a:hover {
-	text-decoration: none;
-	color: white;
-	background-color: blue;
-	}
+	text-align: right;
+}
 
-/*------Estilo10--------*/
+#menu9 ul li ul li a:hover {
+	background-color: dodgerblue;
+	color:white;
+}
+
+/*menu 10*/
 #menu10 {
-	position: absolute;
-	overflow: hidden;
-	}
-#menu10 ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 10px;
-	background-color: #666666;
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid black;
+	padding: 10px;
+	
+}
+h2:after {
+    content: ' \26C5'; /* para hacer dibujitos al lado de texto.*/
+}
+#menu10 ul{
+	list-style: none; /*elimina punto*/
+	padding: 0; /*elimina anchos*/
+	margin: 0; /*margen fuera*/
+	background-color: #333333;
+}
+#menu10 ul li{
+	display: block;
+	border: solid 1px #fff; /*borde menu 1*/
 	width: 150px;
 	position: relative;
-	}
-#menu10 ul li {
-	border: white 1px dotted;
-	position: relative;
-	float: none;
-	}
-#menu10 ul li a {
+}
+#menu10 ul li a{
 	text-decoration: none;
-	width: auto;
-	color: white;
-	display: block;
 	padding: 14px 16px;
+	color: white;
+	text-align: left;
+	display: block;
 	}
-#menu9 ul li a:hover {
+#menu10 ul li a:hover{
 	background-color: red;
 	}
-#menu10 ul li ul {
-	display: none;/*los oculta hasta que pasamos el ratón por encima*/
-	background-color: #f9f9f9;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+#menu10 ul li ul{
+	display: none; /*este esta oculto para que no se muestre el menu*/
 	position: absolute;
+	background-color: #f9f9ff9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
 	left: 150px;
-	top: 0;
-	}
-#menu10 ul li:hover>ul { /*al pasar el ratón por los li del padre salen los ul hijos. Así señalamoa todos los hijos ul directos de li de una vez*/
+	top: 0; /*con esta propiedad subes el submenu arriba del todo*/
+}
+#menu10 ul li:hover > ul{ /*con > ul haces que se desplege todos los submenus*/ 
 	display: block;
-	}
+}
+/*a partir de aqui sobra, solo es por si quieres cambiar los menus de color */
 #menu10 ul li ul li{
+	display: block;
 	position: relative;
-	float: none;
-	}
-#menu10 ul li ul li a {
-	text-decoration: none;
+}
+#menu10 ul li ul li a{
 	color: black;
 	text-align: left;
 	}
-#menu10 ul li ul li a:hover {
-	text-decoration: none;
-	color: white;
-	background-color: blue;
-	}
+#menu10 ul li ul li a:hover{
+	background-color: yellow;
+}
+/*menu 11*/
 
+#menu11 {
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid black;
+	padding: 10px;
+	
+}
+#menu11 ul{
+	list-style: none; /*elimina punto*/
+	padding: 0; /*elimina anchos*/
+	margin: 0; /*margen fuera*/
+	
+	/*overflow: hidden;*/
+}
+#menu11 ul li{
+	/*display: block;*/
+	float: left;
+	width: 150px;
+	text-align: left;
+	background-color: #333333;
+}
+#menu11 ul li a{
+	text-decoration: none;
+	padding: 14px 16px;
+	color: black;
+	text-align: center;
+	display: block;
+	}
+#menu11 ul li a:hover{
+	background-color: red;
+	}
+#menu11 ul li ul{
+	display: none; /*este esta oculto para que no se muestre el menu*/
+	
+}
+#menu11 ul li:hover > ul{  /*con > ul haces que se desplege todos los submenus*/ 
+	display: block;
+}
+/*a partir de aqui sobra, solo es por si quieres cambiar los menus de color */
+#menu11 ul li ul li{
+	position: relative;
+}
+#menu11 ul li ul li ul{
+	position: absolute;
+	top:0;
+	left: 150px;
+	
+}
+#menu11 ul li ul li a{
+	color: white;
+	display: inline-block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+#menu11 ul li ul li a:hover{
+	background-color: red;
+}
