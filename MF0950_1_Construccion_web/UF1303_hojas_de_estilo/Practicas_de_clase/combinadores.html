@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Pseudoclases</title>
+	
+  	<meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+   	<meta name="title" content="Confección y publicación de páginas web">
+    <meta name="keywords" content="Diseño de páginas web con HTML, CSS, JavaScript">
+    <meta name="author" content="Ana Rodríguez">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+
+    
+    
+
+
+<style>
+
+	body {
+		font-family: lucida Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+		width: 80%;
+		margin: 0 auto;
+		font-size: 1em;
+	}
+	div {border: dotted 1px black;}
+	#div1 p {
+		background-color: yellow;
+	}
+	#div2 > p {
+  		background-color: yellow;
+		}
+	#div3 + p {
+  		background-color: yellow;
+	}
+	#div4 ~ p {
+  		background-color: yellow;
+	}
+	h2 + p {
+		background-color: coral;
+	}
+	#div5 p::first-line {
+  		color: #ff0000;
+  		font-variant: small-caps;
+	}
+	#div6 p::first-letter {
+  		color: #ff0000;
+  		font-size: xx-large;
+	}
+	#div7 p.intro::first-letter {
+  		color: #ff0000;
+  		font-size:200%;
+	}  
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</style>
+
+</head>
+
+<body>
+<h1>CSS Combinators</h1>
+
+<hr>
+
+<h2>Descendant Selector</h2>
+<p>div p {Bacground-color: yelow}</p>
+<div id="div1">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span>
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+<hr>
+
+<h2>Child Selector</h2>
+<p>div &gt; p {Bacground-color: yelow}</p>
+<p>Se aplica a los p descendientes directos de div. El paragraph 3 no se pinta porque delante hay un span</p>
+<div id="div2">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span> <!-- not Child but Descendant -->
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+<hr>
+
+<h2>Adjacent Sibling Selector</h2>
+<p>div + p {Bacground-color: yelow}</p>
+<p>Se pintan los selectores inmediatamente después del div</p>
+
+<div id="div3">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. Not in a div.</p>
+<p>Paragraph 4. Not in a div.</p>
+
+<hr>
+<h2>Selector general entre hermanos</h2>
+<p>div ~ p {background-color:yelow}</p>
+<p>selecciona todos los elementos que son hermanos de un elemento especificado.</p>
+
+<p>Paragraph 1.</p>
+
+<div id="div4">
+  <code>Some code.</code>
+  <p>Paragraph 2.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p>
+
+<hr>
+
+<h2>Pseudo elementos CSS</h2>
+<p>Un pseudo-elemento CSS se utiliza para estilo especificado partes de un elemento. <br>
+Por ejemplo, se puede utilizar para:</p>
+<ul>
+	<li>Estilo de la primera letra, o línea, de un elemento</li>
+	<li>Insertar contenido antes, o después, el contenido de un elemento</li>
+</ul>
+
+<hr>
+
+<h2>La primera línea :: pseudo-elemento</h2>
+<div id="div5">
+<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+</div>
+
+<hr>
+
+<h2>La :: pseudo-elemento first-letter</h2>
+<div id="div6">
+<p>You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+</div>
+
+<hr>
+<h2>Los pseudo-elementos y clases CSS</h2>
+<div id="div7">
+<p class="intro">This is an introduction.</p>
+<p>This is a paragraph with some text. A bit more text even.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
