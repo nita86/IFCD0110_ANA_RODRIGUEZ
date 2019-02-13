@@ -51,21 +51,37 @@
   		color: #ff0000;
   		font-size:200%;
 	}  
-	
-@media screen and (min-width: 480px) {/*hasta que no llegues a 480 muestrate verde. En el ordenador no llega a encoger tanto*/
-  body {
-    background-color: lightgreen;
-  	}
-}
-@media screen and (min-width: 800px) {/*hasta que no llegues a 800 muestrate azul*/
-  body {
-    background-color: lightblue;
-  	}
+
+
 }
 @media screen and (max-width: 1024px) {/*cuando llegues a 1024 muestrate verde.*/
   body {
     background-color: lightgreen;
   	}
+	.flexcontainer {
+		flex flex-direction: row;
+	}
+	.flexcontainer > div {
+		background-color: antiquewhite;
+		/*margin: 10px;*/
+		padding: 10px;
+		width: 23%;
+		font-size: 0.8em;
+		/*line-height: 1.5;*/
+		text-align: center;
+		}
+	.flexcontainer2 {
+		flex flex-direction: column;
+	}
+	.flexcontainer2 > div {
+		background-color: antiquewhite;
+		/*margin: 10px;*/
+		padding: 10px;
+		width: 30%;
+		font-size: 0.8em;
+		/*line-height: 1.5;*/
+		text-align: center;
+		}
 }
 @media screen and (max-width: 800px) {/*cuando  llegues a 800 muestrate azul*/
   body {
@@ -76,11 +92,59 @@
   body {
     background-color: lightcoral;
   	}
+	.flexcontainer {
+		flex flex-direction: row;
+	}
+	.flexcontainer > div {
+		background-color: antiquewhite;
+		/*margin: 10px;*/
+		padding: 10px;
+		width: 40%;
+		font-size: 0.8em;
+		/*line-height: 1.5;*/
+		text-align: center;
+		}
+	.flexcontainer2 {
+		flex flex-direction: row;
+	}
+	.flexcontainer2 > div {
+		background-color: antiquewhite;
+		/*margin: 10px;*/
+		padding: 10px;
+		width: 40%;
+		font-size: 0.8em;
+		/*line-height: 1.5;*/
+		text-align: center;
+		}
 }
-@media screen and (max-width: 400px) {/*cuando  llegues a 400 muestrate gris. En el ordenador no llega a encoger tanto*/
+@media screen and (max-width: 500px) {/*cuando  llegues a 500 muestrate gris. En el ordenador no llega a encoger tanto*/
   body {
     background-color: lightgray;
   	}
+	.flexcontainer {
+		flex flex-direction: column;
+	}
+	.flexcontainer > div {
+		background-color: antiquewhite;
+		/*margin: 10px;*/
+		padding: 10px;
+		width: 100%;
+		font-size: 0.8em;
+		/*line-height: 1.5;*/
+		text-align: center;
+		}
+	.flexcontainer2 {
+		flex flex-direction: column;
+	}
+	.flexcontainer2 > div {
+		background-color: antiquewhite;
+		/*margin: 10px;*/
+		padding: 10px;
+		width: 100%;
+		font-size: 0.8em;
+		/*line-height: 1.5;*/
+		text-align: center;
+		}
 }
 
 	
@@ -93,8 +157,8 @@
 <hr>
 
 
-<style>
-	.flexcontainer {
+<!--<style>
+	flexcontainer {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -105,14 +169,14 @@
 		}
 	.flexcontainer > div {
 		background-color: antiquewhite;
-		/*margin: 10px;*/
+		
 		padding: 10px;
 		width: 23%;
 		font-size: 0.8em;
-		/*line-height: 1.5;*/
+		
 		text-align: center;
 		}
-</style>
+</style>-->
 <h2>CSS Combinators</h2>
 <hr>
 <div class="flexcontainer"><!--padre-->
@@ -175,7 +239,7 @@
 </div><!--fin padre-->
 
 <hr>
-<style>
+<!--<style>
 	.flexcontainer2 {
 		display: flex;
 		flex-direction: row;
@@ -194,7 +258,7 @@
 		/*line-height: 1.5;*/
 		text-align: center;
 		}
-</style>
+</style>-->
 <h2>Pseudo elementos CSS</h2>
 <p>Un pseudo-elemento CSS se utiliza para estilo especificado partes de un elemento. <br>
 Por ejemplo, se puede utilizar para:</p>
