@@ -439,13 +439,11 @@ padding: 10px;
 }
 #menu9 ul li a{
 	color: white;
-	/*display: ;*/
 	display: block;
 	text-align: left;
 	padding: 5px;
 	text-decoration: none;
 	font-size: 20px;
-	
 }
 #menu9 ul li a:hover{
 	background-color: red;
@@ -524,7 +522,7 @@ h2:after {
 #menu10 ul li ul li{
 	display: block;
 	position: relative;
-}
+ }
 #menu10 ul li ul li a{
 	color: black;
 	text-align: left;
@@ -537,7 +535,7 @@ h2:after {
 #menu11 {
 	width: 80%;
 	margin: 0 auto;
-	border: 1px solid black;
+	border: 1px solid grey;
 	padding: 10px;
 	
 }
@@ -558,7 +556,7 @@ h2:after {
 #menu11 ul li a{
 	text-decoration: none;
 	padding: 14px 16px;
-	color: black;
+	color: white;
 	text-align: center;
 	display: block;
 	}

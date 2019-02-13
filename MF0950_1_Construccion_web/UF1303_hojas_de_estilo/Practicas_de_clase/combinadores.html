@@ -17,7 +17,7 @@
 
 
 <style>
-
+	* box-sizing {border-box;}
 	body {
 		font-family: lucida Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
 		width: 80%;
@@ -53,73 +53,110 @@
   		font-size:200%;
 	}  
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 </style>
 
 </head>
 
 <body>
 <h1>CSS Combinators</h1>
+<hr>
+
+
+<style>
+	.flexcontainer {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: space-around;
+		align-content: space-around;
+		background-color: dodgerblue;
+		}
+	.flexcontainer > div {
+		background-color: antiquewhite;
+		margin: 10px;
+		padding: 10px;
+		width: 20%;
+		height: 100%;
+		/*font-size: 2em;
+		line-height: 1.5;*/
+		}
+</style>
+<div class="flexcontainer"><!--padre-->
+	<div><!--hijo1-->
+		<h2>Descendant Selector</h2>
+		<p>div p {Bacground-color: yelow}</p>
+		<div id="div1">
+  			<p>Paragraph 1 in the div.</p>
+  			<p>Paragraph 2 in the div.</p>
+  			<span><p>Paragraph 3 in the div.</p></span>
+		</div>
+		<p>Paragraph 4. Not in a div.</p>
+		<p>Paragraph 5. Not in a div.</p>
+		<code>
+			&lt;div id="div1"&gt;<br>
+  			<mark>&lt;p&gt;Paragraph 1 in the div.&lt;/p&gt;</mark><br>
+  			<mark>&lt;p&gt;Paragraph 2 in the div.&lt;/p&gt;</mark><br>
+  			<mark>&lt;p&gt;span&gt;&lt;p&gt;Paragraph 3 in the div.&lt;p&gt;&lt;p&gt;/span&gt;</mark><br>
+			&lt;/div&gt;<br>
+			&lt;p&gt;Paragraph 4. Not in a div.&lt;/p&gt;<br>
+			&lt;p&gt;Paragraph 5. Not in a div.&lt;/p&gt;
+		</code>
+	</div><!--fin hijo1-->
+	<div><!--hijo2-->
+		<h2>Child Selector</h2>
+		<p>div &gt; p {Bacground-color: yelow}</p>
+		<p>Se aplica a los p descendientes directos de div. El paragraph 3 no se pinta porque delante hay un span</p>
+		<div id="div2">
+  			<p>Paragraph 1 in the div.</p>
+  			<p>Paragraph 2 in the div.</p>
+  			<span><p>Paragraph 3 in the div.</p></span> <!-- not Child but Descendant -->
+		</div>
+		<p>Paragraph 4. Not in a div.</p>
+		<p>Paragraph 5. Not in a div.</p>
+	</div><!--fin hijo2-->
+	<div><!--hijo3-->
+		<h2>Adjacent Sibling Selector</h2>
+		<p>div + p {Bacground-color: yelow}</p>
+		<p>Se pintan los selectores inmediatamente después del div</p>
+		<div id="div3">
+  			<p>Paragraph 1 in the div.</p>
+  			<p>Paragraph 2 in the div.</p>
+		</div>
+		<p>Paragraph 3. Not in a div.</p>
+		<p>Paragraph 4. Not in a div.</p>
+	</div><!--fin hijo3-->
+	<div><!--hijo4-->	
+		<h2>Selector general entre hermanos</h2>
+		<p>div ~ p {background-color:yelow}</p>
+		<p>selecciona todos los elementos que son hermanos de un elemento especificado.</p>
+		<p>Paragraph 1.</p>
+		<div id="div4">
+  			<code>Some code.</code>
+  			<p>Paragraph 2.</p>
+		</div>
+		<p>Paragraph 3.</p>
+		<code>Some code.</code>
+		<p>Paragraph 4.</p>
+	</div><!--fin hijo4-->
+</div><!--fin padre-->
+
+
+
+
+
+
+
+
+
+
+
 
 <hr>
 
-<h2>Descendant Selector</h2>
-<p>div p {Bacground-color: yelow}</p>
-<div id="div1">
-  <p>Paragraph 1 in the div.</p>
-  <p>Paragraph 2 in the div.</p>
-  <span><p>Paragraph 3 in the div.</p></span>
-</div>
-
-<p>Paragraph 4. Not in a div.</p>
-<p>Paragraph 5. Not in a div.</p>
-
-<code>
-	&lt;div id="div1"&gt;<br>
-  		<mark>&lt;p&gt;Paragraph 1 in the div.&lt;/p&gt;</mark><br>
-  		<mark>&lt;p&gt;Paragraph 2 in the div.&lt;/p&gt;</mark><br>
-  		<mark>&lt;p&gt;span&gt;&lt;p&gt;Paragraph 3 in the div.&lt;p&gt;&lt;p&gt;/span&gt;</mark><br>
-	&lt;/div&gt;<br>
-
-	&lt;p&gt;Paragraph 4. Not in a div.&lt;/p&gt;<br>
-	&lt;p&gt;Paragraph 5. Not in a div.&lt;/p&gt;
-</code>
 
 <hr>
 
-<h2>Child Selector</h2>
-<p>div &gt; p {Bacground-color: yelow}</p>
-<p>Se aplica a los p descendientes directos de div. El paragraph 3 no se pinta porque delante hay un span</p>
-<div id="div2">
-  <p>Paragraph 1 in the div.</p>
-  <p>Paragraph 2 in the div.</p>
-  <span><p>Paragraph 3 in the div.</p></span> <!-- not Child but Descendant -->
-</div>
-
-<p>Paragraph 4. Not in a div.</p>
-<p>Paragraph 5. Not in a div.</p>
-
-<hr>
-
-<h2>Adjacent Sibling Selector</h2>
-<p>div + p {Bacground-color: yelow}</p>
-<p>Se pintan los selectores inmediatamente después del div</p>
-
-<div id="div3">
-  <p>Paragraph 1 in the div.</p>
-  <p>Paragraph 2 in the div.</p>
-</div>
-
-<p>Paragraph 3. Not in a div.</p>
-<p>Paragraph 4. Not in a div.</p>
 
 <hr>
 <h2>Selector general entre hermanos</h2>
