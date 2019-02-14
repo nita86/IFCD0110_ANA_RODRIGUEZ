@@ -151,6 +151,9 @@
 	<div>9</div>
 	<div>10</div>
 </div>
+<br>
+<br>
+<br>
 <!-- 
 <h2>justify-content: flex-star</h2>
 <div class="flex-contenedor4">
@@ -185,17 +188,10 @@
 <hr>
 -------------------------------- -->
 
-
-
-
-
-
 <style>
 #padre {
-	display: flex;
-	flex-direction: row;
-	background-color: aliceblue;
-	width: 80%;
+	display: inline-block;
+	width: 80%; 
 	padding: 10px;
 	margin: 0 auto;
 	}
@@ -208,17 +204,18 @@
 	text-transform: uppercase;
 	font-size: 1.5em;
 	}
-/*
+
 #contenido {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
-	align-content: center;
-	height: 500px;
+	justify-content: space-between;
+	align-content: flex-start;
 	width: 100%;
-	}*/
+	margin: 0 auto;
+	}
 #nombres {
-	width: 20%;
+	width: 24%;
+	line-height: 1.4em;
 	}
 #nombres > p {
 	background-color: orangered;
@@ -227,12 +224,13 @@
 	text-align: center;
 	font-size: 1.5em;
 	border-radius: 10px;
-	padding: 10px;
+	padding: 5px;
 	}
 #cuadros {
-	border: solid 1px black;
-	align-content: center;
-	width: 70%;
+	/*align-content: flex-start;*/
+	width: 74%;
+	padding: 0;
+	margin: 0;
 	}
 .flex-contenedor4 {
 	display: flex;	/* propiedad que define la flexión */
@@ -253,7 +251,7 @@
 	display: flex;	/* propiedad que define la flexión */
 	flex-flow: row wrap; /* columnas envolventes */
 	justify-content: center; /* centrado */
-	background-color:red;
+	background-color:dodgerblue;
 	}
 	/* space-between, center, space-around, flex-end, flex-star */
 .flex-contenedor44 > div {
@@ -283,7 +281,7 @@
 	display: flex;	/* propiedad que define la flexión */
 	flex-flow: row wrap; /* columnas envolventes */
 	justify-content: space-around; /* espacio alrededor */
-	background-color:red;
+	background-color:dodgerblue;
 	}
 	/* space-between, center, space-around, flex-end, flex-star */
 .flex-contenedor4444 > div {
