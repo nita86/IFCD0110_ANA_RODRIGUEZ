@@ -1,0 +1,279 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+
+body {
+	background-color: lightblue;
+	padding: 0;
+	margin: 0 auto;
+	}
+
+#cabecera {
+	background-color: blue;
+	overflow: hidden;
+	color: white;
+	}
+#cabecera img {
+	width: 150px;
+	height: 150px;
+	float: left;
+	}
+#cabecera #letras {
+	float: left;
+	margin-top: 20px;
+	}
+#navegacion {
+	width: 90%;
+	margin: 0 auto;
+	height: auto;
+	padding: 10px;
+	overflow: hidden;
+	text-align: center;
+	}
+#navegacion h2 {
+	font-size: 1em;
+	text-align: center;
+	display: inline-block;
+	}
+#navegacion ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	}
+#navegacion ul li {
+	width: auto;
+	display: inline-block;
+	}
+#navegacion ul li a {
+	text-decoration: none;
+	background-color: antiquewhite;
+	border: solid 1px blue;
+	padding: 5px;
+	border-radius: 10px;
+	color: blue;
+	font-weight: bold;
+	}
+#navegacion ul li a:hover {
+	color: antiquewhite;
+	background-color: blue;
+	}
+section h2 {
+	font-size: 1.2em;
+	margin-left: 10px;
+	}
+#section {
+	width: 95%;
+	overflow: hidden;
+	height: auto;
+	margin: 0 auto;
+	}
+#section li {
+	border: solid 1px black;
+	background-color: lightgoldenrodyellow;
+	display: inline-block;
+	text-align: left;
+	padding: 10px;
+	width: 40%;
+	margin: 10px;
+	line-height: 1.5;
+	}
+#section figure {margin: 0;}
+#section figure img {
+	width: 100%;
+	height: auto;
+	}
+#section figcaption {
+	text-transform: uppercase;
+	font-style: italic;
+	font-size: 0.8em;
+	}
+#section a {
+	background-color: blue;
+	color: white;
+	text-decoration: none;
+	padding: 5px;
+	}
+#section a:hover{
+	opacity: 0.7;
+	}
+aside h2 {
+	font-size: 1em;
+	text-align: center;
+	}
+#lista1 {
+	width: 90%;
+	overflow: hidden;
+	height: auto;
+	margin: 0 auto;
+	
+	}
+#lista1 li {
+	border: solid 1px black;
+	background-color: lightgoldenrodyellow;
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	height: auto;
+	padding: 10px;
+	}
+#lista1 figure {margin: 0;}
+#lista1 figure img {
+	width: 100%;
+	height: auto;
+	}
+#lista1 figcaption {
+	font-weight: bold;
+	width: 250px;
+	margin: 0 auto;
+	}
+#lista2 {
+	width: 80%;
+	overflow: hidden;
+	height: auto;
+	margin: 0 auto;
+	
+	}
+#lista2 li {
+	border: solid 1px black;
+	background-color: lightgoldenrodyellow;
+	float: left;
+	text-align: center;
+	width: 20%;
+	height: 140px;
+	padding: 10px;
+	margin-right: 10px;
+	}
+#lista2 figure {
+	margin: 0;
+	}
+#lista2 figure img {
+	width: 100%;
+	height: auto;
+	}
+#lista2 figcaption {
+	font-weight: bold;
+	width: 100%;;
+	margin: 0 auto;
+	}
+footer h2 {
+	font-size: 0.8em;
+	margin-top: 10px;
+	}
+#pie {
+	background-color: blue;
+	overflow: hidden;
+	color: white;
+	text-align: center;
+	}
+#padre {
+	overflow: hidden;
+	width: 75%;
+	margin: auto;
+	color: black;
+	}
+#hijo1 {
+	float: left; 
+	width: 30%;
+	height: auto;
+	border: solid 1px black;
+	overflow: hidden;
+	background-color: lightgoldenrodyellow;
+	text-align: left;
+	padding: 5px;
+	}
+#hijo2 {
+	float: left;
+	width: 30%;
+	height: auto;
+	border: solid 1px black;
+	overflow: hidden;
+	background-color: lightgoldenrodyellow;
+	text-align: left;
+	padding: 5px;
+	margin: 0 5px;
+	}
+#hijo3 {
+	float: left;
+	width: 30%;
+	height: auto;
+	border: solid 1px black;
+	overflow: hidden;
+	background-color: lightgoldenrodyellow;
+	text-align: left;
+	padding: 5px;
+	}
+#lista { 
+	overflow: hidden;
+	}
+#lista ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	}
+#lista ul li a {	
+	display:block;
+	text-decoration: none;
+	width: auto;
+	padding: 5px;
+	font-size: 0.8em;
+	}
+#lista ul li a:hover {
+	text-decoration: underline;
+	color: white;
+	background-color: blue;
+	}
+#contactos { 
+	overflow: hidden;
+	}
+#contactos ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	}
+#contactos ul li a {	
+	display:block;
+	text-decoration: none;
+	width: auto;
+	padding: 5px;
+	font-size: 0.8em;
+	}
+#contactos ul li a:hover {
+	text-decoration: underline;
+	color: white;
+	background-color: blue;
+	}
+#documentacion { 
+	overflow: hidden;
+	}
+#documentacion ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: right;
+	}
+#documentacion ul li a {	
+	display:block;
+	text-decoration: none;
+	width: auto;
+	padding: 5px;
+	font-size: 0.8em;
+	}
+#documentacion ul li a:hover {
+	text-decoration: underline;
+	color: white;
+	background-color: blue;
+	}
+.iconos {
+	width: 20px;
+	height: 20px;
+	vertical-align: -0.5em;
+	margin: 4px;
+	}
