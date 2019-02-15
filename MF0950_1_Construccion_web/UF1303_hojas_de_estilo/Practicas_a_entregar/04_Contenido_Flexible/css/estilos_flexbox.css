@@ -7,9 +7,66 @@
 	border-sizing: border-box;
 	}
 
+ul {
+	list-style: none;
+	}
+
+ul li a {
+	text-decoration: none;
+	color: white;
+	}
 .principal {
 	background-color: lightblue;
 	border: solid 1px black; 
 	}
 
-
+.letras {
+	background-color: blue;
+	position: relative;
+	width: 100%;
+	height: 100px;
+	}
+.letras > img {
+	width: 200px;
+	margin-top: 20px;
+	margin-left: 50px;
+	}
+.pequeño {
+	background-color: darkblue;
+	position: absolute;
+	top: 0;
+	right: 30px;
+	}
+.pequeño ul li {
+	display: inline-block;
+	color: white;
+	margin: 5px;
+	padding: 5px;
+	font-size: 0.8em;
+	}
+.grande {
+	position: absolute;
+	top: 50px;
+	right: 30px;
+	}
+.grande ul li {
+	display: inline-block;
+	color: white;
+	margin: 5px;
+	padding: 5px;
+	font-size: 1.1em;
+	}
+.foto {
+	background-image: url(../img/foto-playa.jpgimg/foto-playa.jpg);
+	background-position: top left;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-bottom: solid 2px rgba(222,235,16,1.00);
+	}
+.foto > div {
+	width: 25%;
+	height: auto;
+	border-top: solid 2px rgba(222,235,16,1.00);
+	position: absolute;
+	right: 30px;
+	}
