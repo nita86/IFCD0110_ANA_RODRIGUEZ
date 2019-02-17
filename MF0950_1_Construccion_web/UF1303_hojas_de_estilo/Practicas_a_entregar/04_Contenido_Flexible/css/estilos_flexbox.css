@@ -15,7 +15,7 @@ ul li a {
 	color: white;
 	}
 main {
-	width: 95%;
+	width: 100%;
 	margin: 10px auto;
 	}
 .letras {
@@ -77,7 +77,7 @@ main {
 	opacity: 0.6;
 	display: flex;
 	flex-direction: column;
-	flez-wrap: wrap;
+	flex-wrap: wrap;
 	}
 .anuncio p {
 	width: 100%;
@@ -96,35 +96,35 @@ main {
 	width: 30%;
 	text-align: center;
 	position: absolute; 
-	left: 170px;
-	top: 170px;
+	top: 180px;
 	}
 .oferta {
 	text-transform: uppercase;
-	font-weight: x-large;
+	font-weight: xx-large;
 	color: darkcyan;
 	}
-.hoteles > p {
-	font-size: 1em;
-	color: black;
-	}
-.hoteles {
+.contenido1 {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: flex-start;
+	justify-content: space-around;
+	width: 100%;
 	text-align: left;
-	align-content: center;
 	}
-.fotoshoteles {
+.contenido1 > p {
+	font-size: 1.2em;
+	color: black;
+	margin-left: 0%;
+	}
+.fotoscontenido1 {
 	width: 30%;
 	padding: 0px 10px;
 	margin: 5px;
 	}
-.fotoshoteles > img {
+.fotoscontenido1 > img {
 	width: 100%;
 	position: relative;
 	}
-.fotoshoteles > p {
+.fotoscontenido1 > p {
 	color: white;
 	text-transform: uppercase;
 	text-shadow: 0px 3px black;
@@ -132,17 +132,88 @@ main {
 	top: -40px;
 	left: 10px;
 	}
-.fotoshoteles a {
+.fotoscontenido1 a {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: darkslategray;
 	margin-left: 190px;
 	}
-.viajes > p {
-	font-size: 1em;
+
+.contenido2 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	width: 100%;
+	text-align: left;
+	}
+.contenido2 > p {
+	font-size: 1.2em;
 	color: black;
 	}
-.cruceros > p {
-	font-size: 1em;
+.fotoscontenido2 {
+	width: 22%;
+	padding: 0px 10px;
+	margin: 5px;
+	}
+.fotoscontenido2 > img {
+	width: 100%;
+	position: relative;
+	}
+.fotoscontenido2 > p {
+	color: white;
+	text-transform: uppercase;
+	text-shadow: 0px 3px black;
+	position: relative;
+	top: -40px;
+	left: 10px;
+		}
+.fotoscontenido2 a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: darkslategray;
+	margin-left: 110px;
+	}
+
+.contenido3 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	width: 100%;
+	text-align: left;
+	}
+.contenido3 > p {
+	font-size: 1.2em;
 	color: black;
+	}
+.fotoscontenido3 {
+	width: 46%;
+	padding: 0px 10px;
+	margin: 5px;
+	}
+.fotoscontenido3 > img {
+	width: 100%;
+	position: relative;
+	}
+.fotoscontenido3 > p {
+	color: white;
+	text-transform: uppercase;
+	text-shadow: 0px 3px black;
+	position: relative;
+	top: -40px;
+	left: 10px;
+	}
+.fotoscontenido3 a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: darkslategray;
+	margin-left: 350px;
+	}
+.ver {
+	text-transform: uppercase;
+	text-decoration: none;	
+	color: white;
+	background-color: blue;
+	padding: 10px;
+	border-radius: 10px;
+	margin-right: 70px;
 	}
