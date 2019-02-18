@@ -108,12 +108,13 @@ main {
 	flex-flow: row wrap;
 	justify-content: space-around;
 	width: 100%;
-	text-align: left;
 	}
-.contenido1 > p {
+.contenido1 p {
 	font-size: 1.2em;
 	color: black;
-	margin-left: 0%;
+	width: 100%;
+	text-align: left;
+	margin-left: 10px;
 	}
 .fotoscontenido1 {
 	width: 30%;
@@ -144,11 +145,13 @@ main {
 	flex-flow: row wrap;
 	justify-content: space-around;
 	width: 100%;
-	text-align: left;
 	}
 .contenido2 > p {
 	font-size: 1.2em;
 	color: black;
+	width: 100%;
+	text-align: left;
+	margin-left: 10px;
 	}
 .fotoscontenido2 {
 	width: 22%;
@@ -179,11 +182,13 @@ main {
 	flex-flow: row wrap;
 	justify-content: space-around;
 	width: 100%;
-	text-align: left;
 	}
 .contenido3 > p {
 	font-size: 1.2em;
 	color: black;
+	width: 100%;
+	text-align: left;
+	margin-left: 10px;
 	}
 .fotoscontenido3 {
 	width: 46%;
@@ -209,11 +214,63 @@ main {
 	margin-left: 350px;
 	}
 .ver {
+	position: absolute;
+	right: 10px;
+	}
+.ver > a {
 	text-transform: uppercase;
 	text-decoration: none;	
 	color: white;
 	background-color: blue;
 	padding: 10px;
 	border-radius: 10px;
-	margin-right: 70px;
+	/*position: relative;*/
 	}
+.footer {
+	background-color: blue;
+	color: white;
+	text-align: center;
+	}
+.footer h1 {
+	color: white;
+	font-size: 1.5em;
+	text-decoration-line: line-through;
+	margin: 5px;
+	width: 100%;
+	}
+.footer span {
+	text-decoration-line: none;
+	}
+.ico {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	}
+.ico > div {
+	margin: 10px;
+	width: 30%;
+	}
+.redes {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	}
+.redes > div {
+	margin: 10px;
+	}
+.legal {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	background-color: black;
+	}
+.legal > div {
+	margin: 10px;
+	padding: 10px;
+	}
+.legal a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	}
+
