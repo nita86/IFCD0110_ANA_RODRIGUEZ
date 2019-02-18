@@ -75,9 +75,16 @@ main {
 	text-align: left;
 	padding: 10px;
 	opacity: 0.6;
+	/*FUENTE PARA AÑADIR PREFIJOS WEBKIT https://autoprefixer.github.io/*/
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	}
 .anuncio p {
 	width: 100%;
@@ -103,10 +110,18 @@ main {
 	font-weight: xx-large;
 	color: darkcyan;
 	}
-.contenido1 {
+.contenido1 { /*FUENTE PARA AÑADIR PREFIJOS WEBKIT https://autoprefixer.github.io/*/
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	display: -webkit-flex;
+	-webkit-justify-content: space-around;
 	width: 100%;
 	}
 .contenido1 p {
@@ -140,9 +155,15 @@ main {
 	margin-left: 190px;
 	}
 
-.contenido2 {
+.contenido2 { /*FUENTE PARA AÑADIR PREFIJOS WEBKIT https://autoprefixer.github.io/*/
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
 	flex-flow: row wrap;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	width: 100%;
 	}
@@ -177,10 +198,12 @@ main {
 	margin-left: 110px;
 	}
 
-.contenido3 {
+.contenido3 { /*FUENTE PARA AÑADIR PREFIJOS WEBKIT https://autoprefixer.github.io/*/
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
+	-ms-flex-flow: row wrap;
+	    flex-flow: row wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	width: 100%;
 	}
 .contenido3 > p {
@@ -224,7 +247,6 @@ main {
 	background-color: blue;
 	padding: 10px;
 	border-radius: 10px;
-	/*position: relative;*/
 	}
 .footer {
 	background-color: blue;
@@ -247,26 +269,40 @@ main {
 	width: auto;
 	background-color: blue;
 	}
-.ico {
+.ico { /*FUENTE PARA AÑADIR PREFIJOS WEBKIT https://autoprefixer.github.io/*/
 	display: flex;
 	flex-flow: row wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	}
 .ico > div {
 	margin: 10px;
 	width: 30%;
 	}
-.redes {
+.redes {/*FUENTE PARA AÑADIR PREFIJOS WEBKIT https://autoprefixer.github.io/*/
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
 	flex-flow: row wrap;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	}
 .redes > div {
 	margin: 10px;
 	}
-.legal {
+.legal {/*FUENTE PARA AÑADIR PREFIJOS WEBKIT https://autoprefixer.github.io/*/
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
 	flex-flow: row wrap;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	background-color: black;
 	}
