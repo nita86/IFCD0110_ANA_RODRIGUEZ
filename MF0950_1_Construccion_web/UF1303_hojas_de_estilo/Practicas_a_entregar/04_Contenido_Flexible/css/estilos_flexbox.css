@@ -60,7 +60,7 @@ main {
 .foto > img {
 	position: relative;
 	width: 100%;
-	border-bottom: solid 4px rgba(222,235,16,1.00);
+	border-bottom: solid 6px rgba(222,235,16,1.00);
 	height: 300px;
 	}
 .anuncio {
@@ -230,16 +230,22 @@ main {
 	background-color: blue;
 	color: white;
 	text-align: center;
+	height: auto;
+	position: relative;
+	padding: 5px;
 	}
-.footer h1 {
+.footer hr {
+	border: solid 0.4px white;
+	}
+.footer > p {
 	color: white;
 	font-size: 1.5em;
-	text-decoration-line: line-through;
-	margin: 5px;
-	width: 100%;
-	}
-.footer span {
-	text-decoration-line: none;
+	position: absolute;
+	top: 5px;
+	left: 360px;
+	padding: 5px 5px;
+	width: auto;
+	background-color: blue;
 	}
 .ico {
 	display: flex;
