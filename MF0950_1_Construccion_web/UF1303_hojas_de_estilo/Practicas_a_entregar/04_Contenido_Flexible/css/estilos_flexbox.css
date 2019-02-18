@@ -6,6 +6,95 @@
 	padding: 0;
 	border-sizing: border-box;
 	}
+/*FUENTE https://lenguajecss.com/p/css/propiedades/responsive-design*/
+/*@media screen and (max-width:640px) {
+   .anuncio {
+	   display:-webkit-box;
+	   display:-ms-flexbox;
+	   display:flex;
+	   -webkit-box-orient:vertical;
+	   -webkit-box-direction:normal;
+	   -ms-flex-direction:column;
+	   flex-direction:column;
+	   }
+	.contenido1 {
+		display:-webkit-box;
+		display:-ms-flexbox;
+		display:flex;
+		-webkit-box-orient:vertical;
+		-webkit-box-direction:normal;
+		-ms-flex-direction:column;
+		flex-direction:column;
+		justify-content: space-around;
+		-webkit-justify-content: space-around;
+		width: 100%; 
+		}
+	.contenido2 {
+		display:-webkit-box;
+		display:-ms-flexbox;
+		display:flex;
+		-webkit-box-orient:vertical;
+		-webkit-box-direction:normal;
+		-ms-flex-direction:column;
+		flex-direction:column;
+		justify-content: space-around;
+		-webkit-justify-content: space-around;
+		width: 100%; 
+		}
+	.contenido3 {
+		display:-webkit-box;
+		display:-ms-flexbox;
+		display:flex;
+		-webkit-box-orient:vertical;
+		-webkit-box-direction:normal;
+		-ms-flex-direction:column;
+		flex-direction:column;
+		justify-content: space-around;
+		-webkit-justify-content: space-around;
+		width: 100%; 
+		}
+	.ico {
+		display:-webkit-box;
+		display:-ms-flexbox;
+		display:flex;
+		-webkit-box-orient:vertical;
+		-webkit-box-direction:normal;
+		-ms-flex-direction:column;
+		flex-direction:column;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		}
+	.redes {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction:column;
+		flex-direction:column;
+		justify-content: space-around;
+		-webkit-justify-content: space-around;
+		}
+	.legal {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction:column;
+		flex-direction:column;
+		justify-content: space-around;
+		-webkit-justify-content: space-around;
+		background-color: black;
+		}
+}
+@media screen and (max-width:1024px) and (min-width:640px) {
+ 
+}
+@media screen and (min-width:1024px) {
+ 
+}*/
 
 ul {
 	list-style: none;
@@ -82,9 +171,9 @@ main {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
-	        flex-direction: column;
+	flex-direction: column;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
 	}
 .anuncio p {
 	width: 100%;
@@ -116,11 +205,10 @@ main {
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
-	    -ms-flex-flow: row wrap;
-	        flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
 	-ms-flex-pack: distribute;
-	    justify-content: space-around;
-	display: -webkit-flex;
+	justify-content: space-around;
 	-webkit-justify-content: space-around;
 	width: 100%;
 	}
@@ -199,11 +287,15 @@ main {
 	}
 
 .contenido3 { /*FUENTE PARA AÑADIR PREFIJOS WEBKIT https://autoprefixer.github.io/*/
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
 	-ms-flex-flow: row wrap;
-	    flex-flow: row wrap;
+	flex-flow: row wrap;
 	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+	justify-content: space-around;
 	width: 100%;
 	}
 .contenido3 > p {
@@ -264,13 +356,18 @@ main {
 	font-size: 1.5em;
 	position: absolute;
 	top: 5px;
-	left: 360px;
+	left: 540px;
 	padding: 5px 5px;
 	width: auto;
 	background-color: blue;
 	}
 .ico { /*FUENTE PARA AÑADIR PREFIJOS WEBKIT https://autoprefixer.github.io/*/
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
 	flex-flow: row wrap;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
@@ -315,4 +412,3 @@ main {
 	text-decoration: none;
 	text-transform: uppercase;
 	}
-
