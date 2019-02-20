@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>HTML Elementos de Formulario</title>
+<style>
+body {
+	width: 90%;
+	padding: 1% 0% 1% 10%;
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	font-size: 1em;
+	}
+</style>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1>HTML Elementos de Formulario</h1>
+<hr>
+<p>
+<a href="index.html">indice</a> | <a href="introducction.html">Elementos</a> | <a href="formato.html">Elmentos de formulario</a> | <a href="listas.html">Tipos de campos</a> | <a href="listas.html">Atributos</a>
+</p>
+<hr>
+<ul>
+  <li><a href="#queeshtml">El elemento &lt;form&gt;</a></li>
+  <li><a href="#estructurabasica">El elemento &lt;input&gt;</a></li>
+  <li><a href="#etiquetasexplicacion">El botón de enviar</a></li>
+  <li><a href="#etiquetashtml">El atributo action</a></li>
+  <li><a href="#navegadoresweb">El atributo del método</a></li>
+  <li><a href="#versioneshtml">Agrupación de campos</a></li>
+</ul>
+<hr>
+<h2>El elemento &lt;input&gt;</h2>
+<p>El elemento de formulario más importante es el &lt;input&gt;elemento. El &lt;input&gt;elemento se puede mostrar en varias formas, dependiendo del type atributo. Ejemplo: &lt;input name="firstname" type="text"&gt; Si el &quot;type&quot; se omite el atributo, el campo de entrada obtiene el tipo por defecto: "texto".</p>
+
+<form action="/action_page.php" method="post" name="formulario1" enctype="text/plain" accept-charset="utf-8" autocomplete="off" novalidate target="_blank">
+	<fieldset><!--cuadro decorativo-->
+	<legend>Datos Personales</legend>
+		Introduce tu nombre:<br>
+		<input name="nombre" type="text">
+	  <input type="submit" value="Enviar">
+  </fieldset>
+</form>
+<hr>
+<h2>El elemento &lt;select&gt;</h2>
+<p>El &lt;select&gt;elemento define una <strong>lista desplegable</strong>. Los &lt;option&gt;elementos define una opción que puede seleccionarse. De manera predeterminada, se selecciona el primer elemento de la lista desplegable. Para definir una opción preseleccionada, añadir el selectedatributo para la opción:</p>
+<form action="/action_page.php" method="post">
+		<fieldset>
+		<legend>Datos del Vehículo</legend>
+	  Selecciona una marca:<br>
+		  <select name="cars">
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="fiat" selected>Fiat</option>
+			<option value="audi">Audi</option>
+		  </select>
+		  <br><br>
+		  <input type="submit">
+  </fieldset>
+</form>
+<p>Valores visibles: Utilice el size atributo para especificar el número de valores visibles: &lt;select name="cars" size="3"&gt;</p>
+<p><strong>Permitir selecciones múltiples:</strong> Utilice el multipleatributo para permitir al usuario seleccionar más de un valor: &lt;select name="cars" size="3"<strong> multiple</strong>&gt;</p>
+<form action="/action_page.php" method="post">
+		<fieldset>
+		<legend>Datos Personales</legend>
+	  Selecciona una marca:<br>
+		  <select name="cars" size="4" multiple><!--size numero de opciones que se muestran al usuario; multiople el usuario puede seleccionar varios-->
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="fiat" selected>Fiat</option>
+			<option value="audi">Audi</option>
+		  </select>
+		  <br><br>
+		  <input type="submit">
+  </fieldset>
+</form>
+<hr>
+<h2>La &lt;textarea&gt; Element</h2>
+<p>El &lt;textarea&gt;elemento define un campo de entrada de líneas múltiples ( <strong>un área de texto</strong> ): El rows atributo especifica el número visible de líneas en un área de texto. El cols atributo especifica la anchura visible de un área de texto. Así es como el código HTML anterior se muestra en un navegador:</p>
+<p><strong>Se pone rows y cols para no confundir con los atributos row y col de las tablas</strong></p>
+<form action="/action_page.php" method="post">
+  <fieldset>
+<legend>Área de texto</legend>
+Escribe un comentario:<br>
+<textarea name="comentario" rows="5" cols="50"></textarea>
+  <br>
+  <input type="submit" value="Enviar">
+  </fieldset>
+</form>
+<hr>
+<h2>El Elemento &lt;botón&gt; </h2>
+<p>El &lt;button&gt;elemento define un hacer clic <strong>botón</strong> :</p>
+<p>&lt;button type="button" onclick="alert('Hello World!')"&gt;Click Me!&lt;/button&gt;. Se usa SIEMPRE con JavaScript</p>
+<p>Así es como el código HTML anterior se muestra en un navegador:</p>
+<button type="button" onclick="alert('Hello World!')">¡Haz click en mi!</button>
+ <br>
+<div>
+  <p><strong>Nota:</strong> Siempre especificar el <strong>tipo de</strong> atributo para el elemento de botón. Los diferentes navegadores pueden usar diferentes tipos predeterminados para el elemento de botón.</p>
+</div><iframe></iframe>
+<p>&nbsp;</p>
+</body>
+</html>

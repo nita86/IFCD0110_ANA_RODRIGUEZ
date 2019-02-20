@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+    font-size: 120%;
+}
+div {
+	width: 80%;
+	border: 1px solid black;
+	background-color: lightgoldenrodyellow; 
+	margin: 25px auto;
+	padding: 20px;
+	box-shadow: 10px 10px 10px grey;
+}
+h1 {
+	background-color: darkred;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 5px grey;
+	letter-spacing: 5px;
+}
+h2 {
+	border-top-width: 5px;
+	border-top-style: dotted;
+	border-top-color: darkred;
+	border-bottom-width: 5px;
+	border-bottom-style: dotted;
+	border-bottom-color: darkred;
+	color: white;
+	text-align: center;
+	width: 95%;
+	margin: auto;
+	text-shadow: 2px 2px 5px grey;
+}
+h3 {
+	border-top-width: 5px;
+	border-top-style: dashed;
+	border-top-color: darkred;
+	border-bottom-width: 5px;
+	border-bottom-style: dashed;
+	border-bottom-color: darkred;
+	color: white;
+	text-align: center;
+	width: 80%;
+	margin: auto;
+	text-shadow: 2px 2px 5px grey;
+}
+hr {
+	width: 15%;
+	border-color:gray;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+p {
+	border: 2px solid darkred; 
+	margin: 20px;
+	padding: 20px;
+	background-color: lightyellow;
+	border-radius: 16px;
+	box-shadow: 5px 5px 5px grey;
+}
+
+b {color: darkblue;}
+strong {color:darkred;}
+u{text-decoration-color: blue;}
+em {color:darkred;}
+i {color:darkred;}
+s {text-decoration-color:crimson;}
+ins {text-decoration-color:darkred;}
+del{text-decoration-color:darkred;}
+sup {color: darkred;}
+mark {background-color: yellow; color:darkmagenta; padding: 10px; border: 1px solid darkred}
+small {color: darkmagenta; text-shadow: 2px 2px 5px grey;}
+abbr {text-decoration:none; border: 1px solid green; padding: 0px 5px;}
+q {quotes: "« " " »" "‹" "›" "\00AB " " \00BB";}
+span {
+	text-align: center;
+	border: 2px solid darkred; 
+	padding: 20px;	background-color: lightyellow;
+	border-radius: 16px;
+	box-shadow: 5px 5px 5px grey;
+	display:block;
+	margin: auto;
+	width: 90%;
+} 
+blockquote {text-align: justify; text-indent: 50px;}
+cite {color:darkblue; font-weight: bolder;}
+br {line-height: 15px;}
