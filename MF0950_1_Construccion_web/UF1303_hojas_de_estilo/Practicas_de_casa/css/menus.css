@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+        width: 95%;
+        margin: 5px auto;
+    }
+    /*.marco {
+        border: dotted 1px red;
+    }*/
+    hr {
+        border: dashed 0.5px blue;
+    }
+/*-----lista1---------*/
+    .lista1 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .lista1 li a {
+        display: block;
+        width: 10%;
+        padding: 5px;
+        color: white;
+        text-decoration: none;
+        border: solid 1px white;
+        background-color: black;
+        text-align: center;
+    }
+    .lista1 li a:hover {
+        background-color: white;
+        color: black;
+        border: solid 1px black;
+    }
+
+    /*-----lista2---------*/
+    .lista2 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .lista2 li {
+        display: inline-block;
+    }
+    .lista2 li a {
+        width: 10%;
+        padding: 5px;
+        color: white;
+        text-decoration: none;
+        border: solid 1px white;
+        background-color: black;
+        text-align: center;
+    }
+    .lista2 li a:hover {
+        background-color: white;
+        color: black;
+        border: solid 1px black;
+    }
+
+ /*-----lista3---------*/
+ .lista3 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.lista3 li {
+    float: left;
+    margin-right: 5px;
+}
+.lista3 li a {
+    display: block;
+    width: 1auto;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    border: solid 1px white;
+    background-color: black;
+    text-align: center;
+}
+.lista3 li a:hover {
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+}
+
+ /*-----lista4---------*/
+ .lista4 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.lista4 li {
+    float: left;
+    margin-right: 5px;
+}
+.lista4 li a {
+    display: block;
+    width: 1auto;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    border: solid 1px white;
+    background-color: black;
+    text-align: center;
+}
+.lista4 li a:hover {
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+}
+
+ /*-----lista5---------*/
+ .cuadrotexto {
+     padding: 20px;
+     margin-top: 30px;
+     background-color: bisque;
+ }
+ .lista5 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+.lista5 li {
+    float: left;
+    margin-right: 5px;
+}
+.lista5 li a {
+    display: block;
+    width: 1auto;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    border: solid 1px white;
+    background-color: black;
+    text-align: center;
+}
+.lista5 li a:hover {
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+}
+
+
+    
