@@ -6,12 +6,13 @@
 <style>
 body {
 	width: 90%;
+	margin: 1% auto;
 	padding: 1% 0% 1% 10%;
 	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
 	font-size: 1em;
 	}
 </style>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<!--<link href="css/bootstrap.css" rel="stylesheet" type="text/css">-->
 </head>
 
 <body>
@@ -62,8 +63,7 @@ body {
 <p><strong>Permitir selecciones múltiples:</strong> Utilice el multipleatributo para permitir al usuario seleccionar más de un valor: &lt;select name="cars" size="3"<strong> multiple</strong>&gt;</p>
 <form action="/action_page.php" method="post">
 		<fieldset>
-		<legend>Datos Personales</legend>
-	  Selecciona una marca:<br>
+		<legend>Selecciona una marca</legend>
 		  <select name="cars" size="4" multiple><!--size numero de opciones que se muestran al usuario; multiople el usuario puede seleccionar varios-->
 			<option value="volvo">Volvo</option>
 			<option value="saab">Saab</option>
@@ -73,6 +73,26 @@ body {
 		  <br><br>
 		  <input type="submit">
   </fieldset>
+</form>
+<hr>
+<h3>HTML &lt;optgroup&gt; Tag</h3>
+<p>Sirve para agrupar las opciones</p>
+<form name="optgroup" action="/action_page.php" method="post">
+<field>
+<legend>Ciudades</legend>
+<select>
+  <optgroup label="ciudades de Madrid">
+    <option value="alcorcon">Alcorcon</option>
+    <option value="getafe">Getafe</option>
+  </optgroup>
+  <optgroup label="ciudades de Andalucia">
+    <option value="granada">Granada</option>
+    <option value="almeria">Almeria</option>
+  </optgroup>
+</select>
+<br>
+<input type="submit">
+</field>
 </form>
 <hr>
 <h2>La &lt;textarea&gt; Element</h2>
@@ -90,13 +110,156 @@ Escribe un comentario:<br>
 <hr>
 <h2>El Elemento &lt;botón&gt; </h2>
 <p>El &lt;button&gt;elemento define un hacer clic <strong>botón</strong> :</p>
-<p>&lt;button type="button" onclick="alert('Hello World!')"&gt;Click Me!&lt;/button&gt;. Se usa SIEMPRE con JavaScript</p>
+<p>&lt;button type="button" onclick="alert('Hello World!')"&gt;Click Me!&lt;/button&gt;. Se usa SIEMPRE con JavaScript porque su finalidad es desencadenar acciones o tareas al pulsar sobre él.</p>
 <p>Así es como el código HTML anterior se muestra en un navegador:</p>
 <button type="button" onclick="alert('Hello World!')">¡Haz click en mi!</button>
  <br>
 <div>
   <p><strong>Nota:</strong> Siempre especificar el <strong>tipo de</strong> atributo para el elemento de botón. Los diferentes navegadores pueden usar diferentes tipos predeterminados para el elemento de botón.</p>
-</div><iframe></iframe>
-<p>&nbsp;</p>
+</div>
+<hr>
+<h2>HTML5 &lt;datalist&gt; Element</h2>
+<p>El &lt;datalist&gt;elemento especifica una lista de opciones predefinidas para un &lt;input&gt;elemento. Los usuarios podrán ver una lista desplegable de las opciones predefinidas, ya que los datos de entrada. El listatributo del &lt;input&gt;elemento, debe hacer referencia al idatributo del &lt;datalist&gt;elemento.</p>
+<div style="border: solid 1px black;">
+<code>
+<p>CODIGO</p>
+<p>&lt;form name=&quot;datalist&quot; action=&quot;/action_page.php&quot; method=&quot;get&quot; accept-charset=&quot;UTF-8&quot; autocomplete=&quot;on&quot; enctype=&quot;multipart/form-data&quot; target=&quot;_blank&quot;&gt;<br>
+    &lt;input list="browsers"&gt;<br>
+    &lt;datalist id="browsers"&gt;<br>
+      &lt;option value="Internet Explorer"&gt;<br>
+      &lt;option value="Firefox"&gt;<br>
+      &lt;option value="Chrome"&gt;<br>
+      &lt;option value="Opera"&gt;<br>
+      &lt;option value="Safari"&gt;<br>
+    &lt;/datalist&gt; <br>
+&lt;/form&gt;</p>
+</code>
+</div>
+<br>
+<form name="datalist" action="/action_page.php" method="get" accept-charset="UTF-8" autocomplete="on" enctype="multipart/form-data" target="_blank">
+ <fielset>
+ <legend>Elige un navegador</legend>
+  <input list="navegadores" name="navegadores">
+  <datalist id="navegadores">
+	<option value="Internet Explorer"></option><!--no se pone nada en medio porque por defecto ya se muestra lo que hay dentro de value-->
+    <option value="Firefox"></option>
+    <option value="Chrome"></option>
+    <option value="Opera"></option>
+    <option value="Safari"></option>
+  </datalist>
+  <input type="submit" value="enviar">
+  </fielset>
+</form>
+<p>La etiqueta &lt;datalist&gt; pertenece a HTML5 y no es compatible con Safari</p>
+<hr>
+<h2>HTML5 &lt;output&gt;</h2>
+<p>El &lt;output&gt;elemento representa el resultado de un cálculo (como uno realizado por un script).Para funcionar necesita una sentencia de JavaScripit</p>
+<div style="border: solid 1px black;">
+ <code>
+  <p>CODIGO</p>
+  <p>&lt;form action="/action_page.php"<br>
+      oninput="x.value=parseInt(a.value)+parseInt(b.value)"&gt;<br>
+      0<br>
+      &lt;input type="range"  id="a" name="a" value="50"&gt;<br>
+      100 +<br>
+      &lt;input type="number" id="b" name="b" value="50"&gt;<br>
+      =<br>
+      &lt;output name="x" for="a b"&gt;&lt;/output&gt;<br>
+      &lt;br&gt;&lt;br&gt;<br>
+      &lt;input type="submit"&gt;<br>
+  &lt;/form&gt;</p>
+  </code>
+</div>
+<form name="output" action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+<h1>HTML &lt;label&gt; Tag.</h1>
+<p>La etiqueta &lt;label&gt; define una etiqueta para un botón &lt;&gt;, &lt;input&gt;, &lt;metro&gt;, &lt;salida&gt;, &lt;progreso&gt;, &lt;seleccionar&gt; o elemento &lt;textarea&gt;.</p>
+<p>El elemento &lt;label&gt; no hace como algo especial para el usuario. Sin embargo, proporciona una mejora la facilidad de uso para los usuarios de ratón, ya que si el usuario hace clic en el texto dentro del elemento &lt;label&gt;, se alterna el control.</p>
+<p>El atributo de la etiqueta &lt;label&gt; debería ser igual al atributo id del elemento relacionado para unirse juntos.</p>
+<div style="solid 1px black;">
+<code>
+<p>CODIGO</p>
+  <p>&lt;form action="/action_page.php"&gt;<br>
+      &lt;label for="male"&gt;Male&lt;/label&gt;<br>
+      &lt;input type="radio" name="gender" id="male" value="male"&gt;&lt;br&gt;<br>
+      &lt;label for="female"&gt;Female&lt;/label&gt;<br>
+      &lt;input type="radio" name="gender" id="female" value="female"&gt;&lt;br&gt;<br>
+      &lt;label for="other"&gt;Other&lt;/label&gt;<br>
+      &lt;input type="radio" name="gender" id="other" value="other"&gt;&lt;br&gt;&lt;br&gt;<br>
+      &lt;input type="submit" value="Submit"&gt;<br>
+  &lt;/form&gt;</p>
+  </code>
+</div>
+<form name="label" action="/action_page.php">
+  <label for="male">Male</label>
+  <input type="radio" name="gender" id="male" value="male"><br>
+  <label for="female">Female</label>
+  <input type="radio" name="gender" id="female" value="female"><br>
+  <label for="other">Other</label>
+  <input type="radio" name="gender" id="other" value="other"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<h2>Ejemplo.</h2>
+<form name="ejemplo" action="/action_page.php">
+<fieldset>
+<legend>Formulario</legend>
+<label for="nombre">Nombre</label>
+  <input type="text" name="nombre" id="nombre"><br>
+  <label for="apellido">Apellido</label>
+  <input type="text" name="apellido" id="apellido"><br>
+  <legend>Opciones</legend>
+<select name="paises" size="2" multiple>
+  <optgroup label="Europa">
+    <option value="pais">España</option>
+    <option value="pais">Escocia</option>
+    <option value="pais">Portugal</option>
+    <option value="pais">Italia</option>
+  </optgroup>
+  <optgroup label="Africa">
+    <option value="pais">Marruecos</option>
+    <option value="pais">Mozambique</option>
+    <option value="pais">Mauritania</option>
+    <option value="pais">Niger</option>
+  </optgroup>
+</select>
+<legend>Deja tu comentario</legend>
+<textarea name="comentario" rows="5" cols="50"></textarea>
+<legend>Elige un transporte</legend>
+  <input list="transporte" name="transporte">
+  <datalist id="transporte">
+	<option value="tren"></option><!--no se pone nada en medio porque por defecto ya se muestra lo que hay dentro de value-->
+    <option value="avión"></option>
+    <option value="barco"></option>
+    <option value="coche"></option>
+  </datalist>
+<br>
+<input type="submit">
+<br>
+</fieldset>
+	
+	
+	
+	
+	
+	
+	
+</form>
+
+
+
+
+
+
+
+
 </body>
 </html>
