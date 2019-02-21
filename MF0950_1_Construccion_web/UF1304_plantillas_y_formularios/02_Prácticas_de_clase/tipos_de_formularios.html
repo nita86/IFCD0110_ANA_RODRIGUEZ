@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="es-ES">
 
+<meta http-equiv="Refresh" content="5">
+
 <style>
 	body {
 		width: 90%;
 		margin: 1px auto;
 		}
 	code {
-		border-left: solid 1px green;
 		background-color: white;
 		}
 	.codigo {
@@ -29,29 +30,19 @@
 
 <body>
 <h2>Tipos de entrada HTML</h2>
-<p>Estos son los diferentes tipos de entrada se pueden utilizar en HTML:</p>
+<p>Estos son los diferentes tipos de entrada <strong>estandar</strong> que se pueden utilizar en HTML:</p>
 <ul>
   <li>&lt;input type="button"&gt;</li>
   <li>&lt;input type="checkbox"&gt;</li>
-  <li>&lt;input type="color"&gt;</li>
-  <li>&lt;input type="date"&gt;</li>
-  <li>&lt;input type="datetime-local"&gt;</li>
-  <li>&lt;input type="email"&gt;</li>
   <li>&lt;input type="file"&gt;</li>
   <li>&lt;input type="hidden"&gt;</li>
   <li>&lt;input type="image"&gt;</li>
-  <li>&lt;input type="month"&gt;</li>
   <li>&lt;input type="password"&gt;</li>
   <li>&lt;input type="radio"&gt;</li>
   <li>&lt;input type="range"&gt;</li>
   <li>&lt;input type="reset"&gt;</li>
-  <li>&lt;input type="search"&gt;</li>
   <li>&lt;input type="submit"&gt;</li>
-  <li>&lt;input type="tel"&gt;</li>
   <li>&lt;input type="text"&gt;</li>
-  <li>&lt;input type="time"&gt;</li>
-  <li>&lt;input type="url"&gt;</li>
-  <li>&lt;input type="week"&gt;</li>
 </ul>
 <br>
 <h2>Tipo de entrada de texto</h2>
@@ -81,7 +72,6 @@ Last name:<br>
   &lt;br&gt;&lt;br&gt;<br>
   &lt;input type=&quot;submit&quot;&gt;<br>
 &lt;/form&gt;</code></p>
-
 </div>
 <hr>
 <h2>Tipo de entrada de contraseña</h2>
@@ -147,7 +137,6 @@ User password:<br>
   &lt;br&gt;<br>
   &lt;input type=&quot;submit&quot;&gt;<br>
 &lt;/form&gt;</code></p>
-
 </div>
 <hr>
 <h2>Tipo de entrada Radio</h2>
@@ -171,7 +160,6 @@ User password:<br>
 &lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;other&quot;&gt; Other&lt;br&gt;&lt;br&gt;<br>
 &lt;input type=&quot;submit&quot;&gt;<br>
 &lt;/form&gt;</code></p> 
-
 </div>
 <hr>
 <h2>Tipo de entrada Botón:&lt;input type="submit"&gt;
@@ -200,6 +188,24 @@ User password:<br>
   </code></p>
 </div>
 <hr>
+
+<h2>Nuevos tipos de campos de entrada de datos en HTML5</h2>
+<ul>
+  <li>color</li>
+  <li>date</li>
+  <li>datetime-local</li>
+  <li>email</li>
+  <li>month</li>
+  <li>number</li>
+  <li>range</li>
+  <li>search</li>
+  <li>tel</li>
+  <li>time</li>
+  <li>url</li>
+  <li>week</li>
+</ul>
+<hr>
+<br>
 <h2>Tipo de entrada de color</h2>
 <p>El &lt;input type="color"&gt;se utiliza para campos de entrada que deben contener un color.</p>
 <p>En función de soporte de los navegadores, un selector de color puede aparecer en el campo de entrada.</p>
@@ -264,19 +270,247 @@ Enter a date after 2000-01-01:<br>
 <form action="/action_page.php">
  <fieldset>
  <legend>&lt;input type="datetime-local"&gt;</legend>
-  Birthday (date and time):
+  fecha de nacimiento
   <input type="datetime-local" name="bdaytime">
   <input type="submit" value="Send">
 </fieldset>
 </form>
 <div class="codigo">
 <p>CODIGO</p>
-<p><code>&lt;form action=&quot;/action_page.php&quot;&gt;<br>
-Birthday (date and time):<br>
+<p><code>&lt;form action=&quot;/action_page.php&quot;&gt;<br> 
+fecha de nacimiento
+<br>
 &lt;input type=&quot;datetime-local&quot; name=&quot;bdaytime&quot;&gt;<br>
 &lt;input type=&quot;submit&quot; value=&quot;Send&quot;&gt;<br>
 &lt;/form&gt;</code></p>
 </div>
 <hr>
+<h2>Tipo de entrada de correo electrónico</h2>
+<p>El &lt;input type="email"&gt;se utiliza para campos de entrada que deben contener una dirección de correo electrónico.</p>
+<p>En función de soporte del navegador, la dirección de correo electrónico se puede validar de forma automática cuando se presente.</p>
+<p>Algunos teléfonos inteligentes reconocen el tipo de correo electrónico, y añaden ".com" al teclado para que coincida con la entrada de correo electrónico.</p>
+<form action="/action_page.php">
+ <fieldset>
+  <legend>&lt;input type="email"&gt;</legend>
+  <input type="email" name="email">
+  <input type="submit">
+</fieldset>
+</form>
+<br>
+<div class="codigo">
+<p>CODIGO</p>
+<p><code>&lt;form action=&quot;/action_page.php&quot;&gt;<br>
+E-mail:<br>
+&lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;<br>
+&lt;input type=&quot;submit&quot;&gt;<br>
+&lt;/form&gt;</code></p>
+</div>
+<hr>
+<br>
+<h2>Tipo de archivo de entrada</h2>
+<p>La &lt;input type="file"&gt; define un campo de selección de archivo y un botón "Examinar" para la carga de archivos.</p>
+<form action="/action_page.php">
+ <fieldset>
+ <legend>&lt;input type="file"&gt;</legend>
+  <input type="file" name="myFile"><br>
+  <input type="submit">
+</fieldset>
+</form>
+<br>
+<div class="codigo">
+<p>CODIGO</p>
+<p><code>&lt;form action=&quot;/action_page.php&quot;&gt;<br>
+Select a file: &lt;input type=&quot;file&quot; name=&quot;myFile&quot;&gt;&lt;br&gt;&lt;br&gt;<br>
+&lt;input type=&quot;submit&quot;&gt;<br>
+&lt;/form&gt;</code></p>
+</div>
+<br>
+<hr>
+<h2>Tipo de entrada Mes</h2>
+<p>El &lt;input type="month"&gt;permite al usuario seleccionar un mes y el año.</p>
+<p>En función de soporte de los navegadores, un selector de fecha puede aparecer en el campo de entrada.</p>
+<form action="/action_page.php">
+ <fieldset>
+ <legend>&lt;input type="month"&gt;</legend>
+  Cumpleaños (mes y año)
+  <input type="month" name="bdaymonth">
+  <input type="submit">
+</fieldset>
+</form>
+<br>
+<div class="codigo">
+<p>CODIGO</p>
+<p><code>&lt;form action=&quot;/action_page.php&quot;&gt;<br>
+Birthday (month and year):<br>
+&lt;input type=&quot;month&quot; name=&quot;bdaymonth&quot;&gt;<br>
+&lt;input type=&quot;submit&quot;&gt;<br>
+&lt;/form&gt;</code></p>
+</div>
+<hr>
+<p>&nbsp;</p>
+<h2>Tipo de entrada Número</h2>
+<p>El &lt;input type="number"&gt;define una <strong>numérico</strong> campo de entrada.</p>
+<p>También puede establecer restricciones en lo que se aceptan los números.</p>
+<p>El ejemplo siguiente muestra un campo de entrada numérico, donde se puede introducir un valor de 1 a 5:</p>
+<form action="/action_page.php">
+ <fielset>
+ <legend>&lt;input type="number"&gt;</legend>
+  <input type="number" name="quantity" min="1" max="5">
+  <input type="submit">
+</fielset>
+</form>
+<br>
+<div class="codigo">
+<p>CODIGO</p>
+<p><code>&lt;form action=&quot;/action_page.php&quot;&gt;<br>
+Cantidad (entre 1 y 5)<br>
+&lt;input type=&quot;number&quot; name=&quot;quantity&quot; min=&quot;1&quot; max=&quot;5&quot;&gt;<br>
+&lt;input type=&quot;submit&quot;&gt;<br>
+&lt;/form&gt;</code></p>
+</div>
+<p>El ejemplo siguiente muestra un campo de entrada numérico, donde se puede introducir un valor de 0 a 100, en saltos de 10. El valor predeterminado que aparece por defecto es 30:</p>
+<form action="/action_page.php">
+  <fielset>
+  <legend>Cantidad</legend>
+  <input type="number" name="quantity"
+   min="0" max="100" step="10" value="30">
+  <input type="submit">
+</fielset>
+</form>
+<br>
+<div class="codigo">
+<p>CODIGO</p>
+<p><code>&lt;form action=&quot;/action_page.php&quot;&gt;<br>
+Cantidad:<br>
+&lt;input type=&quot;number&quot; name=&quot;quantity&quot;<br>
+min=&quot;0&quot; max=&quot;100&quot; step=&quot;10&quot; value=&quot;30&quot;&gt;<br>
+&lt;input type=&quot;submit&quot;&gt;<br>
+&lt;/form&gt;</code></p>
+</div>
+<hr>
+<h2>Tipo de entrada Rango</h2>
+<p>El &lt;input type="range"&gt;define un control para la introducción de un número cuyo valor exacto no es importante (como un control deslizante). Rango por defecto es de 0 a 100. Sin embargo, se puede establecer restricciones en lo que los números son aceptados con el min, maxy stepatributos:</p>
+<form action="/action_page.php" method="get">
+ <fielset>
+  <legend>&lt;input type="range"&gt;</legend>
+  <input type="range" name="points" min="0" max="10">
+  <input type="submit">
+</fielset>
+</form>
+<br>
+<div class="codigo">
+<p>CODIGO</p>
+<p><code>&lt;form action=&quot;/action_page.php&quot; method=&quot;get&quot;&gt;<br>
+Points:<br>
+&lt;input type=&quot;range&quot; name=&quot;points&quot; min=&quot;0&quot; max=&quot;10&quot;&gt;<br>
+&lt;input type=&quot;submit&quot;&gt;<br>
+&lt;/form&gt;</code></p>
+</div>
+<hr>
+<h2>Tipo de entrada Buscar</h2>
+<p>El &lt;input type="search"&gt;se utiliza para campos de búsqueda (un campo de búsqueda se comporta como un campo de texto normal).</p>
+<form action="/action_page.php">
+ <fielset>
+ <legend>&lt;input type="search"&gt;</legend>
+  Search Google:
+  <input type="search" name="googlesearch">
+  <input type="submit">
+</fielset>
+</form>
+<br>
+<div class="codigo">
+<p>CODIGO</p>
+<p><code>&lt;form action=&quot;/action_page.php&quot;&gt;<br>
+Search Google:<br>
+&lt;input type=&quot;search&quot; name=&quot;googlesearch&quot;&gt;<br>
+&lt;input type=&quot;submit&quot;&gt;<br>
+&lt;/form&gt;</code></p>
+</div>
+<hr>
+<h2>Tipo de entrada Tel</h2>
+<p>El &lt;input type="tel"&gt;se utiliza para campos de entrada que deben contener un número de teléfono.</p>
+<p><strong>Nota:</strong> El tipo de teléfono sólo está soportado en Safari 8.</p>
+<form action="/action_page.php">
+ <fielset>
+ <legend>&lt;input type="tel"&gt;</legend>
+  Telephone:
+  <input type="tel" name="usrtel">
+  <input type="submit">
+</fielset>
+</form>
+<br>
+<div class="codigo">
+<p>CODIGO</p>
+<p><code>&lt;form action=&quot;/action_page.php&quot;&gt;<br>
+Telephone:<br>
+&lt;input type=&quot;tel&quot; name=&quot;usrtel&quot;&gt;<br>
+&lt;input type=&quot;submit&quot;&gt;<br>
+&lt;/form&gt;</code></p>
+</div>
+<hr>
+<h2>Tipo de entrada de hora</h2>
+<p>El &lt;input type="time"&gt;permite al usuario seleccionar una hora (sin zona horaria).</p>
+<p>En función de soporte de los navegadores, un selector de hora puede aparecer en el campo de entrada.</p>
+<form action="/action_page.php">
+ <fieldset>
+ <legend>&lt;input type="time"&gt;</legend>
+  Selecciona una hora
+  <input type="time" name="usr_time">
+  <input type="submit">
+</fieldset>
+</form>
+<br>
+<div class="codigo">
+<p>CODIGO</p>
+<p><code>&lt;form action=&quot;/action_page.php&quot;&gt;<br>
+Selecciona una hora<br>
+&lt;input type=&quot;time&quot; name=&quot;usr_time&quot;&gt;<br>
+&lt;input type=&quot;submit&quot;&gt;<br>
+&lt;/form&gt;</code></p>
+</div>
+<hr>
+<h2>Tipo de entrada de URL</h2>
+<p>El &lt;input type="url"&gt;se utiliza para campos de entrada que deben contener una dirección URL.</p>
+<p>En función de soporte de los navegadores, el campo URL se puede validar de forma automática cuando se presente.</p>
+<p>Algunos teléfonos inteligentes reconocen el tipo de URL, y añade ".com" al teclado para que coincida con la entrada URL.</p>
+<form action="/action_page.php">
+ <fieldset>
+ <legend>&lt;input type="url"&gt;</legend>
+  Add your homepage:
+  <input type="url" name="homepage">
+  <input type="submit">
+</fieldset>
+</form>
+<br>
+<div class="codigo">
+<p>CODIGO</p>
+<p><code>&lt;form action=&quot;/action_page.php&quot;&gt;<br>
+Add your homepage:<br>
+&lt;input type=&quot;url&quot; name=&quot;homepage&quot;&gt;<br>
+&lt;input type=&quot;submit&quot;&gt;<br>
+&lt;/form&gt;</code></p>
+</div>
+<hr>
+<h2>Tipo de entrada Semana</h2>
+<p>El &lt;input type="week"&gt;permite al usuario seleccionar una semana y el año.</p>
+<p>En función de soporte de los navegadores, un selector de fecha puede aparecer en el campo de entrada.</p>
+<form action="/action_page.php">
+ <fielset>
+ <legend>&lt;input type="week"&gt;</legend>
+  Select a week:
+  <input type="week" name="year_week">
+  <input type="submit">
+</fielset>
+</form>
+<br>
+<div class="codigo">
+<p>CODIGO</p>
+<p><code>&lt;form action=&quot;/action_page.php&quot;&gt;<br>
+Select a week:<br>
+&lt;input type=&quot;week&quot; name=&quot;year_week&quot;&gt;<br>
+&lt;input type=&quot;submit&quot;&gt;<br>
+&lt;/form&gt;</code></p>
+</div>
+<br>
 </body>
 </html>
