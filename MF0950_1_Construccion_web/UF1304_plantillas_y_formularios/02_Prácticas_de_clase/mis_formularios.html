@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>mis_formularios</title>
+<meta http-equiv="Refresh" content="5">
+</head>
+
+<body>
+<h1>Mis formularios.</h1>
+<h2>Formulario 1.</h2>
+<form name="formulario1" action="/action_page.php" target="_blank" autocomplete="off" method="post" enctype="multipart/form-data">
+<fieldset><!--campo1-->
+<legend>Datos personales</legend>
+	Nombre <br>
+	<input type="text" name="nombre" required pattern="[A-Za-z[^0-9]"><br><!--se permiten letras mayus y minus pero no numeros-->
+	Apellidos <br>
+	<input type="text" name="apellidos" required pattern="[A-Za-z[^0-9]"><br><!--se permiten letras mayus y minus pero no numeros-->
+	Dirección <br>
+	Tipo de via 
+	<input type="radio" name"tipo_de_via" value="calle">calle 
+	<input type="radio" name"tipo_de_via" value="avenida">avenida 
+	<input type="radio" name"tipo_de_via" value="plaza">plaza 
+	<input type="radio" name"tipo_de_via" value="ronda">ronda <br>
+	Nombre de la vía
+	<input type="text" name="vía" required pattern="[A-Za-z[^0-9]">
+	Número
+	<input type="number" name="numero" minlength="1" pattern="[^A-Za-z]"><br><!--no letras-->
+	Letra
+	<input type="text" name="letra" min="a" max="z" maxlength="1">
+	C.P
+	<input type="number" name="cp" maxlength="5">
+	Ciudad
+	<select name="ciudad" id="ciudad" size="1">
+		<option value="Madrid">Madrid</option>
+		<option value="Valencia">Valencia</option>
+		<option value="León">León</option>
+		<option value="Cáceres">Cáceres</option>
+	</select>
+	País
+	<input list="pais" name="pais">
+		<datalist id="pais">
+		<option value="España">España</option>
+		<option value="Francia">Francia</option>
+		<option value="Portugal">Portugal</option>
+		<option value="Italia">Italia</option>
+		</datalist><br>
+	Fecha de nacimiento 
+	<input type="date" name="nacimiento" pattern="[^A-Za-z]">
+</fieldset><!--fin campo1-->
+<fieldset><!--campo2-->
+	<legend>Datos de contacto</legend>
+	Teléfono
+	<input type="tel" name="telefono" required size="9"> <br>
+	Fax
+	<input type="tel" name="fax" size="9"> <br>
+	Correo electrónico
+	<input type="email" name="correo" placeholder="email" required pattern="[.-_A-Za-z0-9]@[.-_A-Za-z0-9]{1-10}"><!--se permiten [.-_A-Za-z0-9] en usuario, @ obligatorio, se permiten [.-_A-Za-z0-9] en dominio y tiene entre 1-10caracteres-->
+</fieldset><!--fin campo2-->
+<fieldset><!--campo3-->
+	<legend>Otros datos</legend>
+	Hijos <br>
+	<input type="checkbox" name="si" value="si">si
+	<input type="number" name="hijos" min="1" placeholder="número de hijos" maxlength="100"><br>
+	<input type="checkbox" name="NO" value="NO">no <br>
+	Estado civil 
+	<select name="estado civil" size="1">
+		<option value="casado">casado</option>
+		<option value="soltero">soltero</option>
+		<option value="pareja">pareja de hecho</option>
+		<option value="viudo">viudo</option>
+	</select><br>
+	Ocupación
+	<input type="text" name="ocupacion"><br>	
+</fieldset><!--fin campo3-->
+<fieldset><!--campo4-->
+	<legend>Comentarios</legend>
+	<textarea name="comentarios" rows="10" cols="30" placeholder="Deja tu comentario..."></textarea>
+</fieldset><!--fin campo4-->
+<fieldset><!--campo5-->
+	<legend>Registro</legend>
+	Email
+	<input type="email" name="correo" placeholder="email" required pattern="[.-_A-Za-z0-9]@[.-_A-Za-z0-9]{1-10}"><!--se permiten [.-_A-Za-z0-9] en usuario, @ obligatorio, se permiten [.-_A-Za-z0-9] en dominio y tiene entre 1-10caracteres-->
+	Repetir email
+	<input type="email" name="correo" placeholder="email" required pattern="[.-_A-Za-z0-9]@[.-_A-Za-z0-9]{1-10}"><!--se permiten [.-_A-Za-z0-9] en usuario, @ obligatorio, se permiten [.-_A-Za-z0-9] en dominio y tiene entre 1-10caracteres--> <br>
+	Contraseña
+	<input type="pasword" name="contraseña" required pattern="[.-_@#$%&/A-Za-z0-9]" minlength="5" maxlength="20">
+	Repetir contraseña 
+	<input type="pasword" name="contraseña" required pattern="[.-_@#$%&/A-Za-z0-9]" minlength="5" maxlength="20">
+</fieldset><!--fin campo5-->
+<input type="checkbox" name="verificar" value="check">No soy un robot 
+<input type="submit" name="submit" value="submit">Enviar
+<input type="button" onclick="alert('¡GRACIAS POR REGISTRARTE')" value="Pulsa aqui">
+</form>
+</body>
+</html>
