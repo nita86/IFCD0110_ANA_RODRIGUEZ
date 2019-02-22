@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+ 	}
+.formulario {
+	margin: 10px auto;
+	width: 80%;
+	border: solid 1px black;
+	font-size: 1em;
+	/*padding: 10px;*/
+	/*overflow: hidden;*/
+	/*flex-flow: row wrap;
+	justify-content: space-between;*/
+	}
+.formulario h2 {
+	margin: 10px;
+	width: 100%;
+	}
+.opciones {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	}
+.botones {
+	width: 40%;
+	/*margin: 10px;*/
+	padding: 10px;
+	/*float: left;*/
+	}
+.botones a {
+	text-decoration: none;
+	color: white;
+	width: auto;
+	border-radius: 10px;
+	/*margin: 5px;*/
+	}
+.botones img {
+	width: 10%;
+	}
+.contenido {
+	width: 40%;
+	/*float: right;*/
+	margin: 10px;
+	padding: 10px;
+	}
+.fb {
+	background-color: #3B5998;
+	color: white;
+	margin: 5px;
+	}
+.twitter {
+	background-color: #55ACEE;
+	color: white;
+	margin: 5px;
+	}
+.google {
+	background-color: #dd4b39;
+	color: white;
+	margin: 5px;
+	}
+.campos {
+	background-color: white;
+	border: solid 1px lightgray;
+	width: 100%;
+	padding: 10px;
+	}
+.iniciar {
+	width: 100%;
+	/*font-size: large;*/
+	background-color: green;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	}
+.pie {
+	width: 100%;
+	overflow: hidden;
+	background-color: gray;
+	padding: 10px 20px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	}
+.registro {
+	background-color: gray;
+	color: white;
+	padding: 10px;
+	}
+.pie > a {
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+	}
+

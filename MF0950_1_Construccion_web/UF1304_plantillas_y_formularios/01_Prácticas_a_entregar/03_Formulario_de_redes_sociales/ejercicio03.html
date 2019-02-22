@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+
+<title>Formulario de redes sociales</title>
+
+	<meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+   	<meta name="title" content="Confección y publicación de páginas web">
+    <meta name="keywords" content="Diseño de páginas web con HTML, CSS, JavaScript">
+    <meta name="author" content="Ana Rodríguez">
+
+    <link rel="icon" type="image/png" href="img/harry_potter_imagens_(7)_opt.png">
+    <link rel="icon" type="image/gif" href="img/harry_potter_imagens_(7)_opt.gif">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/harry_potter_imagens_(7)_opt.ico">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ejercicio03.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+
+	<meta http-equiv="Refresh" content="5">
+
+
+</head>
+
+<body>
+<div class="formulario"><!--formulario1-->
+<h2>Iniciar sesión con redes sociales o manualmente</h2>
+<form name="redes_sociales" action="/action_page.php" method="post" target="_blank" autocomplete="off" enctype="multipart/form-data">
+<div class="opciones"><!--opciones-->
+<div class="botones"><!--botones-->
+	<div class="fb">
+		<a href="#"><img alt="facebook" src="img/social_facebook_w.png">Iniciar sesión con Facebook</a>
+	</div>
+	<div class="twitter">
+		<a href="#"><img alt="twitter" src="img/social_twitter_w.png" class="twitter">Iniciar sesión con Twitter</a>
+	</div>
+	<div class="google">
+		<a href="#"><img alt="google" src="img/social_google_w.png" class="google">Iniciar sesión con Google+</a>	
+	</div>
+</div><!--fin botones-->
+<div class="contenido"><!--contenido-->
+	<legend class="legend">Usuario</legend>
+		<input type="text" name="usuario" placeholder="Entar Usuario" pattern="[A-Za-z0-9+-*/-.,%&$]" required class="campos"><br>
+	<legend class="legend">Contraseña</legend>
+		<input type="pasword" name="contraseña" placeholder="Entrar Contraseña" required pattern="[.-_@#$%&/A-Za-z0-9]" minlength="5" maxlength="20" class="campos">
+	<input type="submit" name="enviar" value="Iniciar sesión" required class="iniciar">
+</div><!--fin contenido-->
+</div><!--opciones-->
+<br>
+<div class="pie">
+	<input type="submit" name="registro" value="Registrarse" class="registro">
+	<br>
+	<a href="#">Recordar contraseña</a>
+</div>
+</form>
+</div><!--fin formulario1-->
+</body>
+</html>
