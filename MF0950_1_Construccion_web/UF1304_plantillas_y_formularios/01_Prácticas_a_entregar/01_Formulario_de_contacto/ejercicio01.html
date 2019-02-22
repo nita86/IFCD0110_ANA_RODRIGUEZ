@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Formulario de contacto</title>
+
+	<meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+   	<meta name="title" content="Confección y publicación de páginas web">
+    <meta name="keywords" content="Diseño de páginas web con HTML, CSS, JavaScript">
+    <meta name="author" content="Ana Rodríguez">
+
+    <link rel="icon" type="image/png" href="img/harry_potter_imagens_(7)_opt.png">
+    <link rel="icon" type="image/gif" href="img/harry_potter_imagens_(7)_opt.gif">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/harry_potter_imagens_(7)_opt.ico">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ejercicio01.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+
+	<meta http-equiv="Refresh" content="5">
+
+
+</head>
+
+<body>
+<h1>Formulario de contacto</h1>
+<div class="formulario">
+<form name="formulario_de_contacto" action="/action_page.php" target="_blank" method="post" enctype="multipart/form-data" autocomplete="off">
+	<legend class="legend">Nombre<sup>*</sup></legend>
+		<input type="text" name="nombre" pattern="[A-Za-z^0-9]" placeholder="Nombre" required class="campos">
+	<legend class="legend">Apellidos<sup>*</sup></legend>
+		<input type="text" name="apellidos" pattern="[A-Za-z^0-9]" placeholder="Apellidos" required class="campos">
+	<legend class="legend">Teléfono<sup>*</sup></legend>
+		<input type="tel" name="telefono" pattern="[^Â-Z^a-z]" maxlength="9" placeholder="Tu teléfono" required class="campos">
+	<legend class="legend">Correo electrónico<sup>*</sup></legend>
+		<input type="email" name="mail" pattern="[.-_A-Za-z0-9]@[.-_A-Za-z0-9]{1-10}" placeholder="Tu correo electrónico" required class="campos"><!--se permiten [.-_A-Za-z0-9] en usuario, @ obligatorio, se permiten [.-_A-Za-z0-9] en dominio y tiene entre 1-10caracteres-->
+	<legend class="legend">Consulta<sup>*</sup></legend>
+		<textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Tu consulta..." required class="campos"></textarea> 
+	<br>
+	<br>
+	<input type="checkbox" name="acepto" value="check" required>Acepto los términos y <a href="#">condiciones de privacidad</a>
+	<br>
+	<br>
+	<input type="submit" name="enviar" value="Enviar">
+</form>
+</div>
+
+</body>
+</html>
