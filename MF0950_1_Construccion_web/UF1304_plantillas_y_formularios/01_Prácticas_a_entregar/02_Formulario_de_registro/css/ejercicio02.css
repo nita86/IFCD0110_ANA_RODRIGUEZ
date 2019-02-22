@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+ 	}
+.formulario {
+	margin: 10px auto;
+	width: 80%;
+	border: solid 1px black;
+	font-size: 1em;
+	/*padding: 10px;*/
+	position: relative;
+	}
+.logo {
+	width: 100%;
+	overflow: hidden;
+	margin-top: 10px;
+	}
+.avatar {
+	border-radius: 350px;
+	width: 25%;
+	float: left;
+	margin-left: 300px;
+	}
+.x {
+	font-size: 2.5em;
+	float: right;
+	font-weight: bold;
+	margin-right: 20px;
+	}
+.contenido {
+	padding: 10px;
+	}
+.legend {
+	color: black;
+	font-weight: bold;
+	}
+.campos {
+	background-color: white;
+	border: solid 1px lightgray;
+	width: 100%;
+	padding: 10px;
+	}
+.iniciar {
+	width: 100%;
+	font-size: large;
+	background-color: green;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	}
+.pie {
+	width: 100%;
+	overflow: hidden;
+	background-color: lightgray;
+	padding: 10px 20px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	}
+.registro {
+	background-color: red;
+	color: white;
+	padding: 10px;
+	}
+.pie > p {
+	padding: 10px;
+	}
