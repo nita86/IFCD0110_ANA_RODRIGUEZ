@@ -5,6 +5,8 @@
 	margin: 0;
 	padding: 0;
     box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
     }
 
     body {
@@ -103,7 +105,7 @@
 }
 .lista4 li a {
     display: block;
-    width: 1auto;
+    width: auto;
     padding: 5px;
     color: white;
     text-decoration: none;
@@ -118,11 +120,6 @@
 }
 
  /*-----lista5---------*/
- .cuadrotexto {
-     padding: 20px;
-     margin-top: 30px;
-     background-color: bisque;
- }
  .lista5 {
     list-style-type: none;
     margin: 0;
@@ -130,6 +127,7 @@
     overflow: hidden;
     position: fixed;
     top: 0;
+    right: 0;
 }
 .lista5 li {
     float: left;
@@ -137,7 +135,7 @@
 }
 .lista5 li a {
     display: block;
-    width: 1auto;
+    width: auto;
     padding: 5px;
     color: white;
     text-decoration: none;
@@ -151,5 +149,70 @@
     border: solid 1px black;
 }
 
+/*------lista6------*/
+.lista6 ul {
+    list-style-type: none;
+    width: auto;
+	padding: 0;
+	margin: 0 auto;
+	/*text-align: center;*/
+	overflow: hidden;
+    /*background-color: black;*/
+    color: white;
+	}
+.lista6 ul li {
+    float: left;
+    border: white 1px solid;
+    }
+.lista6 ul li a {
+    text-decoration: none;
+    width: auto;
+    color: white;
+    display: block;
+    padding: 14px 16px;
+    background-color: black;
+    }
+.lista6 ul li a:hover {
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+    }
+.lista6 ul li ul {
+    display: none;/*los oculta hasta que pasamos el ratón por encima*/
+    background-color: black;
+    color:white;
+    position: absolute;/*queda por encima del div padre, no dentro*/
+    z-index: 1;
+    }
+.lista6 ul li:hover ul { /*al pasar el ratón por los li del padre salen los ul hijos*/
+    display: block;
+    }
+.lista6 ul li ul li{
+    float: none; /*vienen flotando desde .lista6 ul li*/
+    }
+.lista6 ul li ul li a {
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    color: white;
+    }
+.lista6 ul li ul li a:hover {
+    text-decoration: none;
+    color:black;
+    background-color: white;
+    }
 
-    
+/*-----lista7-----------*/
+.lista7 ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    } 
+.lista7 ul li a{
+    display: block;
+    color: white;
+    background-color: black;
+    text-align: left;
+    padding: 5px;
+    border: solid 1px white;
+    }
