@@ -1,0 +1,17 @@
+/*CSS style*/
+
+.tabla1 {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+.tabla1 td, .tabla1 th {
+    border: 1px solid #DDDDDD;
+    }
+.tabla1 tr:nth-child(even) { /* hace que una linea si, una no, salga en gris*/ 
+    background-color: #DDFFDD;
+    }
+.tabla1 code {
+    color: black;
+    font-size: 130%;
+    }
