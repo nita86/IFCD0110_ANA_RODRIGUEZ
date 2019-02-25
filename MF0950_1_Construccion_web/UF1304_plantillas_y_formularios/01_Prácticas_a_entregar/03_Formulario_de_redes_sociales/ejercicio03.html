@@ -19,7 +19,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">	
 
-	<meta http-equiv="Refresh" content="5">
+	<!--<meta http-equiv="Refresh" content="5">-->
 
 
 </head>
@@ -27,24 +27,31 @@
 <body>
 <div class="formulario"><!--formulario1-->
 <h2>Iniciar sesión con redes sociales o manualmente</h2>
-<form name="redes_sociales" action="/action_page.php" method="post" target="_blank" autocomplete="off" enctype="multipart/form-data">
+
 <div class="opciones"><!--opciones-->
-<div class="botones"><!--botones-->
+<div><!--botones-->
 	<div class="fb">
-		<a href="#"><img alt="facebook" src="img/social_facebook_w.png">Iniciar sesión con Facebook</a>
+		<div><img alt="facebook" src="img/social_facebook_w.png"></div>
+		<div><a href="#">Iniciar sesión con Facebook</a></div>
 	</div>
 	<div class="twitter">
-		<a href="#"><img alt="twitter" src="img/social_twitter_w.png" class="twitter">Iniciar sesión con Twitter</a>
+		<div><img alt="twitter" src="img/social_twitter_w.png"></div>
+		<div><a href="#">Iniciar sesión con Twitter</a></div>
 	</div>
 	<div class="google">
-		<a href="#"><img alt="google" src="img/social_google_w.png" class="google">Iniciar sesión con Google+</a>	
+		<div><img alt="google" src="img/social_google_w.png"></div>
+		<div><a href="#">Iniciar sesión con Google+</a></div>	
 	</div>
 </div><!--fin botones-->
+<div class="linea"><!--linea central-->
+	<i class="fas fa-bullseye"></i>
+</div><!--fin linea central-->
 <div class="contenido"><!--contenido-->
+	<form name="redes_sociales" action="/action_page.php" method="post" target="_blank" autocomplete="off" enctype="multipart/form-data">
 	<legend class="legend">Usuario</legend>
 		<input type="text" name="usuario" placeholder="Entar Usuario" pattern="[A-Za-z0-9+-*/-.,%&$]" required class="campos"><br>
 	<legend class="legend">Contraseña</legend>
-		<input type="pasword" name="contraseña" placeholder="Entrar Contraseña" required pattern="[.-_@#$%&/A-Za-z0-9]" minlength="5" maxlength="20" class="campos">
+		<input type="pasword" name="contraseña" placeholder="Entrar Contraseña" required pattern="[.-_@#$%&/A-Za-z0-9]" minlength="5" maxlength="20" class="campos"><br>
 	<input type="submit" name="enviar" value="Iniciar sesión" required class="iniciar">
 </div><!--fin contenido-->
 </div><!--opciones-->
