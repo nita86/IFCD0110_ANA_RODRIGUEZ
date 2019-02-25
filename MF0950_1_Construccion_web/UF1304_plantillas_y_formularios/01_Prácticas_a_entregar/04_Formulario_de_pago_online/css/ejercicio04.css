@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    }
+
+    @media screen and (max-width: 800px) {
+        .formulario{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            }
+        .pie {
+            width: 100%;
+        }
+    }
+legend {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.formulario {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px 10px 10px 0px;
+    border: solid 1px gray;
+    background-color: lightgray;
+    font-size: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+.datos img {
+    width: 20px;
+    margin-right: 3px;
+}
+.alinear {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.pie {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    }
+input[type="submit"] {
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    }
+input[type="text"] {
+    padding: 5px;
+    width: 100%;
+}
+input[type="email"] {
+    padding: 5px;
+    width: 100%;
+}
+select {
+    padding: 5px;
+    width: 100%;
+}

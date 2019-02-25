@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+
+<title>Formulario de pasarela de pago</title>
+
+	<meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+   	<meta name="title" content="Confección y publicación de páginas web">
+    <meta name="keywords" content="Diseño de páginas web con HTML, CSS, JavaScript">
+    <meta name="author" content="Ana Rodríguez">
+
+    <link rel="icon" type="image/png" href="img/harry_potter_imagens_(7)_opt.png">
+    <link rel="icon" type="image/gif" href="img/harry_potter_imagens_(7)_opt.gif">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/harry_potter_imagens_(7)_opt.ico">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ejercicio04.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+
+	<!--<meta http-equiv="Refresh" content="5">-->
+
+
+</head>
+<body>
+<h1>Formulario de pago</h1>
+<div class="formulario"><!--formulario padre-->
+<div class="datos"><!--datos-->
+<form name="datos" action="/action_page.php" method="POST" target="_blank" enctype="multipart/form-data" autocomplete="off">
+<legend>dirección de envio</legend>
+    <img src="img/user.png" alt="nombre">Nombre completo <br> 
+    <input type="text" name="nombre" placeholder="Juan Cosé Gómez Martín" pattern="[A-Za-z]" required><br>
+
+    <img src="img/mail.png" alt="mail">Email <br> 
+    <input type="email" name="correo" placeholder="correo@dominio.com" required pattern="[.-_A-Za-z0-9]@[.-_A-Za-z0-9]{1-10}" required><!--se permiten [.-_A-Za-z0-9] en usuario, @ obligatorio, se permiten [.-_A-Za-z0-9] en dominio y tiene entre 1-10caracteres--><br>
+
+    <img src="img/contactcard.png" alt="direccion">Dirección <br>
+    <input type="text" name="direccion" placeholder="Avenida de Europa, 15" required><br>
+
+    <img src="img/building.png" alt="ciudad">Ciudad <br>
+    <select name="ciudad" id="ciudad" size="1">
+            <option value="Madrid">Madrid</option>
+            <option value="Valencia">Valencia</option>
+            <option value="León">León</option>
+            <option value="Cáceres">Cáceres</option>
+    </select><br>
+<div class="alinear"><!--alinear-->
+<div style="margin-right:5px;"><!--estado-->
+    Estado <br>   
+    <select name="estado" id="estado" size="1">
+		<option value="ES">ES</option>
+		<option value="FR">FR</option>
+		<option value="PT">PT</option>
+		<option value="IT">IT</option>
+    </select><br>
+</div><!--fin estado-->
+<div><!--cp-->
+    Código postal <br>
+    <input type="text" name="cp" pattern="[0-9]{5}" placeholder="25024">
+</div><!--cp-->
+</div><!--alinear-->
+</div><!--fin datos-->
+
+<div><!--pasarela de pago-->
+<legend>Pago</legend>
+    Selecciona una tarjeta<br>
+    <input type="radio" name="pago" value="1" required><img src="img/visa.png" alt="visa">
+    <input type="radio" name="pago" value="2" required><img src="img/mastercard.png" alt="mastercard">
+    <input type="radio" name="pago" value="3" required><img src="img/american-express.png" alt="american-express">
+    <input type="radio" name="pago" value="4" required><img src="img/discover.png" alt="discover"><br>
+    Titular de la tarjeta <br>
+    <input type="text" name="nombre" placeholder="Juan Cosé Gómez Martín" pattern="[A-Za-z]" required><br>
+    Número de tarjeta <br>
+    <input type="text" name="numero" placeholder="000-000-000-000" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required><br>
+    Exp Mes <br>
+    <select name="mes" id="mes" size="1" required>
+            <option value="Enero">Enero</option>
+            <option value="Febrero">Febrero</option>
+            <option value="Marzo">Marzo</option>
+            <option value="Abril">Abril</option>
+            <option value="Mayo">Mayo</option>
+            <option value="Junio">Junio</option>
+            <option value="Julio">Julio</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Septiembre">Septiembre</option>
+            <option value="Octubre">Octubre</option>
+            <option value="Noviembre">Noviembre</option>
+            <option value="Diciembre">Diciembre</option>
+    </select><br>
+<div class="alinear"><!--alinear-->
+<div><!--año-->
+    Exp Año <br>
+    <select name="año" id="año" size="1" required>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+    </select>
+</div><!--fin año-->
+<div><!--ccv-->
+    CCV <br>
+    <input type="text" name="ccv" placeholder="000" pattern="[0-9]{3}" required>
+</div><!--ccv-->
+</div><!--alinear-->
+</div><!--fin pasarela de pago-->
+
+<div class="pie"><!--pie-->
+    <input type="checkbox" name="verificar" value="check">Acepto los terminos y <a href="#">condiciones de privacidad</a> 
+    <br>
+    <br>
+    <input type="submit" name="submit" value="Continuar con el pago">
+</div><!--pie-->
+</form>
+</div><!--fin formulario padre-->   
+</body>
+</html>
