@@ -1,227 +1,103 @@
 <!DOCTYPE html>
 <html lang="es-ES">
 <head>
-    <meta charset="utf-8">
-    <title>Resumen</title>
-
-<!-- etiquetas que dan informacion adicional para el buscador -->
-    <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
-    <meta name="title" content="Confección y publicación de páginas web">
-    <meta name="keywords" content="Diseño de páginas web con HTML, CSS, JavaScript">
-    <meta name="author" content="Ana Rodríguez">
-
-<!--formatos para favicon para que se vea en todos los navegadores-->   
-   <link rel="icon" type="image/png" href="./img/harry_potter_imagens_(7)_opt.png" sizes="16x16">
-   <link rel="icon" type="image/gif" href="./img/harry_potter_imagens_(7)_opt.gif" sizes="16x16">
-   <link rel="icon" type="image/vnd.microsoft.icon" href="./img/harry_potter_imagens_(7)_opt.ico" sizes="16x16">
-
-<!--enlaces css-->
-    <link rel="stylesheet" href="./css/resumen.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<meta http-equiv="Refresh" content="5">
+        <meta charset="UTF-8">
+        <title>Lenguaje CSS</title>
+    
+        <meta name="description" content="ejercicios examen">
+        <meta name="title" content="lenguaje CSS">
+        <meta name="keywords" content="examen, HTML, css">
+        <meta name="author" content="Ana Rodríguez">
+    
+        <link rel="icon" type="image/png" href="../img/html5_png.png" sizes="16x16">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="../img/html5.ico.ico" sizes="16x16">
+    
+        <link rel="stylesheet" href="../css/examen.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">	
 
 </head>
 <body>
-<header>
-    <nav><!--lista de navegación-->
-        <ul>
-            <li><a href=" ">opción1</a></li>
-            <li><a href=" ">opción2</a></li>
-            <li><a href=" ">opción3</a></li>
-        </ul>
-    </nav>
-    <img src=" " alt="logo" width=" " height=" "><!--logo-->
-</header>
+        <header>
+                <div class="navegacion"><!--menu navigacion-->
+                <nav>
+                    <ul>
+                        <li> <a href="../index.html">home</a> </li>
+                        <li> <a href="lenguaje-html.html">html</a> </li>
+                        <li> <a href="lenguaje-css.html">css</a> </li>
+                        <li> <a href="lenguaje-js.html">js</a> </li>
+                    </ul>
+                </nav>
+            <hr>
+                <img src="../img/banner-css3.jpg" alt="logo_css3.jpg">
+            </div><!--fin menu navigacion-->
+            </header>
 
-<hr><!--linea visible que separa secciones-->
-
-<main><!--contenido-->
-<section><!--sección-->
-<h2>Tabla</h2>
-    <table><!--Define una tabla-->
-        <caption>Titulo de la tabla</caption>
-        <thead><!--encabezado-->
-            <tr><!--define una fila-->
-                <th> </th><!--define un encabezado-->
-            </tr>
-        </thead>
-        <tbody><!--cuerpo-->
-            <tr>
-                <td>Define una celda dentro de una fila</td>
-            </tr>
-            <tr>
-                <td>colgroup </td>
-                <td>Especifica un grupo de una o más columnas para darle formato</td>
-            </tr>
-            <tr>
-                <td>col</td>
-                <td>Especifica propiedades de columna para cada elemento que contiene</td>
-            </tr>
-        </tbody>
-        <tfoot><!--pie-->
-            <tr>
-                <td> </td>
-            </tr>
-        </tfoot>
-    </table>
-</section>
-
-<section>
-<h2>Listas</h2>
-<article><!--articulo dentro de section-->
-    <ul><!--desordenada-->
-        <li> </li>
-        <li> </li>
-        <li> </li>
-    </ul>
-</article>
-<article>
-    <ol><!--ordenada-->
-        <li type="1"> </li>
-        <li type="A"> </li>
-        <li type="a"> </li>
-    </ol>
-</article>
-<article>
-    <dl><!--definició-->
-        <dt>Titulo</dt>
-            <dd>Definición</dd>
-            <dd>Definición</dd>
-    </dl>
-</article>
-</section>
-        
-<section>
-<h2>Etiquetas multimedia</h2>
-<article>
-    <figure><!--imagen-->
-        <img src=" " alt="multimedia" width=" " height=" ">
-        <figcaption>leyenda img</figcaption>
-    </figure>
-</article>
-<article>
-    <video width=" " height="auto" controls autoplay preload="auto" loop poster="img/....">
-    	<source src="video/ .mp4" type="video/mp4">
-    	<source src="video/ .ogg" type="video/ogg">  	
-    </video>
-</article>
-<article>
-    <audio controls>
-        <source src="audio/ .mp3" type="audio/mp3">
-        <source src="./audio/ .ogg" type="audio/ogg">
-        <source src="./audio/ .wav" type="audio/wav">		
-    </audio>
-</article>
-<article>
-    <object width=" " height=" " data="./swf/bookmark.swf">Define un objeto incrustado dentro de un documento HTML. Se utiliza para insertar plug-ins (como applets de Java, los lectores de PDF, Flash Players) en las páginas web.Es soportado por todos los navegadores</object>
-</article>
-<article>
-    <iframe width=" " height=" " src=" ">especifica un marco en línea. Un marco en línea se utiliza para insertar otro documento dentro del documento HTML actual.</iframe>
-</article>
-    <aside><!--contenido relacionado1-->
-        <iframe width=" " height=" " src=" "></iframe><!--contenido1-->  
-    </aside>
-    <aside><!--contenido relacionado2-->
-        <a href="https://www.marca.com/" target="mi_iframe">MARCA</a>
-        <iframe name="mi_iframe" width=" " frameborder=" " height=" "></iframe>
-    </aside>
-</section>
-
-<section>
-<h2>Formularios</h2>
-    <form name="formulario1" action="/action_page.php" target="_blank" autocomplete="off" method="post" enctype="multipart/form-data">
-        <fieldset><!--campo1-->
-        <legend>Datos personales</legend>
-            Nombre <br>
-                <input type="text" name="nombre" required pattern="[A-Za-z^0-9]"><br><!--se permiten letras mayus y minus pero no numeros-->
-            Apellidos <br>
-                <input type="text" name="apellidos" required pattern="[A-Za-z^0-9]"><br><!--se permiten letras mayus y minus pero no numeros-->
-            Dirección <br>
-            Tipo de via 
-                <input type="radio" name="tipo de via" value="calle">calle
-                <input type="radio" name="tipo de via" value="avenida">avenida
-                <input type="radio" name="tipo de via" value="plaza">plaza
-                <input type="radio" name="tipo de via" value="ronda">ronda <br>
-            Nombre de la vía
-                <input type="text" name="vía" required pattern="[A-Za-z^0-9]">
-            Número
-                <input type="number" name="numero" minlength="1" pattern="[^A-Z^a-z]"><br><!--no letras-->
-            Letra
-                <input type="text" name="letra" min="a" max="z" maxlength="1">
-            C.P
-                <input type="number" name="cp" maxlength="5">
-            Ciudad
-                <select name="ciudad" id="ciudad" size="1">
-                    <option value="Madrid">Madrid</option>
-                    <option value="Valencia">Valencia</option>
-                    <option value="León">León</option>
-                    <option value="Cáceres">Cáceres</option>
-                </select>
-            País
-                <input list="pais" name="pais">
-                    <datalist id="pais">
-                    <option value="España">España</option>
-                    <option value="Francia">Francia</option>
-                    <option value="Portugal">Portugal</option>
-                    <option value="Italia">Italia</option>
-                    </datalist><br>
-            Fecha de nacimiento 
-                <input type="date" name="nacimiento" pattern="[^A-Z^a-z]">
-            </fieldset><!--fin campo1-->
-            <fieldset><!--campo2-->
-                <legend>Datos de contacto</legend>
-            Teléfono
-                <input type="tel" name="telefono" required size="9"> <br>
-            Fax
-                <input type="tel" name="fax" size="9"> <br>
-            Correo electrónico
-                <input type="email" name="correo" placeholder="email" required pattern="[.-_A-Za-z0-9]@[.-_A-Za-z0-9]{1-10}"><!--se permiten [.-_A-Za-z0-9] en usuario, @ obligatorio, se permiten [.-_A-Za-z0-9] en dominio y tiene entre 1-10caracteres-->
-            </fieldset><!--fin campo2-->
-            <fieldset><!--campo3-->
-                <legend>Otros datos</legend>
-            Hijos <br>
-                <input type="checkbox" name="si" value="si">si
-                <input type="number" name="hijos" min="1" placeholder="número de hijos" maxlength="100"><br>
-                <input type="checkbox" name="NO" value="NO">no <br>
-            Estado civil 
-                <select name="estado civil" size="1">
-                    <option value="casado">casado</option>
-                    <option value="soltero">soltero</option>
-                    <option value="pareja">pareja de hecho</option>
-                    <option value="viudo">viudo</option>
-                </select><br>
-            Ocupación
-                <input type="text" name="ocupacion"><br>	
-            </fieldset><!--fin campo3-->
-            <fieldset><!--campo4-->
-                <legend>Comentarios</legend>
-                <textarea name="comentarios" rows="10" cols="30" placeholder="Deja tu comentario..."></textarea>
-            </fieldset><!--fin campo4-->
-            <fieldset><!--campo5-->
-                <legend>Registro</legend>
-            Email
-                <input type="email" name="correo" placeholder="email" required pattern="[.-_A-Za-z0-9]@[.-_A-Za-z0-9]{1-10}"><!--se permiten [.-_A-Za-z0-9] en usuario, @ obligatorio, se permiten [.-_A-Za-z0-9] en dominio y tiene entre 1-10caracteres-->
-            Repetir email
-                <input type="email" name="correo" placeholder="email" required pattern="[.-_A-Za-z0-9]@[.-_A-Za-z0-9]{1-10}"><!--se permiten [.-_A-Za-z0-9] en usuario, @ obligatorio, se permiten [.-_A-Za-z0-9] en dominio y tiene entre 1-10caracteres--> <br>
-            Contraseña
-                <input type="pasword" name="contraseña" placeholder="****" required pattern="[.-_@#$%&/A-Za-z0-9]" minlength="5" maxlength="20">
-            Repetir contraseña 
-                <input type="pasword" name="contraseña" placeholder="****" required pattern="[.-_@#$%&/A-Za-z0-9]" minlength="5" maxlength="20">
-            </fieldset><!--fin campo5-->
-            <input type="checkbox" name="verificar" value="check">No soy un robot <br>
-            <input type="submit" name="submit" value="Submit"> <br>
-            <input type="button" onclick="alert('¡GRACIAS POR REGISTRARTE')" value="Pulsa aqui">
+    <main>
+        <section>
+        <h2>Hoja de Estilos en cascada</h2>
+        <article>
+            <h2>Lenguaje CSS</h2>
+            <p>CSS, siglas en inglés de Cascading Style Sheets, (en español "Hojas de estilo en cascada"), es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado. Es usado para establecer el diseño visual de los documentos web, e interfaces de usuario escritas en HTML o XHTML. Junto con HTML y JavaScript, CSS es una tecnología usada por muchos sitios web para crear páginas visualmente atractivas, interfaces de usuario para aplicaciones web.
+            </p>
+        </article>
+        <article>
+            <p>La especificación CSS es mantenida por el World Wide Web Consortium (W3C®) WWW, organización dedicada a la estandarización del MIME type text/css, registrado para su uso descrito en el RFC 23185.</p>
+            <br>
+            <p>CSS busca mejorar la accesibilidad del documento, provee más flexibilidad y control en la especificación de características presentacionales, permitiendo que varios documentos HTML compartan un mismo estilo usando una sola hoja de estilos separada en un archivo .css. Con ello, se reduce la complejidad y la repetición de código en la estructura del documento.
+            </p>
+        </article>   
+        </section>
+        <hr>
+        <section>
+            <h2>Estándar CSS</h2>
+            <blockquote>El lenguaje HTML basa su filosofía de desarrollo en la diferenciación.</blockquote>
+            <ul>
+                <li>La separación del formato y el contenido hace posible presentar el mismo documento marcado en diferentes estilos para mostrar una página web de manera distinta dependiendo del tamaño de la pantalla o tipo de dispositivo.</li>
+                <li>La especificación CSS describe un esquema prioritario para determinar qué reglas de estilo se aplican si más de una regla coincide para un elemento en particular. Estas reglas son aplicadas con un sistema llamado de cascada, de modo que las prioridades son calculadas y asignadas a las reglas.</li>
+            </ul>
+            <cite>"Cada navegador web usa un motor de renderizado, el soporte de CSS no es exactamente igual en ninguno de ellos.." Håkon Wium Lie, CTO de la compañía Opera Software y cocreador del estándar CSS</cite>
+        </section>
+        <aside><!--tabla-->
+            <table class="tabla">
+                <thead><!--encabezado-->
+                    <tr>
+                        <th colspan="5">Navegadores web</th>
+                    </tr>
+                </thead><!--fin encabezado-->
+                <tbody>
+                    <tr><!--img-->
+                        <td><img alt="chrome.gif" src="../img/icono-chrome.gif"></td>
+                        <td><img alt="firefox.gif" src="../img/icono-firefox.gif"></td>
+                        <td><img alt="explorer.gif" src="../img/icono-internet-explorer.gif"></td>
+                        <td><img alt="opera.gif" src="../img/icono-opera.gif"></td>
+                        <td><img alt="safari.gif" src="../img/icono-safari.gif"></td>
+                    </tr><!--fin img-->
+                    <tr><!--enlaces-->
+                        <td><a href="https://www.google.es/">Chrome</a></td>
+                        <td><a href="https://www.mozilla.org/es-ES/">Firefox</a></td>
+                        <td><a href="https://www.microsoft.com/es-es/download/internet-explorer.aspx">Explorer</a></td>
+                        <td><a href="https://www.opera.com/es">Opera</a></td>
+                        <td><a href="https://safari.uptodown.com/windows">Safari</a></td>
+                    </tr><!--fin enlaces-->
+                </tbody>
+            </table>
+        </aside><!--fin tabla-->
+        <aside><!--formulario-->
+            <form action="/action_php.php" method="POST" target="_blank" autocomplete="off" enctype="multipart/form-data">
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre y apellidos" required pattern="[^0-9]">
+                <br>
+                <input type="email" name="correo" placeholder="Escribe tu email" required pattern="[.-_A-Za-z0-9]@[.-_A-Za-z0-9]{1-10}">
+                <br>
+                <input type="tel" name="telefono" required size="9" placeholder="Escribe tu telefono"> 
+                <br>
+                <textarea name="texto" placeholder="Deja tu comentario" cols="30" rows="23"></textarea>
             </form>
-</section>
-</main>
+        </aside><!--fin formulario-->
+    </main>
 
-<footer><!--pie-->
-    <details>
-        <summary>&copy;2018-2019</summary><!--parte visible-->
-        <p>Autor: nita86</p><!--sale al desplegar-->	
-    </details>
-</footer>
-
+    <footer class="pie"><!--pie-->
+        <a href="#">Aviso legal</a> &#124; <a href="#">Politica de cookes</a> &#124; <a href="#">Politica de privacidad</a> &#124; <a href="#">Accesibilidad</a>
+    </footer><!--fin pie-->
+       
 </body>
 </html>
