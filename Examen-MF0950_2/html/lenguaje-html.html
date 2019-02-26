@@ -55,6 +55,42 @@
             </ul>
             <cite>"Sólo tuve que tomar la idea de hipertexto y conectarlo con las ideas de TCP y DNS y — ¡et voilà! — la World Wide Web." Tim Berners-Lee, creador de la Web</cite>
         </section>
+        <aside><!--tabla-->
+            <table class="tabla">
+                <thead><!--encabezado-->
+                    <tr>
+                        <th colspan="5">Navegadores web</th>
+                    </tr>
+                </thead><!--fin encabezado-->
+                <tbody>
+                    <tr><!--img-->
+                        <td><img alt="chrome.gif" src="../img/icono-chrome.gif"></td>
+                        <td><img alt="firefox.gif" src="../img/icono-firefox.gif"></td>
+                        <td><img alt="explorer.gif" src="../img/icono-internet-explorer.gif"></td>
+                        <td><img alt="opera.gif" src="../img/icono-opera.gif"></td>
+                        <td><img alt="safari.gif" src="../img/icono-safari.gif"></td>
+                    </tr><!--fin img-->
+                    <tr><!--enlaces-->
+                        <td><a href="https://www.google.es/">Chrome</a></td>
+                        <td><a href="https://www.mozilla.org/es-ES/">Firefox</a></td>
+                        <td><a href="https://www.microsoft.com/es-es/download/internet-explorer.aspx">Explorer</a></td>
+                        <td><a href="https://www.opera.com/es">Opera</a></td>
+                        <td><a href="https://safari.uptodown.com/windows">Safari</a></td>
+                    </tr><!--fin enlaces-->
+                </tbody>
+            </table>
+        </aside><!--fin tabla-->
+        <aside><!--formulario-->
+            <form action="/action_php.php" method="POST" target="_blank" autocomplete="off" enctype="multipart/form-data">
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre y apellidos" required pattern="[^0-9]">
+                <br>
+                <input type="email" name="correo" placeholder="Escribe tu email" required pattern="[.-_A-Za-z0-9]@[.-_A-Za-z0-9]{1-10}">
+                <br>
+                <input type="tel" name="telefono" required size="9"> 
+                <br>
+                <textarea name="texto" placeholder="Deja tu comentario" cols="5" rows="23"></textarea>
+            </form>
+        </aside><!--fin formulario-->
 
 
 
