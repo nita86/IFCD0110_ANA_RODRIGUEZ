@@ -78,7 +78,7 @@
 }
 .lista3 li a {
     display: block;
-    width: 1auto;
+    width: auto;
     padding: 5px;
     color: white;
     text-decoration: none;
@@ -155,9 +155,7 @@
     width: auto;
 	padding: 0;
 	margin: 0 auto;
-	/*text-align: center;*/
 	overflow: hidden;
-    /*background-color: black;*/
     color: white;
 	}
 .lista6 ul li {
@@ -210,11 +208,6 @@
     } 
 .lista7 ul li {
     position: relative;
-    /*width: auto;*/
-    /*overflow: hidden;*/
-    /*display: block;*/
-    /*padding: 10px;*/
-    /*margin: 10px;*/
     }
 .lista7 ul li a {
     color: white;
@@ -245,14 +238,11 @@
     display: block;
     }
 .lista7 ul li ul li {
-    /*display: block;*/
     position: relative;
-    /*float: left;*/
     }
 .lista7 ul li ul li a {
     display: block;
     background-color: black;
-   
     color: white;
     position: relative;
     }

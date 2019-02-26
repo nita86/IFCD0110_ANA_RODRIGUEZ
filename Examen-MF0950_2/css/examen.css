@@ -1,0 +1,124 @@
+/*CSS style*/
+
+*{
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+}
+
+body {
+    width: 95%;
+    background-color:lightgray;
+    margin: 0 auto;
+}
+hr {
+    border-top: dotted 1p blue;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+.navegacion ul {
+    list-style-type: none;
+}
+.navegacion ul li {
+    display: inline-block;
+}
+.navegacion ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3366ab;
+}
+.navegacion ul li a:hover {
+    border: solid 1px #3366ab;
+    color:  #3366ab;
+    background-color: white;
+}
+.navegacion img {
+    width: 100%;
+}
+main {
+    text-align: center;
+}
+h1 {
+    text-transform: uppercase;
+    color: #3366ab;
+    font-weight: bold;
+}
+.logos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+} 
+.logos img {
+    width: 100%;
+}
+.logos figcaption a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3366ab;   
+    color: white;
+    font-size: 1.2em;
+}
+.contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cuadros {
+    background-color: white;  
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+.cuadros h2 {
+    color: white;
+    background-color: #3366ab;
+    padding: 5px;
+}
+aside {
+    width: 100%;
+    border-top: dotted 1px blue;
+    border-bottom: dotted 1px blue;
+    border-right: none;
+    border-left: none;
+}
+.tabla {
+    width: 80%;
+    margin: 0 auto;
+    border: double 2px black;
+    font-size: 1.2em;
+    color: blue;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+}
+.tabla th, td {
+    border: double 1px black;
+}
+.tabla a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: blue;
+}
+.pie {
+    width: 100%;
+    border-top: dotted 1px blue;
+    border-bottom: dotted 1px blue;
+    border-right: none;
+    border-left: none;
+    text-align: center;
+    padding: 10px;
+}
+.pie a {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
