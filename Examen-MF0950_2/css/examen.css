@@ -108,6 +108,7 @@ cite quotes {
     font-size: 1.4em;
     background-color: white;
     padding: 5px;
+    text-align: center;
 }
 q {
     border-left: solid 2px #3366ab;
