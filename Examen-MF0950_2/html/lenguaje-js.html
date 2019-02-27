@@ -28,33 +28,45 @@
                     </ul>
                 </nav>
             <hr>
-                <img src="../img/banner-html.jpeg" alt="logo_html.jpeg">
+                <img src="../img/banner-js.jpeg" alt="logo_js.jpeg">
             </div><!--fin menu navigacion-->
             </header>
 
     <main>
         <section>
-        <h2>Lenguaje de marcado</h2>
-        <article>
-            <h2>Lenguaje HTML</h2>
-            <p>HTML, sigla en inglés de HyperText Markup Language (lenguaje de marcas de hipertexto), hace referencia al lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado código HTML) para la definición de contenido de una página web, como texto, imágenes, videos, juegos, entre otros.</p>
-        </article>
-        <article>
-            <p>HTML, es un estándar a cargo del World Wide Web Consortium (W3C®)WWW, organización dedicada a la estandarización de casi todas las tecnologías ligadas a la web, sobre todo en lo referente a su escritura e interpretación. </p>
+            <h2 class="h2">Lenguaje de marcado</h2>
             <br>
-            <p>Se considera el lenguaje web más importante siendo su invención crucial en la aparición, desarrollo y expansión de la World Wide Web (WWW Red Mundial Web). Es el estándar que se ha impuesto en la visualización de páginas web y es el que todos los navegadores actuales han adoptado.</p>
-        </article>   
-        </section>
-        <hr>
-        <section>
-            <h2>Estándar HTML</h2>
-            <blockquote>El lenguaje HTML basa su filosofía de desarrollo en la diferenciación.</blockquote>
-            <ul>
-                <li>Al añadir un elemento externo a la página (imagen, vídeo, script, entre otros.), este no se incrusta directamente en el código de la página, sino que se hace una referencia a la ubicación de dicho elemento mediante etiquetas de texto. De este modo, la página web contiene solamente texto mientras que recae en el navegador web (interpretador del código) la tarea de unir todos los elementos y visualizar la página final.</li>
-                <li>Al ser un estándar, HTML busca ser un lenguaje que permita que cualquier página web escrita en una determinada versión, pueda ser interpretada de la misma forma (estándar) por cualquier navegador web actualizado.</li>
-            </ul>
-            <cite>"Sólo tuve que tomar la idea de hipertexto y conectarlo con las ideas de TCP y DNS y — ¡et voilà! — la World Wide Web." Tim Berners-Lee, creador de la Web</cite>
-        </section>
+            <article class="texto">
+                <h3>Lenguaje HTML</h3>
+                <p><strong>HTML</strong>, sigla en inglés de <em><b>H</b>yperText <b>M</b>arkup <b>L</b>anguage</em> <u>(lenguaje de marcas de hipertexto)</u>, hace referencia al lenguaje de marcado para la elaboración de páginas web. <em>Es un estándar que sirve de referencia</em> del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado <strong>código HTML</strong>) para la definición de contenido de una página web, como texto, imágenes, videos, <del>juegos</del>, entre otros.</p>
+            </article>
+            <br>
+            <article class="texto">
+                <p><strong>HTML</strong>, es un estándar a cargo del <em><b>W</b>orld <b>W</b>ide <b>W</b>eb <b>C</b>onsortium</em> <u>(W3C®)</u>WWW, organización dedicada a la estandarización de casi todas las tecnologías ligadas a la web, sobre todo en lo referente a su escritura e interpretación. </p>
+                <br>
+                <p><strong>Se considera el lenguaje web más importante</strong> siendo su invención crucial en la aparición, desarrollo y expansión de la <b>W</b>orld <b>W</b>ide <b>W</b>eb (<del>WWW</del> <u>Red Mundial Web</u>). Es el estándar que se ha impuesto en la visualización de páginas web y es el que todos los navegadores actuales han adoptado.</p>
+            </article>   
+            </section>
+            <hr>
+            <section>
+                <h2 class="h2">Estándar HTML</h2>
+                <br>
+                <div class="cita">
+                <blockquote><q>El lenguaje <abbr title=""Hyper Text Marckup Languaje""></abbr>HTML basa su filosofía de desarrollo en la diferenciación.</q></blockquote>
+                </div>
+                <br>
+                <div class="texto">
+                <ul>
+                    <li>Al añadir un elemento externo a la página (imagen, vídeo, script, entre otros.), este no se incrusta directamente en el código de la página, sino que se hace una referencia a la ubicación de dicho elemento mediante etiquetas de texto. De este modo, la página web contiene solamente texto mientras que recae en el navegador web (interpretador del código) la tarea de unir todos los elementos y visualizar la página final.</li>
+                    <li>Al ser un estándar, HTML busca ser un lenguaje que permita que cualquier página web escrita en una determinada versión, pueda ser interpretada de la misma forma (estándar) por cualquier navegador web actualizado.</li>
+                </ul>
+                </div>
+                <br>
+                <div class="texto">
+                <p><cite>"Sólo tuve que tomar la idea de hipertexto y conectarlo con las ideas de TCP y DNS y — ¡et voilà! — la World Wide Web." <strong><em>Tim Berners-Lee, creador de la Web</em></strong></cite></p>
+                </div>
+            </section>
+
         <aside><!--tabla-->
             <table class="tabla">
                 <thead><!--encabezado-->
@@ -80,15 +92,26 @@
                 </tbody>
             </table>
         </aside><!--fin tabla-->
-        <aside><!--formulario-->
+        <aside class="formulario"><!--formulario-->
             <form action="/action_php.php" method="POST" target="_blank" autocomplete="off" enctype="multipart/form-data">
+                <legend>Deja tu comentario</legend>
+                <label for="nombre"></label>    
                 <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre y apellidos" required pattern="[^0-9]">
                 <br>
+                <label for="correo"></label> 
                 <input type="email" name="correo" placeholder="Escribe tu email" required pattern="[.-_A-Za-z0-9]@[.-_A-Za-z0-9]{1-10}">
                 <br>
+                <label for="telefono"></label> 
                 <input type="tel" name="telefono" required size="9" placeholder="Escribe tu telefono"> 
                 <br>
+                <label rel="texto"></label> 
                 <textarea name="texto" placeholder="Deja tu comentario" cols="30" rows="23"></textarea>
+                <br>
+                <label for="verificar"></label>
+                <input type="checkbox" name="verificar" value="check">Acepto los términos y condiciones.
+                <br>
+                <label for="enviar"></label> 
+                <input type="submit" name="enciar" value="Enviar">
             </form>
         </aside><!--fin formulario-->
     </main>
