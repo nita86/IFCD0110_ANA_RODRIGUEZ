@@ -50,6 +50,8 @@ h1 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    background-color: white;
+    text-align: center;
 } 
 .logos img {
     width: 100%;
