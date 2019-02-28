@@ -28,10 +28,12 @@
             background-color: antiquewhite;
             border: dotted 1px red;
             border-left: solid 2px red;
-            padding: 5px;
+            padding: 10px;
             font-size: 1em;
             width: auto;
         }
+        .notas code {font-size: 1.1em;}
+        .notas code span {color: red; font-weight: bold;}
     
     </style>
 </head>
@@ -176,6 +178,146 @@
     <div>7</div>
     <div class="item8">8</div>
 </div><!--fin padre-->
-    
+<hr>
+<h2>grid-template-areas</h2>
+
+<div class="notas">
+<code>
+&lt;style&gt;<br>
+.grid_padre {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display:grid; <br>          
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grid-template-areas:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'header header header header header'<span>/*fila 1, con 5 columnas header*/</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'nav main main main aside'<span>/*fila 2 1nav 2main 1aside*/</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'nav footer footer footer footer';<span>/*fila3 1nav 3footer*/</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+    <br>
+.area1 {grid-area: header;}<br>
+.area2 {grid-area: nav;}<br>
+.area3 {grid-area: main;}<br>
+.area4 {grid-area: aside;}<br>
+.area5 {grid-area: footer;}<br>
+<br>
+&lt;/style&gt;
+<br>
+<br> 
+&lt;div class="grid_padre"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="area1"&gt;cabecera&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="area2"&gt;navegación&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="area3"&gt;contenido&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="area4"&gt;relacionado&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="area5"&gt;pie&lt;/div&gt;<br>
+&lt;/div&gt;
+</code>
+</div>
+<br>
+  
+<style>
+    .grid-area {
+        background-color: #2196F3;
+        padding: 10px;
+        display: grid;
+        grid-template-areas:
+        'header header header header header'/*fila 1, con 5 columnas header*/
+        'nav main main main aside'/*fila 2 1nav 2main 1aside*/
+        'nav footer footer footer footer';/*fila3 1nav 3footer*/
+        grid-gap: 5px;
+        }
+    .grid-area > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        }
+    .area1 {grid-area: header;}
+    .area2 {grid-area: nav;}
+    .area3 {grid-area: main;}
+    .area4 {grid-area: aside;}
+    .area5 {grid-area: footer;}
+</style>
+    <div class="grid-area"><!--padre-->
+        <div class="area1">cabecera</div>
+        <div class="area2">navegación</div>
+        <div class="area3">contenido</div>
+        <div class="area4">relacionado</div>
+        <div class="area5">pie</div>
+    </div><!--fin padre-->
+<br> 
+<br>
+<div class="notas">
+<code>
+    &lt;style&gt;<br>
+    .grid_padre {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display:grid; <br>          
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grid-template-areas:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'header header header header header'<span>/*fila 1, con 5 columnas header*/</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'nav main main main aside'<span>/*fila 2 1nav 2main 1aside*/</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'nav main main main aside'<span>/*fila 3 1nav 2main 1aside*/</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'nav footer footer footer aside';<span>/*fila4 1nav 3footer 1aside*/</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<br>
+        .area1 {grid-area: header;}<br>
+        .area2 {grid-area: nav;}<br>
+        .area3 {grid-area: main;}<br>
+        .area4 {grid-area: aside;}<br>
+        .area5 {grid-area: footer;}<br>
+<br>
+    &lt;/style&gt;
+<br>
+<br> 
+    &lt;div class="grid_padre"&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="area1"&gt;cabecera&lt;/div&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="area2"&gt;navegación&lt;/div&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="area3"&gt;contenido&lt;/div&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="area4"&gt;relacionado&lt;/div&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="area5"&gt;pie&lt;/div&gt;<br>
+    &lt;/div&gt;
+</code>
+</div>
+<br>
+<style>
+    .grid-area2 {
+        background-color: #2196F3;
+        padding: 10px;
+        display: grid;
+        grid-template-areas:
+        'header header header header header'
+        'nav main main main aside'
+        'nav main main main aside'
+        'nav footer footer footer aside';
+        grid-gap: 5px;
+        }
+    .grid-area2 > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        }
+    .areaa {grid-area: header;}
+    .areab {grid-area: nav;}
+    .areac {grid-area: main;}
+    .aread {grid-area: aside;}
+    .areae {grid-area: footer;}
+</style>
+<div class="grid-area2"><!--padre-->
+    <div class="areaa">cabecera</div>
+    <div class="areab">navegación</div>
+    <div class="areac">contenido</div>
+    <div class="aread">relacionado</div>
+    <div class="areae">pie</div>
+</div><!--fin padre-->
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
