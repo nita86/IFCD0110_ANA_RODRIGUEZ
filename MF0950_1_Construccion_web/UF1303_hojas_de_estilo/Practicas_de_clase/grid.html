@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="utf-8">
+	<title>Grid</title>
+
+	<meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+   	<meta name="title" content="Confección y publicación de páginas web">
+    <meta name="keywords" content="Diseño de páginas web con HTML, CSS, JavaScript">
+    <meta name="author" content="Ana Rodríguez">
+
+    <link rel="icon" type="image/png" href="./img/harry_potter_imagens_(7)_opt.png">
+    <link rel="icon" type="image/gif" href="./img/harry_potter_imagens_(7)_opt.gif">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./img/harry_potter_imagens_(7)_opt.ico">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/menus.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+
+    <meta http-equiv="Refresh" content="5">
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .notas {
+            background-color: antiquewhite;
+            border: dotted 1px red;
+            border-left: solid 2px red;
+            padding: 5px;
+            font-size: 1em;
+            width: auto;
+        }
+    
+    </style>
+</head>
+<body>
+<h1>Diseño de cuadrícula</h1>
+<p>El Diseño de cuadrícula Módulo CSS ofrece un sistema basado en el diseño de la red, con filas y columnas, por lo que es más fácil diseñar páginas web sin tener que utilizar flotadores y posicionamiento.</p>
+
+<hr>
+
+<h2>display:grid</h2>
+<p>Un diseño de la red consiste en un elemento padre, con uno o más elementos secundarios.</p>
+
+<div class="notas">
+    <ul>
+        <li><b>grid-template-columns:</b>número y anchura de las columnas <i>(150px auto auto 150px;)</i></li>
+        <li><b>grid-template-rows:</b>número y altura de las filas <i>(auto 150px;)</i></li>
+        <li><b>grid-template:</b>combina las dos anteriores <u> grid-template-rows / grid-template-columns|grid-template-areas|;</u> <i>(auto 150px / 150px auto auto 150px;)</i></li>
+    </ul>
+</div>
+<br>
+<style>
+    .grid-contenedor {
+        display: grid;
+        grid-template-columns: 150px auto auto 150px;/*número y anchura de las columnas*/
+        grid-template-rows: auto 150px;/*número y altura de las filas*/
+        /*grid-template: auto 150px / 150px auto auto 150px;combina las anteriores rows/columns*/
+        background-color: #2196F3;
+        padding: 10px;
+    }
+    .grid-contenedor > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+<div class="grid-contenedor"><!--padre-->
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+</div><!--fin padre-->
+<hr>
+<h2>grid gap</h2>
+<p>El espacio entre cada columna / fila se denominan <i>gap</i>>.</p>
+<div class="notas">
+    <ul>
+        <li><b>grid-column-gap:</b>separación entre columnas <i>(20px;)</i></li>
+        <li><b>grid-row-gap:</b>separación entre filas <i>(10px;)</i></li>
+        <li><b>grid-gap:</b>combina las dos anteriores <u>grid-row-gap / grid-colum-gap;</u> <i>(10px/20px;)</i></li>
+        </ul>
+</div>
+<br>
+<style>
+    .grid-gap {
+        display: grid;
+        grid-template-columns: 150px auto auto 150px;/*número y anchura de las columnas*/
+        grid-column-gap: 10px; /*separacion entre columnas*/
+        grid-template-rows: auto 150px;/*número y altura de las filas*/
+        grid-row-gap: 10px; /*separa entre filas*/
+        /*grid-template: auto 150px / 150px auto auto 150px;combina las anteriores rows/columns*/
+        background-color: #2196F3;
+        padding: 10px;
+        }
+    .grid-gap > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        }
+</style>
+<div class="grid-gap"><!--padre-->
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+</div><!--fin padre-->
+
+<br>
+<style>
+    .grid-gap2 {
+        display: grid;
+        grid-template-columns: auto;/*número y anchura de las columnas*/
+        grid-column-gap: 10px; /*separacion entre columnas*/
+        grid-template-rows: auto;/*número y altura de las filas*/
+        grid-row-gap: 10px; /*separa entre filas*/
+        /*grid-template: auto 150px / 150px auto auto 150px;combina las anteriores rows/columns*/
+        background-color: #2196F3;
+        padding: 10px;
+        }
+    .grid-gap2 > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        }
+    .item1 {
+        grid-column-start: 2;/*empieza en la linea de columna 2*/
+        grid-column-end: 4;/* acaba en la línea de columna 4*/
+    }
+    .item2 {
+        grid-row-start: 2;/*empieza en la linea de  fila 2*/
+        grid-row-end: 4;/*acaba en la linea de fila 4*/
+    }
+    .item8 {
+        grid-column-end: span 2;/*acaba en la línea de columna 2 pero se fusiona*/
+    }
+</style>
+<div class="notas">
+    <ul>
+        <li><b>grid-column-start:</b>en qué línea de columna empieza el item señalado</li>
+        <li><b>grid-column-end:</b>en qué línea de columna acaba el item señalado</li>
+        <li><b>grid-column:</b>combina las dos anteriores <u>grid-column-star / grid-column-end</u></li>
+        <li><b>grid-row-start:</b>en qué línea de fila empieza el item señalado</li>
+        <li><b>grid-row-end:</b>en qué línea de fila acaba el item señalado</li>
+        <li><b>grid-row:</b>combina las dos anteriores <u>grid-row-star / grid-row-end</u></li>
+    </ul>
+</div>
+<br>
+<figure style="text-align: center;">
+    <figcaption style="color:red; font-weight:bold;">Lineas de cuadrícula de grid</figcaption>
+    <img src="img/grid_lines.png" alt="lineas_grid.png" width="50%;">
+</figure>
+<div class="grid-gap2"><!--padre-->
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div>3</div>
+    <div>4</div>
+    <div class="item5">5</div>
+    <div>6</div>
+    <div>7</div>
+    <div class="item8">8</div>
+</div><!--fin padre-->
+    
+</body>
+</html>

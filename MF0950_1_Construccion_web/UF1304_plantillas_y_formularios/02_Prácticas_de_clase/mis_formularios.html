@@ -28,32 +28,32 @@
 <form name="formulario1" action="/action_page.php" target="_blank" autocomplete="off" method="post" enctype="multipart/form-data">
 <fieldset><!--campo1-->
 <legend>Datos personales</legend>
-	Nombre <br>
+	<label for="nombre">Nombre</label>  <br>
 	<input type="text" name="nombre" required pattern="[A-Za-z^0-9]"><br><!--se permiten letras mayus y minus pero no numeros-->
-	Apellidos <br>
+	<label for="apellidos">Apellidos</label>  <br>
 	<input type="text" name="apellidos" required pattern="[A-Za-z^0-9]"><br><!--se permiten letras mayus y minus pero no numeros-->
 	Dirección <br>
-	Tipo de via 
+	<label for="tipo de via">tipo de via</label>
 	<input type="radio" name="tipo de via" value="calle">calle
 	<input type="radio" name="tipo de via" value="avenida">avenida
 	<input type="radio" name="tipo de via" value="plaza">plaza
 	<input type="radio" name="tipo de via" value="ronda">ronda <br>
-	Nombre de la vía
-	<input type="text" name="vía" required pattern="[A-Za-z^0-9]">
-	Número
+	<label for="via">via</label>
+	<input type="text" name="via" required pattern="[A-Za-z^0-9]">
+	<label for="numero">Número</label>
 	<input type="number" name="numero" minlength="1" pattern="[^A-Z^a-z]"><br><!--no letras-->
-	Letra
+	<label for="letra">Letra</label>
 	<input type="text" name="letra" min="a" max="z" maxlength="1">
-	C.P
+	<label for="cp">cp</label>
 	<input type="number" name="cp" maxlength="5">
-	Ciudad
+	<label for="ciudad">ciudad</label>
 	<select name="ciudad" id="ciudad" size="1">
 		<option value="Madrid">Madrid</option>
 		<option value="Valencia">Valencia</option>
 		<option value="León">León</option>
 		<option value="Cáceres">Cáceres</option>
 	</select>
-	País
+	<label for="pais">País</label>
 	<input list="pais" name="pais">
 		<datalist id="pais">
 		<option value="España">España</option>
@@ -61,25 +61,25 @@
 		<option value="Portugal">Portugal</option>
 		<option value="Italia">Italia</option>
 		</datalist><br>
-	Fecha de nacimiento 
+		<label for="nacimiento">Fecha de nacimiento </label>
 	<input type="date" name="nacimiento" pattern="[^A-Z^a-z]">
 </fieldset><!--fin campo1-->
 <fieldset><!--campo2-->
 	<legend>Datos de contacto</legend>
-	Teléfono
+	<label for="telefono">telefono</label>
 	<input type="tel" name="telefono" required size="9"> <br>
-	Fax
+	<label for="fax">fax</label>
 	<input type="tel" name="fax" size="9"> <br>
-	Correo electrónico
+	<label for="correo">Email</label>
 	<input type="email" name="correo" placeholder="email" required pattern="[.-_A-Za-z0-9]@[.-_A-Za-z0-9]{1-10}"><!--se permiten [.-_A-Za-z0-9] en usuario, @ obligatorio, se permiten [.-_A-Za-z0-9] en dominio y tiene entre 1-10caracteres-->
 </fieldset><!--fin campo2-->
 <fieldset><!--campo3-->
 	<legend>Otros datos</legend>
-	Hijos <br>
-	<input type="checkbox" name="si" value="si">si
+	<label for="hijos">hijos</label><br>
+	<input type="checkbox" name="hijos" value="si">si
 	<input type="number" name="hijos" min="1" placeholder="número de hijos" maxlength="100"><br>
-	<input type="checkbox" name="NO" value="NO">no <br>
-	Estado civil 
+	<input type="checkbox" name="hijos" value="NO">no <br>
+	<label for="estado civil">estado civil</label>
 	<select name="estado civil" size="1">
 		<option value="casado">casado</option>
 		<option value="soltero">soltero</option>
@@ -91,22 +91,27 @@
 </fieldset><!--fin campo3-->
 <fieldset><!--campo4-->
 	<legend>Comentarios</legend>
+	<label for="comentarios"></label>
 	<textarea name="comentarios" rows="10" cols="30" placeholder="Deja tu comentario..."></textarea>
 </fieldset><!--fin campo4-->
 <fieldset><!--campo5-->
 	<legend>Registro</legend>
-	Email
+	<label for="correo">Email</label>
 	<input type="email" name="correo" placeholder="email" required pattern="[.-_A-Za-z0-9]@[.-_A-Za-z0-9]{1-10}"><!--se permiten [.-_A-Za-z0-9] en usuario, @ obligatorio, se permiten [.-_A-Za-z0-9] en dominio y tiene entre 1-10caracteres-->
-	Repetir email
+	<label for="correo">repetir Email</label>
 	<input type="email" name="correo" placeholder="email" required pattern="[.-_A-Za-z0-9]@[.-_A-Za-z0-9]{1-10}"><!--se permiten [.-_A-Za-z0-9] en usuario, @ obligatorio, se permiten [.-_A-Za-z0-9] en dominio y tiene entre 1-10caracteres--> <br>
-	Contraseña
+	<label for="contraseña">contraseña</label>
 	<input type="pasword" name="contraseña" placeholder="****" required pattern="[.-_@#$%&/A-Za-z0-9]" minlength="5" maxlength="20">
-	Repetir contraseña 
+	<label for="contraseña">repetir contraseña</label>
 	<input type="pasword" name="contraseña" placeholder="****" required pattern="[.-_@#$%&/A-Za-z0-9]" minlength="5" maxlength="20">
 </fieldset><!--fin campo5-->
+<label for="verificar"></label>
 <input type="checkbox" name="verificar" value="check">No soy un robot <br>
+<label for="submit"></label>
 <input type="submit" name="submit" value="Submit"> <br>
-<input type="button" onclick="alert('¡GRACIAS POR REGISTRARTE')" value="Pulsa aqui">
+<input type="button" name="button" onclick="alert('¡GRACIAS POR REGISTRARTE')" value="Pulsa aqui">
+<label for="submit"></label>
+<input type="button" name="button" onclick="alert('¡GRACIAS POR REGISTRARTE')" value="Pulsa aqui">
 </form>
 </body>
 </html>
