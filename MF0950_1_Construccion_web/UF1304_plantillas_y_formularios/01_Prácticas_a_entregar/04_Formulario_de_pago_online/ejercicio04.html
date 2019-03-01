@@ -29,16 +29,17 @@
 <div class="datos"><!--datos-->
 <form name="datos" action="/action_page.php" method="POST" target="_blank" enctype="multipart/form-data" autocomplete="off">
 <legend>dirección de envio</legend>
-    <img src="img/user.png" alt="nombre">Nombre completo <br> 
+    
+    <label for="nombre"><img src="img/user.png" alt="nombre">Nombre completo</label><br>
     <input type="text" name="nombre" placeholder="Juan Cosé Gómez Martín" pattern="[A-Za-z]" required><br>
 
-    <img src="img/mail.png" alt="mail">Email <br> 
+    <label for="correo"><img src="img/mail.png" alt="mail">Email</label> <br> 
     <input type="email" name="correo" placeholder="correo@dominio.com" required pattern="[.-_A-Za-z0-9]@[.-_A-Za-z0-9]{1-10}" required><!--se permiten [.-_A-Za-z0-9] en usuario, @ obligatorio, se permiten [.-_A-Za-z0-9] en dominio y tiene entre 1-10caracteres--><br>
 
-    <img src="img/contactcard.png" alt="direccion">Dirección <br>
+    <label for="direccion"><img src="img/contactcard.png" alt="direccion">Dirección</label> <br>
     <input type="text" name="direccion" placeholder="Avenida de Europa, 15" required><br>
 
-    <img src="img/building.png" alt="ciudad">Ciudad <br>
+    <label for="ciudad"><img src="img/building.png" alt="ciudad">Ciudad</label> <br>
     <select name="ciudad" id="ciudad" size="1">
             <option value="Madrid">Madrid</option>
             <option value="Valencia">Valencia</option>
@@ -47,7 +48,7 @@
     </select><br>
 <div class="alinear"><!--alinear-->
 <div style="margin-right:5px;"><!--estado-->
-    Estado <br>   
+    <label for="estado">Estado</label> <br>   
     <select name="estado" id="estado" size="1">
 		<option value="ES">ES</option>
 		<option value="FR">FR</option>
@@ -56,7 +57,7 @@
     </select><br>
 </div><!--fin estado-->
 <div><!--cp-->
-    Código postal <br>
+    <label for="cp">Código postal</label> <br>
     <input type="text" name="cp" pattern="[0-9]{5}" placeholder="25024">
 </div><!--cp-->
 </div><!--alinear-->
@@ -64,16 +65,16 @@
 
 <div><!--pasarela de pago-->
 <legend>Pago</legend>
-    Selecciona una tarjeta<br>
+    <label for="pago">Selecciona una tarjeta</label> <br>
     <input type="radio" name="pago" value="1" required><img src="img/visa.png" alt="visa">
     <input type="radio" name="pago" value="2" required><img src="img/mastercard.png" alt="mastercard">
     <input type="radio" name="pago" value="3" required><img src="img/american-express.png" alt="american-express">
     <input type="radio" name="pago" value="4" required><img src="img/discover.png" alt="discover"><br>
-    Titular de la tarjeta <br>
+    <label for="nombre">Titular de la tarjeta</label>  <br>
     <input type="text" name="nombre" placeholder="Juan Cosé Gómez Martín" pattern="[A-Za-z]" required><br>
-    Número de tarjeta <br>
+    <label for="numero">Número de tarjeta</label>  <br>
     <input type="text" name="numero" placeholder="000-000-000-000" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required><br>
-    Exp Mes <br>
+    <label for="mes">Exp Mes</label>  <br>
     <select name="mes" id="mes" size="1" required>
             <option value="Enero">Enero</option>
             <option value="Febrero">Febrero</option>
@@ -90,7 +91,7 @@
     </select><br>
 <div class="alinear"><!--alinear-->
 <div><!--año-->
-    Exp Año <br>
+    <label for="año">Exp Año</label>  <br>
     <select name="año" id="año" size="1" required>
             <option value="2025">2025</option>
             <option value="2024">2024</option>
@@ -102,16 +103,18 @@
     </select>
 </div><!--fin año-->
 <div><!--ccv-->
-    CCV <br>
+    <label for="ccv">CCV</label>  <br>
     <input type="text" name="ccv" placeholder="000" pattern="[0-9]{3}" required>
 </div><!--ccv-->
 </div><!--alinear-->
 </div><!--fin pasarela de pago-->
 
 <div class="pie"><!--pie-->
+    <label for="verificar"></label>
     <input type="checkbox" name="verificar" value="check">Acepto los terminos y <a href="#">condiciones de privacidad</a> 
     <br>
     <br>
+    <label for="submit"></label>
     <input type="submit" name="submit" value="Continuar con el pago">
 </div><!--pie-->
 </form>

@@ -24,24 +24,27 @@
 </head>
 
 <body>
-<h1>Formulario de contacto</h1>
+
 <div class="formulario">
 <form name="formulario_de_contacto" action="/action_page.php" target="_blank" method="post" enctype="multipart/form-data" autocomplete="off">
-	<legend class="legend">Nombre<sup>*</sup></legend>
+	<legend><h1>Formulario de contacto</h1></legend>
+	<label for="nombre" class="legend">Nombre<sup>*</sup></label>
 		<input type="text" name="nombre" pattern="[A-Za-z^0-9]" placeholder="Nombre" required class="campos">
-	<legend class="legend">Apellidos<sup>*</sup></legend>
+	<label for="apellidos" class="legend">Apellidos<sup>*</sup></label>
 		<input type="text" name="apellidos" pattern="[A-Za-z^0-9]" placeholder="Apellidos" required class="campos">
-	<legend class="legend">Teléfono<sup>*</sup></legend>
+	<label for="telefono" class="legend">Teléfono<sup>*</sup></label>
 		<input type="tel" name="telefono" pattern="[^Â-Z^a-z]" maxlength="9" placeholder="Tu teléfono" required class="campos">
-	<legend class="legend">Correo electrónico<sup>*</sup></legend>
+	<label for="mail" class="legend">Correo electrónico<sup>*</sup></label>
 		<input type="email" name="mail" pattern="[.-_A-Za-z0-9]@[.-_A-Za-z0-9]{1-10}" placeholder="Tu correo electrónico" required class="campos"><!--se permiten [.-_A-Za-z0-9] en usuario, @ obligatorio, se permiten [.-_A-Za-z0-9] en dominio y tiene entre 1-10caracteres-->
-	<legend class="legend">Consulta<sup>*</sup></legend>
+	<label for="consulta" class="legend">Consulta<sup>*</sup></label>
 		<textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Tu consulta..." required class="campos"></textarea> 
 	<br>
 	<br>
+	<label for="acepto"></label>
 	<input type="checkbox" name="acepto" value="check" required>Acepto los términos y <a href="#">condiciones de privacidad</a>
 	<br>
 	<br>
+	<label for="enviar"></label>
 	<input type="submit" name="enviar" value="Enviar">
 </form>
 </div>

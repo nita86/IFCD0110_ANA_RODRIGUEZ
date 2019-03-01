@@ -34,20 +34,23 @@
 	</div>
 	<br>
 	<div class="contenido">
-	<legend class="legend">Usuario</legend>
+	<label for="usuario" class="legend">Usuario</label>
 		<input type="text" name="usuario" placeholder="Entar Usuario" pattern="[A-Za-z0-9+-*/-.,%&$]" required class="campos">
 	<br>
-	<legend class="legend">Contraseña</legend>
+	<label for="contraseña" class="legend">Contraseña</label>
 		<input type="pasword" name="contraseña" placeholder="Entrar Contraseña" required pattern="[.-_@#$%&/A-Za-z0-9]" minlength="5" maxlength="20" class="campos">
 	<br>
 	<br>
+	<label for="enviar"></label>
 	<input type="submit" name="enviar" value="Iniciar sesión" required class="iniciar">
 	<br>
 	<br>
+	<label for="acepto"></label>
 	<input type="checkbox" name="acepto" value="check" checked required>Recordarme <br>
 	<br>
 	</div>
 	<div class="pie">
+	<label for="registro"></label>
 	<input type="submit" name="registro" value="Registrarse" class="registro">
 	<br>
 	<p>¿Has olvidado la <a href="#">contraseña</a>?</p>
