@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>transformaciones 2D</title>
+                
+<meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+<meta name="title" content="Confección y publicación de páginas web">
+<meta name="keywords" content="Diseño de páginas web con HTML, CSS, JavaScript">
+<meta name="author" content="Ana Rodríguez">
+                
+<link rel="icon" type="image/png" href="img/harry_potter_imagens_(7)_opt.png">
+<link rel="icon" type="image/gif" href="img/harry_potter_imagens_(7)_opt.gif">
+<link rel="icon" type="image/vnd.microsoft.icon" href="img/harry_potter_imagens_(7)_opt.ico">
+                    
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="css/ejercicio02.css">
+                    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+                
+<!--<meta http-equiv="Refresh" content="5">-->
+                
+                
+</head>
+<body>
+<h1>Transformaciones 2D</h1>
+<p>En este capítulo aprenderá acerca de los siguientes métodos de transformación 2D:</p>
+<ul>
+    <li>El <span>translate()</span> se mueve un elemento desde su posición actual (de acuerdo con los parámetros dados para el eje X y el eje Y).</li>
+    <li>El <span>rotate()</span> hace girar un sentido horario (por defecto) o antihorario según un grado dado.</li>
+    <li>Las <span>scale()</span> aumenta o disminuye el tamaño de un elemento (de acuerdo con los parámetros dados para la anchura y altura).</li>
+    <li>El <span>skewX()</span> deforma un elemento a lo largo del eje X por el ángulo dado.</li>
+    <li>El <span>skewY()</span> deforma un elemento a lo largo del eje Y por el ángulo dado.</li>
+    <li>El <span>skew()</span> deforma un elemento a lo largo de la X y el eje Y por los ángulos dados.</li>
+    <li>El <span>matrix()</span> combina todo el 2D métodos de transformada en una sola.</li>
+</ul>
+<img src="img/css-transforms.png" alt="grafico_transformaciones">
+
+<div class="translate">translate</div>
+    <br><br><br><br><br><br>
+<div class="rotate">rotate</div>
+    <br><br><br><br><br><br>
+<div class="scale">scale</div>
+    <br><br><br><br><br><br>
+<div class="skewX">skewX</div>
+    <br><br><br><br><br><br>
+<div class="skewY">skewY</div>
+    <br><br><br><br><br><br>
+<div class="skew">skew</div>
+    <br><br><br><br><br><br>
+<div class="matrix">matrix</div>
+    <br><br><br><br><br><br>
+
+<style>
+.translate {
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    border: 1px solid blue;
+    color: white;
+    font-size: 1.5em;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+.translate:hover {
+    width: 300px;
+    height: 100px;
+    color: black;
+    font-size: 1.5em;
+    padding-left: 10px;
+    margin-left: 20px;
+    background-color: yellow;
+    border: 1px solid black;
+    /*500px a la derecha*/
+    -ms-transform: translate(500px); /* IE 9 */
+    -webkit-transform: translate(500px); /* Safari */
+    transform: translate(500px); /* Standard syntax */
+    }
+/*-----*/
+.rotate {
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    border: 1px solid blue;
+    color: white;
+    font-size: 1.5em;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+.rotate:hover {
+    width: 300px;
+    height: 100px;
+    color: black;
+    font-size: 1.5em;
+    padding-left: 10px;
+    margin-left: 20px;
+    background-color: yellow;
+    border: 1px solid black;
+    /*va a girar 200 grados en sentido del reloj. Si quisieramos en sentido contrario hay que poner -20deg*/
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(20deg); /* Standard syntax */
+    }
+/*-----*/
+.scale {
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    border: 1px solid blue;
+    color: white;
+    font-size: 1.5em;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+.scale:hover {
+    width: 300px;
+    height: 100px;
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    padding-left: 10px;
+    margin-left: 20px;
+    background-color: yellow;
+    border: 1px solid black;
+    /*aumenta 2 veces la anchura y 3 la altura */
+    -ms-transform: scale(2,3); /* IE 9 */
+    -webkit-transform: scale(2,3); /* Safari */
+    transform: scale(2,3); /* Standard syntax */
+    }
+/*-----*/
+.skewX {
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    border: 1px solid blue;
+    color: white;
+    font-size: 1.5em;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+.skewX:hover {
+    width: 300px;
+    height: 100px;
+    color: black;
+    font-size: 1.5em;
+    padding-left: 10px;
+    margin-left: 20px;
+    background-color: yellow;
+    border: 1px solid black;
+    /*deforma 20deg hacia la izq. Si quisieramos hacia la derecha habria que poner -20deg*/
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); /* Safari */
+    transform: skewX(20deg);
+    }
+/*-----*/
+.skewY {
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    border: 1px solid blue;
+    color: white;
+    font-size: 1.5em;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+.skewY:hover {
+    width: 300px;
+    height: 100px;
+    color: black;
+    font-size: 1.5em;
+    padding-left: 10px;
+    margin-left: 20px;
+    background-color: yellow;
+    border: 1px solid black;
+    /*deforma 20deg hacia abajo. Si quisieramos hacia arriba habría que poner -20deg*/
+    -ms-transform: skewY(20deg); /* IE 9 */
+    -webkit-transform: skewY(20deg); /* Safari */
+    transform: skewY(20deg);
+    }
+/*-----*/
+.skew {
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    border: 1px solid blue;
+    color: white;
+    font-size: 1.5em;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+.skew:hover {
+    width: 300px;
+    height: 100px;
+    color: black;
+    font-size: 1.5em;
+    padding-left: 10px;
+    margin-left: 20px;
+    background-color: yellow;
+    border: 1px solid black;
+    /*combina las anteriores 20deg ejeX 10deg ejeY*/
+    -ms-transform: skew(20deg, 10deg); /* IE 9 */
+    -webkit-transform: skew(20deg, 10deg); /* Safari */
+    transform: skew(20deg, 10deg);
+    }
+/*-----*/
+.matrix {
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    border: 1px solid blue;
+    color: white;
+    font-size: 1.5em;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+.matrix:hover {
+    width: 300px;
+    height: 100px;
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    padding-left: 10px;
+    margin-left: 20px;
+    background-color: yellow;
+    border: 1px solid black;
+    /*combina todos los anteriores
+        scale (), skewY (), skewX (), scale (), translateX (), translateY ()*/
+    -ms-transform: matrix(2, -0.3, 0, 2, 10, 10); /* IE 9 */
+    -webkit-transform: matrix(2, -0.3, 0, 2, 10, 10); /* Safari */
+    transform: matrix(2, -0.3, 0, 2, 510, 10);
+    }
+
+</style>
+
+
+
+
+
+
+
+    
+</body>
+</html>
