@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+        <meta charset="UTF-8">
+        <title>Lenguaje HTML</title>
+    
+        <meta name="description" content="ejercicios examen">
+        <meta name="title" content="lenguaje HTML">
+        <meta name="keywords" content="examen, HTML, css">
+        <meta name="author" content="Ana Rodríguez">
+    
+        <link rel="icon" type="image/png" href="../img/html5_png.png" sizes="16x16">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="../img/html5.ico.ico" sizes="16x16">
+    
+        <link rel="stylesheet" href="../css/examen.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+
+</head>
+<body>
+        <header>
+                <div class="navegacion"><!--menu navigacion-->
+                <nav>
+                    <ul>
+                        <li> <a href="../index.html">home</a> </li>
+                        <li> <a href="lenguaje-html.html">html</a> </li>
+                        <li> <a href="lenguaje-css.html">css</a> </li>
+                        <li> <a href="lenguaje-js.html">js</a> </li>
+                    </ul>
+                </nav>
+            <hr>
+                <img src="../img/banner-html.jpeg" alt="logo_html.jpeg">
+            </div><!--fin menu navigacion-->
+            </header>
+
+    <main>
+        <section>
+        <h2 class="h2">Lenguaje de marcado</h2>
+        <br>
+        <article class="texto">
+            <h3>Lenguaje HTML</h3>
+            <p><strong>HTML</strong>, sigla en inglés de <em><b>H</b>yperText <b>M</b>arkup <b>L</b>anguage</em> <u>(lenguaje de marcas de hipertexto)</u>, hace referencia al lenguaje de marcado para la elaboración de páginas web. <em>Es un estándar que sirve de referencia</em> del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado <strong>código HTML</strong>) para la definición de contenido de una página web, como texto, imágenes, videos, <del>juegos</del>, entre otros.</p>
+        </article>
+        <br>
+        <article class="texto">
+            <p><strong>HTML</strong>, es un estándar a cargo del <em><b>W</b>orld <b>W</b>ide <b>W</b>eb <b>C</b>onsortium</em> <u>(W3C®)</u>WWW, organización dedicada a la estandarización de casi todas las tecnologías ligadas a la web, sobre todo en lo referente a su escritura e interpretación. </p>
+            <br>
+            <p><strong>Se considera el lenguaje web más importante</strong> siendo su invención crucial en la aparición, desarrollo y expansión de la <b>W</b>orld <b>W</b>ide <b>W</b>eb (<del>WWW</del> <u>Red Mundial Web</u>). Es el estándar que se ha impuesto en la visualización de páginas web y es el que todos los navegadores actuales han adoptado.</p>
+        </article>   
+        </section>
+        <hr>
+        <section>
+            <h2 class="h2">Estándar HTML</h2>
+            <br>
+            <div class="cita">
+            <blockquote><q>El lenguaje <abbr title="Hyper Text Marckup Languaje">HTML</abbr> basa su filosofía de desarrollo en la diferenciación.</q></blockquote>
+            </div>
+            <br>
+            <div class="texto">
+            <ul>
+                <li><strong><em>Al añadir un elemento externo a la página</em></strong> (imagen, vídeo, script, entre otros.), este no se incrusta directamente en el código de la página, sino que se hace una referencia a la ubicación de dicho elemento mediante etiquetas de texto. De este modo, la página web contiene solamente texto mientras que recae en el navegador web (interpretador del código) la tarea de unir todos los elementos y visualizar la página final.</li>
+                <li><strong><em>Al ser un estándar</em>, <abbr title="Hyper Text Marckup Languaje">HTML</abbr></strong> busca ser un lenguaje que permita que cualquier página web escrita en una determinada versión, pueda ser interpretada de la misma forma (estándar) por cualquier navegador web actualizado.</li>
+            </ul>
+            </div>
+            <br>
+            <div class="cita2">
+            <p><cite>"Sólo tuve que tomar la idea de hipertexto y conectarlo con las ideas de TCP y DNS y — ¡et voilà! — la World Wide Web.<span>"</span> <strong><em>Tim Berners-Lee, creador de la Web</em></strong></cite></p>
+            </div>
+        </section>
+
+        <aside><!--tabla-->
+            <table class="tabla">
+                <thead><!--encabezado-->
+                    <tr>
+                        <th colspan="5">Navegadores web</th>
+                    </tr>
+                </thead><!--fin encabezado-->
+                <tbody>
+                    <tr><!--img-->
+                        <td><img alt="chrome.gif" src="../img/icono-chrome.gif"></td>
+                        <td><img alt="firefox.gif" src="../img/icono-firefox.gif"></td>
+                        <td><img alt="explorer.gif" src="../img/icono-internet-explorer.gif"></td>
+                        <td><img alt="opera.gif" src="../img/icono-opera.gif"></td>
+                        <td><img alt="safari.gif" src="../img/icono-safari.gif"></td>
+                    </tr><!--fin img-->
+                    <tr><!--enlaces-->
+                        <td><a href="https://www.google.es/">Chrome</a></td>
+                        <td><a href="https://www.mozilla.org/es-ES/">Firefox</a></td>
+                        <td><a href="https://www.microsoft.com/es-es/download/internet-explorer.aspx">Explorer</a></td>
+                        <td><a href="https://www.opera.com/es">Opera</a></td>
+                        <td><a href="https://safari.uptodown.com/windows">Safari</a></td>
+                    </tr><!--fin enlaces-->
+                </tbody>
+            </table>
+        </aside><!--fin tabla-->
+        <br>
+        <aside class="formulario"><!--formulario-->
+            <form action="mailto:correo@correo.com" method="POST" target="_blank" autocomplete="off" enctype="multipart/form-data">
+                <legend>Deja tu comentario</legend>
+                <label for="nombre"></label>    
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre y apellidos" required pattern="[^0-9]">
+                <br>
+                <label for="correo"></label> 
+                <input type="email" name="correo" placeholder="Escribe tu email" required pattern="[.-_A-Za-z0-9]@[.-_A-Za-z0-9]{1-10}">
+                <br>
+                <label for="telefono"></label> 
+                <input type="tel" name="telefono" required size="9" placeholder="Escribe tu telefono"> 
+                <br>
+                <label rel="texto"></label> 
+                <textarea name="texto" placeholder="Deja tu comentario" cols="30" rows="23"></textarea>
+                <br>
+                <label for="verificar"></label>
+                <input type="checkbox" name="verificar" value="check">Acepto los términos y condiciones.
+                <br>
+                <label for="enviar"></label> 
+                <input type="submit" name="enciar" value="Enviar">
+            </form>
+        </aside><!--fin formulario-->
+    </main>
+
+    <footer class="pie"><!--pie-->
+        <a href="#">Aviso legal</a> &#124; <a href="#">Politica de cookes</a> &#124; <a href="#">Politica de privacidad</a> &#124; <a href="#">Accesibilidad</a>
+    </footer><!--fin pie-->
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+        <meta charset="UTF-8">
+        <title>Lenguaje JS</title>
+    
+        <meta name="description" content="examen">
+        <meta name="title" content="examen">
+        <meta name="keywords" content="examen">
+        <meta name="author" content="Ana Rodríguez">
+    
+        <link rel="icon" type="image/png" href="../img/html5_png.png" sizes="16x16">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="../img/html5.ico.ico" sizes="16x16">
+    
+        <link rel="stylesheet" href="../css/examen.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+
+</head>
+<body>
+        <header>
+                <div class="navegacion"><!--menu navigacion-->
+                <nav>
+                    <ul>
+                        <li> <a href="../index.html">home</a> </li>
+                        <li> <a href="lenguaje-html.html">html</a> </li>
+                        <li> <a href="lenguaje-css.html">css</a> </li>
+                        <li> <a href="lenguaje-js.html">js</a> </li>
+                    </ul>
+                </nav>
+            <hr>
+                <img src="../img/banner-js.jpeg" alt="logo_js.jpeg">
+            </div><!--fin menu navigacion-->
+            </header>
+
+    <main>
+        <section>
+            <h2 class="h2">Lenguaje de Programación</h2>
+            <br>
+            <article class="texto">
+                <h3>Lenguaje JS</h3>
+                <p><strong>JS</strong>, siglas en inglés de <em><b>J</b>ava<b>S</b>cript</em>, <u>(en español "Guión Java")</u>, es un lenguaje de programación orientado a objetos Se utiliza principalmente del lado del cliente (client-side), implementado como parte de un navegador web. permitiendo mejoras en la interfaz de usuario y páginas web dinámicas. JavaScript se diseñó con una sintaxis similar a C, aunque adopta nombres y convenciones del lenguaje de programación Java. Sin embargo, <strong>Java</strong> y <strong>JavaScript</strong> <em>tienen semánticas y propósitos diferentes.</em></p>
+            </article>
+            <br>
+            <article class="texto">
+                <p><strong>Todos los navegadores modernos</strong> interpretan el código JavaScript integrado en las páginas web. Para interactuar con una página web se provee al lenguaje JavaScript de una implementación del Document Object Model (DOM).</p>
+                <br>
+                <p><strong>Se utiliza en páginas web HTML</strong> para realizar operaciones en el marco de la aplicación cliente, sin acceso a funciones del servidor. Actualmente es ampliamente utilizado para enviar y recibir información introducida por el usuario a través del navegador. JavaScript interpreta en el agente de usuario al mismo tiempo que las sentencias van descargándose junto con el código HTML.</p>
+            </article>   
+            </section>
+            <hr>
+            <section>
+                <h2 class="h2">Estándar JS</h2>
+                <br>
+                <div class="cita">
+                <blockquote><q>La W3C® diseñó el estándar Document Object Model (DOM).</q></blockquote>
+                </div>
+                <br>
+                <div class="texto">
+                <ul>
+                    <li><strong>ECMAScript</strong> es una especificación de lenguaje de programación publicada por ECMA International. El desarrollo empezó en 1996 y estuvo basado en el popular lenguaje JavaScript propuesto como estándar por Netscape Communications Corporation. Actualmente está aceptado como el estándar ISO 16262.</li>
+                    <li><strong>La mayoría de navegadores de Internet</strong> incluyen una implementación del estándar ECMAScript, al igual que un acceso al Document Object Model para manipular páginas web. JavaScript está implementado en la mayoría de navegadores, Internet Explorer de Microsoft usa JScript.</li>
+                </ul>
+                </div>
+                <br>
+                <div class="cita2">
+                <p><cite>"La especificación estándar del lenguaje inicialmente se llamaba Mocha, luego LiveScript, y finalmente Javascript.." <strong><u>Brendan Eich, empleado en Netscape</u></strong></cite></p>
+                </div>
+            </section>
+
+        <aside><!--tabla-->
+            <table class="tabla">
+                <thead><!--encabezado-->
+                    <tr>
+                        <th colspan="5">Navegadores web</th>
+                    </tr>
+                </thead><!--fin encabezado-->
+                <tbody>
+                    <tr><!--img-->
+                        <td><img alt="chrome.gif" src="../img/icono-chrome.gif"></td>
+                        <td><img alt="firefox.gif" src="../img/icono-firefox.gif"></td>
+                        <td><img alt="explorer.gif" src="../img/icono-internet-explorer.gif"></td>
+                        <td><img alt="opera.gif" src="../img/icono-opera.gif"></td>
+                        <td><img alt="safari.gif" src="../img/icono-safari.gif"></td>
+                    </tr><!--fin img-->
+                    <tr><!--enlaces-->
+                        <td><a href="https://www.google.es/">Chrome</a></td>
+                        <td><a href="https://www.mozilla.org/es-ES/">Firefox</a></td>
+                        <td><a href="https://www.microsoft.com/es-es/download/internet-explorer.aspx">Explorer</a></td>
+                        <td><a href="https://www.opera.com/es">Opera</a></td>
+                        <td><a href="https://safari.uptodown.com/windows">Safari</a></td>
+                    </tr><!--fin enlaces-->
+                </tbody>
+            </table>
+        </aside><!--fin tabla-->
+        <br>
+        <aside class="formulario"><!--formulario-->
+            <form action="mailto:correo@correo.com" method="POST" target="_blank" autocomplete="off" enctype="multipart/form-data">
+                <legend>Deja tu comentario</legend>
+                <label for="nombre"></label>    
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre y apellidos" required pattern="[^0-9]">
+                <br>
+                <label for="correo"></label> 
+                <input type="email" name="correo" placeholder="Escribe tu email" required pattern="[.-_A-Za-z0-9]@[.-_A-Za-z0-9]{1-10}">
+                <br>
+                <label for="telefono"></label> 
+                <input type="tel" name="telefono" required size="9" placeholder="Escribe tu telefono"> 
+                <br>
+                <label rel="texto"></label> 
+                <textarea name="texto" placeholder="Deja tu comentario" cols="30" rows="23"></textarea>
+                <br>
+                <label for="verificar"></label>
+                <input type="checkbox" name="verificar" value="check">Acepto los términos y condiciones.
+                <br>
+                <label for="enviar"></label> 
+                <input type="submit" name="enciar" value="Enviar">
+            </form>
+        </aside><!--fin formulario-->
+    </main>
+
+    <footer class="pie"><!--pie-->
+        <a href="#">Aviso legal</a> &#124; <a href="#">Politica de cookes</a> &#124; <a href="#">Politica de privacidad</a> &#124; <a href="#">Accesibilidad</a>
+    </footer><!--fin pie-->
+       
+</body>
+</html>

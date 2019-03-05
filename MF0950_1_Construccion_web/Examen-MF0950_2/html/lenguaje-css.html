@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+        <meta charset="UTF-8">
+        <title>Lenguaje CSS</title>
+    
+        <meta name="description" content="ejercicios examen">
+        <meta name="title" content="lenguaje CSS">
+        <meta name="keywords" content="examen, HTML, css">
+        <meta name="author" content="Ana Rodríguez">
+    
+        <link rel="icon" type="image/png" href="../img/html5_png.png" sizes="16x16">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="../img/html5.ico.ico" sizes="16x16">
+    
+        <link rel="stylesheet" href="../css/examen.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+
+</head>
+<body>
+        <header>
+                <div class="navegacion"><!--menu navigacion-->
+                <nav>
+                    <ul>
+                        <li> <a href="../index.html">home</a> </li>
+                        <li> <a href="lenguaje-html.html">html</a> </li>
+                        <li> <a href="lenguaje-css.html">css</a> </li>
+                        <li> <a href="lenguaje-js.html">js</a> </li>
+                    </ul>
+                </nav>
+            <hr>
+                <img src="../img/banner-css3.jpg" alt="logo_css3.jpg">
+            </div><!--fin menu navigacion-->
+            </header>
+
+    <main>
+        <section>
+            <h2 class="h2">Hoja de Estilos en Cascada</h2>
+            <br>
+            <article class="texto">
+                <h3>Lenguaje CSS</h3>
+                <p><strong>CSS</strong>, siglas en inglés de <em><b>C</b>ascading <b>S</b>tyle <b>S</b>heets</em>, <u>(en español "Hojas de estilo en cascada")</u>, es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado. Es usado para establecer el <strong><em></em>diseño visual de los documentos web,</strong> e interfaces de usuario escritas en <abbr title="Hyper Text Marckup Languaje">HTML</abbr>  o <abbr title="eXtensible HyperText Markup Language">XHTML</abbr>. Junto con HTML y JavaScript, CSS es una tecnología usada por muchos sitios web para crear páginas visualmente atractivas, interfaces de usuario para aplicaciones web.</p>
+                </article>
+                <br>
+                <article class="texto">
+                    <p>La especificación <strong>CSS</strong> es mantenida por el <em><b>W</b>orld <b>W</b>ide <b>W</b>eb <b>C</b>onsortium</em> <u>(W3C®)</u> WWW, organización dedicada a la estandarización del MIME type text/css, registrado para su uso descrito en el RFC 23185.</p>
+                    <br>
+                    <p><strong>CSS busca mejorar la accesibilidad del documento</strong>, provee más flexibilidad y control en la especificación de características presentacionales, permitiendo que varios documentos <b>HTML</b> compartan un mismo estilo usando una sola hoja de estilos separada en un archivo .css. Con ello, se reduce la complejidad y la repetición de código en la estructura del documento.</p>
+                </article>   
+                </section>
+                <hr>
+                <section>
+                    <h2 class="h2">Estándar CSS</h2>
+                    <br>
+                    <div class="cita">
+                    <blockquote><q>CSS separa el contenido de un documento de la forma de presentación.</q></blockquote>
+                    </div>
+                    <br>
+                    <div class="texto">
+                    <ul>
+                        <li><strong>La separación del formato y el contenido</strong> hace posible presentar el mismo documento marcado en diferentes estilos para mostrar una página web de manera distinta dependiendo del tamaño de la pantalla o tipo de dispositivo.</li>
+                        <li><strong>La especificación CSS</strong> describe un esquema prioritario para determinar qué reglas de estilo se aplican si más de una regla coincide para un elemento en particular. Estas reglas son aplicadas con un sistema llamado de cascada, de modo que las prioridades son calculadas y asignadas a las reglas.</li>
+                    </ul>
+                    </div>
+                    <br>
+                    <div class="cita2">
+                    <p><cite>"Cada navegador web usa un motor de renderizado, el soporte de CSS no es exactamente igual en ninguno de ellos.." <strong><u>Håkon Wium Lie, CTO de la compañía Opera Software y cocreador del estándar CSS</u></strong></cite></p>
+                    </div>
+                </section>
+
+        <aside><!--tabla-->
+            <table class="tabla">
+                <thead><!--encabezado-->
+                    <tr>
+                        <th colspan="5">Navegadores web</th>
+                    </tr>
+                </thead><!--fin encabezado-->
+                <tbody>
+                    <tr><!--img-->
+                        <td><img alt="chrome.gif" src="../img/icono-chrome.gif"></td>
+                        <td><img alt="firefox.gif" src="../img/icono-firefox.gif"></td>
+                        <td><img alt="explorer.gif" src="../img/icono-internet-explorer.gif"></td>
+                        <td><img alt="opera.gif" src="../img/icono-opera.gif"></td>
+                        <td><img alt="safari.gif" src="../img/icono-safari.gif"></td>
+                    </tr><!--fin img-->
+                    <tr><!--enlaces-->
+                        <td><a href="https://www.google.es/">Chrome</a></td>
+                        <td><a href="https://www.mozilla.org/es-ES/">Firefox</a></td>
+                        <td><a href="https://www.microsoft.com/es-es/download/internet-explorer.aspx">Explorer</a></td>
+                        <td><a href="https://www.opera.com/es">Opera</a></td>
+                        <td><a href="https://safari.uptodown.com/windows">Safari</a></td>
+                    </tr><!--fin enlaces-->
+                </tbody>
+            </table>
+        </aside><!--fin tabla-->
+        <br>
+        <aside class="formulario"><!--formulario-->
+            <form action="mailto:correo@correo.com" method="POST" target="_blank" autocomplete="off" enctype="multipart/form-data">
+                <legend>Deja tu comentario</legend>
+                <label for="nombre"></label>    
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre y apellidos" required pattern="[^0-9]">
+                <br>
+                <label for="correo"></label> 
+                <input type="email" name="correo" placeholder="Escribe tu email" required pattern="[.-_A-Za-z0-9]@[.-_A-Za-z0-9]{1-10}">
+                <br>
+                <label for="telefono"></label> 
+                <input type="tel" name="telefono" required size="9" placeholder="Escribe tu telefono"> 
+                <br>
+                <label rel="texto"></label> 
+                <textarea name="texto" placeholder="Deja tu comentario" cols="30" rows="23"></textarea>
+                <br>
+                <label for="verificar"></label>
+                <input type="checkbox" name="verificar" value="check">Acepto los términos y condiciones.
+                <br>
+                <label for="enviar"></label> 
+                <input type="submit" name="enciar" value="Enviar">
+            </form>
+        </aside><!--fin formulario-->
+    </main>
+
+    <footer class="pie"><!--pie-->
+        <a href="#">Aviso legal</a> &#124; <a href="#">Politica de cookes</a> &#124; <a href="#">Politica de privacidad</a> &#124; <a href="#">Accesibilidad</a>
+    </footer><!--fin pie-->
+       
+</body>
+</html>
