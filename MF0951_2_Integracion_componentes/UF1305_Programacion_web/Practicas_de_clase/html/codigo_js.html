@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<meta http-equiv="Refresh" content="30">
+	<!--<meta http-equiv="Refresh" content="30">-->
     <title>Código JavaScript</title>
 
 <!-- etiquetas que dan informacion adicional para el buscador -->
@@ -44,16 +44,16 @@
             &lt;html&gt;<br>
             &lt;head&gt;<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function myFunction() { <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("demo").innerHTML ="Paragraph changed.";<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function mifuncion() { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("demostracion").innerHTML ="parrafo cambiado.";<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&gt;<br>
             &lt;/head&gt;<br>
         &lt;body&gt;<br>
 
             &lt;h1&gt;A Web Page&lt;/h1&gt;<br>
-            &lt;p id="demo"&gt;A Paragraph&lt;/p&gt;<br>
-            &lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;<br>
+            &lt;p id="demostracion"&gt;A Paragraph&lt;/p&gt;<br>
+            &lt;button type="button" onclick="mifuncion()"&gt;Try it&lt;/button&gt;<br>
 
         &lt;/body&gt;<br>
         &lt;/html&gt;<br>
@@ -66,12 +66,12 @@
             &lt;html&gt;<br>
             &lt;body&gt; <br>
             &lt;h1&gt;A Web Page&lt;/h1&gt;<br>
-                &lt;p id="demo"&gt;A Paragraph&lt;/p&gt;<br>
-                    &lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;<br>
+                &lt;p id="demostracion"&gt;A Paragraph&lt;/p&gt;<br>
+                    &lt;button type="button" onclick="mifuncion()"&gt;Try it&lt;/button&gt;<br>
 
                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function myFunction() {<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function mifuncion() {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("demostracion").innerHTML = "parrafo cambiado.";<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&gt;<br>
 
@@ -81,15 +81,18 @@
     </div>
     <div class="col-12 shadow-lg p-3 mb-5 bg-white rounded"><!--hijo3-->
         <p class="text-primary font-weight-bold">Ejemplo: en archivo externo .js</p>
-        <p>function myFunction() {
-            document.getElementById("demo").innerHTML = "Paragraph changed.";
-           }</p>
+        <p id="demostracion">function mifuncion() { <br>
+            &nbsp;&nbsp;&nbsp;document.getElementById("demostracion").style.color = "red";<br>
+            &nbsp;&nbsp;&nbsp;document.getElementById("demostracion").innerHTML = "Chanchan";<br>
+            &nbsp;&nbsp;&nbsp;}
+        </p>
+        <button type="button" onclick="mifuncion()">Click</button>
     </div>
     <div class="col-12 shadow-lg p-3 mb-5 bg-white rounded"><!--hijo4-->
         <p class="text-primary font-weight-bold">Ejemplo: JS en dentro de una etiqueta HTML</p>
         <p><code class="text-dark">
-            &lt;p id="demo1"&gt;JavaScript puede cambiar el contenido HTML&lt;/p&gt;<br>
-            &lt;button type="button" onclick="document.getElementById('demo1').innerHTML='Hola JavaScript'"&gt;Pulsa aqui&lt;/button&gt;
+            &lt;p id="demostracion1"&gt;JavaScript puede cambiar el contenido HTML&lt;/p&gt;<br>
+            &lt;button type="button" onclick="document.getElementById('demostracion1').innerHTML='Hola JavaScript'"&gt;Pulsa aqui&lt;/button&gt;
         </code></p>
     </div>
 </div><!--fin padre-->
