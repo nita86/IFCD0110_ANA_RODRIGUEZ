@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<meta http-equiv="Refresh" content="5">
+	<meta http-equiv="Refresh" content="30">
     <title>Introducción al JavaScript</title>
 
 <!-- etiquetas que dan informacion adicional para el buscador -->
@@ -33,13 +33,81 @@
     <h2>JavaScript puede cambiar el contenido HTML</h2>
     <p>Uno de los muchos métodos JavaScript HTML es <code>getElementById()</code>.</p> 
     <p>En este ejemplo se utiliza el método de "encontrar" un elemento HTML (con id = "demo") y cambia el contenido del elemento ( innerHTML) a "Hola JavaScript":</p>
-    <div class="bg-primary">
-        <p>Ejemplo</p>
-        <div class="alert alert-warning border-top-0 border-bottom-0 border-left-0 border border-primary">
+    <div class="bg-primary p-3">
+        <p class="text-white">Ejemplo</p>
+        <div class="alert alert-warning">
             <samp>document.getElementById("demo").innerHTML = "Hello JavaScript";</samp>
-        </div>
-        
+        </div> 
+        <br>
     </div>
+<br>
+    <div class="bg-white row p-3"><!--padre-->
+        <div class="col"><!--hijo1-->
+            <div class="shadow-lg p-3 mb-5 bg-white rounded"><!--estilos-->
+                <p id="demo1">JavaScript puede cambiar el contenido HTML</p>
+                <button type="button" onclick="document.getElementById('demo1').innerHTML='Hola JavaScript'">Pulsa aqui</button>
+            </div><!--estilos-->
+        </div><!--fin hijo1-->
+        <div class="col"><!--hijo2-->
+            <div class="shadow-lg p-3 mb-5 bg-white rounded"><!--estilos-->
+                <p id="demo2">JavaScript can change the HTML content</p>
+                <button type="button" onclick="document.getElementById('demo2').innerHTML='Hello JavaScript'">Click here</button>
+            </div>
+        </div><!--fin hijo2-->
+        <div class="col"><!--hijo3-->
+            <div class="shadow-lg p-3 mb-5 bg-white rounded"><!--estilos-->
+                <p id="demo3">JavaScript peut changer le contenu du HTML</p>
+                <button type="button" onclick="document.getElementById('demo3').innerHTML='Bonjour JavaScript'">Cliquez Ici</button>
+            </div>
+        </div><!--fin hijo3-->
+    </div><!--fin padre-->
+<hr>
+<h2>JavaScript puede cambiar los valores de atributos HTML</h2>
+<p>En este ejemplo JavaScript cambia el valor de la src(fuente) atributo de un <code>&lt;img&gt;tag:</code></p>
+<div class="bg-white p-3"><!--padre-->
+    <div class="shadow-lg p-3 mb-5 bg-white rounded"><!--hijo1 estilos-->
+        <p class="text-primary font-weight-bold">Ejemplo</p>
+        <button type="button" onclick="document.getElementById('bombilla').src='../img/pic_bulbon.gif'">Enciende la bombilla</button>
+
+        <img src="../img/pic_bulboff.gif" id="bombilla">
+
+        <button type="button" onclick="document.getElementById('bombilla').src='../img/pic_bulboff.gif'">Apaga la bombilla</button>
+    </div><!--fin hijo1 estilos-->
+    <div class="shadow-lg p-3 mb-5 bg-white rounded"><!--hijo2 estilos-->
+        <p class="text-primary font-weight-bold">Ejemplo</p>
+        <button type="button" onclick="document.getElementsByClassName('pruebas').src='../img/pic_bulbon.gif'">Enciende la bombilla</button>
+
+        <img src="../img/pic_bulboff.gif" class="pruebas">
+        <img src="../img/pic_bulboff.gif" class="pruebas">
+        <img src="../img/pic_bulboff.gif" class="pruebas">
+
+        <button type="button" onclick="document.getElementsByClassName('bombilla').src='../img/pic_bulboff.gif'">Apaga la bombilla</button>
+    </div><!--fin hijo2 estilos-->
+</div><!--fin padre-->
+<hr>
+<h2>JavaScript puede cambiar los estilos HTML (CSS)</h2>
+<p>Cambiar el estilo de un elemento HTML, es una variante de cambiar un atributo HTML:</p>
+<div class="bg-white row p-3"><!--padre-->
+    <div class="col"><!--hijo1-->
+        <div class="shadow-lg p-3 mb-5 bg-white rounded"><!--estilos-->
+            <p id="color">JavaScript puede cambiar el color</p>
+            <button type="button" onclick="document.getElementById('color').style.color='red'">Cambia a rojo</button>
+        </div><!--estilos-->
+    </div><!--fin hijo1-->
+    <div class="col"><!--hijo2-->
+        <div class="shadow-lg p-3 mb-5 bg-white rounded"><!--estilos-->
+            <p id="tamaño">JavaScript puede cambiar el tamaño</p>
+            <button type="button" onclick="document.getElementById('tamaño').style.fontSize='2em'">Hazme grande</button>
+        </div>
+    </div><!--fin hijo2-->
+    <div class="col"><!--hijo3-->
+        <div class="shadow-lg p-3 mb-5 bg-white rounded"><!--estilos-->
+            <p id="oculto">JavaScript puede ocultar elementos</p>
+            <button type="button" onclick="document.getElementById('oculto').style.display='none'">Ocúltame</button>
+        </div>
+    </div><!--fin hijo3-->
+</div><!--fin padre-->
+<br>
 
 </body>
 </html>
