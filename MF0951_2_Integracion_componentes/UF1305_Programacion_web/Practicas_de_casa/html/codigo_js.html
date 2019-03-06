@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<!--<meta http-equiv="Refresh" content="30">-->
+    <title>Código JavaScript</title>
+
+<!-- etiquetas que dan informacion adicional para el buscador -->
+    <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+    <meta name="title" content="Confección y publicación de páginas web">
+    <meta name="keywords" content="Diseño de páginas web con HTML, CSS, JavaScript">
+    <meta name="author" content="Ana Rodríguez">
+
+<!--formatos para favicon para que se vea en todos los navegadores-->   
+    <link rel="icon" type="image/png" href="../img/harry_potter_imagens_(7)_opt.png" sizes="16x16">
+    <link rel="icon" type="image/gif" href="../img/harry_potter_imagens_(7)_opt.gif" sizes="16x16">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../img/harry_potter_imagens_(7)_opt.ico" sizes="16x16">
+
+<!--Enlaces css y js-->
+    <link rel="stylesheet" href="../css/bootstrap_css.css" type="text/css">
+    <script src="../js/funciones.js"></script>
+
+<style>
+    /*body {width: 80%; margin: auto;}*/
+</style>
+
+</head>
+
+<body class="w-75 m-auto">
+    <h1 class="text-primary">¿Dónde se inserta JavaScript?</h1>
+<hr>
+<ul>
+    <li>En HTML, el código JavaScript en HTML debe ser insertado entre las etiquetas <code>&lt;script&gt;</code> y <code>&lt;/script&gt;</code>.</li>
+    <li>Los scripts pueden ser colocados en el <code>&lt;body&gt;</code>, o en la sección <code>&lt;head&gt;</code> de una página HTML, o en ambos.</li>
+    <li>También pueden colocarse en un archivo externo con la extensión <strong>.js</strong></li>
+    <li>El código JavaScript puede ser insertado en línea, en las etiquetas HTML dentro del atributo de evento onClick</li>
+</ul>
+<div class="row bg-primary p-3"><!--padre-->
+    <div class="col-12 shadow-lg p-3 mb-5 bg-white rounded"><!--hijo1-->
+        <p class="text-primary font-weight-bold">Ejemplo: JS en <code>&lt;head&gt;</code></p>
+        <p><code class="text-dark">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function mifuncion() { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("demostracion").innerHTML ="parrafo cambiado.";<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&gt;<br>
+            &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+
+            &lt;h1&gt;A Web Page&lt;/h1&gt;<br>
+            &lt;p id="demostracion"&gt;A Paragraph&lt;/p&gt;<br>
+            &lt;button type="button" onclick="mifuncion()"&gt;Try it&lt;/button&gt;<br>
+
+        &lt;/body&gt;<br>
+        &lt;/html&gt;<br>
+        </code></p>
+    </div>
+    <div class="col-12 shadow-lg p-3 mb-5 bg-white rounded"><!--hijo2-->
+        <p class="text-primary font-weight-bold">Ejemplo: JS en <code>&lt;body&gt;</code></p>
+        <p><code class="text-dark">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;body&gt; <br>
+            &lt;h1&gt;A Web Page&lt;/h1&gt;<br>
+                &lt;p id="demostracion"&gt;A Paragraph&lt;/p&gt;<br>
+                    &lt;button type="button" onclick="mifuncion()"&gt;Try it&lt;/button&gt;<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function mifuncion() {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("demostracion").innerHTML = "parrafo cambiado.";<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&gt;<br>
+
+            &lt;/body&gt;<br>
+            &lt;/html&gt;</code>
+        </p>
+    </div>
+    <div class="col-12 shadow-lg p-3 mb-5 bg-white rounded"><!--hijo3-->
+        <p class="text-primary font-weight-bold">Ejemplo: en archivo externo .js</p>
+        <p id="demostracion">function mifuncion() { <br>
+            &nbsp;&nbsp;&nbsp;document.getElementById("demostracion").style.color = "red";<br>
+            &nbsp;&nbsp;&nbsp;document.getElementById("demostracion").innerHTML = "Chanchan";<br>
+            &nbsp;&nbsp;&nbsp;}
+        </p>
+        <button type="button" onclick="mifuncion()">Click</button>
+    </div>
+    <div class="col-12 shadow-lg p-3 mb-5 bg-white rounded"><!--hijo4-->
+        <p class="text-primary font-weight-bold">Ejemplo: JS en dentro de una etiqueta HTML</p>
+        <p><code class="text-dark">
+            &lt;p id="demostracion1"&gt;JavaScript puede cambiar el contenido HTML&lt;/p&gt;<br>
+            &lt;button type="button" onclick="document.getElementById('demostracion1').innerHTML='Hola JavaScript'"&gt;Pulsa aqui&lt;/button&gt;
+        </code></p>
+    </div>
+</div><!--fin padre-->
+<br>
+
+</body>
+</html>

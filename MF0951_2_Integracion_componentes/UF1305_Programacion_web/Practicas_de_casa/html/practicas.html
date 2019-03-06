@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<!--<meta http-equiv="Refresh" content="30">-->
+    <title>Practicas de casa</title>
+
+<!-- etiquetas que dan informacion adicional para el buscador -->
+    <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+    <meta name="title" content="Confección y publicación de páginas web">
+    <meta name="keywords" content="Diseño de páginas web con HTML, CSS, JavaScript">
+    <meta name="author" content="Ana Rodríguez">
+
+<!--formatos para favicon para que se vea en todos los navegadores-->   
+    <link rel="icon" type="image/png" href="../img/harry_potter_imagens_(7)_opt.png" sizes="16x16">
+    <link rel="icon" type="image/gif" href="../img/harry_potter_imagens_(7)_opt.gif" sizes="16x16">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../img/harry_potter_imagens_(7)_opt.ico" sizes="16x16">
+
+<!--Enlaces css y js-->
+    <link rel="stylesheet" href="../css/bootstrap_css.css" type="text/css">
+    <script src="../js/funciones.js"></script>
+
+<style>
+    /*body {width: 80%; margin: auto;}*/
+</style>
+
+</head>
+
+<body class="w-75 m-auto">
+<h2>JavaScript puede cambiar los valores de atributos HTML</h2>
+<p>En este ejemplo JavaScript cambia el valor de la src(fuente) atributo de un <code>&lt;img&gt;tag:</code></p>
+<div class="bg-white p-3"><!--padre-->
+    <div class="shadow-lg p-3 mb-5 bg-white rounded"><!--bombilla1-->
+        <p class="text-primary font-weight-bold">Ejemplo</p>
+        <button type="button" onclick="document.getElementById('bombilla').src='../img/pic_bulbon.gif'">Enciende la bombilla</button>
+
+        <img src="../img/pic_bulboff.gif" id="bombilla">
+
+        <button type="button" onclick="document.getElementById('bombilla').src='../img/pic_bulboff.gif'">Apaga la bombilla</button>
+    </div><!--fin bombilla1-->
+    <div class="shadow-lg p-3 mb-5 bg-white rounded"><!--bombilla2-->
+        <p class="text-primary font-weight-bold">Ejemplo</p>
+        <button type="button" onclick="
+            var element=document.getElementsByClassName('pruebas'); // Obtiene los elementos y los almacena en un array [0,1,2]
+            for (var i=0;i<element.length;i++){
+                // var i Inicializa la variable con valor 0
+                // element.length obtiene el tamaño del array = 3
+                // i < element.length se ejecuta el bucle o loop mientras se cumpla la condición
+                // i++ suma 1, cada vez que de produzca un ciclo completo
+                element[i].src='../img/pic_bulbon.gif'; //Modifica la imagen 
+                }
+           
+        ">Enciende la bombilla</button>
+
+        <img src="../img/pic_bulboff.gif" class="pruebas">
+        <img src="../img/pic_bulboff.gif" class="pruebas">
+        <img src="../img/pic_bulboff.gif" class="pruebas">
+
+        <button type="button" onclick="
+            var element=document.getElementsByClassName('pruebas');
+            for (var i=0;i<element.length;i++){
+                element[i].src='../img/pic_bulboff.gif';
+                }
+        ">Apaga la bombilla</button>
+    </div><!--fin bombilla2-->
+</div><!--fin padre-->
+
+
+<br>
+
+</body>
+</html>
