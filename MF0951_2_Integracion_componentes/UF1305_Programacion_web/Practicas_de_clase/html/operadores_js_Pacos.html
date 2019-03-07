@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<!--<meta http-equiv="Refresh" content="30">-->
+    <title>Operadores JavaScript (Paco)</title>
+
+<!-- etiquetas que dan informacion adicional para el buscador -->
+    <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+    <meta name="title" content="Confección y publicación de páginas web">
+    <meta name="keywords" content="Diseño de páginas web con HTML, CSS, JavaScript">
+    <meta name="author" content="Ana Rodríguez">
+
+<!--formatos para favicon para que se vea en todos los navegadores-->   
+    <link rel="icon" type="image/png" href="../img/harry_potter_imagens_(7)_opt.png" sizes="16x16">
+    <link rel="icon" type="image/gif" href="../img/harry_potter_imagens_(7)_opt.gif" sizes="16x16">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../img/harry_potter_imagens_(7)_opt.ico" sizes="16x16">
+
+<!--Enlaces css y js-->
+    <link rel="stylesheet" href="../css/bootstrap_css.css" type="text/css">
+    <script src="../js/funciones.js"></script>
+</head>
+
+<body>
+  <div class="container">
+<h1>Operadores cálculo en JavaScript</h1>
+<hr>
+<h2>Operadores aritméticos Javascript</h2>
+<p>Los operadores aritméticos realizan operaciones aritméticas con números literales (z = 10 * 5) o con variables (z = x * y).</p>
+<p>Teniendo en cuenta que <strong>x = 5 , y = 2</strong> , la siguiente tabla se explican los operadores de aritméticos..</p>
+<table class="table table-bordered table-striped"><!--tabla1-->
+
+<thead class="thead-dark">
+<tr>
+<th>Operador</th>
+<th>Descripción</th>
+<th>Variables</th>
+<th>Operaciones</th>
+<th>Resultado</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td id="demo1">&nbsp;</td>
+<td id="demo2">&nbsp;</td>
+<td id="demo3">&nbsp;</td>
+<td id="demo4">&nbsp;</td>
+<td id="demo5">&nbsp;</td>
+</tr>
+
+<tr>
+<td id="demo6">&nbsp;</td>
+<td id="demo7">&nbsp;</td>
+<td id="demo8">&nbsp;</td>
+<td id="demo9">&nbsp;</td>
+<td id="demo10">&nbsp;</td>
+</tr>
+
+<tr>
+<td id="demo11">&nbsp;</td>
+<td id="demo12">&nbsp;</td>
+<td id="demo13">&nbsp;</td>
+<td id="demo14">&nbsp;</td>
+<td id="demo15">&nbsp;</td>
+</tr>
+
+<tr>
+<td id="demo16">&nbsp;</td>
+<td id="demo17">&nbsp;</td>
+<td id="demo18">&nbsp;</td>
+<td id="demo19">&nbsp;</td>
+<td id="demo20">&nbsp;</td>
+</tr>
+
+<tr>
+<td id="demo21">&nbsp;</td>
+<td id="demo22">&nbsp;</td>
+<td id="demo23">&nbsp;</td>
+<td id="demo24">&nbsp;</td>
+<td id="demo25">&nbsp;</td>
+</tr>
+
+<tr>
+<td id="demo26">&nbsp;</td>
+<td id="demo27">&nbsp;</td>
+<td id="demo28">&nbsp;</td>
+<td id="demo29">&nbsp;</td>
+<td id="demo30">&nbsp;</td>
+</tr>
+
+<tr>
+<td id="demo31">&nbsp;</td>
+<td id="demo32">&nbsp;</td>
+<td id="demo33">&nbsp;</td>
+<td id="demo34">&nbsp;</td>
+<td id="demo35">&nbsp;</td>
+</tr>
+</tbody>
+
+</table><!--fin tabla1-->
+
+
+<script>//script tabla1
+//suma
+  var operador="+";//texto que aparece
+  var description="suma";//texto que aparece
+  var variables="var x=5; var y=2;";//texto que aparece
+  var operaciones="z=x+y;";//texto que aparece
+  var z;//resultado
+
+  var x=5;//operacion que se realiza
+  var y=2;//operacion que se realiza
+  var z=x+y;//operacion que se realiza
+
+  document.getElementById("demo1").innerHTML=operador;//coge demo1 y muestra el valor de operador 
+  document.getElementById("demo2").innerHTML=description;//coge demo2 y muestra el valor de description 
+  document.getElementById("demo3").innerHTML=variables;//coge demo3 y muestra el valor de variables 
+  document.getElementById("demo4").innerHTML=operaciones;//coge demo4 y muestra el valor de operaciones 
+  document.getElementById("demo5").innerHTML=z;//coge demo5 y muestra el valor de z
+//resta
+  var operador="-";//texto que aparece
+  var description="resta";//texto que aparece
+  var variables="var x=5; var y=2;";//texto que aparece
+  var operaciones="z=x-y;";//texto que aparece
+  var z;//resultado
+
+  var x=5;//operacion que se realiza
+  var y=2;//operacion que se realiza
+  var z=x-y;//operacion que se realiza
+
+  document.getElementById("demo6").innerHTML=operador;//coge demo y muestra el valor de operador 
+  document.getElementById("demo7").innerHTML=description;//coge demo y muestra el valor de description 
+  document.getElementById("demo8").innerHTML=variables;//coge demo y muestra el valor de variables 
+  document.getElementById("demo9").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
+  document.getElementById("demo10").innerHTML=z;//coge demo y muestra el valor de z
+//multiplicacion
+  var operador="*";//texto que aparece
+  var description="multiplicación";//texto que aparece
+  var variables="var x=5; var y=2;";//texto que aparece
+  var operaciones="z=x*y;";//texto que aparece
+  var z;//resultado
+
+  var x=5;//operacion que se realiza
+  var y=2;//operacion que se realiza
+  var z=x*y;//operacion que se realiza
+
+  document.getElementById("demo11").innerHTML=operador;//coge demo y muestra el valor de operador 
+  document.getElementById("demo12").innerHTML=description;//coge demo y muestra el valor de description 
+  document.getElementById("demo13").innerHTML=variables;//coge demo y muestra el valor de variables 
+  document.getElementById("demo14").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
+  document.getElementById("demo15").innerHTML=z;//coge demo y muestra el valor de z
+//division
+  var operador="/";//texto que aparece
+  var description="división";//texto que aparece
+  var variables="var x=5; var y=2;";//texto que aparece
+  var operaciones="z=x/y;";//texto que aparece
+  var z;//resultado
+
+  var x=5;//operacion que se realiza
+  var y=2;//operacion que se realiza
+  var z=x/y;//operacion que se realiza
+
+  document.getElementById("demo16").innerHTML=operador;//coge demo y muestra el valor de operador 
+  document.getElementById("demo17").innerHTML=description;//coge demo y muestra el valor de description 
+  document.getElementById("demo18").innerHTML=variables;//coge demo y muestra el valor de variables 
+  document.getElementById("demo19").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
+  document.getElementById("demo20").innerHTML=z;//coge demo y muestra el valor de z
+//resto
+  var operador="%";//texto que aparece
+  var description="resto de la división";//texto que aparece
+  var variables="var x=5; var y=2;";//texto que aparece
+  var operaciones="z=x%y;";//texto que aparece
+  var z;//resultado
+
+  var x=5;//operacion que se realiza
+  var y=2;//operacion que se realiza
+  var z=x%y;//operacion que se realiza
+
+  document.getElementById("demo21").innerHTML=operador;//coge demo y muestra el valor de operador 
+  document.getElementById("demo22").innerHTML=description;//coge demo y muestra el valor de description 
+  document.getElementById("demo23").innerHTML=variables;//coge demo y muestra el valor de variables 
+  document.getElementById("demo24").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
+  document.getElementById("demo25").innerHTML=z;//coge demo y muestra el valor de z
+//incremento
+  var operador="++";//texto que aparece
+  var description="incremento (+1)";//texto que aparece
+  var variables="var x=5;";//texto que aparece
+  var operaciones="z=x++;";//texto que aparece
+  var z;//resultado
+
+  var x=5;//se define la var x
+      x++;//lo que vale x
+  var z=x;//operacion que se realiza
+
+  document.getElementById("demo26").innerHTML=operador;//coge demo y muestra el valor de operador 
+  document.getElementById("demo27").innerHTML=description;//coge demo y muestra el valor de description 
+  document.getElementById("demo28").innerHTML=variables;//coge demo y muestra el valor de variables 
+  document.getElementById("demo29").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
+  document.getElementById("demo30").innerHTML=z;//coge demo y muestra el valor de z
+//incremento
+  var operador="--";//texto que aparece
+  var description="decrecimiento (-1)";//texto que aparece
+  var variables="var x=5;";//texto que aparece
+  var operaciones="z=x--;";//texto que aparece
+  var z;//resultado
+
+  var x=5;//se define la var x
+      x--;//lo que vale x
+  var z=x;//operacion que se realiza
+
+  document.getElementById("demo31").innerHTML=operador;//coge demo y muestra el valor de operador 
+  document.getElementById("demo32").innerHTML=description;//coge demo y muestra el valor de description 
+  document.getElementById("demo33").innerHTML=variables;//coge demo y muestra el valor de variables 
+  document.getElementById("demo34").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
+  document.getElementById("demo35").innerHTML=z;//coge demo y muestra el valor de z
+
+</script>
+
+<br>
+<hr>
+<h2>Operadores de asignación de JavaScript</h2>
+<p>Los operadores de asignación asignan valores a las variables JavaScript.</p>
+<p>Teniendo en cuenta que <strong>x = 10</strong> , en la siguiente tabla se explican los operadores de asignación.<br>
+</p>
+<table class="table table-bordered table-striped"><!--tabla2-->
+  <thead class="thead-dark">
+    <tr>
+      <th>Operador</th>
+      <th>Descripción</th>
+      <th>Variables</th>
+      <th>Asignación</th>
+      <th>Operación</th>
+      <th>Resultado</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+      <td id="demo36">&nbsp;</td>
+      <td id="demo37">&nbsp;</td>
+      <td id="demo38">&nbsp;</td>
+      <td id="demo39">&nbsp;</td>
+      <td id="demo40">&nbsp;</td>
+      <td id="demo41">&nbsp;</td>
+    </tr>
+    <tr>
+      <td id="demo42">&nbsp;</td>
+      <td id="demo43">&nbsp;</td>
+      <td id="demo44">&nbsp;</td>
+      <td id="demo45">&nbsp;</td>
+      <td id="demo46">&nbsp;</td>
+      <td id="demo47">&nbsp;</td>
+    </tr>
+    <tr>
+      <td id="demo48">&nbsp;</td>
+      <td id="demo49">&nbsp;</td>
+      <td id="demo50">&nbsp;</td>
+      <td id="demo51">&nbsp;</td>
+      <td id="demo52">&nbsp;</td>
+      <td id="demo53">&nbsp;</td>
+    </tr>
+    <tr>
+      <td id="demo54">&nbsp;</td>
+      <td id="demo55">&nbsp;</td>
+      <td id="demo56">&nbsp;</td>
+      <td id="demo57">&nbsp;</td>
+      <td id="demo58">&nbsp;</td>
+      <td id="demo59">&nbsp;</td>
+    </tr>
+    <tr>
+      <td id="demo60">&nbsp;</td>
+      <td id="demo61">&nbsp;</td>
+      <td id="demo62">&nbsp;</td>
+      <td id="demo63">&nbsp;</td>
+      <td id="demo64">&nbsp;</td>
+      <td id="demo65">&nbsp;</td>
+    </tr>
+    <tr>
+      <td id="demo66">&nbsp;</td>
+      <td id="demo67">&nbsp;</td>
+      <td id="demo68">&nbsp;</td>
+      <td id="demo69">&nbsp;</td>
+      <td id="demo70">&nbsp;</td>
+      <td id="demo71">&nbsp;</td>
+    </tr>
+  </tbody>
+</table><!--fin tabla2-->
+
+
+<br>
+<hr>
+<h2>Operadores de comparación de JavaScript</h2>
+<p>Los operadores de comparación se utilizan  para determinar la igualdad o la diferencia entre las variables o valores. Devuelve true (verdadero) o false ( falso).</p>
+<p>Teniendo en cuenta que <strong>x = 5, y  = 8</strong> , la siguiente tabla se explican los operadores de comparación.</p>
+<table>
+  <tbody>
+    <tr>
+      <th>Operador</th>
+      <th>Descripción</th>
+      <th>Variables</th>
+      <th>Comparación</th>
+      <th>Resultado</th>
+    </tr>
+    <tr>
+      <td id="demo72">&nbsp;</td>
+      <td id="demo73">&nbsp;</td>
+      <td id="demo74">&nbsp;</td>
+      <td id="demo75">&nbsp;</td>
+      <td id="demo76">&nbsp;</td>
+    </tr>
+    <tr>
+      <td id="demo77">&nbsp;</td>
+      <td id="demo78">&nbsp;</td>
+      <td id="demo79">&nbsp;</td>
+      <td id="demo80">&nbsp;</td>
+      <td id="demo81">&nbsp;</td>
+    </tr>
+    <tr>
+      <td id="demo82">&nbsp;</td>
+      <td id="demo83">&nbsp;</td>
+      <td id="demo84">&nbsp;</td>
+      <td id="demo85">&nbsp;</td>
+      <td id="demo86">&nbsp;</td>
+    </tr>
+    <tr>
+      <td id="demo87">&nbsp;</td>
+      <td id="demo88">&nbsp;</td>
+      <td id="demo89">&nbsp;</td>
+      <td id="demo90">&nbsp;</td>
+      <td id="demo91">&nbsp;</td>
+    </tr>
+    <tr>
+      <td id="demo92">&nbsp;</td>
+      <td id="demo93">&nbsp;</td>
+      <td id="demo94">&nbsp;</td>
+      <td id="demo95">&nbsp;</td>
+      <td id="demo96">&nbsp;</td>
+    </tr>
+    <tr>
+      <td id="demo97">&nbsp;</td>
+      <td id="demo98">&nbsp;</td>
+      <td id="demo99">&nbsp;</td>
+      <td id="demo100">&nbsp;</td>
+      <td id="demo101">&nbsp;</td>
+    </tr>
+    <tr>
+      <td id="demo102">&nbsp;</td>
+      <td id="demo103">&nbsp;</td>
+      <td id="demo104">&nbsp;</td>
+      <td id="demo105">&nbsp;</td>
+      <td id="demo106">&nbsp;</td>
+    </tr>
+    <tr>
+      <td id="demo107">&nbsp;</td>
+      <td id="demo108">&nbsp;</td>
+      <td id="demo109">&nbsp;</td>
+      <td id="demo110">&nbsp;</td>
+      <td id="demo111">&nbsp;</td>
+    </tr>
+    <tr>
+      <td id="demo112">&nbsp;</td>
+      <td id="demo113">&nbsp;</td>
+      <td id="demo114">&nbsp;</td>
+      <td id="demo115">&nbsp;</td>
+      <td id="demo116">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br>
+<hr>
+<h2>Operadores lógicos Javascript</h2>
+<p>Los operadores lógicos se utilizan para determinar la lógica entre las variables o valores.</p>
+<p>Dado que <strong>x = 6</strong> y <strong>y = 3</strong>, la tabla de abajo se explican los operadores lógicos:</p>
+<table>
+  <tbody>
+    <tr>
+      <th>Operator</th>
+      <th>Description</th>
+      <th>Variables</th>
+      <th>Comparación</th>
+      <th>Resultado</th>
+    </tr>
+    <tr>
+      <td id="demo117">&nbsp;</td>
+      <td id="demo118">&nbsp;</td>
+      <td id="demo119">&nbsp;</td>
+      <td id="demo120">&nbsp;</td>
+      <td id="demo121">&nbsp;</td>
+    </tr>
+    <tr>
+      <td id="demo122">&nbsp;</td>
+      <td id="demo123">&nbsp;</td>
+      <td id="demo124">&nbsp;</td>
+      <td id="demo125">&nbsp;</td>
+      <td id="demo126">&nbsp;</td>
+    </tr>
+    <tr>
+      <td id="demo127">&nbsp;</td>
+      <td id="demo128">&nbsp;</td>
+      <td id="demo129">&nbsp;</td>
+      <td id="demo130">&nbsp;</td>
+      <td id="demo131">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<hr>
+<div>
+<h3>¿Es la suma o la multiplicación la que se hace primero?</h3>
+<ul>
+  <li>Al igual que en las matemáticas escolares tradicionales, la multiplicación se realiza en primer lugar.</li>
+  <li>Multiplicación (*) y división (/) tienen mayor prioridad que la suma (+) y resta (-).</li>
+  <li>Y (como en las matemáticas escolares) la precedencia se puede cambiar mediante el uso de paréntesis.</li>
+</ul>
+</div>
+<hr>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
