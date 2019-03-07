@@ -628,8 +628,8 @@
 <h2>Operadores lógicos Javascript</h2>
 <p>Los operadores lógicos se utilizan para determinar la lógica entre las variables o valores.</p>
 <p>Dado que <strong>x = 6</strong> y <strong>y = 3</strong>, la tabla de abajo se explican los operadores lógicos:</p>
-<table>
-  <tbody>
+<table class="table table-bordered table-striped"><!--tabla4-->
+    <thead class="thead-dark">
     <tr>
       <th>Operator</th>
       <th>Description</th>
@@ -637,6 +637,8 @@
       <th>Comparación</th>
       <th>Resultado</th>
     </tr>
+    </thead>
+    <tbody>
     <tr>
       <td id="demo117">&nbsp;</td>
       <td id="demo118">&nbsp;</td>
@@ -659,7 +661,58 @@
       <td id="demo131">&nbsp;</td>
     </tr>
   </tbody>
-</table>
+</table><!--fin tabla4-->
+
+<script>//script tabla4
+//operador logico and 
+  var operador="&&";//texto que aparece
+  var description="operador lógico and";//texto que aparece
+  var variables="var x=10; y='8';";//texto que aparece
+  var operaciones="z=(x<10 && y>1);";//texto que aparece
+  var z;//resultado
+
+  var x=10;//se define la var x
+  var y=3;//se define la variable y
+  var z=(x<10 && y>1);//operacion que se realiza
+
+  document.getElementById("demo117").innerHTML=operador;//coge demo y muestra el valor de operador 
+  document.getElementById("demo118").innerHTML=description;//coge demo y muestra el valor de description 
+  document.getElementById("demo119").innerHTML=variables;//coge demo y muestra el valor de variables 
+  document.getElementById("demo120").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
+  document.getElementById("demo121").innerHTML=z;//coge demo y muestra el valor de z
+//operador logico or ||
+  var operador="||";//texto que aparece
+  var description="operador lógico or";//texto que aparece
+  var variables="var x=10; y='8';";//texto que aparece
+  var operaciones="z=(x==5 || y == 5);";//texto que aparece
+  var z;//resultado
+
+  var x=10;//se define la var x
+  var y=3;//se define la variable y
+  var z=(x==5 || y == 5);//operacion que se realiza
+
+  document.getElementById("demo122").innerHTML=operador;//coge demo y muestra el valor de operador 
+  document.getElementById("demo123").innerHTML=description;//coge demo y muestra el valor de description 
+  document.getElementById("demo124").innerHTML=variables;//coge demo y muestra el valor de variables 
+  document.getElementById("demo125").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
+  document.getElementById("demo126").innerHTML=z;//coge demo y muestra el valor de z
+//operador logico not !
+  var operador="!";//texto que aparece
+  var description="operador lógico not";//texto que aparece
+  var variables="var x=10; y='8';";//texto que aparece
+  var operaciones="z=(! x == y);";//texto que aparece
+  var z;//resultado
+
+  var x=10;//se define la var x
+  var y=3;//se define la variable y
+  var z=(! x == y);//operacion que se realiza
+
+  document.getElementById("demo127").innerHTML=operador;//coge demo y muestra el valor de operador 
+  document.getElementById("demo128").innerHTML=description;//coge demo y muestra el valor de description 
+  document.getElementById("demo129").innerHTML=variables;//coge demo y muestra el valor de variables 
+  document.getElementById("demo130").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
+  document.getElementById("demo131").innerHTML=z;//coge demo y muestra el valor de z
+</script>
 
 <br>
 <hr>
