@@ -187,7 +187,7 @@
   var operador="++";//texto que aparece
   var description="incremento (+1)";//texto que aparece
   var variables="var x=5;";//texto que aparece
-  var operaciones="z=x++;";//texto que aparece
+  var operaciones="x=x+1;";//texto que aparece
   var z;//resultado
 
   var x=5;//se define la var x
@@ -199,11 +199,11 @@
   document.getElementById("demo28").innerHTML=variables;//coge demo y muestra el valor de variables 
   document.getElementById("demo29").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
   document.getElementById("demo30").innerHTML=z;//coge demo y muestra el valor de z
-//incremento
+//decremento
   var operador="--";//texto que aparece
-  var description="decrecimiento (-1)";//texto que aparece
+  var description="decremento (-1)";//texto que aparece
   var variables="var x=5;";//texto que aparece
-  var operaciones="z=x--;";//texto que aparece
+  var operaciones="x=x-1;";//texto que aparece
   var z;//resultado
 
   var x=5;//se define la var x
@@ -372,7 +372,7 @@
   document.getElementById("demo64").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
   document.getElementById("demo65").innerHTML=z;//coge demo y muestra el valor de z
 //resto de la division
-  var operador="/=";//texto que aparece
+  var operador="%=";//texto que aparece
   var description="resto de la división";//texto que aparece
   var variables="var x%10;";//texto que aparece
   var asignacion="var x%=5;";//texto que aparece
@@ -473,7 +473,7 @@
   </tbody>
 </table><!-- fin tabla3-->
 
-<p class="text-white p-3 bg-info">el operador ternario (?) hace la misma pregunta pero en lugar de arrojar un resultado true o false, permite personalizar estos valores con lo que queramos que muestre (menor o mayor en nuestro caso)</p>
+<p class="p-3 bg-info">el operador ternario (?) compara los resultados, de tal manera que si el resultado del paréntesis es 'true' nos muestra el primer valor dado (en nuestro caso 'menor') y si es 'false' nos muestra el segundo (en nuestro caso 'mayor')</p>
 
 <script>//script tabla3
 //igualdad valor
@@ -663,11 +663,17 @@
   </tbody>
 </table><!--fin tabla4-->
 
+<ul class="list-group p-3">
+  <li class="list-group-item list-group-item-info">and && tienen que cumplirse obligatoriamente las dos condiciones</li>
+  <li class="list-group-item list-group-item-info">or || sólo es necesario que se cumpla una de ellas</li>
+  <li class="list-group-item list-group-item-info">not ! niega el valor del resultado de la condición. Por ejemplo, si cuando el resutado de la condición es 'true' se ejecuta en función, al negarla, aunque el resultado sea 'true' ya no se ejecutaría la función (y vicebersa). Otra posible sintáxix es x!=y (valor no igual que)</li>
+</ul>
+
 <script>//script tabla4
 //operador logico and 
   var operador="&&";//texto que aparece
   var description="operador lógico and";//texto que aparece
-  var variables="var x=10; y='8';";//texto que aparece
+  var variables="var x=10; y=3;";//texto que aparece
   var operaciones="z=(x<10 && y>1);";//texto que aparece
   var z;//resultado
 
@@ -683,13 +689,13 @@
 //operador logico or ||
   var operador="||";//texto que aparece
   var description="operador lógico or";//texto que aparece
-  var variables="var x=10; y='8';";//texto que aparece
-  var operaciones="z=(x==5 || y == 5);";//texto que aparece
+  var variables="var x=10; y=3;";//texto que aparece
+  var operaciones="z=(x==5 || y == 3);";//texto que aparece
   var z;//resultado
 
   var x=10;//se define la var x
   var y=3;//se define la variable y
-  var z=(x==5 || y == 5);//operacion que se realiza
+  var z=(x==5 || y == 3);//operacion que se realiza
 
   document.getElementById("demo122").innerHTML=operador;//coge demo y muestra el valor de operador 
   document.getElementById("demo123").innerHTML=description;//coge demo y muestra el valor de description 
@@ -699,13 +705,13 @@
 //operador logico not !
   var operador="!";//texto que aparece
   var description="operador lógico not";//texto que aparece
-  var variables="var x=10; y='8';";//texto que aparece
-  var operaciones="z=(! x == y);";//texto que aparece
+  var variables="var x=10; y=3;";//texto que aparece
+  var operaciones="z=!(x == y);";//texto que aparece. 
   var z;//resultado
 
   var x=10;//se define la var x
   var y=3;//se define la variable y
-  var z=(! x == y);//operacion que se realiza
+  var z=!( x == y);//operacion que se realiza
 
   document.getElementById("demo127").innerHTML=operador;//coge demo y muestra el valor de operador 
   document.getElementById("demo128").innerHTML=description;//coge demo y muestra el valor de description 
