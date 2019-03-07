@@ -215,7 +215,6 @@
   document.getElementById("demo33").innerHTML=variables;//coge demo y muestra el valor de variables 
   document.getElementById("demo34").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
   document.getElementById("demo35").innerHTML=z;//coge demo y muestra el valor de z
-
 </script>
 
 <br>
@@ -295,10 +294,8 @@
   var asignacion="var x=y;";//texto que aparece
   var operaciones="x=y;";//texto que aparece
 
-
   var x=10;//se define la variable x
   var y=x;//se define la variable y
-
 
   document.getElementById("demo36").innerHTML=operador;//coge demo y muestra el valor de operador 
   document.getElementById("demo37").innerHTML=description;//coge demo y muestra el valor de description 
@@ -391,7 +388,6 @@
   document.getElementById("demo69").innerHTML=asignacion;//coge demo y muestra el valor de asignacion 
   document.getElementById("demo70").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
   document.getElementById("demo71").innerHTML=z;//coge demo y muestra el valor de z
-
 </script>
 
 
@@ -399,9 +395,9 @@
 <hr>
 <h2>Operadores de comparación de JavaScript</h2>
 <p>Los operadores de comparación se utilizan  para determinar la igualdad o la diferencia entre las variables o valores. Devuelve true (verdadero) o false ( falso).</p>
-<p>Teniendo en cuenta que <strong>x = 5, y  = 8</strong> , la siguiente tabla se explican los operadores de comparación.</p>
-<table>
-  <tbody>
+<p>Teniendo en cuenta que <strong>x = 5, y  = "8"</strong> , la siguiente tabla se explican los operadores de comparación.</p>
+<table class="table table-bordered table-striped"><!--tabla3-->
+    <thead class="thead-dark">
     <tr>
       <th>Operador</th>
       <th>Descripción</th>
@@ -409,6 +405,8 @@
       <th>Comparación</th>
       <th>Resultado</th>
     </tr>
+  </thead>
+  <tbody>
     <tr>
       <td id="demo72">&nbsp;</td>
       <td id="demo73">&nbsp;</td>
@@ -473,7 +471,156 @@
       <td id="demo116">&nbsp;</td>
     </tr>
   </tbody>
-</table>
+</table><!-- fin tabla3-->
+
+<p class="text-white p-3 bg-info">el operador ternario (?) hace la misma pregunta pero en lugar de arrojar un resultado true o false, permite personalizar estos valores con lo que queramos que muestre (menor o mayor en nuestro caso)</p>
+
+<script>//script tabla3
+//igualdad valor
+  var operador="==";//texto que aparece
+  var description="valor igual que";//texto que aparece
+  var variables="var x=10; y='8';";//texto que aparece
+  var operaciones="z=(x==y);";//texto que aparece
+  var z;//resultado
+
+  var x=10;//se define la var x
+  var y="8";//se define la variable y
+  var z=(x==y);//operacion que se realiza
+
+  document.getElementById("demo72").innerHTML=operador;//coge demo y muestra el valor de operador 
+  document.getElementById("demo73").innerHTML=description;//coge demo y muestra el valor de description 
+  document.getElementById("demo74").innerHTML=variables;//coge demo y muestra el valor de variables 
+  document.getElementById("demo75").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
+  document.getElementById("demo76").innerHTML=z;//coge demo y muestra el valor de z
+//igualdad valor y tipo
+  var operador="===";//texto que aparece
+  var description="valor y tipo igual que";//texto que aparece
+  var variables="var x=10; y='8';";//texto que aparece
+  var operaciones="z=(x===y);";//texto que aparece
+  var z;//resultado
+
+  var x=10;//se define la var x
+  var y="8";//se define la variable y
+  var z=(x===y);//operacion que se realiza
+
+  document.getElementById("demo77").innerHTML=operador;//coge demo y muestra el valor de operador 
+  document.getElementById("demo78").innerHTML=description;//coge demo y muestra el valor de description 
+  document.getElementById("demo79").innerHTML=variables;//coge demo y muestra el valor de variables 
+  document.getElementById("demo80").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
+  document.getElementById("demo81").innerHTML=z;//coge demo y muestra el valor de z
+//valor no igual
+  var operador="!=";//texto que aparece
+  var description="valor no igual que";//texto que aparece
+  var variables="var x=10; y='8';";//texto que aparece
+  var operaciones="z=(x!=y);";//texto que aparece
+  var z;//resultado
+
+  var x=10;//se define la var x
+  var y="8";//se define la variable y
+  var z=(x!=y);//operacion que se realiza
+
+  document.getElementById("demo82").innerHTML=operador;//coge demo y muestra el valor de operador 
+  document.getElementById("demo83").innerHTML=description;//coge demo y muestra el valor de description 
+  document.getElementById("demo84").innerHTML=variables;//coge demo y muestra el valor de variables 
+  document.getElementById("demo85").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
+  document.getElementById("demo86").innerHTML=z;//coge demo y muestra el valor de z
+//tipo y valor no igual
+  var operador="!==";//texto que aparece
+  var description="tipo y valor no igual que";//texto que aparece
+  var variables="var x=10; y='8';";//texto que aparece
+  var operaciones="z=(x!==y);";//texto que aparece
+  var z;//resultado
+
+  var x=10;//se define la var x
+  var y="8";//se define la variable y
+  var z=(x!==y);//operacion que se realiza
+
+  document.getElementById("demo87").innerHTML=operador;//coge demo y muestra el valor de operador 
+  document.getElementById("demo88").innerHTML=description;//coge demo y muestra el valor de description 
+  document.getElementById("demo89").innerHTML=variables;//coge demo y muestra el valor de variables 
+  document.getElementById("demo90").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
+  document.getElementById("demo91").innerHTML=z;//coge demo y muestra el valor de z
+//mayor que
+  var operador=">";//texto que aparece
+  var description="mayor que";//texto que aparece
+  var variables="var x=10; y='8';";//texto que aparece
+  var operaciones="z=(x>y);";//texto que aparece
+  var z;//resultado
+
+  var x=10;//se define la var x
+  var y="8";//se define la variable y
+  var z=(x>y);//operacion que se realiza
+
+  document.getElementById("demo92").innerHTML=operador;//coge demo y muestra el valor de operador 
+  document.getElementById("demo93").innerHTML=description;//coge demo y muestra el valor de description 
+  document.getElementById("demo94").innerHTML=variables;//coge demo y muestra el valor de variables 
+  document.getElementById("demo95").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
+  document.getElementById("demo96").innerHTML=z;//coge demo y muestra el valor de z
+//menor que
+  var operador="<";//texto que aparece
+  var description="menor que";//texto que aparece
+  var variables="var x=10; y='8';";//texto que aparece
+  var operaciones="z=(x < y);";//texto que aparece
+  var z;//resultado
+
+  var x=10;//se define la var x
+  var y="8";//se define la variable y
+  var z=(x<y);//operacion que se realiza
+
+  document.getElementById("demo97").innerHTML=operador;//coge demo y muestra el valor de operador 
+  document.getElementById("demo98").innerHTML=description;//coge demo y muestra el valor de description 
+  document.getElementById("demo99").innerHTML=variables;//coge demo y muestra el valor de variables 
+  document.getElementById("demo100").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
+  document.getElementById("demo101").innerHTML=z;//coge demo y muestra el valor de z
+//valor mayor o igual
+  var operador=">=";//texto que aparece
+  var description="mayor o igual que ";//texto que aparece
+  var variables="var x=10; y='8';";//texto que aparece
+  var operaciones="z=(x >= y);";//texto que aparece
+  var z;//resultado
+
+  var x=10;//se define la var x
+  var y="8";//se define la variable y
+  var z=(x>=y);//operacion que se realiza
+
+  document.getElementById("demo102").innerHTML=operador;//coge demo y muestra el valor de operador 
+  document.getElementById("demo103").innerHTML=description;//coge demo y muestra el valor de description 
+  document.getElementById("demo104").innerHTML=variables;//coge demo y muestra el valor de variables 
+  document.getElementById("demo105").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
+  document.getElementById("demo106").innerHTML=z;//coge demo y muestra el valor de z
+//valor menor o igual
+  var operador="<=";//texto que aparece
+  var description="menor o igual que ";//texto que aparece
+  var variables="var x=10; y='8';";//texto que aparece
+  var operaciones="z=(x <= y);";//texto que aparece
+  var z;//resultado
+
+  var x=10;//se define la var x
+  var y="8";//se define la variable y
+  var z=(x<=y);//operacion que se realiza
+
+  document.getElementById("demo107").innerHTML=operador;//coge demo y muestra el valor de operador 
+  document.getElementById("demo108").innerHTML=description;//coge demo y muestra el valor de description 
+  document.getElementById("demo109").innerHTML=variables;//coge demo y muestra el valor de variables 
+  document.getElementById("demo110").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
+  document.getElementById("demo111").innerHTML=z;//coge demo y muestra el valor de z
+//operador ternario
+  var operador="?";//texto que aparece
+  var description="operador ternario";//texto que aparece
+  var variables="var x=10; y='8';";//texto que aparece
+  var operaciones="z=(x < y) ? 'menor':'mayor';";//texto que aparece
+  var z;//resultado
+
+  var x=10;//se define la var x
+  var y="8";//se define la variable y
+  var z=(x < y) ? 'menor':'mayor' ;//operacion que se realiza
+
+  document.getElementById("demo112").innerHTML=operador;//coge demo y muestra el valor de operador 
+  document.getElementById("demo113").innerHTML=description;//coge demo y muestra el valor de description 
+  document.getElementById("demo114").innerHTML=variables;//coge demo y muestra el valor de variables 
+  document.getElementById("demo115").innerHTML=operaciones;//coge demo y muestra el valor de operaciones 
+  document.getElementById("demo116").innerHTML=z;//coge demo y muestra el valor de z
+</script>
 
 
 <br>
