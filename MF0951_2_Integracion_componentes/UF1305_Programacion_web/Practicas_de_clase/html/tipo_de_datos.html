@@ -264,26 +264,45 @@ document.getElementById("demo33").innerHTML=typeof function myFunction () {};
 <div>
 <div class="divejemplo2">
 <p><strong>Ejemplo de cadenas de texto</strong></p>
-<p>var coche = &quot; &quot;;<br>
+<p><code>var coche = &quot; &quot;;<br>
 var coche = &quot;Volvo&quot;;<br>
 var coche = &quot;Volvo  XC60&quot;;<br>
 var coche = &quot;Volvo 'modelo' XC60&quot;; <br>
-var coche = &quot;Volvo \&quot;modelo\&quot; XC60&quot;;</p>
-<p>document.getElementById("demo").innerHTML = typeof (coche);</p>
+var coche = &quot;Volvo \&quot;modelo\&quot; XC60&quot;;</p></code>
+<p><code>document.getElementById("demo").innerHTML = typeof (coche);</code></p>
 <p id="demo38"></p>
+  <script>
+    var coche ="Volvo";
+    var coche ="Volvo 'XC60'";
+    var coche ="Volvo modelo XC60";
+    var coche ="Volvo \'modelo'; XC60;"
+    
+    document.getElementById("demo38").innerHTML = "El tipo de datos que arroja al ejecutar el código es"+" " +"<strong>"+typeof (coche)+"</strong>" +" "+"(cadena de texto)";
+  </script>
+
 
 </div>
 <div class="divejemplo2">
 <p><strong>Ejemplo de cadenas con números</strong></p>
-<p>var numero = &quot;10&quot;;<br>
+<p><code>var numero = &quot;10&quot;;<br>
   var numero = &quot;10.50€&quot;;<br>
   var numero = 
   &quot;123e5&quot;;<br>
   var numero = &quot;19:33&quot;;<br>
   var numero = 
-  &quot;654874587&quot;;</p>
-<p>document.getElementById("demo").innerHTML = typeof (numero);</p>
+  &quot;654874587&quot;;</code></p>
+<p><code>document.getElementById("demo").innerHTML = typeof (numero);</code></p>
 <p id="demo39"></p>
+<script>
+  var numero = "10";
+  var numero = "10.50€";
+  var numero = "123e5";
+  var numero = "19:33";
+  var numero = "654874587";
+
+document.getElementById("demo39").innerHTML="El tipo de datos que arroja al ejecutar el código es"+" "+ "<strong>"+typeof (numero)+"</strong>"+" "+"cadena de numeros"
+</script>
+
 
 </div>
 </div>
@@ -297,27 +316,45 @@ var coche = &quot;Volvo \&quot;modelo\&quot; XC60&quot;;</p>
 
 <div class="divejemplo2">
 <p><strong>Ejemplo de datos numéricos</strong></p>
-<p>var numerico = 3;<br>
+<p><code>var numerico = 3;<br>
   var numerico = 3.14;<br>
   var numerico = 123e5;<br>
   var numerico = 123e-5;<br>
-  var numerico = 0xFF;</p>
-<p>document.getElementById(&quot;demo&quot;).innerHTML = typeof (numerico);</p>
+  var numerico = 0xFF;</code></p>
+<p><code>document.getElementById(&quot;demo&quot;).innerHTML = typeof (numerico);</code></p>
 <p id="demo40"></p>
+<script>
+  var numerico = 3;
+  var numerico = 3.14;
+  var numerico = 123e5;
+  var numerico = 123e-5;
+  var numerico = 0xFF;
+
+  document.getElementById("demo40").innerHTML="El tipo de datos que arroja al ejecutar el código es"+" "+ "<strong>"+typeof (numerico)+"</strong>"+" "+"cadena de numeros"
+</script>
 
 </div>
 
 <div class="divejemplo2">
 <p><strong>Ejemplo de datos numéricos</strong></p>
-<p>var numeral = &quot;10&quot; - &quot;5&quot;;<br>
+<p><code>var numeral = &quot;10&quot; - &quot;5&quot;;<br>
   var numeral = &quot;10&quot; / &quot;5&quot;;<br>
   var numeral = &quot;10&quot; * &quot;5&quot;;
   <br>
   var numeral = (0.2 * 10 ) / 10;<br>
-  var numeral = (0.2 * 10 + 0.1 * 10) / 10; </p>
-<p>document.getElementById(&quot;demo&quot;).innerHTML = typeof (numeral);</p>
-
+  var numeral = (0.2 * 10 + 0.1 * 10) / 10;</code></p>
+<p><code>document.getElementById(&quot;demo&quot;).innerHTML = typeof (numeral);</code></p>
 <p id="demo41"></p>
+<script>
+  var numeral = "10" - "5";
+  var numeral = "10" / "5";
+  var numeral = "10" * "5"; 
+  var numeral = (0.2 * 10 ) / 10;
+  var numeral = (0.2 * 10 + 0.1 * 10) / 10; 
+
+  document.getElementById("demo41").innerHTML="El tipo de datos que arroja al ejecutar el código es"+" "+ "<strong>"+typeof (numeral)+"</strong>"+" "+"cadena de numeros"
+</script>
+
 
 </div>
 </div>
