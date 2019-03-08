@@ -4,6 +4,21 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ 
+ .nota {
+  background-color: #ffffcc;
+  border-left: 6px solid #ffeb3b;
+  padding:16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+ }
+
+ .ejemplo {
+  background-color: #f1f1f1;
+  padding: 0.01em 16px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+ }
  :root {
     --blue: #007bff;
     --indigo: #6610f2;
