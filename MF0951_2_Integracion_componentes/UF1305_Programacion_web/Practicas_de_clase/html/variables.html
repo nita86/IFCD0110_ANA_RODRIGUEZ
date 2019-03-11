@@ -173,9 +173,10 @@ document.getElementById("demo10").innerHTML="El resultado de la variable z es "+
 <p>Todos los identificadores de JavaScript empiezan con minúculas y pueden contener  <strong>mayúsculas</strong> y<strong> minúsculas</strong> . </p>
 <p>Las variables <strong>lastName</strong> y <strong>lastname</strong> , son dos variables diferentes.</p>
 
-<div>
+<div class="ejemplo"><!--padre-->
   <p><strong>Código Javascript</strong></p>
-<div class="divcodigo">
+<div class="bg-white p-2"><!--codigo-->
+  <code>
   <p>&lt;p id=&quot;demo2&quot;&gt;&lt;/p&gt; &lt;p id=&quot;demo3&quot;&gt;&lt;/p&gt; &lt;p id=&quot;demo4&quot;&gt;&lt;/p&gt; </p>
   <p>&lt;script&gt;<br>
     var nombre = &quot;Juan Antonio&quot;; 
@@ -191,30 +192,46 @@ document.getElementById("demo10").innerHTML="El resultado de la variable z es "+
   <p>document.getElementById(&quot;demo3&quot;).innerHTML = &quot;&lt;strong&gt;Mi dirección es: &lt;/strong&gt;&lt;br&gt;&quot;    + &quot;Calle: &quot; + calle + &quot;.&quot; + &quot;&lt;br&gt;&quot;    + &quot;Número: &quot; + numero + &quot;.&quot; + &quot;&lt;br&gt;&quot;    + &quot;Piso: &quot; + piso + &quot; &quot; + &quot;Letra: &quot; + letra + &quot;.&quot;;</p>
   <p>document.getElementById(&quot;demo4&quot;).innerHTML = &quot;&lt;strong&gt;Mis datos de contacto son: &lt;/strong&gt;&lt;br&gt;&quot; + &quot;Teléfono: &quot; + telefono + &quot;&lt;br&gt;&quot; + &quot;E-Mail: &quot; + email + &quot;.&quot; + &quot;&lt;br&gt;&quot; + &quot;Twitter: &quot; + twitter + &quot;.&quot;;<br>
     &lt;/script&gt;
-  </p>
-</div>
-</div>
-
-
-<div>
+  </p></code>
+</div><!--fin codigo-->
 <p><strong>Resultado de las variables de JavaScript</strong></p>
-<div class="divalineado">
+<div class="row d-flex justify-content-around"><!--alineacion-->
+<div class="bg-white p-2"><!--hijo1-->
 <p id="demo2"></p>
+<script>
+  var nombre = "Juan Antonio"; var apellido1 = "Fernández"; var apellido2 = "Sánchez"; 
+  var calle = "Avenida de la Constitución"; var numero = 18; var piso = "4º"; var letra = "B";
+  var telefono = 675485475; var email = "micorreo@servidor.ext"; var twitter = "@nombredeguerra";
+    
+document.getElementById("demo2").innerHTML = "<strong>Mi nombre y mis apellidos son: </strong><br>" + "Nombre: " + nombre + "." + "<br>" + "Apellido1: " + apellido1 + "." + "<br>" + "Apellido2: " + apellido2 + ".";
+</script>
+</div><!--fin hijo1-->
 
-</div>
-
-<div class="divalineado">
+<div class="bg-white p-2"><!--hijo2-->
 <p id="demo3"></p>
+<script>
+  var nombre = "Juan Antonio"; var apellido1 = "Fernández"; var apellido2 = "Sánchez"; 
+  var calle = "Avenida de la Constitución"; var numero = 18; var piso = "4º"; var letra = "B";
+  var telefono = 675485475; var email = "micorreo@servidor.ext"; var twitter = "@nombredeguerra";
+    
+  document.getElementById("demo3").innerHTML = "<strong>Mi dirección es: </strong><br>" + "Calle: " + calle + "." + "<br>" + "Número: " + numero + "." + "<br>" + "Piso: " + piso + " " + "Letra: " + letra + ".";
+</script>
 
-</div>
+</div><!--fin hijo2-->
 
-<div class="divalineado">
+<div class="bg-white p-2"><!--hijo3-->
 <p id="demo4"></p>
-
-</div>
-</div>
-
-</div>
+<script>
+  var nombre = "Juan Antonio"; var apellido1 = "Fernández"; var apellido2 = "Sánchez"; 
+  var calle = "Avenida de la Constitución"; var numero = 18; var piso = "4º"; var letra = "B";
+  var telefono = 675485475; var email = "micorreo@servidor.ext"; var twitter = "@nombredeguerra";
+    
+  document.getElementById("demo4").innerHTML = "<strong>Mis datos de contacto son: </strong><br>" + "Teléfono: " + telefono + "<br>" + "E-Mail: " + email + "." + "<br>" + "Twitter: " + twitter + ".";
+</script>
+</div><!--fin hijo3-->
+</div><!--fin alineacion-->
+</div><!--fin ejemplo padre-->
+</div><!--fin padre-->
 </body>
 </html>
 
