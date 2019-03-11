@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+  <!--<meta http-equiv="Refresh" content="30">-->
+    <title>Salidas en JavaScript</title>
+  
+  <!-- etiquetas que dan informacion adicional para el buscador -->
+    <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+    <meta name="title" content="Confección y publicación de páginas web">
+    <meta name="keywords" content="Diseño de páginas web con HTML, CSS, JavaScript">
+    <meta name="author" content="Ana Rodríguez">
+  
+  <!--formatos para favicon para que se vea en todos los navegadores-->   
+    <link rel="icon" type="image/png" href="../img/harry_potter_imagens_(7)_opt.png" sizes="16x16">
+    <link rel="icon" type="image/gif" href="../img/harry_potter_imagens_(7)_opt.gif" sizes="16x16">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../img/harry_potter_imagens_(7)_opt.ico" sizes="16x16">
+  
+  <!--Enlaces css y js-->
+    <link rel="stylesheet" href="../css/bootstrap_css.css" type="text/css">
+    <script src="../js/funciones.js"></script>
+  </head>
+  
+<body>
+<div class="container"><!--container-->
+	<h1>Salidas de Javascript</h1>
+    <hr>
+<p>JavaScript puede alterar los datos "Display" de diferentes maneras:</p>
+<ul>
+    <li>La escritura en un elemento HTML, usando <code>innerHTML.</code></li>
+    <li>La escritura en la salida HTML usando <code>document.write().</code></li>
+    <li>Escribir en un cuadro de alerta, usando <code>window.alert().</code></li>
+    <li>Escribir en la consola del navegador, usando <code>console.log().</code></li>
+</ul>
+<div class="ejemplo"><!--padre ejemplo-->
+<div class="row m-2"><!--alineacion-->
+<div class="bg-white p-2 col-6"><!--hijo1-->
+    <p><strong>Usando <code>innerHTML.</code></strong></p>
+    <p>
+    &lt;script&gt;<br>
+    document.getElementById("demo1").innerHTML=5+6;<br>
+    &lt;/script&gt;
+    </p>
+    <button onclick="demo1 ()">Click</button>
+    <p id="demo1"></p>
+<script>
+function demo1 () {
+    document.getElementById("demo1").innerHTML=5+6;
+    }
+</script>
+</div><!--fin hijo1-->
+<div class="bg-white p-2 col-6"><!--hijo2-->
+    <p><strong>Usando <code>document.write().</code></strong></p>
+    <p>
+    &lt;script&gt;<br>
+        document.write(5+6)<br>
+    &lt;/script&gt;
+    </p>
+    <button onclick="demo2 ()">Click</button>
+    <p>Al pulsarlo arroja el resultado en otra página, haciendo desaparecer la nuestra. Se usa para pruebas</p>
+<script>
+function demo2 () {
+     document.write(5+6);
+    }
+</script>
+</div><!--fin hijo2--> 
+<div class="bg-white p-2 col-6"><!--hijo3-->
+    <p><strong>Usando <code>window.alert().</code></strong></p>
+    <p>
+    &lt;script&gt;<br>
+        window.alert(5+6);<br>
+    &lt;/script&gt;
+    </p>
+    <button onclick="demo3 ()">Click</button>
+<script>
+function demo3 ( ) {
+    window.alert(5+6);
+    }
+</script>
+</div><!--fin hijo3-->
+<div class="bg-white p-2 col-6"><!--hijo4-->
+    <p><strong>Usando <code>console.log().</code></strong></p>
+    <p>
+        &lt;script&gt;<br>
+            console.log;<br>
+        &lt;/script&gt;
+    </p>
+    <button onclick="demo4 ()">Click</button>
+    <p>El resultado se muestra en la consola del navegador (F12, console). Se usa para pruebas</p>
+<script>
+function demo4 () {
+    console.log(5+6);
+    }        
+</script>
+</div><!--fin hijo4--> 
+</div><!--fin alineacion-->
+</div><!--fin padre-->
+
+
+
+
+
+
+
+
+    
+</div><!--fin container-->
+</body>
+</html>
+
+
+
+
+
+
+
+
