@@ -64,9 +64,31 @@
         ">Apaga la bombilla</button>
     </div><!--fin bombilla2-->
 </div><!--fin padre-->
-
-
+<hr>
+<h2>Prácitcas con funciones</h2>
+<p>respuesta=prompt ("texto_del_mensaje", "respuesta");</p>
+<p>Cuando pulsamos aceptar, la respuesta se almacena en la memoria del ordenador y luego podemos usar alert para sacarla. Si pulsamos cancelar, se mostrará un mensaje null (nulo).</p>
+<p>alert (respuesta);</p>
+<button onclick="entrada ()">ejemplo1</button>
 <br>
-
+<br>
+<button onclick="entrada2 ()">ejemplo2</button>
+<p>En este caso toma los valores como cadenas de texto y los concatena. Para evitarlo y poder convertir el texto a formato número, hay que añadir <i>ParseInt</i> dentro de total</p>
+<script>
+function entrada () {
+    respuesta=prompt ("¿qué quieres hacer?", " ");
+    alert (respuesta);
+    }
+function entrada2 () {
+    valor1=prompt ("dame el valor a", " ");
+    valor2=prompt ("dame el valor b", " ");
+    operacion (valor1, valor2);
+    }
+function operacion (v1, v2) {
+    total=parseInt(v1)+parseInt(v2);//convierte texto en número
+    alert (total);
+    }
+</script>
+<br>
 </body>
 </html>
