@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+  <!--<meta http-equiv="Refresh" content="30">-->
+    <title>Tipos de datos en JavaScript</title>
+  
+  <!-- etiquetas que dan informacion adicional para el buscador -->
+    <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+    <meta name="title" content="Confección y publicación de páginas web">
+    <meta name="keywords" content="Diseño de páginas web con HTML, CSS, JavaScript">
+    <meta name="author" content="Ana Rodríguez">
+  
+  <!--formatos para favicon para que se vea en todos los navegadores-->   
+    <link rel="icon" type="image/png" href="../img/harry_potter_imagens_(7)_opt.png" sizes="16x16">
+    <link rel="icon" type="image/gif" href="../img/harry_potter_imagens_(7)_opt.gif" sizes="16x16">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../img/harry_potter_imagens_(7)_opt.ico" sizes="16x16">
+  
+  <!--Enlaces css y js-->
+    <link rel="stylesheet" href="../css/bootstrap_css.css" type="text/css">
+    <script src="../js/funciones.js"></script>
+  </head>
+  
+<body>
+<div class="container">
+	<h1>Variables de Javascript</h1>
+    <hr>
+    <h2>Expresión de las variables</h2>
+<p>Una <strong>expresión</strong> es una combinación de <strong>valores, variables y operadores,</strong> que calcula a un valor.</p>
+<p>Las <strong>sentencias</strong> de JavaScript se componen de: <strong>valores, operadores, expresiones, palabras clave y comentarios</strong>.</p>
+
+<div class="ejemplo"><!--padre-->
+<p><strong>Código Javascript</strong></p>
+<div class="bg-white p-2"><!--codigo-->
+  <code>
+  <p>&lt;p id=&quot;demo5&quot;&gt;&lt;/p&gt;<br>
+    <br>
+    &lt;script&gt;<br>
+    var caja1 = <br>
+    &quot;&lt;strong&gt;var: &lt;/strong&gt;Palabra clave para declarar una variable.&quot; + &quot;&lt;br&gt;&quot; +<br>
+    &quot;&lt;strong&gt;identificador: &lt;/strong&gt;Nombre único para la variable.&quot; + &quot;&lt;br&gt;&quot; +<br>
+    &quot;&lt;strong&gt;signo igual:&lt;/strong&gt; Para asignar un valor.&quot; + &quot;&lt;br&gt;&quot; +<br>
+    &quot;&lt;strong&gt;valor:&lt;/strong&gt; número o cadena de texto.&quot; + &quot;&lt;br&gt;&quot; +<br>
+    &quot;&lt;strong&gt;punto y coma: &lt;/strong&gt;finaliza una variable.&quot; + &quot;&lt;br&gt;&quot;;</p>
+  <p>document.getElementById(&quot;demo5&quot;).innerHTML = caja1;<br>
+    &lt;/script&gt;</p>
+  </code>
+</div><!--codigo-->
+<p><strong>Resultado de las variables de JavaScript</strong></p>
+<div class="row d-flex justify-content-around"><!--alineacion-->
+  <div class="bg-white p-2 col-5 m-2"><!--hijo1-->
+<p id="demo5"></p>
+
+<script>//script hijo1
+    var caja1 = 
+    "<strong>var: </strong>Palabra clave para declarar una variable." + "<br>" +
+    "<strong>identificador: </strong>Nombre único para la variable." + "<br>" +
+    "<strong>signo igual:</strong> Para asignar un valor." + "<br>" +
+    "<strong>valor:</strong> número o cadena de texto." + "<br>" +
+    "<strong>punto y coma: </strong>finaliza una variable." + "<br>";
+    
+    document.getElementById("demo5").innerHTML = caja1;
+</script>
+</div><!--fin hijo1-->
+
+<div class="bg-white p-2 col-5 m-2"><!--hijo2-->
+<p id="demo6"></p>
+<script>
+    var ejemplo =
+    "<strong> var</strong> caja3 = coches;"+"<br>"+
+    "var: <strong>ejemplo</strong> = coches;"+"<br>"+
+    "var ejemplo <strong>=</strong> coches;"+"<br>"+
+    "car ejemplo = coches <strong>;</strong>"+"<br>";
+  
+    document.getElementById("demo6").innerHTML=ejemplo;
+  </script>
+</div><!--fin hijo2-->
+</div><!--fin alineacion-->
+<div class="bg-white p-2"><!--hijo3-->
+<p id="demo7"></p>
+<script>
+    var caja2 =
+    "<strong>Identificadores:</strong> empiezan siempre con minúsculas" + "<br>" +
+    "<strong>Identificador: </strong>puede contaner mayúsculas" + "<br>" +
+    "<strong>Identificador</strong> puede comenzar con (_ ó $)" + "<br>" +
+    "<strong>Comentario de una línea</strong> doble barra //" + "<br>" +
+    "<strong>Comentario de varias líneas</strong> doble barra /* y */" + "<br>" +
+    "<strong>Punto y coma: </strong>finaliza una variable." + "<br>"
+    "<strong>Valor numérico</strong> se escribe con o sin decimal" + "<br>" +
+    "<strong>Valor de texto</strong> se escribe con comillas" + "<br>" +
+    "<strong>Operadores</strong> calculan el valor" + "<br>" +
+    "<strong>Coma</strong> separan varias variables" + "<br>" +
+    "<strong>Signo +</strong> se usa para concatenar textos" + "<br>";
+  
+  
+    document.getElementById("demo7").innerHTML=caja2;
+  </script>
+</div><!--fin hijo3-->
+
+</div><!--fin padre-->
+<hr>
+<h2>Al igual que Álgebra</h2>
+    <p>Las variables JavaScript son contenedores para el almacenamiento de valores de datos.</p>
+    <p>JavaScript utiliza <strong>operadores aritméticos</strong> (+ - * /) para <strong>calcular</strong> los valores.</p>
+    
+<div class="ejemplo"><!--padre-->
+<p><strong>Código Javascript</strong></p>  
+<div class="bg-white p-2"><!--codigo-->
+  <code>
+&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;<br>
+&lt;script&gt;<br>
+var x = 10; var y = 20; 
+var z = x + y; <br>
+document.getElementById(&quot;demo&quot;).innerHTML = &quot;El resultado de la variable z es: &quot; + z + &quot;.&quot;;<br>
+&lt;/script&gt;<br>
+</code>
+</div><!--fin codigo-->
+<p><strong>Ejemplos de variables de JavaScript</strong></p>
+<div class="row d-flex justify-content-around"><!--alineacion-->
+<div class="bg-white p-2"><!--hijo1-->
+<p>&lt;script&gt;<br>
+var x = 10;<br>
+var y = 20;<br>
+  var z = x + y; <br>
+  &lt;/script&gt; </p>
+<p id="demo8"></p>
+<script>
+  var x = 10;
+  var y = 20;
+  var z = x + y; 
+
+  document.getElementById("demo8").innerHTML="El resultado de la variable z es "+ z;
+</script>
+</div><!--fin hijo1-->
+
+<div class="bg-white p-2"><!--hijo2-->
+<p>&lt;script&gt;<br>
+var x, y, z;<br>
+x = 10;
+y = 20;<br>
+z = x + y; <br>
+&lt;/script&gt; </p>
+<p id="demo9"></p>
+<script>
+    var x, y, z;
+    x = 10; y = 20;
+    z = x + y; 
+  
+document.getElementById("demo9").innerHTML="El resultado de la variable z es "+z;
+</script>
+</div><!--fin hijo2-->
+
+<div class="bg-white p-2"><!--hijo3-->
+<p>&lt;script&gt;<br>
+  var x; x = 10;<br>
+  var y; y = 20;<br>
+  var z; z = x + y;<br>
+  &lt;/script&gt; </p>
+<p id="demo10"></p>
+<script>
+    var x; x = 10;
+    var y; y = 20;
+    var z; z = x + y;
+
+document.getElementById("demo10").innerHTML="El resultado de la variable z es "+z;
+</script>
+</div><!--fin hijo3-->
+</div>
+</div><!--fin padre-->
+<hr>
+<h2>JavaScript es sensible a mayúsculas</h2>
+<p>Todos los identificadores de JavaScript empiezan con minúculas y pueden contener  <strong>mayúsculas</strong> y<strong> minúsculas</strong> . </p>
+<p>Las variables <strong>lastName</strong> y <strong>lastname</strong> , son dos variables diferentes.</p>
+
+<div>
+  <p><strong>Código Javascript</strong></p>
+<div class="divcodigo">
+  <p>&lt;p id=&quot;demo2&quot;&gt;&lt;/p&gt; &lt;p id=&quot;demo3&quot;&gt;&lt;/p&gt; &lt;p id=&quot;demo4&quot;&gt;&lt;/p&gt; </p>
+  <p>&lt;script&gt;<br>
+    var nombre = &quot;Juan Antonio&quot;; 
+    var apellido1 = &quot;Fernández&quot;;
+    var apellido2 = &quot;Sánchez&quot;; <br>
+    var calle = &quot;Avenida de la Constitución&quot;;
+    var numero = 18;
+    var piso = &quot;4º&quot;;
+    var letra = &quot;B&quot;;<br>
+    var telefono = 675485475;  var email = &quot;micorreo@servidor.ext&quot;; 
+    var twitter = &quot;@nombredeguerra&quot;;</p>
+  <p>document.getElementById(&quot;demo2&quot;).innerHTML =    &quot;&lt;strong&gt;Mi nombre y mis apellidos son:  &lt;/strong&gt;&lt;br&gt;&quot;    + &quot;Nombre: &quot; + nombre + &quot;.&quot; + &quot;&lt;br&gt;&quot;    + &quot;Apellido1: &quot; + apellido1 + &quot;.&quot; + &quot;&lt;br&gt;&quot;    + &quot;Apellido2: &quot; + apellido2 + &quot;.&quot;;</p>
+  <p>document.getElementById(&quot;demo3&quot;).innerHTML = &quot;&lt;strong&gt;Mi dirección es: &lt;/strong&gt;&lt;br&gt;&quot;    + &quot;Calle: &quot; + calle + &quot;.&quot; + &quot;&lt;br&gt;&quot;    + &quot;Número: &quot; + numero + &quot;.&quot; + &quot;&lt;br&gt;&quot;    + &quot;Piso: &quot; + piso + &quot; &quot; + &quot;Letra: &quot; + letra + &quot;.&quot;;</p>
+  <p>document.getElementById(&quot;demo4&quot;).innerHTML = &quot;&lt;strong&gt;Mis datos de contacto son: &lt;/strong&gt;&lt;br&gt;&quot; + &quot;Teléfono: &quot; + telefono + &quot;&lt;br&gt;&quot; + &quot;E-Mail: &quot; + email + &quot;.&quot; + &quot;&lt;br&gt;&quot; + &quot;Twitter: &quot; + twitter + &quot;.&quot;;<br>
+    &lt;/script&gt;
+  </p>
+</div>
+</div>
+
+
+<div>
+<p><strong>Resultado de las variables de JavaScript</strong></p>
+<div class="divalineado">
+<p id="demo2"></p>
+
+</div>
+
+<div class="divalineado">
+<p id="demo3"></p>
+
+</div>
+
+<div class="divalineado">
+<p id="demo4"></p>
+
+</div>
+</div>
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
