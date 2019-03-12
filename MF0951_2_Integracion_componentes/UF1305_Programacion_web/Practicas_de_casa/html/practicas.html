@@ -136,7 +136,51 @@ function mayormenor() {
 </script>
 <div class="p-2 container border border-primary m-2">
 <h3>Instrucción <em>switch</em></h3>
+<form action="">
+    <input type="text" id="valor3">
+    <input type="text" id="valor4">
+
+<button class="btn btn-primary" onclick="calcular('suma')"> + </button>
+<button class="btn btn-primary" onclick="calcular('resta')"> - </button>
+<button class="btn btn-primary" onclick="calcular('multiplicacion')"> * </button>
+<button class="btn btn-primary" onclick="calcular('division')"> / </button>
+</form>
 </div>
+<script>
+function calcular(operacion) {
+    var a=document.getElementById("valor3").value;
+        a=parseInt(a);
+    var b=document.getElementById("valor4").value;
+        b=parseInt(b);
+    if(isNaN(a) || isNaN(b)) {
+        alert("introducir solo numeros");
+        return;//salir de la funcion
+    }
+    switch(operacion) {
+        case "suma":
+        suma=a+b;
+        alert("a+b es igual a "+suma);
+        break;
+        case "resta":
+        resta=a-b;
+        alert("a-b es igual a "+resta);
+        break;
+        case "multiplicacion":
+        multiplicacion=a*b;
+        alert("a*b es igual a "+multiplicacion);
+        break;
+        case "division":
+        if (b!=0) {//b distinto de 0
+            division=a/b;
+            alert("a/b es igual a "+division);
+        }
+        else {
+            alert ("b no puede ser 0");
+        }
+        break;
+    }
+}
+</script>
 <br>
 <br>
 <br>
