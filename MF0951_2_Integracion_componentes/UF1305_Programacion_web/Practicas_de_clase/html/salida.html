@@ -141,7 +141,7 @@ function confirmar () {
     if (pulsaboton ==true) {
         mensaje = "has pulsado aceptar";
         }
-    else {
+    else {//si no es cierto ó pulsaboton==false
         mensaje="has pulsado cancelar";
         }
     alert (mensaje);
@@ -149,13 +149,13 @@ function confirmar () {
 
 //----------------ALERT-----------------
 function fechahora () {
-    //a partir de la fecha del sist vamos a construir un nuevo dato
+    //a partir de la fecha del sist (12/03/2019) vamos a construir un nuevo dato
     var fecha = new Date ();
-    var extraerDia = fecha.getDay ();//obtiene 2 (martes porque domingo es 0)
-    var extraerDiaMes =fecha.getDate ();//obtiene 12
+    var extraerDia = fecha.getDay ();//valor=2 (martes porque domingo es 0)
+    var extraerDiaMes =fecha.getDate ();//valor=12
     var diaSemana = ["domingo","lunes", "martes", "miercoles", "jueves", "viernes", "sabado",];
-    var extraerMes = fecha.getMonth ();//obtiene martes
-    var diaMes =["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Nobiembre", "Diciembre"];//obtiene marzo
+    var extraerMes = fecha.getMonth ();//valor=3
+    var diaMes =["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Nobiembre", "Diciembre"];//valor
     var extraerAno =fecha.getFullYear ();//obtiene 2019
     
     alert (
@@ -167,19 +167,19 @@ function fechahora () {
 }
 
 //---------------PROMPT----------------
-function entrada () {
+function entrada() {
     //creamos una variable llamada nombre cuyo valor es el prompt y otra igual apellido
     nombre=prompt ("Nombre", " ");
     apellido=prompt ("Apellido", " ");
     alert (nombre+" "+apellido);
 }
 </script>
-<h2>Windows open ()</h2>
+<h2>Windows open()</h2>
 <p>Abre una nueva ventana del navegador.</p>
-<p>Para cerrarla se usa close ()</p>
+<p>Para cerrarla se usa close()</p>
 <button onclick="abrir ()">click</button>
 <script>
-function abrir () {
+function abrir() {
     var ventanaNueva = window.open ("", "", "width=200,height=200");
     ventanaNueva.document.write("<p>texto en la nueva ventana<br>es muy importante no poner espacios en blanco entre las comillas</p>");
 }
