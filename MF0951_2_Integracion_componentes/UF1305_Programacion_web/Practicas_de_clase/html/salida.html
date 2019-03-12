@@ -152,19 +152,18 @@ function fechahora () {
     //a partir de la fecha del sist vamos a construir un nuevo dato
     var fecha = new Date ();
     var extraerDia = fecha.getDay ();//obtiene 2 (martes porque domingo es 0)
-    var extraerDiaMes =fecha.getDate ();
+    var extraerDiaMes =fecha.getDate ();//obtiene 12
     var diaSemana = ["domingo","lunes", "martes", "miercoles", "jueves", "viernes", "sabado",];
-    var extraerMes = fecha.getMonth ();
-    var diaMes =["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Nobiembre", "Diciembre"];
-    var extraerAño =fecha.getFullYear ();
+    var extraerMes = fecha.getMonth ();//obtiene martes
+    var diaMes =["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Nobiembre", "Diciembre"];//obtiene marzo
+    var extraerAno =fecha.getFullYear ();//obtiene 2019
     
     alert (
         "hoy es "+diaSemana [extraerDia]+//va al elemento del array en posición 2 y lo muestra
         " "+extraerDiaMes+
         " de "+diaMes [extraerMes]+ 
-        " del "+extraerAño
+        " del "+extraerAno
         );
-    
 }
 
 //---------------PROMPT----------------
@@ -174,10 +173,28 @@ function entrada () {
     apellido=prompt ("Apellido", " ");
     alert (nombre+" "+apellido);
 }
-
+</script>
+<h2>Windows open ()</h2>
+<p>Abre una nueva ventana del navegador.</p>
+<p>Para cerrarla se usa close ()</p>
+<button onclick="abrir ()">click</button>
+<script>
+function abrir () {
+    var ventanaNueva = window.open ("", "", "width=200,height=200");
+    ventanaNueva.document.write("<p>texto en la nueva ventana<br>es muy importante no poner espacios en blanco entre las comillas</p>");
+}
 </script>
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
