@@ -66,25 +66,40 @@
 </div><!--fin padre-->
 <hr>
 <h2>Prácitcas con funciones</h2>
+<div class="p-2 container border border-primary m-2">
 <p>respuesta=prompt ("texto_del_mensaje", "respuesta");</p>
 <p>Cuando pulsamos aceptar, la respuesta se almacena en la memoria del ordenador y luego podemos usar alert para sacarla. Si pulsamos cancelar, se mostrará un mensaje null (nulo).</p>
 <p>alert (respuesta);</p>
-<button onclick="entrada ()">ejemplo1</button>
+<button class="btn btn-primary" onclick="entrada ()">ejemplo1</button>
 <br>
+</div>
+<div class="p-2 container border border-primary m-2">
+<button class="btn btn-primary" onclick="entrada2 ()">ejemplo2</button>
 <br>
-<button onclick="entrada2 ()">ejemplo2</button>
-<p>En este caso toma los valores como cadenas de texto y los concatena. Para evitarlo y poder convertir el texto a formato número, hay que añadir <i>ParseInt</i> dentro de total</p>
+<p>En este caso toma los valores como cadenas de texto y los concatena. Para evitarlo y poder convertir el texto a formato número, hay que añadir <strong><i>ParseInt</i></strong> dentro de total</p>
+<button class="btn btn-primary" onclick="entrada3 ()">ejemplo3</button>
+</div>
+
 <script>
 function entrada () {
     respuesta=prompt ("¿qué quieres hacer?", " ");
     alert (respuesta);
     }
-function entrada2 () {
+function entrada2 () {//sin parseInt
     valor1=prompt ("dame el valor a", " ");
     valor2=prompt ("dame el valor b", " ");
-    operacion (valor1, valor2);
+    operacion2 (valor1, valor2);
     }
-function operacion (v1, v2) {
+function operacion2 (v1, v2) {//sin parseInt
+    total=(v1+v2);
+    alert (total);
+    }
+function entrada3 () {//con parseInt
+    valor1=prompt ("dame el valor a", " ");
+    valor2=prompt ("dame el valor b", " ");
+    operacion3 (valor1, valor2);
+    }
+function operacion3 (v1, v2) {//con parseInt
     total=parseInt(v1)+parseInt(v2);//convierte texto en número
     alert (total);
     }
