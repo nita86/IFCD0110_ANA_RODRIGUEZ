@@ -96,6 +96,7 @@ function demo4 () {
 </div><!--fin hijo4--> 
 </div><!--fin alineacion-->
 </div><!--fin padre-->
+
 <h2>Cuadros de diálogo con ventanas</h2>
 <p>JavaScript puede mostrar cuadros de diálogo a través de elementkos </p>
 <ul>
@@ -118,7 +119,7 @@ function demo4 () {
             <p><strong>alert ()</strong></p>
             <p>Muestra un cuadro de alerta con un mensaje especificado y un botón Aceptar.Se utiliza para asegurarse que la información llega hasta el usuario.</p>
             <p><em>alert (mensaje)</em></p>
-            <button onclick="alert ('aceptar/cancelar')">Pulsar</button>
+            <button onclick="fechahora ()">Pulsar</button>
         </div><!--estilo-->
     </div><!--fin hijo2-->
     <div class="col-4"><!--hijo3-->
@@ -132,17 +133,47 @@ function demo4 () {
 </div><!--fin alineacion-->
 </div><!--fin padre ejemplos-->
 <script>
-function confirmar () {//creamos una variable llamada respuesta cuyo valor es el confirm
-    respuesta= confirm ("aceptar o cancelar");
-    alert (respuesta);
+//----------COFIRM----------------
+function confirmar () {
+    //creamos una variable llamada mensaje cuyo valor depende del de la var pulsaboton, que es el confirm
+    var mensaje;
+    var pulsaboton = confirm ('aceptar o cancelar');
+    if (pulsaboton ==true) {
+        mensaje = "has pulsado aceptar";
+        }
+    else {
+        mensaje="has pulsado cancelar";
+        }
+    alert (mensaje);
 }
+
+//----------------ALERT-----------------
+function fechahora () {
+    //a partir de la fecha del sist vamos a construir un nuevo dato
+    var fecha = new Date ();
+    var extraerDia = fecha.getDay ();//obtiene 2 (martes porque domingo es 0)
+    var extraerDiaMes =fecha.getDate ();
+    var diaSemana = ["domingo","lunes", "martes", "miercoles", "jueves", "viernes", "sabado",];
+    var extraerMes = fecha.getMonth ();
+    var diaMes =["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Nobiembre", "Diciembre"];
+    var extraerAño =fecha.getFullYear ();
+    
+    alert (
+        "hoy es "+diaSemana [extraerDia]+//va al elemento del array en posición 2 y lo muestra
+        " "+extraerDiaMes+
+        " de "+diaMes [extraerMes]+ 
+        " del "+extraerAño
+        );
+    
+}
+
+//---------------PROMPT----------------
 function entrada () {
     //creamos una variable llamada nombre cuyo valor es el prompt y otra igual apellido
     nombre=prompt ("Nombre", " ");
     apellido=prompt ("Apellido", " ");
     alert (nombre+" "+apellido);
-    }
-
+}
 
 </script>
 
