@@ -235,19 +235,35 @@ function imprimir() {
 
 <div class="p-2 container border border-primary m-2">
 <p><strong>setInterval() y clearInterval()</strong></p>
-<p><strong>setInterval()</strong>llama a una función o evalúa una expresión a intervalos especificados (en milisegundos).Continuará llamando a la función hasta que invoquemos a <strong>clearInterval() </strong> o la ventana está cerrada.</p>
+<p><strong>setInterval()</strong> llama a una función o evalúa una expresión a intervalos especificados en milisegundos.No hace que cambie el valor de la función, simplemente ésta se repite cada cierto tiempo. Continuará llamando a la función hasta que invoquemos a <strong>clearInterval() </strong> o la ventana está cerrada.</p>
 <p><samp>setInterval(function, milliseconds, param1, param2, ...)</samp></p>
-<button class="btn btn-primary" onclick="abrirIntervalo()">abrir</button>
-<button class="btn btn-primary" onclick="cerrarIntervalo()">cerrar</button>
+<p id="contador"></p>
+<button class="btn btn-primary" onclick="abrirIntervalo()">iniciar</button>
+<button class="btn btn-primary" onclick="cerrarIntervalo()">parar</button>
 <script>
-    var miVariable = setInterval(abrirIntervalo(), 4000);
+    //la funcion abrirIntervalo() hace que cambie el valor de i y setInterval la ejecuta cada 2sg
+    var i = 0;
+    var miVariable;
 function abrirIntervalo() {
-    miIntervalo=window.open('', '', 'width=200, height=100');
-    miIntervalo.document.write("hhhhhhheeeeeyyyyyyyyy");
+    miVariable = setInterval(function(){
+    i++;
+    document.getElementById("contador").innerHTML=i;}, 2000);    
 }
 function cerrarIntervalo() {
     clearInterval(miVariable);
 }
+</script>
+<p>Cronómetro</p>
+<p id="crono"></p>
+<button class="btn btn-primary" onclick="empezar()">iniciar</button>
+<button class="btn btn-primary" onclick="parar()">parar</button>
+<script>
+    var cronometro;
+    var i=0;
+function empezar() {
+    cronometro = setInterval(function(){document.getElementById("crono").innerHTML=i;i++;},1000);
+}//en el p crono muestra el valor de i, le sumas i++ y lo repites cada 1sg
+function parar() {clearInterval(cronometro);i=0;}
 </script>
 </div>
 
