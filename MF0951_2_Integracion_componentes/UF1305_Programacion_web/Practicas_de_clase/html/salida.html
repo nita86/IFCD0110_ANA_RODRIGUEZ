@@ -42,10 +42,10 @@
     document.getElementById("demo1").innerHTML=5+6;<br>
     &lt;/script&gt;
     </p>
-    <button onclick="demo1 ()">Click</button>
+    <button class="btn btn-primary" onclick="demo1()">Click</button>
     <p id="demo1"></p>
 <script>
-function demo1 () {
+function demo1() {
     document.getElementById("demo1").innerHTML=5+6;
     }
 </script>
@@ -57,10 +57,10 @@ function demo1 () {
         document.write(5+6)<br>
     &lt;/script&gt;
     </p>
-    <button onclick="demo2 ()">Click</button>
+    <button class="btn btn-primary" onclick="demo2()">Click</button>
     <p>Al pulsarlo arroja el resultado en otra página, haciendo desaparecer la nuestra. Se usa para pruebas</p>
 <script>
-function demo2 () {
+function demo2() {
      document.write(5+6);
     }
 </script>
@@ -72,7 +72,7 @@ function demo2 () {
         window.alert(5+6);<br>
     &lt;/script&gt;
     </p>
-    <button onclick="demo3 ()">Click</button>
+    <button class="btn btn-primary" onclick="demo3()">Click</button>
 <script>
 function demo3 ( ) {
     window.alert(5+6);
@@ -86,10 +86,10 @@ function demo3 ( ) {
             console.log;<br>
         &lt;/script&gt;
     </p>
-    <button onclick="demo4 ()">Click</button>
+    <button class="btn btn-primary" onclick="demo4()">Click</button>
     <p>El resultado se muestra en la consola del navegador (F12, console). Se usa para pruebas</p>
 <script>
-function demo4 () {
+function demo4() {
     console.log(5+6);
     }        
 </script>
@@ -104,37 +104,30 @@ function demo4 () {
     <li>alert ()</li>
     <li>prompt ()</li>
 </ul>
-<div class="containter ejemplo"><!--padre ejemplos-->
-<div class="row"><!--alineacion-->
-    <div class="col-4"><!--hijo1-->
-        <div class="bg-white p-2"><!--estilo-->
-            <p><strong>confirm ()</strong></p>
-            <p>Muestra un cuadro de diálogo con un mensaje especificado, junto con un clic en Aceptar y un botón Cancelar.Pe utiliza si desea que el usuario verifique o aceptar algo.</p>
-            <p><em>confirm (mensaje)</em></p>
-            <button onclick="confirmar ()">Pulsar</button>
-        </div><!--estilo-->
-    </div><!--fin hijo1-->
-    <div class="col-4"><!--hijo2-->
-        <div class="bg-light p-2"><!--estilo-->
-            <p><strong>alert ()</strong></p>
-            <p>Muestra un cuadro de alerta con un mensaje especificado y un botón Aceptar.Se utiliza para asegurarse que la información llega hasta el usuario.</p>
-            <p><em>alert (mensaje)</em></p>
-            <button onclick="fechahora ()">Pulsar</button>
-        </div><!--estilo-->
-    </div><!--fin hijo2-->
-    <div class="col-4"><!--hijo3-->
-        <div class="bg-light p-2"><!--estilo-->
-            <p><strong>prompt ()</strong></p>
-            <p>Muestra un cuadro de diálogo que solicita al visitante que introduzca un dato. Cuando un cuadro de mensaje aparece, el usuario tendrá que haga clic en "Aceptar" o "Cancelar" para continuar después de introducir un valor de entrada. No se debe abusar de este método, ya que evita que el usuario pueda acceder a otras partes de la página hasta que la caja está cerrada. El método prompt () devuelve el valor de entrada si el usuario hace clic en "OK". Si el usuario hace clic en "cancelar" el método devuelve null.</p>
-            <p><em>prompt ("testo del mensaje", "respuesta")</em></p>
-            <button onclick="entrada ()">Pulsar</button><!--al pulsar llama a la funcion entrada () y nos muestra el resultado-->
-        </div><!--estilo-->
-    </div><!--fin hijo3-->
-</div><!--fin alineacion-->
-</div><!--fin padre ejemplos-->
+<div class="p-2 container border border-primary m-2"><!--estilo-->
+    <p><strong>confirm()</strong></p>
+    <p>Muestra un cuadro de diálogo con un mensaje especificado, junto con un clic en Aceptar y un botón Cancelar.Pe utiliza si desea que el usuario verifique o aceptar algo.</p>
+    <p><em>confirm (mensaje)</em></p>
+    <button class="btn btn-primary" onclick="confirmar()">Pulsar</button>
+</div><!--estilo-->
+   
+<div class="p-2 container border border-primary m-2"><!--estilo-->
+    <p><strong>alert()</strong></p>
+    <p>Muestra un cuadro de alerta con un mensaje especificado y un botón Aceptar.Se utiliza para asegurarse que la información llega hasta el usuario.</p>
+    <p><em>alert (mensaje)</em></p>
+    <button class="btn btn-primary" onclick="fechahora()">Pulsar</button>
+</div><!--estilo-->
+    
+<div class="p-2 container border border-primary m-2"><!--estilo-->
+    <p><strong>prompt()</strong></p>
+    <p>Muestra un cuadro de diálogo que solicita al visitante que introduzca un dato. Cuando un cuadro de mensaje aparece, el usuario tendrá que haga clic en "Aceptar" o "Cancelar" para continuar después de introducir un valor de entrada. No se debe abusar de este método, ya que evita que el usuario pueda acceder a otras partes de la página hasta que la caja está cerrada. El método prompt () devuelve el valor de entrada si el usuario hace clic en "OK". Si el usuario hace clic en "cancelar" el método devuelve null.</p>
+    <p><em>prompt ("testo del mensaje", "respuesta")</em></p>
+    <button class="btn btn-primary" onclick="entrada()">Pulsar</button><!--al pulsar llama a la funcion entrada () y nos muestra el resultado-->
+</div><!--estilo-->
+
 <script>
 //----------COFIRM----------------
-function confirmar () {
+function confirmar() {
     //creamos una variable llamada mensaje cuyo valor depende del de la var pulsaboton, que es el confirm
     var mensaje;
     var pulsaboton = confirm ('aceptar o cancelar');
@@ -148,15 +141,15 @@ function confirmar () {
 }
 
 //----------------ALERT-----------------
-function fechahora () {
+function fechahora() {
     //a partir de la fecha del sist (12/03/2019) vamos a construir un nuevo dato
-    var fecha = new Date ();
-    var extraerDia = fecha.getDay ();//valor=2 (martes porque domingo es 0)
-    var extraerDiaMes =fecha.getDate ();//valor=12
+    var fecha = new Date();
+    var extraerDia = fecha.getDay();//valor=2 (martes porque domingo es 0)
+    var extraerDiaMes =fecha.getDate();//valor=12
     var diaSemana = ["domingo","lunes", "martes", "miercoles", "jueves", "viernes", "sabado",];
-    var extraerMes = fecha.getMonth ();//valor=3
+    var extraerMes = fecha.getMonth();//valor=3
     var diaMes =["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Nobiembre", "Diciembre"];//valor
-    var extraerAno =fecha.getFullYear ();//obtiene 2019
+    var extraerAno =fecha.getFullYear();//obtiene 2019
     
     alert (
         "hoy es "+diaSemana [extraerDia]+//va al elemento del array en posición 2 y lo muestra
@@ -174,10 +167,20 @@ function entrada() {
     alert (nombre+" "+apellido);
 }
 </script>
-<h2>Windows open()</h2>
-<p>Abre una nueva ventana del navegador.</p>
-<p>Para cerrarla se usa close()</p>
-<button onclick="abrir ()">click</button>
+
+<div class="p-2 container border border-primary m-2">
+    <p><strong>windows open()</strong></p>
+    <p>Abre una nueva ventana del navegador.</p>
+    <p>Para cerrarla se usa close()</p>
+    <p><samp>
+        function abrir() {<br>
+&nbsp;&nbsp;&nbsp;var ventanaNueva = window.open ("", "", "width=200,height=200");<br>
+&nbsp;&nbsp;&nbsp;ventanaNueva.document.write("texto en la nueva ventana");<br>
+&nbsp;&nbsp;&nbsp;}
+    </samp></p>
+    <p class="nota">es muy importante no poner espacios en blanco entre las comillas que definen la variable</p>
+    <button clas="btn btn-primary" onclick="abrir()">click</button>
+</div>
 <script>
 function abrir() {
     var ventanaNueva = window.open ("", "", "width=200,height=200");
@@ -185,10 +188,91 @@ function abrir() {
 }
 </script>
 
-<br>
-<br>
-<br>
-<br>
+<div class="p-2 container border border-primary m-2">
+    <p><strong>windows close()</strong></p>
+    <p>Cierra la ventana actual.</p>
+    <p>Consejo: Este método se utiliza a menudo junto con el método open().</p>
+    <p><samp>
+    var ventana;<br>
+    function abrirVentana() {<br>
+&nbsp;&nbsp;&nbsp;ventana = window.open ("", "", "width=200,height=200");<br>
+&nbsp;&nbsp;&nbsp;ventana.document.write("texto en la nueva ventana");<br>
+&nbsp;&nbsp;&nbsp;}<br>
+function cerrarVentana() {<br>
+&nbsp;&nbsp;&nbsp;ventana.close();<br>
+&nbsp;&nbsp;&nbsp;}
+    </samp></p>
+    <button class="btn btn-primary" onclick="abrirVentana()">abrir</button>
+    <button class="btn btn-primary" onclick="cerrarVentana()">cerrar</button>
+    <p class="nota">Para cerrar es necesaerio declarar primero la var ventana pero no darle ningún valor.</p>
+</div>
+<script>
+    var ventana;
+function abrirVentana() {
+    ventana = window.open ("", "", "width=200,height=200");
+    ventana.document.write("<p>texto en la nueva ventana<br>es muy importante no poner espacios en blanco entre las comillas</p>");
+}
+function cerrarVentana() {
+    ventana.close();
+}
+</script>
+
+<div class="p-2 container border border-primary m-2">
+<p><strong>window.print()</strong></p>
+<p>Abre el cuadro de diálogo Imprimir, que permite al usuario seleccionar las opciones de impresión preferidos.</p>
+<p><samp>
+function imprimir() {<br>
+    &nbsp;&nbsp;&nbsp;window.print();<br>
+&nbsp;&nbsp;&nbsp;}
+</samp></p>
+<button class="btn btn-primary" onclick="imprimir()">imprimir</button>
+</div>
+<script>
+function imprimir() {
+    window.print();
+}
+</script>
+
+<div class="p-2 container border border-primary m-2">
+<p><strong>setInterval() y clearInterval()</strong></p>
+<p><strong>setInterval()</strong>llama a una función o evalúa una expresión a intervalos especificados (en milisegundos).Continuará llamando a la función hasta que invoquemos a <strong>clearInterval() </strong> o la ventana está cerrada.</p>
+<p><samp>setInterval(function, milliseconds, param1, param2, ...)</samp></p>
+<button class="btn btn-primary" onclick="abrirIntervalo()">abrir</button>
+<button class="btn btn-primary" onclick="cerrarIntervalo()">cerrar</button>
+<script>
+    var miVariable = setInterval(abrirIntervalo(), 4000);
+function abrirIntervalo() {
+    miIntervalo=window.open('', '', 'width=200, height=100');
+    miIntervalo.document.write("hhhhhhheeeeeyyyyyyyyy");
+}
+function cerrarIntervalo() {
+    clearInterval(miVariable);
+}
+</script>
+</div>
+
+<div class="p-2 container border border-primary m-2">
+<p><strong>moveBy() y resizeBy()</strong></p>
+<p><strong>moveBy()</strong> abre una nueva ventana, y la nueva ventana respecto a su posición actual</p>
+<p><strong>resizeBy()</strong> abre una nueva ventana, y la la cambia de tamaño</p>
+<button class="btn btn-primary" onclick="abrir1()">abrir</button>
+<button class="btn btn-primary" onclick="mover()">mover</button>
+<button class="btn btn-primary" onclick="cambiarTamaño()">cambiar tamaño</button>
+<script>
+function abrir1() {
+  miVentana = window.open('', '', 'width=200, height=100');// Opens a new window
+  miVentana.document.write("<p>hhheeeyyyyyyy</p>");// Some text in the new window
+}
+function mover() {
+  miVentana.moveBy(250, 250);// Moves the new window 
+  miVentana.focus();//pone el cuersor en la ventana nueva
+}
+function cambiarTamaño() {
+  miVentana.resizeBy(250, 250);// Resizes the new window
+  miVentana.focus();//pone el cuersor en la ventana nueva
+}
+</script>
+</div>
 <br>
 <br>
 <br>
