@@ -100,7 +100,8 @@ function locale() {
 function encuentra() {
     var Frase =prompt("introduce una frase");
     var letra =prompt("introduce una letra o patrón");
-    var buscar =Frase.match(letra);
+    var expresion = new RegExp (letra, 'gi');//convierte letra en expresion regular
+    var buscar =Frase.match(expresion);
     alert(buscar);
 }
 
@@ -132,13 +133,13 @@ function busca() {
 
 //Método slice()
 function cortar() {
-    var Frase=prompt("tu email");
+    var Frase=prompt("introduce tu email");
     var arroba =Frase.search(/@/);//busca @
     var punto = Frase.search(/\./);//busca .
     var usuario = Frase.slice(0,arroba);
     var dominio= Frase.slice(arroba+1, punto);
-    var extension =Frase.slice(punto+1);
-    alert("tu email es: "+"/n"+usuario+"/n"+dominio+"/n"+extension);
+    var extension =Frase.slice(punto);
+    alert("tu email es: "+"\n"+"usuario: "+usuario+"\n"+"dominio: "+dominio+"\n"+"extensión: "+extension);
     
 
 }
