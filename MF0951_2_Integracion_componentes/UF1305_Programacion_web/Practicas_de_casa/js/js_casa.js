@@ -98,3 +98,19 @@ function calcular(operacion) {
         break;
     }
 }
+
+function mientras() {
+    var x=1;var str="";
+    while (x=10) {
+        str=str + x + " heeeeeeeeeyyyyyyy \n";
+        alert(str);
+        x++;
+    }
+   alert(str);
+}
+
+function para() {
+    for (i=0; i<elementent.length; i++) {
+
+    }
+}

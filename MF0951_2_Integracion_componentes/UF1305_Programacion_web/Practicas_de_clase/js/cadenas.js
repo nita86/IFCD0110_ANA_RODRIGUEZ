@@ -140,6 +140,4 @@ function cortar() {
     var dominio= Frase.slice(arroba+1, punto);
     var extension =Frase.slice(punto);
     alert("tu email es: "+"\n"+"usuario: "+usuario+"\n"+"dominio: "+dominio+"\n"+"extensión: "+extension);
-    
-
 }
