@@ -141,3 +141,56 @@ function cortar() {
     var extension =Frase.slice(punto);
     alert("tu email es: "+"\n"+"usuario: "+usuario+"\n"+"dominio: "+dominio+"\n"+"extensión: "+extension);
 }
+
+//Método split
+function extraer() {
+    var Frase=prompt("introduce una frase");
+    var palabra1 =prompt("introduce la palabra que quieres extraer");
+    var resultado= Frase.split(palabra1);
+    alert("tras cortarla, tu frase queda así: "+resultado);
+}
+
+//Método starsWith
+function comienza() {
+    var Frase=prompt("introduce una frase");
+    var palabra1 =prompt("introduce la primera palabra");
+    var resultado= Frase.startsWith(palabra1);
+    alert("¿es la palabra que has introducido la primera de tu frase?: "+resultado);
+}
+
+//Método substr()
+function sustraer() {
+    var Frase=prompt("introduce una frase");
+    var palabra =prompt("introduce la palabra que quieres sustraer");
+    var posicion =Frase.indexOf(palabra);
+    var longitud =palabra.length;
+    var resultado = Frase.substr(posicion,longitud);
+    alert("la palabra que has extraido es: "+resultado);
+}
+
+//Método substring() 
+function subcadena() {
+    var Frase=prompt("introduce una frase");
+    var letra1 =prompt("introduce una letra por la que quieras cortar");
+    var letra2 =prompt("introduce otra letra por la que quieras cortar");
+    var posicion1= Frase.indexOf(letra1);
+    var posicion2= Frase.indexOf(letra2);
+    var resultado= Frase.substring(posicion1,posicion2);
+    alert("la cadena que has obtenido es: "+"\n"+resultado);
+}
+
+//Método toString() 
+function cadena() {
+    var personas = {nombre:'Juan', apellido:'Perez', edad:15};
+    var Frase=alert("Ejemplo de objeto JavaScript: "+"\n"+"var personas = {nombre:'Juan', apellido:'Perez', edad:15};");
+    var tipo= alert("se trata de un: "+typeof(personas));
+    var resultado =personas.toString();
+    alert(resultado);
+}
+
+//Método trim()
+function extremo() {
+    var Frase=prompt("introduce una frase con espacios en blanco delante y detras");
+    var espacio=Frase.trim();
+    alert("el resultado es: "+espacio);
+}
