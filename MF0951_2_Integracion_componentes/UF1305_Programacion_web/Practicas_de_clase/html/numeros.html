@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+<!--<meta http-equiv="Refresh" content="30">-->
+  <title>Métodos numéricos en JavaScript</title>
+
+<!-- etiquetas que dan informacion adicional para el buscador -->
+  <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+  <meta name="title" content="Confección y publicación de páginas web">
+  <meta name="keywords" content="Diseño de páginas web con HTML, CSS, JavaScript">
+  <meta name="author" content="Ana Rodríguez">
+
+<!--formatos para favicon para que se vea en todos los navegadores-->   
+  <link rel="icon" type="image/png" href="../img/harry_potter_imagens_(7)_opt.png" sizes="16x16">
+  <link rel="icon" type="image/gif" href="../img/harry_potter_imagens_(7)_opt.gif" sizes="16x16">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="../img/harry_potter_imagens_(7)_opt.ico" sizes="16x16">
+
+<!--Enlaces css y js-->
+  <link rel="stylesheet" href="../css/bootstrap_css.css" type="text/css">
+  <script src="../js/funciones-numeros.js"></script>
+</head>
+
+<body>
+<div class="container">
+<h1>Métodos numéricos (number)</h1>
+<hr>
+<h2>El concepto de números</h2>
+<p>Un número (number) es un  tipo de dato que puede ser escrito con o sin decimales y son precisos hasta los 15 dígitos.</p>
+<p>Los métodos numéricos devuelven un valor nuevo y no cambian la variable original,  y puede utilizarse con cualquier tipo de número (literales, variables o expresiones).  </p>
+<div id="contenedor" class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
+<button class="btn btn-primary btn-sm" type="button" onClick="cerrar()">Cerrar</button>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="bg-light shadow rounded p-3 h-100">
+				<h3 class="border-bottom border-info">Definición  y uso</h3>
+				<p id="demo1"></p>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="bg-light shadow rounded p-3 h-100">
+				<h3 class="border-bottom border-info">Resultado del uso </h3>
+				<p id="demo2"></p>
+			</div>
+		</div> 
+	</div>
+</div>
+<style>
+	#contenedor {display:none;}
+  #contenedor2 {display: none;}
+</style>
+<hr>
+<h2>Métodos numéricos</h2>
+<table class="table table-striped">
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>Síntasix</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><a href="#">isFinite()</a></td>
+      <td>Comprueba si un valor es un número finito.</td>
+      <td><em>number</em>.isFinite(<em>value</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="esFinito()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">isInteger()</a></td>
+      <td> Comprueba si un valor es un entero.</td>
+      <td>Number.isInteger(<em>value</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="esEntero() ">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">isNaN()</a></td>
+      <td>Comprueba si un valor no es un número (NaN).</td>
+      <td>Number.isNaN(<em>value</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="noEsNumero()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">toExponential(x)</a></td>
+      <td>Convierte un número en un número exponencial. x es igual al número de dígitos.</td>
+      <td><em>number</em>.toExponential(<em>x</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="aExponencial()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">toFixed(x)</a></td>
+      <td>Formatea un número con x números de dígitos después del punto decimal.</td>
+      <td><em>number</em>.toFixed(<em>x</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="aFijar()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">toPrecision(x)</a></td>
+      <td>Formatea un número a una longitud.</td>
+      <td><em>number</em>.toPrecision(x)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="aPrecision()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">toString()</a></td>
+      <td>Convierte un número en una cadena y lo representa en una base aritmética.</td>
+      <td><em>number</em>.toString(<em>radix</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="aCadena()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">valueOf()</a></td>
+      <td>Devuelve el valor primitivo de un número.</td>
+      <td><em>number</em>.valueOf()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="valorDe()">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+<h2>Propiedades de los números</h2>
+<div>
+  <p>Todos los métodos numéricos devuelven un valor nuevo. No cambian la variable original.</p>
+  <div id="contenedor2" class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
+    <button class="btn btn-primary btn-sm" type="button" onClick="cerrar2()">Cerrar</button>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="bg-light shadow rounded p-3 h-100">
+            <h3 class="border-bottom border-info">Definición  y uso</h3>
+            <p id="demo3"></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="bg-light shadow rounded p-3 h-100">
+            <h3 class="border-bottom border-info">Resultado del uso </h3>
+            <p id="demo4"></p>
+          </div>
+        </div> 
+      </div>
+    </div>
+</div>
+<br>
+<table class="table table-striped">
+  <tbody>
+    <tr>
+      <th>Propiedad</th>
+      <th>Descripción</th>
+      <th>Síntaxis</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_number.asp">Number()</a></td>
+      <td>Convertir las variables JavaScript en números:</td>
+      <td>Number()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="convertirNumero()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_parsefloat.asp">parseFloat()</a></td>
+      <td>Analiza una cadena y devuelve un número. Se permiten espacios. Sólo se devuelve el primer número:</td>
+      <td>parseFloat(string)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="analizaCadena()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_parseint.asp">parseInt()</a></td>
+      <td>Analiza una cadena y devuelve un número <strong>entero</strong>. Se permiten espacios. Sólo se devuelve el primer número: </td>
+      <td>parseInt(string, radix)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="numeroEntero()">Ejecutar</button></td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<p><br>
+</p>
+<hr>
+<p>&nbsp;</p>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
