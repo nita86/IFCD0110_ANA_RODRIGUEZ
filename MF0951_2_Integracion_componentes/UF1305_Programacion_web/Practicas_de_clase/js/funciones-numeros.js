@@ -292,8 +292,6 @@ document.getElementById("contenedor2").style.display = "block";
 }
 
 function cerrar2(){
-document.getElementById("contenedor2").style.display="none";
-	
-	
-  }
+document.getElementById("contenedor2").style.display="none";	
+}
 
