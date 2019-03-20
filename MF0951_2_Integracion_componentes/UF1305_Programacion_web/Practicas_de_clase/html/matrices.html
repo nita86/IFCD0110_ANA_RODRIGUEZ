@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">	
 <!--<meta http-equiv="Refresh" content="30">-->
-  <title>Fecha en JavaScript</title>
+  <title>Matrices en JavaScript</title>
 
 <!-- etiquetas que dan informacion adicional para el buscador -->
   <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
@@ -19,16 +19,16 @@
 
 <!--Enlaces css y js-->
   <link rel="stylesheet" href="../css/bootstrap_css.css" type="text/css">
-  <script src="../js/funciones-fecha.js"></script>
+  <script src="../js/matrices.js"></script>
 </head>
 
 <body>
 <div class="container">
-<h1>Métodos de fecha (date)</h1>
+<h1>Métodos de matrices (Array)</h1>
 <hr>
-<h2>El concepto de números</h2>
-<p>Por defecto, JavaScript utilizará la zona horaria del navegador y mostrar una fecha como una cadena de texto completo:</p>
-<p>Los objetos de fecha se crean con el constructor <strong>new Date().</strong></p> 
+<h2>El concepto de matriz</h2>
+<p>El objeto Array se utiliza para almacenar varios valores en una sola variable:</p>
+<p>El primer elemento de la matriz es 0, el segundo es 1, y así sucesivamente.</p> 
 <p id="fecha"></p>
 <div id="contenedor" class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
 <!-- <button class="btn btn-primary btn-sm" type="button" onClick="cerrar()">Cerrar</button> -->
@@ -77,55 +77,56 @@
 	</div>
 
 <table class="table table-striped"">
-    <tbody><tr>
+    <tbody>
+    <tr>
     <th>Method</th>
     <th>Description</th>
     <th>&nbsp;</th>
     </tr>
     <tr>
-    <td>getFullYear()</td>
-    <td>Get the <strong>year</strong> as a four digit number (yyyy)</td>
-    <td><button class="btn btn-primary btn-sm" type="button" onClick="nuevoAno()">Ejecutar</button></td>
+    <td>newArray()</td>
+    <td>Crea un nuevo array con los datos existentes en variables</td>
+    <td><button class="btn btn-primary btn-sm" type="button" onClick="nuevoArray()">Ejecutar</button></td>
     </tr>
     <tr>
     <td>getMonth()</td>
     <td>Get the <strong>month</strong> as a number (0-11)</td>
-    <td><button class="btn btn-primary btn-sm" type="button" onClick="nuevoMes()">Ejecutar</button></td>
+    <td><button class="btn btn-primary btn-sm" type="button" onClick="">Ejecutar</button></td>
     </tr>
     <tr>
     <td>getDate()</td>
     <td>Get the <strong>day</strong> as a number (1-31)</td>
-    <td><button class="btn btn-primary btn-sm" type="button" onClick="dia()">Ejecutar</button></td>
+    <td><button class="btn btn-primary btn-sm" type="button" onClick="">Ejecutar</button></td>
     </tr>
     <tr>
     <td>getHours()</td>
     <td>Get the <strong>hour</strong> (0-23)</td>
-    <td><button class="btn btn-primary btn-sm" type="button" onClick="hora()">Ejecutar</button></td>
+    <td><button class="btn btn-primary btn-sm" type="button" onClick="">Ejecutar</button></td>
     </tr>
     <tr>
     <td>getMinutes()</td>
     <td>Get the <strong>minute</strong> (0-59)</td>
-    <td><button class="btn btn-primary btn-sm" type="button" onClick="minuto()">Ejecutar</button></td>
+    <td><button class="btn btn-primary btn-sm" type="button" onClick="">Ejecutar</button></td>
     </tr>
     <tr>
     <td>getSeconds()</td>
     <td>Get the <strong>second</strong> (0-59)</td>
-    <td><button class="btn btn-primary btn-sm" type="button" onClick="segundo()">Ejecutar</button></td>
+    <td><button class="btn btn-primary btn-sm" type="button" onClick="">Ejecutar</button></td>
     </tr>
     <tr>
     <td>getMilliseconds()</td>
     <td>Get the <strong>millisecond</strong> (0-999)</td>
-    <td><button class="btn btn-primary btn-sm" type="button" onClick="miliseg()">Ejecutar</button></td>
+    <td><button class="btn btn-primary btn-sm" type="button" onClick="">Ejecutar</button></td>
     </tr>
     <tr>
     <td>getTime()</td>
     <td>Get the time (milliseconds since January 1, 1970)</td>
-    <td><button class="btn btn-primary btn-sm" type="button" onClick="tiempo()">Ejecutar</button></td>
+    <td><button class="btn btn-primary btn-sm" type="button" onClick="">Ejecutar</button></td>
     </tr>
     <tr>
     <td>getDay()</td>
     <td>Get the weekday as a number (0-6)</td>
-    <td><button class="btn btn-primary btn-sm" type="button" onClick="diaSemana()">Ejecutar</button></td>
+    <td><button class="btn btn-primary btn-sm" type="button" onClick="">Ejecutar</button></td>
     </tr>
     </tbody></table>
 <p>&nbsp;</p>

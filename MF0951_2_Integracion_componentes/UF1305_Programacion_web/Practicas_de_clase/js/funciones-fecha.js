@@ -1,10 +1,10 @@
-//JavaScript Document
+//JavaScript
 
 //CONTADOR
 function reloj() {
 	var fecha=new Date();
 	var ano= fecha.getFullYear();
-	var mes= fecha.getMonth()+1;//+1 porque enero 0, febrero 1, marzo 2.......
+	var mes= newFunction(fecha);//+1 porque enero 0, febrero 1, marzo 2.......
 	var meses=["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
 	var nombreMes= meses[fecha.getMonth()];
 	var dia= fecha.getDate();
@@ -12,23 +12,27 @@ function reloj() {
 	var min= fecha.getMinutes();
 	var seg= fecha.getSeconds();
 	var diaSemana= fecha.getDay()-1;//-1 porque domingo 0 lunes 1....
-	var dias= ["lunes", "martes", "miércoles", "jueves", "viernes", "sabado", "domingo"];
+	var dias= ["lunes", "martes", "miÃ©rcoles", "jueves", "viernes", "sabado", "domingo"];
 
-document.getElementById("link1").innerHTML="Año "+ano;
-	if(mes<10) {mes="0"+mes;}//cuando mes<10 se añade un 0 para que tenga dos cifras
+document.getElementById("link1").innerHTML="AÃ±o "+ano;
+	if(mes<10) {mes="0"+mes;}//cuando mes<10 se aÃ±ade un 0 para que tenga dos cifras
 document.getElementById("link2").innerHTML="Mes "+mes;
-	if(dia<10) {dia="0"+dia;}//cuando dia<10 se añade un 0 para que tenga dos cifras
+	if(dia<10) {dia="0"+dia;}//cuando dia<10 se aÃ±ade un 0 para que tenga dos cifras
 document.getElementById("link3").innerHTML="Dia "+dia;
-	if(hora<10) {hora="0"+hora;}//cuando hora<10 se añade un 0 para que tenga dos cifras
+	if(hora<10) {hora="0"+hora;}//cuando hora<10 se aÃ±ade un 0 para que tenga dos cifras
 document.getElementById("link4").innerHTML="Hora "+hora;
-	if(min<10) {min="0"+min;}//cuando min<10 se añade un 0 para que tenga dos cifras
+	if(min<10) {min="0"+min;}//cuando min<10 se aÃ±ade un 0 para que tenga dos cifras
 document.getElementById("link5").innerHTML="Minutos "+min;
-	if(seg<10) {seg="0"+seg;}//cuando seg<10 se añade un 0 para que tenga dos cifras
+	if(seg<10) {seg="0"+seg;}//cuando seg<10 se aÃ±ade un 0 para que tenga dos cifras
 document.getElementById("link6").innerHTML="Segundos "+seg;
 
 document.getElementById("fechaLarga").innerHTML="hoy es "+dias[diaSemana]+" "+dia+ " de "+ nombreMes+ " de "+ ano;
 
-setTimeout(reloj, 1000);//cada cuantos milisg se ejecuta la función reloj
+setTimeout(reloj, 1000);//cada cuantos milisg se ejecuta la funciÃ³n reloj
+}
+
+function newFunction(fecha) {
+	return fecha.getMonth() + 1;
 }
 
 //-------------------------------------
@@ -51,22 +55,22 @@ function cerrar2() {
 document.getElementById("contenedor2").style.display="none";	
 }
 
-//Método newDate()
+//MÃ©todo newDate()
 function nuevaFecha() {
   var fecha =new Date();
   document.getElementById("fecha").innerHTML="<strong>"+fecha+"</strong>";
 
-setTimeout(nuevaFecha, 1000);//cada cuantos milisg se ejecuta la función nuevaFecha
+setTimeout(nuevaFecha, 1000);//cada cuantos milisg se ejecuta la funciÃ³n nuevaFecha
 }
 
-//Método gerFullYear()
+//MÃ©todo gerFullYear()
 function nuevoAno() {
 	var fecha = new Date();
 	var ano= fecha.getFullYear();
-	alert("el año actual es: "+ano);
+	alert("el aÃ±o actual es: "+ano);
 }
 
-//Método getMonth()
+//MÃ©todo getMonth()
 function nuevoMes() {
 	var fecha = new Date();
 	var mes= fecha.getMonth()+1;//+1 porque enero 0, febrero 1, marzo 2.......
@@ -75,53 +79,53 @@ function nuevoMes() {
 	alert("el mes actual es: "+mes+" ("+nombreMes+")");
 }
 
-//Método getDay()
+//MÃ©todo getDay()
 function dia(){
 	var fecha = new Date();
 	var dia= fecha.getDate();
-	alert("hoy es día: "+dia);
+	alert("hoy es dÃ­a: "+dia);
 }
 
-//Método getHours()
+//MÃ©todo getHours()
 function hora(){
 	var fecha = new Date();
 	var hora= fecha.getHours();
 	alert("estamos en la hora: "+hora);
 }
 
-//Método getMinutes()
+//MÃ©todo getMinutes()
 function minuto(){
 	var fecha = new Date();
 	var minuto= fecha.getMinutes();
 	alert("estamos en los minutos: "+minuto);
 }
 
-//Método getSeconds()
+//MÃ©todo getSeconds()
 function segundo(){
 	var fecha = new Date();
 	var seg= fecha.getSeconds();
 	alert("estamos en los segundos: "+seg);
 }
 
-//Método getMilliseconds ()
+//MÃ©todo getMilliseconds ()
 function miliseg(){
 	var fecha = new Date();
 	var miliseg= fecha.getMilliseconds();
 	alert("estamos en los milisegundos: "+miliseg);
 }
 
-//Método getTime ()
+//MÃ©todo getTime ()
 function tiempo(){
 	var fecha = new Date();
 	var tiempo= fecha.getTime();
 	alert("desde la fecha de inicio han pasado: "+tiempo+" milisegundos");
 }
 
-//Método getDay ()
+//MÃ©todo getDay ()
 function diaSemana(){
 	var fecha = new Date();
 	var diaSemana =fecha.getDay();
-	var diaLetra= ["lunes", "martes", "miércoles", "jueves", "viernes", "sabado", "domingo"];
+	var diaLetra= ["lunes", "martes", "miÃ©rcoles", "jueves", "viernes", "sabado", "domingo"];
 	var letra= diaLetra[fecha.getDay()-1];//-1 porque domingo 0, lunes 1.......
 	alert("el dia actual es: "+diaSemana+" ("+letra+")");
 }
