@@ -15,10 +15,15 @@ function reloj() {
 	var dias= ["lunes", "martes", "miércoles", "jueves", "viernes", "sabado", "domingo"];
 
 document.getElementById("link1").innerHTML="Año "+ano;
-document.getElementById("link2").innerHTML="Mes "+mes+1;
+	if(mes<10) {mes="0"+mes;}//cuando mes<10 se añade un 0 para que tenga dos cifras
+document.getElementById("link2").innerHTML="Mes "+mes;
+	if(dia<10) {dia="0"+dia;}//cuando dia<10 se añade un 0 para que tenga dos cifras
 document.getElementById("link3").innerHTML="Dia "+dia;
+	if(hora<10) {hora="0"+hora;}//cuando hora<10 se añade un 0 para que tenga dos cifras
 document.getElementById("link4").innerHTML="Hora "+hora;
+	if(min<10) {min="0"+min;}//cuando min<10 se añade un 0 para que tenga dos cifras
 document.getElementById("link5").innerHTML="Minutos "+min;
+	if(seg<10) {seg="0"+seg;}//cuando seg<10 se añade un 0 para que tenga dos cifras
 document.getElementById("link6").innerHTML="Segundos "+seg;
 
 document.getElementById("fechaLarga").innerHTML="hoy es "+dias[diaSemana]+" "+dia+ " de "+ nombreMes+ " de "+ ano;
@@ -50,6 +55,8 @@ document.getElementById("contenedor2").style.display="none";
 function nuevaFecha() {
   var fecha =new Date();
   document.getElementById("fecha").innerHTML="<strong>"+fecha+"</strong>";
+
+setTimeout(nuevaFecha, 1000);//cada cuantos milisg se ejecuta la función nuevaFecha
 }
 
 //Método gerFullYear()
