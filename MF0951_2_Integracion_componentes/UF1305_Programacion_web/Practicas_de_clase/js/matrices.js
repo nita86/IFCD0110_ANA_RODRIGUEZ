@@ -6,12 +6,12 @@ function nuevoArray() {
     var color2= prompt("introduce un color");
     var color3= prompt("introduce un color");
     var colores =
-        "(\"" +color1+ "\","+
+        ("\"" +color1+ "\","+
          "\""+color2+"\","+
-         "\""+color3+ "\")";
+         "\""+color3+ "\"");
     alert(colores);
     var array =new Array(colores);
     var tipo= typeof(array);
-    alert(array +"\n"+"typeof "+tipo);
+    alert(array +"\n"+"de tipo typeof "+tipo+"\n"+"de largo "+array.length);
 
 }
