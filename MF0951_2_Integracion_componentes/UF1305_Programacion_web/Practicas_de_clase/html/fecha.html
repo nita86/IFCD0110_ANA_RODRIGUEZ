@@ -28,29 +28,54 @@
 <hr>
 <h2>El concepto de números</h2>
 <p>Por defecto, JavaScript utilizará la zona horaria del navegador y mostrar una fecha como una cadena de texto completo:</p>
-<p>Los objetos de fecha se crean con el constructor <button class="btn btn-primary btn-sm" onclick="nuevaFecha()">new Date().</button></p>
+<p>Los objetos de fecha se crean con el constructor <strong>new Date().</strong> 
 <p id="fecha"></p>
 <div id="contenedor" class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
 <button class="btn btn-primary btn-sm" type="button" onClick="cerrar()">Cerrar</button>
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-12">
 			<div class="bg-light shadow rounded p-3 h-100">
-				<h3 class="border-bottom border-info">Definición  y uso</h3>
-				<p id="demo1"></p>
-			</div>
+				<h4  id="fechaLarga" class="centrar"></h4>
+				<p class="centrar">
+          <a id="link1" href="#" class="enlace">enlace1</a>
+          <a id="link2" href="#" class="enlace">enlace2</a>
+          <a id="link3" href="#" class="enlace">enlace3</a>
+          <a id="link4" href="#" class="enlace">enlace4</a>
+          <a id="link5" href="#" class="enlace">enlace5</a>
+          <a id="link6" href="#" class="enlace">enlace6</a>
+        </p>
+<style>
+#contenedor {display:block;}
+.enlace {
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  margin: 5px;
+  font-size: large;
+}
+.enlace:hover {
+  background-color: rgb(44, 109, 46);
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  margin: 5px;
+  font-size: large;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.centrar {text-align: center;}
+</style>
+
+<script>
+  window.onload =nuevaFecha();//se carga automáticamente al abrir la página
+  window.onload =reloj();//se carga automáticamente al abrir la página
+</script>
+      
+    </div>
 		</div>
-		<div class="col-md-6">
-			<div class="bg-light shadow rounded p-3 h-100">
-				<h3 class="border-bottom border-info">Resultado del uso </h3>
-				<p id="demo2"></p>
-			</div>
 		</div> 
 	</div>
-</div>
-<style>
-    #contenedor {display:none;}
-  #contenedor2 {display: none;}
-</style>
+
 <table class="table table-striped"">
     <tbody><tr>
     <th>Method</th>
@@ -102,13 +127,10 @@
     <td>Get the weekday as a number (0-6)</td>
     <td><button class="btn btn-primary btn-sm" type="button" onClick="diaSemana()">Ejecutar</button></td>
     </tr>
-    <tr>
-    <td>Date.now()</td>
-    <td>Get the time. ECMAScript 5.</td>
-    <td><button class="btn btn-primary btn-sm" type="button" onClick="esFinito()">Ejecutar</button></td>
-    </tr>
     </tbody></table>
 <p>&nbsp;</p>
+</div>
+
 </div>
 </body>
 </html>

@@ -1,5 +1,33 @@
+//JavaScript Document
+
+//CONTADOR
+function reloj() {
+	var fecha=new Date();
+	var ano= fecha.getFullYear();
+	var mes= fecha.getMonth()+1;//+1 porque enero 0, febrero 1, marzo 2.......
+	var meses=["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+	var nombreMes= meses[fecha.getMonth()];
+	var dia= fecha.getDate();
+	var hora= fecha.getHours();
+	var min= fecha.getMinutes();
+	var seg= fecha.getSeconds();
+	var diaSemana= fecha.getDay()-1;//-1 porque domingo 0 lunes 1....
+	var dias= ["lunes", "martes", "miércoles", "jueves", "viernes", "sabado", "domingo"];
+
+document.getElementById("link1").innerHTML="Año "+ano;
+document.getElementById("link2").innerHTML="Mes "+mes+1;
+document.getElementById("link3").innerHTML="Dia "+dia;
+document.getElementById("link4").innerHTML="Hora "+hora;
+document.getElementById("link5").innerHTML="Minutos "+min;
+document.getElementById("link6").innerHTML="Segundos "+seg;
+
+document.getElementById("fechaLarga").innerHTML="hoy es "+dias[diaSemana]+" "+dia+ " de "+ nombreMes+ " de "+ ano;
+
+setTimeout(reloj, 1000);//cada cuantos milisg se ejecuta la función reloj
+}
+
+//-------------------------------------
 function cerrar(){
-	
 	var dots = document.getElementById("contenedor");
 	//var btnText = document.getElementById("boton1");
   
@@ -12,17 +40,16 @@ function cerrar(){
   /*    btnText.innerHTML = "Ejecutar"; 
 	  moreText.style.display = "inline";*/
 	}
-
-  }
+}
 
 function cerrar2() {
 document.getElementById("contenedor2").style.display="none";	
 }
 
-//MÃ©todo newDate()
+//Método newDate()
 function nuevaFecha() {
   var fecha =new Date();
-  document.getElementById("fecha").innerHTML=fecha;
+  document.getElementById("fecha").innerHTML="<strong>"+fecha+"</strong>";
 }
 
 //Método gerFullYear()
