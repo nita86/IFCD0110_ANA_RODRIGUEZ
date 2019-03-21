@@ -43,10 +43,10 @@ function quitar() {
     for (var i=0;i<3;i++) {
         array [i] =prompt("introduce un color");
     }
+    var arrayInicial=array.toString();
     var texto2 =array.pop();
-    var array;
 
-    alert("con los colores que has introducido, se ha creado un array\n"+"("+array+")"+"\ny luego hemos quitado el último valor ("+texto2 +"), quedando:\n"+"("+array+")");
+    alert("con los colores que has introducido, se ha creado un array\n"+"("+arrayInicial+")"+"\ny luego hemos quitado el último valor ("+texto2 +"), quedando:\n"+"("+array+")");
 }
 
 //Método push()
@@ -55,11 +55,11 @@ function añadir() {
     for (var i=0;i<3;i++) {
         array [i] =prompt("introduce un color");
     }
+    var arrayInicial=array.toString();
     var otroColor=prompt("añade otro color")
     var texto2 =array.push(otroColor);
-    var array;
     
-    alert("con los colores que has introducido, se ha creado un array\n"+"("+array+")"+"\ny luego hemos añadido el último valor ("+otroColor +"), quedando:\n"+"("+array+")");
+    alert("con los colores que has introducido, se ha creado un array\n"+"("+arrayInicial+")"+"\ny luego hemos añadido el último valor ("+otroColor +"), quedando:\n"+"("+array+")");
 }
 
 //Método shift()
@@ -69,10 +69,10 @@ function quitar1() {
         array [i] =prompt("introduce un color");
     }
 
+    var arrayInicial=array.toString();
     var texto2 =array.shift();
-    var array;
     
-    alert("con los colores que has introducido, se ha creado un array\n"+"("+array+")"+"\ny luego hemos quitado el primer elemento ("+texto2+"), quedando:\n"+"("+array+")");
+    alert("con los colores que has introducido, se ha creado un array\n"+"("+arrayInicial+")"+"\ny luego hemos quitado el primer elemento ("+texto2+"), quedando:\n"+"("+array+")");
 } 
 
 //Método unshift()
@@ -81,29 +81,50 @@ function añadir1() {
     for (var i=0;i<3;i++) {
         array [i] =prompt("introduce un color");
     }
+    var arrayInicial=array.toString();
     var otroColor=prompt("añade otro color")
     var texto2 =array.unshift(otroColor);
-    var array;
     
-    alert("con los colores que has introducido, se ha creado un array\n"+"("+array+")"+"\ny luego hemos añadido el último valor ("+otroColor+") al inicio, quedando:\n"+"("+array+")");
+    alert("con los colores que has introducido, se ha creado un array\n"+"("+arrayInicial+")"+"\ny luego hemos añadido el último valor ("+otroColor+") al inicio, quedando:\n"+"("+array+")");
 }
 
 //Método delete[]
 function eliminar() {
-    var array =new Array(colores);
+    var array =new Array();
     for (var i=0;i<3;i++) {
         array [i] =prompt("introduce un color");
     }
     
+    var arrayInicial=array.toString();
     var otroColor=prompt("añade el color que quieres quitar")
-    var eliminar=array.indexOf(otroColor);
+    var eliminar=array.indexOf(otroColor);//posicion de otroColor
     var texto2 =delete array[eliminar];
-    var array;
     
-    alert("con los colores que has introducido, se ha creado un array\n"+"("+array+")"+"\ny luego hemos quitado el valor ("+otroColor +") que has elegido, quedando:\n"+"("+array+")");
+    alert("con los colores que has introducido, se ha creado un array\n"+"("+arrarrayInicialay+")"+"\ny luego hemos quitado el valor ("+otroColor +") que has elegido, quedando:\n"+"("+array+")");
 }
 
 //Método splice()
 function rebanar() {
+    var array =new Array();
+    for (var i=0;i<3;i++) {
+        array [i] =prompt("introduce un color");
+    }
+    
+    var arrayInicial=array.toString();
+    var posicion=prompt("define la posición del nuevos elementos");
+    posicion=parseInt(posicion);//hay q convertir los caracteres en números
+    if (isNaN(posicion)) {//si no es un numero
+        alert("introduce solo número");
+        return;//salir de la funcion
+    }
+    var eliminar=prompt("¿cuántos elementos quieres eliminar?");
+    eliminar=parseInt(eliminar);//hay q convertir los caracteres en números
+    if (isNaN(eliminar)) {//si no es un numero
+        alert("introduce solo número");
+        return;//salir de la funcion
+    }
+    var otroColor=prompt("añade otro color");
+    var resultado=array.splice(posicion,eliminar,otroColor);
 
-}zf,.
+    alert("con los colores que has introducido, se ha creado un array \n"+"("+arrayInicial+")"+"\nque hemos modificado con el valor ("+otroColor +") que has elegido, en la posición "+posicion+" quedando:\n"+"("+array+")");
+}
