@@ -1,0 +1,40 @@
+
+<script>
+
+//alert("casa \n Grande");
+
+var pausa;
+
+
+var nombres = new Array();
+	function Nombres(){
+	var entrada = document.getElementById("nombre").value;
+	if (nombres.length > 0) {
+		for (var i=0;i<nombres.length;i++)
+			{
+			if (nombres[i].localeCompare(entrada) == 1){
+				nombres.splice(i, 0, entrada);
+				break;
+				}
+			} //for 
+			if(nombres[nombres.length -1].localeCompare(entrada) == -1)
+			{ nombres.push(entrada);}
+		} else {
+	 nombres.push(entrada);
+	}
+	document.getElementById("salida").innerHTML = nombres;
+	}
+
+	function funcionConPausa(){
+	 pausa = setTimeout(function(){alert("Hola");},5000);
+	}	
+	function detenerPausa(){
+	clearTimeout(pausa);
+	}
+</script>
+<input type="text" id="nombre">
+<p id="salida"></p>
+<button onclick="Nombres()">Registrar</button>
+<button onclick="funcionConPausa()">Alert con Pausa</button>
+<button onclick="detenerPausa()">Detener Pausa</button>
+
