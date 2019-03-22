@@ -188,3 +188,20 @@ function alfabetoInverso() {
 
     alert("hemos cogido tu array inicial ("+arrayInicial+") y lo hemos ordenado alfabéticamente en orden inverso, obteniendo \n"+"("+inverso+")")
 }
+
+//Método copyWithin() 
+function duplicar() {
+    var array =new Array();
+    for (var i=0;i<3;i++) {
+        array [i] =prompt("introduce un color");
+    }
+    
+    var arrayInicial=array.toString();
+    var otroColor=prompt("introduce el color que quieres copiar");
+    var copia=array.indexOf(otroColor);
+    var posicion=prompt("indica detrás de quién va");
+    var lugar=array.indexOf(posicion);
+    var resultado=array.copyWithin(lugar+1,copia);
+
+    alert("con los colores que has introducido, se ha creado un array \n"+"("+arrayInicial+")"+"\ny hemos duplicado el valor ("+otroColor +") que has elegido, en la posición "+posicion+" quedando:\n"+"("+resultado+")");
+}
