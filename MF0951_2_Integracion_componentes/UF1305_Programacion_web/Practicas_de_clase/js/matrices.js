@@ -96,7 +96,7 @@ function eliminar() {
     }
     
     var arrayInicial=array.toString();
-    var otroColor=prompt("añade el color que quieres quitar")
+    var otroColor=prompt("añade el color que quieres quitar");
     var eliminar=array.indexOf(otroColor);//posicion de otroColor
     var texto2 =delete array[eliminar];
     
@@ -127,4 +127,64 @@ function rebanar() {
     var resultado=array.splice(posicion,eliminar,otroColor);
 
     alert("con los colores que has introducido, se ha creado un array \n"+"("+arrayInicial+")"+"\nque hemos modificado con el valor ("+otroColor +") que has elegido, en la posición "+posicion+" quedando:\n"+"("+array+")");
+}
+
+//Método concat()
+function concatenar() {
+    var array =new Array();
+    for (var i=0;i<3;i++) {
+        array [i] =prompt("introduce un color");
+    }
+    var array2= new Array(); 
+    for (var i=0;i<2;i++) {
+        array2 [i] =prompt("introduce una fruta");
+    }
+    
+    var arrayA=array.toString();
+    var arrayB=array2.toString();
+    var resultado=array.concat(array2);
+
+    alert("hemos sumado tu primer array ("+arrayA+") y tu segundo array ("+arrayB+") y hemos obtenido \n"+"("+resultado+")");
+}
+
+//Método slice();
+function cortar(){
+    var array =new Array();
+    for (var i=0;i<3;i++) {
+        array [i] =prompt("introduce un color");
+    }
+    
+    var arrayInicial=array.toString();
+    var otroColor=prompt("añade el color por el que quieres cortar la cadena");
+    var eliminar=array.indexOf(otroColor);//posicion de otroColor
+    var resultado= array.slice(eliminar);
+
+    alert("hemos cogido tu array inicial ("+arrayInicial+") y lo hemos cortado por la palabra que has elegido ("+otroColor+"), obteniendo \n"+"("+resultado+")");
+}
+
+//Método sort()
+function alfabeto() {
+    var array =new Array();
+    for (var i=0;i<3;i++) {
+        array [i] =prompt("introduce un color");
+    }
+    
+    var arrayInicial=array.toString();
+    var resultado= array.sort();
+
+    alert("hemos cogido tu array inicial ("+arrayInicial+") y lo hemos ordenado alfabéticamente, obteniendo \n"+"("+resultado+")")
+}
+
+//Método reverse
+function alfabetoInverso() {
+    var array =new Array();
+    for (var i=0;i<3;i++) {
+        array [i] =prompt("introduce un color");
+    }
+    
+    var arrayInicial=array.toString();
+    var alfabeto= array.sort();
+    var inverso=array.reverse();
+
+    alert("hemos cogido tu array inicial ("+arrayInicial+") y lo hemos ordenado alfabéticamente en orden inverso, obteniendo \n"+"("+inverso+")")
 }
