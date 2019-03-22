@@ -50,10 +50,10 @@ function horaElseIf() {
 
 //Estructura switch
 function switchCase() {
-   var fecha=new Date();
-     /* var dia=fecha.getDay(); */
+    var fecha=new Date();
+    var trimestre;
     switch(fecha.getMonth()) {
-        case 0:
+        case 0://se pueden agrupar varios casos que deben cumplir lo mismo
         case 1:
         case 2:
         case 3:    
@@ -73,4 +73,14 @@ function switchCase() {
     }
     alert("hoy es "+trimestre);
 }  
+
+//Estructura for
+function bucleFor() {
+    var array=new Array();
+    for (i=0; i<5; i++) {
+        array [i]=prompt("introduce un color");
+    }
+    alert (array);
+    
+}
 
