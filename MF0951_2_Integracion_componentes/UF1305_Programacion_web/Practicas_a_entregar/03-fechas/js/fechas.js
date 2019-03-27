@@ -4,20 +4,34 @@
 function edad() {
     var fecha= new Date(document.getElementById("date1").value);
     var fechaActual=new Date();
-    //numero años
-    var anoUser=fecha.getFullYear();
-    var anoActual=new Date().getFullYear();
-    var anos=(anoActual-anoUser);
-    var resta;
-    var resultado;
+    var base;
+    var resta
     if (fecha<fechaActual) {
+        base=(fechaActual-fecha);//el resultado está en milisegundos
+        var seg=parseInt(base/1000);
+        var min=parseInt(seg/60);
+        var hora=parseInt(min/60);
+        var dia=parseInt(hora/24);
+        var mes=parseInt(dia/30);
         resta=(fechaActual-fecha)/1000/60/60/24/365;//pasar los milisegundos que arroja el resultado a años
-        resultado=resta.toFixed(0);
+        resta=parseInt(resta);
+        document.getElementById("etiqueta1").innerHTML=
+        "<ul>"+
+            "<li> tu edad actual es "+resta+" años</li>"+
+            "<li>tu edad desglosada es:"+
+                "<ul>"+
+                "<li>"+resta+" años</li>"+
+                "<li>"+mes+" meses</li>"+
+                "<li>"+dia+" dias</li>"+
+                "<li>"+hora+" horas</li>"+
+                "<li>"+min+" minutos</li>"+
+                "<li>"+seg+" segundos</li>"+
+                "</ul"+
+            "</li>"+
+        "</ul>";
     }
     else {
-        resta=(fecha-fechaActual)/1000/60/60/24/365;
-        resultado=resta.toFixed(0);
+        document.getElementById("etiqueta1").innerHTML="la fecha introducida debe ser mayor o igual a la actual"
     }
-    var vida=(fechaActual-fecha)/1000/60/60/24/365+" años"+(fechaActual-fecha)/1000/60/60/24+" meses"+(fechaActual-fecha)/1000/60/60+" dias"+ (fechaActual-fecha)/1000/60+" minutos"
-    alert(vida);
+    
 }

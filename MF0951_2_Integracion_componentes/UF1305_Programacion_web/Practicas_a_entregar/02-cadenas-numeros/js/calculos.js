@@ -1,4 +1,4 @@
-//funciones JavaScript
+ //funciones JavaScript
 
 //ejercicio1
 function sueldo() {
