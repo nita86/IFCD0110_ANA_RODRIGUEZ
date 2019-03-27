@@ -19,9 +19,9 @@ function precio() {
     var dto=bruto-(bruto*0.20);
     var iva=bruto+(bruto*0.21);
     var total=bruto-dto+iva;
-    document.getElementById("etiqueta2").innerHTML="precio "+bruto+" euros \n"+
-    "descuento (-20%) "+dto+"\n"+
-    "impuestos (+21%)"+iva+"\n"+
+    document.getElementById("etiqueta2").innerHTML="precio "+bruto+" euros <br>"+
+    "descuento (-20%) "+dto+"<br>"+
+    "impuestos (+21%)"+iva+"<br>"+
     "total "+total+" euros";
 }
 
@@ -38,5 +38,37 @@ function descarga() {
 //ejercicio4
 function frase() {
     var inicial=document.getElementById("number4").value;
-    
+    var comillas="\""+inicial+"\"";
+    var mayusculas=inicial.toUpperCase();
+    var minusculas=mayusculas.toLowerCase();
+    var cortar=inicial.split(" ");//separamos cada palabra y las transformamos en valores individuales
+    var reves=cortar.reverse().join(" "); 
+    var cita="\"Cita:\""+inicial;
+    document.getElementById("etiqueta4").innerHTML="tu frase inicial era: "+inicial+"<br> entrecomillada queda así: "+comillas+"<br> en mayúsculas: "+mayusculas+"<br> en minusculas: "+minusculas+"<br> del revés: "+reves+"<br> y con la palabra añadida: "+cita;
 }
+
+//ejercicio5
+function numeros() {
+    var inicial=document.getElementById("number5").value;
+    var primerEspacio=inicial.indexOf(" ");
+    var primerValor=inicial.slice(0,primerEspacio);
+    var ultimoEspacio=inicial.lastIndexOf(" ");
+    var segundoValor=inicial.slice(primerEspacio+1, ultimoEspacio);
+    var tercerValor=inicial.slice(ultimoEspacio+1);
+    var a=Number(primerValor);
+    var b=Number(segundoValor);
+    var c=Number(tercerValor);
+    var suma=a+b+c;
+    if (a>b && a>c) {
+        document.getElementById("etiqueta5").innerHTML=
+        "<ul><li>"+suma+"</li><li>"+a+" es el mayor</li></ul>";
+    }
+    else if (b>a && b>c) {
+        document.getElementById("etiqueta5").innerHTML=
+        "<ul><li>"+suma+"</li><li>"+b+" es el mayor</li></ul>";
+    }
+    else {
+        document.getElementById("etiqueta5").innerHTML=
+        "<ul><li>"+suma+"</li><li>"+c+" es el mayor</li></ul>";
+    }
+}    

@@ -77,7 +77,6 @@ function aparicion1() {
     var letra =prompt("introduce una letra");
     var primeraVez = Frase.indexOf(letra-1);
     alert("dentro de tu frase, la primera vez que aparece la letra que has elegido es: "+primeraVez);
-
 }
 
 //Método lastIndexOf()
