@@ -128,3 +128,12 @@ function sesion() {
     }
     document.getElementById("etiqueta4").innerHTML="hola "+usuario+" has iniciado sesión el dia "+nuevaFecha+" a las "+nuevaHora;
 }
+
+//ejercicio 5
+function dias() {
+    fechaUsuario=new Date(document.getElementById("date5").value);
+    fechaSistema=new Date();
+    yearSistema=fechaSistema.getFullYear();
+    nuevaFecharUsuario=fechaUsuario.setFullYear(yearSistema);
+    
+}
