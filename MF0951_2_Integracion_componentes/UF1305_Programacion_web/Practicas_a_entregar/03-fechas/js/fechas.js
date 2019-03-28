@@ -75,3 +75,56 @@ function formato() {
     document.getElementById("etiqueta2").innerHTML="hoy es: "+nuevaFecha+"<br> y la hora actual es: "+nuevaHora;
     setTimeout(formato, 1000);//cada cuantos milisg se ejecuta la función reloj
 }
+
+//ejercicio 3
+function fechaLarga() {
+    var fecha= new Date(document.getElementById("date3").value);
+    var year= fecha.getFullYear();
+	var meses=["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+	var nombreMes= meses[fecha.getMonth()];
+	var dia= fecha.getDate();
+	var hora= fecha.getHours();
+	var min= fecha.getMinutes();
+	var seg= fecha.getSeconds();
+	var diaSemana= fecha.getDay()-1;//-1 porque domingo 0 lunes 1....
+    var dias= ["lunes", "martes", "miércoles", "jueves", "viernes", "sabado", "domingo"];
+    
+    document.getElementById("etiqueta3").innerHTML="la fecha que has introducido es: "+dias[diaSemana]+" "+dia+ " de "+ nombreMes+ " de "+ year;
+}
+
+//ejercicio 4
+function sesion() {
+    var usuario=document.getElementById("text4").value;
+    var fecha=new Date();
+    var cadena=fecha.toLocaleDateString();
+    //d/m/yyyy
+    var primerEspacio=cadena.indexOf("/");
+    var segundoEspacio=cadena.lastIndexOf("/");
+    var dia=cadena.slice(0,primerEspacio);
+    var mes=cadena.slice(primerEspacio+1,segundoEspacio);
+    var year=cadena.slice(segundoEspacio+1);
+    //dd/mm/yyyy
+    var nuevaFecha;
+    if(dia.length<2 || mes.length<2) {
+        dia="0"+dia;
+        mes="0"+mes;
+        nuevaFecha=dia+"/"+mes+"/"+year;
+    }
+    else {
+        nuevaFecha=dia+"/"+mes+"/"+year;
+    }
+    var hora=fecha.getHours();
+    var min=fecha.getMinutes();
+    var seg=fecha.getSeconds();
+    var nuevaHora;
+    if(hora<10 || min<10 || seg<10) {
+        hora="0"+hora;
+        min="0"+min;
+        seg="0"+seg;
+        nuevaHora=hora+":"+min+":"+seg;
+    }
+    else {
+        nuevaHora=hora+":"+min+":"+seg;
+    }
+    document.getElementById("etiqueta4").innerHTML="hola "+usuario+" has iniciado sesión el dia "+nuevaFecha+" a las "+nuevaHora;
+}

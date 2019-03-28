@@ -55,7 +55,7 @@ Crear una función que al introducir una fecha en un campo de formulario muestre
 <form id="form3" name="form3" method="post">
   <label for="date3">Introduce tu fecha de naciminento:</label><br>
   <input type="date" name="date3" id="date3">
-  <input type="button" name="button3" id="button3" value="Enviar" onClick=""><br>
+  <input type="button" name="button3" id="button3" value="Enviar" onClick="fechaLarga()"><br>
   <label for="date3" id="etiqueta3"></label>
 </form>
 <br>
@@ -63,9 +63,9 @@ Crear una función que al introducir una fecha en un campo de formulario muestre
 Crear una función que tras identificarse una persona con usuario y contraseña en un formulario de acceso,  muestre un mensaje de bienvenida con el nombre de usuario y la frase: &quot;Hola usuario, has iniciado sesión el día 13/11/2018 a las 15:30:25&quot;. Mostar el resultado debajo del campo de formulario.</strong></p>
 <form id="form4" name="form4" method="post">
   <label for="text4">Formulario de acceso:</label><br>
-  <input type="text" name="text4" id="text4">
-  <input type="password" name="password4" id="password4">
-  <input type="button" name="button4" id="button4" value="Enviar" onClick=""><br>
+  <input type="text" name="text4" id="text4" required>
+  <input type="password" name="password4" id="password4" required>
+  <input type="button" name="button4" id="button4" value="Enviar" onClick="sesion()"><br>
   <label for="text4" id="etiqueta4"></label>
 </form>
 <br>
