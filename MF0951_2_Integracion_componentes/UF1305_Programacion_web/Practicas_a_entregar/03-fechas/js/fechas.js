@@ -32,6 +32,46 @@ function edad() {
     }
     else {
         document.getElementById("etiqueta1").innerHTML="la fecha introducida debe ser mayor o igual a la actual"
+    }  
+}
+
+//ejercicio 2
+function formato() {
+    var entrada1=document.getElementById("number2").value;
+    var entrada2=document.getElementById("number3").value;
+    var entrada3=document.getElementById("number4").value;
+    var fecha=new Date(entrada3,entrada2-1, entrada1);//año, mes-1, dia
+    var cadena=fecha.toLocaleDateString();
+    //d/m/yyyy
+    var primerEspacio=cadena.indexOf("/");
+    var segundoEspacio=cadena.lastIndexOf("/");
+    var dia=cadena.slice(0,primerEspacio);
+    var mes=cadena.slice(primerEspacio+1,segundoEspacio);
+    var year=cadena.slice(segundoEspacio+1);
+    //dd/mm/yyyy
+    var nuevaFecha;
+    if(dia.length<2 || mes.length<2) {
+        dia="0"+dia;
+        mes="0"+mes;
+        nuevaFecha=dia+"/"+mes+"/"+year;
     }
-    
+    else {
+        nuevaFecha=dia+"/"+mes+"/"+year;
+    }
+    var horarioActual=new Date();
+    var hora=horarioActual.getHours();
+    var min=horarioActual.getMinutes();
+    var seg=horarioActual.getSeconds();
+    var nuevaHora;
+    if(hora<10 || min<10 || seg<10) {
+        hora="0"+hora;
+        min="0"+min;
+        seg="0"+seg;
+        nuevaHora=hora+"/"+min+"/"+seg;
+    }
+    else {
+        nuevaHora=hora+"/"+min+"/"+seg;
+    }
+    document.getElementById("etiqueta2").innerHTML="hoy es: "+nuevaFecha+"<br> y la hora actual es: "+nuevaHora;
+    setTimeout(formato, 1000);//cada cuantos milisg se ejecuta la función reloj
 }
