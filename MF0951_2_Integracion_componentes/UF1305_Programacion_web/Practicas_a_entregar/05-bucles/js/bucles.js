@@ -17,3 +17,42 @@ function nif() {
         document.getElementById("etiqueta1").innerHTML="la letra es INCORRECTA";
     }
 }
+
+//ejercicio2
+function signoZodiaco() {
+    var fecha= new Date(document.getElementById("date2").value);
+    var dia=fecha.getDate();
+    var mes=fecha.getMonth()+1;
+    var signo="";
+    var img="";
+    //aries 21marzo 20abril
+    if ((dia >= 21 && mes == 3) || (dia <= 20 && mes == 4)) {
+        signo="aries";
+        img="../img/aries.jpg";
+    }
+    //Tauro (Fecha: Del 21 de abril al 20 de mayo) 
+    else if ((dia >= 21 && mes == 4) || (dia <= 20 && mes == 5)) {
+        signo="tauro";
+        img="../img/tauro.jpg";
+    }
+    //Géminis (Fecha: Del 21 de mayo al 21 de junio)
+    else if ((dia >= 21 && mes == 5) || (dia <= 21 && mes == 6)) {
+        signo="géminis";
+        img="../img/geminis.jpg";
+    }
+    //Cáncer (Fecha: Del 22 de junio al 22 de julio)
+    else if ((dia >= 22 && mes == 6) || (dia <= 22 && mes == 7)) {
+        signo="cáncer";
+        img="../img/cancer.jpg";
+    }
+    //Leo (Fecha: Del 23 de julio al 23 de agosto)
+    else if ((dia >= 23 && mes == 7) || (dia <= 23 && mes == 8)) {
+        signo="leo";
+        img="../img/leo.jpg";
+    }
+    //
+
+document.getElementById("etiqueta2").innerHTML=
+"naciste un "+dia+"/"+mes+"<br> <strong>Eres "+signo+"</strong> <br>"+
+"<img src="+"'"+img+"'"+"width=100px height=100px>";
+}

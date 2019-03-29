@@ -15,4 +15,5 @@ function ejercicio2() {
     var ultimoEspacio=inicial.lastIndexOf(" ");
     var segundoValor=inicial.slice(primerEspacio+1, ultimoEspacio);
     var tercerValor=inicial.slice(ultimoEspacio+1);
+    var incluir=matriz.push("")
 }
