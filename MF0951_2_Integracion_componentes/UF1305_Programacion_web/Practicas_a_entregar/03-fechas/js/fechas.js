@@ -97,29 +97,27 @@ function sesion() {
     var mes=cadena.slice(primerEspacio+1,segundoEspacio);
     var year=cadena.slice(segundoEspacio+1);
     //dd/mm/yyyy
-    var nuevaFecha;
-    if(dia.length<2 || mes.length<2) {
-        dia="0"+dia;
-        mes="0"+mes;
-        nuevaFecha=dia+"/"+mes+"/"+year;
+    var nuevaFecha=new Array(cadena.slice(0,primerEspacio),cadena.slice(primerEspacio+1,segundoEspacio),cadena.slice(segundoEspacio+1));
+    var hoy="";
+    for (i=0; i<nuevaFecha.length; i++) {
+        if (nuevaFecha[i]<10) {
+            nuevaFecha[i]="0"+nuevaFecha[i];
+        }
+        if (i<2) {hoy=hoy+nuevaFecha[i]+"/";}
+        else {hoy=hoy+nuevaFecha[i];}
     }
-    else {
-        nuevaFecha=dia+"/"+mes+"/"+year;
+    var horarioActual=new Date();
+    var nuevaHora=new Array(horarioActual.getHours(),horarioActual.getMinutes(),horarioActual.getSeconds());
+    var hora="";//inicializamos la variable de tipo string
+    for (i=0;i<nuevaHora.length;i++) {
+        if(nuevaHora[i]<10) {
+            nuevaHora[i]="0"+nuevaHora[i];
+        }
+    if (i<2) {hora=hora+nuevaHora[i]+":";}
+    else {hora=hora+nuevaHora[i];}
     }
-    var hora=fecha.getHours();
-    var min=fecha.getMinutes();
-    var seg=fecha.getSeconds();
-    var nuevaHora;
-    if(hora<10 || min<10 || seg<10) {
-        hora="0"+hora;
-        min="0"+min;
-        seg="0"+seg;
-        nuevaHora=hora+":"+min+":"+seg;
-    }
-    else {
-        nuevaHora=hora+":"+min+":"+seg;
-    }
-    document.getElementById("etiqueta4").innerHTML="hola "+usuario+" has iniciado sesión el dia "+nuevaFecha+" a las "+nuevaHora;
+    document.getElementById("etiqueta4").innerHTML="hoy es: "+hoy+"<br> y la hora actual es: "+hora;
+    setTimeout(formato, 1000);//cada cuantos milisg se ejecuta la función
 }
 
 //ejercicio 5
@@ -130,12 +128,12 @@ function dias() {
     fechaUsuario.setFullYear(yearSistema);//no se puede meter en una variable porque lo transforma en miliseg
 if (fechaUsuario>fechaSistema) { //no ha llegado su cumple
     var resta=parseInt((fechaUsuario-fechaSistema)/1000/60/60/24);//dias faltan
+    document.getElementById("etiqueta5").innerHTML= "tu fecha de nacimiento es: "+fechaUsuario+" por lo que faltan "+resta+" dias para tu cumpleños"
     }  
     else {
         var resta=parseInt((fechaSistema-fechaUsuario)/1000/60/60/24); //dias transcurridos
         fechaUsuario.setFullYear(yearSistema+1);
         var faltan=parseInt((fechaUsuario-fechaSistema)/1000/60/60/24);//dias faltan
-        alert(faltan);
-    }
-    alert(resta);
+        document.getElementById("etiqueta5").innerHTML= "tu fecha de nacimiento es: "+fechaUsuario+" por lo que han transcurrido "+resta+" desde tu cumpleaños y faltan "+faltan+" dias hasta el siguiente"   
+    }                    
 }
