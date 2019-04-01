@@ -5,7 +5,7 @@ function edad() {
     var fecha= new Date(document.getElementById("date1").value);
     var fechaActual=new Date();
     var base;
-    var resta
+    var resta;
     if (fecha<fechaActual) {
         base=(fechaActual-fecha);//el resultado está en milisegundos
         var seg=parseInt(base/1000);
@@ -36,7 +36,7 @@ function edad() {
 }
 
 //ejercicio 2
-function formato() {
+function formato() { 
     var entrada1=document.getElementById("number2").value;
     var entrada2=document.getElementById("number3").value;
     var entrada3=document.getElementById("number4").value;
