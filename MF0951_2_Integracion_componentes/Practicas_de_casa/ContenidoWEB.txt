@@ -1,0 +1,38 @@
+INDEX
+--------------------------------------------------------
+Integrar componentes software en páginas web
+
+Ejercicio 1: 
+Crea una función que, introduciendo una fecha, calcule cuántos días hay de diferencia. Si el usuario introduce una fecha posterior a la actual que muestre un mensaje de aviso en rojo “introduce una fecha anterior a la actual”, si no introduce ninguna fecha que le muestre menaje en azul que diga “no has introducido ninguna fecha”, y si el usuario introduce una fecha correcta, que le muestre los días transcurridos en color verde.
+
+Ejercicio 2: 
+Crea una función que, introduciendo una fecha en un campo de formulario, muestre el día de la semana y el mes con texto. El día del mes y el año deben de estar en formato numérico. La fecha debe de tener este formato “Miércoles, 21 Noviembre, 2018”, utiliza una etiqueta de párrafo debajo del campo de formulario, para mostrar la fecha.
+
+Ejercicio 3: 
+Crea una función que, introduciendo 3 frutas separadas por comas en un campo de formulario, muestre los datos introducidos en una lista desordenada de HTML. Mostrar la lista debajo del campo de formulario. 
+
+Ejercicio 4: 
+Crea una función que, introduciendo en un campo de formulario una fecha, capture la hora, minutos y segundos del sistema, y muestre la fecha introducida junto a la hora del sistema en este formato: “Has iniciado sesión el día 13/11/2018 a las 15:30:25”
+
+Ejercicio 5: 
+Crea una función que, introduciendo un precio en un campo de formulario, calcule el precio final, aplicándole un descuento del 20%, y sumándole los impuestos 21% IVA. Mostrar el precio con el símbolo del Euro y con dos decimales. Utiliza una etiqueta de párrafo debajo del campo de formulario, para mostrar el precio desglosado como en el ejemplo.
+
+Ejercicio 6: 
+Crear una función que, introduciendo la fecha de nacimiento de una persona en un campo de formulario, le diga el signo del zodiaco y le muestre una imagen del signo encima del texto. La imagen y el texto deben de estar alineadas al centro.
+
+Ejercicio 7: 
+Crear una función que, introduciendo un número del 1 al 10 en un campo de formulario, muestre la tabla de multiplicar de ese número. Muestra el resultado de la tabla de multiplicar en forma de listado hacia abajo como se muestra en el ejemplo. Mostrar mensaje de aviso en rojo si no se introduce un número comprendido entre 1 y 10.
+
+Ejercicio 8:
+Crear una función que, al introducir una fecha de nacimiento a partir de año 2000, compruebe a que categoría deportiva de fútbol pertenece. Utiliza una etiqueta de párrafo debajo del campo de formulario, para mostrar la categoría.
+
+Ejercicio 9: 
+Crea una función que, al pulsar en un botón de formulario, le pida al usuario sus datos personales a través del prompt y los muestre en una tabla html creada con Javascript. Los datos a recoger son: Nombre, apellido, teléfono, email, fecha de nacimiento y la edad se deberá calcular. Mostrar como en el ejemplo.
+
+Ejercicio 10: 
+Crea una función que, al pulsar en un botón de formulario muestre un mensaje emergente de alerta para informar al usuario que debe de aceptar la política de cookies del sitio web.
+
+
+Texto a utilizar:  
+
+“Según el apartado 2 del artículo 22 de la LSSI le informamos que utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación Al continuar con la navegación entendemos que se acepta nuestra Política de Cookies”.
