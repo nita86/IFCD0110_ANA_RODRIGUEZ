@@ -165,6 +165,11 @@ function tabla() {
         }
     for (i=0; i<=10;i++) {
         resultado += "<tr><td>("+entrada+"x"+i+")="+(entrada*i)+"</td></tr>";
+        document.getElementById("contenedor2").style.display = "block";
         document.getElementById('tabla').innerHTML=resultado;
     }
+}
+
+function cerrar(){
+    document.getElementById("contenedor2").style.display="none";	
 }
