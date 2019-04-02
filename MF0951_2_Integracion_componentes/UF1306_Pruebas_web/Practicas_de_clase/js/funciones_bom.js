@@ -49,3 +49,12 @@ function protocoloPagina() {
 function cargarPagina() {
     document.getElementById("infoPantalla").innerHTML="la página asignada es "+window.location.assign("https://www.w3schools.com");
 }
+
+//historial
+function irAtras() {
+    window.history.back()
+}
+
+function irAdelante() {
+    window.history.forward()
+}
