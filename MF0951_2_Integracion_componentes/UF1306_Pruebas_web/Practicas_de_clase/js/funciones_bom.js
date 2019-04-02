@@ -58,3 +58,16 @@ function irAtras() {
 function irAdelante() {
     window.history.forward()
 }
+
+//cajas emergentes
+function alerta() {
+    window.alert("esto es un mensaje de alerta");
+}
+
+function confirmar() {
+    window.confirm("esto es un mensaje de confirmación");
+}
+
+function introducir() {
+    window.prompt("introduce un valor", "hola Ana");
+}
