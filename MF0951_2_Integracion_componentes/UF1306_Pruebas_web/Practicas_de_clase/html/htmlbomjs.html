@@ -19,10 +19,12 @@
   
   <!--Enlaces css y js-->
     <link rel="stylesheet" href="../css/bootstrap_css.css" type="text/css">
-    <script src=""></script>
+    <link rel="stylesheet" href="../css/estilos.css" type="text/css">
+    <script src="../js/funciones_bom.js"></script>
 </head>
 
 <body>
+<div class="container">
 <h1>JavaScript Navegador (BOM)</h1>
 <hr>
 <h2>El BOM  (Modelo de Objetos del Nagegador)</h2>
@@ -32,7 +34,7 @@
 <div>
 <span id="infoVentana"><script>window.onload = tamanoVentana();</script></span>
 <div class="divIMG">
-<p><img src="img/document-window-navigator.png" width="664" height="444" alt="imagen DOM"/></p>
+<p><img src="../img/document-window-navigator.png" width="664" height="444" alt="imagen DOM"/></p>
 <p><strong>Más información en... </strong><a href="https://webaim.org/blog/user-agent-string-history/" target="_blank">https://webaim.org/blog/user-agent-string-history/</a></p>
 </div>
 
@@ -52,17 +54,17 @@
     <tr>
       <td><a href="#">screen.width , screen.height</a></td>
       <td>Ancho y alto de la pantalla</td>
-      <td><button type="button" onClick="pantalla()">Ejecutar</button></td>
+      <td><button type="button" class="btn btn-primary" onClick="pantalla()">Ejecutar</button></td>
     </tr>
     <tr>
       <td><a href="#">screen.availWidth, screen.availHeight</a></td>
       <td>Ancho y alto de de la pantalla disponible</td>
-      <td><button type="button" onClick="pantallaDisponible()">Ejecutar</button></td>
+      <td><button type="button" class="btn btn-primary" onClick="pantallaDisponible()">Ejecutar</button></td>
     </tr>
     <tr>
       <td><a href="#">screen.colorDepth, screen.pixelDepth</a></td>
       <td>Profundidad de color y píxeles de la pantalla</td>
-      <td><button type="button" onClick="pantallaProfundidad()">Ejecutar</button></td>
+      <td><button type="button" class="btn btn-primary" onClick="pantallaProfundidad()">Ejecutar</button></td>
     </tr>
   </tbody>
 </table>
@@ -80,27 +82,27 @@
     <tr>
       <td><a href="#">window.location.href </a></td>
       <td>Devuelve el href (URL) de la página actual.</td>
-      <td><button type="button" onClick="urlPagina()">Ejecutar</button></td>
+      <td><button type="button" class="btn btn-primary" onClick="urlPagina()">Ejecutar</button></td>
     </tr>
     <tr>
       <td><a href="#">window.location.hostname</a></td>
       <td>Devuelve el nombre de dominio del proveedor de alojamiento web.</td>
-      <td><button type="button" onClick="dominioPagina()">Ejecutar</button></td>
+      <td><button type="button" class="btn btn-primary" onClick="dominioPagina()">Ejecutar</button></td>
     </tr>
     <tr>
       <td><a href="#">window.location.pathname</a></td>
       <td>Devuelve la ruta y el nombre de la página actual.</td>
-      <td><button type="button" onClick="rutaPagina()">Ejecutar</button></td>
+      <td><button type="button" class="btn btn-primary" onClick="rutaPagina()">Ejecutar</button></td>
     </tr>
     <tr>
       <td><a href="#">window.location.protocol</a></td>
       <td>Devuelve el protocolo web utilizado (http: o https:)</td>
-      <td><button type="button" onClick="protocoloPagina()">Ejecutar</button></td>
+      <td><button type="button" class="btn btn-primary" onClick="protocoloPagina()">Ejecutar</button></td>
     </tr>
     <tr>
       <td><a href="#">window.location.assign</a></td>
       <td>Carga un nuevo documento.</td>
-      <td><button type="button" onClick="puertoPagina()">Ejecutar</button></td>
+      <td><button type="button" class="btn btn-primary" onClick="cargarPagina()">Ejecutar</button></td>
     </tr>
   </tbody>
 </table>
@@ -115,14 +117,14 @@
       <th>&nbsp;</th>
     </tr>
     <tr>
-      <td><a href="#">history.back ( )</a></td>
+      <td><a href="#">history.back ()</a></td>
       <td>El método history.back () carga la  anterior URL en la lista del historial.</td>
-      <td><button type="button" onClick="irAtras()">Ejecutar</button></td>
+      <td><button type="button" class="btn btn-primary" onClick="irAtras()">Ejecutar</button></td>
     </tr>
     <tr>
-      <td><a href="@">history.forward ( ) </a></td>
+      <td><a href="@">history.forward () </a></td>
       <td>El método history.forward () carga la  siguiente URL en la lista del historial.</td>
-      <td><button type="button" onClick="irAdelante()">Ejecutar</button></td>
+      <td><button type="button" class="btn btn-primary" onClick="irAdelante()">Ejecutar</button></td>
     </tr>
   </tbody>
 </table>
@@ -138,17 +140,17 @@
     <tr>
       <td><a href="#">window.alert(&quot;sometext&quot;);</a></td>
       <td>Muestra  un cuadro de alerta y el usuario tendrá tendrá que hacer clic en &quot;Aceptar&quot; para continuar.</td>
-      <td><button type="button" onClick="alerta()">Ejecutar</button></td>
+      <td><button type="button" class="btn btn-primary" onClick="alerta()">Ejecutar</button></td>
     </tr>
     <tr>
       <td><a href="@">window.confirm(&quot;sometext&quot;);</a></td>
       <td>Muestra un cuadro de confirmación dónde el usuario tendrá que verificar o aceptar algo.</td>
-      <td><button type="button" onClick="confirmar()">Ejecutar</button></td>
+      <td><button type="button" class="btn btn-primary" onClick="confirmar()">Ejecutar</button></td>
     </tr>
     <tr>
       <td><a href="#">window.prompt(&quot;sometext&quot;,&quot;defaultText&quot;);</a></td>
       <td>Muestra un  cuadro con un mensaje para que el usuario introduzca un valor.</td>
-      <td><button type="button" onClick="introducir()">Ejecutar</button></td>
+      <td><button type="button" class="btn btn-primary" onClick="introducir()">Ejecutar</button></td>
     </tr>
   </tbody>
 </table>
@@ -167,7 +169,7 @@
       </a><a href="@">window.clearTimeout(<em>timeoutVariable</em>)</a><a href="#">;      </a></td>
       <td>El método setTimeout ( ) ejecuta una función  en un intervalo de tiempo especificado.<br>
       El método clearTimeout ( ) detiene la ejecución de la función especificada en setTimeout ( ).</td>
-      <td><button type="button" onClick="myVar = setTimeout(miFuncion, 3000)">Iniciar</button><button type="button" onClick="clearTimeout(myVar)">Parar</button></td>
+      <td><button type="button" onClick="myVar = setTimeout(miFuncion, 3000)">Iniciar</button><button type="button" class="btn btn-primary" onClick="clearTimeout(myVar)">Parar</button></td>
     </tr>
     <tr>
       <td><a href="#">window.setInterval(function, milliseconds);<br>
@@ -175,12 +177,13 @@
       <td>El método setInterval ( ) repite una función dada en cada intervalo de tiempo dado..<br>
       El método clearInterval ( ) detiene la ejecución de la función especificada en setTimeout ( ).</td>
       <td><button type="button" onClick="myTimer()">Iniciar</button>
-        <button type="button" onClick="clearInterval(myVar)">Parar</button></td>
+        <button type="button" class="btn btn-primary" onClick="clearInterval(myVar)">Parar</button></td>
     </tr>
   </tbody>
 </table>
 <br>
 <hr>
+</div>
 </body>
 </html>
 
