@@ -42,11 +42,11 @@ function ejercicio4() {
     array.splice(0,0, "Grupo Volkswagen:");//introducir los valores al inicio
     array.push("Volkswagen", "Bentley", "Bugatti");//introducir los valores al final
     array.splice(1,0,"Ducati", "Lamborghini", "Porsche");//introducir los valores al en medio
+    var seat=array.indexOf("seat");//4
+    array.splice(5,0,"Sacania", "MAN");//introducir los valores al en medio
     var cadena=array.toString();
-    var seat=cadena.indexOf("seat");
-    alert(seat);
-    var posicionComa=cadena.indexOf(",");
+    var posicionComa=cadena.indexOf(",");//17
     var quitaComa1=cadena.slice(0,17);
     var final = quitaComa1 + cadena.slice(18);
-    document.getElementById('etiquetiqueta3').innerHTML=final;
+    document.getElementById('etiqueta4').innerHTML=final;
 }
