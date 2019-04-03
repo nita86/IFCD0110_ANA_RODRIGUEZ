@@ -4,7 +4,7 @@
 function horaIf() {
     var fecha=new Date();
     var hora=fecha.getHours();
-    if(hora=8) {
+    if(hora ==8) {
         alert("despierta");
     }
     if(hora>=9 && hora<=12) {
@@ -40,7 +40,7 @@ function horaElseIf() {
     if(hora<=12) {
         alert("son menos de las 12");
     }
-    else if(hora=13) {
+    else if(hora==13) {
         alert("es la 1, las 12 en Canarias");
     }
     else {
@@ -52,7 +52,7 @@ function horaElseIf() {
 function switchCase() {
     var fecha=new Date();
     var trimestre;
-    switch(fecha.getMonth()) {
+    switch(fecha.getMonth()+1) {
         case 0://se pueden agrupar varios casos que deben cumplir lo mismo
         case 1:
         case 2:
@@ -77,10 +77,58 @@ function switchCase() {
 //Estructura for
 function bucleFor() {
     var array=new Array();
-    for (i=0; i<5; i++) {
+    for (i=0; i<3; i++) {
         array [i]=prompt("introduce un color");
     }
     alert (array);
     
 }
+
+//Estructura while
+function mientrasWhile() {
+    var text = "";
+    var i = 0;
+    while (i < 10) {
+        text += i+", ";
+        i++;
+        document.getElementById("resultado").innerHTML=text;
+        document.getElementById("resultado").style.display="block";
+    }
+}
+//cerrar
+function cerrar() {
+    document.getElementById("resultado").style.display="none";	
+}
+
+//Estructura do while
+function hacerMientrasDoWhile() {
+    do {
+        var entrada=prompt("nombre de alumno");
+        alert(entrada);
+    } while (entrada != "");
+}
+
+//sentencia break
+function romperBucle() {
+    var text = "";
+    var i;
+    for (i = 0; i < 10; i++) {
+        if (i === 3) { break; }
+        text += i+", ";
+    }
+    alert("el bucle se rompe cuando i=3:\n"+text);
+}
+
+//sentencia continue
+function continuarBucle() {
+    var text = "";
+    var i;
+    for (i = 0; i < 10; i++) {
+        if (i === 3) { continue; }
+        text += i+", ";
+    }
+    alert("el bucle salta i=3 y continua con el siguiente valor:\n"+text);
+}
+
+
 

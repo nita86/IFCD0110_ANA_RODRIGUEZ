@@ -64,7 +64,7 @@ function ejercicio5() {
     //aleatorio
     var aleatorio=new Array();//para que no sobreescriba sort se crea otro array sobre el que trabajamos
     for(i=0;i<array.length;i++) {
-        var position =parseInt((Math.random() * 10));//genera numeros aleatorios en un rango 0-10 
+        var position =parseInt((Math.random() * 10));//genera numeros enteros aleatorios en un rango 0-10 
         aleatorio.push(array[position]);//los numeros generados con random position en array[position] se usan como los parametros que introduce push en aleatorio
     }
     document.getElementById('etiqueta5').innerHTML="matriz original: "+entrada+"<br> Ascendente: "+cadenaAsc+"<br> Descendente: "+cadenaDesc+"<br> Aleatorio: "+aleatorio+"<br> Longitud: "+longitud;
