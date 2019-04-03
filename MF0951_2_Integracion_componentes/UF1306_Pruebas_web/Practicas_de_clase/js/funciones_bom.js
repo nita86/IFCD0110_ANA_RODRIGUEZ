@@ -98,7 +98,87 @@ function parar() {
     window.clearInterval(myVar);
 }
 
+//informacion navegador
+function infoNavegador() {//funcion que va a contener todas las funciones que dan info del navegador
 
+//motor navegador
+var motorNombre=navigator.appName;
+if (motorNombre === "Netscape") {
+    motorNombre = "JavaScript";
+    }
+//nombre nav
+var navegador=navigator.appCodeName;
+//version nav
+var version=navigator.appVersion;
+//propietarioGoogle Inc.no existe metodo
+//lenguaje nav
+var lenguaje=navigator.language;
+//Plataforma
+var plataforma=navigator.platform;
+var userPlataforma=navigator.userAgent;
+if((userPlataforma.indexOf("Chrome") >-1) ||//si la encuentra
+    (userPlataforma.indexOf("OPR")>-1) ||
+    (userPlataforma.indexOf("Edge")>-1) ||
+    (userPlataforma.indexOf("Firefox")>-1)) {
+        var indice7=userPlataforma.lastIndexOf("Win64");
+        var plataforma=userPlataforma.substring(indice7,5);
+    }
+//sistema operativo no existe metodo para sacar eso. se hace extrayendo el valor del resultado de user agent
+var sistemaOP= "";
+var userPlataforma=navigator.userAgent;
+if(userPlataforma.indexOf("Windows")) {
+    var sistOp="Windows";
+} else if (userPlataforma.indexOf("Apple")) {
+    var sistOp="Apple";
+} else if (userPlataforma.indexOf("Linux")) {
+    var sistOp="Linux";
+} else if (userPlataforma.indexOf("iPhone")) {
+    var sistOp="iPhone";
+} else if (userPlataforma.indexOf("iPod")) {
+    var sistOp="iPod";
+} else if (userPlataforma.indexOf("Android")) {
+    var sistOp="Android";
+}
+//on line?
+var enLinea=navigator.onLine;
+if (enLinea === true) {
+    var enLinea = "Si";
+} else {var enLinea = "No";}
+//java activo
+var javaActivo=navigator.javaEnabled();
+if (javaActivo === true) {
+    var javaActivo = "Si";
+} else {var javaActivo = "No";}
+//cookes
+var cookies=navigator.cookieEnabled;
+var cookies=navigator.javaEnabled();
+if (cookies === true) {
+    var cookies = "Si";
+} else {var cookies = "No";}
+//plugins
+var plugin=navigator.plugins.length;//cuántos hay
+//user agent
+var user=navigator.userAgent;
+
+
+//mostrar info
+var text="";
+text += "<h3>Información navegador</h3>";
+text += "<p>Motor del navegador "+motorNombre+"</p>";
+text += "<p>Nombre del navegador "+navegador+"</p>";
+text += "<p>Versión del navegador "+version+"</p>";
+text += "<p>Propietario: Google Inc.</p>";
+text += "<p>Lenguaje del navegador "+lenguaje+"</p>";
+text += "<p>Sistema operativo Windows</p>";
+text += "<p>Plataforma del navegador "+plataforma+"</p>";
+text += "<p>Navegador en linea "+enLinea+"</p>";
+text += "<p>Java activo "+javaActivo+"</p>";
+text += "<p>Cookes activas "+cookies+"</p>";
+text += "<p>Pluggins activas "+plugin+"</p>";
+text += "<p>Agente Usuario "+user+"</p>";
+document.getElementById("infoNav").innerHTML=text;
+
+}//fin function infoNavegador
 
 
 
