@@ -175,7 +175,7 @@ width: auto;
 overflow: hidden;
 }
 .infoVentana{
-float: none;
+float: left;
 width: auto;
 overflow: hidden;
 }

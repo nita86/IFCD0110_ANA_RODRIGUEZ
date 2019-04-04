@@ -32,10 +32,11 @@
 <p><em>El <strong>B</strong>rowser <strong>O</strong>bject <strong>M</strong>odel</em> o <strong>BOM</strong>, permite acceder y modificar las propiedades de las ventanas del propio navegador. Mediante <strong>BOM</strong>, es posible redimensionar y mover la ventana del navegador, modificar el texto que se muestra en la barra de estado y realizar muchas otras manipulaciones no relacionadas con el contenido de la página HTML.</p>
 <p>No existen normas oficiales para el <strong>B</strong>rowser <strong>O</strong>bject <strong>M</strong>odelo (<strong>BOM</strong>). El mayor inconveniente de <strong>BOM</strong> es que, al contrario de lo que sucede con <strong>DOM</strong>, ninguna entidad se encarga de estandarizarlo o definir unos mínimos de interoperabilidad entre navegadores.</p>
 <div>
-<span id="infoVentana" class="infoVentana"></span><script>window.onload = tamanoVentana();</script>
+<span id="infoVentana"><script>window.onload = tamanoVentana();</script></span>
 <div class="divIMG">
 <p><img src="../img/document-window-navigator.png" width="664" height="444" alt="imagen DOM"/></p>
 <p><strong>Más información en... </strong><a href="https://webaim.org/blog/user-agent-string-history/" target="_blank">https://webaim.org/blog/user-agent-string-history/</a></p>
+<p id="geolocalizacion"><script>window.onload = geoLocation();</script></p>
 </div>
 
 <div id="infoNav" class="divNAV" style="font-size: 0.7em">Info Navegador<script>window.onload = infoNavegador();</script></div>

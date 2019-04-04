@@ -233,5 +233,14 @@ document.getElementById("infoNav").innerHTML=text;
 
 }//fin function infoNavegador
 
+//GEOLOCALIZACION
+function geoLocation() {
+    if (navigator.location) {
+        navigator.location.getCurrentPosition(showPosition);
+    } else {
+        document.getElementById("geolocalizacion").innerHTML="la geolocalización no es soportada por este navegador";
+    }
+}
+
 
 
