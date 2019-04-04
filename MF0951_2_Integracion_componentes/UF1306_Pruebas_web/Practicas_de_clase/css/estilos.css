@@ -174,9 +174,13 @@ float: left;
 width: auto;
 overflow: hidden;
 }
-
-.divNAV{
+.infoVentana{
 float: none;
+width: auto;
+overflow: hidden;
+}
+.divNAV{
+float: left;
 width: 20%;
 overflow: hidden;
 

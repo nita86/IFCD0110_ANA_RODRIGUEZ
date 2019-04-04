@@ -11,7 +11,7 @@ function tamanoVentana() {
         || document.body.clientHeight;
 
     var x = document.getElementById("infoVentana");
-    x.innerHTML = "la anchura de la ventana del navegador: " + w + " y su altura es: " + h + ".";
+    x.innerHTML = "<h3>la anchura de la ventana del navegador: " + w + " y su altura es: " + h + "</h3>";
 }
 
 //ancho y alto de la pantalla
@@ -108,9 +108,62 @@ if (motorNombre === "Netscape") {
     }
 //nombre nav
 var navegador=navigator.appCodeName;
-//version nav
+var userNombre=navigator.userAgent;
+if(userNombre.indexOf("Firefox")>-1) {navegador="Firefox";}
+else if ((userNombre.indexOf("Opera")>-1) || (userNombre.indexOf("OPR")>-1)) {navegador="Opera";}
+else if ((userNombre.indexOf("Trident")>-1) || (userNombre.indexOf("MSIE")>-1)) {navegador="Internet Explorer";}
+else if ((userNombre.indexOf("Edge")>-1)) {navegador="Edge";}
+else if ((userNombre.indexOf("Chrome")>-1)) {navegador="Chrome";}
+else if ((userNombre.indexOf("Safari")>-1)) {navegador="Safari";}
+else {navegador="Desconocido";}
+//version nav Agente Usuario Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
 var version=navigator.appVersion;
-//propietarioGoogle Inc.no existe metodo
+var userVersion=navigator.userAgent;
+if (userVersion.indexOf("Firefox")>-1) {
+    var indice1=userVersion.lastIndexOf("Firefox/");
+    var version=userVersion.substr(indice1,12);
+    var localizar=version.search("/");
+    var versionNav =version.slice(localizar+1,12);
+}
+else if (userVersion.indexOf("OPR")>-1) {
+    var indice1=userVersion.lastIndexOf("OPR/");
+    var version=userVersion.substr(indice1,12);
+    var localizar=version.search("/");
+    var versionNav =version.slice(localizar+1,12);
+}
+else if (userVersion.indexOf("Chrome")>-1) {
+    var indice1=userVersion.lastIndexOf("Chrome/");
+    var version=userVersion.substr(indice1,12);
+    var localizar=version.search("/");
+    var versionNav =version.slice(localizar+1,12);
+}
+else if (userVersion.indexOf("Edge")>-1) {
+    var indice1=userVersion.lastIndexOf("Edge/");
+    var version=userVersion.substr(indice1,12);
+    var localizar=version.search("/");
+    var versionNav =version.slice(localizar+1,12);
+}
+else if (userVersion.indexOf("Trident")>-1) {
+    var indice1=userVersion.lastIndexOf("Trident/");
+    var version=userVersion.substr(indice1,12);
+    var localizar=version.search("/");
+    var versionNav =version.slice(localizar+1,12);
+}
+else if (userVersion.indexOf("Safari")>-1) {
+    var indice1=userVersion.lastIndexOf("Safari/");
+    var version=userVersion.substr(indice1,12);
+    var localizar=version.search("/");
+    var versionNav =version.slice(localizar+1,12);
+}else {version="Desconocido";}
+//propietario
+var propietarioNav, propietario=navigator.userAgent;
+if(propietario.indexOf("Firefox")>-1) {propietarioNav="Fundación Mozilla";}
+else if ((propietario.indexOf("Opera")>-1) || (propietario.indexOf("OPR")>-1)) {propietarioNav="Opera software";}
+else if ((propietario.indexOf("Trident")>-1) || (propietario.indexOf("MSIE")>-1)) {propietarioNav="Microsoft Corporation";}
+else if ((propietario.indexOf("Edge")>-1)) {propietarioNav="Microsoft Corporation";}
+else if ((propietario.indexOf("Chrome")>-1)) {propietarioNav="Google, Inc.";}
+else if ((propietario.indexOf("Safari")>-1)) {propietarioNav="Apple Computer,";}
+else {propietarioNav="Desconocido";}
 //lenguaje nav
 var lenguaje=navigator.language;
 //Plataforma
@@ -167,7 +220,7 @@ text += "<h3>Información navegador</h3>";
 text += "<p>Motor del navegador "+motorNombre+"</p>";
 text += "<p>Nombre del navegador "+navegador+"</p>";
 text += "<p>Versión del navegador "+version+"</p>";
-text += "<p>Propietario: Google Inc.</p>";
+text += "<p>Propietariodel navegador "+propietarioNav+"</p>";
 text += "<p>Lenguaje del navegador "+lenguaje+"</p>";
 text += "<p>Sistema operativo Windows</p>";
 text += "<p>Plataforma del navegador "+plataforma+"</p>";
