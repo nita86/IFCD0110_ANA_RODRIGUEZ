@@ -1,6 +1,7 @@
 /* Estilos CSS */
 
 /*COOKES*/
+/*COOKES https://autoprefixer.github.io/*/
 .cookies {
     border: solid 1px black;
     background-color: #000;
@@ -13,8 +14,13 @@
     z-index: 1;
     padding: 10px;
     display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow:column;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-flow:column;
+            flex-flow:column;
 }
 .container1 {
     overflow: hidden;
@@ -30,8 +36,12 @@
     font-size: large;
 }
 .cerrar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .container {
     font-size: 1.5em;
@@ -42,7 +52,8 @@
 .enlace:hover {
     text-transform: uppercase;
     color: red;
-    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
 }
 
 
