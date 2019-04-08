@@ -270,16 +270,16 @@ function setCookie(cname,cvalue,exdays) {
   function checkCookie() {
     var user=getCookie("username");
     if (user != "") {
-      alert("Welcome again " + user);
+      alert("hola de nuevo " + user);
     } else {
-       user = prompt("Please enter your name:","");
+       user = prompt("introduce tu nombre:","");
        if (user != "" && user != null) {
          setCookie("username", user, 30);
        }
     }
   }
-var galleta=document.cookie;
-alert(galleta);
+/* var galleta=document.cookie;
+alert(galleta); */
 
 
 
