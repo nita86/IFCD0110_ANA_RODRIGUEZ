@@ -1,7 +1,7 @@
 /* Estilos CSS */
 
-/*COOKES*/
-.cookies {/*fuente arreglos flex https://autoprefixer.github.io/*/
+/*COOKES https://autoprefixer.github.io/*/
+.cookies {
     border: solid 1px black;
     background-color: #000;
     color: white;
@@ -13,13 +13,13 @@
     z-index: 1;
     padding: 10px;
     display: block;
-    /* display: -webkit-box;
-    display: -ms-flexbox; 
-    display: flex;*/
-    /* -webkit-box-orient:vertical;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient:vertical;
     -webkit-box-direction:normal;
-    -ms-flex-flow:column;
-    flex-flow:column; */
+        -ms-flex-flow:column;
+            flex-flow:column;
 }
 .container1 {
     overflow: hidden;
@@ -34,13 +34,13 @@
     padding: 5px;
     font-size: large;
 }
-.cerrar {/*fuente arreglos flex https://autoprefixer.github.io/*/
-   /*  display: -webkit-box;
+.cerrar {
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /* -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; */
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .container {
     font-size: 1.5em;
@@ -48,14 +48,12 @@
 .enlace {
     color: red;
 }
-.enlace:hover {/*fuente arreglos https://autoprefixer.github.io/*/
+.enlace:hover {
     text-transform: uppercase;
     color: red;
-    /* -webkit-text-decoration-line: underline;
-    text-decoration-line: underline; */
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
 }
-
-
 
 /*------------------------------------------------------------------------------------------*/
 /* W3.CSS 4.12 November 2018 by Jan Egil and Borge Refsnes */
