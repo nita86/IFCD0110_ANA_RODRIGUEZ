@@ -1,7 +1,7 @@
 /* Estilos CSS */
 
 /*COOKES*/
-.cookies {
+.cookies {/*fuente arreglos flex https://autoprefixer.github.io/*/
     border: solid 1px black;
     background-color: #000;
     color: white;
@@ -13,8 +13,13 @@
     z-index: 1;
     padding: 10px;
     display: block;
-    display: flex;
-    flex-flow:column;
+    /* display: -webkit-box;
+    display: -ms-flexbox; 
+    display: flex;*/
+    /* -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -ms-flex-flow:column;
+    flex-flow:column; */
 }
 .container1 {
     overflow: hidden;
@@ -29,9 +34,13 @@
     padding: 5px;
     font-size: large;
 }
-.cerrar {
+.cerrar {/*fuente arreglos flex https://autoprefixer.github.io/*/
+   /*  display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    /* -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; */
 }
 .container {
     font-size: 1.5em;
@@ -39,10 +48,11 @@
 .enlace {
     color: red;
 }
-.enlace:hover {
+.enlace:hover {/*fuente arreglos https://autoprefixer.github.io/*/
     text-transform: uppercase;
     color: red;
-    text-decoration-line: underline;
+    /* -webkit-text-decoration-line: underline;
+    text-decoration-line: underline; */
 }
 
 
