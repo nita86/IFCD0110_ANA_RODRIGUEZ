@@ -15,22 +15,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 </style>
 </head>
-<body onload="checkCookie()">
+<body>
 
 <!--VENTANA COOKES-->
-<div id="ventana" class="cookies">
-  <div class="container1">
-  <div class="texto">
-    <p class="p">Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación. Si continua navegando, consideramos que acepta su uso. Puede cambiar la configuración u obtener más información <a href="#" onclick="abrirTexto()" class="enlace">aquí</a></p>
-  </div>
-  <div class="x" onclick="cerrar()">  
-    <button class="btn btn-outline-danger btn-lg" type="button" onclick="cerrar()">&times;</button>
-    </div>
-  </div>
-  <div class="cerrar">
-    <button class="btn btn-outline-danger btn-lg" type="button" onclick="cerrar()">ACEPTAR</button>
-  </div>
-</div>
+<div id="cuadrogrande" class="ocultaTodo"><!--cuadroGrande-->
+  <div class="gris"onclick="cerrar()">&nbsp;</div>
+  <div id="ventana" class="cookies"><!--ventana negra-->
+    <div class="container1"><!--hijo1-->
+      <div class="texto">
+        <p class="p">Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación. Si continua navegando, consideramos que acepta su uso. Puede cambiar la configuración u obtener más información <a href="#" onclick="abrirTexto()" class="enlace">aquí</a></p>
+      </div>
+      <div class="x">  
+        <button class="btn btn-outline-danger btn-lg" type="button" onmouseup="checkCookie();cerrar()">&times;</button>
+      </div>
+    </div><!--fin hijo1-->
+    <div class="cerrar"><!--hijo2-->
+      <button class="btn btn-outline-danger btn-lg" type="button" onmouseup="checkCookie();cerrar()">ACEPTAR</button>
+    </div><!--fin hijo2-->
+  </div><!--fin ventana negra-->
+</div><!--fin cuadroGrande-->
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
