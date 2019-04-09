@@ -1,10 +1,10 @@
 // Funciones JavaScript
 
 //COOKIES
-//----------codigo Paco NO FUNCIONA----------------------
+//----------codigo Paco?----------------------
 //crear cookie
 var crearCookie=nuevaCookie;
-nuevaCookie=document.cookie;
+var nuevaCookie=document.cookie;
 //ver las cookies existentes
 function funCookies() {
   var verCookie=document.cookie;
@@ -36,7 +36,7 @@ function setCookie(cname,cvalue,exdays) {
 //obtener cookies
 function getCookie(cname) {
   var name = cname + "=";
-  var decodedCookie = decodeURIComponent(document.cookie);//crea la cookie
+  var decodedCookie = decodeURIComponent(document.cookie);//crea la cookie y descodifica los caracteres ASCII (si los hubiera) para poder interpretarlos. Se trata de una medida de seguridad, ya que las cookies suelen estar codificadas
   var ca = decodedCookie.split(';');//busca todas las cookies y crea un array con ellas
   for(var i = 0; i < ca.length; i++) {
     var c = ca[i];
