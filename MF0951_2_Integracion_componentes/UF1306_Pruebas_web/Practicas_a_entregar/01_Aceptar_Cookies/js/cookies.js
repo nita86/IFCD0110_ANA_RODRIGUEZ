@@ -1,10 +1,10 @@
 // Funciones JavaScript
 
 //COOKIES
-//----------codigo Paco----------------------
+//----------codigo Paco NO FUNCIONA----------------------
 //crear cookie
-/* var crearCookie=nuevaCookie;
-nuevaCookie=document.cookie; */
+var crearCookie=nuevaCookie;
+nuevaCookie=document.cookie;
 //ver las cookies existentes
 function funCookies() {
   var verCookie=document.cookie;
@@ -61,7 +61,6 @@ function checkCookie() {
       alert("Bienvenid@"+user);
     }
     }
- 
 }
 
 function cerrar() {
