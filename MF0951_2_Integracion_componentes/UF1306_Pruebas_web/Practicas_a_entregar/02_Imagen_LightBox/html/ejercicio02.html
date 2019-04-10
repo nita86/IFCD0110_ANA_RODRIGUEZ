@@ -11,11 +11,10 @@
 <body>
 
 <!-----------LIGHT BOX------------->
-<div  id="cuadroGrande" class="cuadroGrande"><!--cuadro negro que tapa todo-->
+<div  id="cuadroGrande" class="cuadroGrande" onclick="cerrar2()"><!--cuadro negro que tapa todo-->
   <div id="cuadroBlanco" class="cuadroBlanco"><!--cuadro blanco que enmarca la foto-->
     <div id="foto" class="foto"><!--imagen-->
-      <div  class="contenido"><!--contenido-->
-        <img id="contenido">
+      <div id="contenido" class="contenido"><!--contenido-->
       </div><!--contenido-->
       <div class="cerrar">
         <div>Summer House</div><!--cerrar-->
@@ -58,13 +57,13 @@
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img class="img" src="../img/house1.jpg" alt="House" style="width:100%" onclick="caja()">
+        <img id="foto1" src="../img/house1.jpg" alt="House" style="width:100%" onclick="abrirFoto1()">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img class="img" src="../img/house2.jpg" alt="House" style="width:100%">
+        <img class="img" src="../img/house2.jpg" alt="House" style="width:100%" onclick="caja()">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">

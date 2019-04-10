@@ -8,22 +8,21 @@
     position: fixed;
     top: 0;
     display: none;
-    
-}
-.cuadroBlanco {
-    background-color: white;
-    width: 95%;
-    height: 95%;
-    padding-top: 3%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
+.cuadroBlanco {
+    background-color: white;
+    width: 95%;
+    height: 95%;
+    
+}
 .foto {
     width: 100%;
     height: 100%;
-    border: solid 1px black;
+    
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -33,12 +32,12 @@
 }
 .contenido {
     width: 100%;
-    border: solid 1px black;
+    
     margin: 0 auto;
     padding-left: 10%
 }
 .cerrar {
-    border: solid 1px black;
+   
     width: 100%;
     display: flex;
     justify-content: space-between;
