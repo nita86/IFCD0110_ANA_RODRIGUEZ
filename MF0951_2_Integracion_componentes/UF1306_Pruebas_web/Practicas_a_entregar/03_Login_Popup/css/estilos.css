@@ -1,46 +1,82 @@
-/*Estilos CSS*/
+@charset "utf-8";
+/* CSS Document */
 
-.cuadroGrande {
-    background-color: black;
+/*----caja modal---------------*/ 
+.fondo {
+    display: block;    
+    background: #000;
     width: 100%;
     height: 100%;
-    z-index: 99999;
     position: fixed;
     top: 0;
-    display: none;
+    z-index: 99999;
 }
-.cuadroBlanco {
-    background-color: white;
-    width: 95%;
-    height: 95%;
-    margin-top: 1%; 
-    
-}
-.foto {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    padding-left: 15%;
-    padding-right: 15%;
-}
+/*FORMULARIO*/
+.formulario {
+    background: white;
+	margin: 10px auto;
+	width: 40%;
+	border: solid 1px black;
+    font-size: 12px;
+    z-index: 99999;
+    display: block;
+    position: fixed;
+    top: 0.65%;
+    right:32%;
+	}
+.logo {
+	width: 100%;
+	overflow: hidden;
+	margin-top: 10px;
+	}
+.avatar {
+	border-radius: 350px;
+	width: 25%;
+	float: left;
+	margin-left: 40%;
+	}
+.x {
+	font-size: 2em;
+	float: right;
+	font-weight: bold;
+	margin-right: 20px;
+	}
 .contenido {
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 10%
-}
-.cerrar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-
-
-
+	padding: 10px;
+	}
+.legend {
+	color: black;
+	font-weight: bold;
+	}
+.campos {
+	background-color: white;
+	border: solid 1px lightgray;
+	width: 100%;
+	padding: 10px;
+	}
+.iniciar {
+	width: 100%;
+	background-color: green;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	}
+.pie {
+	width: 100%;
+	overflow: hidden;
+	background-color: lightgray;
+	padding: 5px 10px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	}
+.registro {
+	background-color: red;
+	color: white;
+	}
+.pie > p {
+	padding: 10px;
+    }
 
 
 
