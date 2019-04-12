@@ -16,13 +16,15 @@
     background: white;
 	margin: 10px auto;
 	width: 40%;
+
 	border: solid 1px black;
     font-size: 12px;
     z-index: 99999;
     display: block;
     position: fixed;
     top: 0.65%;
-    right:32%;
+	right:32%;
+
 	}
 .logo {
 	width: 100%;
@@ -42,7 +44,7 @@
 	margin-right: 20px;
 	}
 .contenido {
-	padding: 10px;
+	padding: 0 10px;
 	}
 .legend {
 	color: black;

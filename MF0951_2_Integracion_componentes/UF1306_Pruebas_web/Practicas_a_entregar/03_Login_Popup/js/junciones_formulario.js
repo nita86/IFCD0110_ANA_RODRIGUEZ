@@ -12,16 +12,42 @@ var usuario1 = {user:"juan", password:"1234", pin: 147};
 var usuario2 = {user:"pedro", password:"4321", pin: 258}; 
 var usuario3 = {user:"jose", password:"1324", pin: 369};
 
-var formulario=new Array("usuario1","usuario2","usuario3");
-alert(Array.isArray(formulario));
+var user=new Array("juan","pedro","jose");
+var pass=new Array("1234","4321","1324");
+var pin=new Array("1147","258","369");
 
 //VALIDACIONES
 function validarUser() {
     var nombre =document.forms["formulario_acceso"]["usuario"].value;
     if (nombre == "") {//si está vacio
-        alert("Introduce tu nombre");
+        document.getElementById("mensajeUser").innerHTML="Este campo es obligatorio";
+        document.getElementById("mensajeUser").style.color="red";
         return false;
       }
+    switch(user) {
+      case 0:
+        if (user[0] != /juan/i) {
+          alert("usuario incorrecto");
+        } else {"bienvenido "+user[0];}
+      break;
+      case 1:
+        if (user[1] != /pedro/i) {
+          alert("usuario incorrecto");
+        } else {"bienvenido "+user[1];}
+      break;
+      case 2:
+        if (user[2] != /jose/i) {
+          alert("usuario incorrecto");
+        } else {"bienvenido "+user[2];}
+    }
+}
+function validarPas() {
+  var contrasena =document.forms["formulario_acceso"]["contrasena"].value;
+  if (contrasena == "") {//si está vacio
+      document.getElementById("mensajePas").innerHTML="Este campo es obligatorio";
+      document.getElementById("mensajePas").style.color="red";
+      return false;
+    }
 }
 //cookie
 //crear cookies
