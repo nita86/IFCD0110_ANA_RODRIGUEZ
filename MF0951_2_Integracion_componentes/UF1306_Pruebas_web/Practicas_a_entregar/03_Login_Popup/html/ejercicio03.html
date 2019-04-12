@@ -30,11 +30,11 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <br>
       <div class="contenido">
       <label for="usuario" class="legend">Usuario</label>
-        <input type="text" name="usuario" placeholder="Introduce tu Usuario" pattern="[A-Za-z0-9+-*/-.,%&$]" required class="campos" onblur="validarUser()">
+        <input type="text" name="usuario" placeholder="Introduce tu Usuario" required class="campos" onblur="validarUser(this)">
         <p id="mensajeUser"></p>
       <br>
       <label for="contraseña" class="legend">Contraseña</label>
-        <input type="pasword" name="contrasena" placeholder="Entrar Contraseña" required pattern="[.-@#$%&/A-Za-z0-9]" minlength="5" maxlength="20" class="campos" onblur="validarPas()">
+        <input type="pasword" name="contrasena" placeholder="Entrar Contraseña" required pattern="[.-@#$%&A-Za-z0-9]" minlength="5" maxlength="20" class="campos" onblur="validarPas()">
         <p id="mensajePas"></p>
       <br>
       <label for="enviar"></label>

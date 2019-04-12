@@ -1,3 +1,5 @@
+
+
 //funciones formulario
 
 function abrirModal() {
@@ -26,20 +28,17 @@ function validarUser() {
       }
     switch(user) {
       case 0:
-        if (user[0] != /juan/i) {
+      if (nombre != "juan") {
           alert("usuario incorrecto");
-        } else {"bienvenido "+user[0];}
-      break;
-      case 1:
-        if (user[1] != /pedro/i) {
+        } else {alert("bienvenido "+nombre);}
+    }
+    
+    /* if (user[1] != /pedro/i) {
           alert("usuario incorrecto");
         } else {"bienvenido "+user[1];}
-      break;
-      case 2:
-        if (user[2] != /jose/i) {
+    if (user[2] != /jose/i) {
           alert("usuario incorrecto");
-        } else {"bienvenido "+user[2];}
-    }
+        } else {"bienvenido "+user[2];} */
 }
 function validarPas() {
   var contrasena =document.forms["formulario_acceso"]["contrasena"].value;
