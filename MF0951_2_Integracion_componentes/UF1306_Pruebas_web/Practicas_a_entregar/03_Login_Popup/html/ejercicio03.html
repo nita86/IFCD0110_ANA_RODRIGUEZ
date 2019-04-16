@@ -30,7 +30,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <br>
       <div class="contenido">
       <label for="usuario" class="legend">Usuario</label>
-        <input type="text" name="usuario" placeholder="Introduce tu Usuario" required class="campos" onblur="validarUser(this)">
+        <input type="text" name="usuario" placeholder="Introduce tu Usuario" pattern="/\W/" required class="campos" onblur="validarUser(this)"><!--allow letters, numbers, and underscores. http://webcheatsheet.com/-->
         <p id="mensajeUser"></p>
       <br>
       <label for="contraseña" class="legend">Contraseña</label>
