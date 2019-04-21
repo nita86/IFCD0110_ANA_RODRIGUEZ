@@ -37,13 +37,12 @@ function validarPas() {
       document.getElementById("mensajePas").style.color="red";
       valid=false;
     }
-  else if (isNaN(contrasena) || contrasena.length !=4) {
+  else if (isNaN(contrasena) || contrasena.length !=4) {//si no es un numero o su longitud !=4
       document.getElementById("mensajePas").innerHTML="Este campo es obligatorio";
       document.getElementById("mensajePas").style.color="red";
       valid=false;
     }
   return valid;
-
 }
 
 function verPas() {
@@ -51,10 +50,25 @@ function verPas() {
   document.getElementById("ojo").innerHTML='<i class="fas fa-eye"></i>';
 }
 
-function ocultarPas() {
+/* function ocultarPas() {
   document.forms["formulario_acceso"]["contrasena"].type="password";
   document.getElementById("ojo").innerHTML='<i class="fas fa-eye-slash"></i>';
+} */
+
+function verPin() {
+  document.getElementById("pin").innerHTML='<input type="text" name="pin" placeholder="Introduce tu pin" required class="campos">'
+  var pin=document.forms["formulario_acceso"]["pin"].value;
+  if (isNaN(pin) || pin.length !=4) {//si no es un numero o su longitud !=4
+    var nuevoParrafo = document.createElement("p");//crea un <p>
+    var nuevoTexto = document.createTextNode("Este campo es obligatorio");//texto del nuevo <p>
+    nuevoParrafo.appendChild(nuevoTexto);//agrega el texto al parrafo
+    var  element= document.getElementById("pin");
+    element.appendChild(nuevoParrafo);//agrega el elemento nuevoParrafo al div pin
+    valid=false;
+  }
+return valid;
 }
+
 //cookie
 //crear cookies
 function setCookie(cname,cvalue,exdays) {

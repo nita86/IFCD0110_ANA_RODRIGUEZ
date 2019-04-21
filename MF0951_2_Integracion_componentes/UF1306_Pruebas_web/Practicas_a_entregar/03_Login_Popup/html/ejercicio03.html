@@ -41,8 +41,6 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <br>
       <label for="enviar"></label>
       <input type="submit" name="enviar" value="Iniciar sesión" required class="iniciar">
-    
-     
       <label for="acepto"></label>
       <input type="checkbox" name="acepto" value="check" required onclick="check()">Recordarme <br>
       </div>
@@ -50,7 +48,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <label for="registro"></label>
       <input type="submit" name="registro" value="Registrarse" class="registro">
       <br>
-      <p>¿Has olvidado la <a href="#">contraseña</a>?</p>
+      <p>¿Has olvidado la <a onclick="verPin()" href="#">contraseña</a>?</p>
+      <span id="pin"></span>
       </div>
     </form>
     </div>
