@@ -21,46 +21,29 @@ var pin=new Array("1147","258","369");
 
 //VALIDACIONES
 function validarUser() {
-    valido=true;
     var nombre =document.forms["formulario_acceso"]["usuario"].value;
-    var illegalChars = /\W/; // allow letters, numbers, and underscores. http://webcheatsheet.com/javascript/form_validation.php
-    var user=new Array("juan","pedro","jose");
-    var juan=user[0].toString();
-    var pedro=user[1].toString();
-    var jose=user[2].toString();
     if (nombre == "") {//si está vacio
         document.getElementById("mensajeUser").innerHTML="Este campo es obligatorio";
         document.getElementById("mensajeUser").style.color="red";
         valid=false;
       }
-    else if (nombre != juan) {
-        document.getElementById("mensajeUser").innerHTML="Error";
-        document.getElementById("mensajeUser").style.color="red";
-        valid=false;
-    }
-    else if (nombre != pedro) {
-      document.getElementById("mensajeUser").innerHTML="Error";
-      document.getElementById("mensajeUser").style.color="red";
-      valid=false;
-  }
-  else if (nombre != jose) {
-    document.getElementById("mensajeUser").innerHTML="Error";
-    document.getElementById("mensajeUser").style.color="red";
-    valid=false;
-}
   return valid;
 }
 
 function validarPas() {
   var contrasena =document.forms["formulario_acceso"]["contrasena"].value;
-  var illegalChars = /[\W_]/; // allow only letters and numbers 
+  
   if (contrasena == "") {//si está vacio
       document.getElementById("mensajePas").innerHTML="Este campo es obligatorio";
       document.getElementById("mensajePas").style.color="red";
       valid=false;
     }
   return valid;
-   
+}
+
+function verPas() {
+  document.forms["formulario_acceso"]["contrasena"].type="text";
+  document.getElementById("ojo").innerHTML='<i class="fas fa-eye"></i>';
 }
 //cookie
 //crear cookies
