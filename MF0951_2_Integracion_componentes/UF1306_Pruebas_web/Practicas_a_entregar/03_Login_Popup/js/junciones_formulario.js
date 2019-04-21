@@ -14,7 +14,7 @@ var usuario1 = {user:"juan", password:"1234", pin: 147};
 var usuario2 = {user:"pedro", password:"4321", pin: 258}; 
 var usuario3 = {user:"jose", password:"1324", pin: 369};
 
-
+var user=new Array("juan","pedro","jose");
 var pass=new Array("1234","4321","1324");
 var pin=new Array("1147","258","369");
 
@@ -32,18 +32,28 @@ function validarUser() {
 
 function validarPas() {
   var contrasena =document.forms["formulario_acceso"]["contrasena"].value;
-  
   if (contrasena == "") {//si está vacio
       document.getElementById("mensajePas").innerHTML="Este campo es obligatorio";
       document.getElementById("mensajePas").style.color="red";
       valid=false;
     }
+  else if (isNaN(contrasena) || contrasena.length !=4) {
+      document.getElementById("mensajePas").innerHTML="Este campo es obligatorio";
+      document.getElementById("mensajePas").style.color="red";
+      valid=false;
+    }
   return valid;
+
 }
 
 function verPas() {
   document.forms["formulario_acceso"]["contrasena"].type="text";
   document.getElementById("ojo").innerHTML='<i class="fas fa-eye"></i>';
+}
+
+function ocultarPas() {
+  document.forms["formulario_acceso"]["contrasena"].type="password";
+  document.getElementById("ojo").innerHTML='<i class="fas fa-eye-slash"></i>';
 }
 //cookie
 //crear cookies
