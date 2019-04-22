@@ -76,7 +76,10 @@
 	}
 .pie > p {
 	padding: 10px;
-    }
+	}
+.pie > span {
+	display: none;
+}
 
 
 

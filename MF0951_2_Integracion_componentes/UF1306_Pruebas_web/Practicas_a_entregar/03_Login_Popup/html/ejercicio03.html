@@ -34,7 +34,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <input type="text" name="usuario" placeholder="Introduce tu Usuario" required class="campos" onblur="validarUser()">
       <br>
       <label for="contraseña" class="legend">Contraseña</label>
-        <input type="password" name="contrasena" placeholder="Entrar Contraseña" required class="campos" onblur="validarPas()">
+        <input type="password" name="contrasena" placeholder="Introduce tu Contraseña" required class="campos" onblur="validarPas()">
         <span id="ojo" onclick="verPas()" onblur="ocultarPas()"><i class="fas fa-eye-slash"></i></span>
       <br><br>
       <label for="acepto"></label>
@@ -47,7 +47,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <input type="submit" name="registro" value="Registrarse" class="registro">
       <br>
       <p>¿Has olvidado la <a onclick="verPin()" href="#">contraseña</a>?</p>
-      <span id="pin"></span>
+      <span id="span"><input type="password" name="pin" placeholder="Introduce tu pin" class="campos" required onblur="validarPin()"></span>
       </div>
     </form>
     </div>

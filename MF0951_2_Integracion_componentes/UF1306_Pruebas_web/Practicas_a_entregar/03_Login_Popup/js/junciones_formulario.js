@@ -66,9 +66,14 @@ function verPas() {
 } */
 
 function verPin() {
+  document.getElementById("span").style.display="block";
+}
+
+function validarPin() {
   document.getElementById("pin").innerHTML='<input type="text" name="pin" placeholder="Introduce tu pin" required class="campos">'
   var pin=document.forms["formulario_acceso"]["pin"].value;
-  if (isNaN(pin) || pin.length !=4) {//si no es un numero o su longitud !=4
+  var nombre =document.forms["formulario_acceso"]["usuario"].value;
+  if ((pin == "") || (pin == " ") || (isNaN(pin) || pin.length !=4)) {//si está vacio o tiene espacios en blanco si no es un numero o su longitud !=4
     var nuevoParrafo = document.createElement("p");//crea un <p>
     var nuevoTexto = document.createTextNode("Este campo es obligatorio");//texto del nuevo <p>
     nuevoParrafo.appendChild(nuevoTexto);//agrega el texto al parrafo
@@ -76,6 +81,26 @@ function verPin() {
     element.appendChild(nuevoParrafo);//agrega el elemento nuevoParrafo al div pin
     valid=false;
   }
+  else if ((nombre == user[0]) && (pin == pin[0])) {
+    alert("bienvenido "+user[0]);
+    valid=false;
+  }
+  else if ((nombre == user[1]) && (pin == pin[1])) {
+    alert("bienvenido "+user[1]);
+    valid=false;
+  }
+  else if ((nombre == pin[2]) && (contrasena == pin[2])) {
+    alert("bienvenido "+user[2]);
+    valid=false;
+  }
+  else {
+    var nuevoParrafo2 = document.createElement("p");//crea un <p>
+    var nuevoTexto2 = document.createTextNode("Revisa la información que has introducido");//texto del nuevo <p>
+    nuevoParrafo2.appendChild(nuevoTexto2);//agrega el texto al parrafo
+    var  element= document.getElementById("pin");
+    element.appendChild(nuevoParrafo2);//agrega el elemento nuevoParrafo al div pin
+    valid=false;
+    }
 return valid;
 }
 
@@ -123,7 +148,7 @@ function setCookie(cname,cvalue,exdays) {
         return c.substring(name.length, c.length);
       }
     }
-    return "";//en todos los casos retorna texto
+    return "";//en todos los casos retorna texto 
   }
   //checkear cookies  
   function check() {
