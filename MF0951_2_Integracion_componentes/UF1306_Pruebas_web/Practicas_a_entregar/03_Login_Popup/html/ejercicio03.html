@@ -23,7 +23,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 <div id="modal">
   <div class="fondo" onclick="cerrarModal()"></div>
   <div class="formulario">
-    <form name="formulario_acceso" action="/action_page.php" method="post" target="_blank" enctype="multipart/form-data" autocomplete="off">
+    <form name="formulario_acceso" action="" method="post" enctype="multipart/form-data" autocomplete="off">
       <div class="logo">
         <img src="../img/img_avatar2.png" alt="avatar" class="avatar">
         <div class="x" onclick="cerrarModal()">&times;</div>
@@ -32,17 +32,15 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <div class="contenido">
       <label for="usuario" class="legend">Usuario</label>
         <input type="text" name="usuario" placeholder="Introduce tu Usuario" required class="campos" onblur="validarUser()">
-        <p id="mensajeUser"></p>
       <br>
       <label for="contraseña" class="legend">Contraseña</label>
         <input type="password" name="contrasena" placeholder="Entrar Contraseña" required class="campos" onblur="validarPas()">
         <span id="ojo" onclick="verPas()" onblur="ocultarPas()"><i class="fas fa-eye-slash"></i></span>
-        <p id="mensajePas"></p>
-      <br>
-      <label for="enviar"></label>
-      <input type="submit" name="enviar" value="Iniciar sesión" required class="iniciar">
+      <br><br>
       <label for="acepto"></label>
       <input type="checkbox" name="acepto" value="check" required onclick="check()">Recordarme <br>
+      <label for="enviar"></label>
+      <input type="submit" name="enviar" value="Iniciar sesión" required class="iniciar" onclick="validarDatos()">
       </div>
       <div class="pie">
       <label for="registro"></label>
@@ -65,7 +63,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
     <a href="#" class="w3-bar-item w3-button">Shirts</a>
     <a href="#" class="w3-bar-item w3-button">Dresses</a>
-    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    <a onclick="myAccFunc()" href="javascript: alert('Mensaje enviado correctamente'):void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       Jeans <i class="fa fa-caret-down"></i>
     </a>
     <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
@@ -88,7 +86,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
   <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  <a href="javascript: alert('Mensaje enviado correctamente'):void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->

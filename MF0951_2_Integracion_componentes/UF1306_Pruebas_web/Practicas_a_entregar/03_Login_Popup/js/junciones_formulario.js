@@ -1,5 +1,3 @@
-
-
 //funciones formulario
 
 function abrirModal() {
@@ -18,33 +16,27 @@ var user=new Array("juan","pedro","jose");
 var pass=new Array("1234","4321","1324");
 var pin=new Array("1147","258","369");
 
-
 //VALIDACIONES
 function validarUser() {
     var nombre =document.forms["formulario_acceso"]["usuario"].value;
-    if (nombre == "") {//si está vacio
-        document.getElementById("mensajeUser").innerHTML="Este campo es obligatorio";
-        document.getElementById("mensajeUser").style.color="red";
-        valid=false;
+    if (nombre == "") {//si está vacio o tiene espacios en blanco
+      document.forms["formulario_acceso"]["usuario"].style.background="red";
+      valid=false;
       }
     else if (nombre == user[0]) {
-      document.getElementById("mensajeUser").innerHTML="Bienvenido Juan";
-      document.getElementById("mensajeUser").style.color="blue";
+      document.forms["formulario_acceso"]["usuario"].style.background="blue";
       valid=false;
     }
     else if (nombre == user[1]) {
-      document.getElementById("mensajeUser").innerHTML="Bienvenido Pedro";
-      document.getElementById("mensajeUser").style.color="blue";
+      document.forms["formulario_acceso"]["usuario"].style.background="blue";
       valid=false;
     }
     else if (nombre == user[2]) {
-      document.getElementById("mensajeUser").innerHTML="Bienvenido Jose";
-      document.getElementById("mensajeUser").style.color="blue";
+      document.forms["formulario_acceso"]["usuario"].style.background="blue";
       valid=false;
     }
     else {
-      document.getElementById("mensajeUser").innerHTML="Usuario incorrecto";
-      document.getElementById("mensajeUser").style.color="red";
+      document.forms["formulario_acceso"]["usuario"].style.background="red";
       valid=false;
       }
   return valid;
@@ -52,15 +44,13 @@ function validarUser() {
 
 function validarPas() {
   var contrasena =document.forms["formulario_acceso"]["contrasena"].value;
-  if (contrasena == "") {//si está vacio
-      document.getElementById("mensajePas").innerHTML="Este campo es obligatorio";
-      document.getElementById("mensajePas").style.color="red";
+  if ((contrasena == "") || (contrasena == " ")) {//si está vacio o tiene espacios en blanco
+      document.forms["formulario_acceso"]["usuario"].style.background="red";
       valid=false;
     }
   else if (isNaN(contrasena) || contrasena.length !=4) {//si no es un numero o su longitud !=4
-      document.getElementById("mensajePas").innerHTML="Este campo es obligatorio";
-      document.getElementById("mensajePas").style.color="red";
-      valid=false;
+    document.forms["formulario_acceso"]["usuario"].style.background="red";
+    valid=false;
     }
   return valid;
 }
@@ -89,6 +79,28 @@ function verPin() {
 return valid;
 }
 
+function validarDatos() {
+  var nombre =document.forms["formulario_acceso"]["usuario"].value;
+  var contrasena =document.forms["formulario_acceso"]["contrasena"].value;
+  if ((nombre == user[0]) && (contrasena == pass[0])) {
+    alert("bienvenido "+user[0]);
+    valid=false;
+  }
+  else if ((nombre == user[1]) && (contrasena == pass[1])) {
+    alert("bienvenido "+user[1]);
+    valid=false;
+  }
+  else if ((nombre == user[2]) && (contrasena == pass[2])) {
+    alert("bienvenido "+user[2]);
+    valid=false;
+  }
+  else {
+    alert("revisa la información que has introducido");
+    valid=false;
+    }
+  return valid;
+}
+
 //cookie
 //crear cookies
 function setCookie(cname,cvalue,exdays) {
@@ -115,8 +127,8 @@ function setCookie(cname,cvalue,exdays) {
   }
   //checkear cookies  
   function check() {
-    var casilla=document.forms["formulario_acceso"]["acepto"].value;
-    if (casilla == true) {//el usuario señala la casilla
+    var casilla=document.forms["formulario_acceso"]["acepto"];
+    if (casilla.checked) {//el usuario señala la casilla. fuente https://uniwebsidad.com/libros/javascript/capitulo-7/validacion
         function checkCookie() {
             var user=getCookie("usuario");
             if (user != "") {//si la cookie ya existe
@@ -127,7 +139,7 @@ function setCookie(cname,cvalue,exdays) {
             setCookie("usuario", user, 30);//caduca 30 dias
             alert("Bienvenid@"+user);
             }//fin if (user != "")
-            }//fin else
-    }// function checkCookie()
+          }//fin else
+      }// function checkCookie()
     }//fin if (casilla == check)
-  }//fin function check()
+}//fin function check()
