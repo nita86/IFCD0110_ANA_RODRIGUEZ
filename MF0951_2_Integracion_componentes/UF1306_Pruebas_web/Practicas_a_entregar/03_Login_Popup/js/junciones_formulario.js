@@ -27,6 +27,26 @@ function validarUser() {
         document.getElementById("mensajeUser").style.color="red";
         valid=false;
       }
+    else if (nombre == user[0]) {
+      document.getElementById("mensajeUser").innerHTML="Bienvenido Juan";
+      document.getElementById("mensajeUser").style.color="blue";
+      valid=false;
+    }
+    else if (nombre == user[1]) {
+      document.getElementById("mensajeUser").innerHTML="Bienvenido Pedro";
+      document.getElementById("mensajeUser").style.color="blue";
+      valid=false;
+    }
+    else if (nombre == user[2]) {
+      document.getElementById("mensajeUser").innerHTML="Bienvenido Jose";
+      document.getElementById("mensajeUser").style.color="blue";
+      valid=false;
+    }
+    else {
+      document.getElementById("mensajeUser").innerHTML="Usuario incorrecto";
+      document.getElementById("mensajeUser").style.color="red";
+      valid=false;
+      }
   return valid;
 }
 
