@@ -72,19 +72,20 @@ function verPin() {
 function validarPin() {
   var pin=document.forms["formulario_acceso"]["pin"].value;
   var nombre =document.forms["formulario_acceso"]["usuario"].value;
-  if ((pin === "") || (pin === " ") || (isNaN(pin) || pin.length !=4)) {//si está vacio o tiene espacios en blanco si no es un numero o su longitud !=4
+  alert(pin);
+   if ((pin == "") || (pin == " ") || isNaN(pin) || pin.length !=4) {//si está vacio o tiene espacios en blanco si no es un numero o su longitud !=4
     var nuevoParrafo = document.createElement("p");//crea un <p>
-    var nuevoTexto = document.createTextNode("Este campo es obligatorio");//texto del nuevo <p>
+    var nuevoTexto = document.createTextNode("Revisa la información que has introducido");//texto del nuevo <p>
     nuevoParrafo.appendChild(nuevoTexto);//agrega el texto al parrafo
-    var element= document.getElementById("pin");
+    var  element= document.getElementById("pin");
     element.appendChild(nuevoParrafo);//agrega el elemento nuevoParrafo al div pin
     valid=false;
   }
-  else if ((nombre === user[0]) && (pin === pin[0])) {
+ else if ((nombre === user[0]) && (pin === pin[0])) {
     alert("bienvenido "+user[0]);
     valid=false;
   }
-  else if ((nombre === user[1]) && (pin === pin[1])) {
+  /*else if ((nombre === user[1]) && (pin === pin[1])) {
     alert("bienvenido "+user[1]);
     valid=false;
   }
@@ -99,7 +100,7 @@ function validarPin() {
     var  element= document.getElementById("pin");
     element.appendChild(nuevoParrafo2);//agrega el elemento nuevoParrafo al div pin
     valid=false;
-    }
+    } */
 return valid;
 }
 
