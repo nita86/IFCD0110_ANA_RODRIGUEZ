@@ -46,3 +46,15 @@ function over() {
 function suelta() {
     document.getElementById('img10').src='../img/pic_bulbon.gif';
 }
+
+function copia() {
+    document.getElementById('demo1').innerHTML="has copiado el texto";
+}
+
+function corta() {
+    document.getElementById('demo2').innerHTML="has cortado el texto";
+}
+
+function pega() {
+    document.getElementById('demo3').innerHTML="has pegado el texto";
+}
