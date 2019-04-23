@@ -257,11 +257,6 @@
 <hr>
 <h2>Eventos de teclado</h2>
 <p>Estos tipos de eventos pertenece al objeto KeyboardEvent:</p>
-<div>
-  <p>
-    <button style="font-size:15px;">Limpiar eventos</button>
-  </p>
-</div>
  
 <table class="tabla">
   <tbody>
@@ -273,19 +268,22 @@
     <tr>
       <td><a href="#">onkeydown</a></td>
       <td> El evento ocurre cuando el usuario está presionando una tecla.</td>
-      <td><input class="input" name="input4" type="text" value="presiona una tecla"><label for="input4" id="demo4"></label></td>
+      <td><input class="input" name="input4" type="text" value="presiona una tecla" onkeydown="tecla()">
+        <label for="input4" id="demo4"></label></td>
       
     </tr>
     <tr>
       <td><a href="#">onkeypress</a></td>
       <td> El evento ocurre cuando el usuario presiona una tecla.</td>
-      <td><input class="input" name="input5" type="text" value="presiona una tecla"><label for="input5" id="demo5"></label></td>
+      <td><input class="input" name="input5" type="text" value="presiona una tecla" onkeypress="tecla2()">
+        <label for="input5" id="demo5"></label></td>
      
     </tr>
     <tr>
       <td><a href="#">onkeyup</a></td>
       <td>El evento ocurre cuando el usuario libera una tecla.</td>
-      <td><input class="input" name="input6" type="text" value="pulsa una tecla y suelta"><label for="input6" id="demo6"></label></td>
+      <td><input class="input" name="input6" type="text" value="pulsa una tecla y suelta" onkeyup="tecla3()">
+        <label for="input6" id="demo6"></label></td>
      
     </tr>
   </tbody>

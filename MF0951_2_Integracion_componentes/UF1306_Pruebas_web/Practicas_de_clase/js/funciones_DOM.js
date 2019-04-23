@@ -58,3 +58,15 @@ function corta() {
 function pega() {
     document.getElementById('demo3').innerHTML="has pegado el texto";
 }
+
+function tecla() {
+    document.getElementById('demo4').innerHTML="has presionado una tecla";
+}
+
+function tecla2() {
+    document.getElementById('demo5').innerHTML="has presionado una tecla";
+}
+
+function tecla3() {
+    document.getElementById('demo6').innerHTML="has presionado una tecla";
+}
