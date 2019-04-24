@@ -7,8 +7,7 @@
 <link rel="stylesheet" href="../css/w3.css">
 <script src="../js/funciones_slideShow.js"></script>
 </head>
-<body class="w3-content" style="max-width:1200px">
-
+<body class="w3-content" style="max-width:1200px"onload="presentacion()">
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
@@ -41,14 +40,14 @@
 </div>
 
 <div class="w3-content w3-padding-large w3-margin-top" >
-<div id="slideshow">
+<div id="slideshow" >
 <h2>SlideShow que cambia cada dos segundos</h2>
 <!-- Slideshow container -->
 <div class="slideshow-container">
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
       <div class="numbertext">1 / 5</div>
-      <img src="../img/ocean.jpg" alt="Ocean" class="w3-image" width="1000" height="500">
+      <img src="../img/ocean.jpg" alt="Ocean" class="w3-image w3-margin-top" width="1000" height="500">
       <div class="text">Ocean I</div>
     </div>
   
@@ -72,8 +71,8 @@
 
     <div class="mySlides fade">
         <div class="numbertext">5 / 5</div>
-        <img src="../img/mountains2.jpg" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">height="500">
-        <div class="text">Skies</div>
+        <img src="../img/mountains2.jpg" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
+        <div class="text">Mountains</div>
     </div>
   
     <!-- Next and previous buttons -->
@@ -90,12 +89,51 @@
     <span class="dot" onclick="currentSlide(4)"></span>
     <span class="dot" onclick="currentSlide(5)"></span>
   </div>
-  <!-- SlideShow -->
-  
-  
-  
-  
-  
+<script>//hay que meter el codigo del w3s dentro de una función para poder llamarla y desencadenarlo con un evento, pero no me funciona. La otra opción es copiarlo directamente del w3s dentro del html
+//cambio manual
+var fotosIndex = 1;
+muestraSlide(fotosIndex);
+function plusSlides(n) {
+  muestraSlide(fotosIndex += n);
+}
+function currentSlide(n) {
+  muestraSlide(fotosIndex = n);
+}
+function muestraSlide(n) {
+  var i;
+  var fotos = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > fotos.length) {fotosIndex = 1}//cuando llega a la ultima foto, vuelve a la primera   
+  if (n < 1) {fotosIndex = fotos.length}//cuando está en la primera foto, el índice es la cantidad total de fotos
+  for (i = 0; i < fotos.length; i++) {
+      fotos[i].style.display = "none";//oculta las fotos
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");//cambia el estilo css de la clase active a ninguna
+  }
+  fotos[fotosIndex-1].style.display="block";
+  dots[fotosIndex-1].className += " active";
+}
+//cambio automático
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
 </div>
 
 <!--Tabs-->

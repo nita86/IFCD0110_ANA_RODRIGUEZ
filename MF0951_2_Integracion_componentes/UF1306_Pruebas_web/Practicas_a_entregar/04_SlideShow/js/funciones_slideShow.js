@@ -1,4 +1,5 @@
 //SlideShow que cambia cada dos segundos
+function presentacion() {//hay que meter el codigo del w3s dentro de una función para poder llamarla y desencadenarlo con un evento. La otra opción es copiarlo directamente del w3s dentro del html
 var fotosIndex = 1;
 muestraSlide(fotosIndex);
 
@@ -24,4 +25,6 @@ function muestraSlide(n) {
   }
   fotos[fotosIndex-1].style.display="block";
   dots[fotosIndex-1].className += " active";
+ 
+}
 }
