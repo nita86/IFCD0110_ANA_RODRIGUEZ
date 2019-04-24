@@ -40,7 +40,7 @@
 </div>
 
 <div class="w3-content w3-padding-large w3-margin-top" >
-<div id="slideshow" >
+<div id="slideshow">
 <h2>SlideShow que cambia cada dos segundos</h2>
 <!-- Slideshow container -->
 <div class="slideshow-container">
@@ -50,31 +50,26 @@
       <img src="../img/ocean.jpg" alt="Ocean" class="w3-image w3-margin-top" width="1000" height="500">
       <div class="text">Ocean I</div>
     </div>
-  
     <div class="mySlides fade">
       <div class="numbertext">2 / 5</div>
       <img src="../img/ocean2.jpg" alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
       <div class="text">Ocean II</div>
     </div>
-  
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
       <img src="../img/falls2.jpg" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
       <div class="text">Falls</div>
     </div>
-
     <div class="mySlides fade">
-        <div class="numbertext">4 / 5</div>
-        <img src="../img/mountainskies.jpg" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
-        <div class="text">Skies</div>
+      <div class="numbertext">4 / 5</div>
+      <img src="../img/mountainskies.jpg" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
+      <div class="text">Skies</div>
     </div>
-
     <div class="mySlides fade">
-        <div class="numbertext">5 / 5</div>
-        <img src="../img/mountains2.jpg" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
-        <div class="text">Mountains</div>
+      <div class="numbertext">5 / 5</div>
+      <img src="../img/mountains2.jpg" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
+      <div class="text">Mountains</div>
     </div>
-  
     <!-- Next and previous buttons -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -138,6 +133,106 @@ function showSlides() {
 
 <!--Tabs-->
 <div id="tabs">
+<h2>Tab Gallery</h2>
+<!-- The grid: four columns -->
+<div class="row">
+    <div class="column">
+        <img src="../img/ocean.jpg" alt="Ocean" onclick="funcionTab(this);">
+    </div>
+    <div class="column">
+      <img src="../img/ocean2.jpg" alt="Ocean II" onclick="funcionTab(this);">
+    </div>
+    <div class="column">
+      <img src="../img/falls2.jpg" alt="Falls" onclick="funcionTab(this);">
+    </div>
+    <div class="column">
+      <img src="../img/mountainskies.jpg" alt="Skies" onclick="funcionTab(this);">
+    </div>
+    <div class="column">
+      <img src="../img/mountains2.jpg" alt="Mountains" onclick="funcionTab(this);">
+    </div>
+  </div>
+  
+  <!-- The expanding image container -->
+  <div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:100%">
+    <!-- Image text -->
+    <div id="imgtext"></div>
+  </div>
+<script>
+function funcionTab(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+<h2>Tab vertical</h2>
+<div class="tab">
+    <button class="tablinks" onclick="abrirFtoto(event, 'OceanI')">Ocean I</button>
+    <button class="tablinks" onclick="abrirFoto(event, 'OceanII')">Ocean II</button>
+    <button class="tablinks" onclick="abrirFoto(event, 'Falls')">Falls</button>
+    <button class="tablinks" onclick="abrirFoto(event, 'Skies')">Skies</button>
+    <button class="tablinks" onclick="abrirFoto(event, 'Mountains')">Mountains</button>
+  </div>
+  
+  <div id="OceanI" class="tabcontent">
+    <h3>Ocean I</h3>
+    <img src="../img/ocean.jpg" alt="Ocean" class="w3-image w3-margin-top" width="1000" height="500">
+  </div>
+  
+  <div id="OceanII" class="tabcontent">
+    <h3>Ocean II</h3>
+    <img src="../img/ocean2.jpg" alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
+  </div>
+  
+  <div id="Falls" class="tabcontent">
+    <h3>Falls</h3>
+    <img src="../img/falls2.jpg" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
+  </div>
+
+  <div id="Skies" class="tabcontent">
+    <h3>Skies</h3>
+    <img src="../img/mountainskies.jpg" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
+  </div>
+
+  <div id="Mountains" class="Mountains">
+    <h3>Falls</h3>
+    <img src="../img/mountains2.jpg" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
+  </div>
+
+  <script>
+  function abrirFoto(evt, altFoto) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+  </script>
 
 </div>
 
