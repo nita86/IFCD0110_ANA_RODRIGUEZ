@@ -5,9 +5,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../css/w3.css">
-<script src="../js/funciones_slideShow.js"></script>
+<!--como es java script quien carga las imagenes, si metemos la hoja de funciones arriba del todo las imagenes no se han cargado aún en el html, por lo que no aparecen. Por esta razón insertamos la hoja de funciones al final del html
+<script src="../js/funciones_slideShow.js"></script>-->
 </head>
-<body class="w3-content" style="max-width:1200px"onload="presentacion()">
+<body class="w3-content" style="max-width:1200px">
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
@@ -84,51 +85,7 @@
     <span class="dot" onclick="currentSlide(4)"></span>
     <span class="dot" onclick="currentSlide(5)"></span>
   </div>
-<script>//hay que meter el codigo del w3s dentro de una función para poder llamarla y desencadenarlo con un evento, pero no me funciona. La otra opción es copiarlo directamente del w3s dentro del html
-//cambio manual
-var fotosIndex = 1;
-muestraSlide(fotosIndex);
-function plusSlides(n) {
-  muestraSlide(fotosIndex += n);
-}
-function currentSlide(n) {
-  muestraSlide(fotosIndex = n);
-}
-function muestraSlide(n) {
-  var i;
-  var fotos = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > fotos.length) {fotosIndex = 1}//cuando llega a la ultima foto, vuelve a la primera   
-  if (n < 1) {fotosIndex = fotos.length}//cuando está en la primera foto, el índice es la cantidad total de fotos
-  for (i = 0; i < fotos.length; i++) {
-      fotos[i].style.display = "none";//oculta las fotos
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");//cambia el estilo css de la clase active a ninguna
-  }
-  fotos[fotosIndex-1].style.display="block";
-  dots[fotosIndex-1].className += " active";
-}
-//cambio automático
-var slideIndex = 0;
-showSlides();
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
+  
 </div>
 
 <!--Tabs-->
@@ -162,79 +119,53 @@ function showSlides() {
     <!-- Image text -->
     <div id="imgtext"></div>
   </div>
-<script>
-function funcionTab(imgs) {
-  // Get the expanded image
-  var expandImg = document.getElementById("expandedImg");
-  // Get the image text
-  var imgText = document.getElementById("imgtext");
-  // Use the same src in the expanded image as the image being clicked on from the grid
-  expandImg.src = imgs.src;
-  // Use the value of the alt attribute of the clickable image as text inside the expanded image
-  imgText.innerHTML = imgs.alt;
-  // Show the container element (hidden with CSS)
-  expandImg.parentElement.style.display = "block";
-}
-</script>
 
 <h2>Tab vertical</h2>
+<div style="overflow:hidden">
 <div class="tab">
-    <button class="tablinks" onclick="abrirFtoto(event, 'OceanI')">Ocean I</button>
+    <button class="tablinks" onclick="abrirFoto(event, 'OceanI')">Ocean I</button>
     <button class="tablinks" onclick="abrirFoto(event, 'OceanII')">Ocean II</button>
     <button class="tablinks" onclick="abrirFoto(event, 'Falls')">Falls</button>
     <button class="tablinks" onclick="abrirFoto(event, 'Skies')">Skies</button>
     <button class="tablinks" onclick="abrirFoto(event, 'Mountains')">Mountains</button>
-  </div>
+</div>
   
   <div id="OceanI" class="tabcontent">
-    <h3>Ocean I</h3>
-    <img src="../img/ocean.jpg" alt="Ocean" class="w3-image w3-margin-top" width="1000" height="500">
+    <p>Ocean I</p>
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn2">&times;</span>
+    <img src="../img/ocean.jpg" alt="Ocean">
   </div>
   
   <div id="OceanII" class="tabcontent">
-    <h3>Ocean II</h3>
-    <img src="../img/ocean2.jpg" alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
+    <p>Ocean II</p>
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn2">&times;</span>
+    <img src="../img/ocean2.jpg" alt="Ocean II">
   </div>
   
   <div id="Falls" class="tabcontent">
-    <h3>Falls</h3>
-    <img src="../img/falls2.jpg" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
+    <p>Falls</p>
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn2">&times;</span>
+    <img src="../img/falls2.jpg" alt="Falls">
   </div>
 
   <div id="Skies" class="tabcontent">
-    <h3>Skies</h3>
-    <img src="../img/mountainskies.jpg" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
+    <p>Skies</p>
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn2">&times;</span>
+    <img src="../img/mountainskies.jpg" alt="Skies">
   </div>
 
-  <div id="Mountains" class="Mountains">
-    <h3>Falls</h3>
-    <img src="../img/mountains2.jpg" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
+  <div id="Mountains" class="tabcontent">
+    <p>Mountains</p>
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn2">&times;</span>
+    <img src="../img/mountains2.jpg" alt="Mountains">
   </div>
-
-  <script>
-  function abrirFoto(evt, altFoto) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
-
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Show the current tab, and add an "active" class to the link that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-  </script>
-
 </div>
+
 
 <!--Acordeón-->
 <div id="acordeon">
@@ -269,4 +200,7 @@ function funcionTab(imgs) {
 <!-- End page content -->
 </div>
 </body>
+<!--como es java script quien carga las imagenes, si metemos la hoja de funciones arriba del todo las imagenes no se han cargado aún en el html, por lo que no aparecen. Por esta razón insertamos la hoja de funciones al final del html-->
+<script src="../js/funciones_slideShow.js"></script>
 </html>
+

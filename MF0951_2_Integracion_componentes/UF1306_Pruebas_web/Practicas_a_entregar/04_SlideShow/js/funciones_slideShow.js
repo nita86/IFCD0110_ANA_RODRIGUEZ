@@ -1,16 +1,13 @@
 //SlideShow que cambia cada dos segundos
-function presentacion() {//hay que meter el codigo del w3s dentro de una función para poder llamarla y desencadenarlo con un evento. La otra opción es copiarlo directamente del w3s dentro del html
+//cambio manual
 var fotosIndex = 1;
 muestraSlide(fotosIndex);
-
 function plusSlides(n) {
   muestraSlide(fotosIndex += n);
 }
-
 function currentSlide(n) {
   muestraSlide(fotosIndex = n);
 }
-
 function muestraSlide(n) {
   var i;
   var fotos = document.getElementsByClassName("mySlides");
@@ -25,6 +22,61 @@ function muestraSlide(n) {
   }
   fotos[fotosIndex-1].style.display="block";
   dots[fotosIndex-1].className += " active";
- 
 }
+//cambio automático
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+//Tab Gallery
+function funcionTab(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+
+//Tab vertical
+
+function abrirFoto(evt, altFoto) {
+// Declare all variables
+var i, tabcontent, tablinks;
+
+// Get all elements with class="tabcontent" and hide them
+tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++) {
+  tabcontent[i].style.display = "none";
+}
+
+// Get all elements with class="tablinks" and remove the class "active"
+tablinks = document.getElementsByClassName("tablinks");
+for (i = 0; i < tablinks.length; i++) {
+  tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+
+// Show the current tab, and add an "active" class to the link that opened the tab
+document.getElementById(altFoto).style.display = "block";
+evt.currentTarget.className += " active";
+}
+

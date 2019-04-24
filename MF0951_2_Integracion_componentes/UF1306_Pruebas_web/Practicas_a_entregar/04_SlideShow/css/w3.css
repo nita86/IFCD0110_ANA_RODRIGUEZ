@@ -147,7 +147,7 @@
     border: 1px solid #ccc;
     background-color: #f1f1f1;
     width: 30%;
-    height: 300px;
+
   }
   
   /* Style the buttons that are used to open the tab content */
@@ -176,13 +176,28 @@
   
   /* Style the tab content */
   .tabcontent {
+    display: none;
     float: left;
-    padding: 0px 12px;
+    padding: 0px 10px;
     border: 1px solid #ccc;
     width: 70%;
     border-left: none;
-    height: 300px;
   }
+  .tabcontent img {
+    width: 100%;
+  }
+  .closebtn2 {
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+
+  }
+  .tabcontent > p {
+    float: left;
+    font-size: 1.2em;
+  }
+
   
 /* W3.CSS 4.12 November 2018 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
