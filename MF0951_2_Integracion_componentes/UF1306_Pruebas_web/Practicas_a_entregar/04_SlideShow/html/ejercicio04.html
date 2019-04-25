@@ -25,6 +25,7 @@
     <a href="#slideshow" class="w3-bar-item w3-button">SlideShow</a>
     <a href="#tabs" class="w3-bar-item w3-button">Tabs</a>
     <a href="#acordeon" class="w3-bar-item w3-button">Acordeón</a>
+    <a href="#portfolio" class="w3-bar-item w3-button">Galeria</a>
     <a href="#contact" class="w3-bar-item w3-button">Contacto</a>
   </div>
 </header>
@@ -36,6 +37,7 @@
   <a href="#slideshow" class="w3-bar-item w3-button">SlideShow</a>
   <a href="#tabs" class="w3-bar-item w3-button">tabs</a>
   <a href="#acordeon" class="w3-bar-item w3-button">Acordeón</a>
+  <a href="#acordeon" class="w3-bar-item w3-button">Galeria</a>
   <a href="#contact" class="w3-bar-item w3-button">Contacto</a>
 </div>
 </div>
@@ -165,7 +167,7 @@
     <img src="../img/mountains2.jpg" alt="Mountains">
   </div>
 </div>
-
+</div>
 
 <!--Acordeón-->
 <div id="acordeon">
@@ -201,6 +203,85 @@
   </div>
 </div>
 
+<!--Portfolio Gallery with Filtering-->
+<div id="portfolio">
+<h2>Portfolio Gallery with Filtering</h2>
+<div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+    <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+    <button class="btn" onclick="filterSelection('people')"> People</button>
+  </div>
+  
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <div class="column nature">
+      <div class="content">
+        <img src="../img/mountains.jpg" alt="Mountains" style="width:100%">
+        <h4>Mountains</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+        <img src="../img/lights.jpg" alt="Lights" style="width:100%">
+        <h4>Lights</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+        <img src="../img/nature.jpg" alt="Nature" style="width:100%">
+        <h4>Forest</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+  
+    <div class="column cars">
+      <div class="content">
+        <img src="../img/cars1.jpg" alt="Car" style="width:100%">
+        <h4>Retro</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column cars">
+      <div class="content">
+        <img src="../img/cars2.jpg" alt="Car" style="width:100%">
+        <h4>Fast</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column cars">
+      <div class="content">
+        <img src="../img/cars3.jpg" alt="Car" style="width:100%">
+        <h4>Classic</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+  
+    <div class="column people">
+      <div class="content">
+        <img src="../img/people1.jpg" alt="People" style="width:100%">
+        <h4>Girl</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column people">
+      <div class="content">
+        <img src="../img/people2.jpg" alt="People" style="width:100%">
+        <h4>Man</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column people">
+      <div class="content">
+        <img src="../img/people3.jpg" alt="People" style="width:100%">
+        <h4>Woman</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
 <!-- Contact -->
   <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
     <h3 class="w3-center">Contact</h3>
@@ -227,7 +308,7 @@
   </div>
 
 <!-- End page content -->
-</div>
+
 </body>
 <!--como es java script quien carga las imagenes, si metemos la hoja de funciones arriba del todo las imagenes no se han cargado aún en el html, por lo que no aparecen. Por esta razón insertamos la hoja de funciones al final del html-->
 <script src="../js/funciones_slideShow.js"></script>
