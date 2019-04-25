@@ -1,4 +1,4 @@
-//SlideShow que cambia cada dos segundos
+//-------------SlideShow que cambia cada 10 segundos-----------------
 //cambio manual
 var fotosIndex = 1;
 muestraSlide(fotosIndex);
@@ -23,7 +23,7 @@ function muestraSlide(n) {
   fotos[fotosIndex-1].style.display="block";
   dots[fotosIndex-1].className += " active";
 }
-//cambio automático
+//cambio automático. En este caso tenemos que hacer una funcion distinta con nombres distintos para que no machaque las variables anteriores y puedan convivir el cambio manual y el autom�ticamente
 var slideIndex = 0;
 showSlides();
 function showSlides() {
@@ -40,10 +40,10 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 10000); // Change image every 2 seconds
 }
 
-//Tab Gallery
+//------------------Tab Gallery---------------------
 function funcionTab(imgs) {
   // Get the expanded image
   var expandImg = document.getElementById("expandedImg");
@@ -57,8 +57,7 @@ function funcionTab(imgs) {
   expandImg.parentElement.style.display = "block";
 }
 
-//Tab vertical
-
+//--------------------Tab vertical--------------------
 function abrirFoto(evt, altFoto) {
 // Declare all variables
 var i, tabcontent, tablinks;
@@ -79,4 +78,24 @@ for (i = 0; i < tablinks.length; i++) {
 document.getElementById(altFoto).style.display = "block";
 evt.currentTarget.className += " active";
 }
+
+//----------------Accordion------------------
+var acordeon = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acordeon.length; i++) {
+  acordeon[i].addEventListener("click", function() {
+    /*alterna (toggle) la clase de los botones de activa a inactiva al pulsar*/
+    this.classList.toggle("active");
+
+    /* alterna mostrar7ocultar el panel activo */
+    var panel = this.nextElementSibling;/*la variable panel es el div hermano del buttom accordion*/
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  }//fin function(){  
+  )//fin parentesis funcionaddEventListener( ;
+}//fin loop for
 

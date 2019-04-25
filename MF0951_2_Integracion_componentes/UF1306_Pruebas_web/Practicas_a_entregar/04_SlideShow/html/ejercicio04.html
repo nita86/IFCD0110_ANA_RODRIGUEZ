@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../css/w3.css">
-<!--como es java script quien carga las imagenes, si metemos la hoja de funciones arriba del todo las imagenes no se han cargado aún en el html, por lo que no aparecen. Por esta razón insertamos la hoja de funciones al final del html
+<!--como es java script quien carga las imagenes, si metemos la hoja de funciones arriba del todo las imagenes no se han cargado aún en el html, por lo que no aparecen. Por esta razón insertamos la hoja de funciones al final del html, justo antes de </html>
 <script src="../js/funciones_slideShow.js"></script>-->
 </head>
 <body class="w3-content" style="max-width:1200px">
@@ -112,7 +112,7 @@
   
   <!-- The expanding image container -->
   <div class="container">
-    <!-- Close the image -->
+    <!-- Close the image al hacer click, oculta el elemento padre de este span (this.parentElement.style.display='none' -->
     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
     <!-- Expanded image -->
     <img id="expandedImg" style="width:100%">
@@ -169,7 +169,36 @@
 
 <!--Acordeón-->
 <div id="acordeon">
+<h2>Acordeón (accordion)</h2>
+  <button class="accordion">Ocean I</button>
+  <div class="panel">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn3">&times;</span><!---->
+    <img src="../img/ocean.jpg" alt="Ocean">
+  </div>
+  
+  <button class="accordion">Ocean II</button>
+  <div class="panel">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn3">&times;</span>
+    <img src="../img/ocean2.jpg" alt="Ocean II">
+  </div>
+  
+  <button class="accordion">Falls</button>
+  <div class="panel">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn3">&times;</span>
+    <img src="../img/falls2.jpg" alt="Falls">
+  </div>
 
+  <button class="accordion">Skies</button>
+  <div class="panel">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn3">&times;</span>
+    <img src="../img/mountainskies.jpg" alt="Skies">
+  </div>
+
+  <button class="accordion">Mountains</button>
+  <div class="panel">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn3">&times;</span>
+    <img src="../img/mountains2.jpg" alt="Mountains">
+  </div>
 </div>
 
 <!-- Contact -->

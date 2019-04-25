@@ -191,12 +191,64 @@
     font-size: 25px;
     cursor: pointer;
     float: right;
-
   }
   .tabcontent > p {
     float: left;
     font-size: 1.2em;
   }
+
+/*------------------Accordion---------------*/
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/*Add a symbol to each button to indicate whether the collapsible content is open or closed*/
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 10px 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.closebtn3 {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.panel img {
+  width: 50%;
+}
 
   
 /* W3.CSS 4.12 November 2018 by Jan Egil and Borge Refsnes */
