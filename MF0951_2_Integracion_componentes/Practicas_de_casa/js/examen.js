@@ -79,7 +79,17 @@ function cuatro() {
 }
 
 function cinco() {
-
+    var bruto=document.getElementById('cinco').value;
+    bruto=parseFloat(bruto);
+    var dto=bruto-(bruto*0.20);
+    var iva=bruto+(bruto*0.21);
+    var total=String(bruto-dto+iva);//se convierte a string para poder quitar los decimales que sobran 
+    var punto=total.indexOf(".");
+    var corregido=total.slice(0,punto+3);//corta desde la posición 0 hasta doz por detrás del punto
+    document.getElementById("pCinco").innerHTML="precio "+bruto+" euros <br>"+
+    "descuento (-20%) "+dto+"<br>"+
+    "impuestos (+21%)"+iva+"<br>"+
+    "total "+corregido+" €";
 }
 
 function seis() {
@@ -225,4 +235,33 @@ function ocho() {
                 break;
             }
         } 
+}
+
+function nueve() {
+    //var nombre=prompt("introduce tu nombre", " ");
+    //var apellidos=prompt("introduce tus apellidos", " ");
+    //var telefono=prompt("introduce tu telefono", " ");
+   // var mail=prompt("introduce tu email", " ");
+    var fechaUser=prompt("introduce tu fecha de nacimiento", " ");
+    alert(fechaUser);
+    var fecha=new Date(fechaUser);
+   // alert(fecha);
+    var fechaActual=new Date();
+    var edad;
+    if (fecha<fechaActual) {
+        edad=(fechaActual-fecha)/1000/60/60/24/365;//pasar los milisegundos que arroja el resultado a años
+        edad=parseInt(edad);
+        
+        document.getElementById("pNueve").innerHTML=
+        "<table>"+
+            "<tr><td>tu nombre es "+nombre+"</td></tr>"+
+            "<tr><td>tus apellidos son "+apellidos+"</td></tr>"+
+            "<tr><td>tu telefono es "+telefono+"</td></tr>"+
+            "<tr><td>tu email es "+mail+"</td></tr>"+
+            "<tr><td>tu edad es "+edad+"</td></tr>"+
+        "</table>";
+    }
+    else {
+        document.getElementById("pNueve").innerHTML="la fecha introducida debe ser mayor o igual a la actual"
+    }  
 }
