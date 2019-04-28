@@ -23,7 +23,7 @@
 <h2>Ejercicio 3:</h2> 
 <p>Crea una función que, introduciendo 3 frutas separadas por comas en un campo de formulario, muestre los datos introducidos en una lista desordenada de HTML. Mostrar la lista debajo del campo de formulario.</p> 
 <input id="tres" type="text" placeholder="Introduce tres frutas separadas por comas" style="width:350px"><button onclick="tres()">Click</button><br>
-<span></span>
+<span id="pTres"></span>
 <hr>
 
 <h2>Ejercicio 4: </h2>
@@ -40,20 +40,60 @@
     
 <h2>Ejercicio 6:</h2> 
 <p>Crear una función que, introduciendo la fecha de nacimiento de una persona en un campo de formulario, le diga el signo del zodiaco y le muestre una imagen del signo encima del texto. La imagen y el texto deben de estar alineadas al centro.</p>
-<input id="seis" type="text" placeholder="Introduce un fecha de nacimiento"><button>Click</button><br>
-<p></p>
+<input id="seis" type="date"><button onclick="seis()">Click</button><br>
+<div id="pSeis"></div>
 <hr>
     
 <h2>Ejercicio 7:</h2> 
 <p>Crear una función que, introduciendo un número del 1 al 10 en un campo de formulario, muestre la tabla de multiplicar de ese número. Muestra el resultado de la tabla de multiplicar en forma de listado hacia abajo como se muestra en el ejemplo. Mostrar mensaje de aviso en rojo si no se introduce un número comprendido entre 1 y 10.</p>
-<input id="siete" type="number" placeholder="Introduce un númro de 1-10"><button>Click</button><br>
-<p></p>
+<input id="siete" type="number" placeholder="Introduce un número de 1-10"><button onclick="siete()">Click</button><br>
+<p id="pSiete"></p>
+<style>
+    #contenedor2 {display: none;}
+</style>
+<div id="contenedor2">
+<!-- <button class="btn btn-primary btn-sm" type="button" onClick="cerrar()">Cerrar</button> -->
+<table id="tabla" class="table table-striped">
+<tbody>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+</tbody>
+</table>
+</div>
 <hr>
     
 <h2>Ejercicio 8:</h2>
 <p>Crear una función que, al introducir una fecha de nacimiento a partir de año 2000, compruebe a que categoría deportiva de fútbol pertenece. Utiliza una etiqueta de párrafo debajo del campo de formulario, para mostrar la categoría.</p>
-<input id="ocho" type="text" placeholder="Introduce un fecha de nacimiento"><button>Click</button><br>
-<p></p>
+<input id="ocho" type="date"><button onclick="ocho()">Click</button><br>
+<p id="pOcho"></p>
 <hr>
     
 <h2>Ejercicio 9:</h2> 
