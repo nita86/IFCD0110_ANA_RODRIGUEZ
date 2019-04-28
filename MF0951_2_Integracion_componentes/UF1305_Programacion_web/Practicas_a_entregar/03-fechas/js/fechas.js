@@ -79,8 +79,8 @@ function fechaLarga() {
 	var hora= fecha.getHours();
 	var min= fecha.getMinutes();
 	var seg= fecha.getSeconds();
-	var diaSemana= fecha.getDay()-1;//-1 porque domingo 0 lunes 1....
-    var dias= ["lunes", "martes", "miércoles", "jueves", "viernes", "sabado", "domingo"];
+    var diaSemana= fecha.getDay();
+    var dias=["domingo","lunes", "martes", "miércoles", "jueves", "viernes", "sabado"];
     
     document.getElementById("etiqueta3").innerHTML="la fecha que has introducido es: "+dias[diaSemana]+" "+dia+ " de "+ nombreMes+ " de "+ year;
 }
@@ -97,7 +97,7 @@ function sesion() {
     var mes=cadena.slice(primerEspacio+1,segundoEspacio);
     var year=cadena.slice(segundoEspacio+1);
     //dd/mm/yyyy
-    var nuevaFecha=new Array(cadena.slice(0,primerEspacio),cadena.slice(primerEspacio+1,segundoEspacio),cadena.slice(segundoEspacio+1));
+    var nuevaFecha=new Array(dia,mes,year);
     var hoy="";
     for (i=0; i<nuevaFecha.length; i++) {
         if (nuevaFecha[i]<10) {
@@ -117,7 +117,7 @@ function sesion() {
     else {hora=hora+nuevaHora[i];}
     }
     document.getElementById("etiqueta4").innerHTML="hoy es: "+hoy+"<br> y la hora actual es: "+hora;
-    setTimeout(formato, 1000);//cada cuantos milisg se ejecuta la función
+    setTimeout(sesion, 1000);//cada cuantos milisg se ejecuta la función
 }
 
 //ejercicio 5
@@ -128,12 +128,12 @@ function dias() {
     fechaUsuario.setFullYear(yearSistema);//no se puede meter en una variable porque lo transforma en miliseg
 if (fechaUsuario>fechaSistema) { //no ha llegado su cumple
     var resta=parseInt((fechaUsuario-fechaSistema)/1000/60/60/24);//dias faltan
-    document.getElementById("etiqueta5").innerHTML= "tu fecha de nacimiento es: "+fechaUsuario+" por lo que faltan "+resta+" dias para tu cumpleños"
+    document.getElementById("etiqueta5").innerHTML= "tu fecha de nacimiento es: "+document.getElementById("date5").value+" por lo que faltan "+resta+" dias para tu cumpleños"
     }  
     else {
         var resta=parseInt((fechaSistema-fechaUsuario)/1000/60/60/24); //dias transcurridos
         fechaUsuario.setFullYear(yearSistema+1);
         var faltan=parseInt((fechaUsuario-fechaSistema)/1000/60/60/24);//dias faltan
-        document.getElementById("etiqueta5").innerHTML= "tu fecha de nacimiento es: "+fechaUsuario+" por lo que han transcurrido "+resta+" desde tu cumpleaños y faltan "+faltan+" dias hasta el siguiente"   
+        document.getElementById("etiqueta5").innerHTML= "tu fecha de nacimiento es: "+document.getElementById("date5").value+" por lo que han transcurrido "+resta+" desde tu cumpleaños y faltan "+faltan+" dias hasta el siguiente"   
     }                    
 }
