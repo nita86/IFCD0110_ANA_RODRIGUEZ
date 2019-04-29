@@ -260,14 +260,21 @@ function ocho() {
 }
 
 //--------------ejercicio9------------------
-/* function nueve() {
+function nueve() {
     var car={nombre:"Juan", apellidos:"Fernández", telefono:"654789452", email:"jfernandez@gamil.com", fecha:"02/07/1968", edad:"50 años"};
-    var tabla="";//declaramos la variable tabla de tipo texto
-    for (i=0;i<car.length;i++) {
-        tabla += "<tr><td>"+car[i]+"</td></tr>";//+= se pone para que al recorrer el bucle se añadan los valores dentro de la tabla en los distintos tr
-        document.getElementById("etiqueta9").innerHTML=tabla;
+    var tabla="<table><tbody><tr>";
+    for (var x in car) {//x es una variable que vale "Key(nombre, apellidos, telefono....)"
+        tabla += "<td>"+x+"</td>";
     }
-} */
+    tabla += "</tr><tr>";
+    for (var i in car) {//i es una variable que vale "Key(nombre, apellidos, telefono....)"
+    // car[i]=valor del objeto en la posicion i
+        tabla += "<td>"+car[i]+"</td>";
+    }
+    tabla += "</tr></tbody></table>";
+    document.getElementById("contenedor3").style.display="block";
+    document.getElementById("contenedor3").innerHTML=tabla;
+}
 
 //--------------------------ejercicio10--------------------
 function diez () {
