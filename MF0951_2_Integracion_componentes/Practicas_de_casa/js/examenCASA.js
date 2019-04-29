@@ -79,17 +79,24 @@ function cuatro() {
 }
 
 function cinco() {
-    var bruto=document.getElementById('cinco').value;
-    bruto=parseFloat(bruto);
+    var bruto=document.getElementById("cinco").value;
+    bruto=parseFloat(bruto);//para que tenga decimales
     var dto=bruto-(bruto*0.20);
     var iva=bruto+(bruto*0.21);
     var total=String(bruto-dto+iva);//se convierte a string para poder quitar los decimales que sobran 
     var punto=total.indexOf(".");
-    var corregido=total.slice(0,punto+3);//corta desde la posición 0 hasta doz por detrás del punto
-    document.getElementById("pCinco").innerHTML="precio "+bruto+" euros <br>"+
-    "descuento (-20%) "+dto+"<br>"+
-    "impuestos (+21%)"+iva+"<br>"+
-    "total "+corregido+" €";
+    if (punto>-1) {
+        var corregido=total.slice(0,punto+3);//corta desde la posición 0 hasta dos por detrás del punto
+        document.getElementById("pCinco").innerHTML="precio "+bruto+" euros <br>"+
+        "descuento (-20%) "+dto+"<br>"+
+        "impuestos (+21%) "+iva+"<br>"+
+        "total "+corregido+" €";
+    } else {
+        document.getElementById("pCinco").innerHTML="precio "+bruto+" euros <br>"+
+        "descuento (-20%) "+dto+"<br>"+
+        "impuestos (+21%) "+iva+"<br>"+
+        "total "+total+" €";
+    }
 }
 
 function seis() {
@@ -192,7 +199,6 @@ function ocho() {
     var resta=(fechaActual-fecha)/1000/60/60/24/365;//pasar los milisegundos que arroja el resultado a años
         resta=parseInt(resta);//edad en años
     if (resta <= 4) {document.getElementById("pOcho").innerHTML="eres muy joven para jugar con nosotros";}
-    else if (resta >= 20){document.getElementById("pOcho").innerHTML="eres muy mayor para jugar con nosotros";}
     else {
     var categoria;
     //categoria
