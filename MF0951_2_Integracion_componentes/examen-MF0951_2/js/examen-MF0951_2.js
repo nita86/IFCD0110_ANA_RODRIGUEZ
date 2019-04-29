@@ -264,7 +264,7 @@ function nueve() {
     var car={nombre:"Juan", apellidos:"Fernández", telefono:"654789452", email:"jfernandez@gamil.com", fecha:"02/07/1968", edad:"50 años"};
     var tabla="<table><tbody><tr>";
     for (var x in car) {//x es una variable que vale "Key(nombre, apellidos, telefono....)"
-        tabla += "<td>"+x+"</td>";
+        tabla += "<th>"+x+"</th>";
     }
     tabla += "</tr><tr>";
     for (var i in car) {//i es una variable que vale "Key(nombre, apellidos, telefono....)"
