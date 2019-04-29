@@ -271,8 +271,10 @@ function ocho() {
 
 //--------------------------ejercicio10--------------------
 function diez () {
-    document.getElementById("cuadrogrande").style.display="block"
+    document.getElementById("padre").style.display="block"
+    document.getElementById("p").innerHTML="Según el apartado 2 del artículo 22 de la LSSI le informamos que utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación. Tras aceptar o cerrar el mensaje, entendemos que acepta nuestra Política de Cookies.";
+    document.getElementById("p").style.color="white";
 }
 function cerrar() {
-    document.getElementById("cuadrogrande").style.display="none";
- }
+    document.getElementById("padre").style.display="none";
+}
