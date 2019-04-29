@@ -260,7 +260,7 @@ function ocho() {
 }
 
 //--------------ejercicio9------------------
-function nueve() {
+function nueve() {//fuente https://stackoverflow.com/questions/7241878/for-in-loops-in-javascript-key-value-pairs
     var car={nombre:"Juan", apellidos:"Fernández", telefono:"654789452", email:"jfernandez@gamil.com", fecha:"02/07/1968", edad:"50 años"};
     var tabla="<table><tbody><tr>";
     for (var x in car) {//x es una variable que vale "Key(nombre, apellidos, telefono....)"
