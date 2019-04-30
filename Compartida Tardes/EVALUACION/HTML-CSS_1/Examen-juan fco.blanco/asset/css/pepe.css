@@ -1,0 +1,310 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/* PLANTILLA-CONTENEDOR PADRE */
+
+div#contenedor-principal {
+	width: 1200px;
+	height: 1700px;
+	background: #D8D8D8;
+	padding: 0.5em;
+	margin:auto;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+.h1{
+	background: #585858;
+	color: white;
+}
+.h2{
+	background-color: : #585858;
+	color: white;
+}
+.h3{
+	background-color: : #585858;
+	color: white;
+}
+
+div#nav{
+	height: 68px;
+	background: #A4A4A4;
+	border-radius: 2em;
+	margin: 1em;
+}
+
+div#header{
+	/* sin width "ya que tienen mismo ancho */
+	/* trabajamos en % todo dentro del PADRE */
+	height: 400px;
+	width: 100%;
+	
+	
+}
+
+
+div.hijos-contenido{
+	position: relative;
+	float: left;
+}
+
+div.hijos-contenido-html{
+	position:relative;
+		}
+
+div#contenido{
+	
+  	height: 10px;
+	width: 1168px;
+	background: #D8D8D8;
+	margin: 1em;
+	
+	
+}
+
+
+div#contenido-2{
+
+	height: 10;
+	width: 1168px;
+	background: orange;
+	margin: 1em;
+}
+
+div#bloque-1{
+	height: 200px;
+	 
+	background: brown;
+	margin: 5px;
+}
+
+div#bloque-2{
+	 
+	height: 200px;
+	background: green;
+	margin: 5px;
+
+}
+
+div#bloque-3{
+	 
+	height: 100px;
+	background: orange;
+	margin: 5px;
+
+}
+div#bloque-4{
+	 
+	height: 300px;
+	background: green;
+	margin: 5px;
+
+}
+div#bloque-5{
+	 
+	height: 150px;
+	background: orange;
+	margin: 5px;
+
+}
+
+div#izquierda-2{
+	width: 30%;
+	height: 30%;
+	margin-left: 18%;
+	margin-right:5%;
+	 
+}
+
+div#derecha-2{
+	width: 30%;
+	height: 30%;
+}
+
+div.centrar-texto-1{
+	text-align: center;
+}
+
+div#izquierda{
+	width: 140px;
+	height: 203px;
+	float: left;
+	background-color: black;
+	margin-top:130px;
+	margin-left: 300px;
+	margin-right: 100px;
+	
+	 
+}
+div#centro{
+	width: 140px;
+	height: 203px;
+	
+	background-color: blue;
+	margin-top:130px;
+	margin-right: 100px;
+	
+	 
+}
+div#derecha{
+	width: 140px;
+	height: 203px;
+	background-color: brown;
+	float: left;
+	margin-top:130px;
+	 
+	 
+}
+
+ 
+
+.centrado{
+	margin:10px auto;
+	display:block;
+ }
+ 
+/*CONTENEDOR-NAVEGADOR */ 
+
+
+
+/*CONTENEDOR-PRINCIPAL */
+/* Contiene Section-Contenedor+Aside-Contenedor */
+
+
+
+
+ /*no se pone Border ni Margin para pegar al Nav 
+
+/*CONTENEDOR PIE-DE-PAGINA */
+
+div#footer{ 
+	width: 1200px;
+	height: 160px;
+	background: blue;
+	border-radius: 1em;
+	margin-top: 1em;
+	float:left;
+	
+
+}
+div#izquierda-footer{
+	float:left;
+	
+    width: 140px;
+	height: 160px;
+	background-color: green;
+	}
+
+ul.informacion-footer {
+  
+  clear: both;
+  float: left;
+  width: 100%;
+  list-style: none;
+  margin: 1em;
+  padding: 0;
+  
+}
+
+ul.informacion-footer li a {
+  
+  
+  text-decoration: none;
+    
+}
+
+div#derecha-footer{
+	float:left;
+    width: 140px;
+	height: 160px;
+	background-color: red;
+	
+	}
+
+ul.informacion-derecha-footer {
+
+  float:left;
+  clear: both;
+  width: 100%;
+  list-style: none;
+  margin: 1em;
+  padding: 0;
+  
+}
+
+ul.informacion-derecha-footer li a {
+  
+  text-decoration: none;
+  float:left;
+   
+}
+
+
+
+
+
+ 
+
+
+
+/* CONTENEDOR-SECTION (CONTENEDOR-PRINCIPAL) */ 
+
+div#section{
+	height: 95%;
+	width: 97%;
+	background-color: blue;
+	border-radius: 1em;
+	float: left;
+	margin: auto;
+	margin-left: 1em;
+	margin: 1em;
+		
+	/*para que no se monten Sectión y Aside */ 
+	
+}
+ 	 
+ 
+.articulo{
+	
+	height: 20%;
+	width: 25%;
+	background: white;
+	margin: 1em;
+	border-radius: 1em;
+}
+
+
+ul.menu {
+  clear: both;
+  float: left;
+  width: 100%;
+  list-style: none;
+  margin: 1em;
+  padding: 0;
+
+}
+ul.menu li {
+   float: left;
+   width: 20%
+   margin: 1em;
+   border-radius: 1em;
+}
+
+ul.menu li a {
+  padding: .3em;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  background: #6f9bb9;
+  /*background: #F4F4F4; */
+  border-top: 1px solid #7C7C7C;
+  border-right: 1px solid #7C7C7C;
+  border-bottom: 1px solid #9C9C9C;
+
+  float: left;
+position: relative;
+margin-left: 5px;
+height: 26px;
+}
+

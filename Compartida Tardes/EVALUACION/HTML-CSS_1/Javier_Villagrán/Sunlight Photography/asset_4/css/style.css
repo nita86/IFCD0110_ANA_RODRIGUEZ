@@ -1,0 +1,44 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+header{
+    position:relative;
+	height:100px;
+	width: 100%;
+	background-color: white;
+}
+
+
+main{
+	position: static;
+	width: 30%;
+	height: 800px;
+	background: yellow;
+	float: left;
+}
+
+nav{
+	position: relative;
+	width: 70%;
+	height: 800px;
+	left:30%;
+	background-color:black; 
+
+
+}
+div{
+	position: relative;
+	width: 30%;
+	height: 100px;
+	display: inline-block;
+	background-color: orange;
+	margin: 0.2em;
+
+}
+
+.tamanio{
+	width: 37.5%;
+}
+

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+
+		//Ejercicio 1
+		
+		var numero_trimestre = parseInt(prompt('Introduzca un numero'));
+		switch(true){
+
+			case (numero_trimestre<3):
+			alert('El numero corresponde al primer trimestre');
+			break;
+			case (numero_trimestre>3 && numero_trimestre<7):
+			alert('El numero corresponde al segundo trimestre');
+			break;
+			case (numero_trimestre>6 && numero_trimestre<10):
+			alert('El numero corresponde al tercer trimestre');
+			break;
+			case (numero_trimestre>9 && numero_trimestre <13);
+			alert('El numero corresponde al cuarto trimestre');
+			break;
+			default:
+			alert('Numero incorrecto');
+			}
+
+			//Este ejercicio se puede hacer con las intrucciones if y else.
+
+
+		var mes= (prompt('Introduzca un numero'));
+		switch(true){
+			case(mes>0 && mes<=3):
+			alert('pertenece al primer trimestre');
+			break;
+			case(mes>3 && mes<=6):
+			alert('pertenece al segundo trimestre');
+			break;
+			case(mes>6 && mes<=9):
+			alert('pertenece al tercer trimestre');
+			break;
+			case(mes>9 && mes<=12):
+			alert('pertenece al cuarto trimestre');
+			break;
+			default:
+			alert('Debe introducir un numero entre 1 y 12');
+			}
+
+
+		// 	//Ejercico 2
+
+			 var dia_semana=parseInt(prompt('Introduzca un numero'));
+			 switch(dia_semana){
+			 	case 1:
+			 	alert('El dia de la semana es Lunes');
+			 	break;
+			 	case 2:
+			 	alert('El dia de la semana es Martes');
+			 	break;
+			 	case 3:
+			 	alert('El dia de la semana es Miercoles');
+			 	break;
+			 	case 4:
+			 	alert('El dia de la semana es Jueves');
+			 	break;
+			 	case 5:
+			 	alert('El dia de la semana es Viernes');
+			 	break;
+			 	case 6:
+			 	alert('El dia de la semana es Sabado');
+			 	break;
+			 	case 7:
+			 	alert('El dia de la semana es Domingo');
+			 	break;
+			 	default:
+			 	alert('Introduzca un numero del 1 al 7');
+			 	}
+
+		// 	 // Si utilizamos true, el valor del condicionante es el que figura en case() , si no, 
+		// 	 // el valor sera el que tome la variable en funcion de lo que se Introduzca en 
+		// 	 // prompt()
+
+		// 	 //Ejercicio 3
+
+			 var numero= (prompt('Introduzca un numero'));
+			 	if(+numero%2==0){
+			 			console.log('El numero es par');
+			 		}else{
+			 			console.log('El numero es impar');
+			 		}
+			 	
+			
+			//Ejercicio 4
+
+			var numero=prompt('Introduzca un numero mayor que 2');
+			var i = numero;
+			var divisor= numero-1;			
+			for(i;divisor==1;divisor--)
+			{
+				if(i%divisor==0){
+					alert('El numero no es primo');				
+					break;				
+				}else{
+					alert('El numero es primo');				
+				break;
+				}
+			}
+
+			//Ejercicio 5
+
+			var edad= parseInt(prompt('Introduzca la edad del jugador'));
+				switch(true){
+					case(edad>=5 && edad<=7):
+					alert('El jugador pertenece a la categoria Prebenjamin');
+					break;
+					case(edad>=8 && edad<=9):
+					alert('El jugador pertenece a la categoria Benjamin');
+					break;
+					case(edad>=10 && edad<=11):
+					alert('El jugador pertenece a la categoria Alevin');
+					break;
+					case(edad>=12 && edad<=13):
+					alert('El jugador pertenece a la categoria Infantil');
+					break;
+					case(edad>=14 && edad<=15):
+					alert('El jugador pertenece a la categoria Cadete');
+					break;
+					case(edad>=16 && edad<=18):
+					alert('El jugador pertenece a la categoria Juvenil');
+					break;
+					case(edad>50):
+					alert('Con esa eda no se puede jugar al futbol,pruebe con la petanca o el mus');
+					}
+
+			
+
+			// 	//Ejercicio 6
+
+				var edad=prompt('Introduzca su edad');
+					switch(true){
+						case(edad<=17):
+						alert('No estas en edad de trabajar, estudia chaval');
+						break;
+						case(edad>=18 && edad<=65):
+						alert('A trabaajar, que me tienes que pagar la pension');
+						break;
+						case(edad>65):
+						alert('Cuando quedamos para echar un mus?');
+						break;
+						}
+
+			// 	//Ejercicio 7
+				
+				var factorial=1;
+				var numero =prompt('Introduzca un numero');	
+				var i=numero;						
+				for (i; i > 1; i--) {
+					factorial= i*factorial;
+					}
+					alert('El factorial es' +factorial);
+
+
+				//Ejercicio 8
+					
+				
+				var compra=prompt('Inserte el importe de su compra');
+					switch(true){
+						case(compra<30):
+						alert('Los gastos de envio son 8 euros');
+						break;
+						case(compra>=30 && compra<45):
+						alert('Con 5 euros mas de compra se ahorra los gastos de envio');
+						break;
+						case(compra >=50):
+						alert('Su compra no tiene gastos de envio');
+						break;						
+					}
+
+
+	</script>
+</body>
+</html>

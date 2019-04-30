@@ -1,0 +1,40 @@
+*{
+	padding: 0px;
+	margin: 0px;
+
+}
+
+nav{
+	background: orange;
+	text-align: center;
+	padding: 1em;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+	padding: 1em;
+}
+
+main{
+	background: green;
+}
+
+main{
+	text-align: center;
+}
+
+footer{
+	position: relative;
+	width: 100%;
+	height: 200px;
+	background-color: gray;
+	
+}
+
+footer iframe{
+	position: relative;
+	width: 250px;
+	height: 150px;
+	top: 10px;
+}

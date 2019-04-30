@@ -1,0 +1,218 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face{
+	font-family: 'Letra_germania';
+	src:url('letras/GermaniaOne-Regular.ttf');
+}
+
+.flecha_roja{
+	font-size: 30px;
+	color: red;
+}
+
+.fa-arrow-right{
+	position: absolute;
+	top:200px;
+}
+
+header img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+body{
+	font-family: 'Indie Flower', cursive;
+}
+
+h1{
+	font-family: 'Letra_germania', cursive;
+	font-size: 50px;
+}
+
+header{
+	position: relative;
+	height: 100px;
+}
+	nav{
+		position: relative;
+		width: 60%;
+		background-color: green;
+		height: 100px;
+		float: left;
+	}
+
+	nav.header2{
+		width: 40%;
+		background-color: brown;
+
+	}
+
+	main {
+		/*clear:both;*/
+		position: relative;
+		width: 70%;
+		background-color: yellow;
+		height: 300px;
+	}
+
+	aside{
+		position: absolute;
+		top:100px;
+		width: 30%;
+		background-color: black;
+		height: 300px;
+		left:70%;
+
+	}
+
+	div.banner {
+		position: relative;
+		width: 95%;
+		background-color: blue;
+		margin-top:1em;
+		height: 100px;
+	}
+
+	div{
+		position: relative;
+		width: 33%;
+		float:left;
+		height: 100px;
+		background-color: blue;
+	}
+
+	footer{
+		position: fixed;
+		width: 100%;
+		bottom: 0px;
+		height: 50px;
+		background-color: orange;
+	}
+
+
+
+@media (max-width: 950px){
+	nav{
+		/*position: relative;*/
+		width: 50%;
+		/*background-color: green;*/
+		/*height: 100px;*/
+		/*float: left;*/
+	}
+
+	nav.header2{
+		width: 50%;
+		background-color: brown;
+
+	}
+
+	main {
+		clear:both;
+		position: relative;
+		width: 55%;
+		background-color: yellow;
+		height: 300px;
+	}
+
+	aside{
+		position: absolute;
+		top:100px;
+		width: 45%;
+		background-color: black;
+		height: 300px;
+		left:55%;
+
+	}
+	div.banner {
+		position: relative;
+		width: 95%;
+		background-color: blue;
+		margin-top:1em;
+		height: 100px;
+	}
+
+	div{
+		position: relative;
+		width: 50%;
+		float:left;
+		height: 100px;
+		background-color: blue;
+	}
+
+	div.div_horizontal3{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 780px){
+	header{
+		height: 200px;
+	}
+	nav{
+		position: relative;
+		width: 100%;
+		background-color: green;
+		margin-top: 10px;
+		height: 100px;
+		float:none;
+	}
+
+	nav.header2{
+		width: 100%;
+		background-color: brown;
+	}
+
+	main {
+		position: relative;
+		width: 95%;
+		background-color: yellow;
+		height: 300px;
+		float: none;
+	}
+	aside{
+		display: none;
+	}
+
+
+}
+
+@media(max-width: 580px){
+
+	nav{
+		position: relative;
+		width: 95%;
+		background-color: green;
+		margin-top: 1em;
+		height: 100px;
+	}
+
+	nav.header2{
+		background-color: brown;
+	}
+
+	main {
+		position: relative;
+		width: 95%;
+		background-color: yellow;
+		height: 300px;
+
+	}
+
+
+	div {
+		position: relative;
+		width: 95%;
+		background-color: blue;
+		margin-top:1em;
+		height: 100px;
+	}
+
+
+
+
+			
+	
+}

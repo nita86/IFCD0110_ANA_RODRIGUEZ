@@ -1,0 +1,85 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background-color: #E6E6E6;
+}
+nav{
+	position: relative;
+	width: 100%;
+	font-size: 40px;
+	/*background-color: lightblue;*/
+}
+main{
+	position: relative;
+    width: 80%;
+    margin-left: 104px;
+    margin-top: 20px;
+    padding-top: 16px;
+    border: 3px solid gray;
+    border-radius: 25px;
+}
+div{
+	position: relative;
+	width: 87%;
+	/*height: 500px;*/
+	background-color: #848484;
+	margin-left: 78px;
+    margin-top: 20px;
+    border: 2px solid gray;
+    border-radius: 35px;
+    margin-bottom: 15px;x;      
+}
+main div h2{
+    text-align: center;
+    font-size: 36px;
+    color: white;
+}
+p{
+	line-height: 42px;
+	font-weight: bold;
+	font-size: 25px;
+	color: snow;
+}
+label{
+	font-size: 17px;
+	color: lavender;
+}
+input.primeros{
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 500px;
+    height: 30px;
+}
+select{
+	border: 2px solid gray;
+    border-radius: 5px;
+    width: 500px;
+    height: 30px;
+}
+textarea{
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 500px;
+    height: 100px;
+}
+input[type=submit] {
+    background-color: lightgray;
+    border: 2px solid gray;
+    padding: 2px 54px;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 20px;
+}
+div.respuesta{
+	margin: 73px;
+}
+p.respuesta{
+	font-size: 20px;
+}
+p.cerrar{
+	font-size: 20px;
+}

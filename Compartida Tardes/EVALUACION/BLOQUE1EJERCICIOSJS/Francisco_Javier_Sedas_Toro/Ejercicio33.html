@@ -1,0 +1,83 @@
+<html>
+	<head>
+	<title>&copy; adminformaticos</title>
+	</head>
+	<body>
+
+		<h1>N&uacute;meros Aleatorios</h1>
+		<span id="result_aleat"></span>
+		<br/>
+	
+		<h1>N&uacute;meros de Usuario</h1>
+		<span id="result_usuario"></span>
+		<br/>
+	
+		<script type="text/javascript">
+	
+			var comb_ganadora, comb_usuario, i, j, num, cont, existe;
+			
+			comb_ganadora = [];
+			comb_usuario = [];
+			
+			for(i=0; i<6;i++) {
+			do {
+			num = Math.floor((Math.random() * 48) + 1);
+			
+			existe = false;
+			for(j=0; j<i; j++){
+			existe = existe || (num == comb_ganadora[j]);
+			}
+			
+			}while(existe);
+			
+			comb_ganadora.push(num);
+			}
+			
+			var custom_data = "";
+			for(i=0; i<6;i++) {
+			do {
+			num = parseInt(prompt("Introduzca un numero (" + (6 - i)+ " restantes) " + custom_data));
+			
+			existe = true;
+			if((!isNaN(num))&&(num > 0) && (num < 50)){
+			existe = false;
+			for(j=0; j<i; j++){
+			existe = existe || (num == comb_usuario[j]);
+			}
+			
+			}
+			
+			if(isNaN(num)){
+			custom_data = "[Ultimo dato no numerico]";
+			}else if((num < 1) || (num > 49)){
+			custom_data = "[Numero fuera de rango]";
+			}else if(existe){
+			custom_data = "[Numero repetido " + num + "]";
+			}else{
+			custom_data = "";
+			}
+			}while(existe);
+			
+			comb_usuario.push(num);
+			}
+			
+			var node = document.getElementById("result_aleat");
+			var data = "";
+			
+			for(i=0; i<6;i++){
+			data += comb_ganadora[i] + " ";
+			}
+			node.innerHTML = data;
+			
+			node = document.getElementById("result_usuario");
+			data = "";
+			for(i=0; i<6;i++){
+			data += comb_usuario[i] + " ";
+			}
+			
+			node.innerHTML = data;
+
+		</script>
+
+	</body>
+	</html>

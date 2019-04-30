@@ -1,0 +1,42 @@
+*{
+	margin: 0%;
+	width: 1024px;
+	background-color: rgb(239; 239; 239);
+}
+
+div{
+	height: 400px;
+	width: 1024px;
+	background-color: white;
+	border-style: round;
+}
+
+.navegacion{
+	background-color: #3366AB;
+	link-color: white;
+}
+
+button.Home{
+	height: 10px;
+	width: 10px;
+	border-color: blue;
+	border: round;
+}
+
+header{
+
+	width: 1024px;
+	background-color: yellow;
+}
+
+div.image1{
+	height: 
+}
+
+footer{
+	background-color: orange;
+	
+
+}
+
+

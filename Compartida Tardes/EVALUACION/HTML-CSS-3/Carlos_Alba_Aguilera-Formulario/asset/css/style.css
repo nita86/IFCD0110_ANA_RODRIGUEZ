@@ -1,0 +1,46 @@
+body{
+	background-color: #eaeaea;
+}
+h2{
+	text-align: center
+}
+div.formulario{
+	position: relative;
+	width: 100%;
+}
+div.formulario div.izquierda{
+	position: relative;
+	float: left;
+	width: 50%;
+}
+div.formulario div.izquierda input{
+
+}
+div.formulario div.izquierda p{
+	margin-left: 60px;
+
+}
+div.formulario div.izquierda input{
+	margin-left: 70px;
+}
+div.formulario div.derecha{
+	position: relative;
+	float: left;
+	width: 50%;
+}
+div.formulario div.derecha input, select, textarea{
+	margin-left: 10px;
+}
+div.formulario div.derecha .enviar input{
+	padding: 5px;
+	padding-left: 236px;
+	padding-right: 236px;
+}
+#check1, #check2{
+	display: none;
+	color: green;
+}
+#cross1, #cross2{
+	display: none;
+	color: red;
+}

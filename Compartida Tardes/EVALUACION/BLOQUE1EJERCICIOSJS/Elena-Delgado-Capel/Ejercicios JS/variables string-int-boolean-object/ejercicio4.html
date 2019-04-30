@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+//4. Crea un script donde declares un array vacío denominado nombres. Pide al usuario tres nombres usando la sentencia prompt de JavaScript y almacena esos nombres como elementos 0, 1 y 2 del array. A continuación muestra el contenido del array por pantalla.
+
+var nombres=[]
+var nombre1= prompt('Por favor inserte su nombre')
+var nombre2=prompt('Por favor inserte su nombre')
+var nombre3=prompt('Por favor inserte su nombre')
+
+nombres[0]=nombre1
+nombres[1]=nombre2
+nombres[2]=nombre3
+console.log(nombres)
+
+
+//console.log('el valor de info es '+nombre');
+
+var nombres=[];
+// 
+var nombre1 = prompt('Por favor inserte su nombre');
+var nombre2 = prompt('Por favor inserte su nombre');
+var nombre3 = prompt('Por favor inserte su nombre');
+// 
+// nombres[0]=nombre1;
+// nombres[1]=nombre2;
+// nombres[2]=nombre3;
+
+// alert('los nombres son '+nombres);
+// console.log (nombres)
+
+// con document.write el mensaje nos sale en el html y no en ventana emergente como en el caso del alert.
+document.write('los nombres seleccionados son' +nombres); 
+console.log (nombres)
+
+// me guarda en la última posición, lo que voy metiendo.
+nombres.push(nombre1)
+nombres.push(nombre2)
+nombres.push(nombre3)
+console.log (nombres)
+
+
+
+
+
+
+</script>
+</body>
+</html>
+
+

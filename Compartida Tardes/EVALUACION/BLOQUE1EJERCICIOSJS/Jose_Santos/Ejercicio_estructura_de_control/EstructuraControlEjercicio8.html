@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+
+
+//     8. Mostrar gastos de envío, 
+// Si la compra realizada por el usuario es menor de 30 € indicar, se cobraran 8 € de gasto de envío. 
+// Si la compra realizada por el usuario es igual o mayor que 30€ y menor de 45€, indicar le faltan 5€ para evitar gastos de envio. 
+// Compra superior a 50€, indicar que no hay gastos de envío 
+// Para indicar el precio de compra el usuario debe introducir un número, en un futuro se pondrán ciertas etiquetas html que tendrán un valor y según clicken en esas elementos se irá calculando el valor de la compra realizada. 
+
+
+
+         
+      var numero=parseInt(prompt('Introduzca un numero :'));
+
+      switch(true){
+
+      	case(numero<30):
+ 		    alert('se cobraran 8 € de gasto de envío ');  
+    		break;
+
+    	case(numero>=30 && numero<=45):
+    		alert('le faltan 5€ para evitar gastos de envio ');  
+    		break;
+
+    	case(numero>50):
+    		alert('no hay gastos de envío')
+
+    		default:
+    			alert('El numero no es correcto');
+
+      }
+    
+
+
+
+
+
+		
+
+</script>
+</body>
+</html>

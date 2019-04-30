@@ -1,0 +1,199 @@
+*{
+	margin: 0%;
+	padding: 0%;
+
+}
+
+body{
+	background-color: #D9D9D6;
+}
+
+header{
+	background-color: #C3B7BC;
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	margin-top: -0px;
+}
+
+header img{
+	max-height: 80%;
+	max-width: 50%;
+	float: left;
+}
+
+header nav{
+	height: auto;
+}
+
+header nav ul{
+	list-style: none;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+
+header nav ul li{
+	display: inline-block;
+	position: relative;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	display: block;
+	color: black;
+	font-size: 15px;
+	line-height: 20px;
+	padding: 0 10px;
+	margin-top: 20%;
+}
+
+header nav ul li ul{
+	display: block;
+	display: none;
+	position: absolute;
+}
+
+header nav ul li:hover>ul{
+	display: block;
+}
+
+main{
+	background-color: #D9D9D6;
+}
+
+main div.moda{
+	background-color: #5F4028;
+	width: 20%;
+	position: relative;
+	float: left;
+	margin: 1%;
+	top: 100px;
+	height: 400px;
+}
+
+main div.moda h3{
+	margin-left: 0px;
+	margin-top: 0px;
+	font-family: times new roman;
+	text-align: center;
+	color: red;
+	font-size: 15px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+main div.moda img{
+	display: block;
+	max-height: 80%;
+	max-width: 80%; 
+	margin-left: 30px;
+	margin-top: -10px;
+}
+
+main div.moda a{
+	border-right: 50px solid green;
+	border-top: 6px solid green;
+	border-left: 50px solid green;
+	border-bottom: 6px solid green;
+	background-color: green;
+	border-radius: 10px;
+	font-size: 10px;
+	margin-left: 60px;
+	bottom: 40px;
+}
+
+aside{
+	clear: both;
+	position: relative;
+	top: 130px;
+	botton: 0px;
+	max-height: 100%;
+	max-width: 100%;
+	
+}
+
+aside div.enviar{
+	background-color: #D9D9D6;
+}
+
+aside div.enviar h2{
+	text-align: center;
+	bottom: 50px;
+}
+
+aside div.email input{
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	background-color: #D9D9D6;
+	margin-left: 480px;
+	font-size: 10px;
+	text-decoration: underline;
+	text-decoration-color: black;
+}
+
+aside div.submit input{
+	border-right: 50px solid green;
+	border-top: 6px solid green;
+	border-left: 50px solid green;
+	border-bottom: 6px solid green;
+	border-radius: 50px;
+	border: 10px;
+	margin-left: 480px;
+}
+
+footer{
+	background-color: #2D2926;
+	color: white;
+	height: 100px;
+	width: 100%;
+	top: 500px;
+}
+
+footer div{
+	height: auto;
+}
+
+footer div ul{
+	list-style: none;
+	margin: 0 auto;
+	text-align: center;
+}
+
+footer div ul li{
+	display: inline-block;
+}
+
+footer div ul li a{
+	text-decoration: none;
+	display: block;
+	color: black;
+	font-size: 15px;
+	line-height: 20px;
+	padding: 0 10px;
+	margin-top: 20%;
+}
+
+footer div ul li ul{
+	display: block;
+	display: none;
+	position: absolute;
+}
+
+footer div ul li:hover>ul{
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

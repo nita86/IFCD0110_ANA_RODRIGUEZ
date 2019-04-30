@@ -1,0 +1,40 @@
+header{
+	position: static;
+	height: 100px;
+	top:20px;
+	left: 100px;
+	background-color: red;
+
+
+}
+
+main{
+	position: relative;
+	width: 100%;
+	height: 100px;	
+	top:0px;
+	background-color: green;
+
+}
+
+footer{
+	position: relative;
+	top: 0px;
+	background-color:blue;
+	height: 100px;
+}
+
+section{
+	position: relative;
+/*	top:10px;*/
+top:0px;
+	width: 90%;
+	background-color:orange;
+	height: 100px;
+}
+
+article{
+	position: relative;
+	background-color:yellow;
+	height: 100px;
+}

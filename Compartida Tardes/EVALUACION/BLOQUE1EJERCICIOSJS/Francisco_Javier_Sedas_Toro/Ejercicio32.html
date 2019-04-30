@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<button id="nombre">Muestra nombre</button>
+
+	<p id="resultado">el resultado es </p>
+
+	<button id="edad">Muestra edad</button>
+
+	<p id="otroresultado">otro resultado es </p>
+
+	<script type="text/javascript">
+
+		document.getElementById('nombre').onclick=mostrarNombre;
+
+		function mostrarNombre(){
+
+		var nombre = new Array();
+			nombre[0] = 'Andrea';
+			nombre[1] = 'Nerea';
+			nombre[2] = 'Davinia';
+
+
+			
+		for(var i=0; i<3;i++){
+		document.getElementById('resultado').innerHTML+= ' , ' + nombre;
+		}
+
+		while(i<9){
+		document.getElementById('resultado').innerHTML+= ' , ' + nombre;
+		i=i+1;
+		}
+		}
+
+		document.getElementById('edad').onclick=mostrarEdad;
+
+		function mostrarEdad(){
+
+		var edad = new Array();
+			edad[0] = '20';
+			edad[1] = '21';
+			edad[2] = '22';
+			
+		for(var i=0; i<3;i++){
+		document.getElementById('otroresultado').innerHTML+= ' , ' + edad;
+		}
+
+		while(i<3){
+		document.getElementById('otroresultado').innerHTML+= ' , ' + edad;
+		i=i+1;
+		}
+		}
+							
+	</script>
+
+</body>
+</html>

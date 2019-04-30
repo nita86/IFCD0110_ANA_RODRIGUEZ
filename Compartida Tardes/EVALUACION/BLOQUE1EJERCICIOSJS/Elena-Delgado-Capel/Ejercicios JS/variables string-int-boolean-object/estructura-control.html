@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Estructura de control</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		
+
+		// var numero=3;
+
+		// if(numero>5){
+		// 	console.log('el numero es mayor de 5, siendo su valor '+numero);
+		// } else{
+
+		// 	alert('Olvídate. No puedes entrar aquí.')
+
+		// 	console.log('el numero es menor de 5, siendo su valor '+numero);
+		// }
+
+		// console.log('no puedes entrar aquí');
+		// cuando el valor de numero es 7, me aparece en console. cuando he puesto el valor de numero, como 3, al ser menor de 5 no me indica nada en el console.
+
+		// 'else': si no se cumple la condición indicada por el if, mostrar lo definido por el else.
+
+		
+		
+		// var edad= prompt('Qué edad tienes');
+		
+		// if(edad<18){
+		// 	alert('no tienes edad para trabajar');
+		// 	alert('vuleve a intentar');
+			
+		// }else{
+
+		// 	if(edad>=18 && edad<=65){
+		// 	alert('envía tu CV');
+		// 	}else{
+		// 		alert('es hora de jubilarse');
+		// 	}
+		// }
+		
+		// SWITCH- Estructura switch(variable o valor){}
+
+		// switch(){}. Si lo que queremos comprobar es texto, va entre comillas. Si es número, sin comillas.
+
+		// Case'A'. Entra en el caso A, ejecuta lo que tiene y obvia el caseB y el default
+		// ----
+		// ----
+		// breake;
+
+		// Case 'B'Entra en el caso B, ejecuta lo que tiene y obvia el caseA y el default
+		// ----
+		// ----
+		// break; rompe la estructura de código. Es hasta donde ejecuta. Una vez que llega ahí se sale de switch no ejecuta más líneas de éste.
+
+		// Entra en el caso C, como no encuentra Case C, ejectua el default
+
+		// default:
+		// ----
+		// ----
+		
+// Caso en el que el usuario puede poner uno de esos tres nombres. si no, le salatará el dafault. Con el break sabe que una vez que encuentre el caso, se sale fuera del switch y deja de ejecutar. Si no lo ponemos irá saltando de un caso al siguiente.
+
+// var texto='juan';
+// 	switch(texto){
+// 		case 'pepe':
+// 		alert('el nombre indicado es pepe');
+// 		// break;
+// 		case 'juan': 
+// 		alert('el nombre indicado es juan');
+
+// 		// break;
+// 		case 'julian': 
+// 		alert('el nombre indicado es julian');
+
+// 		// break;
+
+// 		default:
+// 		alert('el nombre indicado es incorrecto');	
+
+// 	}
+
+	// para cualquier valor de la variable que sea mayor que 2 me saltará el default. Si quito algún break, o todos, aunque el switch detecte el caso, seguirá ejecutando los siguientes casos, no pararía y seguirían saliendo alerts hasta el default.
+	
+	// var numero=8;
+	// 	switch(numero){
+	// 		case 0:
+	// 		alert('el número es cero');
+	// 		break;
+	// 		case 1:
+	// 		alert('el número es uno');
+	// 		break;
+	// 		case 8:
+	// 		alert('el número es dos');
+	// 		break;
+	// 		default:
+	// 		alert('número incorrecto');
+	// 	}
+
+	
+	// // con 'true' le doy permiso para que entre al switch y ejecute los casos. Si no pongo nada o pongo 'false' la función no se ejecuta. Es la forma de decirle que entre y ejecute para comprobar. El true se emplea para comprobar intervalos.
+
+ // var mes=prompt('introducir el mes númericamente');
+	// switch(true){
+	// 	case(mes>0 && mes<=3):
+	// 	alert('perteneces a primer trimestre');
+	// 	break;
+	// 	case(mes>3 && mes<=6):
+	// 	alert('perteneces a segundo trimestre');
+	// 	break;
+	// 	case(mes>6 && mes<=9):
+	// 	alert('perteneces a tercer trimestre');
+	// 	break;
+	// 	case(mes>9 && mes<=12):
+	// 	alert('perteneces a cuarto trimestre');
+	// 	break;
+	// 	default:
+	// 	alert('mes incorrecto');
+	// }
+
+	var mes=prompt('introducir el mes númericamente');
+	switch(true){
+		case(mes>0 || mes<=3):
+		alert('perteneces a primer trimestre');
+		break;
+		case(mes>3 || mes<=6):
+		alert('perteneces a segundo trimestre');
+		break;
+		case(mes>6 || mes<=9):
+		alert('perteneces a tercer trimestre');
+		break;
+		case(mes>9 || mes<=12):
+		alert('perteneces a cuarto trimestre');
+		break;
+		default:
+		alert('mes incorrecto');
+	}
+					
+		
+
+
+		
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

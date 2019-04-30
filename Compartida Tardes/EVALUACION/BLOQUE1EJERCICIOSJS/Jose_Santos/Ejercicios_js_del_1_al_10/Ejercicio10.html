@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+     //       10. Declara un array que vamos a llamar “clasificaciones” con los siguientes valores:
+// Andrés, Juan, Mercedes, Celia, Ana, Oswaldo, Raúl, Sara
+// (vamos a suponer que es el orden de clasificación de un concurso, en un momento dado)
+// Imprime la clasificación actual
+// El concurso continua, y se van modifican esas posiciones anteriores. Debemos cambiar en el array:
+
+    // • Celia adelanta a Mercedes
+    // • Juan es descalificado y se elimina del concurso
+    // • Detrás de Ana y antes de Oswaldo se clasifican dos nuevos concursantes: Roberto y Amaya, en ese orden
+    // • Hay una nueva participante que pasa a encabezar la clasificación: Marta
+    // • Imprime la clasificación actualizada y comprueba que se ha hecho correctamente
+    // • Recuerda que el código debe estar entre las etiquetas “script>…/script>“.
+    // • Utiliza las funciones que hemos visto durante la clase. 
+
+
+    var clasificaciones = new Array("Andrés", "Juan", "Mercedes", "Celia", "Ana", "Oswaldo", "Raúl", "Sara")
+
+    alert('Las clasificaciones son las siguientes: '+clasificaciones);
+
+    clasificaciones[2]='Celia';
+    clasificaciones[3]='Mercedes';
+
+    
+
+    alert('Celia adelanta a Mercedes ,la clasificación por tanto es asi:  '+clasificaciones);
+
+  clasificaciones.splice(1,1);
+
+
+
+    alert('Juan es descalificado y se elimina del concurso:  '+clasificaciones);
+
+    clasificaciones.splice(4,0,'Roberto','Amaya');
+
+     alert('Detrás de Ana y antes de Oswaldo se clasifican dos nuevos concursantes: Roberto y Amaya, en ese orden '+clasificaciones);
+
+     clasificaciones.unshift('Marta');
+
+    alert('Hay una nueva participante que pasa a encabezar la clasificación: Marta '+clasificaciones);
+
+  
+   
+
+
+
+
+	   
+
+	
+</script>
+</body>
+</html>
+

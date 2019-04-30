@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+
+	// EJERCICIO 4.Crea un script donde declares un array vacío denominado nombres. Pide al usuario tres nombres usando la sentencia prompt de JavaScript y almacena esos nombres como elementos 0, 1 y 2 del array. A continuación muestra el contenido del array por pantalla.
+
+
+	//FORMA 1
+
+	var nombres = []; 
+	var nombre1=prompt('Por favor inserte su nombre');
+	var nombre2=prompt('Por favor inserte su nombre');
+	var nombre3=prompt('Por favor inserte su nombre');
+
+
+	// nombres[0]=nombre1;
+	// nombres[1]=nombre2;
+	// nombres[2]=nombre3;
+
+	nombres=[nombre1,nombre2,nombre3];
+
+	alert('Los nombres son:  ' +nombres);
+
+	//lo de abajo te comenta en la pagina directamente
+	// document.write('Los nombres seleccionados son :  ' + nombres);
+
+
+//FORMA 2
+
+	var nombres = []; 
+	var nombre1=prompt('Por favor inserte su nombre');
+	var nombre2=prompt('Por favor inserte su nombre');
+	var nombre3=prompt('Por favor inserte su nombre');
+
+
+	nombres[0]=nombre1;
+	nombres[1]=nombre2;
+	nombres[2]=nombre3;
+
+	
+
+	alert('Los nombres son:  ' +nombres);
+
+	//lo de abajo te comenta en la pagina directamente
+	// document.write('Los nombres seleccionados son :  ' + nombres);
+
+
+//FORMA 3
+
+
+	var nombres = []; 
+	var nombres[0]=prompt('Por favor inserte su nombre');
+	var nombres[1]=prompt('Por favor inserte su nombre');
+	var nombre[2]=prompt('Por favor inserte su nombre');
+
+
+
+
+	alert('Los nombres son:  ' +nombres);
+
+	//lo de abajo te comenta en la pagina directamente
+	// document.write('Los nombres seleccionados son :  ' + nombres);
+
+// MODO 4
+ var nombres = []; 
+ nombres.push(prompt('Por favor inserte su nombre'));
+ nombres.push(prompt('Por favor inserte su nombre'));
+ nombres.push(prompt('Por favor inserte su nombre'));
+
+console.log(nombres);
+
+</script>
+</body>
+</html>

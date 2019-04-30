@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 9. Crear un programa que le pida al usuario dos números en un Prompt y luego muestre en un alerta el número mayor.</title>
+</head>
+<body>
+
+	<script type="">
+		 var numero1= parseInt(prompt('inserte un número')); 
+
+		 var numero2=parseInt(prompt('inserte otro número'));
+
+		 var resta=numero1-numero2;
+
+		 
+		 if(resta<0){
+		 	alert('el número mayor es '+ numero2)
+
+		 }
+		
+
+		 if(resta>0){
+
+		 	alert ('el número mayor es '+numero1)
+		 }
+
+		 if(resta==0){
+
+		 	alert('has introducido dos números son iguales')
+		 }
+
+
+	// Otra forma de hacerlo. El ordenador sabe interpretar los símbolos <>, interpretando que los números son mayores o menores....
+	if(numero1>numero2){
+		 	alert('el numero 1' + numero1+ ' es mayor qu el 2 ' + numero2);
+		 }else{
+		 	if(numero1<numero2){
+		 		alert('el numero 1' + numero1+ ' es menor qu el 2 ' + numero2);
+
+		 	}else{
+		 		alert('el numero 1' + numero1+ ' es igual qu el 2 ' + numero2);	
+		 	}
+		 }
+		 
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

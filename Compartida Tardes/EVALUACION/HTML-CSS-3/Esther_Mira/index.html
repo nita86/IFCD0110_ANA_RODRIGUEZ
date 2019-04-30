@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulario de contacto</title>
+	<meta name="description" content="formularios de registro de acceso a la página y de contacto">
+	<meta name="keywords" content="contacto, acceso, registro, sugerencias">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="asset/css/estilos.css">
+</head>
+<body background="asset/img/fondo_blanco_azul.jpg">
+	<div class="principal">
+		<form method="post" action="mensaje.html">
+			<h2>Formulario de registro</h2>
+			<div class="primero">
+				<label>Nombre</label>
+				<input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required>
+				<p></p>
+				<label>Apellidos</label>
+				<input type="text" id="apellidos" name="apellidos" placeholder="Escriba sus apellidos" required>
+				<p></p>
+				<label>DNI</label>
+				<input type="text" name="dni" placeholder="Escriba su DNI">
+				<p></p>
+				<label>Fecha de nacimiento</label>
+				<input type="date" name="fecha">
+				<p></p>
+				<label>Correo electrónico</label>
+				<input type="e-mail" id="correo" name="email" placeholder="Escriba su e-mail" required>
+				<p></p>
+				<label>Password</label>
+				<input type="password" name="password" id="password" placeholder="Escriba su contraseña" required>
+				<p></p>
+				<label>Género</label>
+				<input type="radio" name="genero" value="hombre">Hombre
+				<input type="radio" name="genero" value="hombre">Mujer
+				<p>Dirección de residencia</p>
+				<input type="text" name="direccion">
+				<label>Número</label>
+				<input class="numero" type="number" name="numero" min="1" max="50">
+				<p>Ciudad</p>
+				<select name="ciudad">
+				<option selected>Selecciona una Comunidad</option>
+					<option>Comunidad de Andalucía</option>
+					<option>Comunidad de Aragón</option>
+					<option>Comunidad de Canarias</option>
+					<option>Comunidad de Cantabria</option>
+					<option>Comunidad de Castilla La Mancha</option>
+					<option>Comunidad de Castilla y León</option>
+					<option>Comunidad de Cataluña</option>
+					<option>Comunidad de Extremadura</option>
+					<option>Comunidad de Galicia</option>
+					<option>Comunidad de Islas Baleares</option>
+					<option>Comunidad de La Rioja</option>
+					<option>Comunidad de Madrid</option>
+					<option>Región de Murcia</option>
+					<option>Comunidad de Navarra</option>
+					<option>Comunidad de País Vasco</option>
+					<option>Comunidad de Madrid</option>
+					<option>Comunidad de Valencia</option>
+				</select>
+			</div>
+			<div class="segundo">
+				<label>Foto de perfil</label>			
+				<input type="file" name="foto_perfil" accept=".pdf,.jpg,.png">
+				<p>Aficiones</p>
+				<input id="checkbox" type="checkbox" name="" value="leer">Leer
+				<input id="checkbox" type="checkbox" name="" value="cine">Cine
+				<input id="checkbox" type="checkbox" name="" value="cocinar">Cocinar
+				<p></p>
+				<input id="checkbox" type="checkbox" name="" value="deporte">Deporte
+				<input id="checkbox" type="checkbox" name="" value="comer">Viajar
+				<input id="checkbox" type="checkbox" name="" value="viajar">Comer
+				<p>Sugerencias</p>
+				<textarea rows="8" cols="40"></textarea>
+				<input class="submit" id="enviar" type="submit" name="enviar" value="Enviar">
+				<input class="reset" type="reset" name="" value="Limpiar">
+			</div>	
+		</form>
+	</div>
+
+	<footer>
+		<div class="cookies" id="cierraCookie">
+			<p>Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación.</p><p class ="cookie" onclick="cierraCookie()" onmouseover="cursor()" style="cursor: pointer" id="cursor">X</p>
+		</div>
+	</footer>		
+</body>
+<script type="text/javascript" src="asset/js/cookies.js"></script>
+</html>

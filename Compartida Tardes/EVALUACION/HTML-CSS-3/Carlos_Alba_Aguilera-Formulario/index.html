@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Formulario de registro de nuevo usuario en la web">
+	<meta name="keywords" content="formulario, registro, alta, usuario">
+	<meta name="robots" content="Index, Follow">
+ 	<meta name="author" content="Carlos Alba Aguilera">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario | Carlos Alba</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="asset/css/style.css">
+</head>
+<body>
+	<header>
+		<h2>Formulario de registro:</h2>
+	</header>
+	<div class="formulario">
+		
+		<div class="izquierda">
+			<form method="post" action="alta_usuario.html">
+				<p>Nombre:</p>
+					<input type="text" name="" placeholder="Introduzca el nombre"> 
+				
+				<p>Apellido:</p>
+					<input type="text" name="" placeholder="Introduzca el apellido">
+
+				<p>Dni:</p>
+					<input type="text" name="" id="dni" placeholder="Introduzca el dni">
+
+				<p>Fecha de nacimiento:</p>
+					<input type="date" name="">
+
+				<p>Contraseña:</p>
+					<input type="password" name="" id="contrasena1" placeholder="Introduzca la contraseña">
+					<i class="fas fa-check" id="check1"></i>
+					<i class="fas fa-times" id="cross1"></i>
+				<p>Repita la contraseña:</p>
+					<input type="password" name="" id="contrasena2" placeholder="Repita la contraseña" onkeyup="contrasena()">
+					<i class="fas fa-check" id="check2"></i>
+					<i class="fas fa-times" id="cross2"></i>
+				<p>Foto de perfil:</p>
+					<input type="file" name="">
+
+				<p>Seleccione su género:</p>
+					<input type="radio" name="genero"><span>Hombre</span>
+					<input type="radio" name="genero"><span>Mujer</span>
+
+		</div>
+		<div class="derecha">
+		
+				<p>Dirección de residencia:</p>
+					<input type="text" name="" placeholder="Introduzca su dirección">
+
+				<p>Número de dirección de residencia:</p>
+					<input type="number" name="" min="1" max="50">
+
+				<p>Ciudad:</p>
+					<select name="ciudad" >
+						<option></option>
+						<option>Andalucía</option>
+						<option>Aragón</option>
+						<option>Principado de Asturias</option>
+						<option>Baleares</option> 
+						<option>Canarias</option> 
+						<option>Cantabria</option> 
+						<option>Castilla La Mancha</option> 
+						<option>Castilla y León</option>
+						<option>Cataluña</option>
+						<option>Extremadura</option> 
+						<option>Galicia</option> 
+						<option>La Rioja</option> 
+						<option>Comunidad de Madrid</option> 
+						<option>Región de Murcia</option> 
+						<option>Navarra</option> 
+						<option>País Vasco Euskadi</option> 
+						<option>Comunidad Valenciana</option>
+					</select>		
+			
+				<p>Aficiones:</p>
+					<input type="checkbox" name="aficiones"><span>Leer</span>
+					<input type="checkbox" name="aficiones"><span>Cine</span>
+					<input type="checkbox" name="aficiones"><span>Cocinar</span>
+					<input type="checkbox" name="aficiones"><span>Deporte</span>
+					<input type="checkbox" name="aficiones"><span>Viajar</span>
+					<input type="checkbox" name="aficiones"><span>Comer</span>
+
+				<p>Sugerencias o consultas:</p>
+					<textarea rows="10" cols="70" placeholder="Escribe aquí cualquier cosa que quieras comentarnos" ></textarea>
+				<p class="enviar"><input type="submit" name=""></p>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="asset/js/functions.js"></script>
+</body>
+</html>

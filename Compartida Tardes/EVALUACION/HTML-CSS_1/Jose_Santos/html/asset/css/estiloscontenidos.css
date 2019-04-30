@@ -1,0 +1,21 @@
+
+
+
+
+header{
+	height: 250px;
+	width: 50%;
+}
+
+
+
+     table, td {
+        border:1px solid black;
+      }
+      table {
+        width:100%;
+      }
+      td {
+        padding:10px;
+      }
+

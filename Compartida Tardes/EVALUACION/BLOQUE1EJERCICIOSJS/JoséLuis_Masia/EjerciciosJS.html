@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+//Ejercicio 1
+// 1.	Muestra un mensaje por pantalla que muestre al usuario el mensaje, de Bienvenido a mi web espero que que te guste.
+
+	// alert('Bienvenido a mi web. Espero que te guste.');
+
+
+//Ejercicio 2
+//2.	Crea una variable con dicho mensaje y muetra la variable. 
+
+	// var bv = 'Bienvenido a mi web. Espero que te guste.'
+	// alert(bv);
+
+
+//Ejercicio 3
+//3.	Crear un array llamado meses y que almacene el nombre de los doce meses del año. Mostrar por pantalla los doce nombres utilizando la función console.log().
+
+	// var meses = new Array;
+	// 	meses[0] = 'Enero';
+	// 	meses[1] = 'Febrero';
+	// 	meses[2] = 'Marzo';
+	// 	meses[3] = 'Abril';
+	// 	meses[4] = 'Mayo';
+	// 	meses[5] = 'Junio';
+	// 	meses[6] = 'Julio';
+	// 	meses[7] = 'Agosto';
+	// 	meses[8] = 'Septiembre';
+	// 	meses[9] = 'Octubre';
+	// 	meses[10] = 'Noviembre';
+	// 	meses[11] = 'Diciembre';
+
+	// 	console.log(meses);
+	// 	alert(meses);
+	// 	document.write(meses);
+		
+
+
+//Ejercicio 4
+//4.	Crea un script donde declares un array vacío denominado nombres. Pide al usuario tres nombres usando la sentencia prompt de JavaScript y almacena esos nombres como elementos 0, 1 y 2 del array. A continuación muestra el contenido del array por pantalla.
+
+	//Primero se crea la variable Array de cualquiera de las dos maneras
+		//var nombres = new Array();
+		// var nombres = [];  
+
+	//Una manera de hacerlo
+		// var nombre1 = prompt('Por favor inserte su nombre');
+		// var nombre2 = prompt('Por favor inserte su nombre');
+		// var nombre3 = prompt('Por favor inserte su nombre');
+		// nombres = [nombre1, nombre2, nombre3];
+
+	//Otra manera de hacerlo
+		// nombres[0] = prompt('Por favor inserte su nombre');
+		// nombres[1] = prompt('Por favor inserte su nombre');
+		// nombres[2] = prompt('Por favor inserte su nombre');
+
+	//Otra manera de hacerlo
+		// nombres[0] = nombre1;
+		// nombres[1] = nombre2;
+		// nombres[2] = nombre3;
+
+	//Otra manera
+		// nombres.push(prompt('Por favor inserte su nombre'));
+		// nombres.push(prompt('Por favor inserte su nombre'));
+		// nombres.push(prompt('Por favor inserte su nombre'));
+
+	//Otra manera
+		// nombres.unshift(prompt('Por favor inserte su nombre'));
+		// nombres.unshift(prompt('Por favor inserte su nombre'));
+		// nombres.unshift(prompt('Por favor inserte su nombre'));
+	
+	//Lo escribe en una ventana de alerta
+		// alert('Los nombres son '+ nombres);
+
+	//Lo escribe en el documento
+		// document.write('Los nombres seleccionados son    '+ nombres);
+
+	//Lo escribe en la consola
+		// console.log(nombres);
+
+
+//Ejercicio 5
+//5.	Escribir un programa que muestre un prompt donde el usuario ingresa un número, luego muestra otro prompt pidiendo otro número, finalmente el programa muestra una alerta con el resultado de la suma.
+
+	// var x = parseInt(prompt('Escriba un número, por favor'));
+	// var y = parseInt(prompt('El número que ha escrito es '+x+' .Ahora escriba otro y lo sumaré al primero'));
+	// var z = x + y
+	// alert('La suma de los dos números que ha escrito es '+z);
+
+
+//Ejercicio 6
+//6.	Pedir un número a un usuario a través de un prompt y luego dividirlo por 10, ejemplo: 5 / 10 igual 0.5
+
+
+//Ejercicio 7
+//7.	Crear un programa que determine si un número introducido en un Prompt es par o no, la respuesta será mostrada en una alerta.
+
+	// var m = prompt('Escriba un número, por favor');
+
+	// 	if(m%2==0){
+	// 		alert('El número '+m+' que ha introducido es PAR.');
+	// 	}else{alert('El número '+m+' que ha introducido es IMPAR');
+	// 			}
+
+
+//Ejercicio 8
+//8.	Crear un programa que determine si un número introducido en un Prompt es divisible por 5 o no, mostrar el resultado con console.log
+
+	// var m = prompt('Introduzca un número, por favor.');
+
+	// 	if(m%5==0){
+	// 		alert('El número '+m+' que ha introducido SÍ es divisible por 5');
+	// 	}else{
+	// 		alert('El número '+m+' que ha introducido NO es divisible por 5');
+	// 	}
+
+
+//Ejercicio 9
+//9.	Crear un programa que le pida al usuario dos números en un Prompt y luego muestre en un alerta el número mayor.
+
+	// var f = prompt('Introduzca un número, por favor.');
+	// var g = prompt('Introduzca otro número, por favor.');
+
+	// 	if(f<g){
+	// 		alert('Del los dos números que ha puesto, ' +f+' y '+g+' , el mayor es' +g);
+	// 	}else{
+	// 		alert('Del los dos número´s que ha puesto, ' +f+' y '+g+' , el mayor es ' +f);
+	// 	}
+
+
+//Ejercicio 10
+//10.	Declara un array que vamos a llamar “clasificaciones” con los siguientes valores:
+//Andrés, Juan, Mercedes, Celia, Ana, Oswaldo, Raúl, Sara
+//(vamos a suponer que es el orden de clasificación de un concurso, en un momento dado)
+//Imprime la clasificación actual
+//El concurso continua, y se van modifican esas posiciones anteriores. Debemos cambiar en el array:
+
+//•	Celia adelanta a Mercedes
+//•	Juan es descalificado y se elimina del concurso
+//•	Hay una nueva participante que pasa a encabezar la clasificación: Marta
+//•	Imprime la clasificación actualizada y comprueba que se ha hecho correctamente
+//•	Recuerda que el código debe estar entre las etiquetas <script>.
+//•	Utiliza las funciones que hemos visto durante la clase. 
+
+	var clasificacion = ['Andrés', 'Juan', 'Mercedes', 'Celia', 'Ana', 'Oswaldo', 'Raul', 'Sara'];
+
+	
+	// clasificacion [2] = 'Celia';
+	// clasificacion [3] = 'Mercedes';
+
+	clasificacion.splice (2, 2, "Celia" "Mercedes")
+
+
+	clasificacion.splice(1,1);
+
+
+	clasificacion.unshift('Marta');
+
+	document.write(clasificacion);
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>

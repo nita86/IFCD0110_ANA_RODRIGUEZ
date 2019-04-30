@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Esstructura de control</title>
+	<link rel="stylesheet" type="text/css" href="asset/css/style.css">
+</head>
+<body>
+
+
+
+
+<!-- <p id="mensaje"></p> -->
+
+<script type="text/javascript">
+
+// ESTRUCTURA DE CONTROL CONDICIONAL, IF, SWITCH
+	var edad = 25;
+
+	if(edad<18 ){
+		 alert('no tienes edad de trabajar' + edad);
+	}else{
+		 alert('tienes edad de trabajar');
+	}
+
+var numero = 5;
+	switch(numero){
+		case 1:
+		alert('el numero es 1');
+		break;
+		case 5:
+		alert('el numero indicado es 5');
+		// break;
+		default:
+		alert('número incorrecto');
+
+	}
+
+
+
+var mes= 0;
+switch(true){
+	case (mes>0 && mes<=3):
+	alert('perteneces a primer trimestre');
+	break;
+	case (mes>3&& mes<=6):
+	alert('perteneces a segundo trimestre');
+	break;
+	case (mes>6&& mes <=9):
+	alert('perteneces a tercer trimestre');
+	break;
+	case (mes>9 && mes<=12):
+	alert('perteneces a cuarto trimestre');
+	break;
+	default:
+	alert('mes incorrecto');
+}
+
+
+
+// ESTRUCTURA DE CONTROL, BUCLE REPETICIONES FOR Y WHILE
+for(var i=0;i<5;i++){
+	alert('el valor de i es '+i);
+}
+
+
+
+</script> 
+</body>
+</html>
+
+
+

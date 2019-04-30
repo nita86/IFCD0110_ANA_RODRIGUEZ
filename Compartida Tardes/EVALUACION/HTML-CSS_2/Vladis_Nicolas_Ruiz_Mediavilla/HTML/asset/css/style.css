@@ -1,0 +1,251 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+      header {
+        position: sticky;
+        width: 100%;
+        height: 100px;
+        background-color: #C3B7BC;
+        top: 0;
+        z-index: 50;
+
+      }
+      header img{
+        position: absolute;
+        width: 10%;
+        height: auto;
+        top: 5px;
+        padding: 1em;
+        z-index: 60;
+      }
+      header nav{
+        position: absolute;
+        width: 90%;
+        height: 100%;
+        background-color: #C3B7BC;
+        top: 0;
+        left: 10%;
+      }
+       header nav ul{
+         text-align: center;
+         height: 100px;
+
+
+       }
+       header nav ul li{
+         width: auto;
+         height: 100px;
+         text-decoration: none;
+         display: inline-block;
+       }
+       header nav ul li a{
+         position: relative;
+         color: black;
+         text-decoration: none;
+         font-size:20px;
+         padding: 10px;
+         top: 40px;
+       }
+
+       nav ul li ul{
+         position: absolute;
+       }
+       nav ul li a ul li{
+         position: relative;
+         width: 120px;
+         height: 30px;
+         display: none;
+       }
+       nav ul li a:hover ul li{
+         display: block;
+         color: white;
+         background-color:#2D2926;
+         padding: 0.5em;
+         margin-top: 5px;
+         width: 100px;
+         height: 20px;
+         border-radius: 5px;
+       }
+
+
+      main{
+        position: relative;
+        width: 100%;
+        height: 650px;
+        clear: both;
+        background-color: #D9D9D6;
+      }
+
+      main div.Categorias{
+        position: relative;
+        background-color: #5F4028;
+        width: 22%;
+        height: 620px;
+        margin: 20px;
+        border: 10px;
+        float: left;
+      }
+      main div.Categorias h3{
+        height: 50px;
+        text-align: center;
+        padding: 10%;
+      }
+
+      main div.Categorias div.Fotos{
+        position: absolute;
+        width: 80%;
+        height: 470px;
+        background-color: black;
+        top: 80px;
+        left:10%;
+      }
+      main div.Categorias div.Fotos img{
+        max-width: 100%;
+        height: 470px;
+      }
+      main div.Categorias button:focus{
+        outline: 0;
+      }
+
+      main div.Categorias button{
+        position: absolute;
+        text-align: center;
+        bottom: 10px;
+        width: 70%;
+        height: 35px;
+        left: 15%;
+        border-radius: 10px;
+        border-style: none;
+        background-color: black;
+        color: white;
+      }
+
+       div.Formulario{
+        position: relati;
+        background-color: #D9D9D6;
+        width: 100%;
+        height: 190px;
+      }
+      div.Formulario h2{
+        text-align: center;
+        height: 60px;
+        padding-top: 50px;
+      }
+      div form.Formulario{
+        height: 170px;
+      }
+      div form.Formulario input:focus{
+        outline: 0 none;
+      }
+
+
+      div form.Formulario input{
+        position: relative;
+        width: 30%;
+        left: 35%;
+        text-align: left;
+        border-style: none;
+        border-color:#D9D9D6;
+        background-color:#D9D9D6 ;
+        color: black;
+      }
+      div form.Formulario hr{
+        position: relative;
+        width: 30%;
+        left: 35%;
+        border:1px solid black;
+      }
+
+      div form.Formulario button:focus{
+      outline: 0 none;
+      }
+
+      div form.Formulario button{
+        position: relative;
+        left: 35%;
+        top: 20px;
+        width: 30%;
+        height: 20px;
+        border-radius: 10px;
+        border-color: black;
+        clear: both;
+      }
+
+      footer{
+        position: relative;
+        width: 100%;
+        height: 110px;
+        background-color: #2D2926;
+      }
+
+      footer div.Pago_Envio{
+        position: relative;
+        padding-left: 3.5%;
+        width: 40%;
+        height: 150px;
+        float: left;
+      }
+      footer div.Pago_Envio h4{
+        position: relative;
+        width:50%;
+        color: white;
+        top: 15px;
+        left: 50%;
+      }
+      footer div.Pago_Envio ol , li{
+        position: relative;
+        text-align: center;
+        list-style: none;
+
+      }
+      footer div.Pago_Envio a{
+        position: relative;
+        top: 30px;
+        left: 70px;
+        color: white;
+      }
+
+     #Enlaces{
+       position: absolute;
+       width: 100%;
+       height: 45px;
+       background-color: #53565A;
+     }
+     #Enlaces ol{
+       text-align: center;
+       padding-top: 15px;
+     }
+    #Enlaces ol li{
+       display: inline-block;
+       padding: 5px;
+
+     }
+     #Enlaces ol li a{
+         color: white;
+          text-decoration: none;
+       }
+     #Cookies{
+       position: fixed;
+       clear: both;
+       width: 100%;
+       height: 40px;
+       bottom:0px;
+       text-align: auto;
+       color:black;
+       background-color:rgba(149,148,148,0.5);
+       padding: 30px;
+       }
+       .boton{
+         position: absolute;
+         top: 5px;
+         left: 94%;
+         width: 15px;
+         border-style: none;
+         border-radius: 2px;
+       }
+
+      @media only screen and (max-width:950px){
+
+
+      }

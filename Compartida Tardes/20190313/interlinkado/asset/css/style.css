@@ -1,0 +1,30 @@
+header{
+	background-color: red;
+	height: 100px;
+}
+
+main{
+	background-color: yellow;
+	height: 400px;
+	width: 70%;
+}
+
+aside{
+	background-color: green;
+	height: 400px;
+	width: 30%;	
+}
+
+footer{
+	background-color: black;
+	height: 80px;
+}
+
+
+
+
+
+
+
+
+

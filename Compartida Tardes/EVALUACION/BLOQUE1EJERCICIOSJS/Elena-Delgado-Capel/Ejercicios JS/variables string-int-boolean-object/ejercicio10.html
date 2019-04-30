@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 10. Declara un array que vamos a llamar “clasificaciones” con los siguientes valores:
+Andrés, Juan, Mercedes, Celia, Ana, Oswaldo, Raúl, Sara (vamos a suponer que es el orden de clasificación de un concurso, en un momento dado) Imprime la clasificación actual El concurso continua, y se van modifican esas posiciones anteriores. Debemos cambiar en el array:</title>
+<meta charset="utf-8">
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		var clasificaciones=['Andrés', 'Juan', 'Mercedes', 'Celia', 'Ana', 'Oswaldo', 'Raúl', 'Sara'];
+
+		console.log(clasificaciones);
+
+		
+		// También se puede dar posición a los elementos de la siguiente manera, con un array vacío. De esta manera, al tener que determinar el valor de cada variante del array, ya estoy creando a la vez una especie de copia de seguridad del valor de cada variable, por si se cambia y/o borra algo por error. La definición de array sería: 
+			// 1. var clasificaciones [] 
+			// 2. definir los valores de cada variable 
+			// 3. determinar qué posición dentro del array ocupará cada variable.
+		
+		// var clasificaciones[];
+		
+		// var participante1='Andrés';
+		// var participante2='Juan';
+		// var participante3='Mercedes';
+		// var participante4='Celia';
+		// var participante5='Ana';
+		// var participante6='Oswaldo';
+		// var participante7='Raúl';
+		// var participante8='Sara';
+		// clasificaciones[0]=participante1
+		// clasificaciones[1]=participante2
+		// clasificaciones[2]=participante3
+		// clasificaciones[3]=participante4
+		// clasificaciones[4]=participante5
+		// clasificaciones[5]=participante6
+		// clasificaciones[6]=participante7
+		// clasificaciones[7]=participante8
+
+		// console.log (clasificaciones);
+
+		
+
+// var test=	clasificaciones.slice(4);
+// 	console.log(test);
+
+
+	//Celia adelanta a Mercedes
+
+	// clasificaciones.splice(2, 2,'Celia','Mercedes');
+
+	// Otra forma de hace este cambio de posicones sería cambiar los valores de las variables.
+	clasificaciones[2]='Celia';
+	clasificaciones[3]='Mercedes';
+	console.log(clasificaciones);
+	
+
+	//Juan es descalificado y se elimina del concurso
+	// clasificaciones.splice(1,1);
+	// console.log(clasificaciones);
+
+	// Detrás de Ana y antes de Oswaldo se clasifican dos nuevos concursantes: Roberto y Amaya, en ese orden.
+
+	clasificaciones.splice(5,0,' Roberto', 'Amaya');
+	console.log(clasificaciones);
+
+	// Hay una nueva participante que pasa a encabezar la carrera: Marta. Unshift: coloca en la primera posición del array el último elemento añadido.
+
+	clasificaciones.unshift('Marta'); 
+
+	console.log(clasificaciones);
+
+	// Shift: borra el primer eleto del array; el push coloca en la última posición del array lo último que haya añadido.
+
+	// Pop me borra el último elemento del array.
+	clasificaciones.pop();
+	console.log(clasificaciones);
+
+	// Push  coloca en la última posición del array el último elemento añadido.
+
+
+
+
+		
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

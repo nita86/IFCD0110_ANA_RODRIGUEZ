@@ -1,0 +1,199 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #D9D9D6;
+	width: 100%;
+}
+header {
+	position: sticky;
+	width: 100%;
+	height: 100px;
+	top: 0;
+	background-color: #C3B7BC;
+	z-index: 100;
+}
+header div.logo{
+	position: relative;
+	float: left;
+	width: 20%;
+	height: 90px;	
+}
+header div.logo img{
+	max-width: 100%;
+	max-height: 100%;
+}
+header div.menu{
+	position: relative;
+	float: left;
+	width: 80%;
+	top: 30px;
+}
+header div.menu ul{
+	position: relative;
+	float: left;
+	padding-left: 25%;
+	list-style: none;
+}
+header div.menu ul li{
+	position: relative;
+	float: left;
+}
+header div.menu ul li a{
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding: 0 10px;
+}
+header div.menu ul ul{
+	position: absolute;
+	left: 0px ;
+	padding: 0px;
+	display: none;
+}
+header div.menu li:hover > ul {
+	display:block;
+	background-color: #C3B7BC;
+}
+main{
+
+	height: 650px;
+}
+main div.contenido{
+	position: relative;
+	width: 100%;
+}
+main div.contenido div.bloque{
+	position: relative;
+	float: left;
+	background-color: #C8C9C7;
+	width: 23%;
+	margin:1%;
+	/*padding-top: 20px;  */
+	padding-bottom: 20px;
+}
+main div.contenido div.bloque h2{
+	padding: 10px;
+	text-align: center;
+}
+main div.contenido div.bloque div.imagen{
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+}
+main div.contenido div.bloque div.imagen img{
+	max-width: 100%;
+	max-height: 100%;
+	margin-bottom: 10px;
+}
+main div.contenido div.bloque a{
+	text-decoration: none;
+	color: white;
+	background-color: #5f4028;
+	border-radius: 5px;
+	margin-left: 35%;
+	padding: 5px;
+}
+main div.newsletter{
+	position: relative;
+	margin: 0 auto;
+	width: 40%;
+}
+main div.newsletter h2{
+	text-align: center;
+}
+main div.newsletter input{
+	margin-top: 15px;
+	margin-left: 10%;
+	width: 80%;
+}
+main div.newsletter p{
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 20px;
+}
+main div.newsletter input{
+	border: 0;
+	background-color: #D9D9D6;
+	border-bottom: 1px solid black;
+}
+main div.newsletter a{
+	text-decoration: none;
+	color:black;
+}
+footer{
+	position: relative;
+	width: 100%;
+	height: 90px;
+	background-color: #2D2926;
+	color: white;
+	text-align: center;
+}
+footer div.abajo{
+	position: relative;
+	float: left;
+	width: 50%;
+}
+footer div.inferior{
+	position: relative;
+	width: 100%;
+	height: 20px;
+	background-color: #53565A;
+}
+footer div ul{
+	list-style-type: none;
+}
+footer div.inferior a{
+	text-decoration: none;
+	color: white;
+}
+
+div.cookie{
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(149, 148, 148,0.5);
+	bottom: 0px;
+}
+div.cookie p{
+	margin-top: 15px;
+	text-align: center;
+}
+div.cookie a{
+background-color: blue;
+text-decoration: none;
+color: black;
+}
+div.cookie span{
+	color: blue;
+}
+div.cookie button{
+	position: relative;
+	float: right;
+	margin:2px;
+}
+
+@media only screen and (max-width: 950px){
+	main div.media950{
+		clear: both;
+	}
+	main div.contenido div.bloque{
+		width: 45%;
+	}
+	main{
+		height: 1300px;
+	}
+}
+@media only screen and (max-width: 510px){
+	main div.media510{
+		clear: both;
+	}
+	main div.contenido div.bloque{
+		width: 100%;
+	}
+	main{
+		height: 2400px;
+	}
+}

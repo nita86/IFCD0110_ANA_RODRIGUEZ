@@ -1,0 +1,172 @@
+/**{
+	margin:0px;
+	padding:0px;
+}*/
+
+/*body{
+	background-image: 
+}*/
+
+
+header{
+	position: sticky;
+	top:0;
+	height:100px; 
+	background: green;
+	z-index: 100;
+	
+}
+
+header img{
+	max-height: 100%;
+	max-width: 100%;
+	float:left;
+
+}
+
+nav.menu_principal{
+	position: relative;
+	width: 80%;
+	top: 0px;
+	/*margin: 0 auto;*/
+	text-align: center;
+}
+
+nav.menu_principal ul{
+	position: relative;
+	/*float:left;*/
+	display: inline-block;
+	text-align: center;
+	list-style: none;
+	margin: 0 auto;
+	/*padding-top: 2em;*/
+}
+
+nav.menu_principal ul li{
+	position: relative;
+	float:left;
+	margin: 0px;
+	padding: 0px;
+	/*padding-right: 2em;*/
+
+}
+
+nav.menu_principal ul li a{
+	text-decoration: none;
+	display: block;
+	color: white;
+	font-size: 20px;
+	line-height: 20px;
+	padding: 0 10px;
+	font-weight: bold;
+}
+
+
+nav.menu_principal ul li:hover{
+	background-color: orange;
+}
+
+nav.menu_principal ul ul {
+	position: absolute;
+	left:0;
+	padding: 0;
+	display:none;
+}
+
+nav.menu_principal ul ul li{
+	float:none;
+	width: 200px;
+}
+
+nav.menu_principal ul ul li a{
+	line-height: 20px;
+	padding: 10px 15px;
+}
+nav.menu_principal ul ul ul{
+	top:0;
+	left:60%;
+}
+
+nav.menu_principal ul li:hover > ul{
+	display: block;
+}
+
+main{
+	position: static;
+	height: 800px;
+	/*background: yellow;	*/
+}
+
+main div.contenedor_slider{
+	position: relative;
+	width: 50%;
+	height: 50%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+main div.contenedor_slider nav.slider{
+	position: relative;
+	left:0;
+	top:0;
+	/*width: 100%;*/
+	width: 400%;
+	height: 100%;
+	margin: 0;
+	animation: 10s slider infinite;
+
+}
+
+main div.contenedor_slider nav.slider img{
+	width: 25%;
+	float: left;
+	/*width: 100%;
+	height: 100%;*/
+}
+
+@keyframes slider {
+	0% {left: 0%;}
+	25% {left: 0%}
+	30%{left: -100%}
+	55% {left: -100%}
+	60% {left:-200%}
+	85%{left:-200%}
+	90% {left:-300%}
+	100% {left: -300%}
+
+}
+
+input[type='button']{
+	text-decoration: none;
+	background: blue;
+	outline: red solid 10px;
+	border-radius: 5px;
+	height: 50px;
+	color: white;
+}
+
+input[type='button'].slider_boton{
+	text-decoration: none;
+	background-color: green;
+	color:black;
+	border: none;
+	outline: none;
+}
+
+input[type='button'].slider_boton:hover{
+	background-color: orange;
+}
+
+
+.icono_menu{
+	padding-right: 12px;
+	color: black;
+}
+
+.izq_slider {
+	position: absolute;
+	top: 20px;
+	font-size: 32px;
+	padding: 2%;
+}
+

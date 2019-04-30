@@ -1,0 +1,36 @@
+/*para referencia a etiquetas, 
+únicamente debo poner su nombre*/
+h1 {
+	color: rgb(16, 130, 80);
+	background-color: blue;
+}
+/* para referencia a etiquetas que tengan una clase, 
+nombre de etiqueta y .nombredeclase*/
+h1.color{
+	color: yellow;
+	background-color: white;
+	font-size: 100px;
+}
+/*para referencia a id utilizo el # y nombre de id*/
+#cambio_color{
+	color: orange;
+	font-size: 50px;
+}
+/*para referenciar a clases utilizo el . y nombre de clase*/
+.color{
+	color:green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

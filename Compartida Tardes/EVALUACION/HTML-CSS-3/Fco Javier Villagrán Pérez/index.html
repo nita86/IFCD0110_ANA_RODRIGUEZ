@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="asset/css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+	<meta name="description" content="Esta página contiene un formulario donde el usuario registrará su información en la base de datos">
+</head>
+<body>
+    
+  <main>
+	<h1>FORMULARIO</h1>
+
+	<form method="post" action="usuario_alta.html">
+
+		<p>Nombre</p>
+		<input type="text" name="" placeholder="Introduzca su nombre">
+
+		<p>Apellido</p>
+		<input type="text" name="" placeholder="Introduzca su apellido">
+
+		<p>DNI</p>
+		<input type="text" name="" placeholder="Introduzca su DNI">
+
+        <p>
+		<input type="date" name="">
+        </p>
+
+		<p>
+			<input type="e-mail" placeholder="introduzca su e-mail" name="email">
+		</p>
+
+		<p>
+			<input type="password" name="" placeholder="Introduzca su pass">
+		</p>
+
+		<label>Por favor suba una foto de perfil</label>
+		<input type="file" name="">
+		<div>
+			<img src="">
+		</div>
+
+		<p>Género</p>
+		<label>Hombre</label>
+		<input type="radio" name="genero" value="H">
+		
+		<label>Mujer</label>
+		<input type="radio" name="genero" value="M">
+
+		<label>Otro</label>
+		<input type="radio" name="genero" value="O">
+
+		<p>Dirección:</p>
+		<label>Calle/Avenida</label>
+		<input type="text" name="" placeholder="Introduzca el nombre de la Calle/Avenida">
+
+		<p>Número:</p>
+		<p>
+	    <input type="number" step="1" min="1" max="50" name="">
+		</p>
+
+        <p>
+        <label>Ciudad:</label>
+		<select>
+			<option value="ninguno"></option>
+			<option value="nav">Navarra</option>
+			<option value="gal">Galicia</option>
+			<option value="ast">Asturias</option>
+			<option value="can">Cantabria</option>
+			<option value="pv">País Vasco</option> 
+			<option value="ara">Aragón</option>
+			<option value="cat">Cataluña</option>
+			<option value="cln">Castilla y León</option>
+			<option value="lr">La rioja</option>
+			<option value="mad">Madrid</option>
+			<option value="ext">Extremadura</option>
+			<option value="clm">Castilla-La Mancha</option>
+			<option value="val">Valencia</option>
+			<option value="ib">Islas Baleares</option>
+			<option value="and">Andalucía</option> 
+			<option value="mur">Murcia</option>
+			<option value="ic">Islas Canarias</option> 
+		</select>
+		</p>
+
+        <p> 
+		<label>Aficiones:</label>
+		<select>
+			<option value="ninguno"></option>
+			<option value="le">Leer</option>
+			<option value="cin">Cine</option>
+			<option value="coc">Cocionar</option>
+			<option value="dep">Deporte</option> 
+			<option value="via">Viajar</option>
+			<option value="com">Comer</option> 
+			<option value="mus">Música</option>
+	    </select>
+        </p>
+
+        
+        <p>Deje sus comentarios</p>
+		<textarea rows="12" cols="125">
+			
+		</textarea>
+
+		<button>Enviar</button>
+
+    </form>
+  </main> 
+
+  </footer>
+	<nav class="cookie" id="cookie">
+		<p>Utilizamos "cookies" propias y de tercero para elaborar información estadística y mostrarle publicidad personalizada a través del analisis de su navegación.<span id="span_cookie" onmouseover="cambioColor()" onmouseout="vuelveOrigen()">Acepto</span>Más información y política de coockies.</p>
+		<button onclick="cierraCookie()">X</button>
+	</nav>  
+
+</body>
+<script type="text/javascript" src="asset/js/function.js"></script>
+</html>

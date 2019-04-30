@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<button onclick="dimeDia()">Averiguar día</button>
+	<script type="text/javascript">
+
+		function dimeDia(){
+
+		var d = new Date();
+
+			switch(d.getDay()){
+				case 0: 
+				alert('hoy es domingo');
+				break;
+				case 1: 
+				alert('hoy es lunes');
+				break;
+				case 2:
+				alert('hoy es martes');
+				break;
+				case 3:
+				alert('hoy es miércoles');
+				break;
+				case 4:
+				alert('hoy es jueves');
+				break;
+				case 5:
+				alert('hoy es viernes');
+				break;
+				case 6:
+				alert('hoy es sábado');
+				break;
+				}
+		}
+
+	</script>
+</body>
+</html>
