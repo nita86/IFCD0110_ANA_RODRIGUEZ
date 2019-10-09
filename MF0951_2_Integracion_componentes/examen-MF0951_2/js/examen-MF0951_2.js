@@ -61,6 +61,7 @@ function tres() {
 function cuatro() {
     var fecha=new Date(document.getElementById("date3").value);
     var cadena=fecha.toLocaleDateString();
+    alert(cadena);
     //d/m/yyyy
     var primerEspacio=cadena.indexOf("/");
     var segundoEspacio=cadena.lastIndexOf("/");
@@ -71,7 +72,7 @@ function cuatro() {
     var nuevaFecha=new Array(dia,mes,year);
     var hoy="";//inicializamos la variable de tipo string
     for (i=0; i<nuevaFecha.length; i++) {
-        if (nuevaFecha[i]<10) {//si el numero que ocupa la posicio i<10
+        if (nuevaFecha[i]<10) {//si el numero que ocupa la posicion i<10
             nuevaFecha[i]="0"+nuevaFecha[i];//para que salgan dos digitos en dd y mm
         }
         if (i<2) {hoy=hoy+nuevaFecha[i]+"/";}//para que salgan las / entre dd mm yyyy

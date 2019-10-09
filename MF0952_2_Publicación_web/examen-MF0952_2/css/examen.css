@@ -1,0 +1,79 @@
+/* css examen*/
+
+	.footer {
+		margin: 0 auto; 
+		width:90%;
+		font-size: 1em;
+		text-align: center;
+		color: red;
+		padding: 10px;
+		font-weight: bold;
+		}
+
+/*COOKES https://autoprefixer.github.io/*/
+.ocultaTodo {
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+}
+.gris {
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background-color: black;
+    display: block;
+    opacity: 0.8;
+}
+.cookies {
+    border: solid 1px black;
+    background-color: #000;
+    color: white;
+    font-size: 1.5em;
+    position: fixed;
+    z-index: 99999;
+    bottom: 0;
+    width: auto;
+    opacity: 1;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-flow:column;
+            flex-flow:column;
+}
+.container1 {
+    overflow: hidden;
+}
+.texto {
+    float: left;
+    width: 90%;
+}
+.x {
+    width: auto;
+    padding: 5px;
+    font-size: x-large;
+}
+.cerrar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.container {
+    font-size: 1.5em;
+}
+.enlace {
+    color: darkred;
+}
+.enlace:hover {
+    text-transform: uppercase;
+    color:red;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+}

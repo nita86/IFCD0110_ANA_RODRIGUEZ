@@ -10,7 +10,7 @@ function cerrar2() {
     document.getElementById("cuadroGrande").style.display="none";
 }
 //--------lightbox Ana----------------
-function abrirFotoA(name) {//sacamos la información de this.id y la traemos a través del parametro name. Para que funcione, el id de la etiqueta« y el nombre del archivo deben coincidir (house1)
+function abrirFotoA(name) {//sacamos la información de this.id y la traemos a través del parametro name. Para que funcione, el id de la etiqueta y el nombre del archivo deben coincidir (house1)
     var foto='<img id="'+name+'cuadroGrande" src="../img/'+name+'.jpg" alt="'+name+ '">';
     document.getElementById("contenido").innerHTML=foto;
     document.getElementById("cuadroGrande").style.display="block";
